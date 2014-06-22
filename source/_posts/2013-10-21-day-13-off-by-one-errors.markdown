@@ -8,15 +8,15 @@ categories: hackerschool coding gzip
 
 Today I spent most of the day figuring out that
 
-```julia
+~~~
 n_to_read = head.hlit + head.hdist + 257
-```
+~~~
 
 should be
 
-```julia
+~~~
 n_to_read = head.hlit + head.hdist + 258
-```
+~~~
 
 And I still don't know why, exactly. In related news, I can now *almost*
 decompress gzipped files.

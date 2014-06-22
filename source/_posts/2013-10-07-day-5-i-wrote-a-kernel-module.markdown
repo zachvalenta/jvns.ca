@@ -20,16 +20,16 @@ about from [this document](http://kernelnewbies.org/Networking?action=AttachFile
 
 To install it, you can run:
 
-```
+~~~
 $ make
 $ insmod hello-packet.ko
-```
+~~~
 
 and then
 
-```
+~~~
 $ rmmod hello-packet.ko
-```
+~~~
 
 to remove it.
 

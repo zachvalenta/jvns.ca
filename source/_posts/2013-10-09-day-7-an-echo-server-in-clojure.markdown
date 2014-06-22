@@ -21,11 +21,11 @@ You can interact with the server using `netcat`
 (see also: [Day 2: netcat fun!](http://jvns.ca/blog/2013/10/01/day-2-netcat-fun/)).
 The `-u` option here tells netcat to use UDP instead of TCP.
 
-```
+~~~
 bork@kiwi ~/w/h/clorrent> nc -u localhost 12345
 Hi, Clojure!
 Hi, Clojure!
-```
+~~~
 
 If you don't want to set up a whole
 [Leinengen](https://github.com/technomancy/leiningen) project to run

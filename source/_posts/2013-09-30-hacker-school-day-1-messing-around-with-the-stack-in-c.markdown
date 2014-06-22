@@ -17,7 +17,7 @@ When trying to tokenize strings in our shell, we ran into a super
 unintuitive bug.  Here's the [gist](https://gist.github.com/jvns/6772832) of it:
 <!-- more -->
 
-```c
+~~~
 #include <stdio.h>
 
 void set_strings(char*** strings) {
@@ -32,16 +32,18 @@ int main() {
   char* s = "abc";
   printf("Second print: '%s'\n", strings[0]);
 }
-```
+~~~
+{:lang='ruby'}
 
 So this looks like normal code that would print "banana" twice. But
 here's what actually happens:
 
-```text
+~~~
 bork@kiwi ~/w/h/gists> gcc write-to-stack.c&& ./a.out
 First print: 'banana'
 Second print: 'UH�WAVAUE1TE1H�H�'
-```
+~~~
+{:lang='text'}
 
 As I understand it, this is because this line:
 

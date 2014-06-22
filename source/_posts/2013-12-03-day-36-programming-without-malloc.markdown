@@ -58,7 +58,7 @@ and `free`ing it all the time.
 Here's an example of some code I have in the kernel! `main()` prints
 all the ASCII characters in a loop.
 
-```rust
+~~~
 pub unsafe fn putchar(x: u16, y: u16, c: u8) {
     let idx : uint =  (y * VGA_WIDTH * 2 + x * 2) as uint;
     // 0xb8000 is the VGA buffer
@@ -84,7 +84,7 @@ pub unsafe fn main() {
         }
     }
 }
-```
+~~~
 
 
 
@@ -93,12 +93,12 @@ pub unsafe fn main() {
 Note for pedants: I actually do have a `malloc` function because my
 Rust standard library needs to link against it, but it's defined like
 this:
-```
+~~~
 malloc:
     jmp $
-```
+~~~
 
 That's assembly-speak for "loop forever". If I get around to
 implementing `malloc` it will be the Most Exciting Thing
-```
+~~~
 </small>

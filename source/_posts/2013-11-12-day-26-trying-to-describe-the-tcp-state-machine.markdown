@@ -26,7 +26,7 @@ test.
 
 Yesterday it looked like this:
 
-```python
+~~~
 def handle(self, packet):
     # Update our state to indicate that we've received the packet
     self.ack = max(self.next_seq(packet), self.ack)
@@ -52,7 +52,7 @@ def handle(self, packet):
         raise BadPacketError("Oh no!")
 
     self._send_ack(flags=send_flags)
-```
+~~~
 
 In particular, I thought this `_send_ack()` call at the end was a great idea,
 because you always want to send an ACK! Except when you don't!
@@ -69,7 +69,7 @@ wasn't clear under what conditions the code actually go there.
 
 So now I have, after some suggestions from Allison:
 
-```python
+~~~
 def handle(self, packet):
     if self.last_ack_sent and self.last_ack_sent != packet.seq:
         # We're not in a place to receive this packet. Drop it.
@@ -110,7 +110,7 @@ def handle(self, packet):
             self._close()
     else:
         raise BadPacketError("Oh no!")
-```
+~~~
 
 This solves a bunch more problems than the first function. In particular, it
 

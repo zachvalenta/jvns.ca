@@ -28,19 +28,19 @@ So today I had was trying to install the
 
 So I thought, I will get strace to tell me which shared libraries are being loaded! strace will never lie to me. Here's how to do that:
 
-```
+~~~
 strace -f -o /tmp/iruby_problems ~/clones/iruby/bin/iruby notebook
 grep libzmq.so /tmp/iruby_problems | grep -v ENOENT
-```
+~~~
 
 The `grep -v ENOENT` is because it looks everywhere in my LD_LIBRARY_PATH so it
 fails to find libzmq a bunch of times. This reveals the following two system
 calls:
 
-```
+~~~
 28863 open("/opt/anaconda/lib/python2.7/site-packages/zmq/utils/../../../../libzmq.so.3", O_RDONLY|O_CLOEXEC) = 9
 28910 open("/usr/lib/libzmq.so", O_RDONLY|O_CLOEXEC) = 9
-```
+~~~
 
 AH HA. The first libzmq is the right version (`libzmq.so.3`), but the second one is all wrong! It is `libzmq1` and it is a disaster and a disgrace. I did `sudo apt-get remove libzmq1` and the offending `libzmq` was banished from my system.
 

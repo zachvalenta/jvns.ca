@@ -41,7 +41,7 @@ format, but for our purposes `compression_method` is always `8`.
 
 Here are the Julia data structures I used to store the header & metadata:
 
-```julia
+~~~
 type GzipHeader
   id::Vector{Uint8} # length 2
   compression_method::Uint8
@@ -50,9 +50,9 @@ type GzipHeader
   extra_flags::Uint8
   os::Uint8
 end
-```
+~~~
 
-```julia
+~~~
 type GzipMetadata
   header::GzipHeader
   xlen::Uint16
@@ -61,7 +61,7 @@ type GzipMetadata
   fcomment::ASCIIString
   crc16::Uint16
 end
-```
+~~~
 
 ## Blocks!
 
@@ -91,13 +91,13 @@ with reading all these trees.
 This minus four and minus one business basically drove me insane. But they are
 easy to represent at least:
 
-```julia
+~~~
 type HuffmanHeader
     hlit::Uint8
     hdist::Uint8
     hclen::Uint8
 end
-```
+~~~
 
 ### Code lengths for first Huffman tree (`(hclen + 4) * 3` bits)
 
@@ -127,7 +127,7 @@ To read the compressed data, you have to
 
 Here is the actual code I wrote to do this!
 
-```julia
+~~~
 function inflate_block!(decoded_text, bs::BitStream, literal_tree::HuffmanTree, distance_tree::HuffmanTree)
     while true
     	# Read a code from the file
@@ -146,7 +146,7 @@ function inflate_block!(decoded_text, bs::BitStream, literal_tree::HuffmanTree, 
     end
     return decoded_text
 end
-```
+~~~
 
 
 ### Main function for reading a block!
@@ -157,7 +157,7 @@ came out in (I thought) a fairly readable way.
 It modifies `decoded_text` in place because it turns out that blocks can refer
 to text in previous blocks. So there needs to be some shared state. 
 
-```julia
+~~~
 function inflate_block!(decoded_text, bs::BitStream)
     head = read(bs, HuffmanHeader)
     
@@ -179,4 +179,4 @@ function inflate_block!(decoded_text, bs::BitStream)
     
     return inflate_block!(decoded_text, bs, literal_tree, distance_tree)
 end
-```
+~~~

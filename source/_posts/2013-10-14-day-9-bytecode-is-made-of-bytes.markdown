@@ -27,7 +27,7 @@ which, well, subtracts things.
 
 Here's the actual for serious C code that handles this:
 
-```c
+~~~
 TARGET(BINARY_SUBTRACT) {
     PyObject *right = POP();
     PyObject *left = TOP();
@@ -39,7 +39,8 @@ TARGET(BINARY_SUBTRACT) {
         goto error;
     DISPATCH();
 }
-```
+~~~
+{:lang='c'}
 
 So, what does this do?
 

@@ -21,7 +21,7 @@ I am expecting it to print `|2C2|2C2|2C2|2C2|2C2|2C2|2C2|2C2|2C2|`.
 
 Here is the code:
 
-```rust
+~~~
 // some imports removed
 static NUMS: &'static [u8] = bytes!("01234567890");
 
@@ -36,7 +36,7 @@ pub unsafe fn _interrupt_handler_kbd() {
     }
     outb(0x20, 0x20); // Tell the interrupt handler that we're done.
 }
-```
+~~~
 
 To summarize:
 
@@ -52,14 +52,14 @@ is because of a compiler optimization replacing `keycode` with `2`.
 If you have `qemu` and a nightly build of `rust` installed, you can
 run this code by doing
 
-```
+~~~
 git clone git@github.com:jvns/rustboot.git
 cd rustboot
 git checkout origin/compiler-nonsense
 git submodule init
 git submodule update
 make run
-```
+~~~
 
 Some hypotheses:
 

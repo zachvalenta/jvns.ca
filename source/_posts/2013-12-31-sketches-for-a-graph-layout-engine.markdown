@@ -17,7 +17,7 @@ SVGs without any libraries.
 
 Here's the interface I'm starting with:
 
-```python
+~~~
 import graph_layout
 graph = {
    "vertices": [1,2,3],
@@ -28,7 +28,8 @@ graph_layout.draw(graph, "test.svg")
 # You can also draw a graph with a fixed width and height:
 
 graph_layout.draw(graph, "test.svg", width=500, height=400, directed=False)
-```
+~~~
+{:lang='python'}
 
 ### Some design
 
@@ -36,20 +37,21 @@ I'd like to have an intermediate layout structure, to make it easy to
 write layouts to different backends. One possible way to do this is to
 just store the coordinates of each vertex.
 
-```python
+~~~
 layout = {
     1: (100, 200), 
     2: (200, 300), 
     3: (150, 150)
 }
-```
+~~~
+{:lang='python'}
 
 Then we can use the vertex locations and original graph together to
 draw the graph.
 
 And here are some code sketches:
 
-```python
+~~~
 class SVG(object):
     """ etc etc """
     def add_vertex(start, end):
@@ -78,7 +80,8 @@ def _create_layout(graph, width=None, height=None):
         width = 400
     if height is None:
         height = 400
-```
+~~~
+{:lang='python'}
 
 We could factor the contents of `_draw_svg` into a more general
 function, so that it could write to any kind of output. If/when we
@@ -108,14 +111,14 @@ from the
 
 Here's the algorithm from the chapter:
 
-```
+~~~
 algorithm SPRING(G:graph);
 place vertices of G in random locations;
 repeat M times
     calculate the force on each vertex;
     move the vertex some_constant ∗ (force on vertex)
     draw graph on CRT or plotter
-```
+~~~
 
 It has suggestions for good constants to use, too.
 

@@ -13,8 +13,9 @@ trying to send TCP packets to get the
 It turned out that the problem we were having was not at the TCP level,
 but actually at HTTP level: we needed to send something like
 
-```"GET / HTTP/1.0\r\nUser-Agent: curl/7.30.0\r\nHost:
-example.com\r\nAccept: */*\r\n\r\n"```
+~~~
+example.com\r\nAccept: */*\r\n\r\n"
+~~~
 
 to make the server actually reply. I then successfully reassembled a
 bunch of TCP packets into a webpage! I still need to

@@ -27,12 +27,12 @@ executable. If you're interested, definitely check out
 
 The original program was
 
-```c
+~~~
 #include <stdio.h>
 int main() {
     printf("Hello!\n");
 }
-```
+~~~
 
 and I statically compiled it by running `gcc -static -o hello hello.c`.
 So we don't have to worry about dynamic linking or anything. (I very
@@ -48,17 +48,17 @@ The first suggestion I got was to make it a bit easier by using
 Running `strace ./hello` tells me all the system calls that happen,
 including the `write()` system call:
 
-```c
+~~~
 write(1, "Hello world!\n", 13)
-```
+~~~
 
 So we can simplify this program down to
 
-```c
+~~~
 int main() {
   write(1, "Hello world!\n", 13);
 }
-```
+~~~
 
 which removes the `#include` and some of the system calls. `printf()`
 is a pretty complicated function, so it's better to not use it.
@@ -116,7 +116,7 @@ User space programs interact with the kernel through "system calls".
 If I run `strace -o hello.out ./hello`, I get this list of all the
 system calls that happen when running `./hello`:
 
-```
+~~~
 execve("./hello2", ["./hello2"], [/* 59 vars */]) = 0
 uname({sys="Linux", node="kiwi", ...})  = 0
 brk(0)                                  = 0xca9000
@@ -126,7 +126,7 @@ brk(0xccb1c0)                           = 0xccb1c0
 brk(0xccc000)                           = 0xccc000
 write(1, "Hello world!\n", 13)          = 13
 exit_group(13)                          = ?
-```
+~~~
 
 I don't think I have to worry about the first two system calls, since
 the first one is definitely called by my shell.

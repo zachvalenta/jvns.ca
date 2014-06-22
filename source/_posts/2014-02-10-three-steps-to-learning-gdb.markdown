@@ -26,7 +26,7 @@ breakpoint.
 Here's the program that we're going to be "debugging" (though there
 aren't any bugs):
 
-```c
+~~~
 #include <stdio.h>
 void do_thing() {
     printf("Hi!\n");
@@ -34,7 +34,7 @@ void do_thing() {
 int main() {
     do_thing();
 }
-```
+~~~
 
 Save this as `hello.c`. We can debug it with gdb like this:
 

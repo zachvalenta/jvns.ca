@@ -47,28 +47,28 @@ to print the type of `2`. Amazing. Note that you have to call
 `type_of` with `&x` and not `x`.
 
 The function is:
-```rust
+~~~
 fn type_of<T>(_: &T) -> &'static str {
     unsafe {
         (*std::unstable::intrinsics::get_tydesc::<T>()).name
     }
 }
-```
+~~~
 
 **Hackier approach:**
 
 You can also generate a compiler error with the type of a variable `y`
 like this:
 
-```rust
+~~~
 fn y() {}
 let x: () = y;
-```
+~~~
 
 It's a hack, but it will give you an error like this:
-```
+~~~
 error: mismatched types: expected `()` but found `fn()` (expected () but found extern fn)
-```
+~~~
 
 which tells us that the type of `f` is `fn()`.
 
@@ -87,11 +87,11 @@ Booleans: `bool`
 
 **Primitive type examples**
 
-```rust
+~~~
 let x: uint = 2;
 let y: u8 = 40;
 let z: f32 = abc;
-```
+~~~
 
 ### Vectors
 
@@ -104,7 +104,7 @@ There are 3 possible types for a vector of `u8`: `[u8, ..N]`, `&[u8]`, `~[u8]`
 
 **Vector Examples**
 
-```rust
+~~~
 // Fixed size vector
 let x : [uint, ..10] = [5, ..10]; // [5,5,5,5,5,5,5,5,5,5]
 
@@ -114,7 +114,7 @@ let mut numbers1 : ~[uint]= ~[0, 1, 2, 3, 4, 5];
 // Create a variable size borrowed vector. This is also called a "vector slice".
 let mut numbers2 : &[uint]= &[0, 1, 2];
 let mut slice: &[uint] = numbers1.slice(0, 3);
-```
+~~~
 
 ### Strings and characters
 
@@ -128,7 +128,7 @@ You can convert any of the string types to a byte vector `&[u8]`.
 
 **String Examples**
 
-```rust
+~~~
 use std::option::Option;
 // Static string
 let hello: &'static str = "Hello!";
@@ -151,7 +151,7 @@ let c: Option<char> = owned_hello.chars().nth(2);
 
 // Switch to the string's representation as bytes
 let bytes: &[u8] = owned_hello.as_bytes();
-```
+~~~
 
 ### Functions
 
@@ -164,13 +164,13 @@ You probably only want to use `fn(A)->B`, though.
 
 **Function type examples**
 
-```
+~~~
 fn foo(a: int) -> f32 {
     return 0.0;
 }
 let bar: fn(int) -> f32 = foo; 
 let baz: &(fn(int) -> f32) = &foo;
-```
+~~~
 
 ### Closures
 
@@ -179,7 +179,7 @@ The type of a closure mapping something of type `A` to type `B` is `|A| -> B`. A
 
 **Closure type examples**
 
-```rust
+~~~
 let captured_var = 10; 
 let closure_no_args = || println!("captured_var={}", captured_var); 
 let closure_args = |arg: int| -> int {
@@ -196,7 +196,7 @@ fn call_closure(c1: ||, c2: |int| -> int) {
 }
 
 call_closure(closure_no_args, closure_args);
-```
+~~~
 
 ### Raw pointers
 

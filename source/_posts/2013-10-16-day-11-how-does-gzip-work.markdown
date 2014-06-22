@@ -46,7 +46,7 @@ preventing bounds checking with `@inbounds`.
 You can see that this kind of just looks like Python, except it is fast! (I
 promise)
 
-```julia
+~~~
 function make_int(bv::BitVector)
     num = 0x00
     for i=1:length(bv)
@@ -54,7 +54,7 @@ function make_int(bv::BitVector)
     end
     return num
 end
-```
+~~~
 
 That's it! Maybe tomorrow I will actually understand how gzip uses Huffman
 coding. So far I have *started* to decode the gzip header.

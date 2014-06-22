@@ -15,20 +15,20 @@ This simplified my packet-sending code a lot -- I realized I can construct
 basically every packet the same way, except for the flags and the payload. Now
 I can write
 
-```python
+~~~
 def _send_syn(self):
     self._send(flags="S")
     self.state = "SYN-SENT"
-```
+~~~
 
 instead of 
 
-```
+~~~
 def send_syn(self):
     syn_pkt = self.ip_header / TCP(dport=self.dest_port, sport=self.src_port, flags="S", seq=self.seq)
     self.listener.send(syn_pkt)
     self.state = "SYN-SENT"
-```
+~~~
 
 Right now the way I'm handling ACKs is basically to send an ACK for every
 packet I receive. This isn't really efficient (because if I'm receiving tons of
@@ -38,10 +38,10 @@ not incorrect, which is all that I'm going for.
 I also decided that I want to be able to be a TCP server as well as a TCP
 client. So I started writing `bind()`. Here it is so far:
 
-```
+~~~
 def bind(self):
     pass
-```
+~~~
 
 Seriously I did not ever think about how `bind()` works before. It has to
 manage multiple connections! And keep a queue! What am I supposed to do when

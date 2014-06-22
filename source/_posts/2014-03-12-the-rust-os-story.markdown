@@ -38,13 +38,13 @@ Of course what it actually does is a bit more complicated -- there's
 
 Here's the code that clears the screen:
 
-```rust
+~~~
 unsafe fn clear_screen(background: Color) {
     range(0, 80*25, |i| {
         *((0xb8000 + i * 2) as *mut u16) = (background as u16) << 12;
     });
 }
-```
+~~~
 
 What does this mean? The key part here is that the address of the VGA
 buffer is `0xb8000`, so we're setting some bytes there. And there's a
@@ -68,14 +68,14 @@ a `print` function.
 
 Here's what it looked like!
 
-```rust
+~~~
 pub fn putchar(x: u16, y: u16, c: u8) {
     let idx : uint =  (y * VGA_WIDTH * 2 + x * 2) as uint;
     unsafe {
         *((VGA_ADDRESS + idx) as *mut u16) = make_vgaentry(c, fg_color, bg_color);
     }
 }
-```
+~~~
 
 I didn't explain the `unsafe` block before. Everything inside
 `unsafe{}` is *unsafe* code. This particular code is unsafe because it
@@ -85,12 +85,12 @@ the right thing and won't blow anything up".
 
 We can also look at `make_vgaentry`:
 
-```rust
+~~~
 fn make_vgaentry(c: u8, fg: Color, bg: Color) -> u16 {
     let color = fg as u16 | (bg as u16 << 4);
     return c as u16 | (color << 8);
 }
-```
+~~~
 
 In the VGA buffer, each character is represented by 2 bytes (so a
 `u16`). The lower 8 bits are the ASCII character, and the upper 8 bits
@@ -102,14 +102,14 @@ Which isn't to say that I didn't have problems! I had SO MANY
 PROBLEMS. Most of my problems were to do with arrays and string and
 iterating over strings. Here's some code that caused me much pain: 
 
-```
+~~~
 pub fn write(s: &str) {
     let bytes : &[u8] = as_bytes(s);
     for b in super::core::slice::iter(bytes) {
         putc(*b);
     }
 }
-```
+~~~
 
 This code looks simple! It is a lie. 
 Friends. Here were some questions that I needed to ask to write this code.
@@ -240,7 +240,7 @@ So in `rust-core`, if you go to
 [heap.rs](https://github.com/thestinger/rust-core/blob/85c28bb64ec093aff9e3f81110200793c6291467/core/heap.rs#L32),
 you'll see this code:
 
-```rust
+~~~
 #[lang = "exchange_malloc"]
 pub unsafe fn alloc(size: uint) -> *mut u8 {
     if size == 0 {
@@ -253,7 +253,7 @@ pub unsafe fn alloc(size: uint) -> *mut u8 {
         ptr
     }
 }
-```
+~~~
 
 This weird-looking `#[lang = "exchange_malloc"]` bit means "Code like
 `let x = ~2` is now allowed to work". It requires there to be an

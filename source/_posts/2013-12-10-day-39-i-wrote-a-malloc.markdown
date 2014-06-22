@@ -9,13 +9,13 @@ categories: hackerschool coding rust kernel
 My major achievement for today is writing the following five lines of
 code:
 
-```rust
+~~~
 let a: ~u8 = ~('A' as u8);
 stdio::putc(*a);
 let b: ~u8 = ~('B' as u8);
 stdio::putc(*a);
 stdio::putc(*b);
-```
+~~~
 
 and having them do the wrong thing. One would normally expect this to
 print "AAB". But for me, right now, until I stop goofing off, it
@@ -23,7 +23,7 @@ prints "ABB". Why is that?
 
 Well, it's because my `malloc` implementation looks like this:
 
-```rust
+~~~
 static mut base: uint = 0x200000;
 pub extern "C" fn malloc(len: uint) -> *mut u8 {
     unsafe {
@@ -31,7 +31,7 @@ pub extern "C" fn malloc(len: uint) -> *mut u8 {
         return base as *mut u8;
    }
 }
-```
+~~~
 
 This means that every time I allocate memory, I get the same pointer
 back, and so `a` and `b` will always be equal no matter what. And for
@@ -42,7 +42,7 @@ fun*.
 Here's my real `malloc` function (that causes the above code to print
 "AAB", like it should):
 
-```rust
+~~~
 pub extern "C" fn malloc(len: uint) -> *mut u8 {
     unsafe {
         let ret: uint = base;
@@ -62,7 +62,7 @@ pub extern "C" fn malloc(len: uint) -> *mut u8 {
 pub extern "C" fn free(ptr: *mut u8) {
     // meh.
 }
-```
+~~~
 
 
 

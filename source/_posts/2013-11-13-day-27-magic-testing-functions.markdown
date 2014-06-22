@@ -22,7 +22,7 @@ that it was going through the right states.
 Allison had the amazing idea of subclassing my socket class to log every
 time I set the `state` attribute. Here's what that looks like:
 
-```python
+~~~
 from tcp import TCPSocket
 
 class LoggingTCPSocket(TCPSocket):
@@ -39,7 +39,7 @@ class LoggingTCPSocket(TCPSocket):
         if attr == 'state':
             self.states.append(value)
         super(self.__class__, self).__setattr__(attr, value)
-```
+~~~
 
 So we override `__setattr__` to log the value every time we change
 `self.state`. This also made me want to learn Python 3 -- apparently this
@@ -48,9 +48,9 @@ So we override `__setattr__` to log the value every time we change
 
 This means I can then write a test saying
 
-```python
+~~~
 assert conn.states == ["CLOSED", "SYN-SENT", "ESTABLISHED", "LAST-ACK", "CLOSED"]
-```
+~~~
 
 Which is super nice. <3
 

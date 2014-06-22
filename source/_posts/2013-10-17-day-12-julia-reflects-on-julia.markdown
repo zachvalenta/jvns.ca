@@ -47,12 +47,13 @@ are lovely as well.
 This is kind of the opposite of "it's like Python". In Julia when you
 make a type declaration
 
-```julia
+~~~
 type Range
     start::Int64
     end::Int64
 end
-```
+~~~
+{:lang='julia'}
 
 it really only takes up 2 Int64s worth of space! It also means that I
 can write code that is C-like -- I've been working from a gzip tutorial
@@ -65,7 +66,7 @@ So far this is more 'cool' than 'useful' for me, but it is so cool!
 
 So you can see this is just 2 LLVM instructions!
 
-```
+~~~
 julia> function blah(x)
            x+2
        end
@@ -77,7 +78,7 @@ top:
   %1 = add i64 %0, 2, !dbg !3829
   ret i64 %1, !dbg !3829
 }
-```
+~~~
 
 #### 6) A lot of Julia is written in Julia
 

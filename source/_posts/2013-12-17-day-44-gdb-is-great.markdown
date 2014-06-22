@@ -24,9 +24,9 @@ This actually ended up being really easy to debug! "Really easy" as in
 any point". I have a symbol table, and `idt` is in it, so I just
 needed to do iterations on
 
-```
+~~~
 gdb) x/4x &idt
-```
+~~~
 
 and compare the contents of memory from Working Code with the
 Non-Working Code.

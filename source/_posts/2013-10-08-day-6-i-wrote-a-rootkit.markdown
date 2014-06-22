@@ -15,13 +15,13 @@ root.
 
 Here's how to use it:
 
-```
+~~~
 bork@kiwi > sudo insmod rootkit.ko
 bork@kiwi ~/w/h/kernel-module> echo $$ # PID of my shell
 17792
 bork@kiwi ~/w/h/kernel-module> echo $$ > /proc/buddyinfo
 root@kiwi #
-```
+~~~
 
 <!-- more -->
 

@@ -45,7 +45,7 @@ Some terminology:
 
 So here's an assembly function that calls a Rust function:
 
-```
+~~~
 global  _interrupt_handler_kbd_wrapper
 extern _interrupt_handler_kbd
 
@@ -54,7 +54,7 @@ _interrupt_handler_kbd_wrapper:
     call    _interrupt_handler_kbd
     popad
     iret
-```
+~~~
 
 `extern` says that `_interrupt_handler_kbd` isn't actually defined in
 this file, but that `nasm` shouldn't worry about it when assembling --
@@ -72,12 +72,12 @@ keyword (sound familiar? =D).
 I need to get the address of the `_interrupt_handler_kbd_wrapper` and
 `idt_load` functions in Rust, so I defined them like this:
 
-```rust
+~~~
 extern {
     fn _interrupt_handler_kbd_wrapper ();
     fn idt_load(x: *IDTPointer);
 }
-```
+~~~
 
 You'll notice that I needed to specify the types of the function's
 arguments. These don't have return values, but if they did I'd need to
@@ -96,7 +96,7 @@ Then I can just call my `extern` functions like normal Rust functions.
 
 I have a file named `linker.ld` that contains:
 
-```
+~~~
 ENTRY(start)
 OUTPUT_FORMAT(binary)
 
@@ -107,7 +107,7 @@ SECTIONS {
         *(.text)
     }
 }
-```
+~~~
 
 Then I run
 
@@ -122,10 +122,10 @@ together into one binary. Basically this matches up symbols with the
 same name and makes it work. If an `extern` function I declare in a
 file doesn't exist, then I'll get a linker error like this:
 
-```
+~~~
 main.o: In function `main':
 main.rc:(.text+0x1db): undefined reference to `_interrupt_handler_kbd_wrapper'
-```
+~~~
 
 But this kind of linker error isn't scary any more! It just means that
 `_interrupt_handler_kbd_wrapper` isn't in the symbol table of any of
@@ -136,7 +136,7 @@ the other object files we're linking.
 To see the symbols that are defined in `isr_wrapper.o`, I can use
 `objdump` like this:
 
-```
+~~~
 bork@kiwi ~/w/h/rustboot> objdump -t isr_wrapper.o
 
 isr_wrapper.o:     file format elf32-i386
@@ -147,7 +147,7 @@ SYMBOL TABLE:
 00000000         *UND*  00000000 _interrupt_handler_kbd
 00000000 g       .text  00000000 _interrupt_handler_kbd_wrapper
 00000008 g       .text  00000000 idt_load
-```
+~~~
 
 You can see here that I've defined `_interrupt_handler_kbd_wrapper`
 and `idt_load`, but that `_interrupt_handler_kbd` is undefined and

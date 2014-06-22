@@ -18,19 +18,19 @@ examples.
 I wrote a tiny bit of code to play rhythms. And I ran into my first
 clojure bug! I defined a function `side-effecty-thing`, and ran
 
-```clojure
+~~~
 (map side-effecty thing sequence)
-```
+~~~
 
 And that ran fine. It made sounds!
 
 But then I tried something like
 
-```clojure
+~~~
 (def new-function [time]
     (map side-effecty thing sequence)
     (apply-at (+ time 4) '#new-function (+ time 4)))
-```
+~~~
 
 which basically does the `(map side-effecty-thing)` and then calls
 itself recursively, later. And this did not make sounds. And I was

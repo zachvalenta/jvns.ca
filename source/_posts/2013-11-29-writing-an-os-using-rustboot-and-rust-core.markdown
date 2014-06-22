@@ -29,7 +29,7 @@ characters to the screen!
 
 Here's the new code I added to do that:
 
-```rust
+~~~
 unsafe fn putchar(x: u16, y: u16, c: u8) {
     let idx : uint = (y * VGA_WIDTH * 2 + x) as uint;
     // 0xb8000 is the VGA buffer
@@ -65,7 +65,7 @@ pub unsafe fn main() {
     clear_screen(Green);
     write("Hello!aaa", 2, 3);
 }
-```
+~~~
 
 I like that I can write a loop like `for b in core::slice::iter(bytes)
 {`. I still don't know how string length is determined -- it seems
@@ -80,13 +80,13 @@ needed to add `use core::option::None`.
 
 In all to get iterators to work I need to add:
 
-```rust 
+~~~
 use core::mem::transmute; // for to_bytes()
 use core::slice::iter; // for the iterator
 use core::iter::Iterator; // for the loop
 use core::option::{Some, Option, None}; // for the loop
 mod core;
-```
+~~~
 
 This small amount of accomplishment wouldn't have been remotely
 possible without the help of the lovely people on the #rust IRC

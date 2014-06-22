@@ -113,7 +113,7 @@ is also really nice for this.
 
 Here's the source for `chmod_common`, with some comments from me:
 
-```c
+~~~
 static int chmod_common(struct path *path, umode_t mode)
 {
     struct inode *inode = path->dentry->d_inode;
@@ -141,7 +141,7 @@ out_unlock:
     mnt_drop_write(path->mnt); // ???
     return error;
 }
-```
+~~~
 
 I find this is a fun time and helps demystify the kernel for me. Most
 of the code I read I find pretty opaque, but some of it (like this

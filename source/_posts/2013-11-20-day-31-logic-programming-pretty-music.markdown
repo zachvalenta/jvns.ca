@@ -15,7 +15,7 @@ logic programming is that all the functions end with 'o'.
 
 Here is what our code looked like:
 
-```clojure
+~~~
 (ns core-logic-search-tree.core
   (:refer-clojure :exclude [==])
   (:require
@@ -37,24 +37,24 @@ Here is what our code looked like:
             [(fd/== v x)]
             [(fd/> v x) (containso l x)]
             [(fd/< v x) (containso r x)])))
-```
+~~~
 
 Then we could run
 
-```clojure
+~~~
 (run 1 [q] (containso my-tree 3))
-```
+~~~
 
 and it would say that the tree contains 3. Which is okay! But the
 really fun part is that you can run it "backwards" and ask
 
-```clojure
+~~~
 (run 10 [q] (containso q 3))
-```
+~~~
 
 and get 10 trees that contain 3:
 
-```clojure
+~~~
 (
 [:value 3 :left _0 :right _1]
 [:value 4 :left [:value 3 :left _0 :right _1] :right _2]
@@ -66,7 +66,7 @@ and get 10 trees that contain 3:
 [:value 8 :left [:value 3 :left _0 :right _1] :right _2]
 [:value 2 :left _0 :right [:value 3 :left _1 :right _2]]
 [:value 9 :left [:value 3 :left _0 :right _1] :right _2])
-```
+~~~
 
 If you inspect carefully, you will see that those are all binary trees
 and they all contain 3! =) 

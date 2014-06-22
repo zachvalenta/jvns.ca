@@ -21,12 +21,12 @@ really easy.
 
 So using scapy, you can create IP and UDP packets like this:
 
-```python
+~~~
 from scapy.all import *
 ip_packet = IP(dst="hackerschool.com", ttl=10)
 udp_packet = UDP(dport=40000)
 full_packet = IP(dst="hackerschool.com", ttl=10) / UDP(dport=40000)
-```
+~~~
 
 Then you can send a packet like this:
 
@@ -49,7 +49,7 @@ and in the second case we're done.
 
 Here's the code! It's 16 lines including comments and everything.
 
-```python
+~~~
 from scapy.all import *
 hostname = "google.com"
 for i in range(1, 28):
@@ -66,7 +66,7 @@ for i in range(1, 28):
     else:
         # We're in the middle somewhere
         print "%d hops away: " % i , reply.src
-```
+~~~
 
 The output looks like:
 

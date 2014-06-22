@@ -24,7 +24,7 @@ me is 897 bytes compiled, so about 1000 times smaller!
 
 You can compile it like this:
 
-```
+~~~
 $ cat >static.c
 int _start() {
   asm(
@@ -39,7 +39,7 @@ $ cc -m32 -static -nostdlib static.c
 $ ./a.out
 $ echo $?
 127
-```
+~~~
 
 This is super great, because it means that I can understand the whole
 program and it doesn't have a bunch of glibc/Linux stuff compiled into
@@ -66,7 +66,7 @@ pointer to the array I'm trying to read.
 This is typical of a lot of Rust code I'm writing -- I need to write a
 lot of `unsafe` code. 
 
-```rust
+~~~
 pub fn read_header<'a>(file: &'a [u8]) -> &'a ELFHeader {
     unsafe {
         let x : *ELFHeader = to_ptr(file) as *ELFHeader;
@@ -91,11 +91,11 @@ struct ELFHeader {
     e_shnum: u16,
     e_shstrndx: u16
 }
-```
+~~~
 
 and the final `exec` function will look a bit like this:
 
-```rust
+~~~
 unsafe fn jmp(addr: u32) {
     asm!("jmp *($0)"
          :
@@ -111,7 +111,7 @@ pub unsafe fn exec(addr: uint) {
     // the right address
     jmp(header.e_entry);
 }
-```
+~~~
 
 `jmp` is a great example of an unsafe Rust function -- what could be
 more unsafe than jumping to a possibly arbitrary address in memory?

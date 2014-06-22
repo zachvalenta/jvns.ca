@@ -23,11 +23,11 @@ that if I ran it 5 times then it would work. Mostly.
 
 I ran it using
 
-```
+~~~
 $ git clone http://github.com/jvns/teeceepee
 $ cd teeceepee
 $ sudo python examples/curl.py 10.0.4.4 example.com
-```
+~~~
 
 You'll notice that I'm supplying an extra local IP address, which
 seems like a weird thing to give `curl`. The reason for this is that

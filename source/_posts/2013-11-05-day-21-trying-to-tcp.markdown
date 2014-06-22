@@ -20,14 +20,14 @@ SYN, then get back a SYN-ACK, then send an ACK.
 
 I tried this TCP handshake code first:
 
-```python
+~~~
 dest = "google.com"
 source_port += 1 # We need to set a different source port every time
 ip_header = IP(dst=dest)
 ans = sr1(ip_header / TCP(dport=80, flags="S", seq=random.randint(0, 1000))) # Send SYN, receive SYN-ACK
 reply = ip_header / TCP(dport=80, seq=ans.ack, ack = ans.seq + 1, flags="A") # ACK
 send(reply) # Send ACK
-```
+~~~
 
 This did NOT WORK. Upon inspecting Wireshark, it turned out that *my* machine
 was the problem: it was sending out a RST (reset) packet after I got a SYN-ACK
@@ -46,7 +46,7 @@ I think I could also use iptables here to tell the kernel to ignore those
 packets. But I'm currently afraid of iptables. So. This code worked much
 better!
 
-```python
+~~~
 # Set port & MAC address
 FAKE_IP = "10.0.4.4" # Use something that nobody else is going to have
 MAC_ADDR = "60:67:20:eb:7b:bc" # My actual MAC address
@@ -62,7 +62,7 @@ reply = ip_header / TCP(dport=80, sport=source_port, seq=ans.ack, ack = ans.seq 
 send(reply) # Send ACK
 pkt = ip_header / TCP(dport=80, sport=source_port, seq=reply.seq, flags="AP") / "GET / HTTP/1.1\r\n\r\n" # Send our real packet
 send(pkt)
-```
+~~~
 
 That is my small amount of code for the day. I also spend a ton of time reading
 [the UDP handling code from the 4.4BSD network stack](https://github.com/denghuancong/4.4BSD-Lite/blob/master/usr/src/sys/netinet/udp_usrreq.c?source=cc).
