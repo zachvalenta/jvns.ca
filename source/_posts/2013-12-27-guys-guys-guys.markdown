@@ -3,7 +3,7 @@ layout: post
 title: 'When is "guys" gender neutral? I did a survey!'
 date: 2013-12-27 22:53
 comments: true
-categories: 
+categories: favorite
 ---
 
 The other day I was having a discussion with someone about whether or

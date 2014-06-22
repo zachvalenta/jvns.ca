@@ -3,7 +3,7 @@ layout: post
 title: "4 paths to being a kernel hacker"
 date: 2014-01-04 14:37
 comments: true
-categories: kernel
+categories: kernel favorite
 ---
 
 (this is me continuing work on my [CUSEC](http://2014.cusec.net/) talk

@@ -3,7 +3,7 @@ layout: post
 title: "Debug your programs like they're closed source!"
 date: 2014-04-20 18:30:54 -0400
 comments: true
-categories: strace kernel coding
+categories: strace kernel coding favorite
 ---
 
 Until very recently, if I was debugging a program, I practically

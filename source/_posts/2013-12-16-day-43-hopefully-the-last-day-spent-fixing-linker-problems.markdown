@@ -3,7 +3,7 @@ layout: post
 title: "Day 43: SOMETHING IS ERASING MY PROGRAM WHILE IT’S RUNNING (oh wait oops)"
 date: 2013-12-16 23:28
 comments: true
-categories: hackerschool kernel coding
+categories: hackerschool kernel coding favorite
 ---
 
 alternate title: "Hopefully the last day I spend all day trying to

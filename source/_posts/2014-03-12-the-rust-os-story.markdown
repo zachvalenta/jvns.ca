@@ -3,7 +3,7 @@ layout: post
 title: "Writing an OS in Rust in tiny steps (Steps 1-5)"
 date: 2014-03-12 07:09:10 -0700
 comments: true
-categories: kernel
+categories: kernel favorite
 ---
 
 I'm giving a talk tomorrow on writing a kernel in Rust.

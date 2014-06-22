@@ -3,7 +3,7 @@ layout: post
 title: "A pandas cookbook"
 date: 2013-12-22 14:23
 comments: true
-categories: python
+categories: python favorite
 ---
 
 A few people have told me recently that they find the slides for my

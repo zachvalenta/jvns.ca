@@ -3,7 +3,7 @@ layout: post
 title: "Questions I'm asking in interviews"
 date: 2013-12-30 22:51
 comments: true
-categories: 
+categories: favorite
 ---
 
 In a fit of "open source your interview process", I tweeted yesterday

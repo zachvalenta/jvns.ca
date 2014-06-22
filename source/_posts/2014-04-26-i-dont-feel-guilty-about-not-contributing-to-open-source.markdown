@@ -3,7 +3,7 @@ layout: post
 title: "Don't feel guilty about not contributing to open source"
 date: 2014-04-26 08:56:33 -0700
 comments: true
-categories: 
+categories: favorite opensource
 ---
 For a long time I had a vague feeling that I *should* be contributing
 to open source more, and that it was in some way a Good Thing. And I
