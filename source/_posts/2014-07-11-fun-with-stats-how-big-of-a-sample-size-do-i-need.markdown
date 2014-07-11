@@ -6,6 +6,10 @@ comments: true
 categories: statistics
 ---
 
+<small>
+[There's a version of this post with calculations [on nbviewer](http://nbviewer.ipython.org/urls/gist.githubusercontent.com/jvns/97bfe71b1ccfafc0caea/raw/b94429cd42210916b7dde89acd0f51d00710e12c/sample_size.ipynb)!]
+</small>
+
 I asked some people on Twitter what they wanted to understand about statistics, and someone asked: 
 
 "How do I decide how big of a sample size I need for an experiment?"
