@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I did Hacker School: ignoring things and making my own way"
+title: "How I did Hacker School: ignoring things I understand and doing the impossible"
 date: 2014-06-29 09:52:47 -0400
 comments: true
 categories: hackerschool
