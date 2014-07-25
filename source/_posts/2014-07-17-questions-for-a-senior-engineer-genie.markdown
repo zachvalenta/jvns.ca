@@ -34,6 +34,8 @@ Another thing about these questions is that I'm not actually
 interested in Twitter responses to them or comments -- if you know me
 IRL and you find them interesting, talk to me about them!
 
+I am also interested in more questions! I love questions.
+
 Most of these are not really about tech at all! A lot are general "how
 to deal with weird social situations at work" discussions.
 
