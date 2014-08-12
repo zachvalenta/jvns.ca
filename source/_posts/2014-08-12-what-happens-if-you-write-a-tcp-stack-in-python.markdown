@@ -34,8 +34,8 @@ commented each line.
 The way a TCP handshake works is:
 
 * me: SYN
-* google: ACK!
-* me: SYN ACK!!!
+* google: SYNACK!
+* me: ACK!!!
 
 Pretty simple, right? Let's put it in code.
 
@@ -55,10 +55,10 @@ syn = TCP(dport=80, sport=59333,
 # scapy uses '/' to combine packets with headers
 response = srp(ip_header / syn)
 # Add the sequence number 
-syn_ack = TCP(dport=80, sport=self.src_port, 
-          ack=response.seq, flags="SA") 
-# Reply with the SYNACK!
-srp(ip_header / syn_ack)
+ack = TCP(dport=80, sport=self.src_port, 
+          ack=response.seq, flags="A") 
+# Reply with the ACK
+srp(ip_header / ack)
 ```
 
 ### Wait, sequence numbers?
@@ -82,6 +82,11 @@ ACKed a packet, then it can resend it!
 The TCP protocol is extremely complicated and has all kinds of rate
 limiting logic in it, but we're not going to talk about any of that.
 This is all you'll need to know about TCP for this post!
+
+For a more in-depth explanation, including how SYN
+packets affect sequence numbers, I found
+[Understanding TCP sequence numbers](http://packetlife.net/blog/2010/jun/7/understanding-tcp-sequence-acknowledgment-numbers/)
+very clear.
 
 ## Step 2: OH NO I already have a TCP stack
 
