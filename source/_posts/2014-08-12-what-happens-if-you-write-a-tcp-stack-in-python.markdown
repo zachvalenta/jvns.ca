@@ -98,7 +98,7 @@ looked like this:
 
 ```
 me: SYN
-google: ACK
+google: SYNACK
 me: RST
 ```
 
@@ -110,7 +110,7 @@ computer, in my kernel. So what was actually happening was:
 
 ```
 my Python program: SYN
-google: ACK
+google: SYNACK
 my kernel: lol wtf I never asked for this! RST!
 my Python program: ... :(
 ```
@@ -127,9 +127,9 @@ The new exchange was like this:
 me: hey router! send packets for 192.168.0.129 to my MAC address
 router: (does it silently)
 my Python program: SYN (from 192.168.0.129)
-google: ACK
+google: SYNACK
 kernel: this isn't my IP address! <ignore>
-my Python program: SYN ACK YAY
+my Python program: ACK YAY
 ```
 
 And it worked! Okay, awesome, we can now send packets AND GET
