@@ -177,10 +177,15 @@ But the connection was fine! My program was totally responding! It was
 just that my Python program was way too slow to respond to packets in
 the millisecond times it expected.
 
+(edit: this diagnosis seems to be incorrect :) you can
+[read some discussion](https://news.ycombinator.com/item?id=8167546)
+about what may be actually going on here)
+
 ## life lessons
 
 If you're actually writing a production TCP stack, don't use Python.
-(surprise!)
+(surprise!) Also, the TCP spec is really complicated, but you can get
+servers to reply to you even if your implementation is extremely sketchy.
 
 I was really happy that it actually worked, though! The ARP spoofing
 was extremely finicky, but I wrote a version of `curl` using it which
