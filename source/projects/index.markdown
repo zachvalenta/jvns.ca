@@ -21,9 +21,8 @@ footer: true
     <a href="http://github.com/jvns/rustboot"> Operating system in Rust </a> (2013)
 </h2>
 
-A toy operating system in [Rust](http://rust-lang.com) for x86. Right
-now it has a basic keyboard driver, and I'm working on memory
-allocation.
+A toy operating system in [Rust](http://rust-lang.com) for x86. It
+only has a basic keyboard driver.
 
 I've also written a pretty popular series of blog posts about this
 process, like
@@ -33,8 +32,8 @@ and
 You can see
 [all my OS-hacking related posts](http://jvns.ca/blog/categories/kernel/).
 
-It's been really fun to learn Rust -- the community is really
-friendly, and I've been able to contribute back to the documentation.
+It was really fun to learn Rust -- the community is really friendly, and
+I've been able to contribute back to the documentation.
 
 [[Source]](http://github.com/jvns/rustboot)
 
@@ -88,7 +87,7 @@ backlog develops pretty quickly.
     <a href="http://github.com/jvns/gzip.jl">Gunzip in Julia</a> (2013)
 </h2>
 
-<iframe width="960" height="720" src="//www.youtube.com/embed/SWBkneyTyPU" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="300" src="http://www.youtube.com/embed/SWBkneyTyPU" frameborder="0" allowfullscreen></iframe>
 
 I wanted to understand how `gzip` works, so I wrote `gunzip` from
 scratch in Julia.
@@ -98,6 +97,7 @@ intermediate results made a really compelling visualization of how
 LZ77 compression works. The internet liked it a lot.
 
 [Source](http://github.com/jvns/gzip.jl),
+[Video](http://www.youtube.com/SWBkneyTyPU),
 [Blog post](http://jvns.ca/blog/2013/10/24/day-16-gzip-plus-poetry-equals-awesome/), 
 [HN discussion](https://news.ycombinator.com/item?id=6609586)
 
