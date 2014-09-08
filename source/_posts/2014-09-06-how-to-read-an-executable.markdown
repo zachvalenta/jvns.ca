@@ -141,7 +141,7 @@ sections we care about:
 * `.text` is the program's actual code (the assembly). `_start` and
   `main` are both part of the `.text` section.
 * `.rodata` is where some read-only data is stored (in this case, our
-  string "Hello!")
+  string "Penguin!")
 * `.interp` is the filename of the dynamic linker!
 
 The major difference between *sections* and *segments* is that
