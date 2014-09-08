@@ -1,7 +1,3 @@
-$text-color: $textcolor;
-$text-color-light: lighten($textcolor, 50);
-
-
 $sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
 $serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
@@ -24,27 +20,28 @@ a {
 
 body {
   line-height: 1.25em;
-  color: $text-color;
-  @extend .sans;
+  color: $textcolor;
+  @extend .serif;
 }
 
 
-body > header h1 {
+#wrap > header h1 {
   @extend .heading;
   font-family: $header-title-font-family;
   font-weight: 700;
   font-size: 5em;
 }
 
-body > header h2 {
+#wrap > header h2 {
   font-family: $header-subtitle-font-family;
 }
 
 @media only screen and (min-width: 992px) {
-  body { font-size: 1.15em; }
+  /*body { font-size: 1.15em; }*/
 }
 
-nav, .pagination, .header-navigation {
+
+nav, .pagination, .header-links {
   font-family: $heading-font-family;
   font-weight: bold;
   text-transform: uppercase;
@@ -145,11 +142,11 @@ article blockquote {
   font-size: 1.2em;
   line-height: 1.5em;*/
   padding-left: 1em;
-  border-left: 4px solid rgba($text-color-light, .5);
+  border-left: 4px solid rgba(lighten($textcolor, 20), .5);
   cite {
     font-style: italic;
-    a { color: $text-color-light !important; word-wrap: break-word; }
-    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
+    a { color: lighten($textcolor, 20) !important; word-wrap: break-word; }
+    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: lighten($textcolor, 20); }
   }
   @media only screen and (min-width: 992px) {
     padding-left: 1.5em;

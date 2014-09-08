@@ -39,8 +39,8 @@ $solarized: light !default;
 }
 
 /* non highlighted code colors */
-$pre-bg: $base03 !default;
-$pre-border: darken($base02, 5) !default;
-$pre-color: $base1 !default;
+$pre-bg: darken($fg, 3);
+$pre-border: lighten($textcolor,80);
+$pre-color: lighten($textcolor, 10);
 
 
