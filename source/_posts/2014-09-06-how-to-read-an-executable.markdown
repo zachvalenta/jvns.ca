@@ -27,11 +27,18 @@ int main() {
 }
 ```
 
-Then we compile it (`gcc -o hello hello.c`), and we have a binary called `hello`. This originally seems impenetrable (how do we even binary?!), but let's see how we can investigate it! We're going to learn what **symbols**, **sections**, and **segments** are. At a high level:
+Then we compile it (`gcc -o hello hello.c`), and we have a binary called
+`hello`. This originally seems impenetrable (how do we even binary?!),
+but let's see how we can investigate it! We're going to learn what
+**symbols**, **sections**, and **segments** are. At a high level:
 
-* **symbols** are like function names, and are used to answer "If I call `printf` and it's defined somewhere else, how do I find it?"
-* symbols are organized into **sections** -- code lives in one section (`.text`), and data in another (`.data`, `.rodata`)
+* **symbols** are like function names, and are used to answer "If I call
+  `printf` and it's defined somewhere else, how do I find it?"
+* symbols are organized into **sections** -- code lives in one section
+  (`.text`), and data in another (`.data`, `.rodata`)
 * sections are organized into **segments** 
+
+<!-- more -->
 
 Throughout we'll use a tool called `readelf` to look at these.
 

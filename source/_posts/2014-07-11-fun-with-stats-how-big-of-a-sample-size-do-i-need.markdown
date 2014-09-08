@@ -29,6 +29,8 @@ Oh man! 70% were heads! That's a big difference.
 **NOPE**. This was a random result! 10 as a sample size is way too
   small to decide that. What about 20?
 
+<!-- more -->
+
 <pre>
 > flip_coin(20)
 heads    13

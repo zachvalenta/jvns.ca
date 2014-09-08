@@ -25,6 +25,8 @@ The basic idea was
 I didn't care much about proper error handling or anything; I just
 wanted to get one webpage and declare victory :)
 
+<!-- more -->
+
 ## Step 1: the TCP handshake
 
 I started out by doing a TCP handshake with Google! (this won't

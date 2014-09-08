@@ -23,6 +23,8 @@ tell me that she used parts of my
 PHILIPPINES. How cool is that? She put
 [her materials online, too!](http://stefsy.com/pandas_devcon/).
 
+<!-- more -->
+
 So if you want to give a talk about how to do data analysis with
 Python, you too can reuse these materials in any way you see fit! You
 can get materials for talks I've given on

@@ -13,6 +13,8 @@ actually do? I
 but I always have trouble articulating advice about what to work on.
 So this isn't advice, it's what I did.
 
+<!-- more -->
+
 One huge part of the way I ended up approaching Hacker School was to
 ignore a ton of stuff that goes on there. For example! I find all
 these things kind of interesting:

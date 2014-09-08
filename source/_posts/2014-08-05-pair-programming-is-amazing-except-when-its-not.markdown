@@ -32,6 +32,8 @@ tweets about what people find hard or difficult in this Storify
 I learned a ton, and my view that "pair programming is great and you
 totally should try it!!!" got tempered a little bit :)
 
+<!-- more -->
+
 If you're not up to reading all that, here are the broad categories
 that the difficulties fell into. Thanks very much to everyone who
 responded for giving permission for me to post their comments!
