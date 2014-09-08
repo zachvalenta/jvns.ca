@@ -14,10 +14,9 @@ team. You can find me elsewhere on the internet:
 * [http://github.com/jvns](http://github.com/jvns)
 * [http://twitter.com/b0rk](http://twitter.com/b0rk)
 
-If you want to learn about
-what kinds of programming things I like, you should read my
-[blog](http://jvns.ca/blog/archives/) or [projects](http://jvns.ca/projects/).
-There's a list of my [favorite posts](http://jvns.ca/blog/categories/favorite/).
+This blog is mostly about having fun with systems programming, with lots of
+forays into other areas. There's a list of my [favorite posts](http://jvns.ca/blog/categories/favorite/), as well as some
+[projects](http://jvns.ca/projects/) I've worked on.
 
 I spent the fall of 2013 at [Hacker School](http://hackerschool.com), which
 houses the best programming community I've seen anywhere. I wrote down [what I
@@ -25,7 +24,11 @@ did every day while there](http://jvns.ca/blog/categories/hackerschool/), if
 you want to know what it's like.
 
 In the last year or two I've discovered that I like organizing community events
-and giving [talks](http://jvns.ca/talks) about programming. I co-founded
-[Montreal All-Girl Hack Night](http://mtlallgirlhacknight.ca) with my awesome
-friend [Monica](http://notwaldorf.github.io), as well as [PyLadies
-Montreal](http://www.meetup.com/pyladiesmtl/).
+and giving [talks](http://jvns.ca/talks) about programming. A few things I've worked on:
+
+* [Montreal All-Girl Hack Night](http://mtlallgirlhacknight.ca) with my awesome
+  friend [Monica](http://notwaldorf.github.io)
+* [PyLadies Montreal](http://www.meetup.com/pyladiesmtl/).
+* [!!Con](http://bangbancon.com), a 2-day conference about what excites us
+  about programming, where all the talks are lightning talks (with several
+  amazing people)
