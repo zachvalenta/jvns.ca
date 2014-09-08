@@ -11,7 +11,7 @@ compile a C program, and then that was it! I had a Magical Binary
 Executable that I could no longer read.
 
 It is not so! Executable file formats are regular file formats that
-you can understand. I'll explain some simple tools to start! We'll
+you can understand. I'll explain some simple tools to start! We'll be
 working on Linux, with ELF binaries. (binaries are kind of the
 definition of platform-specific, so this is all platform-specific.)
 We'll be using C, but you could just as easily look at output from any
@@ -84,7 +84,7 @@ $ readelf --symbols hello
 ([full output here](https://gist.github.com/jvns/0f82a7655d32bb6b331e))
 
 Here we see three *symbols*: `main` is the address of my `main()`
-function. `puts` looks a reference to the `printf` function I called
+function. `puts` looks like a reference to the `printf` function I called
 in it (which I guess the compiler changed to `puts` as an
 optimization?). `_start` is pretty important.
 
