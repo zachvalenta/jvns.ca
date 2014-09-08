@@ -29,6 +29,6 @@ and giving [talks](http://jvns.ca/talks) about programming. A few things I've wo
 * [Montreal All-Girl Hack Night](http://mtlallgirlhacknight.ca) with my awesome
   friend [Monica](http://notwaldorf.github.io)
 * [PyLadies Montreal](http://www.meetup.com/pyladiesmtl/).
-* [!!Con](http://bangbancon.com), a 2-day conference about what excites us
+* [!!Con](http://bangbangcon.com), a 2-day conference about what excites us
   about programming, where all the talks are lightning talks (with several
   amazing people)
