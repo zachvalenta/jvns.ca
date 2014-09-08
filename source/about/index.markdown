@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Julia Evans: About me!"
+title: "About me"
 hidetitle: true
 comments: false
 sharing: false
