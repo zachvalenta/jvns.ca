@@ -28,6 +28,8 @@ I also now feel like if I were to be put on *Survivor: fix a bug in my
 kernel's USB driver*, I'd stand a chance of not being immediately
 kicked off the island.
 
+<!-- more -->
+
 This is all going to be about Linux, but a lot of the same concepts
 apply to OS X. We'll talk about
 
@@ -75,19 +77,22 @@ calls:
 * `sendto` and `recvfrom` send and receive network data
 * `write` writes to disk
 * `chmod` changes the permissions of a file
-* `malloc` allocates memory (TODO check)
+* `brk` and `sbrk` allocate memory
 
 So when you call the `open()` function in Python, somewhere down the
 stack that eventually uses the `open` system call.
 
-That's all you need to know about the kernel for now!
+That's all you need to know about the kernel for now! It's a big
+program, and you interact with it using system calls.
 
 ### Why learn about the Linux kernel, anyway?
 
 There are some obvious reasons: it's really fun! Not everyone knows
-about it! Saying you wrote a kernel module for fun is cool! But
-there's a more serious reason: learning about the interface between
-your operating system and your programs.
+about it! Saying you wrote a kernel module for fun is cool!
+
+But there's a more serious reason: learning about the interface
+between your operating system and your programs will **make you a
+better programmer**. Let's see how!
 
 #### Reason 1: strace
 
@@ -99,8 +104,9 @@ A pretty basic question is: is your program even opening the right
 file? You could start using your regular debugging techniques to
 investigate (print some things out! use a debugger!). But one amazing
 thing is that on Linux, the *only way* to open a file is with the
-`open` system call. So you can get a list of every file your program
-has opened with a tool called strace.
+`open` system call. You can get a list of all of these calls to `open`
+(and therefore every file your program has opened) with a tool called
+strace.
 
 Let's do a quick example! Let's imagine I want to know what files
 Chrome has opened!
@@ -115,7 +121,19 @@ open("/etc/opt/chrome/policies/managed/lastpass_policy.json", O_RDONLY) = 36
 
 This is a really powerful tool for observing the *behavior* for a
 program that we wouldn't have if we didn't understand some basics
-about system calls.
+about system calls. I use strace to:
+
+* see if the file I *think* my program is opening is what it's
+  *really* opening (system call: `read`)
+* find out what log file my misbehaving poorly documented program is
+  writing to (though I could also use `lsof`) (system call: `write`)
+* spy on what data my program is sending over the network (system
+  calls: `sendto` and `recvfrom`)
+* find out every time my program opens a network connection (system
+  call: `socket`)
+
+I love strace so much I gave a lightning talk about just strace:
+[Spying on your programs with strace](https://www.youtube.com/watch?v=4pEHfGKB-OE).
 
 #### Reason 2: `/proc`
 
@@ -150,13 +168,13 @@ You can find out more with `man proc`. So fun!
 ftrace is totally different from strace. strace traces **system
 calls** and ftrace traces **kernel functions**. Want to know 
 
+TODO TODO TODO
 
 #### Reason 4: perf
 
 Your CPU has a whole bunch of different levels of caching (L1! L2!)
 that can have really significant impacts on performance. `perf` is a
-great tool that will tell you
-
+great tool that will tell you 
 * how often the different caches are being used
 * how many CPU cycles your program used (!!)
 
@@ -183,8 +201,8 @@ well (like `ls`), and run `strace` on it.
 
 This will show you at what points the program is communicating with
 your kernel. I took a 13 hour train ride from Montreal to New York
-once and [straced killall](blog post) and it was the most fun possible
-thing. Let's try `ls`!
+once and [straced killall](TODO) and it was REALLY FUN. Let's try
+`ls`!
 
 I ran `strace ls -o out` to save the output to a file. strace wlll
 output a WHOLE BUNCH OF CRAP (todo: link to the crap). It turns out
