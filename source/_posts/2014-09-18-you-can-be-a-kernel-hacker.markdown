@@ -89,6 +89,8 @@ about it! Saying you wrote a kernel module for fun is cool! But
 there's a more serious reason: learning about the interface between
 your operating system and your programs.
 
+#### Reason 1: strace
+
 Imagine that you're writing a Python program, and it's meant to be
 reading some data from a file `/user/bork/awesome.txt`. But it's not
 working!
@@ -98,17 +100,79 @@ file? You could start using your regular debugging techniques to
 investigate (print some things out! use a debugger!). But one amazing
 thing is that on Linux, the *only way* to open a file is with the
 `open` system call. So you can get a list of every file your program
-has opened with a tool called strace (`strace -e open python
-your-program.py`).
+has opened with a tool called strace.
 
-More motivations:
+Let's do a quick example! Let's imagine I want to know what files
+Chrome has opened!
 
-* /proc is really useful
-* alex clemmer's amazing procfs hack
-* nelhage's awesome blog post about a bug that he used strace to debug
+```
+$ strace -e open google-chrome
+[... lots of output omitted ...]
+open("/home/bork/.config/google-chrome/Consent To Send Stats", O_RDONLY) = 36
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 36
+open("/etc/opt/chrome/policies/managed/lastpass_policy.json", O_RDONLY) = 36
+```
+
+This is a really powerful tool for observing the *behavior* for a
+program that we wouldn't have if we didn't understand some basics
+about system calls.
+
+#### Reason 2: `/proc`
+
+`/proc` lets you **recover your deleted files**, and is a great
+example of how understanding your operating system a little better is
+an amazing programming tool.
+
+How does it do that? Let's imagine that we've written a program
+[smile.c](TODO), and we're in the middle of running it. But then we
+accidentally delete the binary!
+
+The PID of that process right now is `8604`. I can find the
+executable for that process at `/proc/8604/exe`:
+
+```
+ /proc/8604/exe -> /home/bork/work/talks/2014-09-strangeloop/smile (deleted)
+```
+
+It's `(deleted)`, but we can still look at it!
+`cat /proc/8604/exe > recovered_smile` will recover our executable. Wow.
+
+There's also a ton of other really useful information about processes
+in `/proc`. Alex Clemmer has a wonderful post about
+[how to detect what page your browser is on](TODO) by looking at `/proc`
+to spy how its memory footprint is changing. How cool (and scary!)
+is that?!
+
+You can find out more with `man proc`. So fun!
+
+#### Reason 3: ftrace
+
+ftrace is totally different from strace. strace traces **system
+calls** and ftrace traces **kernel functions**. Want to know 
+
+
+#### Reason 4: perf
+
+Your CPU has a whole bunch of different levels of caching (L1! L2!)
+that can have really significant impacts on performance. `perf` is a
+great tool that will tell you
+
+* how often the different caches are being used
+* how many CPU cycles your program used (!!)
+
+and a whole bunch of other performance information
+
+#### Convinced yet?
+
+Understanding your operating system better is *super useful* and will
+make you a better programmer, even if you write Python. The most
+useful tools for high-level programmers are `strace` and `/proc`. As
+far as I can tell ftrace and perf are mostly useful for lower-level
+programming.
 
 Now you're hopefully convinced that learning more about Linux is worth
-your time.
+your time. Let's go over some strategies for understanding Linux
+better!
 
 ### Strategy 1: strace all the things!
 
