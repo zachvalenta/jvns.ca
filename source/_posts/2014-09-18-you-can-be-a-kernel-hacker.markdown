@@ -353,18 +353,22 @@ asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mo
 ```
 
 SO FUN RIGHT. The source is super well documented and interesting and
-you should [go read it](TODO). And if you think "but Kamal must be a
-kernel hacking wizard! I could never do that!", it is not so! Kamal is
-pretty great, but he had never written kernel code before that
-weekend. I understand that he googled things like "how to hijack
-system call table linux". You could do the same!
+you should
+[go read it](https://github.com/jvns/kernel-module-fun/blob/master/rickroll.c).
+And if you think "but Kamal must be a kernel hacking wizard! I could
+never do that!", it is not so! Kamal is pretty great, but he had never
+written kernel code before that weekend. I understand that he googled
+things like "how to hijack system call table linux". You could do the
+same!
 
 Kernel modules are an especially nice way to start because writing toy
 kernel modules plays nicely into writing real kernel modules like
 hardware drivers. Or you could start out writing drivers right away!
 Whatever floats your boat :) The reference for learning about writing
-drivers is called [Linux Device Drivers](TODO) or "LDD3". The fabulous
-Jessica McKellar is writing the new version, LDD4. TODO
+drivers is called [Linux Device Drivers](http://lwn.net/Kernel/LDD3/)
+or "LDD3". The fabulous
+[Jessica McKellar](http://web.mit.edu/jesstess/www/) is writing the
+new version, LDD4.
 
 ### Strategy 5: Read linux.org
 
@@ -373,34 +377,54 @@ TODO: find some baller articles by Valerie Aurora
 ### Strategy 5: Do the Eudalypta challenge
 
 If you don't have an infinite number of ideas for hilarious kernel
-module pranks to play on your friends (I don't!), there's a challenge
-specifically built to help you get started with kernel programming,
-with progressively harder steps. The first one is to just write a
-"hello world" kernel module, and we already know how to do that!
+module pranks to play on your friends (I don't!), the
+[Eudalypta Challenge](http://eudyptula-challenge.org/) is specifically
+built to help you get started with kernel programming, with
+progressively harder steps. The first one is to just write a
+"hello world" kernel module, which is pretty straightforward!
 
 They're pretty strict about the way you send email (helping you
 practice for the linux kernel mailing list, maybe!). I haven't tried
 it myself yet, but [Alex Clemmer](http://nullspace.io) tells me that
-it is hard but possible.
-
-
+it is hard but possible. Try it out!
 
 ### Strategy 6: Do an internship
 
-If you're really serious about all this, there are a couple pf
-programs I know of where you can do
+If you're really serious about all this, there are a couple of
+programs I know of where you can do to dive in:
 
 * Google Summer of Code, for students
 * The GNOME outreach program for women
 
-OPW is a 
+The GNOME outreach program for women (OPW) is a great program that
+provides mentorship and a 3-month paid internship for women who would
+like to contribute to the Linux kernel.
+[More than 1000 patches](http://sarah.thesharps.us/2014/08/27/2014-kernel-internship-report-opw/)
+from OPW interns and alumni have been accepted into the kernel.
+
+In the application you submit a simple patch to the kernel (!!), and
+it's very well documented. You don't need to be an expert, though you
+do need to know some C.
+
+**You can apply now!** The application deadline for the current round
+is October 31, 2014, and you can find more information on the
+[kernel OPW website](http://kernelnewbies.org/OPWIntro).
 
 ### Resources
 
 To recap, here are the super useful resources for learning that I've
 mentioned:
 
-* LDD3/4
+* Previous writing:
+  [4 paths to being a kernel hacker](http://jvns.ca/blog/2014/01/04/4-paths-to-being-a-kernel-hacker/),
+  everything I've written about [kernels](http://jvns.ca/blog/categories/kernel/)
+* I learned all of this at [Hacker School](https://www.hackerschool.com/)
+* [LXR](http://lxr.linux.no/linux+v3.12.6/) and
+  [http://livegrep.com/](http://livegrep.com/search/linux) are great
+  for searching the Linux kernel
+* [Linux Device Drivers 3](http://lwn.net/Kernel/LDD3/) is available
+  free online.
+* The [OPW internship for the Linux kernel](http://kernelnewbies.org/OPWIntro)
 * the kernel newbies website
 * A few fun kernel modules I wrote
 * the eudalypta challenge
