@@ -199,13 +199,16 @@ well (like `ls`), and run `strace` on it.
 
 This will show you at what points the program is communicating with
 your kernel. I took a 13 hour train ride from Montreal to New York
-once and [straced killall](TODO) and it was REALLY FUN. Let's try
-`ls`!
+once and
+[straced killall](http://jvns.ca/blog/2013/12/22/fun-with-strace/) and
+it was REALLY FUN. Let's try `ls`!
 
-I ran `strace ls -o out` to save the output to a file. strace wlll
-output a WHOLE BUNCH OF CRAP (todo: link to the crap). It turns out
-that starting up a program is pretty complicated, and in this case
-most of the system calls have to do with that. There's a lot of
+I ran `strace -o out ls` to save the output to a file. strace wlll
+output a
+[WHOLE BUNCH OF CRAP](https://gist.github.com/jvns/291a4de261cb326585c7).
+It turns out that starting up a program is pretty complicated, and in
+this case most of the system calls have to do with that. There's a lot
+of
 
 * opening libraries: `open("/lib/x86_64-linux-gnu/libc.so.6",
   O_RDONLY|O_CLOEXEC)`
@@ -254,9 +257,9 @@ learn a ton!
 **<span style='color:red'>Warning</span>**: **Don't** strace processes
 that you actually need to run efficiently! strace is like putting a
 huge stopsign in front of your process every time you use a system
-call, which is **all the time**. TODO: link to Brendan Gregg's post.
-
-todo: **strace is also a great debugging tool**
+call, which is **all the time**. Brendan Gregg has a
+[great post about strace which you should read](http://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html).
+Also you should probably read everything he writes.
 
 ### Strategy 2: Read some kernel code!
 
@@ -266,7 +269,17 @@ fantastic tool called [livegrep](http://livegrep.com) that lets you
 search through kernel code. It's by
 [Nelson Elhage](http://twitter.com/nelhage) who is pretty great.
 
-So let's use it to find the source for `getdents`!
+So let's use it to find the source for `getdents`, which lists all the
+entries in a directory! I searched for it
+using livegrep, and found
+[the source](https://github.com/torvalds/linux/blob/v3.13/fs/readdir.c#L192-L223).
+
+On line 211, it calls `iterate_dir`. So let's look that up! It's
+[here](https://github.com/torvalds/linux/blob/v3.13/fs/readdir.c#L23-L48).
+Honestly this code makes no sense to me (maybe `res =
+file->f_op->iterate(file, ctx)` is what's iterating over the directory?).
+
+But it's neat that we can look at it!
 
 ### Strategy 3: Write a fun kernel module!
 
@@ -336,7 +349,7 @@ printk(KERN_INFO "Never gonna give you up!\n");
 
 The `rickroll_open` function is also pretty understandable. Here's a
 sketch of it, though I've left out some important implementation
-details that you should totally read: [rickroll.c](TODO)
+details that you should totally read: [rickroll.c](https://github.com/jvns/blob/master/rickroll.c)
 
 ```
 static char *rickroll_filename = "/home/bork/media/music/Rick Astley - Never Gonna Give You Up.mp3";
