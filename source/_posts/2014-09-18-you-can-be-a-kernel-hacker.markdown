@@ -142,8 +142,9 @@ example of how understanding your operating system a little better is
 an amazing programming tool.
 
 How does it do that? Let's imagine that we've written a program
-[smile.c](TODO), and we're in the middle of running it. But then we
-accidentally delete the binary!
+[smile.c](https://gist.github.com/jvns/a5c1ac3c141a6a6e782f), and
+we're in the middle of running it. But then we accidentally delete the
+binary!
 
 The PID of that process right now is `8604`. I can find the
 executable for that process at `/proc/8604/exe`:
@@ -156,17 +157,14 @@ It's `(deleted)`, but we can still look at it!
 `cat /proc/8604/exe > recovered_smile` will recover our executable. Wow.
 
 There's also a ton of other really useful information about processes
-in `/proc`. Alex Clemmer has a wonderful post about
-[how to detect what page your browser is on](TODO) by looking at `/proc`
-to spy how its memory footprint is changing. How cool (and scary!)
-is that?!
+in `/proc`. (like which files they have open -- try ` ls -l/proc/<pid>/fd`)
 
 You can find out more with `man proc`. So fun!
 
 #### Reason 3: ftrace
 
 ftrace is totally different from strace. strace traces **system
-calls** and ftrace traces **kernel functions**. Want to know 
+calls** and ftrace traces **kernel functions**.
 
 TODO TODO TODO
 
@@ -370,14 +368,31 @@ or "LDD3". The fabulous
 [Jessica McKellar](http://web.mit.edu/jesstess/www/) is writing the
 new version, LDD4.
 
-### Strategy 5: Read linux.org
+### Strategy 4: Write an operating system!
 
-TODO: find some baller articles by Valerie Aurora
+This sounds really unapproachable! And writing a full-featured
+operating system from scratch is a **ton** of work. But the great
+thing about operating systems is that yours don't need to be full-featured!
+
+I wrote a [small operating system](https://github.com/jvns/puddle)
+that basically only has a keyboard driver. And doesn't compile for
+anyone except me. It was 3 weeks of work, and I learned SO MUCH.
+
+A few of the blog posts that I wrote while working on it:
+
+* [Writing an OS in Rust in tiny steps](http://jvns.ca/blog/2014/03/12/the-rust-os-story/)
+* [After 5 days, my OS doesn’t crash when I press a key](http://jvns.ca/blog/2013/12/04/day-37-how-a-keyboard-works/)
+* [SOMETHING IS ERASING MY PROGRAM WHILE IT’S RUNNING (oh wait oops)](http://jvns.ca/blog/2013/12/16/day-43-hopefully-the-last-day-spent-fixing-linker-problems/)
+
+I learned about linkers and bootloaders and interrupts and memory
+management and how executing a program works and so many more things!
+And I'll never finish it,
+[and that's okay](http://jvns.ca/blog/2014/03/21/my-rust-os-will-never-be-finished/).
 
 ### Strategy 5: Do the Eudalypta challenge
 
 If you don't have an infinite number of ideas for hilarious kernel
-module pranks to play on your friends (I don't!), the
+module pranks to play on your friends (I certainly don't!), the
 [Eudalypta Challenge](http://eudyptula-challenge.org/) is specifically
 built to help you get started with kernel programming, with
 progressively harder steps. The first one is to just write a
