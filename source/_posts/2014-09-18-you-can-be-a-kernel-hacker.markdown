@@ -355,7 +355,7 @@ time you open a file?" And my awesome partner
 and inside a weekend he'd totally done it!
 
 You can see the *extremely* well-commented source here:
-[rickroll.c](https://github.com/jvns/blob/master/rickroll.c).
+[rickroll.c](https://github.com/jvns/kernel-module-fun/blob/master/rickroll.c).
 Basically what it needs to do when loaded is
 
 * find the system call table (it turns out this is not trivial!)
