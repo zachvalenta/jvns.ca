@@ -1,0 +1,104 @@
+---
+layout: post
+title: "Strange Loop 2014"
+date: 2014-09-20 10:29:47 -0400
+comments: true
+categories: conferences
+---
+
+I spent the last couple of days at Strange Loop. I met lots of new
+curious, friendly, wonderful people, gave a talk that people
+[really liked](https://storify.com/jvns/you-can-be-a-kernel-hacker-comments),
+played board games with friends, and generally had a great time.
+
+A few wonderful talks that I think are worth watching:
+
+* Concurrency Options on the JVM by
+  [Jessica Kerr](http://twitter.com/jessitron) was a wonderful
+  overview of concurrency models in various JVM languages (Akka,
+  core.async, futures, ...), what tradeoffs they have, and how to
+  think about them. Every time I've seen her speak I've been
+  impressed.
+* How Julia Goes Fast by [Leah Hanson](http://twitter.com/astrieanna)
+  was a solid introduction to the choices the Julia language has made
+  in order to perform well for numerical computations, and how to
+  write your own fast Julia programs.
+* Benchmarking: You're Doing It Wrong by
+  *[Aysylu Greenberg](http://twitter.com/aysylu) was a wonderful* talk
+  *explaining common errors people make when benchmarking, and laying
+  *out strategies for writing better benchmarks. The next time I need
+  *to make a benchmark I will absolutely watch this talk.
+* Jepsen II: Linearizable Boogaloo by
+  [Kyle Kingsbury](http://twitter.com/aphyt) was wonderful, as all of
+  his talks are. The room was packed, and he struck a great balance
+  between discussing serious problems he'd found in distributed
+  systems (in this case RabbitMQ and Elastic Search), and
+  acknowledging that the developers who work on large distributed
+  systems are solving a *really hard problem*. The message wasn't that
+  people building distributed systems are doing bad work, but that we
+  need to be honest about the tradeoffs that the systems we build are
+  making, and document known problems. For instance, Elastic Search is
+  a great search engine, but you should absolutely not use it as a
+  primary datastore because it can lose your data.
+* I gave a talk called "You can be a kernel hacker!" which I think is
+  pretty great :)
+
+Talks I heard good things about, and am planning to watch the videos
+of later:
+
+* Art.js: Transfigure data to Create 21st Century Art
+* The Sociology of Programming Languages (a talk about programming
+  language that involves an actual study, with data, of how people
+  choose programming languages! How can it be!)
+* I have hard nothing but raves about [Practical Fractals in Space]()
+* Idris: Practical Dependent Types by Brian McKenna was described to
+    me as "types from space" and "Brian McKenna is crazy". I'm not a
+    huge type theory nerd, but this sounded like a fun talk to watc.
+* Spreadsheets for developers by Fabienne [...] is by someone who has
+  a **PhD in spreadsheets**. How cool is that? I'm kind of devastated
+  I missed it.
+
+Strange Loop had a much higher percentage of talks by women this year,
+and (in my small sample size), they gave better talks. I listed above
+the talks I saw with the most well-presented and interesting (to me)
+content, and 3/4 of them were by women. Sometimes I see people
+suggesting that accepting more talks by women means lowering the bar
+for talks, and I've seen absolutely no evidence for this. (if
+anything, the opposite!)
+
+One thing that I saw that I *didn't* like was a couple of talks making
+the following argument:
+
+* languages with static type systems prevent a class of errors that
+dynamic type systems don't
+* therefore those languages are safer
+* therefore if you're writing mission critical systems, you should use
+  static typing
+
+This class of argument really bothers me, because it doesn't really
+hold up in court by itself. I *love* using static type checking, and I
+would love to see evidence that statically typed programs actually
+have less bugs.
+
+But this argument by itself isn't that great. Strange Loop is a
+conference where we have a really unique combination of academics and
+developers with lots of industry experience. We could talk about this
+in a more nuanced way!
+
+* are there studies with evidence that static type checking reduces
+  the number of bugs?
+* what about the claim that dynamic languages are faster to develop
+  in? Do we have any evidence for that?
+
+Or I'd love to see some analysis of case studies about organization
+that have made a big switch (like Twitter's switch to Scala, for
+instance), by someone without an agenda to push (like "wow Scala is
+great!").
+
+It basically seemed like there were talks by people who really liked
+static languages, and talks by people who really liked dynamic
+languages, and they were just talking past each other. I didn't learn
+anything new from these talks.
+
+I'd like to go back next year and see better arguments. See you next
+year, Strange Loop <3
