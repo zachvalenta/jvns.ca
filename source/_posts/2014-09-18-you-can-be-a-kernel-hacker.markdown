@@ -6,6 +6,9 @@ comments: true
 categories: kernel
 ---
 
+<small> This blog post is adapted from a talk I gave at Strange Loop
+2014 with the same title </small>
+
 When I started [Hacker School](https://hackerschool.com), I wanted to
 learn how the Linux kernel works. I'd been using Linux for ten years,
 but I still didn't understand very well what my kernel did. While
@@ -16,7 +19,7 @@ there, I found out that:
 * kernel programming is not just for wizards, it can also be for me!
 * systems programming is REALLY INTERESTING
 * I could write toy kernel modules, for fun!
-* and, most surprisingly of all, all of this stuff was *useful*
+* and, most surprisingly of all, all of this stuff was *useful*.
 
 I hadn't been doing low level programming at all -- I'd written a
 little bit of C in university, and otherwise had been doing web
@@ -40,19 +43,20 @@ apply to OS X. We'll talk about
     * strace all the things!
     * Read some kernel code!
     * Write a fun kernel module!
-    * Do the Eudalypta challenge
+    * Write an operating system!
+    * Try the Eudalypta challenge
+    * Do an internship.
 
 ### What even is a kernel?
 
-When I started Hacker School I did not understand very well what a
-kernel did. In a few words:
+In a few words:
 
-**A kernel is a program that knows how to interact with your hardware**.
+**A kernel is a bunch of code that knows how to interact with your hardware**.
 
 Linux is mostly written in C, with bit of assembly. Let's say you go
 to http://google.com in your browser. That requires typing, sending
 data over a network, allocating some memory, and maybe writing some
-cache files. The kernel has code that
+cache files. Your kernel has code that
 
 * interprets your keypresses every time you press a key
 * speaks the TCP/IP protocol, for sending information over the network
@@ -82,8 +86,9 @@ calls:
 So when you call the `open()` function in Python, somewhere down the
 stack that eventually uses the `open` system call.
 
-That's all you need to know about the kernel for now! It's a big
-program, and you interact with it using system calls.
+That's all you need to know about the kernel for now! It's a bunch of
+C code that's running all the time on your computer, and you interact
+with it using system calls.
 
 ### Why learn about the Linux kernel, anyway?
 
@@ -102,7 +107,7 @@ working!
 
 A pretty basic question is: is your program even opening the right
 file? You could start using your regular debugging techniques to
-investigate (print some things out! use a debugger!). But one amazing
+investigate (print some things out! use a debugger!). But the amazing
 thing is that on Linux, the *only way* to open a file is with the
 `open` system call. You can get a list of all of these calls to `open`
 (and therefore every file your program has opened) with a tool called
@@ -157,34 +162,54 @@ It's `(deleted)`, but we can still look at it!
 `cat /proc/8604/exe > recovered_smile` will recover our executable. Wow.
 
 There's also a ton of other really useful information about processes
-in `/proc`. (like which files they have open -- try ` ls -l/proc/<pid>/fd`)
+in `/proc`. (like which files they have open -- try `ls -l/proc/&lt;pid&gt;/fd`)
 
-You can find out more with `man proc`. So fun!
+You can find out more with `man proc`.
 
 #### Reason 3: ftrace
 
 ftrace is totally different from strace. strace traces **system
 calls** and ftrace traces **kernel functions**.
 
-TODO TODO TODO
+I honestly haven't had occasion to do this yet but it is REALLY COOL
+so I am telling you about it. Imagine that you're having some problems
+with TCP, and you're seeing a lot of TCP retransmits. ftrace can give
+you information about every time the TCP retransmit function in the
+kernel is called!
+
+To see how to actually do this, read Brendan Gregg's post
+[Linux ftrace TCP Retransmit Tracing](http://www.brendangregg.com/blog/2014-09-06/linux-ftrace-tcp-retransmit-tracing.html).
+
+There also appear to be some articles about ftrace on
+[Linux Weekly News!](https://www.google.ca/search?q=lwn+ftrace)
+
+I dream of one day actually investigating this :)
 
 #### Reason 4: perf
 
 Your CPU has a whole bunch of different levels of caching (L1! L2!)
 that can have really significant impacts on performance. `perf` is a
-great tool that will tell you 
-* how often the different caches are being used
-* how many CPU cycles your program used (!!)
+great tool that can tell you 
 
-and a whole bunch of other performance information
+* how often the different caches are being used (how many L1 cache
+  misses are there?)
+* how many CPU cycles your program used (!!)
+* profiling information (how much time was spent in each function?)
+
+and a whole bunch of other insanely useful performance information.
+
+If you want to know more about awesome CPU cycle tracking, I wrote
+about it in
+[I can spy on my CPU cycles with perf!](http://jvns.ca/blog/2014/05/13/profiling-with-perf/).
 
 #### Convinced yet?
 
 Understanding your operating system better is *super useful* and will
 make you a better programmer, even if you write Python. The most
-useful tools for high-level programmers are `strace` and `/proc`. As
-far as I can tell ftrace and perf are mostly useful for lower-level
-programming.
+useful tools for high-level programming I've found `strace` and
+`/proc`. As far as I can tell ftrace and perf are mostly useful for
+lower-level programming. There's also `tcpdump` and `lsof` and
+`netstat` and all kinds of things I won't go into here.
 
 Now you're hopefully convinced that learning more about Linux is worth
 your time. Let's go over some strategies for understanding Linux
@@ -263,11 +288,12 @@ Also you should probably read everything he writes.
 
 ### Strategy 2: Read some kernel code!
 
-Okay, let's imagine that we've gotten interested in `getdents`, and we
-want to understand better what it actually does. There's this
-fantastic tool called [livegrep](http://livegrep.com) that lets you
-search through kernel code. It's by
-[Nelson Elhage](http://twitter.com/nelhage) who is pretty great.
+Okay, let's imagine that we've gotten interested in `getdents` (the
+system call to list the contents of a directory), and we want to
+understand better what it actually does. There's this fantastic tool
+called [livegrep](http://livegrep.com) that lets you search through
+kernel code. It's by [Nelson Elhage](http://twitter.com/nelhage) who
+is pretty great.
 
 So let's use it to find the source for `getdents`, which lists all the
 entries in a directory! I searched for it
@@ -281,6 +307,11 @@ file->f_op->iterate(file, ctx)` is what's iterating over the directory?).
 
 But it's neat that we can look at it!
 
+If you want to know about current Linux kernel development,
+[Linux Weekly News](http://lwn.net/) is a great resource. For example,
+here's an interesting article about the
+[btrfs filesystem!](http://lwn.net/Articles/342892/)
+
 ### Strategy 3: Write a fun kernel module!
 
 Kernel modules sound intimidating but they're actually really
@@ -290,7 +321,7 @@ approachable! All a kernel module is fundamentally is
 2. A `cleanup` function to run when the module is unloaded
 
 You load kernel modules with `insmod` and unload them with `rmmod`.
-Here's a working kernel module!
+Here's a working "Hello world" kernel module!
 
 ```
 #include <linux/module.h>    // included for all kernel modules
@@ -390,6 +421,8 @@ thing about operating systems is that yours don't need to be full-featured!
 I wrote a [small operating system](https://github.com/jvns/puddle)
 that basically only has a keyboard driver. And doesn't compile for
 anyone except me. It was 3 weeks of work, and I learned SO MUCH.
+There's a [super great wiki](http://wiki.osdev.org/Main_Page) with
+lots of information about making operating system.
 
 A few of the blog posts that I wrote while working on it:
 
@@ -419,7 +452,7 @@ it is hard but possible. Try it out!
 ### Strategy 6: Do an internship
 
 If you're really serious about all this, there are a couple of
-programs I know of where you can do to dive in:
+programs I know of:
 
 * Google Summer of Code, for students
 * The GNOME outreach program for women
@@ -440,7 +473,7 @@ is October 31, 2014, and you can find more information on the
 
 ### Resources
 
-To recap, here are the super useful resources for learning that I've
+To recap, here are a few super useful resources for learning that I've
 mentioned:
 
 * Previous writing:
@@ -453,20 +486,20 @@ mentioned:
 * [Linux Device Drivers 3](http://lwn.net/Kernel/LDD3/) is available
   free online.
 * The [OPW internship for the Linux kernel](http://kernelnewbies.org/OPWIntro)
-* the kernel newbies website
-* A few fun kernel modules I wrote
-* the eudalypta challenge
-* the OPW website
 * Linux Weekly News
   ([here's an index](http://lwn.net/Archives/GuestIndex/))
+* [Brendan Gregg](http://brendangregg.com/) has a ton of extremely
+  useful writing about performance analysis tools like `perf` and
+  `ftrace` on Linux.
 
 ### You can be a kernel hacker
 
 I'm not a kernel hacker, really. But now when I look at awesome actual
-kernel hackers like [Valerie Aurora]() or [Sarah Sharp](), I no longer
-think that they're wizards. I now think those are people who worked
-really hard on becoming better at kernel programming, and did it for a
-long time! And if I spent a lot of time working on learning more, I
-could be a kernel hacker too.
+kernel hackers like [Valerie Aurora](http://valerieaurora.org/) or
+[Sarah Sharp](http://sarah.thesharps.us/), I no longer think that
+they're wizards. I now think those are people who worked really hard
+on becoming better at kernel programming, and did it for a long time!
+And if I spent a lot of time working on learning more, I could be a
+kernel hacker too.
 
 And so could you.
