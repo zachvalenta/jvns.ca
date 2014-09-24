@@ -7,7 +7,7 @@ categories: kernel
 ---
 
 <small> This blog post is adapted from a talk I gave at Strange Loop
-2014 with the same title </small>
+2014 with the same title. [Watch the video!](https://www.youtube.com/watch?v=0IQlpFWTFbM) </small>
 
 When I started [Hacker School](https://hackerschool.com), I wanted to
 learn how the Linux kernel works. I'd been using Linux for ten years,
