@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Strange Loop 2014"
-date: 2014-09-20 10:29:47 -0400
+date: 2014-09-24 10:29:47 -0400
 comments: true
 categories: conferences
 ---
@@ -27,13 +27,15 @@ Strange Loop was, and I really wouldn't have anticipated then that
 I always imagine cool developer conferences like Strange Loop as being
 full of wizard developers who know everything about programming. I
 was worried that my talk would be too entry-level (I explain what a
-kernel is / what a system call is from the ground up).
+kernel is / what a system call is from the ground up, for instance).
 
 It turned out **tons** of people there didn't know a lot about systems
-programming, and my choice to make the talk accessible made a lot of
-people happy. So far I've given a bunch of talks and I've never
-regretted trying to make it easy to follow for as many people as
-possible.
+programming / how kernels work, and my choice to make the talk
+accessible made a lot of people happy. So far I've given a bunch of
+talks and I've never regretted trying to make it easy to follow for as
+many people as possible.
+
+<!-- more -->
 
 I collected
 [some of the comments from Twitter](https://storify.com/jvns/you-can-be-a-kernel-hacker-comments)
