@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "How does SQLite work? Part 2: btrees!"
+title: "How does SQLite work? Part 2: btrees! (or: disk seeks are slow
+don't do them!)"
 date: 2014-10-02 23:29:14 -0400
 comments: true
 categories: databases
@@ -38,13 +39,14 @@ binary tree with depth 10, you might need to jump up to 10 times.
 
 One of the most important things in database optimization is disk I/O.
 Reading more data than you absolutely need to read is really
-expensive, because reading from a hard disk is slow. If you're reading
-1GB of data on a hard disk that reads at 300MB/s, that takes 3
-seconds. It takes **way less** than 3 seconds to search through that
-data (see:
-[Computers are fast!](http://jvns.ca/blog/2014/05/12/computers-are-fast/)).
-So for a simple search, reading 8x too much data would basically take
-8x as long.
+expensive, because seeking to a new location in a file takes a long
+time. It takes **way less** CPU time to search through your data than
+it does to read the data into memory (see:
+[Computers are fast!](http://jvns.ca/blog/2014/05/12/computers-are-fast/),
+[Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)).
+
+So for a simple database scan, reading more data than you need is a
+huge problem
 
 So far we know that:
 
@@ -61,8 +63,8 @@ too many pages to find a row.
 
 My 100,000 row SQLite database has a btree with depth 3, so to fetch a
 node I only need to read 3 pages. If I'd used a binary tree I would
-have needed to read log(100000) / log(2) = 16 pages! That's more than
-five times as many. So these btrees seem like a pretty good ideas.
+have needed to do log(100000) / log(2) = 16 seeks! That's more than
+five times as many. So these btrees seem like a pretty good idea.
 
 ## The index and table btrees
 
