@@ -7,6 +7,20 @@ sharing: false
 footer: true
 ---
 
+## You can be a kernel hacker!
+
+<strong>
+[Strange Loop](http://thestrangeloop.com), September 2014
+</strong>
+
+**Abstract**: Writing operating systems sounds like it's only for wizards, but
+it turns out that operating systems are written by humans like you and me. I'm
+going to tell you what a kernel is and why you should care. Then we'll talk
+about a few concrete ways to get started with kernel hacking, ranging from the
+super-easy to the terrifyingly difficult.
+
+<iframe width="100%" height="315" src="http://www.youtube.com/embed/0IQlpFWTFbM" frameborder="0" allowfullscreen></iframe>
+
 ## Spying on your programs with strace
 
 <strong>
