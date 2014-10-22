@@ -72,7 +72,7 @@ So far we've been talking like there's only one btree. This isn't
 actually true at all! My database has one table, and two btrees.
 
 Each table has a btree, made up of interior and leaf nodes. Leaf nodes
-contain all the data, and data nodes contain, well, data :)
+contain all the data, and interior nodes point to other child nodes.
 
 Every index for that table also has its own btree, where you can look
 up which row id a column value corresponds to. This is why maintaining
