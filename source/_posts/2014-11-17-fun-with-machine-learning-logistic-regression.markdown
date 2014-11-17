@@ -200,3 +200,5 @@ If you're interested in reproducing this [you can see the code for it here](http
   not converging to an optimal set of coefficients? When does that
   happen? (when the data is badly scaled?) Is it easy to construct an
   example where that happens?
+* Are there more ways of thinking about logistic regression that I'm
+  missing here?
