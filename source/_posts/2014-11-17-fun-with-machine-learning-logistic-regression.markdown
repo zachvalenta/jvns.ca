@@ -42,7 +42,7 @@ into them is
 - see if I get the results I expect!
 
 This doesn't always feel as satisfying as using Real World Data, but
-it's much better way think about your assumptions.
+it's a much better way to think about your assumptions.
 
 So, let's think about the logistic regression model backwards. Instead
 of starting with features and classifications and learning coefficients,
