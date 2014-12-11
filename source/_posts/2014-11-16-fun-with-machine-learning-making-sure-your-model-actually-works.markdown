@@ -3,7 +3,7 @@ layout: post
 title: "Fun with machine learning: does your model actually work?"
 date: 2014-11-16 11:00:47 -0800
 comments: true
-categories: 
+categories: machinelearning
 ---
 
 I'm writing a talk for [PyData NYC](http://pydata.org/nyc2014/schedule/)

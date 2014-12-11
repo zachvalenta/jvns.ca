@@ -3,7 +3,7 @@ layout: post
 title: "Fun with machine learning: logistic regression!"
 date: 2014-11-17 07:27:26 -0800
 comments: true
-categories: 
+categories: machinelearning
 ---
 
 As much as I write about how 
