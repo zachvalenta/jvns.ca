@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Fun with threads"
+title: "Diving into concurrency: trying out mutexes and atomics"
 date: 2014-12-14 12:58:55 -0500
 comments: true
-categories: 
+categories: concurrency
 ---
 
 I hadn't written any threaded programs before yesterday. I knew sort of
@@ -12,13 +12,17 @@ compare-and-swap but I don't totally get it!), but actually
 understanding a Thing is hard if I've never done it. So yesterday I
 decided to write a program with threads! In this post, we're going to:
 
-1. Write a program with a race condition
+1. Write a threaded program that gets the wrong answer because of a race
+   condition
 2. Fix that race condition in C and Rust, using 2 different approaches
    (mutexes and atomics)
-3. Talk a little about the actual system calls and instructions that
+3. Find out why Rust is slower than C
+4. Talk a little about the actual system calls and instructions that
    make some of this work
 
-At first I was going to write a hashmap, but
+<!-- more -->
+
+At first I was going to write a concurrent hashmap, but
 [Kamal](https://twitter.com/kamalmarhubi) wisely pointed out that I
 should start with something simpler, like a counter!
 
@@ -35,9 +39,14 @@ incremented once instead of twice. This is called a **race condition**.
 
 ### Writing a race condition
 
-Here's what my original C program looks like, with the race condition.
-(full version:
-[counter_race.c](https://github.com/jvns/fun-with-threads/blob/master/counter_race.c)):
+Here's what my original C program looks like, with the bug. I wrote this
+by knowing that people used a library called "pthreads" to do threads in
+c, and googling "pthreads example". I'm not going to explain it very
+much, but essentially it creates 20 threads and has them all run the
+`AddThings` function which increments a global counter a million times. 
+
+Full version:
+[counter_race.c](https://github.com/jvns/fun-with-threads/blob/master/counter_race.c).
 
 ```c
 #define NUM_THREADS     20
@@ -112,7 +121,7 @@ counter += 1;
 pthread_mutex_unlock(&mutex);
 ```
 
-If we run our new program, it calculates the correct ansewr every time!
+If we run our new program, it calculates the correct answer every time!
 Amazing! What does the performance of this look like? I'm going to do
 all my profiling with `perf stat` (perf is an amazing program that you
 can read more about in [I can spy on my CPU cycles with perf!](http://jvns.ca/blog/2014/05/13/profiling-with-perf/))
@@ -153,7 +162,7 @@ documentation](http://doc.rust-lang.org/std/sync/struct.Mutex.html). I'm
 pretty impressed by how much Rust's documentation has improved in the
 last year.
 
-I ran this, and I was expecting it to perform about as well a my C code.
+I ran this, and I was expecting it to perform about as well as my C code.
 It didn't.
 
 ```
@@ -170,9 +179,9 @@ $ sudo perf script | stackcollapse-perf.pl | flamegraph.pl > rust_mutex_flamegra
 ```
 
 
-{%img /images/rust_mutex_flamegraph.svg %}
+[{%img /images/rust_mutex_flamegraph.svg %}](/images/rust_mutex_flamegraph.svg)
 
-{%img /images/c_mutex_flamegraph.svg %}
+[{%img /images/c_mutex_flamegraph.svg %}](/images/c_mutex_flamegraph.svg)
 
 What is even going on here?! These two graphs look exactly the same. Why
 does the Rust one taking longer?
@@ -225,7 +234,7 @@ perf stat ./rust_counter_atomics
 
 Here's the new flamegraph:
 
-<img src="/images/rust_atomics_flamegraph.svg">
+[{%img /images/rust_atomics_flamegraph.svg %}](/images/rust_atomics_flamegraph.svg)
 
 
 You can see from the new flamegraph that it's definitely not using
@@ -235,15 +244,17 @@ little clearer.
 
 ### Atomics in C: even faster!
 
-We replace
+To use atomics in our C program, I replaced
 
 ```
-pthread_mutex_lock(&mutex);
-counter += 1;
-pthread_mutex_unlock(&mutex);
+for (int i = 0; i < NUM_INCREMENTS; i++) {
+    pthread_mutex_lock(&mutex);
+    counter += 1;
+    pthread_mutex_unlock(&mutex);
+}
 ```
 
-with this 
+with something called `__sync_add_and_fetch`:
 
 ```
    for (int i = 0; i < NUM_INCREMENTS; i++) {
@@ -258,19 +269,22 @@ which generates assembly instructions to safely increment our counter.
 That GCC documentation page is pretty readable! One interesting thing is
 this:
 
-> All of the routines are are described in the Intel documentation to
-> take “an optional list of variables protected by the memory barrier”.
-> It's not clear what is meant by that; it could mean that only the
-> following variables are protected, or it could mean that these
-> variables should in addition be protected. At present GCC ignores this
-> list and protects all variables which are globally accessible. If in
-> the future we make some use of this list, an empty list will continue
-> to mean all globally accessible variables.
+> All of the routines are described in the Intel documentation to take
+> “an optional list of variables protected by the memory barrier”. It's
+> not clear what is meant by that; it could mean that only the following
+> variables are protected, or it could mean that these variables should
+> in addition be protected. At present GCC ignores this list and
+> protects all variables which are globally accessible. If in the future
+> we make some use of this list, an empty list will continue to mean all
+> globally accessible variables.
 
 It's sort of refreshing to hear the people who write GCC (who I think of
 as MAGICAL WIZARDS WHO KNOW EVERYTHING) say that they read some Intel
 documentation and it was not clear what it meant! This stuff must really
 not be easy.
+
+This C program is a little faster than the Rust version, clocking in at
+around 0.44 seconds on my machine. I don't know why.
 
 ### What actual CPU instructions are involved?
 
@@ -310,11 +324,12 @@ variable in each case. Googling for "lock instruction finds us this [x86 instruc
 > asserted.
 
 
-In both cases over 99% of the runtime is spent in the instruction right
+In both cases over 99% of the run time is spent in the instruction right
 after that instruction. I'm not totally sure why that is, but it could
 be that the `lock` itself is fast, but then once it's done the memory it
 updated needs to be synchronized and the next instruction needs to wait
-for that to happen. That's mostly made up though.
+for that to happen. That's mostly made up though. If you want to explain
+it to me I would be delighted.
 
 (If you've heard about compare-and-swap, that's a similar instruction
 that lets you update variables without creating races)
@@ -339,4 +354,5 @@ wonderful.
 
 Thanks are due to [Kamal](https://twitter.com/kamalmarhubi) for having
 lots of wonderful suggestions, and the people of the ever-amazing #rust
-IRC channel.
+IRC channel. You can see all the code for this post at
+[https://github.com/jvns/fun-with-threads/](https://github.com/jvns/fun-with-threads/).
