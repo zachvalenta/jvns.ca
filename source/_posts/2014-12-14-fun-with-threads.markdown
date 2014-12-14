@@ -15,8 +15,8 @@ decided to write a program with threads! In this post, we're going to:
 1. Write a program with a race condition
 2. Fix that race condition in C and Rust, using 2 different approaches
    (mutexes and atomics)
-3. Talk a little about the actual system calls that make some of this
-   work
+3. Talk a little about the actual system calls and instructions that
+   make some of this work
 
 At first I was going to write a hashmap, but
 [Kamal](https://twitter.com/kamalmarhubi) wisely pointed out that I
@@ -162,7 +162,7 @@ $ perf stat ./rust_counter_mutex
 ```
 
 My first instinct was to profile it! I used Brendan Gregg's excellent
-flame graph library, and ran
+[flame graph library](https://github.com/brendangregg/FlameGraph), and ran
 
 ```
 $ sudo perf record ./rust_counter_mutex
@@ -177,22 +177,19 @@ $ sudo perf script | stackcollapse-perf.pl | flamegraph.pl > rust_mutex_flamegra
 What is even going on here?! These two graphs look exactly the same. Why
 does the Rust one taking longer?
 
-<img src="/images/rust_mutex_flamegraph.svg">
-
-<img src="/images/c_mutex_flamegraph.svg">
-
 So, off to the races in the #rust IRC channel! Fortunately, the people
 in #rust are the Nicest People. You can see them helping me out [in the
 logs](https://botbot.me/mozilla/rust/2014-12-13/?msg=27485007&page=27)
 =D.
 
-After a while, Sharp explains that Rust's mutexes are implemented in a
-Slow Way using channels. This seems to make sense, but then why couldn't
-I see that from the flamegraph? He explains helpfully that channels in
-Rust are also implemented with the `futex` syscall, so it's spending all
-of its time in the same syscalls, just doing it less efficiently. COOL.
+After a while, someone named Sharp explains that Rust's mutexes are
+implemented in a Slow Way using channels. This seems to make sense, but
+then why couldn't I see that from the flamegraph? He explains helpfully
+that channels in Rust are also implemented with the `futex` syscall, so
+it's spending all of its time in the same syscalls, just doing it less
+efficiently. COOL.
 
-He also suggests using an atomic instead of a mutex, so that's the next
+Sharp also suggests using an atomic instead of a mutex, so that's the next
 step!
 
 ### Making it fast with atomics in Rust
@@ -225,6 +222,11 @@ perf stat ./rust_counter_atomics
 20000000
        0.556901591 seconds time elapsed
 ```
+
+Here's the new flamegraph:
+
+<img src="/images/rust_atomics_flamegraph.svg">
+
 
 You can see from the new flamegraph that it's definitely not using
 mutexes at all. But we still don't know how these atomics work, which is
@@ -319,7 +321,7 @@ that lets you update variables without creating races)
 
 ### We are now slightly closer to being concurrency wizards
 
-This was really fun! In January I was talking to (super nice!) company
+This was really fun! In January I was talking to a (super nice!) company
 that built distributed systems about interviewing there, and they sent
 me some questions to answer. One of the questions was something like
 "can you discuss the pros and cons of using a lock-free approach for
