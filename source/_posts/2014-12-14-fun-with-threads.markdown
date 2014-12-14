@@ -105,6 +105,7 @@ pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 ```
 
 at the beginning, and replace `counter += 1` with 
+
 ```
 pthread_mutex_lock(&mutex);
 counter += 1;
@@ -139,6 +140,7 @@ let data = Arc::new(Mutex::new(0u));
 ```
 
 and increment it with 
+
 ```
 for _ in range(0u, NUM_INCREMENTS) {
    let mut d = data.lock();
@@ -168,8 +170,16 @@ $ sudo perf script | stackcollapse-perf.pl | flamegraph.pl > rust_mutex_flamegra
 ```
 
 
+{%img /images/rust_mutex_flamegraph.svg}
+
+{%img /images/c_mutex_flamegraph.svg}
+
 What is even going on here?! These two graphs look exactly the same. Why
 does the Rust one taking longer?
+
+<img src="/images/rust_mutex_flamegraph.svg">
+
+<img src="/images/c_mutex_flamegraph.svg">
 
 So, off to the races in the #rust IRC channel! Fortunately, the people
 in #rust are the Nicest People. You can see them helping me out [in the
@@ -199,6 +209,7 @@ let counter = Arc::new(AtomicUint::new(0));
 ```
 
 and our loop with 
+
 ```
 for _ in range(0u, NUM_INCREMENTS) {
     counter.fetch_add(1, Relaxed);
@@ -231,6 +242,7 @@ pthread_mutex_unlock(&mutex);
 ```
 
 with this 
+
 ```
    for (int i = 0; i < NUM_INCREMENTS; i++) {
        __sync_add_and_fetch(&counter, 1);
@@ -301,7 +313,6 @@ after that instruction. I'm not totally sure why that is, but it could
 be that the `lock` itself is fast, but then once it's done the memory it
 updated needs to be synchronized and the next instruction needs to wait
 for that to happen. That's mostly made up though.
-
 
 (If you've heard about compare-and-swap, that's a similar instruction
 that lets you update variables without creating races)
