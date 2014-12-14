@@ -95,7 +95,7 @@
      y="35"
      font-size="17"
      id="text17"
-     style="font-size:17px;text-anchor:middle;fill:#000000;font-family:Verdana">Flame Graph</text>
+     style="font-size:17px;text-anchor:middle;fill:#000000;font-family:Verdana">c_mutex</text>
   <text
      text-anchor=""
      x="10"

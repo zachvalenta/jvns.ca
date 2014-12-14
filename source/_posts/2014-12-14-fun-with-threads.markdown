@@ -170,9 +170,9 @@ $ sudo perf script | stackcollapse-perf.pl | flamegraph.pl > rust_mutex_flamegra
 ```
 
 
-{%img /images/rust_mutex_flamegraph.svg}
+{%img /images/rust_mutex_flamegraph.svg %}
 
-{%img /images/c_mutex_flamegraph.svg}
+{%img /images/c_mutex_flamegraph.svg %}
 
 What is even going on here?! These two graphs look exactly the same. Why
 does the Rust one taking longer?
