@@ -128,3 +128,9 @@ will be the second year, and my plan is for it to be easier =)
 
 (thanks to [Maggie Zhou](https://twitter.com/zmagg) and [Kelsey Gilmore-Innis](https://twitter.com/kelseyinnis) and [Melissa Santos](https://twitter.com/ansate) and many others for all saying
 excellent things and making me have new thoughts!)
+
+A couple of more talks / posts about fear that I enjoyed:
+
+* [Fear of programming](http://www.logiccolony.com/2010/10/16/Fear-of-Programming-Notes.html) (via [@booleancz](https://twitter.com/booleancz))
+* [Fear Driven Development](http://www.hanselman.com/blog/FearDrivenDevelopmentFDD.aspx) (totally different, by Scott Hanselman)
+
