@@ -21,6 +21,8 @@ about a lot of this already in [Diving into HFDS](http://jvns.ca/blog/2014/05/15
 things, though! At the end of this we edit the blocks on the data node
 and see what happens and it's GREAT.)
 
+<!-- more -->
+
 ```
 $ snakebite ls -h /
 -rw-r--r--   1 bork       supergroup       14.1G 2014-12-08 02:13 /wikipedia.csv

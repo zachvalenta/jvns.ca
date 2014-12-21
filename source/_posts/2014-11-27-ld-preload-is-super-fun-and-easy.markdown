@@ -36,6 +36,8 @@ export LD_PRELOAD=unrandom.so
 
 and now every program you run will always return 42 for rand()!
 
+<!-- more -->
+
 We did a bunch of investigations into how tmux works, which was super
 fun. [Chase wrote it up on his blog](http://blog.chaselambda.com/2014/11/25/how-tmux-starts-up-an-adventure-with-linux-tools.html),
 and now I understand about daemonization way better.
