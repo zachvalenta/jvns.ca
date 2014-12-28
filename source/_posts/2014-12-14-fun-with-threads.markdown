@@ -140,7 +140,7 @@ have a program that works instead of a program that doesn't!
 
 I decided to implement the same thing in Rust because, well, Rust is
 fun! You can see it at
-[rust_counter_mutex.c](https://github.com/jvns/fun-with-threads/blob/master/rust_counter_mutex.rs). 
+[rust_counter_mutex.rs](https://github.com/jvns/fun-with-threads/blob/master/rust_counter_mutex.rs). 
 
 We create a mutex with
 
