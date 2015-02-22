@@ -108,8 +108,7 @@ wget http://zlib.net/infgen.c.gz
 gunzip infgen.c.gz
 ```
 
-`./infgen raven.txt.gz`
-It prints out some somewhat cryptic output like
+When we run`./infgen raven.txt.gz`, it prints out some somewhat cryptic output like
 
 ```
 litlen 10 6
@@ -223,3 +222,9 @@ see it's source code and not a novel!
  '-' 0010110
 ```
 
+I really like going through explorations like this because they give
+me a better idea of how things like Huffman codes are used in real
+life! It's kind of my favorite when things I learned about in math
+class show up in the programs I use every day. And now I feel like I
+have a better idea of when it would be appropriate to use a technique
+like this.
