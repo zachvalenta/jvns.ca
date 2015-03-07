@@ -48,8 +48,9 @@ bzgrep
 COINCIDENCE THAT ALL OF THESE WORDS ARE THE SAME? I THINK NOT!
 
 It turns out that the locate database is basically just a huge recursive
-directory listing (`ls -R /`). So a slightly less space-efficient version of
-this whole `locate` business would be to create a database with this Very
+directory listing (`ls -R /`). (I think it's actually more complicated than
+that; there's a paper at the end). So a slightly less space-efficient version
+of this whole `locate` business would be to create a database with this Very
 Sophisticated Command:
 
 ```
@@ -110,4 +111,21 @@ My current theory is that grep is better optimized than locate and that it can
 do smarter stuff. But if you know the real answer, or if you get different
 results on your computer, please tell me!
 
-update: omg Mark Dominus tweeted at me within seconds and said he [found exactly the same thing 10 years ago](http://perl.plover.com/classes/mybin/samples/slide077.html). Maybe this is really a thing!
+update: omg Mark Dominus tweeted at me within seconds and said he [found exactly the same thing 10 years ago](http://perl.plover.com/classes/mybin/samples/slide077.html). Maybe this is really a thing! Or, more likely, there's just stuff I don't understand yet here. Either way I'd like to know!
+
+further update: Patrick Collison pointed out this amazingly-titled (and short! 3 pages!)
+[Finding Files Fast](http://www.eecs.berkeley.edu/Pubs/TechRpts/1983/CSD-83-148.pdf)
+from 1983 which talks about locate's design, and also claims that the 
+[source is pretty readable](http://ftp3.usa.openbsd.org/pub/OpenBSD/src/usr.bin/locate/).
+
+The 1983 paper specifically calls out "Why not simply build a list of static
+files and search with grep?", and says that grepping a list of 20,000 files
+took 30 seconds ("unacceptable for an oft-used command"), and that their locate
+implementation gives them better performance. To compare, I have 700,000 files
+on my hard disk, and it takes about 0.05 seconds. It seems to me like the
+locate authors' original issues are really not a problem anymore, 30 years
+later.
+
+They're also pretty worried about saving space in the locate database, which
+also isn't really a concern anymore. This really makes me wonder what other
+standard unix programs make design assumptions that aren't true in 2015.
