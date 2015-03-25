@@ -3,10 +3,10 @@ layout: post
 title: "Day 46: Never Graduate"
 date: 2013-12-20 10:35
 comments: true
-categories: hackerschool
+categories: hackerschool recurse
 ---
 
-Yesterday was the last day of Hacker School. This is a Sad Story.
+Yesterday was the last day of Recurse Center. This is a Sad Story.
 
 I have a lot of feelings about this. Sad-to-be-leaving feelings and
 can't-i-just-stay-forever feelings and i-get-to-live-at-home-again
@@ -19,7 +19,7 @@ conversation with [Sumana](http://www.harihareswara.net/) about this.
 * Sumana: Well, they took 13 years to write!
 * Julia: YEAH. I WILL WRITE 4000 BLOG POSTS TOO.
 * Sumana: YEAH
-* Julia: Oh, but what will I write about when Hacker School is over? I
+* Julia: Oh, but what will I write about when Recurse Center is over? I
   will have nothing to say!
 * Sumana: Never graduate!
 

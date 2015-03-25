@@ -12,7 +12,7 @@ submit and prepare talks.
 
 I'm pretty new to all of this, but in 2013 I gave talks at PyCon
 Canada and PyData NYC, as well as local user group meetups like
-Montreal Python. And a bunch of short presentations at Hacker School.
+Montreal Python. And a bunch of short presentations at Recurse Center.
 I'm a lot less scared of it than I used to be! It turns out it's kind
 of fun!
 

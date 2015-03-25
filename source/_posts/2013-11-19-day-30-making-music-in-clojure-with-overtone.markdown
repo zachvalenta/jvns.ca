@@ -4,7 +4,7 @@ title: "Day 30: Making music in Clojure with Overtone. Clojure bugs
 with laziness! Fun!"
 date: 2013-11-19 23:05
 comments: true
-categories: hackerschool coding clojure music 
+categories: hackerschool recurse coding clojure music 
 ---
 
 Today I started using a lovely Clojure library called

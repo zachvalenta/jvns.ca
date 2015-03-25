@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-On Monday I went to Hacker School, and as always it was the most fun
+On Monday I went to Recurse Center, and as always it was the most fun
 time. I hung out with [Chase](http://blog.chaselambda.com/) and we had
 fun with dynamic linkers!
 

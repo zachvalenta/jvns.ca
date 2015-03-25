@@ -3,7 +3,7 @@ layout: post
 title: "Day 41: Linkers are upsetting"
 date: 2013-12-12 01:20
 comments: true
-categories: hackerschool linkers
+categories: hackerschool recurse linkers
 ---
 
 Today I spent pretty much the whole day trying to figure out what's

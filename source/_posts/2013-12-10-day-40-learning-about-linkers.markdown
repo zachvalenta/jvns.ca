@@ -3,7 +3,7 @@ layout: post
 title: "Day 40: Linkers are amazing."
 date: 2013-12-10 17:39
 comments: true
-categories: hackerschool linkers
+categories: hackerschool recurse linkers
 ---
 
 I have a linker bug in my kernel which is kind of infuriating me. So

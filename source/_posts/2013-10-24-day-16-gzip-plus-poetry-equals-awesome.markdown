@@ -3,7 +3,7 @@ layout: post
 title: "Day 16: gzip + poetry = awesome"
 date: 2013-10-24 21:16
 comments: true
-categories: hackerschool compression poetry julia favorite
+categories: recurse.compression poetry julia favorite
 ---
 
 Gzip compresses by replacing text with pointers to earlier parts of the text.
@@ -11,7 +11,7 @@ Here's a visualization of what actually happens when you decompress "The
 Raven". It highlights the bits of text that are copied from previously in the
 poem.
 
-I showed this as a Thursday talk at Hacker School today :) I really like how
+I showed this as a Thursday talk at Recurse Center today :) I really like how
 you can see the rhyming inside the poem like (rapping... tapping) come out in
 the compression algorithm.
 

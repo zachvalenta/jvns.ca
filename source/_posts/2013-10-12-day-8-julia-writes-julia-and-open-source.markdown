@@ -3,11 +3,11 @@ layout: post
 title: "Day 8: Julia writes Julia! And remembers that open source is hard."
 date: 2013-10-12 00:47
 comments: true
-categories: hackerschool coding julia opensource
+categories: hackerschool recurse coding julia opensource
 ---
 
-At Hacker School this batch there is a wonderful thing called the
-[maintainers program](https://www.hackerschool.com/blog/23-announcing-the-hacker-school-maintainers-program).
+At Recurse Center this batch there is a wonderful thing called the
+[maintainers program](https://www.recurse.com/blog/23-announcing-the-hacker-school-maintainers-program).
 This means that lovely open source project maintainers come help Hacker
 Schoolers contribute to their projects!
 
@@ -40,7 +40,7 @@ AND WRONG. IN PUBLIC.
 
 HOWEVER!
 
-This is *why I'm at Hacker School*. And I'm going to work on lots of
+This is *why I'm at Recurse Center*. And I'm going to work on lots of
 open source anyway and write code and make pull requests and then it
 will not be terrifying. I think Julia is a pretty good place to do this.
 And pairing with people makes doing this stuff way easier.

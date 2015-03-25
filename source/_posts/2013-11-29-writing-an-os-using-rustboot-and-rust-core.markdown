@@ -3,13 +3,13 @@ layout: post
 title: "Writing a kernel using rustboot &amp; rust-core"
 date: 2013-11-29 22:50
 comments: true
-categories: hackerschool coding kernel rust
+categories: hackerschool recurse coding kernel rust
 ---
 
 Here I am again using the word "kernel" in a fairly broad sense :)
 
 So today [Lindsey Kuper](http://www.cs.indiana.edu/~lkuper/), one of
-the residents for next week, came by Hacker School! I spent some time
+the residents for next week, came by Recurse Center! I spent some time
 a while ago trying to learn some Rust, but got discouraged by the
 scary pointers and ran away.
 

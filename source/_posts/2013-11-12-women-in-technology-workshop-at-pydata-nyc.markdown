@@ -14,7 +14,7 @@ volunteers from JP Morgan, which helped a ton.
 
 [Lea Albaugh](http://www.instamatique.com/lea), an amazing artist/designer/
 seamstress/programmer human who I've been lucky enough to hang out with at
-Hacker School, led the beginner's group. She taught basic concepts of
+Recurse Center, led the beginner's group. She taught basic concepts of
 programming (variables and conditionals) using [Ren'Py](http://www.renpy.org/),
 a Python-based tool for making story games. The students implemented
 interactive conversations, which they could add graphics and sound to later.

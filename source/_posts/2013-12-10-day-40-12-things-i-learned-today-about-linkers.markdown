@@ -3,7 +3,7 @@ layout: post
 title: "Day 40: 12 things I learned today about linkers."
 date: 2013-12-10 18:25
 comments: true
-categories: hackerschool coding
+categories: hackerschool recurse coding
 ---
 
 I read 11 parts of

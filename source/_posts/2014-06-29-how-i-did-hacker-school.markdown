@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "How I did Hacker School: ignoring things I understand and doing the impossible"
+title: "How I did Recurse Center: ignoring things I understand and doing the impossible"
 date: 2014-06-29 09:52:47 -0400
 comments: true
-categories: hackerschool
+categories: hackerschool recurse
 ---
-[Hacker School](https://www.hackerschool.com/) is a 12 week workshop
+[Recurse Center](https://www.recurse.com/) is a 12 week workshop
 where you work on becoming a better programmer. But when you have 12
 weeks of uninterrupted time to spend on whatever you want, what do you
 actually do? I
-[wrote down what I worked on every day of Hacker School](http://jvns.ca/blog/categories/hackerschool/),
+[wrote down what I worked on every day of Recurse Center](http://jvns.ca/blog/categories/hackerschool/),
 but I always have trouble articulating advice about what to work on.
 So this isn't advice, it's what I did.
 
 <!-- more -->
 
-One huge part of the way I ended up approaching Hacker School was to
+One huge part of the way I ended up approaching Recurse Center was to
 ignore a ton of stuff that goes on there. For example! I find all
 these things kind of interesting:
 
@@ -75,10 +75,10 @@ questions and helped when I was confused about assembly.
 [Daphne](https://twitter.com/lifeissweetgood) was working on a shell
 and I paired with her and learned a ton.
 
-People at Hacker School know an *amazing* amount of stuff. There is so
+People at Recurse Center know an *amazing* amount of stuff. There is so
 much to learn from them.
 
 So I don't have advice, but for me one some the most important things
-to remember about Hacker School were that *other people have different
-interests than me, and that's okay*, and *I can make Hacker School
+to remember about Recurse Center were that *other people have different
+interests than me, and that's okay*, and *I can make Recurse Center
 what I want it to be*.

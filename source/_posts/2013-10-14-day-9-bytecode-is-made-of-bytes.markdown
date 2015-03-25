@@ -3,10 +3,10 @@ layout: post
 title: "Day 9: Bytecode is made of bytes! CPython isn't scary!"
 date: 2013-10-14 23:27
 comments: true
-categories: hackerschool python compilers
+categories: hackerschool recurse python compilers
 ---
 
-Today I paired with one of the fantastic Hacker School facilitators,
+Today I paired with one of the fantastic Recurse Center facilitators,
 [Allison](http://akaptur.github.io/)  on fixing some bugs in a bytecode
 interpreter. [byterun](https://github.com/nedbat/byterun) is a pure python interpreter for the bytecode that
 CPython generates, written for learning & fun times.

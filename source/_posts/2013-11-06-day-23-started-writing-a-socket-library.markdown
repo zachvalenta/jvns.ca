@@ -3,7 +3,7 @@ layout: post
 title: "Day 23: Started writing a TCP stack in Python"
 date: 2013-11-06 23:26
 comments: true
-categories: hackerschool networking coding
+categories: hackerschool recurse networking coding
 ---
 
 For the last couple of days I've been trying to understand how TCP

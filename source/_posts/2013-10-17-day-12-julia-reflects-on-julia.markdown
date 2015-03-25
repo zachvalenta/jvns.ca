@@ -38,7 +38,7 @@ useful.
 #### 3) The community seems lovely.
 
 So I'm partly biased here because Stefan, one of the creators of Julia,
-has been at Hacker School all week and he is a lovely guy. But I've been
+has been at Recurse Center all week and he is a lovely guy. But I've been
 spending some one in the Julia issue queue as well and all those people
 are lovely as well.
 

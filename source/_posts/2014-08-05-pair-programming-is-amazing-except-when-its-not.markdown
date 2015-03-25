@@ -105,7 +105,7 @@ people it just doesn't work, and with some people it's amazing.
 * "if you feel like someone will see you as less competent for voicing
   your thoughts, I'd rather code by myself" -
   [@hsjuju2](http://twitter.com/hsjuju2)
-* "I think the social rules of [Hacker School] make pairing a lot more
+* "I think the social rules of [Recurse Center] make pairing a lot more
   helpful and fun." - [@hsjuju2](http://twitter.com/hsjuju2)
 * "yeah it really has to be a safe space. Done among people who trust
   and respect one another. It also builds trust and respect." -
@@ -142,7 +142,7 @@ confidence and was awful.
 
 When pairing with people with significantly less experience than me, I
 try to be really careful about this. One good trick that I learned
-from Zach Allaun at Hacker School is to always pair on the less
+from Zach Allaun at Recurse Center is to always pair on the less
 experienced person's project and/or let the newer person drive. If
 you're working on their project then they're at least the expert on
 how their project works, which helps a lot.

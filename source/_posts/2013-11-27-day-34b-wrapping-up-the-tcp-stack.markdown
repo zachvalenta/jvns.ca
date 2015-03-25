@@ -3,11 +3,11 @@ layout: post
 title: "Day 34b: Writing curl using my TCP stack"
 date: 2013-11-27 22:13
 comments: true
-categories: hackerschool networking coding
+categories: hackerschool recurse networking coding
 ---
 
 Today I spent a bunch of time writing READMEs for the projects I've
-been working on at Hacker School, and putting together a
+been working on at Recurse Center, and putting together a
 [project page](http://jvns.ca/projects/) with screenshots and
 explanations.
 

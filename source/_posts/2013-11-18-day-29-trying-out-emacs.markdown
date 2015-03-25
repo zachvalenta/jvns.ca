@@ -3,10 +3,10 @@ layout: post
 title: "Day 29: Trying out Emacs!"
 date: 2013-11-18 23:42
 comments: true
-categories: hackerschool
+categories: hackerschool recurse
 ---
 
-At Hacker School I've been watching all the Lisp wizards with their
+At Recurse Center I've been watching all the Lisp wizards with their
 emacs attached to magical running Lisp processes where they can change
 and reload the code in real time. And I am officially jealous.
 

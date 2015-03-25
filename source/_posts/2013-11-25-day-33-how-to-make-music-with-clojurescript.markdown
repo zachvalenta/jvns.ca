@@ -3,7 +3,7 @@ layout: post
 title: "Day 33: How to make music with ClojureScript"
 date: 2013-11-25 18:06
 comments: true
-categories: hackerschool coding clojure clojurescript music
+categories: hackerschool recurse coding clojure clojurescript music
 ---
 
 I am working on a small project to practice
@@ -32,7 +32,7 @@ WebAudio API.
 
 * [Some demos](http://webaudiodemos.appspot.com/)
 * [Very cool player piano app](https://github.com/liamgriffiths/music-box)
-   by Liam Griffiths, a Hacker Schooler in my batch. You will have to
+   by Liam Griffiths, a Recurser in my batch. You will have to
    run it on your computer but it will be worth it.
 * [Hum](https://github.com/mathias/hum), a small ClojureScript wrapper
   around the WebAudio API. If you want to test if it works in your

@@ -42,7 +42,7 @@ Cathy O'Neil on finance and Raph Koster on game development.
   weekly roundup of links, and not-super-frequent posts about topic
   related to women in geekdom. I love this post by
   [Sumana Harihareshwara](http://www.harihareswara.net/) about
-  [things women talk about at Hacker School](http://geekfeminism.org/2013/12/12/hacker-school-bechdel-test/).
+  [things women talk about at Recurse Center](http://geekfeminism.org/2013/12/12/hacker-school-bechdel-test/).
 * Speaking of [Sumana](http://www.harihareswara.net/)! She blogs about
   a whole bunch of delightful things, like open source communities and
   science fiction books. I learned a lot from her most recent blog

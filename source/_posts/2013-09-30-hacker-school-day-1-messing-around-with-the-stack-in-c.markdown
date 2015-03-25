@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Hacker School Day 1: Messing around with the stack in C"
+title: "Recurse Center Day 1: Messing around with the stack in C"
 date: 2013-09-30 21:45
 comments: true
-categories: hackerschool
+categories: hackerschool recurse
 ---
 
-Today was the first day of [Hacker School](http://hackerschool.com).
+Today was the first day of [Recurse Center](http://recurse.com).
 There were tons of amazing people and it was fun and a bit overwhelming.
 
 I paired with [Daphne](https://github.com/lifeissweetgood) on a shell in

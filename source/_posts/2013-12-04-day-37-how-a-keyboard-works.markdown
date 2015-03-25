@@ -3,7 +3,7 @@ layout: post
 title: "Day 37: After 5 days, my OS doesn't crash when I press a key"
 date: 2013-12-04 20:58
 comments: true
-categories: hackerschool coding kernel favorite
+categories: hackerschool recurse coding kernel favorite
 ---
 
 Right now I'm working towards being able to:

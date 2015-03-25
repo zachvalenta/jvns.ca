@@ -108,7 +108,7 @@ LZ77 compression works. The internet liked it a lot.
 
 [{%img /images/rootkit.png %}](https://github.com/jvns/kernel-module-fun)
 
-When I arrived at Hacker School I had *no idea* about what the Linux
+When I arrived at Recurse Center I had *no idea* about what the Linux
 kernel did or how to make it do anything. So my first action was to
 find out. I wrote a couple of blog posts about
 [what the Linux kernel does](http://jvns.ca/blog/2013/10/02/day-3-what-does-the-linux-kernel-even-do/)

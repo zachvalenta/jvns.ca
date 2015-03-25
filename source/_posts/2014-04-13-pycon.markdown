@@ -105,7 +105,7 @@ comment on because, well, I haven't yet.
 * [Fan-in and Fan-out: The crucial components of concurrency](http://pyvideo.org/video/2572/fan-in-and-fan-out-the-crucial-components-of-con) by Brett
   Slatkin
 * [Building and breaking a Python sandbox](http://pyvideo.org/video/2585/building-and-breaking-a-python-sandbox) by Jessica McKellar (I saw a
-  version of this at Hacker School and it was amazing)
+  version of this at Recurse Center and it was amazing)
 * [Python in the Browser: Intro to Brython](http://pyvideo.org/video/2695/python-in-the-browser-intro-to-brython) by Susan Tan
 * [Garbage Collection in Python](http://pyvideo.org/video/2633/garbage-collection-in-python) by Benjamin Peterson
 * [Subprocess to FFI: Memory, Performance, and Why You Shouldn't Shell Out](http://pyvideo.org/video/2640/subprocess-to-ffi-memory-performance-and-why-y) by Christine Spang

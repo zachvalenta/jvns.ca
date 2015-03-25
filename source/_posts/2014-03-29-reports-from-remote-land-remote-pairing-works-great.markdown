@@ -14,7 +14,7 @@ me the most are
 - how well remote pairing works!
 
 I did a lot of pair programming while at
-[Hacker School](https://www.hackerschool.com/) and I found it to be a
+[Recurse Center](https://www.recurse.com/) and I found it to be a
 really productive way to work. When I got a remote job (I live im
 Montreal and work with people mostly in SF), I thought it would be
 impossible to do pairing, or at the very least it would be a terrible

@@ -18,7 +18,7 @@ and pick some appropriate questions from this list. I've tried to
 categorize them a bit. A lot of these are outright stolen from
 [Edward O'Campo-Gooding's list of questions](https://medium.com/what-i-learned-building/f7a161b5bc70),
 as well as from various people at
-[Hacker School](http://hackerschool.com). I'd love suggestions for
+[Recurse Center](http://recurse.com). I'd love suggestions for
 more!
 
 Special thanks to [@bmastenbrook](https://twitter.com/bmastenbrook),

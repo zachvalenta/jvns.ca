@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Hacker School's Secret Strategy for Being Super Productive (or: Help.)"
+title: "Recurse Center's Secret Strategy for Being Super Productive (or: Help.)"
 date: 2014-03-10 08:08:21 -0700
 comments: true
-categories: hackerschool
+categories: hackerschool recurse
 ---
 
 <small>(this was originally called "Help", but instead we're being
 UpWorthy today)</small>
 
-At Hacker School, people who are new to programming learn incredibly
-fast. Hacker Schoolers learn Clojure and Scala and Erlang and Python
+At Recurse Center, people who are new to programming learn incredibly
+fast. Recursers learn Clojure and Scala and Erlang and Python
 and Ruby and Haskell and web programming and sockets. They write
 compilers and BitTorrent clients and generate music and create new
-programming languages and make games. At Hacker School, people get
+programming languages and make games. At Recurse Center, people get
 dramatically better at programming. It's almost a magical environment,
 and there are many reasons that it's like this.
 
@@ -65,7 +65,7 @@ answer is "oh you don't know?!! He's so important!". An appropriate
 answer would be "He was a South African anti-apartheid
 revolutionary...".
 
-At Hacker School there's a huge emphasis on not acting surprised when
+At Recurse Center there's a huge emphasis on not acting surprised when
 people ask questions that might seem basic, and so people feel safer
 asking questions when they're stuck.
 
@@ -77,7 +77,7 @@ don't need any help at all -- they'll figure it out!
 And they kind of will! But it will be slow and painful and
 inefficient.
 
-What I saw at Hacker School was that the amazing support that was
+What I saw at Recurse Center was that the amazing support that was
 available turned self-directed and autonomous people into
 *superheroes*. I got things done much more quickly, learned much
 faster, and did things I absolutely wouldn't have been able to do
@@ -105,7 +105,7 @@ suggestion.
 
 Everyone has things that they do when they're stuck on something or
 need a short break (check Facebook, go read Twitter, whatever). At
-Hacker School when I was stuck, I'd often go on our internal chat
+Recurse Center when I was stuck, I'd often go on our internal chat
 system and answer questions!
 
 As far as I could tell everyone else also did this. The result was

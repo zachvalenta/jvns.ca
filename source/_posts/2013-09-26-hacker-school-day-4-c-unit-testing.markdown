@@ -1,13 +1,13 @@
 ---
-title: "Hacker School Day -4: unit testing in C. checkmk!"
+title: "Recurse Center Day -4: unit testing in C. checkmk!"
 layout: post
 date: 2013-09-26 22:30
 comments: true
-categories: hackerschool coding
+categories: hackerschool recurse coding
 ---
 
 So I've been accepted to the fall batch at
-[Hacker School](http://hackerschool.com), which starts on Monday. I
+[Recurse Center](http://recurse.com), which starts on Monday. I
 managed to find somewhere to live in New York, so today I went to a café
 to do some coding.
 

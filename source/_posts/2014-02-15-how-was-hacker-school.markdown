@@ -1,20 +1,20 @@
 ---
 layout: post
-title: '"How was Hacker School?"'
+title: '"How was Recurse?"'
 date: 2014-02-15 09:42
 comments: true
-categories: hackerschool
+categories: hackerschool recurse
 ---
 
-I got back from Hacker School 2 months ago, and people have been
-asking me "How was Hacker School?" pretty frequently.
+I got back from Recurse Center 2 months ago, and people have been
+asking me "How was Recurse Center?" pretty frequently.
 
-Firstly, Hacker School was amazing. It was one of the best experiences
+Firstly, Recurse Center was amazing. It was one of the best experiences
 I've had, and I owe so much to them. I find it a bit hard to
 articulate exactly why it was so great, but I'll try.
 
-Hacker School is *welcoming*. On the first day of Hacker School, Dave
-talked about how everyone is welcome at Hacker School. He asked us if
+Recurse Center is *welcoming*. On the first day of Recurse Center, Dave
+talked about how everyone is welcome at Recurse Center. He asked us if
 anyone felt like they didn't belong, and a bunch of people raised
 their hands. He talked about how everyone who was there belongs, and
 we talked about things that we were excited and scared about. It was
@@ -22,35 +22,35 @@ an amazing way to start.
 
 <!-- more -->
 
-Hacker School is *positive*. When I had a bug that I didn't understand
+Recurse Center is *positive*. When I had a bug that I didn't understand
 and asked one of the facilitators to help me out, they would
 frequently say "Oh, *interesting*!". The attitude was "Oh, is
 something not working? How delightful! A learning opportunity!".
 People of course got frustrated by gnarly bugs, but the overall
 atmosphere was relentlessly positive.
 
-At Hacker School, people say *"yes, and!"*. If you just learned to
+At Recurse Center, people say *"yes, and!"*. If you just learned to
 program and want to write a compiler, people will say "Great!
 Awesome!" and give you some suggestions of how to start. I don't
 remember anyone ever being told that they couldn't do something
 because they didn't know enough. The answer is always "yes! And here
 is what you will need to know to do this thing!".
 
-Hacker School has *amazing energy*. Before I went, I worried that I
+Recurse Center has *amazing energy*. Before I went, I worried that I
 wouldn't be able to motivate myself to program today or wouldn't have
 enough ideas to work. This was so wrong that it's hilarious. Everyone
 has so many ideas and is working on so many interesting things that
 the difficult thing is saying no. I did more interesting projects in
-the 3 months of Hacker School than I did in the rest of my life
+the 3 months of Recurse Center than I did in the rest of my life
 combined.
 
-At Hacker School, people do a lot of *pairing*, which is a fantastic
+At Recurse Center, people do a lot of *pairing*, which is a fantastic
 way to learn, for a couple of reasons. It helps you focus, because it
 means you can't go check Twitter instead of coding. It's also a great
 way to learn things accidentally. I've learned so much by watching how
 other people code and learning new ways of thinking.
 
-Hacker School's *resident program* is fantastic. In my batch, I had
+Recurse Center's *resident program* is fantastic. In my batch, I had
 great conversations with
 
 * [Lindsey Kuper](http://composition.al/about/) convinced me to use
@@ -73,7 +73,7 @@ The residents are all carefully chosen to be really approachable and
 positive and have tons of things to teach. It was amazing to have the
 opportunity to pair with all of them.
 
-The Hacker School *facilitators* are wonderful at what they do. Alan,
+The Recurse Center *facilitators* are wonderful at what they do. Alan,
 Allison, Mary, Tom, and Zach are all amazing. I can't do them justice
 here, but I'm going to try to explain why.
 
@@ -102,25 +102,25 @@ here, but I'm going to try to explain why.
 The facilitators work incredibly hard at helping people become better
 prorammers and it really shows.
 
-Hacker School is an *experiment*. The founders and facilitators are
+Recurse Center is an *experiment*. The founders and facilitators are
 constantly trying out new ideas and trying to make it better. Dave's
 blog post on
-[treating people like adults](https://www.hackerschool.com/blog/28-treating-people-like-adults)
+[treating people like adults](https://www.recurse.com/blog/28-treating-people-like-adults)
 talks about one experiment that didn't work out.
 
-The Hacker School *admissions* process is one of the most important
-things. Hacker School works really hard on only admitting people who
+The Recurse Center *admissions* process is one of the most important
+things. Recurse Center works really hard on only admitting people who
 are curious and friendly and wonderful. The other people in my batch
 were amazing. I learned so much from them and I made some great
 friends.
 
-Hacker School's motto is *"Never Graduate"*. Always keep learning,
+Recurse Center's motto is *"Never Graduate"*. Always keep learning,
 keep being curious, keep building. There's no such thing as a perfect
 place so it's not perfect, but they work really hard on always
 improving, and I think they're doing a great job.
 
 If you want to learn more, the
-[manual](https://www.hackerschool.com/manual) is great, the
-[blog](https://www.hackerschool.com/blog) is great, the
-[FAQ](https://www.hackerschool.com/faq) is great, and you can
-[apply here](https://www.hackerschool.com/apply).
+[manual](https://www.recurse.com/manual) is great, the
+[blog](https://www.recurse.com/blog) is great, the
+[FAQ](https://www.recurse.com/faq) is great, and you can
+[apply here](https://www.recurse.com/apply).

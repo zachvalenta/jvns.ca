@@ -3,7 +3,7 @@ layout: post
 title: "Day 44: qemu + gdb = so great"
 date: 2013-12-17 18:34
 comments: true
-categories: hackerschool kernel
+categories: hackerschool recurse kernel
 ---
 
 Today I did some more debugging and cleaning up. Previously I was

@@ -3,13 +3,13 @@ layout: post
 title: "Day 10: Goals. Goals? Maybe I need to be *reading* more code?"
 date: 2013-10-16 00:25
 comments: true
-categories: hackerschool coding goals
+categories: hackerschool recurse coding goals
 ---
 
 Today I learned a bit of Clojure, and learned about a Julia plotting library
 called [Gadfly.jl](https://github.com/dcjones/Gadfly.jl)
 But it didn't feel super productive, and now I'm thinking a bit about
-what my goals for Hacker School are. I think they're something like:
+what my goals for Recurse Center are. I think they're something like:
 
 1. Contribute to open source projects! This is happening.
 2. Write a non-trivial piece of software from scratch that I feel good

@@ -3,12 +3,12 @@ layout: post
 title: "What happens when you run 'Hello, world'"
 date: 2013-11-29 00:32
 comments: true
-categories: hackerschool coding kernel favorite
+categories: hackerschool recurse coding kernel favorite
 ---
 
 So today I experimented with a new way of learning -- I wanted to
 understand what happens when I run a "hello world" program, but I
-wasn't at Hacker School. So I wrote down my current understanding and
+wasn't at Recurse Center. So I wrote down my current understanding and
 a bunch of questions and asked Twitter!
 
 <blockquote class="twitter-tweet" lang="en"><p>if anyone has too much time and operating system knowledge, I&#39;d love comments and &quot;well, actually&quot;s on <a href="https://t.co/YqSyV5ap4Q">https://t.co/YqSyV5ap4Q</a></p>&mdash; Julia Evans (@b0rk) <a href="https://twitter.com/b0rk/statuses/406082448288522240">November 28, 2013</a></blockquote>

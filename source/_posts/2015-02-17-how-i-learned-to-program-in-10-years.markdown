@@ -16,7 +16,7 @@ But then I found I had something to say! I thought a little bit about
 this blog, and how it might look like I sprang from the womb being
 excited about strace or thinking about how to build an operating system,
 or whatever. But in fact I spent about 10 years learning to program
-before going to Hacker School, mostly at fairly low speeds.
+before going to Recurse Center, mostly at fairly low speeds.
 
 I drew a totally unscientific graph about what that felt like:
 

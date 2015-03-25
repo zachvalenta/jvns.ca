@@ -6,7 +6,7 @@ comments: true
 categories: networking hackerschool
 ---
 
-During Hacker School, I wanted to understand networking better, and I
+During Recurse Center, I wanted to understand networking better, and I
 decided to write a miniature TCP stack as part of that. I was much
 more comfortable with Python than C and I'd recently discovered the
 [scapy](http://www.secdev.org/projects/scapy/) networking library

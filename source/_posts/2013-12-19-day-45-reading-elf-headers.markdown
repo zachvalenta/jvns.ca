@@ -3,7 +3,7 @@ layout: post
 title: "Day 45: I now have Rust code for executing executables!"
 date: 2013-12-19 11:10
 comments: true
-categories: hackerschool coding kernel
+categories: hackerschool recurse coding kernel
 ---
 
 So I'm working on writing a kernel in Rust, and I wanted to be able to

@@ -3,7 +3,7 @@ layout: post
 title: "Day 4: Processes vs threads, and kernel modules!"
 date: 2013-10-04 10:28
 comments: true
-categories: hackerschool exec kernel
+categories: hackerschool recurse exec kernel
 ---
 
 There was Linux Kernel Club again yesterday! We spent about half our

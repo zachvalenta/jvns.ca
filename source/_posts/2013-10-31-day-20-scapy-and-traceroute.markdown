@@ -23,9 +23,9 @@ So using scapy, you can create IP and UDP packets like this:
 
 ~~~
 from scapy.all import *
-ip_packet = IP(dst="hackerschool.com", ttl=10)
+ip_packet = IP(dst="recurse.com", ttl=10)
 udp_packet = UDP(dport=40000)
-full_packet = IP(dst="hackerschool.com", ttl=10) / UDP(dport=40000)
+full_packet = IP(dst="recurse.com", ttl=10) / UDP(dport=40000)
 ~~~
 
 Then you can send a packet like this:

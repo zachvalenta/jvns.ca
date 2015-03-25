@@ -3,7 +3,7 @@ layout: post
 title: "Day 7: An echo server in Clojure"
 date: 2013-10-09 20:10
 comments: true
-categories: hackerschool coding clojure
+categories: hackerschool recurse coding clojure
 ---
 
 Today I spent some time on a fun kernel module, but it is not working

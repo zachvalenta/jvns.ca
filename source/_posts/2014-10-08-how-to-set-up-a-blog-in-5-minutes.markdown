@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-Some people at [Hacker School](https://hackerschool.com) were asking
+Some people at [Recurse Center](https://recurse.com) were asking
 for advice / directions for how to set up a blog. So here are some
 directions for a simple possible way!
 

@@ -3,10 +3,10 @@ layout: post
 title: "Day 34: The tiniest operating system"
 date: 2013-11-26 18:39
 comments: true
-categories: hackerschool coding
+categories: hackerschool recurse coding
 ---
 
-One of my as-yet-unrealized goals for Hacker School is to write an
+One of my as-yet-unrealized goals for Recurse Center is to write an
 operating system, at least a tiny one.
 
 Today I decided to actually start in earnest, because this operating

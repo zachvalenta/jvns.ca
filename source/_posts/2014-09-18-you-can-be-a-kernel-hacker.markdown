@@ -9,7 +9,7 @@ categories: kernel
 <small> This blog post is adapted from a talk I gave at Strange Loop
 2014 with the same title. [Watch the video!](https://www.youtube.com/watch?v=0IQlpFWTFbM) </small>
 
-When I started [Hacker School](https://hackerschool.com), I wanted to
+When I started [Recurse Center](https://recurse.com), I wanted to
 learn how the Linux kernel works. I'd been using Linux for ten years,
 but I still didn't understand very well what my kernel did. While
 there, I found out that:
@@ -479,7 +479,7 @@ mentioned:
 * Previous writing:
   [4 paths to being a kernel hacker](http://jvns.ca/blog/2014/01/04/4-paths-to-being-a-kernel-hacker/),
   everything I've written about [kernels](http://jvns.ca/blog/categories/kernel/)
-* I learned all of this at [Hacker School](https://www.hackerschool.com/)
+* I learned all of this at [Recurse Center](https://www.recurse.com/)
 * [LXR](http://lxr.linux.no/linux+v3.12.6/) and
   [http://livegrep.com/](http://livegrep.com/search/linux) are great
   for searching the Linux kernel

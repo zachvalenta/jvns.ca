@@ -3,7 +3,7 @@ layout: post
 title: "Day 1: What does a shell even do?"
 date: 2013-10-01 22:00
 comments: true
-categories: hackerschool coding shell
+categories: hackerschool recurse coding shell
 ---
 
 So I'm working on writing a shell in C a little bit. Before yesterday, I

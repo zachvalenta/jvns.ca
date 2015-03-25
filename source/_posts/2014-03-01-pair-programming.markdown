@@ -7,7 +7,7 @@ categories: stripe hackerschool
 ---
 
 So I started at [Stripe](https://stripe.com/) this week. I did a lot
-of pair programming at [Hacker School](http://hackerschool.com), and I
+of pair programming at [Recurse Center](http://recurse.com), and I
 found it super productive. As of right now, there's no culture of pair
 programming at Stripe. However, Stripe is a place full of delightful
 people who are willing to try new things. So this past week I've found
@@ -42,8 +42,8 @@ A few things I like about pairing:
    to go look at cats together.)
 
 It's definitely possible to have pairing sessions that go badly, of
-course. Hacker School's
-[excellent advice on pairing](https://www.hackerschool.com/manual#sec-pairing)
+course. Recurse Center's
+[excellent advice on pairing](https://www.recurse.com/manual#sec-pairing)
 suggests
 
 > It's good to make sure you have similar (or at least compatible)

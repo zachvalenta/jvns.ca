@@ -18,7 +18,7 @@ This blog is mostly about having fun with systems programming, with lots of
 forays into other areas. There's a list of my [favorite posts](http://jvns.ca/blog/categories/favorite/), as well as some
 [projects](http://jvns.ca/projects/) I've worked on.
 
-I spent the fall of 2013 at [Hacker School](http://hackerschool.com), which
+I spent the fall of 2013 at [Recurse Center](http://recurse.com), which
 houses the best programming community I've seen anywhere. I wrote down [what I
 did every day while there](http://jvns.ca/blog/categories/hackerschool/), if
 you want to know what it's like.

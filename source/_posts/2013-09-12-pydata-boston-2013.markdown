@@ -36,8 +36,8 @@ gave a short intro to Julia. What stood out to me the most was not how cool
 Julia looks (though it does!) but he just seemed like such a lovely guy. He
 said there's lots of work to be done on Julia, and now I really want to
 contribute. Apparently most of the standard library for Julia is written in
-Julia!  Also [Stefan Karpinski](http://karpinski.org/) is a Hacker School
-resident and &lt;3 Hacker School. [Here's the video of his talk](http://vimeo.com/73317363).
+Julia!  Also [Stefan Karpinski](http://karpinski.org/) is a Recurse Center
+resident and &lt;3 Recurse Center. [Here's the video of his talk](http://vimeo.com/73317363).
 
 In the lightning talks, [Robert Speer](http://web.media.mit.edu/~rspeer/)
 demoed a neat library for fixing Unicode called

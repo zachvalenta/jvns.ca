@@ -30,7 +30,7 @@ then learn those things!
 <!-- more -->
 
 One of my very favorite examples of this is how I started learning
-about operating systems. At the beginning of Hacker School, I realized
+about operating systems. At the beginning of Recurse Center, I realized
 that I legitimately did not know what a kernel was or did more than
 "er, operating system stuff".
 
@@ -98,7 +98,7 @@ analysis?" (actually a thing I would like to understand!)
 ## HUGE SUCCESS
 
 So! Understanding and learning are more important than feeling smart.
-Probably the most important thing I learned at Hacker School was how
+Probably the most important thing I learned at Recurse Center was how
 to ask questions and admit when I don't understand something. I know
 way more things now as a result! (see: this entire blog of things I
 have learned)
