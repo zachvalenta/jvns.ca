@@ -6,15 +6,15 @@ comments: true
 categories: hackerschool recurse
 ---
 
-I got back from Recurse Center 2 months ago, and people have been
-asking me "How was Recurse Center?" pretty frequently.
+I got back from the Recurse Center 2 months ago, and people have been
+asking me "How was the Recurse Center?" pretty frequently.
 
-Firstly, Recurse Center was amazing. It was one of the best experiences
+Firstly, the Recurse Center was amazing. It was one of the best experiences
 I've had, and I owe so much to them. I find it a bit hard to
 articulate exactly why it was so great, but I'll try.
 
-Recurse Center is *welcoming*. On the first day of Recurse Center, Dave
-talked about how everyone is welcome at Recurse Center. He asked us if
+The Recurse Center is *welcoming*. On the first day of my Recurse Center batch, Dave
+talked about how everyone is welcome at the Recurse Center. He asked us if
 anyone felt like they didn't belong, and a bunch of people raised
 their hands. He talked about how everyone who was there belongs, and
 we talked about things that we were excited and scared about. It was
@@ -22,14 +22,14 @@ an amazing way to start.
 
 <!-- more -->
 
-Recurse Center is *positive*. When I had a bug that I didn't understand
+The Recurse Center is *positive*. When I had a bug that I didn't understand
 and asked one of the facilitators to help me out, they would
 frequently say "Oh, *interesting*!". The attitude was "Oh, is
 something not working? How delightful! A learning opportunity!".
 People of course got frustrated by gnarly bugs, but the overall
 atmosphere was relentlessly positive.
 
-At Recurse Center, people say *"yes, and!"*. If you just learned to
+At the Recurse Center, people say *"yes, and!"*. If you just learned to
 program and want to write a compiler, people will say "Great!
 Awesome!" and give you some suggestions of how to start. I don't
 remember anyone ever being told that they couldn't do something
@@ -44,13 +44,13 @@ the difficult thing is saying no. I did more interesting projects in
 the 3 months of Recurse Center than I did in the rest of my life
 combined.
 
-At Recurse Center, people do a lot of *pairing*, which is a fantastic
+At the Recurse Center, people do a lot of *pairing*, which is a fantastic
 way to learn, for a couple of reasons. It helps you focus, because it
 means you can't go check Twitter instead of coding. It's also a great
 way to learn things accidentally. I've learned so much by watching how
 other people code and learning new ways of thinking.
 
-Recurse Center's *resident program* is fantastic. In my batch, I had
+The Recurse Center's *resident program* is fantastic. In my batch, I had
 great conversations with
 
 * [Lindsey Kuper](http://composition.al/about/) convinced me to use
@@ -102,19 +102,19 @@ here, but I'm going to try to explain why.
 The facilitators work incredibly hard at helping people become better
 prorammers and it really shows.
 
-Recurse Center is an *experiment*. The founders and facilitators are
+The Recurse Center is an *experiment*. The founders and facilitators are
 constantly trying out new ideas and trying to make it better. Dave's
 blog post on
 [treating people like adults](https://www.recurse.com/blog/28-treating-people-like-adults)
 talks about one experiment that didn't work out.
 
 The Recurse Center *admissions* process is one of the most important
-things. Recurse Center works really hard on only admitting people who
+things. The Recurse Center works really hard on only admitting people who
 are curious and friendly and wonderful. The other people in my batch
 were amazing. I learned so much from them and I made some great
 friends.
 
-Recurse Center's motto is *"Never Graduate"*. Always keep learning,
+The Recurse Center's motto is *"Never Graduate"*. Always keep learning,
 keep being curious, keep building. There's no such thing as a perfect
 place so it's not perfect, but they work really hard on always
 improving, and I think they're doing a great job.
