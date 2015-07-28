@@ -235,7 +235,7 @@ also just [read the Twitter replies](https://twitter.com/b0rk/status/57688305686
 * `iotop` is top, but for IO! Awesome!
 * `iostat` and `lsof` too for seeing what's up with IO and files right now
 * `top` and `htop` for CPU stats, of course (pro tip: use htop instead of top)
-* `strace` because [we <3 strace](http://jvns.ca/categories/strace)
+* `strace` because [we <3 strace](http://jvns.ca/blog/categories/strace/)
 * `perf` is [a magical tool that can do anything](http://www.brendangregg.com/perf.html)
 * `atop` which I don't even understand what it is
 * `pidstat` is an amazing program for looking at both CPU and disk activity which we're going to explain a little more later
