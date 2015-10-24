@@ -162,7 +162,7 @@ It's `(deleted)`, but we can still look at it!
 `cat /proc/8604/exe > recovered_smile` will recover our executable. Wow.
 
 There's also a ton of other really useful information about processes
-in `/proc`. (like which files they have open -- try `ls -l/proc/&lt;pid&gt;/fd`)
+in `/proc`. (like which files they have open -- try `ls -l/proc/<pid>/fd`)
 
 You can find out more with `man proc`.
 
