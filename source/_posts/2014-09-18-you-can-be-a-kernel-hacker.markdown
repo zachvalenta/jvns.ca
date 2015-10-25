@@ -44,7 +44,7 @@ apply to OS X. We'll talk about
     * Read some kernel code!
     * Write a fun kernel module!
     * Write an operating system!
-    * Try the Eudalypta challenge
+    * Try the Eudyptula challenge
     * Do an internship.
 
 ### What even is a kernel?
@@ -435,11 +435,11 @@ management and how executing a program works and so many more things!
 And I'll never finish it,
 [and that's okay](http://jvns.ca/blog/2014/03/21/my-rust-os-will-never-be-finished/).
 
-### Strategy 5: Do the Eudalypta challenge
+### Strategy 5: Do the Eudyptula challenge
 
 If you don't have an infinite number of ideas for hilarious kernel
 module pranks to play on your friends (I certainly don't!), the
-[Eudalypta Challenge](http://eudyptula-challenge.org/) is specifically
+[Eudyptula Challenge](http://eudyptula-challenge.org/) is specifically
 built to help you get started with kernel programming, with
 progressively harder steps. The first one is to just write a
 "hello world" kernel module, which is pretty straightforward!
