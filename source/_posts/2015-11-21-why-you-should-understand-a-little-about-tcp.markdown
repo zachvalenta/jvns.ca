@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why you should understand (a little) about TCP"
+title: "How understanding TCP made me a wizard"
 date: 2015-11-21 09:13:44 -0500
 comments: true
 categories: 
