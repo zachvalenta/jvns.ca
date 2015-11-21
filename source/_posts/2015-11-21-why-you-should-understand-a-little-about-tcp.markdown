@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "How understanding TCP made me a wizard"
+title: "Why you should understand (a little) about TCP"
 date: 2015-11-21 09:13:44 -0500
 comments: true
 categories: 
 ---
 
-As normal on this blog, the answer is "it will make you a wizard". Here's how.
+This isn't about understanding *everything* about TCP or reading through [TCP/IP Illustrated](http://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469). It's about how a little bit of TCP knowledge is essential. Here's why.
 
 When I was at the [Recurse Center](https://recurse.com), I wrote a TCP stack in Python ([and wrote about what happens if you write a TCP stack in Python](http://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/)). This was a fun learning experience, and I thought that was all.
 
