@@ -3,7 +3,7 @@ layout: post
 title: "Why you should understand (a little) about TCP"
 date: 2015-11-21 09:13:44 -0500
 comments: true
-categories: 
+categories: networking
 ---
 
 This isn't about understanding *everything* about TCP or reading through [TCP/IP Illustrated](http://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469). It's about how a little bit of TCP knowledge is essential. Here's why.
