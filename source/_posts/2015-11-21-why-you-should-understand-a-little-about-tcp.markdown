@@ -14,7 +14,7 @@ A year later, at work, someone mentioned on Slack "hey I'm publishing messages t
 
 A little background: NSQ is a queue that you send to messages to. The way you publish a message is to make an HTTP request on localhost. It really should not take **40 milliseconds** to send a HTTP request to localhost. Something was terribly wrong. The NSQ daemon wasn't under high CPU load, it wasn't using a lot of memory, it didn't seem to be a garbage collection pause. Help.
 
-Then I remembered an article I'd read a week before called [In search of performance - how we shaved 200ms off every POST request](https://gocardless.com/blog/in-search-of-performance-how-we-shaved-200ms-off-every-post-request/). In that article, they talk about why every one of their POST requests were taking 200 extra seconds. That's.. weird. Here's the key paragraph from the post
+Then I remembered an article I'd read a week before called [In search of performance - how we shaved 200ms off every POST request](https://gocardless.com/blog/in-search-of-performance-how-we-shaved-200ms-off-every-post-request/). In that article, they talk about why every one of their POST requests were taking 200 extra milliseconds. That's.. weird. Here's the key paragraph from the post
 
 ### Delayed ACKs & TCP_NODELAY
 
@@ -50,6 +50,10 @@ Here's what the rest of the TCP exchange looked like after that:
 
 That period where the application and HAProxy are both passive-aggressively
 waiting for the other to send information? That's the extra 200ms. The application is doing it because of Nagle's algorithm, and HAProxy because of delayed ACKs.
+
+Delayed ACKs happen, as far as I understand, by default on *every* Linux system.
+So this isn't an edge case or an anomaly -- if you send your data in more than 1
+TCP packet, it can happen to you.
 
 ### in which we become wizards
 
