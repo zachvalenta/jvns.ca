@@ -24,7 +24,7 @@ But we were processing a relatively small number of records, and it was taking 1
 
 **Know more things**
 
-This [TCP bug](http://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/) I talked about yesterday? I wouldn't have been able to fix that in my first job out of undergrad. I just didn't understand enough about how computer networks work, or computers (I had an awesome math & theoretical CS degree and I did not learn anything about computers there.). And I didn't know strace.
+This [TCP bug](http://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/) I talked about yesterday? I wouldn't have been able to fix that in my first job out of grad school. I just didn't understand enough about how computer networks work, or computers (I had an awesome math & theoretical CS degree and I did not learn anything about computers there.). And I didn't know strace.
 
 There's a service at work that sometimes takes a long time to respond because of JVM garbage collection pauses. If you don't know that a common source of latency issues on the JVM is garbage collection pauses (or worse, if you don't know that garbage collection pauses are even a thing that happen), then you're going to have a really bad day trying to figure that out.
 
@@ -61,5 +61,6 @@ So I ran tcpdump on a machine that I knew was sending (valid) requests to Redis,
 **I like it more**
 
 I used to not really like debugging. But I started being able to solve harder bugs, and now when I find a thorny debugging problem it's way more exciting to me than writing new code. Most of the code I write is really straightforward. A difficult bug is way more likely to teach me something I didn't know before about how computers can break.
+
 
 ❤ debugging ❤
