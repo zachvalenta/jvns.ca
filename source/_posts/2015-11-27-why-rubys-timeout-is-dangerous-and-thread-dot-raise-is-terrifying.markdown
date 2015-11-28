@@ -69,7 +69,7 @@ So, how do other languages approach this? Go doesn't have exceptions, Javascript
 
 ## Not just an implementation issue
 
-This is not just an implementation issue in Ruby. The whole premise of a general timeout method that will interrupt an arbitrary block of code like this is flawed. Here's the API again:
+This is not just an implementation issue in Ruby, and you can read [a great comment on Reddit illustrating this](https://www.reddit.com/r/programming/comments/3ui1sw/why_rubys_timeout_is_dangerous_and_threadraise_is/cxfg98b). The whole premise of a general timeout method that will interrupt an arbitrary block of code like this is flawed. Here's the API again:
 
 ```
 require 'timeout'
