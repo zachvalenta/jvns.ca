@@ -51,11 +51,13 @@ This is where the implications get interesting, and terrifying. This means that 
 
 Nobody writes code to defend against an exception being raised **on literally any line**. That's not even possible. So `Thread.raise` is basically like a sneak attack on your code that could result in almost anything. It would probably be okay if it were pure-functional code that did not modify any state. But this is Ruby, so that's unlikely :)
 
+Timeout uses Thread.raise, so it is not safe to use.
+
 ## Other languages and Thread.raise
 
 So, how do other languages approach this? Go doesn't have exceptions, Javascript doesn't have threads -- let's talk about Python, Java, and C#, and C++.
 
-**Java** has [java.lang.Thread.stop](http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#stop%28java.lang.Throwable%29), which does essentially the same thing. It was deprecated in Java 6, disabled entirely in Java 8, and its documentation reads:
+**Java** has [java.lang.Thread.stop](http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html#stop%28java.lang.Throwable%29), which does essentially the same thing. It was deprecated in Java 1.2, in 1998, disabled entirely in Java 8, and its documentation reads:
 
 > **Deprecated.** This method is inherently unsafe. See stop() for details. An additional danger of this method is that it may be used to generate exceptions that the target thread is unprepared to handle (including checked exceptions that the thread could not possibly throw, were it not for this method). For more information, see [Why are Thread.stop, Thread.suspend and Thread.resume Deprecated?.](http://docs.oracle.com/javase/6/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html)
 
@@ -64,6 +66,21 @@ So, how do other languages approach this? Go doesn't have exceptions, Javascript
 **C#** has `Thread.Abort()` which throws a `ThreadAbortException` in the thread. Googling it finds me a series of [StackOverflow discussions](http://stackoverflow.com/questions/1559255/whats-wrong-with-using-thread-abort) & forum posts about how it's dangerous and should not be used, for the reasons we've learned about.
 
 **C++**: `std::thread`s [are not interruptible](http://en.cppreference.com/w/cpp/thread/thread).
+
+## Not just an implementation issue
+
+This is not just an implementation issue in Ruby. The whole premise of a general timeout method that will interrupt an arbitrary block of code like this is flawed. Here's the API again:
+
+```
+require 'timeout'
+status = Timeout::timeout(5) {
+  # Something that should be interrupted if it takes more than 5 seconds...
+}
+```
+
+There is no way to safely interrupt an arbitrary block of code. **Anything** could be happening at the end of that 5 seconds.
+
+However! All is not lost if we would like to interrupt our threads. Let's turn to Java again! (you know all the times we say Ruby is more fun than Java? TODAY JAVA IS MORE FUN BECAUSE IT MAKES MORE SENSE.) Java has a [Thread.interrupt](https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html) method, which sends `InterruptedException` to a thread. But an InterruptedException is only allowed to be thrown at specific times, for instance during `Thread.sleep`. Otherwise the thread needs to explicitly call `Thread.interrupted()` to see if it's supposed to stop.
 
 ## On documentation
 
