@@ -8,7 +8,7 @@ categories: networking
 
 This isn't about understanding *everything* about TCP or reading through [TCP/IP Illustrated](http://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469). It's about how a little bit of TCP knowledge is essential. Here's why.
 
-When I was at the [Recurse Center](https://recurse.com), I wrote a TCP stack in Python ([and wrote about what happens if you write a TCP stack in Python](http://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/)). This was a fun learning experience, and I thought that was all.
+When I was at the [Recurse Center](http://recurse.com), I wrote a TCP stack in Python ([and wrote about what happens if you write a TCP stack in Python](http://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/)). This was a fun learning experience, and I thought that was all.
 
 A year later, at work, someone mentioned on Slack "hey I'm publishing messages to NSQ and it's taking 40ms each time". I'd already been thinking about this problem on and off for a week, and hadn't gotten anywhere.
 

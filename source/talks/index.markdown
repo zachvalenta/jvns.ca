@@ -7,6 +7,20 @@ sharing: false
 footer: true
 ---
 
+## Systems programming as a swiss army knife
+
+**Abstract**: You might think of the Linux kernel as something that only kernel developers need to know about. Not so! It turns out that understanding some basics about kernels and systems programming makes you a better developer, and you can use this knowledge when debugging your normal everyday Python programs.
+
+<strong>
+PyCon, April 2015
+</strong>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/5v6o-VsLAew" frameborder="0" allowfullscreen></iframe>
+
+## Opening statements: PyCon 2015
+
+In which [I very excitedly welcome everyone to the conference](https://www.youtube.com/watch?v=N_H6JpkgM8s). this was the first time I spoke in front of more than 1000 people and it was super fun.
+
 ## You can be a kernel hacker!
 
 <strong>
