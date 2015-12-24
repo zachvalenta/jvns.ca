@@ -3,7 +3,7 @@ layout: post
 title: "Some easy statistics: Bootstrap confidence intervals"
 date: 2015-07-04 17:40:40 -0400
 comments: true
-categories: 
+categories: machinelearning
 ---
 
 <small>I am not actually on a plane to Puerto Rico, but I wrote this post when I was :)</small>

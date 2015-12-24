@@ -3,7 +3,7 @@ layout: post
 title: "Senior engineering &amp; fantasy heroes"
 date: 2015-03-28 10:30:29 -0400
 comments: true
-categories: 
+categories: culture
 ---
 
 I was talking to someone at work this past week about what I'd want out

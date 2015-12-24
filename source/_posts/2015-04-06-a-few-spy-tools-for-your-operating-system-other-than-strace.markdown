@@ -3,7 +3,7 @@ layout: post
 title: "A few spy tools for your operating system (other than strace!)"
 date: 2015-04-06 22:30:02 -0400
 comments: true
-categories: 
+categories: spytools strace
 ---
 
 

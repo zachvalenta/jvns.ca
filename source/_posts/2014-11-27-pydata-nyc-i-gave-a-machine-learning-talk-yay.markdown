@@ -3,7 +3,7 @@ layout: post
 title: "PyData NYC (I gave a machine learning talk! yay!)"
 date: 2014-11-27 01:04:26 -0500
 comments: true
-categories: talks machinelearning conferences
+categories: machinelearning conference
 ---
 
 This past weekend I went to PyData NYC. It was super fun! I got to meet

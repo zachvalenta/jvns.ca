@@ -3,7 +3,7 @@ layout: post
 title: "Nancy Drew and the Case of the Slow Program"
 date: 2015-03-15 14:14:35 -0400
 comments: true
-categories: systems
+categories: performance
 ---
 
 Yesterday I tweeted:

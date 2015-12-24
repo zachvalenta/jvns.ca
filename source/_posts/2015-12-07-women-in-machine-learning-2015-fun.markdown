@@ -3,7 +3,7 @@ layout: post
 title: "Women in Machine Learning 2015 (fun!!!)"
 date: 2015-12-07 20:22:29 -0500
 comments: true
-categories: 
+categories: machinelearning conference
 ---
 
 I went to the [Women in Machine Learning](http://wiml2015.weebly.com/) conference yesterday (part of [NIPS](http://nips.cc)). It was SO FUN. I never go to academic conferences, and talking to grad students about their research and what methods they think are exciting is amazing. I actually liked it a lot more than an industry conference because everything was so alien & unfamiliar to me and everyone knew way more about their field than me. I learned more than I did by going to (for instance) PyCon, which is a fantastic industry conference.

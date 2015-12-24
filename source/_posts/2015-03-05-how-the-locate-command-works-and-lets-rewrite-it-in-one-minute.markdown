@@ -3,7 +3,7 @@ layout: post
 title: " How the locate command works (and let's write a faster version in one minute!)"
 date: 2015-03-05 08:12:48 -0800
 comments: true
-categories: coding
+categories: performance how-things-work
 ---
 
 Sometimes I want to find all the Alanis songs on my computer. There are

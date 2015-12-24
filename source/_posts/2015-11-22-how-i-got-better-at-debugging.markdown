@@ -3,7 +3,7 @@ layout: post
 title: "How I got better at debugging"
 date: 2015-11-22 09:30:13 -0500
 comments: true
-categories: debugging
+categories: favorite
 ---
 
 I had a performance review last week where I was told, among other things, that I'm very good at debugging, especially difficult & confusing problems. I thought about this and I was like YEAH I AM. But I didn't used to be. What happened?!

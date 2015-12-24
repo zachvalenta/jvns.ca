@@ -3,7 +3,7 @@ layout: post
 title: "PAPERS ARE AMAZING: Profiling threaded programs with Coz"
 date: 2015-10-31 10:40:02 -0400
 comments: true
-categories: 
+categories: performance
 ---
 
 HI BLOG FRIENDS!

@@ -3,7 +3,7 @@ layout: post
 title: "A zine about strace"
 date: 2015-04-14 22:52:23 -0400
 comments: true
-categories: strace
+categories: spytools strace
 ---
 
 As some of you might have heard, I wrote a zine to teach people about

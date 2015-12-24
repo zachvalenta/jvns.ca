@@ -3,7 +3,7 @@ layout: post
 title: "Data Day Texas 2015"
 date: 2015-01-12 20:57:35 -0500
 comments: true
-categories: conferences, machinelearning
+categories: conference machinelearning
 ---
 
 I went to Data Day Texas this past weekend. It was a 1-day conference,

@@ -3,7 +3,7 @@ layout: post
 title: "How is a binary executable organized? Let's explore it!"
 date: 2014-09-06 11:18:38 -0400
 comments: true
-categories: 
+categories: how-things-work
 ---
 
 I used to think that executables were totally impenetrable. I'd

@@ -3,7 +3,7 @@ layout: post
 title: "Strange Loop 2014"
 date: 2014-09-24 10:29:47 -0400
 comments: true
-categories: conferences
+categories: conference
 ---
 
 I spent some of last week at

@@ -3,7 +3,7 @@ layout: post
 title: "CUSEC = fun"
 date: 2014-01-22 18:51
 comments: true
-categories: speaking
+categories: speaking conference
 ---
 
 Last week I attended [CUSEC](http://2014.cusec.net/), an undergrad

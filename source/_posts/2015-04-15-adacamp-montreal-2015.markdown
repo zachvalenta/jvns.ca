@@ -3,7 +3,7 @@ layout: post
 title: "AdaCamp Montreal 2015"
 date: 2015-04-15 21:34:16 -0400
 comments: true
-categories: 
+categories: conference
 ---
 
 I went to [AdaCamp](https://adacamp.org/) these last couple of days. I

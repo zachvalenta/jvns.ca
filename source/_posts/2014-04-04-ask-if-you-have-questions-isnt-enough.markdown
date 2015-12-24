@@ -3,7 +3,7 @@ layout: post
 title: "\"Ask if you have questions\" isn't enough"
 date: 2014-04-04 23:16:09 -0400
 comments: true
-categories: teaching
+categories: culture
 ---
 
 I've helped out and taught at a few programming workshops for

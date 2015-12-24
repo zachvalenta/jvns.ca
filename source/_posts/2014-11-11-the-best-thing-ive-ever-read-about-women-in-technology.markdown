@@ -3,7 +3,7 @@ layout: post
 title: "What women in technology really think (150 of them, at least)"
 date: 2014-11-11 07:37:29 -0800
 comments: true
-categories: 
+categories: culture
 ---
 
 spoiler: EVERYONE IS DIFFERENT AND PEOPLE THINK LOTS OF DIFFERENT

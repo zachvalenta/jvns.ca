@@ -3,7 +3,7 @@ layout: post
 title: "Recovering files using /proc (and spying, too!)"
 date: 2014-03-23 11:16:24 -0400
 comments: true
-categories: kernel
+categories: kernel spytools
 ---
 I've had a vague idea for years that /proc was a way the Linux kernel
 exposed its internals, and that I could look there to find things.

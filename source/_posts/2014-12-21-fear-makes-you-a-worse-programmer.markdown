@@ -3,7 +3,7 @@ layout: post
 title: "Fear makes you a worse programmer"
 date: 2014-12-21 14:51:32 -0500
 comments: true
-categories: feelings
+categories: culture
 ---
 
 Yesterday morning, I asked on Twitter:

@@ -3,7 +3,7 @@ layout: post
 title: "A millisecond isn't fast (and how we made it 100x faster)"
 date: 2015-09-10 08:28:56 -0400
 comments: true
-categories: performance
+categories: performance favorite
 ---
 
 Hi friends! For the first time today I'm going to tell you about my DAY

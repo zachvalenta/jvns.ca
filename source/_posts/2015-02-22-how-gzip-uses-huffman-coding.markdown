@@ -3,7 +3,7 @@ layout: post
 title: "How gzip uses Huffman coding"
 date: 2015-02-22 09:28:02 -0500
 comments: true
-categories: programming
+categories: how-things-work
 ---
 
 

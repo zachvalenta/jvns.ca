@@ -3,7 +3,7 @@ layout: post
 title: "Programming doesn't belong to men (it belongs to me)"
 date: 2014-12-28 18:58:03 -0500
 comments: true
-categories: 
+categories: culture
 ---
 
 One thing I've noticed since I started writing this blog is that I'll

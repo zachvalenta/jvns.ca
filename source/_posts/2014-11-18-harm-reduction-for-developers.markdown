@@ -3,7 +3,7 @@ layout: post
 title: "Harm reduction for developers"
 date: 2014-11-18 08:14:32 -0800
 comments: true
-categories: 
+categories: culture
 ---
 
 [Harm reduction](https://en.wikipedia.org/wiki/Harm_reduction) is an
