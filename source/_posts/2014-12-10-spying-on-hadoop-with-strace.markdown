@@ -3,7 +3,7 @@ layout: post
 title: "Spying on Hadoop with strace"
 date: 2014-12-10 21:26:49 -0500
 comments: true
-categories: strace hadoop
+categories: strace
 ---
 
 As you may already know, I really like strace. (It has a 

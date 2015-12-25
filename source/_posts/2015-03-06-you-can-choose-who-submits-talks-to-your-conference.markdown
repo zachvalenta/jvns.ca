@@ -3,7 +3,7 @@ layout: post
 title: "You can choose who submits talks to your conference"
 date: 2015-03-07 01:24:29 -0500
 comments: true
-categories: conferences
+categories: conference
 ---
 
 Sometimes I see conference organizers say "well, we didn't have a choice about

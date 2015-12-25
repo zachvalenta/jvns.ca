@@ -3,7 +3,7 @@ layout: post
 title: "Fun with stats: How big of a sample size do I need?"
 date: 2014-07-11 09:54:54 -0400
 comments: true
-categories: statistics
+categories: machinelearning
 ---
 
 <small>

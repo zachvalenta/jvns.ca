@@ -3,7 +3,7 @@ layout: post
 title: "Julia Serano's 'Excluded'"
 date: 2013-09-26 17:16
 comments: true
-categories: feminism
+categories: 
 ---
 
 Bought this book at [Bluestockings](http://bluestockings.com/) the other
