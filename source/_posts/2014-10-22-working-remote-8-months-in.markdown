@@ -3,7 +3,7 @@ layout: post
 title: "Working remote, 8 months in (seeing humans is important!)"
 date: 2014-10-22 00:04:07 -0400
 comments: true
-categories: remote
+categories: 
 ---
 
 I wrote up what it was like to be working remote

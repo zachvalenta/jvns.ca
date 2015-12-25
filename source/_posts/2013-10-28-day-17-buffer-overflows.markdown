@@ -3,7 +3,7 @@ layout: post
 title: "Day 17: How to write a buffer overflow exploit"
 date: 2013-10-28 23:08
 comments: true
-categories: hackerschool coding security
+categories: hackerschool coding
 ---
 
 I've declared this week to be the week of networks & security.
