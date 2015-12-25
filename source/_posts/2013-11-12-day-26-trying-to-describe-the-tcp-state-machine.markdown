@@ -3,7 +3,7 @@ layout: post
 title: "Day 26: Trying to describe the TCP state machine in a readable way. Failing."
 date: 2013-11-12 18:12
 comments: true
-categories: hackerschool networking
+categories: hackerschool
 ---
 
 Today I made a bunch of progress (I can now be a TCP server, kinda!), but I want to

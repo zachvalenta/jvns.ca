@@ -3,7 +3,7 @@ layout: post
 title: "Videos from PyData NYC are up!"
 date: 2013-11-30 10:50
 comments: true
-categories: speaking python
+categories: conference
 ---
 
 The [videos from PyData NYC](http://vimeo.com/pydata/videos) are now

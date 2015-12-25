@@ -3,7 +3,7 @@ layout: post
 title: "Day 22: Got some TCP packets back!"
 date: 2013-11-06 00:03
 comments: true
-categories: hackerschool networking
+categories: hackerschool
 ---
 
 I spent a bunch of time with [Jessica](http://web.mit.edu/jesstess/www/) 

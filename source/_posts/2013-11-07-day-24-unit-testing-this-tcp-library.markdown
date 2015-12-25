@@ -3,7 +3,7 @@ layout: post
 title: "Day 24: Unit testing this TCP library"
 date: 2013-11-07 22:41
 comments: true
-categories: hackerschool networking
+categories: hackerschool
 ---
 
 Today in morning checkins I realized I'd been having a lot of trouble

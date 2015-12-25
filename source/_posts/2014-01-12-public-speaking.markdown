@@ -3,7 +3,7 @@ layout: post
 title: "You should give talks. They will be awesome. Here's why!"
 date: 2014-01-12 08:23
 comments: true
-categories: speaking
+categories: conference
 ---
 
 I'm working on preparing a talk for [CUSEC](http://2014.cusec.net/),

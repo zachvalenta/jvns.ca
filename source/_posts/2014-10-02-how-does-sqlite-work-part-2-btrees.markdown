@@ -4,7 +4,7 @@ title: "How does SQLite work? Part 2: btrees! (or: disk seeks are slow
 don't do them!)"
 date: 2014-10-02 23:29:14 -0400
 comments: true
-categories: databases how-things-work
+categories: how-things-work
 ---
 
 Welcome back to fun with databases! In

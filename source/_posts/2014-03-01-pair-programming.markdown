@@ -3,7 +3,7 @@ layout: post
 title: "Pair programming"
 date: 2014-03-01 21:12:15 -0800
 comments: true
-categories: stripe hackerschool
+categories: hackerschool
 ---
 
 So I started at [Stripe](https://stripe.com/) this week. I did a lot

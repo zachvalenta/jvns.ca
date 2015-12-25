@@ -3,7 +3,7 @@ layout: post
 title: 'Why a C++ programmer might say "I could never write Python"'
 date: 2015-01-24 10:15:27 -0500
 comments: true
-categories: 
+categories: python
 ---
 
 I once heard a C++ programmer say "oh no, Python, that's so hard, I could never

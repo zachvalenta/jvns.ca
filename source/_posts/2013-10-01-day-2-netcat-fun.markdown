@@ -3,7 +3,7 @@ layout: post
 title: "Day 2: netcat fun!"
 date: 2013-10-01 22:05
 comments: true
-categories: hackerschool networking
+categories: hackerschool
 ---
 
 Today [Alan](https://github.com/happy4crazy) taught me some things about
