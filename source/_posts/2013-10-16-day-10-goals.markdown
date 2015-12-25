@@ -3,7 +3,7 @@ layout: post
 title: "Day 10: Goals. Goals? Maybe I need to be *reading* more code?"
 date: 2013-10-16 00:25
 comments: true
-categories: hackerschool coding goals
+categories: hackerschool coding
 ---
 
 Today I learned a bit of Clojure, and learned about a Julia plotting library

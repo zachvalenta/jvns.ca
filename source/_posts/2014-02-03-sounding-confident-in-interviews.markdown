@@ -3,7 +3,7 @@ layout: post
 title: "Sounding confident in interviews"
 date: 2014-02-03 13:18
 comments: true
-categories: interviewing 
+categories: interviewing
 ---
 
 Confession: I am often terrible at sounding confident. I have been

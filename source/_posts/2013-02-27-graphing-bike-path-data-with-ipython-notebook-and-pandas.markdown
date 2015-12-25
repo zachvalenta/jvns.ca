@@ -3,7 +3,7 @@ layout: post
 title: "Graphing bike path data with IPython Notebook and pandas"
 date: 2013-02-27 08:42
 comments: true
-categories:
+categories: 
 ---
 
 I gave a talk at [Montreal Python](http://montrealpython.org/) on Monday about

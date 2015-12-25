@@ -3,7 +3,7 @@ layout: post
 title: "Day 12: Why Julia likes Julia"
 date: 2013-10-20 23:52
 comments: true
-categories:  hackerschool coding julia
+categories: hackerschool coding julia
 ---
 
 Firstly, I will never get tired of the fact that Julia is called Julia.

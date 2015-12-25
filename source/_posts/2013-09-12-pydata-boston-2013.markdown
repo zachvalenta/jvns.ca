@@ -3,7 +3,7 @@ layout: post
 title: "PyData Boston 2013"
 date: 2013-09-12
 comments: true
-categories: datascience, python
+categories: datascience python
 ---
 
 I went to PyData Boston in July. The videos are just coming out now, so here are

@@ -3,7 +3,7 @@ layout: post
 title: "Open sourced talks!"
 date: 2014-07-25 17:25:06 -0400
 comments: true
-categories:  talks
+categories: talks
 ---
 
 The wonderful [Sumana Harihareshwara](http://www.harihareswara.net/)

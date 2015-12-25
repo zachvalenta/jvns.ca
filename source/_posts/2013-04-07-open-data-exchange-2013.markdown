@@ -3,7 +3,7 @@ layout: post
 title: "Open Data Exchange 2013"
 date: 2013-04-07 10:31
 comments: true
-categories:
+categories: 
 ---
 
 I went to an amazing conference yesterday called [Open Data Exchange](http://odx13.com).

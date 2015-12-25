@@ -3,7 +3,7 @@ layout: post
 title: "Day 19: A few reasons why networking is hard"
 date: 2013-10-31 10:14
 comments: true
-categories:  networking hackerschool coding
+categories: networking hackerschool coding
 ---
 
 So I've been trying to learn how to do a particular network exploit this week
