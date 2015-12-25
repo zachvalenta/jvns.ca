@@ -3,7 +3,7 @@ layout: post
 title: "Day 25: ACK all the things"
 date: 2013-11-12 00:10
 comments: true
-categories: hackerschool coding networking
+categories: hackerschool networking
 ---
 
 Today I worked some more on my TCP stack! I read a bit of Stevens' 

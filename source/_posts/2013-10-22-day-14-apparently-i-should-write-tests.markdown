@@ -4,7 +4,7 @@ title: "Day 14: When it's hard to write tests, that's when I should be
 testing"
 date: 2013-10-22 23:23
 comments: true
-categories: hackerschool coding
+categories: hackerschool
 ---
 
 So yesterday I was fighting with an off-by-one error most of the day.

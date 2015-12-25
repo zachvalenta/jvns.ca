@@ -3,7 +3,7 @@ layout: post
 title: "Day 11: How does gzip work?"
 date: 2013-10-16 19:51
 comments: true
-categories: hackerschool gzip coding
+categories: hackerschool gzip
 ---
 
 Spoiler: I don't really know yet, but there is a lot of mucking with bits.

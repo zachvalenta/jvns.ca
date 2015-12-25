@@ -3,7 +3,7 @@ layout: post
 title: "Day 20: Traceroute in 15 lines of code using Scapy"
 date: 2013-10-31 22:07
 comments: true
-categories: coding hackerschool networking favorite how-things-work
+categories: hackerschool networking favorite how-things-work
 ---
 
 Today Jari and Brian explained a whole bunch of things to me about networks!

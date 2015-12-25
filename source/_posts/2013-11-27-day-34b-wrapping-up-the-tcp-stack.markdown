@@ -3,7 +3,7 @@ layout: post
 title: "Day 34b: Writing curl using my TCP stack"
 date: 2013-11-27 22:13
 comments: true
-categories: hackerschool networking coding
+categories: hackerschool networking
 ---
 
 Today I spent a bunch of time writing READMEs for the projects I've

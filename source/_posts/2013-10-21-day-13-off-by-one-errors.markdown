@@ -3,7 +3,7 @@ layout: post
 title: "Day 13: Off by one errors"
 date: 2013-10-21 23:06
 comments: true
-categories: hackerschool coding gzip
+categories: hackerschool gzip
 ---
 
 Today I spent most of the day figuring out that

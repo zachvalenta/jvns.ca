@@ -3,7 +3,7 @@ layout: post
 title: "Day 21: Trying to TCP"
 date: 2013-11-05 00:15
 comments: true
-categories: hackerschool coding networking
+categories: hackerschool networking
 ---
 
 Today I started trying to write a TCP stack. In Python. We will see if

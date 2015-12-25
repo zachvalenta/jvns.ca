@@ -3,7 +3,7 @@ layout: post
 title: "Day 8: Julia writes Julia! And remembers that open source is hard."
 date: 2013-10-12 00:47
 comments: true
-categories: hackerschool coding julia opensource
+categories: hackerschool julia opensource
 ---
 
 At Hacker School this batch there is a wonderful thing called the

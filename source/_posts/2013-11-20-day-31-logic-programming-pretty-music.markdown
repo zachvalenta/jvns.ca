@@ -3,7 +3,7 @@ layout: post
 title: "Day 31: Binary trees with core.logic!"
 date: 2013-11-20 21:49
 comments: true
-categories: hackerschool coding music
+categories: hackerschool music
 ---
 
 TODAY WAS FUN.

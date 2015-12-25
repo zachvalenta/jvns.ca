@@ -3,7 +3,7 @@ layout: post
 title: "Sketches for a graph layout engine"
 date: 2013-12-31 14:23
 comments: true
-categories: coding
+categories: 
 ---
 
 I'm working on a graph layout engine for the

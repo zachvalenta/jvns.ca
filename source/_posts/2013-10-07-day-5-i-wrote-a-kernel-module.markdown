@@ -3,7 +3,7 @@ layout: post
 title: "Day 5: I wrote a kernel module!!!"
 date: 2013-10-07 23:22
 comments: true
-categories: hackerschool coding kernel
+categories: hackerschool kernel
 ---
 
 I WROTE A KERNEL MODULE. It doesn't do anything useful or anything, but

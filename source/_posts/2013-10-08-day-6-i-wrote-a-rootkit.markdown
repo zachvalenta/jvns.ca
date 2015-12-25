@@ -3,7 +3,7 @@ layout: post
 title: "Day 6: I wrote a rootkit!"
 date: 2013-10-08 21:46
 comments: true
-categories: hackerschool coding kernel
+categories: hackerschool kernel
 ---
 
 I made some small improvements on my kernel module from yesterday -- I

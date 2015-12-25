@@ -3,7 +3,7 @@ layout: post
 title: "A bookmarklet to flee from Mailman archives"
 date: 2014-02-20 19:14:00 -0800
 comments: true
-categories: coding
+categories: 
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: "Day 36: On programming without malloc"
 date: 2013-12-03 22:21
 comments: true
-categories: hackerschool coding kernel favorite
+categories: hackerschool kernel favorite
 ---
 
 So right now I'm working on writing a kernel in Rust. My current goal

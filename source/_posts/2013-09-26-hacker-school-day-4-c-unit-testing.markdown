@@ -3,7 +3,7 @@ title: "Hacker School Day -4: unit testing in C. checkmk!"
 layout: post
 date: 2013-09-26 22:30
 comments: true
-categories: hackerschool coding
+categories: hackerschool
 ---
 
 So I've been accepted to the fall batch at

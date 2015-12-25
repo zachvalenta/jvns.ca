@@ -3,7 +3,7 @@ layout: post
 title: "Three steps to learning GDB"
 date: 2014-02-10 18:37
 comments: true
-categories: coding
+categories: 
 ---
 
 Debugging C programs used to scare me a lot. Then I was writing my

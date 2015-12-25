@@ -3,7 +3,7 @@ layout: post
 title: "Stopping to think"
 date: 2014-04-27 08:40:50 -0700
 comments: true
-categories: coding
+categories: 
 ---
 
 A while ago I had a bug in my code. I was frustrated because I

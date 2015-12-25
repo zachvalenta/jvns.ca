@@ -3,7 +3,7 @@ layout: post
 title: "Day 18: ARP cache poisoning (or: In ur connection, sniffing ur packets)"
 date: 2013-10-29 20:36
 comments: true
-categories: hackerschool coding
+categories: hackerschool
 ---
 
 Today I learned how to steal packets on a wireless network! If you want to try

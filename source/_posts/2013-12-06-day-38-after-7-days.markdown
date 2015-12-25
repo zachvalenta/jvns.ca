@@ -4,7 +4,7 @@ title: "Day 38: After 6 days, I have problems that I can't understand
 at all"
 date: 2013-12-06 17:04
 comments: true
-categories: hackerschool coding kernel
+categories: hackerschool kernel
 ---
 
 tl;dr: I expect `NUMS[2]` to equal `NUMS[keycode]` when `keycode ==

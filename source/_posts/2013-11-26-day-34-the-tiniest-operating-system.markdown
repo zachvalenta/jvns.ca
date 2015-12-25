@@ -3,7 +3,7 @@ layout: post
 title: "Day 34: The tiniest operating system"
 date: 2013-11-26 18:39
 comments: true
-categories: hackerschool coding
+categories: hackerschool
 ---
 
 One of my as-yet-unrealized goals for Hacker School is to write an

@@ -3,7 +3,7 @@ layout: post
 title: "Day 42: How to run a simple ELF executable, from scratch (I don't know)"
 date: 2013-12-13 00:05
 comments: true
-categories: hackerschool coding kernel
+categories: hackerschool kernel
 ---
 
 I want to compile a 32-bit "Hello, world!" statically-linked ELF

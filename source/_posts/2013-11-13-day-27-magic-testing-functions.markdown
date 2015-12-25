@@ -3,7 +3,7 @@ layout: post
 title: "Day 27: Automatically testing changes in state! Visualizing my Git workflow! Floats!"
 date: 2013-11-13 21:44
 comments: true
-categories: hackerschool coding
+categories: hackerschool
 ---
 
 ##Testing state changes! (overriding `__setattr__`)

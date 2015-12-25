@@ -3,7 +3,7 @@ layout: post
 title: "Coding strategies"
 date: 2013-12-28 22:02
 comments: true
-categories: coding
+categories: 
 ---
 
 In reply to "Write the README first, then the code",

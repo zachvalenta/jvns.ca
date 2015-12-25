@@ -3,7 +3,7 @@ layout: post
 title: "Day 15: How a .gz file is structured, redux"
 date: 2013-10-23 22:56
 comments: true
-categories: hackerschool coding
+categories: hackerschool
 ---
 
 So I've finished implementing gunzip in Julia! I paired with a lot of

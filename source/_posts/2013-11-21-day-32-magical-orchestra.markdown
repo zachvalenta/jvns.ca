@@ -3,7 +3,7 @@ layout: post
 title: "Day 32: Magical Orchestra!!!"
 date: 2013-11-21 19:23
 comments: true
-categories: hackerschool coding music
+categories: hackerschool music
 ---
 
 This week [Lyndsey](http://github.com/Apophenia) and I worked on a

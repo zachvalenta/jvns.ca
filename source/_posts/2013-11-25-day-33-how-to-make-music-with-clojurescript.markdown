@@ -3,7 +3,7 @@ layout: post
 title: "Day 33: How to make music with ClojureScript"
 date: 2013-11-25 18:06
 comments: true
-categories: hackerschool coding clojure music
+categories: hackerschool clojure music
 ---
 
 I am working on a small project to practice
