@@ -3,7 +3,7 @@ layout: post
 title: "Day 16: gzip + poetry = awesome"
 date: 2013-10-24 21:16
 comments: true
-categories: hackerschool poetry julia favorite gzip
+categories: hackerschool julia favorite gzip
 ---
 
 Gzip compresses by replacing text with pointers to earlier parts of the text.

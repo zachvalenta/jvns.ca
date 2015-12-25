@@ -3,7 +3,7 @@ layout: post
 title: "Day 28: Made a git workflow visualization webapp!"
 date: 2013-11-15 17:11
 comments: true
-categories: hackerschool coding git
+categories: hackerschool coding
 ---
 
 Yesterday and today I made the Git pictures from Wednesday's post into a

@@ -3,7 +3,7 @@ layout: post
 title: "Do Rails programmers use node.js? Visualizing correlations in command usage"
 date: 2013-10-24 23:34
 comments: true
-categories: coding d3 visualization
+categories: coding
 ---
 
 [{%img /images/command-graph-small.png %}](http://jvns.ca/projects/unix-command-survey/graph.html)

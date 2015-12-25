@@ -3,7 +3,7 @@ layout: post
 title: "Reports from remote-land: remote pairing works great!"
 date: 2014-03-29 08:54:53 -0400
 comments: true
-categories: pairing remotereports
+categories: pairing
 ---
 
 I've been working remote for 2 weeks now. The things that have surprised
