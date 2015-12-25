@@ -3,7 +3,7 @@ layout: post
 title: "Anonymous talk review is amazing."
 date: 2014-05-28 21:17:33 -0400
 comments: true
-categories: conference bangbangcon
+categories: conference culture
 ---
 
 Coming down from [!!Con](http://bangbangcon), there are a lot of

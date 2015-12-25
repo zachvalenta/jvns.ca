@@ -3,7 +3,7 @@ layout: post
 title: "Where to find bike sharing systems' data feeds"
 date: 2013-10-06 11:48
 comments: true
-categories: bikes opendata
+categories: 
 ---
 
 Bike sharing systems by [Bixi](http://publicbikesystem.com) publish

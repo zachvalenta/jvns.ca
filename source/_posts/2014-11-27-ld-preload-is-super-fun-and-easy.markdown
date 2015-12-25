@@ -3,7 +3,7 @@ layout: post
 title: "LD_PRELOAD is super fun. And easy!"
 date: 2014-11-27 22:51:27 -0500
 comments: true
-categories: 
+categories: spytools
 ---
 
 On Monday I went to Hacker School, and as always it was the most fun

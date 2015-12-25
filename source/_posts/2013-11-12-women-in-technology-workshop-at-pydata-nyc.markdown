@@ -3,7 +3,7 @@ layout: post
 title: "Women in Technology workshop at PyData NYC"
 date: 2013-11-12 23:04
 comments: true
-categories: teaching
+categories: 
 ---
 
 This year at PyData NYC, the lovely folks at NumFOCUS invited some of us Hacker

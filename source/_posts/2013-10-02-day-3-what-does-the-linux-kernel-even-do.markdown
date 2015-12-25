@@ -3,7 +3,7 @@ layout: post
 title: "Day 3: What does the Linux kernel even do?"
 date: 2013-10-02 16:37
 comments: true
-categories: hackerschool kernel linux
+categories: hackerschool kernel
 ---
 
 We had a really fun session this morning where we got together and made

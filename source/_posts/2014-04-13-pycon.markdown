@@ -3,7 +3,7 @@ layout: post
 title: "♥ PyCon"
 date: 2014-04-13 21:37:45 -0400
 comments: true
-categories: python
+categories: conference
 ---
 
 PyCon 2014 happened! It was my first time at PyCon, I expected to have

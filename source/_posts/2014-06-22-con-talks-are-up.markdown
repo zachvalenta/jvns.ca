@@ -3,7 +3,7 @@ layout: post
 title: "!!Con talks are up"
 date: 2014-06-22 12:50:32 -0400
 comments: true
-categories: bangbangcon
+categories: conference
 ---
 
 The talk recordings and transcripts for the amazing talks at !!Con
