@@ -3,7 +3,7 @@ layout: post
 title: "How I learned to program in 10 years"
 date: 2015-02-17 17:30:27 -0800
 comments: true
-categories: 
+categories: favorite
 ---
 
 The other day someone emailed me asking advice to learn how to program.

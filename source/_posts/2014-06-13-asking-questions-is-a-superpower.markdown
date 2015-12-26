@@ -3,7 +3,7 @@ layout: post
 title: "Asking questions is a superpower"
 date: 2014-06-13 22:05:33 -0400
 comments: true
-categories: 
+categories: culture
 ---
 
 There are all kinds of things that I think I "should" know and don't.

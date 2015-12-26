@@ -3,7 +3,7 @@ layout: post
 title: "Diving into HDFS"
 date: 2014-05-15 12:40:39 -0400
 comments: true
-categories: 
+categories: strace
 ---
 Yesterday I wanted to start learning about how HDFS (the Hadoop
 Distributed File System) works internally. I knew that
