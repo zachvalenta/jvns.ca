@@ -30,16 +30,16 @@ root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
-plugins: plugins
+plugins_dir: plugins
 code_dir: downloads/code
 category_dir: blog/categories
 markdown: kramdown
 kramdown:
-  use_coderay: true
+  enable_coderay: true
   coderay:
     coderay_line_numbers: nil
     coderay_css: class
-pygments: false # default python pygments have been replaced by pygments.rb
+highlighter: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
@@ -101,3 +101,4 @@ google_analytics_tracking_id: UA-23087669-1
 
 # Facebook Like
 facebook_like: false
+gems: [jekyll-paginate]
