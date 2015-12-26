@@ -33,7 +33,7 @@ it sends them to its router first, so it needs the router's MAC address.
 
 Here's what a normal asking-for-MAC-address exchange looks like, in Wireshark:
 
-[{%img /images/normal-arp-interaction.png %}](/images/normal-arp-interaction.png)
+[<img src="/images/normal-arp-interaction.png">](/images/normal-arp-interaction.png)
 
 That image is a bit small, but you can click on it to enlarge it.
 
@@ -68,7 +68,7 @@ again to keep the cache poisoned.
 So let's look at what that `arpspoof` command from before is doing in
 Wireshark:
 
-[{%img /images/arp-cache-poisoning.png %}](/images/arp-cache-poisoning.png)
+[<img src="/images/arp-cache-poisoning.png">](/images/arp-cache-poisoning.png)
 
 You can see that every 2 seconds or so my computer (`IntelCor_eb:7b:bc`) is
 telling my phone (`Htc_64:42:b7`) the wrong MAC address for the router

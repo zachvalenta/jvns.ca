@@ -42,7 +42,7 @@ I've been able to contribute back to the documentation.
     <a href="http://visualize-your-git.herokuapp.com"> Visualizing Git workflows</a> (2013)
 </h2>
 
-[{%img /images/selenamarie.png%}](http://visualize-your-git.herokuapp.com/display/223/sparse)
+[<img src="/images/selenamarie.png">](http://visualize-your-git.herokuapp.com/display/223/sparse)
 
 When [Philip Guo](http://www.pgbovine.net/) was a resident at Hacker
 School, we had some interesting discussions about how to automatically
@@ -106,7 +106,7 @@ LZ77 compression works. The internet liked it a lot.
     <a href="https://github.com/jvns/kernel-module-fun">Fun with kernel modules</a> (2013)
 </h2>
 
-[{%img /images/rootkit.png %}](https://github.com/jvns/kernel-module-fun)
+[<img src="/images/rootkit.png">](https://github.com/jvns/kernel-module-fun)
 
 When I arrived at Hacker School I had *no idea* about what the Linux
 kernel did or how to make it do anything. So my first action was to
@@ -130,7 +130,7 @@ This is more of a "fun exploration" than a "serious project".
     <a href="http://jvns.ca/projects/unix-command-survey/graph.html"> Visualizing Unix command usage</a> (2013)
 </h2>
 
-[{%img /images/command-graph-small.png %}](http://jvns.ca/projects/unix-command-survey/graph.html)
+[<img src="/images/command-graph-small.png">](http://jvns.ca/projects/unix-command-survey/graph.html)
 
 A few months ago I got curious about which unix command line utilities
 were the most popular, so I ran a survey on Hacker News. I ended up
@@ -150,7 +150,7 @@ computationally intensive, so best viewed in Chrome.
     <a href="http://jvns.ca/bixi/map">Bike availability map</a> (2011)
 </h2>
 
-[{%img /images/biximap.png %}](http://jvns.ca/bixi/map)
+[<img src="/images/biximap.png">](http://jvns.ca/bixi/map)
 
 This was my first Javascript project. I wrote it a few years ago when
 I got frustrated with [Bixi](http://montreal.bixi.com)'s map. It's a
@@ -164,7 +164,7 @@ useful from April to mid-November.
     Master's thesis (2011)
 </h2>
 
-[{%img /images/thesis-picture.png %}](http://github.com/jvns/masters-thesis)
+[<img src="/images/thesis-picture.png">](http://github.com/jvns/masters-thesis)
 
 This is certainly the project I've spent the *longest* on. I wrote my
 master's thesis on the algebra of topological quantum computing.

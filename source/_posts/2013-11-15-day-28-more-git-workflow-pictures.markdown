@@ -19,5 +19,5 @@ is a thing of beauty.
 You can make your own at
 [https://visualize-your-git.herokuapp.com](https://visualize-your-git.herokuapp.com).
 
-[{%img /images/selenamarie.png %}](/images/selenamarie.png)
+[<img src="/images/selenamarie.png">](/images/selenamarie.png)
 

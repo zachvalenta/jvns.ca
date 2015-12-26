@@ -65,7 +65,7 @@ sudo perf script | stackcollapse-perf.pl | flamegraph.pl > flamegraph.svg
 
 Here's the SVG this gave me:
 
-{%img /images/flamegraph.svg %}
+<img src="/images/flamegraph.svg">
 
 This is AMAZING. But what does it mean? Basically `perf` periodically
 interrupts the program and finds out where in the stack it is. The

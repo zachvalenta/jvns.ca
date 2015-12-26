@@ -11,7 +11,7 @@ I'm giving a talk tomorrow on writing a kernel in Rust.
 My experience of writing a kernel that it was like jumping in puddles:
 it's a lot of fun, and there are a lot of mishaps:
 
-{%img /images/puddle.gif %}
+<img src="/images/puddle.gif">
 
 Here are a few of the tiny steps I took. There are more, but those
 will have to wait for the evening.

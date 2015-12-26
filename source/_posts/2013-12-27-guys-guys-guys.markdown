@@ -33,11 +33,11 @@ split for "Python guy" and "Erlang guy".
 
 The image probably appears too small here: click for the bigger image.
 
-[{%img /images/guys-guys-guys-chart.png %}](/images/guys-guys-guys-chart.png)
+[<img src="/images/guys-guys-guys-chart.png">](/images/guys-guys-guys-chart.png)
 
 Here's the gender distribution:
 
-[{%img /images/do-you-identify-as-a-woman.png %}](/images/do-you-identify-as-a-woman.png)
+[<img src="/images/do-you-identify-as-a-woman.png">](/images/do-you-identify-as-a-woman.png)
 
 ### Issues with the survey
 

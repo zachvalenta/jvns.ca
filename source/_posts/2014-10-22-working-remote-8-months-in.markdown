@@ -33,11 +33,11 @@ consequences. Visiting SF for a while made everything approximately
 100x better. In gifs (of course) seeing people can be the difference
 between:
 
-{%img /images/sad-panda-julia.gif %}
+<img src="/images/sad-panda-julia.gif">
 
 and
 
-{%img /images/happy-julia.gif %}
+<img src="/images/happy-julia.gif">
 
 Right now I feel a lot more like gif #2, which is pretty great.
 

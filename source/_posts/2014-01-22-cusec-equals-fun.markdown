@@ -63,11 +63,11 @@ irrelevant when showing code samples. Here's an example:
 
 Before:
 
-{%img /images/chmod-code.png %}
+<img src="/images/chmod-code.png">
 
 After:
 
-{%img /images/chmod-code-crossed-out.png %}
+<img src="/images/chmod-code-crossed-out.png">
 
 I found that this really helped with the cognitive load of code
 samples and made showing kernel code much less intimidating. The

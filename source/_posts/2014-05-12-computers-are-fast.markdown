@@ -105,7 +105,7 @@ perf annotate --no-source
 
 And here's the result:
 
-{%img /images/perf.png %}
+<img src="/images/perf.png">
 
 The `movdqa` instructions have to do with accessing memory, and it
 spends 32% of its time on those instructions. So I *think* that means

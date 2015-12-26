@@ -179,9 +179,9 @@ $ sudo perf script | stackcollapse-perf.pl | flamegraph.pl > rust_mutex_flamegra
 ```
 
 
-[{%img /images/rust_mutex_flamegraph.svg %}](/images/rust_mutex_flamegraph.svg)
+[<img src="/images/rust_mutex_flamegraph.svg">](/images/rust_mutex_flamegraph.svg)
 
-[{%img /images/c_mutex_flamegraph.svg %}](/images/c_mutex_flamegraph.svg)
+[<img src="/images/c_mutex_flamegraph.svg">](/images/c_mutex_flamegraph.svg)
 
 What is even going on here?! These two graphs look exactly the same. Why
 does the Rust one taking longer?
@@ -234,7 +234,7 @@ perf stat ./rust_counter_atomics
 
 Here's the new flamegraph:
 
-[{%img /images/rust_atomics_flamegraph.svg %}](/images/rust_atomics_flamegraph.svg)
+[<img src="/images/rust_atomics_flamegraph.svg">](/images/rust_atomics_flamegraph.svg)
 
 
 You can see from the new flamegraph that it's definitely not using

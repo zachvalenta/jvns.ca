@@ -25,7 +25,7 @@ minor changes -- it now turns the screen *green* and hangs.
 But slightly more seriously, I also added a function to print
 characters to the screen!
 
-{%img /images/rustboot1.png %}
+<img src="/images/rustboot1.png">
 
 Here's the new code I added to do that:
 

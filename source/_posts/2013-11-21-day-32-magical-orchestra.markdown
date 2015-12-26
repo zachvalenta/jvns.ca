@@ -14,7 +14,7 @@ The idea behind a *★★★ Magical Orchestra ★★★* is that you go to
 `http://my-ip:8080/client.html`, and then you get a page that looks like
 this:
 
-{%img /images/magical-orchestra.png %}
+<img src="/images/magical-orchestra.png">
 
 Then a sound plays on my computer! Like a crow, or a cowbell.
 

@@ -110,7 +110,7 @@ from this, but it's neat.
 You can [look at the notebook](http://nbviewer.ipython.org/7460616) and try it
 out yourself. Here's the picture!
 
-{%img /images/git-workflow.png %}
+<img src="/images/git-workflow.png">
 
 
 ##Takeaway

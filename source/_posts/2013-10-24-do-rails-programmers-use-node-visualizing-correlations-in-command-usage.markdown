@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-[{%img /images/command-graph-small.png %}](http://jvns.ca/projects/unix-command-survey/graph.html)
+<a href="http://jvns.ca/projects/unix-command-survey/graph.html"><img src="http://jvns.ca/projects/unix-command-survey/graph.html"></a>
 
 
 A few months ago I got curious about which unix command line utilities were

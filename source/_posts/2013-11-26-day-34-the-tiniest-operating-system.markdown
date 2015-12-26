@@ -30,5 +30,5 @@ which lets me write characters to the screen and change the background colour.
 Here's what my OS looks like so far. It prints something, and makes
 the background a pinkish colour.
 
-{%img /images/my-first-os.png %}
+<img src="/images/my-first-os.png">
 
