@@ -38,7 +38,7 @@ I rejected all invitations to give talks in the second half of 2015 and that was
 
 ### fun: papers we love!
 
-I went to the papers we love meetup in Montreal a few times and it was awesome. The organizers (Julian & Kyla) gave me a paper about [profiling threaded programs](http://jvns.ca/blog/2015/10/31/papers-are-amazing-profiling-threaded-programs-with-coz/) and one about [adversarial inputs to threaded programs](https://codewords.recurse.com/issues/five/why-do-neural-networks-think-a-panda-is-a-vulture) and they both gave me awesome new ideas. I think I'm going to revisit my policy of "never read papers who needs papers not me!". Possibly to "convince people to print papers and give them to me" =D.
+I went to the [papers we love meetup](http://www.meetup.com/Papers-We-Love-Montreal/) in Montreal a few times and it was awesome. Definitely my favorite meetup in the city. The organizers (Julian & Kyla) gave me a paper about [profiling threaded programs](http://jvns.ca/blog/2015/10/31/papers-are-amazing-profiling-threaded-programs-with-coz/) and one about [adversarial inputs to threaded programs](https://codewords.recurse.com/issues/five/why-do-neural-networks-think-a-panda-is-a-vulture) and they both gave me awesome new ideas. I think I'm going to revisit my policy of "never read papers who needs papers not me!". Possibly to "convince people to print papers and give them to me" =D.
 
 ### fun: blogging!
 
