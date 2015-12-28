@@ -57,6 +57,8 @@ Some posts I really enjoyed writing this year:
 
 Apparently I like writing about how things work, and how to make computers go fast. I did some fun performance optimization at work. Maybe I will do more of that next year!
 
+Blogging is pretty amazing. Writing down what I'm learning helps me not forget. And sometimes people will comment and say helpful things! For example, I wrote about [writing a TCP stack in Python](http://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/). In [the comments](https://news.ycombinator.com/item?id=8167546), tptacek remarked on some things I wrote that he didn't think were correct, and gave me some good ideas for future learning about TCP. I don't know how I would have gotten such useful ideas without blogging.
+
 ### fun: a GAME!
 
 My awesome partner Kamal and I made a game! It's called [computers are fast](http://computers-are-fast.github.io/) and it helps you get better at understanding computer performance by making you guess how many of a given operation a computer can do in a second.
