@@ -82,6 +82,8 @@ I found out that when my wrists hurt and I have a job, there are basically two o
 
 mostly I picked option 2) this year. this is not good for all kinds of reasons that are easy to imagine. I made some progress (ergonomics help! not typing helps! massages help!) but overall it's been a bad year. @beerops has a [great post about ergonomics which I love](http://beero.ps/2015/01/22/on-ergonomics/). The thing I learned about ergonomics this year is that you don't do it because it's fun, you do it because you don't want to be in pain all the time :).
 
+ I'm supposed to go back to work in a week and my wrists still hurt. I have all kinds of awesome ideas for what to do at work, and they mostly involve a lot of typing. Gonna need to do better there =)
+
 ### fun: drawing comics!
 
 I didn't blog for a few months because my wrists were a mess. But I found a fun thing to do instead! Here are a bunch of comics / mini twitter essays I wrote down and tweeted. I like them quite a bit. you can click on them to see a bigger version, and sometimes some discussion. they are popular tweets which is always fun.
@@ -171,6 +173,12 @@ and a couple more! They're all [here somewhere](https://twitter.com/b0rk/media) 
 
 ### some conclusions
 
-what worked: learning [how things work](/blog/categories/how-things-work/)! building things I think are fun! collaborating on projects at work! (the most successful thing I did was a collaboration. a++ not working alone) giving talks! not giving talks! reading papers occasionallyt!
+what worked: learning [how things work](/blog/categories/how-things-work/)! building things I think are fun! collaborating on projects at work! (the most successful thing I did was a collaboration. a++ not working alone) giving talks! not giving talks! reading papers occasionally!
 
-what did not work: pretending that I do not have a body. oops.
+what did not work: pretending that I do not have a body.
+
+### doing important things
+
+One good thing about wrist pain: it helps focus me a little. I'm less likely to work on things that aren't important! If spending 3 hours typing hurts, it makes no sense to code something in that time that doesn't matter. There are so many important things in the world to work on, and I think I'm getting slightly better at working on them.
+
+In 2016 I'd like to do more things that matter.
