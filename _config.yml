@@ -35,6 +35,8 @@ code_dir: downloads/code
 category_dir: blog/categories
 markdown: kramdown
 kramdown:
+  input: GFM
+  hard_wrap: false
   enable_coderay: true
   coderay:
     coderay_line_numbers: nil
