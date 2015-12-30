@@ -21,6 +21,8 @@ Send me pictures! [Tell me](https://twitter.com/b0rk) what you think! <3
 
 [Here's the pdf. Have fun.](http://jvns.ca/strace-zine-portrait.pdf) (there's also a [landscape version](http://jvns.ca/strace-zine-landscape.pdf))
 
+You can also [read it on your computer](http://jvns.ca/strace-zine-unfolded.pdf). But printing it is better! =D
+
 
 <div align="center">
 <a href="http://jvns.ca/strace-zine-portrait.pdf">
