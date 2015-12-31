@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The minimum you should know about stock options before negotiating an offer"
+title: "Things you should know about stock options before negotiating an offer"
 date: 2015-12-30 10:27:46 +0200
 comments: true
 categories: 
@@ -127,7 +127,7 @@ As with all difficult questions, before you accept an offer is the best time to 
 * If the company got sold for the current valuation (2X? 10X?) in 2 years, what would my shares be worth? What if the company raises a lot of money between now and then?
 * Can they give you a summary of what stock & options other people have? This is called the “cap table”. (The reason you might want to know this: often VCs are promised that they'll get their money *first* in the case of any liquidation event. Before you! Sometimes they're promised at least a 3x return on their investment. This is called a "liquidation preference" [^1].)
 * Do the VCs have participation? (there’s a definition of [participation and other stock option terms here](https://www.fenwick.com/publications/pages/explanation-of-certain-terms-used-in-venture-financing-terms-survey.aspx))
-* Can you early exercise your options? I know someone who early exercised and saved a ton of money on taxes by doing it. [This guide](https://github.com/jlevy/og-equity-compensation) talks more about early exercising.
+* Can you early exercise your options? I know someone who early exercised and saved a ton of money on taxes by doing it. [This guide](https://github.com/jlevy/og-equity-compensation) talks more about early exercising. [^2]
 * Do your options vest faster if the company is acquired? What if you get terminated? (these possibilities are called "single/double trigger")
 
 If you have more ideas for good questions, [tell me!](https://twitter.com/b0rk) I'll add them to this list.
@@ -147,6 +147,7 @@ The company making you an offer has lawyers and they should know the answers to 
 I wish I’d known what questions to ask and done some of the math  before I started my job, so I knew what I was getting into. Ask questions for me! :) You’ll understand more clearly what investment decisions might be ahead of you, and what the financial implications of those decisions might be.
 
 [^1]: On liquidation preferences: Suppose a VC invests 100M, and is promised a 3x return on investment. If the company later sells for 300M (or less), the VC gets all of it and you get nothing. That’s it. Liquidation preferences are important to know about.
+[^2]: On early exercise: I also know people who have *lost* a lot of money by early exercising, if it's expensive and turns out to be worth nothing. The important thing is to understand what you're allowed to do.
 
 
 <small> Thanks for Leah Hanson and Dan Luu for editing help! </small>
