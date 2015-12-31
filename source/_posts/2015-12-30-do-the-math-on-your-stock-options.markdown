@@ -96,7 +96,7 @@ So the possibilities, if I want to ever quit my job, are:
 2. give up the options
 3. find a way to sell the options or the resulting stock
 
-There are several variations on #3. They mostly involve cooperation from your employer -- it's possible that they'll let you sell some options, under some conditions, if you’re lucky / if they like you / if the stars are correctly aligned. There are companies like [www.esofund.com](http://esofund.com/) that might conceivably buy some of your options (not an endorsement!! I just found them on Google). [This HN comment](https://news.ycombinator.com/item?id=10705646) describes a situation where someone got an offer from an outside investor, and the investor was told by the company to not buy from him (and then didn’t buy from him). Your employer has all the power.
+There are several variations on #3. They mostly involve cooperation from your employer -- it's possible that they'll let you sell some options, under some conditions, if you’re lucky / if they like you / if the stars are correctly aligned. This post [How to sell secondary stock](http://blog.eladgil.com/2014/01/how-to-sell-secondary-stock.html) says a little more (thanks [@antifuchs](https://twitter.com/antifuchs)!). [This HN comment](https://news.ycombinator.com/item?id=10705646) describes a situation where someone got an offer from an outside investor, and the investor was told by the company to not buy from him (and then didn’t buy from him). Your employer has all the power. 
 
 Again, this isn't a disaster -- I have a good job, which pays me a SF salary despite me living in Montreal. It's a fantastic situation to be in. And certainly having an option to buy stock is better than having nothing at all! But you can ask questions, and I like being informed.
 
@@ -129,6 +129,7 @@ As with all difficult questions, before you accept an offer is the best time to 
 * Can they give you a summary of what stock & options other people have? This is called the “cap table”. (The reason you might want to know this: often VCs are promised that they'll get their money *first* in the case of any liquidation event. Before you! Sometimes they're promised at least a 3x return on their investment. This is called a "liquidation preference" [^1].)
 * Do the VCs have participation? (there’s a definition of [participation and other stock option terms here](https://www.fenwick.com/publications/pages/explanation-of-certain-terms-used-in-venture-financing-terms-survey.aspx))
 * Can you early exercise your options? I know someone who early exercised and saved a ton of money on taxes by doing it. [This guide](https://github.com/jlevy/og-equity-compensation) talks more about early exercising.
+* Do your options vest faster if the company is acquired? What if you get terminated? (these possibilities are called "single/double trigger")
 
 If you have more ideas for good questions, [tell me!](https://twitter.com/b0rk) I'll add them to this list.
 
