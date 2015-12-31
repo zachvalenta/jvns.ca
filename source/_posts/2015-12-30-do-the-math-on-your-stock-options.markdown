@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Do the math on your stock options"
+title: "Things you should know about stock options before negotiating an offer"
 date: 2015-12-30 10:27:46 +0200
 comments: true
 categories: 
 ---
-
 
 Are you considering an offer from a private company, which involves stock options? Do you think those stock options might be worth something one day? Are you confused? Then read this! I’ll give you some motivation to learn more, and a few questions to consider asking your prospective employer.
 
