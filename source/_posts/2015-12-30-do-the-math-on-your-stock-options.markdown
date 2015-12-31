@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Things you should know about stock options before negotiating an offer"
+title: "The minimum you should know about stock options before negotiating an offer"
 date: 2015-12-30 10:27:46 +0200
 comments: true
 categories: 
