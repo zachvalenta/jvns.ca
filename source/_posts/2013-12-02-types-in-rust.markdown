@@ -3,7 +3,7 @@ layout: post
 title: "Day 35: Types in Rust, for beginners"
 date: 2013-12-02 14:57
 comments: true
-categories: hackerschool rust kernel
+categories: kernel hackerschool rust
 ---
 
 I found understanding Rust types really confusing, so I wrote up a
