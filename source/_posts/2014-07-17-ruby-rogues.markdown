@@ -3,7 +3,7 @@ layout: post
 title: "Ruby Rogues podcast: systems programming tricks!"
 date: 2014-07-17 20:21:11 -0400
 comments: true
-categories: 
+categories: rust
 ---
 
 If you listen to the

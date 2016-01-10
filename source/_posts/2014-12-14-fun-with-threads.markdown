@@ -3,7 +3,7 @@ layout: post
 title: "Diving into concurrency: trying out mutexes and atomics"
 date: 2014-12-14 12:58:55 -0500
 comments: true
-categories: how-things-work
+categories: how-things-work rust
 ---
 
 I hadn't written any threaded programs before yesterday. I knew sort of

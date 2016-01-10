@@ -3,7 +3,7 @@ layout: post
 title: "Day 39: Writing malloc wrong, for fun"
 date: 2013-12-10 00:29
 comments: true
-categories: kernel rust hackerschool
+categories: kernel hackerschool rust
 ---
 
 My major achievement for today is writing the following five lines of
