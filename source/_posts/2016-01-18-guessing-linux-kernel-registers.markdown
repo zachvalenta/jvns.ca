@@ -93,3 +93,5 @@ So now I know which file descriptors are being read!
 The advantage of using ftrace instead of strace is that the overhead is way lower: when I strace `find` it makes it 20x slower, but with ftrace it's totally okay. I'm still not sure where the string that we read is (I think it's in `%si`, though!)
 
 Now I am one step closer to being able to trace system calls with less overhead. Guessing registers is really tedious but it seems to be totally possible!
+
+**update**: turns out you don't have to guess at all! the registers used for system calls are always the same :D. [here is a table with all the answers ❤](http://blog.rchapman.org/post/36801038863/linux-system-call-table-for-x86-64)
