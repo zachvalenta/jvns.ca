@@ -6,7 +6,7 @@ comments: true
 categories: performance
 ---
 
-I went to the [Papers we Love Montreal meetup](www.meetup.com/Papers-We-Love-Montreal/) this week where [Daniel Lemire](https://scholar.google.com/citations?user=q1ja-G8AAAAJ) spoke about [roaring bitmaps](http://roaringbitmap.org/), and it was AWESOME.
+I went to the [Papers we Love Montreal meetup](http://www.meetup.com/Papers-We-Love-Montreal/) this week where [Daniel Lemire](https://scholar.google.com/citations?user=q1ja-G8AAAAJ) spoke about [roaring bitmaps](http://roaringbitmap.org/), and it was AWESOME.
 
 I learned about a cool new data structure, why sets of integers are super important, how modern CPUs are different from they were in the 90s, and how we should maybe think about that when designing data structures.
 
