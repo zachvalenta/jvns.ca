@@ -21,7 +21,7 @@ extern {
 
 fn main() {
     let x = b"Hello, world!\0"; // our string to copy
-    let mut y = [0u8; 32]; // this is what we do instead of 'malloc'
+    let mut y = [0u8; 32]; // declare some space on the stack to copy the string into
     unsafe {
       // calling C code is definitely unsafe. it could be doing ANYTHING
       strcpy(y.as_mut_ptr(), x.as_ptr()); // we need to call .as_ptr() to get a pointer for C to use

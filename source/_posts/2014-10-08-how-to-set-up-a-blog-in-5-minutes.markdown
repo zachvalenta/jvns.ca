@@ -72,7 +72,7 @@ Now we can make a website!
 ```
 octopress new fake-website
 cd fake-website
-octopress serve
+jekyll serve
 ```
 
 This will create a new skeleton of an Octopress blog, and serve it to
