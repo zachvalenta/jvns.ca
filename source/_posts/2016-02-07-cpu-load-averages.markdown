@@ -15,17 +15,17 @@ I tweeted earlier today:
 
 > I understand CPU load averages now! If I have a load average of 6, and am processing 60 requests/second, then each one takes 6/60=0.1s of CPU time
 
-and someone responded:
+and someone [responded](https://twitter.com/EitanAdler/status/696386442080030720):
 
 > CPU load average is the number of processes in the runnable state. Little to nothing to do with CPU time.
 
 I thought this was a totally reasonable response. I also still thought I was
 _right_, but I needed to do some work first, and it wouldn't fit in a tweet.
 
-It turns out that I was kinda wrong, but kinda right! What follows will hopefully be correct.
+It turns out that I was kinda wrong, but I think also kinda right! What follows will hopefully be correct. When doing calculations, I’m going to assume that your processes using CPU are all doing it for the same reason, and that reason is to serve HTTP requests.
 
 Before I explain what load averages have to do with CPU time (spoiler: we're
-going to do a tiny bit of queueing theory), I want to tell you what a load
+going to do a tiny bit of queueing theory!), I want to tell you what a load
 average is, and why the formula I tweeted is awesome.
 
 ### What’s a load average?
@@ -75,17 +75,17 @@ This is pretty intuitive: if 10 people per hour (W) arrive at your store, and th
 
 Now, let's imagine the CPU is your store, and that HTTP requests are people. The load average tells you how many processes at a time are in line to use the CPU (L). Since in my case I have 1 HTTP request / process, this is the same as the number of requests in line to use the CPU. Note that we care about the steady-state load average -- if the load is constantly changing then it's much harder to reason about. So we want the "average load average". In my example system at work, the load average had been about 6 for a long time.
 
-If your system is in a steady state (constant load), then the rate of incoming requests will be the same as the rate of finishing requests. That's W.
+If your system is in a steady state (constant load), then the rate of incoming requests will on average, over a long period of time, be the same as the rate of finishing requests. That rate is W.
 
 Lastly, λ is the amount of time each request spends on the CPU (in a running or runnable state).
 
 So:
 
-* L = load average
-* λ = average time each request spends in a running or runnable state
+* L = load average (average # requests in a running or runnable state)
+* λ = average total time each request spends in a running or runnable state
 * W = throughput (requests per second)
 
-In my example from the previous section, we can get:
+So if we want to do my example from the previous section, we get:
 
 time spent on CPU = λ = L / W = 6 / 60 = 0.1s per request.
 
@@ -103,7 +103,7 @@ So, here are the cases when this "CPU time per request = load average / throughp
 * your system has a highly fluctuating load average / throughput
 * you're handling more than 1 HTTP request per thread (for instance if you're using Node or Go or...).
 * the CPU activity on your system is caused by something other than your HTTP request processing
-* this time includes time spent doing context switches between processes. My hope is that it's not a lot, but the higher the CPU load, the more context switches there will be.
+* this time (time running + time waiting for the CPU) includes time spent doing context switches between processes, and time spent on-CPU inside the kernel
 
 There’s likely another caveat I’ve missed, but I think that’s most of them.
 
@@ -130,8 +130,4 @@ I think this math still holds up, but it feels a little shakier to me. I would l
 I had a good experience with this formula yesterday! Being able to quickly triage the number of milliseconds of CPU time per request was an awesome start to doing some more in-depth performance analysis! (which I won’t go into here) I hope it will help you as well. 
 
 <small> Thanks to Kamal Marhubi, Darius Bacon, and Dan Luu for reading this </small>
-
-
-
-
 
