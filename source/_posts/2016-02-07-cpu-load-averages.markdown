@@ -13,7 +13,7 @@ share with you!
 
 I tweeted earlier today:
 
-> I understand CPU load averages now! If I have a load average of 2, and am processing 8 requests/second, then each one takes 2/8=0.25s of CPU time
+> I understand CPU load averages now! If I have a load average of 6, and am processing 60 requests/second, then each one takes 6/60=0.1s of CPU time
 
 and someone responded:
 
@@ -22,7 +22,7 @@ and someone responded:
 I thought this was a totally reasonable response. I also still thought I was
 _right_, but I needed to do some work first, and it wouldn't fit in a tweet.
 
-It turns out that I was partly right!
+It turns out that I was kinda wrong, but kinda right! What follows will hopefully be correct.
 
 Before I explain what load averages have to do with CPU time (spoiler: we're
 going to do a tiny bit of queueing theory), I want to tell you what a load
@@ -59,9 +59,9 @@ The number of cores you have doesn’t affect the formula we’re going to talk 
 
 The other day at work, I had a server that had a load average of 6. It was processing 60 HTTP requests per second. (the numbers here are all fake)
 
-Both of these numbers are easy to get! The load average is in the output of `top` (for instance `load average: 0.32, 0.58, 0.63`), and I got the requests per second processed (or throughput) by counting log lines in the service's log file.
+Both of these numbers are easy to get! The load average is in the output of `top` (for instance `load average: 6.12, 6.01, 5.98`), and I got the requests per second processed (or throughput) by counting log lines in the service's log file.
 
-So! According to our formula from above, each request was taking 6 / 60 = 0.1s = 100ms of CPU time. I asked my awesome coworker to double check this division to make sure that was right. 100ms is a bajillion years of CPU time, and I was super concerned. That story is for another time! But being able to calculate that number so quickly was SUPER USEFUL to me for understanding the server's performance.
+So! According to our formula from above, each request was taking 6 / 60 = 0.1s = 100ms of time using-or-waiting-for-the-CPU. I asked my awesome coworker to double check this division to make sure that was right. 100ms is a bajillion years of CPU time, and I was super concerned. That story is for another time! But being able to calculate that number so quickly was SUPER USEFUL to me for understanding the server's performance.
 
 ### Why the formula is correct
 
@@ -103,11 +103,41 @@ So, here are the cases when this "CPU time per request = load average / throughp
 * your system has a highly fluctuating load average / throughput
 * you're handling more than 1 HTTP request per thread (for instance if you're using Node or Go or...).
 * the CPU activity on your system is caused by something other than your HTTP request processing
+* this time includes time spent doing context switches between processes. My hope is that it's not a lot, but the higher the CPU load, the more context switches there will be.
 
 There’s likely another caveat I’ve missed, but I think that’s most of them.
+
+### a version for time spent *on* the CPU
+
+We've found a formula for "time the request spends on the CPU (or waiting for it to be free)". But what if we wanted to ignore the time it spent waiting? I have an idea that I made up just now.
+
+If the CPU load is low (like, less than half your number of cores), I think it's reasonable to assume that any process that wants to be scheduled gets scheduled immediately. So there's nothing to do.
+
+But what if your CPU is overloaded? Suppose I have 4 CPUs. Then we could instead define
+
+* L = average number of processes in a running state (which should be 4, since the CPU is at capacity)
+* λ = average time each request spends in a running state
+* W = throughput (requests per second)
+
+Then we can still try to calculate our new λ, from our example from before!
+
+λ = L / W = 4 / 60 = 0.066 s = 66ms per request on the CPU.
+
+I think this math still holds up, but it feels a little shakier to me. I would love comments on this.
 
 ### this formula = awesome
 
 I had a good experience with this formula yesterday! Being able to quickly triage the number of milliseconds of CPU time per request was an awesome start to doing some more in-depth performance analysis! (which I won’t go into here) I hope it will help you as well. 
 
 <small> Thanks to Kamal Marhubi and Dan Luu for reading this </small>
+
+
+
+
+
+
+
+10k seconds of CPU time
+
+cpu load = 2
+
