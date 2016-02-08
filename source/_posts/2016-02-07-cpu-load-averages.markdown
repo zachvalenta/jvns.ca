@@ -129,15 +129,9 @@ I think this math still holds up, but it feels a little shakier to me. I would l
 
 I had a good experience with this formula yesterday! Being able to quickly triage the number of milliseconds of CPU time per request was an awesome start to doing some more in-depth performance analysis! (which I won’t go into here) I hope it will help you as well. 
 
-<small> Thanks to Kamal Marhubi and Dan Luu for reading this </small>
+<small> Thanks to Kamal Marhubi, Darius Bacon, and Dan Luu for reading this </small>
 
 
 
 
-
-
-
-10k seconds of CPU time
-
-cpu load = 2
 
