@@ -7,6 +7,8 @@ sharing: false
 footer: true
 ---
 
+A few projects I worked on in 2013 and before. Mostly  for fun, mostly when at the [Recurse Center](https://recurse.com).
+
 * [Operating system in Rust](#os-rust) (2013)
 * [Visualizing Git workflows](#visualizing-git) (2013)
 * [Python TCP stack](#python-tcp-stack) (2013)
