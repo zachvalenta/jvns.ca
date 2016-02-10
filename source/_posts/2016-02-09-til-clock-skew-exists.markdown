@@ -51,7 +51,7 @@ I asked about this, and [@handler](https://twitter.com/handler) and [@aphyr](htt
 
 [The trouble with timestamps](https://aphyr.com/posts/299-the-trouble-with-timestamps) by @aphyr has a great explanation about why you should care about your clock.
 
-Here's [an attack on Tor](http://sec.cs.ucl.ac.uk/users/smurdoch/papers/ccs06hotornot.pdf) where if you induce high CPU load on a node, the temperature is likely to cause the clock skew to increase on that node.
+Here's [an attack on Tor](http://sec.cs.ucl.ac.uk/users/smurdoch/papers/ccs06hotornot.pdf) where if you induce high CPU load on a node, the temperature is likely to cause the clock skew to increase on that node. There's also [a follow up paper](https://www.usenix.org/legacy/event/sec08/tech/full_papers/zander/zander_html/)
 
 Google pretty much knows what time it is -- they invested a ton of time in a system called Spanner. Here are [a couple](http://radar.oreilly.com/2012/10/google-spanner-relational-database.html) of [articles](http://www.wired.com/2012/11/google-spanner-time/) about that.
 
