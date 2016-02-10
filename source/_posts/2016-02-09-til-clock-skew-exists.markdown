@@ -53,6 +53,8 @@ I asked about this, and [@handler](https://twitter.com/handler) and [@aphyr](htt
 
 Here's [an attack on Tor](http://sec.cs.ucl.ac.uk/users/smurdoch/papers/ccs06hotornot.pdf) where if you induce high CPU load on a node, the temperature is likely to cause the clock skew to increase on that node. There's also [a follow up paper](https://www.usenix.org/legacy/event/sec08/tech/full_papers/zander/zander_html/)
 
+Leap seconds are real. (there was one in 2015!) This post [5 different ways to handle leap seconds](http://developerblog.redhat.com/2015/06/01/five-different-ways-handle-leap-seconds-ntp/) has a ton of cool graphs. (thanks [Nick Coghlan](https://twitter.com/ncoghlan_dev)!)
+
 Google pretty much knows what time it is -- they invested a ton of time in a system called Spanner. Here are [a couple](http://radar.oreilly.com/2012/10/google-spanner-relational-database.html) of [articles](http://www.wired.com/2012/11/google-spanner-time/) about that.
 
 ### distributed systems & weird computer things
@@ -75,7 +77,7 @@ So my laptop's clock is probably mostly okay, but at Google scale I'd imagine yo
 
 I'm not a distributed systems engineer, really. (though I deal with some at work sometimes). I think, if you have plans to interact with distributed systems in the future, it's really useful to try to reason through issues like this for yourself! There's a ton of terminology (the first time I watched one of the [Jepsen talks](https://www.youtube.com/watch?v=mxdpqr-loyA) I was like "wat.")
 
-So I think it's fun to practice sometimes. Maybe one day you learn what linearizability! and 6 months later you're like "oh I actually didn't get it I was totally wrong."
+So I think it's fun to practice sometimes. Maybe one day you learn what linearizability is! and 6 months later you're like "oh I actually didn't get it I was totally wrong."
 
 ### clock skew is real
 
