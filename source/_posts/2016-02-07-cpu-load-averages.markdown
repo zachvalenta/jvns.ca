@@ -30,7 +30,7 @@ average is, and why the formula I tweeted is awesome.
 
 ### What’s a load average?
 
-Modern operating systems (since, like, the early 90s) can run more than one process on a single CPU (this is called “CPU scheduling”). My computer is running 300 processes right now! The operating system keeps track of a state for every process. The man page for `ps` lists them:
+Modern operating systems (since, like, [4.2BSD in 1983](http://www.cim.mcgill.ca/~franco/OpSys-304-427/lecture-notes/node46.html)) can run more than one process on a single CPU (this is called “CPU scheduling”). My computer is running 300 processes right now! The operating system keeps track of a state for every process. The man page for `ps` lists them:
 
 ```
 PROCESS STATE CODES
@@ -105,6 +105,8 @@ So, here are the cases when this "CPU time per request = load average / throughp
 * the CPU activity on your system is caused by something other than your HTTP request processing
 * this time (time running + time waiting for the CPU) includes time spent doing context switches between processes, and time spent on-CPU inside the kernel
 
+It's also worth noting that the load average is an exponentially decaying average. This means that if your load average is changing over time, it's hard to know what the non-exponentially-decaying load average is.
+
 There’s likely another caveat I’ve missed, but I think that’s most of them.
 
 ### a version for time spent *on* the CPU
@@ -127,7 +129,9 @@ I think this math still holds up, but it feels a little shakier to me. I would l
 
 ### this formula = awesome
 
-I had a good experience with this formula yesterday! Being able to quickly triage the number of milliseconds of CPU time per request was an awesome start to doing some more in-depth performance analysis! (which I won’t go into here) I hope it will help you as well. 
+I had a good experience with this formula yesterday! Being able to quickly triage the number of milliseconds of CPU time per request was an awesome start to doing some more in-depth performance analysis! (which I won’t go into here) 
 
-<small> Thanks to Kamal Marhubi, Darius Bacon, and Dan Luu for reading this </small>
+I hope it will help you as well! If you think I've gotten this all wrong, [let me know on twitter](https://twitter.com/b0rk) :)
+
+<small> Thanks to Kamal Marhubi, Darius Bacon, Dan Luu, and Sean Allen for comments </small>
 
