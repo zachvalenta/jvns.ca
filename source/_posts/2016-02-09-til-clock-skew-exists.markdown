@@ -71,6 +71,12 @@ Reasons 1 and 2 are related -- if you prove a theorem that your system is safe, 
 
 So my laptop's clock is probably mostly okay, but at Google scale I'd imagine you have computers with broken clocks all the time.
 
+### reasoning about distributed systems is interesting
+
+I'm not a distributed systems engineer, really. (though I deal with some at work sometimes). I think, if you have plans to interact with distributed systems in the future, it's really useful to try to reason through issues like this for yourself! There's a ton of terminology (the first time I watched one of the [Jepsen talks](https://www.youtube.com/watch?v=mxdpqr-loyA) I was like "wat.")
+
+So I think it's fun to practice sometimes. Maybe one day you learn what linearizability! and 6 months later you're like "oh I actually didn't get it I was totally wrong."
+
 ### clock skew is real
 
 People I know have experienced it! It is not just a weird theoretical thing to give researchers jobs. Huh.
