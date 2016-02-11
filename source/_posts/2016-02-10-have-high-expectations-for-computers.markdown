@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Have high expectations for your computers"
+title: "Have high expectations for your computer"
 date: 2016-02-10 21:11:25 -0500
 comments: true
 categories:
