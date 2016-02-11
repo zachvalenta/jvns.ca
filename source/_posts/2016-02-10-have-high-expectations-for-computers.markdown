@@ -91,7 +91,7 @@ I've found that it's really easy to be wrong about why something is slow. Taking
 
 ### believing in my computers is really useful to me
 
-I have this mission to develop an absolute sense of how fast computers are. Instead of "Go is faster than Python", I want to be able to know "I should be able to easily do 100 QPS in Python".
+I have this mission to develop an absolute sense of how fast computers are. Instead of "Go is faster than Python", I want to be able to know things like "I should be able to easily do 100 QPS in Python".
 
 Sometimes I tell someone about a programming problem I solved in a millisecond, and they say "I can solve it in a microsecond!". As long as they're not a jerk, I actually find this totally delightful -- if computers can do a thing 1000 times faster than I thought, that's amazing! I can add it to my list of magical computer facts.
 
