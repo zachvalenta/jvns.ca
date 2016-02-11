@@ -22,7 +22,7 @@ Probably other reasons too, but those are the ones I understood.
 
 Here's a chart from his post illustrating  how things can go wrong:
 
-<img src="http://martin.kleppmann.com/2016/02/unsafe-lock.png">
+<img src="/images/unsafe-lock.png">
 
 
 ### process pauses & network delays are totally real. but, clock skew?
@@ -84,5 +84,5 @@ So I think it's fun to practice sometimes. Maybe one day you learn what lineariz
 People I know have experienced it! It is not just a weird theoretical thing to give researchers jobs. Huh.
 
 <small>
-thanks for [Camille Fournier](https://twitter.com/skamille), [Michael Handler](https://twitter.com/skamille), and [Kyle Kingsbury](https://twitter.com/aphyr) for trying to explain distributed systems things to me. I have likely made lots of mistakes in writing this, and those mistakes are all mine :)
+thanks for [Camille Fournier](https://twitter.com/skamille), [Michael Handler](https://twitter.com/handler), and [Kyle Kingsbury](https://twitter.com/aphyr) for trying to explain distributed systems things to me. I have likely made lots of mistakes in writing this, and those mistakes are all mine :)
 </small>
