@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Have high expectations for your computer"
+title: "Have high expectations for your computers"
 date: 2016-02-10 21:11:25 -0500
 comments: true
 categories:
@@ -10,7 +10,7 @@ I gave a talk at [CUSEC](http://cusec.net) (a conference for software engineerin
 
 When I was in undergrad I didn't know **anything** about how fast a computer or a disk was. I was awesome at algorithms but I probably would have believed you if you told me it was impossible to do more than a million square roots in a second.
 
-Now I know a little more, and I have higher expectations, and it's been really useful to me! For instance:i f you have a machine that's crawling and unable to do more than 10 requests per second? You should probably expect more. Let me try to convince you of that, and we'll start high.
+Now I know a little more, and I have higher expectations, and it's been really useful to me! For instance: if you have a machine that's crawling and unable to do more than 10 requests per second? You should probably expect more. Let me try to convince you of that, and we'll start high.
 
 ### a million QPS
 
