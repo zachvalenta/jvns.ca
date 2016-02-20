@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "A better way to measure CPU time: clock_gettime"
+title: "How to measure your CPU time: clock_gettime!"
 date: 2016-02-20 10:13:31 -0500
 comments: true
 categories: 
 ---
+
+I'm super into measuring CPU time. If you have a slow program, the first thing you want to know is whether your program is spending that time calculating things on the CPU, or whether it's waiting for something else (a disk, a network, user input).
 
 At work yesterday, someone sent an email saying "Hey we're measuring how much CPU time every HTTP request takes now!". I am [very interested in measuring CPU time](http://jvns.ca/blog/2016/02/07/cpu-load-averages/). But I didn't know how to accomplish what they said they'd just done. So I asked "hey how does that work?". Here's the answer.
 
