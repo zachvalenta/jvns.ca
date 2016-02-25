@@ -3,14 +3,14 @@ layout: post
 title: "How to measure your CPU time: clock_gettime!"
 date: 2016-02-20 10:13:31 -0500
 comments: true
-categories: 
+categories:
 ---
 
-I'm super into measuring CPU time. If you have a slow program, the first thing you want to know is whether your program is spending that time calculating things on the CPU, or whether it's waiting for something else (a disk, a network, user input).
+I'm [super into measuring CPU time](/blog/2016/02/07/cpu-load-averages/). If you have a slow program, the first thing you want to know is whether your program is spending that time calculating things on the CPU, or whether it's waiting for something else (a disk, a network, user input).
 
-At work yesterday, someone sent an email saying "Hey we're measuring how much CPU time every HTTP request takes now!". I am [very interested in measuring CPU time](http://jvns.ca/blog/2016/02/07/cpu-load-averages/). But I didn't know how to accomplish what they said they'd just done. So I asked "hey how does that work?". Here's the answer.
+At work yesterday, someone sent an email saying "Hey we're measuring how much CPU time every HTTP request takes now!". I didn't know how to accomplish what they said they'd just done. So I asked "hey how does that work?". Here's the answer.
 
-It turns out that if you want to know exactly how much CPU time your HTTP requests are taking, you can just ask the Linux kernel!
+It turns out that if you're a HTTP server, and you want to know exactly how much CPU time your HTTP requests are taking, you can just ask the Linux kernel!
 
 On Linux, there's a system call (and corresponding libc function) called [`clock_gettime`](http://linux.die.net/man/3/clock_gettime). I'd seen this system call before, but I thought it was only for getting the time, like 5:03pm. Not so! Here are the flags you can send to `clock_gettime` on my system. (from `man clock_gettime`).
 
@@ -30,7 +30,7 @@ On Linux, there's a system call (and corresponding libc function) called [`clock
 
        CLOCK_PROCESS_CPUTIME_ID
               High-resolution per-process timer from the CPU.
-    
+
        CLOCK_THREAD_CPUTIME_ID
               Thread-specific CPU-time clock.
 ```
