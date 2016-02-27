@@ -1,13 +1,23 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
+
+<div id="blog-archives">
+
+Hey! I'm Julia. Welcome to my blog. Here's every post I've ever written. If you want somewhere to start, try <a href="/blog/categories/favorite">my favorites</a>. Enjoy!
+<br><br>
+
+<table> 
+{% for post in site.posts reverse %}
+<tr>
+<td style="width: 6em">
+<time style="padding-right: 10px; color: #444; font-size: 14px;" datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
+</td>
+<td>
+<span><a  style="font-family: Montserrat, sans-serif; color: black;font-size: 14px;" href="{{ / }}{{ post.url }}">{{post.title}}</a></span>
+</td>
+</tr>
+{% endfor %}
+</table>
 </div>
