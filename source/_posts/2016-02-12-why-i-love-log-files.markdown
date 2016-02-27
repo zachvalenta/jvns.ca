@@ -38,7 +38,7 @@ The logs were all like
 00:00:02.160 do thing 7
 </pre>
 
-In this log file, obviously thing 6 is the problem! It took like a second before getting to thing 7! What the hell, thing 6.
+In this log file, obviously thing 5 is the problem! It took like a second before getting to thing 6! What the hell, thing 5.
 
 I've gotten a little more into debugging performance problems, and every time I do it, I find that
 
