@@ -3,7 +3,7 @@ layout: post
 title: "What happens if you write a TCP stack in Python?"
 date: 2014-08-12 08:52:30 -0400
 comments: true
-categories: hackerschool how-things-work python
+categories: hackerschool how-things-work python favorite
 ---
 
 During Hacker School, I wanted to understand networking better, and I

@@ -3,7 +3,7 @@ layout: post
 title: "How does SQLite work? Part 1: pages!"
 date: 2014-09-27 23:53:50 -0400
 comments: true
-categories: how-things-work
+categories: how-things-work favorite
 ---
 
 This evening the fantastic [Kamal](https://twitter.com/kamalmarhubi)

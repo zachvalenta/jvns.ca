@@ -3,7 +3,7 @@ layout: post
 title: "TIL: clock skew exists"
 date: 2016-02-09 23:56:59 -0500
 comments: true
-categories:
+categories: favorite
 ---
 
 I learned some new things yesterday about distributed systems yesterday! Redis is a key-value store that can be distributed, and apparently it has a proposal for a locking system called [Redlock](http://redis.io/topics/distlock).

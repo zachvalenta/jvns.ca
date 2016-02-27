@@ -3,7 +3,7 @@ layout: post
 title: "Why I ❤ Rust"
 date: 2016-01-10 08:43:43 -0500
 comments: true
-categories: rust talks
+categories: rust talks favorite
 ---
 
 I gave a talk about why I like Rust a while ago! There's no video. Normally my
