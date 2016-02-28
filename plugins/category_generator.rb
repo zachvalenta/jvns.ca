@@ -164,10 +164,10 @@ ERR
     # Returns string
     #
     def category_link(category)
-      @links ||= {}
+      @@links ||= {}
       dir = @context.registers[:site].config['category_dir']
       # Memoize link
-      @links[category] ||= "<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
+      @@links[category] ||= "<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
