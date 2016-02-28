@@ -33,7 +33,7 @@ destination: public
 plugins_dir: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: kramdown
+markdown: redcarpet
 kramdown:
   input: GFM
   hard_wrap: false

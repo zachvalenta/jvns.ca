@@ -10,6 +10,8 @@ group :development do
   gem 'coderay'
   gem 'rbtrace'
   gem 'stringex'
+  gem 'redcarpet'
+  gem 'stackprof'
   gem 'jekyll-paginate'
 end
 
