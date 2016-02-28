@@ -1,6 +1,5 @@
-{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
-<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
+<body>
   <div id="wrap">
     <header role="banner">
       {% include header.html %}
@@ -9,7 +8,7 @@
       <nav role="navigation" class="header-nav">{% include navigation.html %}</nav>
       <div id="main">
         <div id="content">
-          {{ content | expand_urls: root_url }}
+          {{ content }}
         </div>
       </div>
       <nav role="navigation" class="footer-nav">{% include footer-navigation.html %}</nav>
