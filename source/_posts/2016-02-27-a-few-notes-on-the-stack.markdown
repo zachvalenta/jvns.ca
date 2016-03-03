@@ -64,7 +64,7 @@ Pretty simple! When your CPU runs programs, it's ultimately running assembly ins
 
 ```
 $ gcc -o hello hello.c
-$ nm hello
+$ objdump -d hello
  address       instructions (binary)   instructions (english)
 00000000004004f4 <main>:
   4004f4:       55                      push   %rbp
@@ -102,22 +102,22 @@ Imagine that I have a region in memory like this. I've used 64 bit increments be
 
 ```
 address         value
-0                4
-8                29328323
-16               283842
-24               128
+832               4
+824               29328323
+816               283842
+808               128
 ```
 
-Now suppose the address in `%rsp` is 24. Then `push 3` would mean "Increment %rsp and put 3 at the next address in memory". So we'd have
+Now suppose the address in `%rsp` is 8. Then `push 3` would mean "decrement %rsp and put 3 at the next address in memory". So we'd have
 
 
 ```
 address          value
-00               4
-08               29328323
-16               283842
-24               128
-32               3
+832               4
+824               29328323
+816               283842
+808               128
+800               3
 ```
 
 This means that the `push` and `pop` instructions both make very fundamental assumptions about the memory layout of your program -- that `%rsp` represents an address they can access, and that the memory there is split up into 8 byte (64 bit) chunks that represent the current stack. 
@@ -151,6 +151,8 @@ If you read the README there carefully, you'll notice that Rust's libbacktrace o
 I was really surprised that **assembly instructions** make assumptions about how memory is organized and what information is in which registers. This explains why people talk about The Stack like it's this fundamental data structure instead of just one choice about how you could organize your program. It kind of is!
 
 If you want to more fun things to read, there's a great article [Understanding C by learning assembly](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly) which discusses using GDB to inspect memory and see exactly what's going on when you run a C program. It's super fun.
+
+There is so much to know! [@yrp604 on twitter](https://twitter.com/yrp604/status/704896921152921602) just told me that on ARM you can choose which direction the stack grows! Whoa.
 
 <small>
 Thanks to Oğuz Kayral, Kamal Marhubi, and Julian Squires for discussing this with me!
