@@ -108,7 +108,7 @@ address         value
 808               128
 ```
 
-Now suppose the address in `%rsp` is 8. Then `push 3` would mean "decrement %rsp and put 3 at the next address in memory". So we'd have
+Now suppose the address in `%rsp` is 808. Then `push 3` would mean "decrement %rsp and put 3 at the next lowest address in memory". So we'd have
 
 
 ```
@@ -130,7 +130,9 @@ I found it pretty surprising that the x86 assembly instruction set knows about t
 
 ### Which came first, the chicken or the egg?
 
-I just said that this is the "C stack format", and the assembly assumes that everything is like C. But of course it could be the other away around -- maybe the x86 instruction set came first, with its assumptions about how the One True Stack is organized, and then C conformed to that! I don't know. Maybe you will tell me which came first! Did all this get decided in the 80s? in the 90s? in the 70s?
+I just said that this is the "C stack format", and the assembly assumes that everything is like C. But of course it could be the other away around -- maybe the x86 instruction set came first, with its assumptions about how the One True Stack is organized, and then C conformed to that! And you could write a C compiler that uses a totally different stack format and is incompatible with every other program!
+
+I don't know. Maybe you will tell me which came first -- the compilers that laid out the stack this way, or the instructions! Did all this get decided in the 80s? in the 90s? in the 70s?
 
 In any case, it seems like we're stuck with those choices now. Except!
 
@@ -144,7 +146,7 @@ This isn't a super big deal in Rust -- if you want to call a C function from Rus
 
 But you do need to be aware of it, if you're a prospective weird-stack-programming-language author or user! For instance! If you want to use gdb with Rust, and you want to get a stack trace ("what function did I call before I called this one?") -- that wouldn't normally work. gdb would not know how to interpret the stack! But Rust implements [libbacktrace](https://github.com/rust-lang/rust/tree/master/src/libbacktrace), which tells GDB how the stack information corresponds to a stack trace.
 
-If you read the README there carefully, you'll notice that Rust's libbacktrace only works with ELF binaries! This means that you can't get Rust stack traces with gdb on OS X or Windows, only in Linux. That actually really sucks! There are consequences to having an unusual stack format, and real work you need to do to make the rest of the world understand you.
+If you read the README there carefully, you'll notice that Rust's libbacktrace only works with ELF binaries! This means that you can't get Rust stack traces with gdb on OS X or Windows, only in Linux/BSDs/other operating systems that ues ELF binaries. That actually really sucks! There are consequences to having an unusual stack format, and real work you need to do to make the rest of the world understand you.
 
 ### fascinating.
 
