@@ -28,6 +28,7 @@ This slide tells us that there are basically only 4 HTTP libraries in Ruby:
 
 That's it. Every other library builds on top of those libraries. We can classify these even further! Net::HTTP, Excon, and httpclient all use Ruby's built-in `socket` library to make TCP connections. So the real taxonomy is
 
+```
 * Socket interface (operating system)
   * Ruby socket library
     * Excon
@@ -35,6 +36,7 @@ That's it. Every other library builds on top of those libraries. We can classify
     * httpclient
   * libcurl
     * Ruby bindings for libcurl (curb)
+```
 
 I find taxonomies like this super helpful when trying to understand a landscape of possibilities. Instead of having 15 or 20 libraries to think about, now there are just 4!
 
