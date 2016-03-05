@@ -104,5 +104,3 @@ It turns out that open source projects are just like all software projects -- th
 When I run into code that does stuff I don't agree with, I'm reminded of this great paragraph from [On Being a Senior Engineer](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/) --
 
 > Critique code instead of people – be kind to the coder, not to the code. As much as possible, make all of your comments positive and oriented to improving the code. Relate comments to local standards, program specs, increased performance, etc.
-
-Maybe I'll make a pull request now that I understand the history of these two decisions better! Or not. We'll see =). (spoiler: nelhage [did](https://github.com/excon/excon/pull/557)!)
