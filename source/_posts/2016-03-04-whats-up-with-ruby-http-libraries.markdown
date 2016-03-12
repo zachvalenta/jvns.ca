@@ -77,11 +77,13 @@ socket.write(headers)
 socket.write(body)
 ```
 
-[Here's the code.](https://github.com/excon/excon/blob/master/lib/excon/connection.rb#L143-L167)
+[Here's the code.](https://github.com/excon/excon/blob/c3c8abff7713d31d3b06ef54973f01b1283e0012/lib/excon/connection.rb#L143-L167)
 
 This ends up creating 2 TCP packets for the request, and can cause your packets to be delayed (as I talk about in that TCP post). This is no good!
 
 I looked into the history of this in Excon. [There's an Github issue referencing Nagle's algorithm and this exact performance problem from 2013](https://github.com/excon/excon/issues/233), and it appears to have been fixed, and then reverted to the old behavior again in [this issue](https://github.com/excon/excon/issues/266), because they had problems doing string concatenation. So it seems like the library's authors understood the choice they were making, but just didn't have time to address it.
+
+**Update:** this is now fixed in Excon, as of release v0.48.0 on March 7, 2016. ([pull request](https://github.com/excon/excon/pull/557)). Yay!
 
 ### How do we find surprises? (or: reviewing a library)
 
