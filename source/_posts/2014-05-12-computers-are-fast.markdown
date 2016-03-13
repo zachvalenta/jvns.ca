@@ -3,7 +3,7 @@ layout: post
 title: "Computers are *fast*!"
 date: 2014-05-12 21:31:59 -0400
 comments: true
-categories: favorite performance
+categories: performance favorite perf
 ---
 
 So I have a computer. My computer contains hardware (like a CPU! RAM!

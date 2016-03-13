@@ -3,7 +3,7 @@ layout: post
 title: "perf top: an awesome way to spy on CPU usage"
 date: 2016-02-24 22:49:44 -0500
 comments: true
-categories:
+categories: perf
 ---
 
 If you read this blog, you might know that I [love strace, so much that I wrote a zine about it](http://jvns.ca/blog/2015/04/14/strace-zine/). But strace has not ever been able to solve all my problems -- it only tells me about system calls, it can slow down my code up to 50x. Not ideal!
