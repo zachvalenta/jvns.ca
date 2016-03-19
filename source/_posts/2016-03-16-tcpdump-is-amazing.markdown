@@ -81,6 +81,8 @@ here's how to filter on IP:
 
 I don't know why it's `src port $ip` but `ip src $ip`. If I get it wrong I just try to switch the order. You can go read [the docs](http://www.tcpdump.org/manpages/pcap-filter.7.html) and do much more complicated filtering but this has been good enough for me so far.
 
+To learn more about this, read about the [Berke]
+
 ### Overhead (is it safe to run tcpdump on my production machine?)
 
 short answer: I think so, mostly.
@@ -105,7 +107,7 @@ Let's say I wanted to spy on all GET requests happening on my machine. That's su
 
 ```
 $ sudo tshark -i any \
-            -R 'http.request.method == "GET"' \
+            -Y 'http.request.method == "GET"' \
             -T fields \
             -e http.request.method -e http.request.uri -e ip.dst
 GET   /hello.html     54.186.13.33

@@ -3,7 +3,7 @@ layout: post
 title: "I can spy on my CPU cycles with perf!"
 date: 2014-05-13 20:47:49 -0400
 comments: true
-categories: kernel performance spytools
+categories: kernel spytools perf performance
 ---
 
 Yesterday I talked about using `perf` to profile assembly

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How does perf work? (by reading the Linux kernel)"
+title: "How does perf work? (in which we read the Linux kernel source)"
 date: 2016-03-12 11:09:40 -0500
 comments: true
-categories: perf
+categories: perf, linux
 ---
 
-perf is a sampling profiler for Linux, that I've written about [a few times](/blog/categories/perf) on this blog before. I was interviewed on [a podcast](http://embedded.fm/episodes/141) recently where the host asked me "so, julia, tell me how perf works!" and I gave a sort of unsatisfying answer "you know, sampling?".
+perf is a profiling tool for Linux, that I've written about [a few times](/blog/categories/perf) on this blog before. I was interviewed on [a podcast](http://embedded.fm/episodes/141) recently where the host asked me "so, julia, tell me how perf works!" and I gave a sort of unsatisfying answer "you know, sampling?".
 
 So it turns out I don't really know how perf works. And I like knowing how stuff works. Last week I read some of the [man page for `perf_event_open`](http://man7.org/linux/man-pages/man2/perf_event_open.2.html), the system call that perf uses. It's 10,000 words but pretty helpful! I'm still quite confused about perf, so I'm going to tell you, fair reader, what I know, and then maybe you can help me out with my questions.
 
-There is not a lot of documentation for perf. The best resource I know is on [Brendan Gregg's site](http://www.brendangregg.com/perf.html), but it does not answer all the questions I have! To answer some of these questions, we're going to read the Linux kernel source code.
+There is not a lot of documentation for perf. The best resource I know is on [Brendan Gregg's site](http://www.brendangregg.com/perf.html), but it does not answer all the questions I have! To answer some of these questions, we're going to read the Linux kernel source code. Because it's Saturday night.
 
 ### Hardware counters
 
@@ -69,7 +69,7 @@ The core of perf events looks like it's in [kernel/events/core.c](https://github
 
 My goal: understand how perf does sampling of CPU events. For the sake of argument, let's pretend we only wanted to save the state of the CPU's registers every time we sample.
 
-We know from the [`perf_event_open` man page](http://man7.org/linux/man-pages/man2/perf_event_open.2.html) that perf writes out events to userspace ("hi! I am in julia's awesome function right now!"). It does this using a _ring buffer_. Which is some data structure in memory. Okay.
+We know from the [`perf_event_open` man page](http://man7.org/linux/man-pages/man2/perf_event_open.2.html) that perf writes out events to userspace ("hi! I am in julia's awesome function right now!"). It writes events to a mmap'd _ring buffer_. Which is some data structure in memory. Okay.
 
 Further inspection of this 10,000 line `core.c` file reveals that the code outputs data to userspace in the `perf_event_update_userpage` function.
 
@@ -83,8 +83,9 @@ So now I can see a little tiny bit of the code that perf uses to do sampling. Th
 
 * when does perf do its sampling? is it when the process gets scheduled onto the CPU? how is the sampling triggered? I am completely confused about this.
 * what is the relationship between perf and kprobes? if I just want to sample the registers / address of the instruction pointer from `ls`'s execution, does that have anything to do with kprobes? with ftrace? I think it doesn't, and that I only need kprobes if I want to instrument a kernel function (like a system call), but I'm not sure.
+* are kprobes and ftrace the same kernel system? I feel like they are but I am confused.
 
-### reading kernel code: not impossible
+### reading kernel code: not totally impossible
 
 I probably skimmed like 4000 lines of Linux kernel code (the perf parts!) to write this post, in 3 hours. There are definitely at least 20,000 lines of code related to perf. Maybe 100,000? I do not have the Linux source on my computer -- I used livegrep and github to look at it.
 

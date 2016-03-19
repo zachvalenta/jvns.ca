@@ -3,7 +3,7 @@ layout: post
 title: "Seeing system calls with perf instead of strace"
 date: 2015-03-30 21:42:36 -0400
 comments: true
-categories: 
+categories: perf
 ---
 
 I'm at a local hackerspace this evening, and I decided to get `perf`
