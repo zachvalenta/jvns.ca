@@ -22,6 +22,7 @@ Your application uses resources. The main ones I know are
 - network bandwidth
 - CPU
 - databases, probably
+- locks (which we'll get into in a bit)
 
 The first step when capacity planning is (or when doing performance work, generally) is to figure out which resource(s) you're the most limited by, how much of that resource you're using right now, and how much capacity have you there. For example! If every request takes 2s of CPU time (whoa.), then you can only handle 0.5 of them per CPU every second!
 
@@ -39,6 +40,10 @@ It's pretty easy to measure how much CPU your application is using (you can use 
 Databases are quite a bit more tricky. If I wanted to know how query load my database could sustain, I'd probably spin up a new instance of that database and load test it until it stopped working. That's a lot more time intensive, though!
 
 You'll notice in all of these examples, I've assumed that your program has consistent usage patterns (that one Jay-Z ticket won't take 100x more resources than another). This often totally isn't true in practice! I do not have a cool answer for how to deal with this.
+
+### locks: a weird resource
+
+Kelsey [very correctly noted on twitter](https://twitter.com/_K_E_L_S_E_Y/status/711648081545003008) that if you're selling tickets, it's SUPER IMPORTANT to not sell more tickets than you actually have. So you need to create some kind of lock so that every ticket machine can check and make sure that this new person can actually get a ticket. Locks are not a kind of resource you can just get more of, since they're about synchronization! I will not say more about this here but it's super super important.
 
 ### Load balancing
 
