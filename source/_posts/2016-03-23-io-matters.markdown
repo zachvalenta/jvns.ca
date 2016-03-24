@@ -12,7 +12,7 @@ Today I was running a Redshift query, and it was slow. Redshift is this database
 
 But not this query! This query was slow. I'd been querying this table, for months and it had been slow for months. Finally I was like "well, there has to be a reason why it's slow". I asked my awesome coworker Jeff what was up.
 
-Now, Redshift is a columnar database (unlike sqlite/mysql/postgres). This means that it stores the data from each column together on disk, so if you have a 900GB database, but the column you want is only 1GB of data, then you only need to read 1GB to. This is amazing when you have wide tables that you only want to query a few columns from, which is the situation I'm in most of the time.
+Now, Redshift is a columnar database (unlike sqlite/mysql/postgres). This means that it stores the data from each column together on disk, so if you have a 900GB table, but the column you want is only 1GB of data, then you only need to read 1GB. This is amazing when you have wide tables that you only want to query a few columns from, which is the situation I'm in most of the time.
 
 So, back to my table. I was querying a string column. That string column, on disk, was taking up ~100GB of space. This means that every time I queried, it had to read 100GB from disk (modulo disk caches). That's a lot! Jeff turned on compression and told Redshift that the column was a `varchar(255)` instead of a `varchar(65536)`. My queries got way faster.
 
