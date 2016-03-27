@@ -10,7 +10,7 @@ I've been wondering recently about capacity planning. For example! Suppose you r
 
 One day, you're hit with a bunch of extra load. Your server can't handle it, and your customers are sad (they were trying to buy tickets for the Beyonce concert that just got announced and they couldn't!!!). You're sad. Everyone is sad.
 
-How do you fix it so that when Jay Z's tickets go on sale next week, everything will be fine? CAPACITY PLANNING.
+How do you fix it so that when Jay Z's tickets go on sale next week, everything will be fine? Or how to you plan server purchases for the next year of huge ticket sales now that you've signed a lot of awesome new deals? CAPACITY PLANNING.
 
 I don't know a lot about how to do capacity planning. But here's what I do know! warning: i am not a magical performance architect or whatever. I'm just here trying to make sense of computers.
 
