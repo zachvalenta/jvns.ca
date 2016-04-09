@@ -74,6 +74,17 @@ I implemented a version of this in my code and everything worked amazingly. It a
 
 I tweeted about how great Java Concurrency in Practice is and everyone was like "yeah that book was so formative for me it made me love concurrency" "seriously it's such a great book" "it's like K&R". So now I'm way way way more motivated to read it.
 
+### how to shutdown a thread pool
+
+Here's what I did:
+
+```
+service.shutdown()
+service.awaitTermination(Long.MaxLong, TimeUnit.Seconds)
+```
+
+This tells it to stop accepting new tasks, and then wait for all the tasks to finish! This is easy but I needed to remember to do it and think through it.
+
 ### a super quick note on Python
 
 Out of curiosity, I looked at Python's thread pool ([ThreadPoolExecutor](https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.ThreadPoolExecutor) from `futures` in Python 2). It doesn't even let you configure the internal submission queue on your thread pool! Luckily the implementation of ThreadPoolExecutor is [not very long](https://hg.python.org/cpython/file/3.5/Lib/concurrent/futures/thread.py) so we can always write our own or something if we are dissatisfied and brave.
