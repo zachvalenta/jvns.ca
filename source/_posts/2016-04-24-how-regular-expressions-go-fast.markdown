@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "How regular expressions go fast"
+title: "you can take the derivative of a regular expression?!"
 date: 2016-04-24 22:09:05 -0400
 comments: true
 categories: 
 ---
+
+And it's actually useful?!
 
 Paul Wankadia sent me an email yesterday about regular expressions and I thought it was so interesting I decided to write up some of what I learned from it. I thought I knew how regular expressions worked on computers because I took a class on them in university (hi prakash), but it turns out that no, I did not know.
 
@@ -18,15 +20,16 @@ I took a class on regular expressions in university. In them, I learned that you
 
 <img src="/images/dfa.png">
 
-So, if you're trying to see if the string "0000" match, you'll go
+So, if you're trying to see if the string "00100" matches, you'll go
 
 ```
-* start: S0
+* start: S1
+* see a 0: go to S2
 * see a 0: go to S1
-* see a 0: go to S0
+* see a 1: stay on S1
+* see a 0: go to S2
 * see a 0: go to S1
-* see a 0: go to S0
-* S0 is an "accept" state because of the two circles around it!
+* S1 is an "accept" state because of the two circles around it!
 that means that the string 0000 matches! Yay!
 ```
 
@@ -36,7 +39,7 @@ the important thing to know is: DFAs are simple and fast and very nice. they are
 
 ### how do you do regular expressions on a computer?
 
-So, now suppose that we have the regular expression `(00)*` to match any string with an even number of zeroes. That is the same as the DFA (above) and you might expect that it is actually implemented by... coding up a DFA as a state machine. Right? We said that DFAs are simple and beautiful and amazing and so the regular expression implementers probably used them.
+So, now suppose that we have the regular expression `(1*01*0)*` to match any string with an even number of zeroes. That is the same as the DFA (above) and you might expect that it is actually implemented by... coding up a DFA as a state machine. Right? We said that DFAs are simple and beautiful and amazing and so the regular expression implementers probably used them.
 
 Apparently this is not true! Our next stop is a series of [posts on regular expressions by Russ Cox](https://swtch.com/~rsc/regexp/), who originally wrote the RE2 library ([release blog post](http://google-opensource.blogspot.ca/2010/03/re2-principled-approach-to-regular.html)). I think the best place to start is [Regular Expression Matching Can Be Simple And Fast (but is slow in Java, Perl, PHP, Python, Ruby, ...)](https://swtch.com/~rsc/regexp/regexp1.html). This is a very good clickbait title, and lives up to its promise by also being an excellent article.
 
@@ -54,7 +57,7 @@ Awesome. Let's move on.
 
 ### regular expression derivatives and redgrep
 
-everything up to here made sense to me. Apparently, though, there's more! in the next step of being a regular expressions nerd, we talk about "regular expression derivatives". This idea comes from a paper ["Derivatives of Regular Expressions"](http://dl.acm.org/citation.cfm?id=321249) by Janusz Brzozowski. I cannot download that paper without paying $15 so I do not know what it says. [Here is the wikipedia article](https://en.wikipedia.org/wiki/Brzozowski_derivative).
+everything up to here made sense to me. Apparently, though, there's more! in the next step of being a regular expressions nerd, we talk about "regular expression derivatives". This idea comes from a paper ["Derivatives of Regular Expressions"](http://dl.acm.org/citation.cfm?id=321249) by Janusz Brzozowski. (link where you have to pay to download the paper, but, sci-hub.io exists). [Here is the wikipedia article](https://en.wikipedia.org/wiki/Brzozowski_derivative).
 
 But we can describe some of the ideas in words. Let's say we have a regular expression which is supposed to match the strings ('a', 'abab', 'aaaabb', 'bbc').
 
@@ -66,7 +69,7 @@ When Kamal told me about taking the derivative of a string I FREAKED OUT for lik
 
 This library [redgrep](https://github.com/google/redgrep), I think, compiles regular expressions into LLVM bytecode by repeatedly taking the derivative of the regular expression to give you a DFA, when it then translates to LLVM. There's [a talk about it!](https://www.youtube.com/watch?v=CMhqlRBfVX4&feature=youtu.be). There are some pretty compelling examples of how it can take a complicated regular expression and translate it in to a pretty simple DFA.
 
-The redgrep library is all C++ and is actually only a few thousands of lines of code, including tests. So I think it's actually that unapproachable to read the whole thing if you're interested -- the talk gives you a walk through of the code.
+The redgrep library is all C++ and is actually only a few thousands of lines of code, including tests. So I think it's not actually that unapproachable to read the whole thing if you're interested -- the talk gives you a walk through of the code.
 
 ### cool!
 
