@@ -12,3 +12,4 @@ source/.jekyll-metadata
 source/stylesheets/screen.css
 vendor
 node_modules
+cloudflare*
