@@ -88,8 +88,4 @@ I realized that I linked to Cloudflare a lot in this blog post. I think this is 
 
 As usual I learned most of this stuff literally today so probably at least 5 things are wrong. Especially the security stuff.
 
-<small>I sometimes wonder how companies end up with good technical blogs -- putting together a coherent voice on a blog seems really hard! I often think it would be really hard to write for anyone else's blog because it would sound too much like Julia and not enough like Cloudflare or whatever. </small>
-
-<small>
-thanks to Laura Lindzey and Dan Luu for their comments!
-</small>
+<small>I'm really impressed by companies with great technical blogs. And kind of jealous of the people who work for those companies. It seems like maybe Cloudflare just lets people write on their blog about what they find interesting? This seems like an awesome strategy.</small>

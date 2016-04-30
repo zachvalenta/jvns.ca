@@ -29,22 +29,16 @@ So, if you're going to learn awesome stuff from the people you work with, first 
 
 I have a bajillion pairings of people <-> information like this in my head. But as I'm writing down these examples, I'm realizing how *not* obvious it is who knows what! For instance, suppose I was running into a problem with JVM garbage collection 4 weeks ago. I would definitely 100% not have thought to ask Cory. But turns out he knows a lot about that! 
 
-And Ray wrote Cloudflare's DNS server. He won't tell you this if you meet him so you have to go look at his LinkedIn or something and read
+And Ray wrote Cloudflare's DNS server. He won't tell you this if you meet him so you have to go look at his LinkedIn or something and read about it. This is a super relevant thing to know if you work with him!
 
-> Designed, developed and maintained CloudFlare’s current DNS server
-> infrastructure, RRDNS, in Golang that serves authoritative DNS for over 1
-> Million domains and proxies DNS traffic for partners at 250+ Billion
-> requests/month. 
-
-Whoa, that's amazing! It is very relevant knowledge if you work with him.
-
-And if I had a question about Go, I'd probably look up who has committed to Go services internally, and maybe I'd come up with Carl or Colin, but I also happen to know that Aditya knows quite a bit about Go and [gave a cool talk at Gophercon](https://www.youtube.com/watch?v=s4e-cFhT620). I don't know how I'd discover that without googling "$coworker golang" for every single one of my coworkers. And that wouldn't even do it because lots of people don't have an internet presence. Or maybe I wouldn't notice Mark's great [Go By Example](https://gobyexample.com/) site. There are probably at least 7 people at work who are really good at Go and I have no idea who they are. I just found out this second that Mark has a ton of interesting Clojure repositories on github. There is so much I don't know about my coworkers' expertise! Eek.
+If I had a question about Go, I'd probably look up who has committed to Go services internally, and maybe I'd come up with Carl or Colin, but I also happen to know that Aditya knows quite a bit about Go and [gave a cool talk at Gophercon](https://www.youtube.com/watch?v=s4e-cFhT620). I don't know how I'd discover that without googling "$coworker golang" for every single one of my coworkers. And that wouldn't even do it because lots of people don't have an internet presence. Or maybe I wouldn't notice Mark's great [Go By Example](https://gobyexample.com/) site. There are probably at least 7 people at work who are really good at Go and I have no idea who they are. I just found out this second that Mark has a ton of interesting Clojure repositories on github. There is so much I don't know about my coworkers' expertise! Eek.
 
 So, discovery. In general I know (or can easily find out) what projects people work on at work. That is no problem. But. I'm constantly shocked by how often I find out that there's a topic I need to know about for work and someone I work with either
 
 * has a ton of previous professional experience with the topic ("oh yeah i worked on networking for 6 years")
 * maintains an important open source project in the field that I had no idea about
 * has been learning about the topic in their spare time and now knows a lot about it
+* ... maybe most importantly, *don't* know a lot about the topic and are really really eager to learn about it and we could totally learn together and be wizards
 
 and **I had no idea**. I basically think this is a travesty. People occasionally run internal talks about topics they know about which is THE BEST. But honestly sometimes I wish every developer (to say nothing of my other great colleagues!!!) I work with came with a resume or document or something saying HERE IS WHY THIS PERSON IS REALLY IMPRESSIVE AND AWESOME AND THESE ARE THE THINGS THEY ARE AN EXPERT ON.
 
@@ -65,7 +59,7 @@ Like everything in this blog post, I don't know the answer to this one. It's eas
 
 I think there are maybe two reasons for that (and probably more!)
 
-First, if you built it then you have a really strong sense for the **history** of the system. Systems don't come into being fully formed, and if you try to understand them that way it doesn't work. I've been 
+First, if you built it then you have a really strong sense for the **history** of the system. Systems don't come into being fully formed, and if you try to understand them that way it doesn't work.
 
 Second, you end up with this sense of... entitlement, or something, to knowledge about the system. If someone asks me a question about a system I started, my basic assumption is "yeah, I can answer that, no problem!". And even if I haven't looked at it for 6 months or other people have done significant development work on it afterwards, I **still** expect to be able to just ask them questions about what they did and figure out the answer to arbitrary questions about the system.
 
@@ -128,3 +122,7 @@ From the other side, when people ask me questions I also often try to include th
 All this stuff is really hard to get right, but it feels to me really really worth it -- if you have a Single Person who is the only expert on a system for a long time, I think it’s ultimately really bad for the system and for the organization.
 
 I would love to know how you make this work! Have you become an expert on a project that someone else started and is 2 years old? Did you successfully hand off a large body of work so that you basically never answer questions about it anymore? (without quitting?) Do you have a really strong sense for who knows what in your organization and you feel like they teach other people really effectively? How did you do it?
+
+<small>
+thanks to Laura Lindzey and Dan Luu for their comments!
+</small>
