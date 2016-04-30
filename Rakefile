@@ -227,6 +227,8 @@ task :deploy do
 
   Rake::Task[:copydot].invoke(source_dir, public_dir)
   Rake::Task["#{deploy_default}"].execute
+  puts "Clearing Cloudflare cache"
+  system "bash cloudflare_clear_cache.sh"
 end
 
 desc "Generate website and deploy"
