@@ -12,7 +12,7 @@ A CDN is a "content delivery network" -- the idea is that you're a website and y
 
 But you are in New York, and the speed of light is slow (really!), and you are trying to send the javascript file to Sydney -- that's 16,000 km away, which is 50ms at the speed of light, or a 100ms round trip. With a bad mobile connection that's dropping packets, it can get even worse! So now everyone can probably still get your file, mostly, but it might take them a long time to get it.
 
-A common solution is to put the file on a server physically in Sydney, so that Sydneyites (??) can get it faster. This is what a CDN does. And I thought that was all that it did! But today I asked [many questions on Twitter](https://twitter.com/b0rk/status/726062053920747520) and it turns out that I was very wrong -- CDNs are not only good for caching content! People also use them for other reasons! So in this post we're only going to discuss non-caching uses of CDNs.
+A common solution is to put the file on a server physically in Sydney, so that Sydneysiders (!!) can get it faster. This is what a CDN does. And I thought that was all that it did! But today I asked [many questions on Twitter](https://twitter.com/b0rk/status/726062053920747520) and it turns out that I was very wrong -- CDNs are not only good for caching content! People also use them for other reasons! So in this post we're only going to discuss non-caching uses of CDNs.
 
 The core questions we're going to try to answer are: 
 
@@ -89,3 +89,7 @@ I realized that I linked to Cloudflare a lot in this blog post. I think this is 
 As usual I learned most of this stuff literally today so probably at least 5 things are wrong. Especially the security stuff.
 
 <small>I sometimes wonder how companies end up with good technical blogs -- putting together a coherent voice on a blog seems really hard! I often think it would be really hard to write for anyone else's blog because it would sound too much like Julia and not enough like Cloudflare or whatever. </small>
+
+<small>
+thanks to Laura Lindzey and Dan Luu for their comments!
+</small>
