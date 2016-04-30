@@ -84,8 +84,8 @@ Second, if your site is up 99.9% of the time and the CDN is up 99.9% of the time
 
 It is apparently a pretty normal thing to put a site behind a CDN without caching it! Who knew? Not me, before today. There's a good [talk from Etsy from 2013](https://youtu.be/HU_OZbxzgi0) about using multiple CDNs which I've read the slides for and need to watch.
 
-I realized that I linked to Cloudflare a lot in this blog post. I think this is because they have a great technical blog that explains a lot of interesting stuff (like [the curious case of slow downloads](https://blog.cloudflare.com/the-curious-case-of-slow-downloads/)) so it's easier to understand what's going on with their products. I have never used Cloudflare. 
+I realized that I linked to Cloudflare a lot in this blog post. I think this is because they have a great technical blog that explains a lot of interesting stuff (like [the curious case of slow downloads](https://blog.cloudflare.com/the-curious-case-of-slow-downloads/)) so it's easier to understand what's going on with their products. I have never used Cloudflare for anything serious so I can't speak to how well it actually works (though I do use it for this blog). 
 
 As usual I learned most of this stuff literally today so probably at least 5 things are wrong. Especially the security stuff.
 
-<small>I'm really impressed by companies with great technical blogs. And kind of jealous of the people who work for those companies. It seems like maybe Cloudflare just lets people write on their blog about what they find interesting? This seems like an awesome strategy.</small>
+<small>I'm really impressed by companies with great technical blogs. And kind of jealous of the people who work for those companies. People from Cloudflare say the company lets people write on their blog about what they find interesting! This seems like an awesome strategy.</small>
