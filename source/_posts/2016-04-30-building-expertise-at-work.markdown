@@ -83,6 +83,8 @@ This was a huge thing on my old team -- for a long time, a small subset of peopl
 
 I think the One True Expert has a role here too -- if other people are going to become experts alongside them, then they need to sometimes hold off on answering questions and doing debugging work, even if it would be faster for them to do it or if they know the answer instantly. I always find this hard, but I think it’s worthwhile.
 
+I think it's worth considering who you encourage people to go to with questions.
+
 ### apprenticeships
 
 [Dan Luu](https://danluu.com) gave me some feedback on this post and he mentioned that an apprenticeship model has been successful for him in the past. Here’s how he described it:
