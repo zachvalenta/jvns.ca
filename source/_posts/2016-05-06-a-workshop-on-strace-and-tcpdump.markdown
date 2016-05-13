@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-This week at work, I ran a workshop on tcpdump and strace. a couple of people on Twitter asked about it so here are some notes. This is mostly just so I can reuse them more easily next time, but maybe you will also find it interesting. The notes are a bit sparse.
+This week at work, I ran a workshop on tcpdump and strace. a couple of people on Twitter asked about it so here are some notes. This is mostly just so I can reuse them more easily next time, but maybe you will also find it interesting. The notes are a bit sparse and it's very unclear that anybody other than me will find them legible or useful, but I decided to put them here anyway.
 
 I basically did a bunch of live demos of how to use tcpdump & strace, and then took questions & comments as people had them. I ran it in an hour, which I think was fine for people who already had some familiarity with the tools, but really aggressive if you're learning from scratch. Will do that differently next time.
 
