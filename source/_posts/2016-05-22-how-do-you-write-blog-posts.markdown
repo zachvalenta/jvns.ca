@@ -40,6 +40,8 @@ I really like writing short blog posts because I have a short attention span and
 
 There's a great talk called [How I Won The Lottery](https://www.youtube.com/watch?v=l_F9jxsfGCw) by Darius Kazemi about creative work and how producing things that you think are good is like buying a lottery ticket. So I guess I try to make good things and buy many small lottery tickets.
 
+Also some things take me more write, though. I spent extra time on [Things you should know about stock options before negotiating an offer](http://jvns.ca/blog/2015/12/30/do-the-math-on-your-stock-options/) and [How to trick a neural network into thinking a panda is a vulture](https://codewords.recurse.com/issues/five/why-do-neural-networks-think-a-panda-is-a-vulture) took a bunch of extra research.
+
 ### How do you decide what's worth writing about? 
 
 * "would this have helped me a year ago?"
