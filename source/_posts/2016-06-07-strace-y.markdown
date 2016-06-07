@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-I just upgraded my computer to Ubuntu 16.04, from 12.04. So, expect occasional updates on what has happened in the last 4 years. 
+I just upgraded my computer to Ubuntu 16.04, from 12.04. So, expect occasional updates on what has happened in the last 4 years since I am a computer dinosaur.
 
 Now, as you all know, strace is my favorite program. So updates to my favorite program are EXTREMELY EXCITING.
 
@@ -21,7 +21,7 @@ The number "1" is a *file descriptor*. Another thing that it is is NOT VERY INFO
 WELL NOW IT CAN. Let's imagine we're interested in knowing the difference between `cp` and `mv`. For this task, I decided to copy a 1GB Ubuntu 16.04 ISO image from my desktop to `/tmp/blah`.
 
 ```
-strace -o out -yy cp ubuntu-16.04-desktop-amd64.iso /tmp/blah 
+strace -o out -y cp ubuntu-16.04-desktop-amd64.iso /tmp/blah 
 ```
 
 Now let's see what it did! We still get to keep the file descriptors, but it appends the filename of the file it was reading from! Awesome! We can see that it's reading 128KB (128 * 1024 = 131072 bytes) at a time from the source file (`/home/bork/Desktop/ubuntu-16.04-desktop-amd64.iso`), and writing them into the destination file (`/tmp/blah`). Seems reasonable!
@@ -45,10 +45,13 @@ rename("ubuntu-16.04-desktop-amd64.iso", "../ubuntu-16.04-desktop-amd64.iso") = 
 
 That's just one system call! Cool! No wonder moving is so fast and copying is so slow :)
 
-### usability is cool
+### usability is cool (and, -yy!)
 
-I love seeing programs like strace get usability improvements! This is awesome. If you run strace with `-yy`, and you're doing networking, it'll resolve file descriptors into an IP address and port, like this!
+I love seeing programs like strace get usability improvements! This is awesome. If you run strace with `-yy`, and you're doing networking, it'll resolve file descriptors into a source & destination IP address and port, like this!
+
+This is querying my DNS server on localhost for `blah.com` and getting no answer.
 
 ```
+$ strace -yy wget blah.com
 recvfrom(3<UDP:[127.0.0.1:46218->127.0.1.1:53]>, "\270\222\201\205\0\1\0\0\0\0\0\0\4blah\3com\0\0\1\0\1", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.1.1")}, [16]) = 26
 ```
