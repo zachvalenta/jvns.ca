@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "strace -y: a newish small feature"
+title: "A useful new strace feature"
 date: 2016-06-07 19:52:40 +0200
 comments: true
 categories: 
@@ -18,7 +18,7 @@ write(1, "aio.h\t       btrfs\t   elf.h...") = 172
 
 The number "1" is a *file descriptor*. Another thing that it is is NOT VERY INFORMATIVE. It's important to know about file descriptors, but when I tell people about strace, I always feel like it's kind of annoying! Why can't strace just tell me which file it wrote to, instead of hiding it behind some number?
 
-WELL NOW IT CAN. Let's imagine we don't fully understand the difference between `cp` and `mv`, and we want to find out. For this task, I decided to copy a 1GB Ubuntu 16.04 ISO image from my desktop to `/tmp/blah`.
+WELL NOW IT CAN. There is a new flag: `-y`! Let's imagine we don't fully understand the difference between `cp` and `mv`, and we want to find out. For this task, I decided to copy a 1GB Ubuntu 16.04 ISO image from my desktop to `/tmp/blah`.
 
 ```
 strace -o out -y cp ubuntu-16.04-desktop-amd64.iso /tmp/blah 
