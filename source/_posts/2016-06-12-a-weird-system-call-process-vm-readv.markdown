@@ -12,22 +12,22 @@ You might eagerly interrupt me -- julia, you say, you can use pdb! or pry! or [r
 
 So, let me explain. If I'm running a program on the JVM with PID 4242, I can run  `jstack -p 4242`, and it will print the current stack trace of the Java program. Any Java program. It doesn't need any special configuration!!
 
-In C, I think there is no `jstack` equivalent, but you can run `sudo perf top` on a Linux machine and it'll instantly give you a live profile of all the C functions that are running. For any C program. (I'm constantly surprised by how many people don't know you can do this. It's amazing.)
+In C, you can run `sudo perf top` on a Linux machine and it'll instantly give you a live profile of all the C functions that are running. For any C program. (did you know you can do this?! this is one of my favorite things. it is amazing!). `pstack` does something similar to `jstack`, but only for 32-bit binaries :(.
 
-In Ruby.. there's nothing, yet. You can pre-instrument your Ruby program and there are libraries you can use, but this stuff isn't built into the ecosystem in the same way.
+In Ruby.. there's nothing, yet. You can pre-instrument your Ruby program and there are libraries you can use, but this stuff isn't built into the ecosystem in the same way. This makes me grumpy because I'm like IF JAVA CAN HAVE NICE THINGS THEN WHY NOT RUBY AND PYTHON??
 
 So, let's talk about how you could build jstack for Ruby.
 
 ### step 1: gdb
 
-Scott Francis from Shopify has this [great gdb script](https://gist.github.com/csfrancis/11376304) that will print a Ruby stacktrace if you attach to it with gdb.
+Scott Francis from Shopify has this [great gdb script](https://gist.github.com/csfrancis/11376304) that will print a Ruby stacktrace if you attach to it with gdb. You can read how the script works in [Adventures in Production Rails Debugging](http://engineering.shopify.com/112738884-adventures-in-production-rails-debugging).
 
-It took me a couple of days to understand what's going on here -- when you attach to a program with gdb, it seems like basically black magic, but it's actually not magic at all.
+It took me a couple of days to understand what's going on with that script -- when you attach to a program with gdb, it seems like basically black magic, but as usual it's actually not magic at all.
 
-First, let's explore with gdb. This is a little messy, but I want you to see how you explore a program's memory with gdb because I think it's cool. I've redacted some of the longer output.
+First, let's explore a little with gdb. This is a little messy, but I want you to see how you explore a program's memory with gdb because I think it's cool. I've redacted some of the longer output.
 
 ```
-# HELLO RUBY. What is the address of the current thread in this process
+# HELLO RUBY. What is the address of the current thread in this process?
 (gdb) p ruby_current_thread
 $1 = (rb_thread_t *) 0x55b89eb775b0
 
@@ -63,7 +63,7 @@ $8 = {basic = {flags = 546318437, klass = 94660819015280}, as = {heap = {len = 6
 ptr = 0x5617f3432440 "/home/bork/.rbenv/versions/2.1.6/lib/ruby/2.1.0/webrick/utils.rb",}
 ```
 
-**This is amazing**. It's amazing, because we started with practically nothing -- just an address of the current thread! And we finished with a file (/home/bork/.rbenv/versions/2.1.6/lib/ruby/2.1.0/webrick/utils.rb), and a place we are in that file: `block in initialize`.
+**This is amazing**. It's amazing, because we started with practically nothing -- just an address of the current thread! And we finished with a file (`/home/bork/.rbenv/versions/2.1.6/lib/ruby/2.1.0/webrick/utils.rb`), and a place we are in that file: `block in initialize`. We had to write a kind of weird thing to get that information (`*((struct RString*) (ruby_current_thread->cfp + 1)->iseq.location.label)`), but we got it.
 
 The [script](https://gist.github.com/csfrancis/11376304) from before basically does what I just did, except it's a little smarter and can also get you line numbers. Cool.
 
@@ -73,7 +73,7 @@ So this is pretty awesome. We can attach to almost any Ruby process and get a st
 
 Well, not quite. gdb uses the `ptrace` system call, in this case to stop the program in its tracks and then intensely query it for its internals. This is slower than what I want. Maybe my Ruby program needed to actually keep running!
 
-When I ran that gdb command `p *((struct RString*) (ruby_current_thread->cfp + 1)->iseq.location.path)` -- it does a ton of stuff. I was going to paste the strace output, but it is 20 megabytes of system calls. So here's a small excerpt: Every time I need to read memory from the target program (which is what looking up strings is doing!), it issues a bunch of system calls like
+When I ran that gdb command `p *((struct RString*) (ruby_current_thread->cfp + 1)->iseq.location.path)` -- it does a ton of stuff. I was going to paste the strace output of what gdb is actually doing, but it is 20 megabytes of system calls. So here's a small excerpt: Every time I need to read memory from the target program (which is what looking up strings is doing!), it issues a bunch of system calls like
 
 ```
 ptrace(PTRACE_PEEKTEXT, 5677, 0x5617f3432440, [0x6f622f656d6f682f]) = 0
@@ -115,21 +115,22 @@ When we were learning how gdb works, we figured out that as long as you have
 1. the debugging info, and 
 2. the ability to read memory from your target program
 
-you're good to go! gdb happens to use the `ptrace` system call to read memory from the Ruby program, but that's not necessary, it turns out
+you're good to go! gdb happens to use the `ptrace` system call to read memory from the Ruby program, but that's not necessary, it turns out! We are going to make a new friend.
 
-### process_vm_readv
+### `process_vm_readv`
 
-[Julian Squires](http://www.cipht.net) was the person who made me think about all of this in the first place, and I emailed him like UGH JULIAN HOW DO I MAKE THIS WORK and he was like "process_vm_readv!". So, what's that? It's a Linux system call! The man page says:
+[Julian Squires](http://www.cipht.net) was the person who made me think about all of this in the first place, and I emailed him like UGH JULIAN HOW DO I MAKE THIS WORK and he was like "`process_vm_readv`!". So, what's that? It's a Linux system call! The man page says:
 
 ```
-       These  system calls transfer data between the address space of the calling process ("the local process") and the process identified
-       by pid ("the remote process").  The data moves directly between the address spaces of the two processes,  without  passing  through
-       kernel space.
+These  system calls transfer data between the address space of the
+calling process ("the local process") and the process identified by pid
+("the remote process").  The data moves directly between the address
+spaces of the two processes,  without  passing  through kernel space.
 ```
 
 So, if I want to spy on the memory of a Ruby program, for example because I'm writing a debugger, I can use `process_vm_readv`! Neat!
 
-The reason this is awesome and better than what gdb does is -- as far as I can tell, the impact of process_vm_readv on the running process is WAY SMALLER. You just spy on the memory and get out of the way!
+The reason this is awesome and better than what gdb does is -- as far as I can tell, the impact of `process_vm_readv` on the running process is WAY SMALLER. You just spy on the memory and get out of the way!
 
 ### actually building a thing
 
@@ -139,11 +140,11 @@ So, I wrote a prototype program to do this. You can see the source [here](https:
 
 ### it works, kind of
 
-And it WORKED. It started spitting out stack traces of the Ruby program I was writing, every 10 milliseconds! It was fast! It was amazing! I used it to generate a [flame graph](https://github.com/BrendanGregg/FlameGraph.pl). here is my cool flame graph:
+And it WORKED. It started spitting out stack traces of the Ruby program I was writing, every 10 milliseconds! It was pretty fast! It was amazing! I used it to generate a [flame graph](https://github.com/BrendanGregg/FlameGraph.pl). here is my cool flame graph:
 
 <a href="/images/sampling.png"><img src="/images/sampling.png"></a>
 
-So, that was the good news. The bad news is that I didn't actually learn to use the DWARF libraries yet, so I hardcoded all the struct types, and as a result it doesn't work on anybody's computer but my own. And then I have an actual programming job to do, which so far is in the way of progress. But instead of feeling bad that I haven't actually gotten the software to work yet on other peoples' computers, I thought I would tell you how it works! Maybe I will actually fix it up and make it into Real Software some day!
+So, that was the good news. The bad news is that I didn't actually learn to use the DWARF libraries yet, so I hardcoded all the struct types, and as a result it doesn't work on anybody's computer but my own. And then I have an actual programming job to do, which so far is in the way of progress. But instead of feeling bad that I haven't actually gotten the software to work yet on other peoples' computers, I thought I would take a couple of hours and tell you how it works! Maybe this will motivate me to actually fix it up and make it into Real Software some day later!
 
 ### debuggers are exciting
 
@@ -151,7 +152,7 @@ this made me even more excited about writing debugging tools! Some questions I h
 
 * does this tool, that can spit out Ruby stack traces quickly for any Ruby program with debugging symbols enabled, actually exist somewhere and I just don't know about it?
 * what about for Python?
-* maybe it's because a Linux-only Ruby debugging tool is sort of a weird thing?
+* maybe it doesn't exist because a Linux-only Ruby debugging tool is sort of a weird thing?
 * if we *can* build this, and it doesn't exist yet, what other amazing debugging technology could we build?
 
-<small>thanks to Julian Squires, Pris Nasrat, and Kamal Marhubi for helping me with new system calls / gdb / writing Rust! </small>
+Thanks to Julian Squires, Pris Nasrat, and Kamal Marhubi for helping me with new system calls / gdb / writing Rust!
