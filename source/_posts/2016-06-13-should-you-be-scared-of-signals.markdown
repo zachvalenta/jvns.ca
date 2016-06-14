@@ -54,7 +54,7 @@ First, **init**. That's PID 1 on older Linux systems! It turns out when I press 
 
 Next, my **terminal**. You know when you resize your terminal and it reflows all the text? That's it receiving a whole bunch of SIGWINCH (window change) signals, and updating its size and then redrawing everything accordingly. This one made me feel better because a terminal is a Complicated Program, but it is totally handling lots of signals okay all the time!
 
-When a child process of yours exits, you get a SIGCHLD signal. I think this is how my shell konws to report to me that a process has exited.
+When a child process of yours exits, you get a SIGCHLD signal. I think this is how my shell knows to report to me that a process has exited.
 
 [@geofft](https://twitter.com/geofft) also said that "**the JVM** uses signal handlers to implement cross-thread stop-the-world GC"
 
@@ -64,7 +64,7 @@ A lot of programs (like [unicorn](http://unicorn.bogomips.org/SIGNALS.html)) han
 
 * allocate more memory
 * read some data from disk into that memory
-* do something with garbage collcetion (but what? I'm confused about this still.)
+* do something with garbage collection (but what? I'm confused about this still.)
 
 my friend dave pointed me to [this code in an emulator that uses SEGV to notice when a video buffer is updated](https://github.com/cebix/macemu/blob/b58a9260bd1422a28e4c0b7b6bb71d26603bc3e1/BasiliskII/src/CrossPlatform/video_vosf.h) and the [libsigsegv library](https://www.gnu.org/software/libsigsegv/).
 
