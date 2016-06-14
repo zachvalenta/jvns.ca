@@ -60,13 +60,13 @@ When a child process of yours exits, you get a SIGCHLD signal. I think this is h
 
 A lot of programs (like [unicorn](http://unicorn.bogomips.org/SIGNALS.html)) handle signals like SIGHUP to **gracefully restart**. Apparently it uses `SIGTTIN` and `SIGTTOU` to increment and decrement the number of worker processes? Apparently `TTIN` stands for "teletype input". POSIX is weird! We will never escape teletypes?
 
-**SIGSEGV** is a very important signal. It happens when your program tries to access memory that it does not have. An appropriate reaction might be to 
+**SIGSEGV** is a very important signal. It happens when your program tries to access memory that it does not have. A normal reaction to this signal is to die. But you can also do weird stuff! The [libsigsegv library](https://www.gnu.org/software/libsigsegv/) gives a few examples of what you can use it to do:
 
 * allocate more memory
 * read some data from disk into that memory
 * do something with garbage collection (but what? I'm confused about this still.)
 
-my friend dave pointed me to [this code in an emulator that uses SEGV to notice when a video buffer is updated](https://github.com/cebix/macemu/blob/b58a9260bd1422a28e4c0b7b6bb71d26603bc3e1/BasiliskII/src/CrossPlatform/video_vosf.h) and the [libsigsegv library](https://www.gnu.org/software/libsigsegv/).
+my friend dave pointed me to [this code in an emulator that uses SEGV to notice when a video buffer is updated](https://github.com/cebix/macemu/blob/b58a9260bd1422a28e4c0b7b6bb71d26603bc3e1/BasiliskII/src/CrossPlatform/video_vosf.h).
 
 Another really common reason to catch SIGSEGV is to not actually recover (doing this properly is tricky!), but to catch crashes to provide a better error message or get a backtrace. Here's [example code](https://github.com/crawl/crawl/blob/master/crawl-ref/source/crash.cc) and [the debug output it produces](http://crawl.berotato.org/crawl/morgue/grandjackal/crash-grandjackal-20160608-001606.txt). Thanks to [Jesse](https://tozt.net/) for this example!
 
