@@ -61,9 +61,17 @@ This [article from LWN](https://lwn.net/Articles/169961/) "Van Jacobsen's networ
 
 >  The key to better networking scalability, says Van, is to get rid of locking and shared data as much as possible, and to make sure that as much processing work as possible is done on the CPU where the application is running. It is, he says, simply the end-to-end principle in action yet again. This principle, which says that all of the intelligence in the network belongs at the ends of the connections, doesn't stop at the kernel. It should continue, pushing as much work as possible out of the core kernel and toward the actual applications. 
 
+### how does Seastar work?
+
+That fast networking framework Seastar from before is written using something from Intel called [DPDK](http://dpdk.org/). The deal with DPDK seems to be that it's a network card driver and some libraries, but instead of it giving you packets through interrupts (asynchronously), instead it polls the network card and say "do you have a packet yet? now? now? now?".
+
+This makes sense to me because in general if you always have new events to process, then polling is faster (because you basically don't have to wait). Here's some documentation about the [poll mode driver](http://dpdk.org/doc/guides-16.04/prog_guide/poll_mode_drv.html) and an [example of a DPDK] application.
+
+I think with DPDK you can write networking applications that work entirely in userspace with no system calls.  [Cory Benfield](https://twitter.com/Lukasaoz/status/748853883703820293) explained a bunch of these things to me.
+
 ### open source stuff right now: pretty specific
 
-As far as I can tell, there aren't any available general purpose open source userspace TCP/IP stacks available. There are a few specialized ones, but this does not seem to exist right now.
+As far as I can tell, there aren't any available general purpose open source userspace TCP/IP stacks available. There are a few specialized ones, but this does not seem to exist right now. But people seem to be interested in the topic!
 
 ### some more links
 
@@ -81,10 +89,12 @@ Here are some more links that do networking in userspace! This is mostly a link 
 
 [mtcp](https://github.com/eunyoung14/mtcp) is a userspace TCP stack. I don't know anything about it. There's also [uip](https://github.com/adamdunkels/uip) and [lwIP](http://savannah.nongnu.org/projects/lwip/).
 
-That fast networking framework Seastar from before is written using something from Intel called [DPDK](http://dpdk.org/). The website says "DPDK is a set of libraries and drivers for fast packet processing. It was designed to run on any processors.". I'm still confused about DPDK (do you still need to do system calls to send packets when you use it? why is it faster though?)
+
 
 ### phew. 
 
 Okay, that was a lot of new facts and ideas to come out of the comment "a lot of the overhead of a HTTP server is communicating with the kernel".
+
+I like how if you ask the right questions Twitter will just hurl super interesting information at you until you're like OK OK OK MY BRAIN IS FULL. And then they keep telling you awesome stuff anyway :)
 
 There seems to be a lot of work going on here! There are like 100 interesting rabbit holes which I have zero time to investigate right now! Awesome.
