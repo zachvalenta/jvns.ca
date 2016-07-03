@@ -98,3 +98,7 @@ Okay, that was a lot of new facts and ideas to come out of the comment "a lot of
 I like how if you ask the right questions Twitter will just hurl super interesting information at you until you're like OK OK OK MY BRAIN IS FULL. And then they keep telling you awesome stuff anyway :)
 
 There seems to be a lot of work going on here! There are like 100 interesting rabbit holes which I have zero time to investigate right now! Awesome.
+
+<small>
+This is unusual for me to say, but the [Hacker News comments](https://news.ycombinator.com/item?id=12021195) on this post are mostly quite informative and a few people talk about their experiences, positive and negative, implementing network stacks. I enjoyed reading them.
+</small>
