@@ -14,7 +14,7 @@ There were a lot of people who are very interested in programming language desig
 
 Here are a few things I saw that I liked.
 
-e## art and fun
+## art and fun
 
 [Arne Brasseur](https://twitter.com/plexus) gave a really fun demo of live coding music in Clojure during the lightning talks. This is one of those things that I've seen before, and every time I see it it's THE BEST.
 
