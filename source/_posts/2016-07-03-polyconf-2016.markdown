@@ -22,7 +22,7 @@ Here are a few things I saw that I liked.
 
 # programming languages
 
-[Jack Franklin]() talked about Elm, a language that tries to make it easier to write frontent Javascript code. I liked that he didn't try at all to explain the syntax -- instead, he was like "it's built for beginners! the documentation is good! there are great examples! here's the way a starter Elm program is usually designed!". I tested his claims by trying to write a tiny Elm program from start to finish (including installing Elm) on my laptop during the talk. The program worked! I got a heart to follow my cursor around the screen! I still don't know if I'd write it or not but there are some nice things.
+[Jack Franklin]() talked about Elm, a language that tries to make it easier to write frontend Javascript code. I liked that he didn't try at all to explain the syntax -- instead, he was like "it's built for beginners! the documentation is good! there are great examples! here's the way a starter Elm program is usually designed!". I tested his claims by trying to write a tiny Elm program from start to finish (including installing Elm) on my laptop during the talk. The program worked! I got a heart to follow my cursor around the screen! I still don't know if I'd write it or not but there are some nice things.
 
 Elm seemed to be kinda a theme because [Yan Cui]() later did a live demo of coding a Snake game from scratch in Elm. He was incredibly well-prepared and I really liked it -- it was really fun to see the development environment and how he built it up from scratch.
 
