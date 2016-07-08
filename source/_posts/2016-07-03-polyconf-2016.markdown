@@ -8,13 +8,15 @@ categories:
 
 This year I went to PolyConf! PolyConf is about writing programs in *any* programming language! People come who write Clojure and Python and Erlang and C. Leandro Pereira gave a lightning talk about programming a light array in Forth.
 
-First, the people at the conference were totally delightful. I knew only one or two people before coming, and so I walked into a room full of mostly strangers. Then I'd meet someone by the water dispenser and then learn all kinds of fascinating things from them. There were a lot of people who are very interested in programming language design which was interesting because I do not usually think about that.
+First, the people at the conference were totally delightful. I knew only one or two people before coming, and so I walked into a room full of mostly strangers. Then I'd meet someone by the water dispenser and then learn all kinds of fascinating things from them.
+
+There were a lot of people who are very interested in programming language design which was interesting because I don't think about how to make programming languages very much.
 
 Here are a few things I saw that I liked.
 
-### art and fun
+e## art and fun
 
-[Arne Brasseur](https://twitter.com/plexus) gave a really fun demo of live coding music in Clojure during the lightning talks. This is one of those things that I've seen before, every time I see it I feel like it's so magical to create music with a computer. wonderful
+[Arne Brasseur](https://twitter.com/plexus) gave a really fun demo of live coding music in Clojure during the lightning talks. This is one of those things that I've seen before, and every time I see it it's THE BEST.
 
 [Szymon Kaliski](http://treesmovethemost.com/) talked ("Exploring The Universal Library") about art and building tools to make art. One great example he gave was -- he did this choose-your-own-adventure video project with a partner, and originally there are 8 videos and he was going to hardcode all the connections between them. Instead, he made a simple visual tool. Then the person he worked with actually ended up adding 200 more videos to the project and it became way more complex and interesting. It made me think about building small tools for yourself to use and how that can work really well!
 
@@ -34,7 +36,7 @@ I also learned that apparently every Erlang process / green thread has its own d
 
 There was a lot of "hey! look at this technology! it is amazing!" at this conference. This is always nice because it's great to be excited. But with programming things inevitably go badly sometimes, and sometimes I really like to hear about that.
 
-[Hans Hübner](https://twitter.com/HansHuebner) talked about his experience running Datomic (the time-travelling Clojure database) in production, and how they found that the time travel aspect meant that it was harder than normal to do database migrations and change their code.
+[Hans Hübner](https://twitter.com/HansHuebner) talked about his experience running Datomic (the time-travelling Clojure database) in production, and how they found that time travel meant that it was harder than normal to do database migrations and change their code.
 
 I really like that we're trying to push the limits of how we think about databases, but as we do that of course some things aren't going to work as well as we hoped. Talking about it in public means that other people can learn from your experience instead of always having to start from scratch :)
 
@@ -69,4 +71,4 @@ Arne added a 4th rule which i very much agreed with -- "it doesn't have to be go
 ### yay
 
 
-I met at least 8 new people who I really liked, saw a bunch of nice talks, and overall had a great time. What else could a conference be for? The organizers did a great job and I left feeling really happy and hopeful.
+I met like 10 new people who I really liked, saw a bunch of nice talks, and overall had a great time. What else could a conference be for? The organizers did a great job and I left feeling really happy and hopeful.
