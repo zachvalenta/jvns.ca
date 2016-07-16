@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Two ways to do container networking"
+date: 2016-07-16 11:32:05 -0700
+comments: true
+categories: 
+---
+
+Linux containers are really cool these days. I hear people talking about Docker and Kubernetes and Rocket and all these things all the time.
+
+I'm not going to talk too much about what a container is in this post -- I don't have space for that. But I learned this week that there are at least two ways to get containers to talk to each other, and so I want to explain them.
+
+
+### a tiny intro to containers
+
+A Linux container is a process. In the Docker universe we sometimes talk like it's a virtual machine, but fundamentally, it's just a process. Like any process, it can listen on a port (like 30000) and do networking. That's it! Almost.
+
+Now, suppose I want to run 7 servers for the same service on one machine. They all run on port 4000. Normally, this wouldn't fly. But we can get it to work!
+
+### NAT (Network Address Translation)
+
+The first way this can work is NAT. You might know about NAT already even if you don't know it's called that. In my house I have a router and five computers. I can run something on port 4000 on all of those computers and make requests to google.com at the same time. But how? They are all on the same port?
+
+The way this works is: a packet comes out of my computer (IP 192.168.2.2, source port 4000), and gets sent to my router. The router says, well, this is no good. Nobody in the outside world knows what 192.168.2.2 is! I'll take care of this.
+
+So the router *translates* the packet to have my public IP on it (say 216.23.81.28), and a new port it makes up, like 38282. Then it keeps a table (the "NAT table") remembering that port 38282 maps to port 4000 on 192.168.2.2.
+
+Docker uses NAT (??????? todo finish me) ??? iptables ???
+
+### Calico & BGP
+
+Now we get to the second way. My coworker explained this to me in a bar this week and I was like WHAT. YOU CAN DO THAT?! THIS IS AMAZING.
+
+In this case I'm goign to  
+
+Okay, so, again, I have 5 containers, all running things on port 4000. The key observation here is -- it's okay to run a bunch of things on the same port *as long as they're on different IPs*. Normally on one computer you only use one IP address. But that doesn't have to be true! You can have lots!
+
+So. I have 5 containers, and I've assigned them IPs 10.0.1.101, 10.0.1.102, 10.0.1.103, 10.0.1.104, 10.0.1.105. Inside my computer, this is fine -- it's easy to imagine that I can just know which one is which.
+
+But what do I do if I have another computer on the same network? How does that container know that 10.0.1.104 belongs to a container on my computer? Three years ago (wow, I've been writing this for a while... ) I learned about ARP by doing [ARP cache poisoning](/blog/2013/10/29/day-18-in-ur-connection/).
+
+ARP is how you announce to other computers on the network that you're responsible for a specific IP. So you can announce that you have 10.0.1.101 through 10.0.1.105.
+
+To me, this seems like a nicer method than NAT. It means that you can more esaily interpret the packets coming in and out of your machine (and, because we love [tcpdump](/blog/2016/03/16/tcpdump-is-amazing/), we want to be able to understand our network traffic). I think there are other advantages but I'm not sure what they are.
+
+why do you need to use BGP? why can't you just ues ARP?
