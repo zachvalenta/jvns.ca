@@ -1,46 +1,83 @@
 ---
 layout: post
-title: "Two ways to do container networking"
+title: "One way to make containers network: BGP"
 date: 2016-07-16 11:32:05 -0700
 comments: true
 categories: 
 ---
 
-Linux containers are really cool these days. I hear people talking about Docker and Kubernetes and Rocket and all these things all the time.
+Linux containers are really cool these days. I hear people talking about Docker and Kubernetes and Rocket and all these things all the time. And if you have containers, you have to network them together!
 
-I'm not going to talk too much about what a container is in this post -- I don't have space for that. But I learned this week that there are at least two ways to get containers to talk to each other, and so I want to explain them.
+A lot of computer topics are explained in an unnecessarily confusing way, but I think networking can be especially hard for developers to read about -- I'm reading a page right now that talks about virtual networking layers, overlay networks, payload encapsulation, BGP, control planes, packet fragmentation, TAP, veth, Neutron, data center fabric, anycast, vRouters, tunneling, VRF tables, VXLANs... ugh.
 
+A lot of this stuff is not that hard though! I know that packets have IP addresses and ports on them and it turns out that takes you a pretty long way. So let's talk about a way that containers could talk to each other.
 
-### a tiny intro to containers
+I'm not going to talk too much about what a container is in this post. We're going to talk about Calico, a container networking thing that uses BGP. And I'm going to tell you what BGP is. It's cool.
 
-A Linux container is a process. In the Docker universe we sometimes talk like it's a virtual machine, but fundamentally, it's just a process. Like any process, it can listen on a port (like 30000) and do networking. That's it! Almost.
+More than usual, some things I've written here are probably wrong.
+
+### the tiniest intro to containers
+
+A Linux container is a thing with processes in it. (I will not expand on "a thing" here because I don't understand yet). Those processes can listen on ports (like 30000) and do networking.
 
 Now, suppose I want to run 7 servers for the same service on one machine. They all run on port 4000. Normally, this wouldn't fly. But we can get it to work!
 
-### NAT (Network Address Translation)
+### "just listen on a port" is a lie
 
-The first way this can work is NAT. You might know about NAT already even if you don't know it's called that. In my house I have a router and five computers. I can run something on port 4000 on all of those computers and make requests to google.com at the same time. But how? They are all on the same port?
+So, I told you in a last section that processes in containers listen on ports. This is not true in the normal way though. Processes in containers live in a "network namespace". What does that look like? I got off a plane today and was like "I will figure out how all this works! I know networking! this will be easy!"
 
-The way this works is: a packet comes out of my computer (IP 192.168.2.2, source port 4000), and gets sent to my router. The router says, well, this is no good. Nobody in the outside world knows what 192.168.2.2 is! I'll take care of this.
+It's not totally easy. Here's what happened when I tried to understand docker networking. I read [Four ways to connect a docker container to a local network](http://blog.oddbit.com/2014/08/11/four-ways-to-connect-a-docker/) a bunch of times.
 
-So the router *translates* the packet to have my public IP on it (say 216.23.81.28), and a new port it makes up, like 38282. Then it keeps a table (the "NAT table") remembering that port 38282 maps to port 4000 on 192.168.2.2.
+First, I started a Docker container (`docker run -p 10.12.0.117:9090:8000 -i -t my_container /bin/bash`) and ran `python -mSimpleHTTPServer`. So far this is pretty simple -- there is a Python process running on my computer. Normally when I have programs running on my computer that are listening on ports, they are listed in `netstat` or `lsof`. This is not the case with this process, though! The Python process (viewed from outside the container) has PID 26885. You can see that there's a TCP socket but no port and it looks kind of weird:
 
-Docker uses NAT (??????? todo finish me) ??? iptables ???
+```
+$ sudo lsof -i
+python    26885     root    3u  sock     0,8      0t0 1829683 protocol: TCP
+exe       25612     root    6u  IPv4 1817161      0t0     TCP 10.12.0.117:9090 (LISTEN)
+```
+
+We also have a `docker-proxy` process (PID 25612), listening on port 9090. This is a normal-looking TCP socket. Apparently there's a magical "virtual ethernet tunnel" between these two sockets? Why does everything go through a magical proxy process? Why can't my Python process just listen on port 9090 directly if I want it to? This all seems kind of confusing and unnecessary to me. But, what do I know about containers? (not much, that's what.)
+
+At this point I still don't completely understand what's going on but at least I have a process. Let's keep going.
+
+Let's suppose you have a bunch of servers working and you have set them up with real ports that make sense. How do we tell the outside world about them?
 
 ### Calico & BGP
 
-Now we get to the second way. My coworker explained this to me in a bar this week and I was like WHAT. YOU CAN DO THAT?! THIS IS AMAZING.
+Okay, back to the cool container networking thing I said I'd explain.
 
-In this case I'm goign to  
+My coworker explained this to me in a bar this week and I was like WHAT. YOU CAN DO THAT?! THIS IS AMAZING. To understand what's going on, we need to learn a couple more things.
+
+I understood almost nothing on Calico's ["learn" webpage](https://www.projectcalico.org/learn/). But! There is hope! I think this is the most important sentence on that whole page:
+
+> Calico [is] architected on the exact same principles as the Internet, using
+> Border Gateway Protocol...
+
+Border Gateway Protocol! I have heard about BGP! BGP is what makes the internet work. What I know about BGP is -- suppose you're at your house, and you send a packet to Google (206.126.112.185). Here's how it goes:
+
+1. The packet goes to your router
+2. Your router sends it to your internet service provider (ISP)
+1. At this point, there are many many different routers it could send the packet to next. Which one will it use????
+3. Your ISP has a table that tells it where to go for a bunch of ranges of IP addresses. This is called a "routing table".
+4. Your ISP sends it to another server. That server has a routing table
+5. repeat until it gets to Google
+
+As I'm learning at work recently, the internet is *constantly* breaking. All the time, everywhere. Links get severed or slow, servers go down. So the right path to Google 30 minutes ago might be totally not working. BGP is the protocol that internet servers use to communicate to each other about which way to go, and how they should update their routing tables.
+
+There's actually a whole interesting tangent here -- since BGP is the way routers communicate with each other about where to send packets, it means if you can send the *wrong* information over BGP that you can convince people on the internet to send packets for google.com (or their bank) to you. Here's [an article about that](http://www.zdnet.com/article/bgp-spoofing-why-nothing-on-the-internet-is-actually-secure/). Good thing we have TLS certificates, right? :)
+
+### Back to Calico
 
 Okay, so, again, I have 5 containers, all running things on port 4000. The key observation here is -- it's okay to run a bunch of things on the same port *as long as they're on different IPs*. Normally on one computer you only use one IP address. But that doesn't have to be true! You can have lots!
 
 So. I have 5 containers, and I've assigned them IPs 10.0.1.101, 10.0.1.102, 10.0.1.103, 10.0.1.104, 10.0.1.105. Inside my computer, this is fine -- it's easy to imagine that I can just know which one is which.
 
-But what do I do if I have another computer on the same network? How does that container know that 10.0.1.104 belongs to a container on my computer? Three years ago (wow, I've been writing this for a while... ) I learned about ARP by doing [ARP cache poisoning](/blog/2013/10/29/day-18-in-ur-connection/).
+But what do I do if I have another computer on the same network? How does that container know that 10.0.1.104 belongs to a container on my computer?
 
-ARP is how you announce to other computers on the network that you're responsible for a specific IP. So you can announce that you have 10.0.1.101 through 10.0.1.105.
+The Linux kernel knows about the BGP protocol. Calico knows about the Linux kernel. So Calico says "hey linux! Tell these other computers on the network to find these IP addresses here, okay?" And then all the traffic for those IPs comes to our computer, and everything is great.
 
-To me, this seems like a nicer method than NAT. It means that you can more esaily interpret the packets coming in and out of your machine (and, because we love [tcpdump](/blog/2016/03/16/tcpdump-is-amazing/), we want to be able to understand our network traffic). I think there are other advantages but I'm not sure what they are.
+To me, this seems pretty nice. It means that you can easily interpret the packets coming in and out of your machine (and, because we love [tcpdump](/blog/2016/03/16/tcpdump-is-amazing/), we want to be able to understand our network traffic). I think there are other advantages but I'm not sure what they are.
 
-why do you need to use BGP? why can't you just ues ARP?
+### wow the container networking world is weird though
+
+I find reading this networking stuff pretty difficult; more difficult than usual. For example, Docker also has a networking product they released recently. The [webpage](https://docs.docker.com/engine/userguide/networking/get-started-overlay/) says they're doing "overlay networking". I don't know what that is, but it seems like you need etcd or consul or zookeeper. So the networking thing involves a distributed key-value store? Why do I need to have a distributed key-value store to do networking? There is probably a talk about this that I can watch but I don't understand it yet.
