@@ -72,12 +72,19 @@ Okay, so, again, I have 5 containers, all running things on port 4000. The key o
 
 So. I have 5 containers, and I've assigned them IPs 10.0.1.101, 10.0.1.102, 10.0.1.103, 10.0.1.104, 10.0.1.105. Inside my computer, this is fine -- it's easy to imagine that I can just know which one is which.
 
-But what do I do if I have another computer on the same network? How does that container know that 10.0.1.104 belongs to a container on my computer?
+But what do I do if I have another computer inside my company? How does that container know that 10.0.1.104 belongs to a container on my computer? If I'm on the same small network, this is fine -- you can use ARP to advertise that you have the IP 10.0.1.104 and then everyone will know. But if there's a router between you and the computer you want to talk to, I think you need to do more. (here we're getting past the edges of my networking knowledge!)
 
 The Linux kernel knows about the BGP protocol. Calico knows about the Linux kernel. So Calico says "hey linux! Tell these other computers on the network to find these IP addresses here, okay?" And then all the traffic for those IPs comes to our computer, and everything is great.
 
-To me, this seems pretty nice. It means that you can easily interpret the packets coming in and out of your machine (and, because we love [tcpdump](/blog/2016/03/16/tcpdump-is-amazing/), we want to be able to understand our network traffic). I think there are other advantages but I'm not sure what they are.
+To me, this seems pretty nice. I was reading about a NAT-based approach before, where all the ports get rewritten, and this feels like it would be less confusing to debug with tcpdump. (because we love [tcpdump](/blog/2016/03/16/tcpdump-is-amazing/). I think there are other advantages but I'm not sure what they are.
 
 ### wow the container networking world is weird though
 
 I find reading this networking stuff pretty difficult; more difficult than usual. For example, Docker also has a networking product they released recently. The [webpage](https://docs.docker.com/engine/userguide/networking/get-started-overlay/) says they're doing "overlay networking". I don't know what that is, but it seems like you need etcd or consul or zookeeper. So the networking thing involves a distributed key-value store? Why do I need to have a distributed key-value store to do networking? There is probably a talk about this that I can watch but I don't understand it yet.
+
+I think some of the key concepts in container networking to understand are:
+
+- what's a network namespace?
+- what's a bridge?
+- more concepts go here but I'm not sure what they are yet
+
