@@ -10,7 +10,7 @@ This post is about the paper [Rigorous benchmarking in reasonable time](https://
 
 A few months ago [Julian](http://www.cipht.net/) told me about a paper called [Printing Floating-Point Numbers: A Faster, Always Correct Method](https://cseweb.ucsd.edu/~lerner/papers/fp-printing-popl16.pdf). There are two really remarkable-to-me things about this paper.
 
-First: I didn't know that printing floating point numbers was a research problem! The core problem is that -- there are a finite amount of 64 bit floating point numbers (2^64 of them, to be exact!), so each number actually represents a range of values. 0.21 and 0.21000000000000002 are actually the same floating point number! You can see this in Python:
+First: I didn't know that printing floating point numbers was a research problem! The core problem is that -- there are a finite amount of 64 bit floating point numbers (about 2^64 of them!). So for any number, there are one or two closest floating point numbers to that number. 0.21 and 0.21000000000000002 are very close! So close that there's no floating point number between them. You can see this in Python:
 
 ```
 >>> print 0.21
