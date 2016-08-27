@@ -33,7 +33,7 @@ use it.
 </a>
 </div>
 
- You can [read this zine on your computer](http://jvns.ca/strace-zine-unfolded.pdf).
+ You can [read this zine on your computer (PDF)](http://jvns.ca/strace-zine-unfolded.pdf).
 
 The best way to read it, though, is to print it out, staple it, fold it, read it, and then give it to a friend. Printers are kind of annoying, but people do successfully print it and send me pictures. [Here's the pdf. Have fun.](/strace-zine-portrait.pdf) (there's also a [landscape version](/strace-zine-landscape.pdf))
 
@@ -42,6 +42,6 @@ It's available under a creative commons license
 many as you want to give away.
 
 
-### but, julia, it says "zines!" there's only one here!
+### but, julia, it says "zines! plural!" there's only one here!
 
 Yep. Watch this space.
