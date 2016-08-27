@@ -44,6 +44,23 @@ It's available under a creative commons license
 many as you want to give away.
 
 
+### other zine-like drawings
+
+here are a couple of individual drawings that you might
+like (click to make them bigger):
+
+<div align="center">
+<a href="/images/drawings/better-debugging.png">
+<img src="/images/drawings/better-debugging.png" height="400px">
+</a>
+<a href="/images/drawings/wizard-programmer.png">
+<img src="/images/drawings/wizard-programmer.png" height="400px">
+</a>
+<a href="/images/drawings/the-senior-engineer.png">
+<img src="/images/drawings/the-senior-engineer.png" height="400px">
+</a>
+</div>
+
 ### but, julia, it says "zines!" plural! there's only one here!
 
 Yep. Watch this space.
