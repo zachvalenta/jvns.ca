@@ -43,6 +43,9 @@ It's available under a creative commons license
 ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
 many as you want to give away.
 
+### but, julia, it says "zines!" plural! there's only one here!
+
+Yep. Watch this space.
 
 ### other zine-like drawings
 
@@ -61,6 +64,3 @@ like (click to make them bigger):
 </a>
 </div>
 
-### but, julia, it says "zines!" plural! there's only one here!
-
-Yep. Watch this space.

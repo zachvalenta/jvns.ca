@@ -219,6 +219,7 @@ desc "Default deploy task"
 task :deploy do
   system "./source/scripts/crush.pl"
   system "chmod 664 source/images/*"
+  system "chmod 777 source/images/drawings"
   # Check if preview posts exist, which should not be published
   if File.exists?(".preview-mode")
     puts "## Found posts in preview mode, regenerating files ..."
