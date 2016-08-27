@@ -33,9 +33,11 @@ use it.
 </a>
 </div>
 
- You can [read this zine on your computer (PDF)](http://jvns.ca/strace-zine-unfolded.pdf).
+The easiest way to read this is [on your computer (PDF)](http://jvns.ca/strace-zine-unfolded.pdf).
 
-The best way to read it, though, is to print it out, staple it, fold it, read it, and then give it to a friend. Printers are kind of annoying, but people do successfully print it and send me pictures. [Here's the pdf. Have fun.](/strace-zine-portrait.pdf) (there's also a [landscape version](/strace-zine-landscape.pdf))
+But the **best** way to read it is to print it out, staple it, fold it, read it, and then give it to a friend. It turns out it's way easier to convince your friends to read a physical thing that is in front of them.
+
+Printers are kind of annoying, but people do successfully print it and send me [pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041). [Here's the pdf for printing. Have fun.](/strace-zine-portrait.pdf) (there's also a [landscape version](/strace-zine-landscape.pdf))
 
 It's available under a creative commons license 
 ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
