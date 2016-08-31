@@ -39,6 +39,30 @@ and everyone was like
 
 So I decided to write a zine and give it out as a handout in my talk.
 
+
+### making things fun is a great way to teach
+
+the reason I write zines is partly because I think they're fun, but also for
+practical reasons. Fun, accessible content _works_. People understand it. In
+my most recent zine, I explain netstat, netcat, ngrep, tcpdump, wireshark,
+strace, eBPF, dstat, and perf and a bunch of its subcommands. This is a lot of
+stuff!! But because it's presented in an adorable tiny zine people are like
+"oh how interesting and cute!" and don't hesitate to pick it up.
+
+Some of the things I want to explain are traditionally considered kind of
+advanced! I didn't learn about any of these things until I'd been
+programming for 10 years. But there's no reason I couldn't have
+learned them earlier! It's just that nobody told me.
+
+What I end up finding is that people will read my zines who I wouldn't expect.
+People will read them even if they're new to programming or new to Linux! And
+they'll often learn something and tell me "yeah, sure, I didn't understand
+100% of it but a lot of it made sense!" To me this is a HUGE WIN.
+
+I spent years being scared of tcpdump. But it's not really that scary, and if
+I can help a few people be a little less intimidated by it, then I've done my
+job.
+
 ### the tools
 
 For the first zine I wrote I:
@@ -167,28 +191,16 @@ far for selling small booklet-y things is
 [magcloud.com](http://www.magcloud.com/). I haven't used them yet so I don't
 know.
 
-### making things fun is a great way to teach
+### bubblesort zines
 
-the reason I write zines is partly because I think they're fun, but also for
-practical reasons. Fun, accessible content _works_. People understand it. In
-my most recent zine, I explain netstat, netcat, ngrep, tcpdump, wireshark,
-strace, eBPF, dstat, and perf and a bunch of its subcommands. This is a lot of
-stuff!! But because it's presented in an adorable tiny zine people are like
-"oh how interesting and cute!" and don't hesitate to pick it up.
+I would be remiss not to mention @sailorhg's amazing [bubblesort zines](https://bubblesort-zines.myshopify.com/pages/about-us) about computer science. she has a bunch of them! go buy them! Here's how she describes them:
 
-Some of the things I want to explain are traditionally considered kind of
-advanced! I didn't learn about any of these things until I'd been
-programming for 10 years. But there's no reason I couldn't have
-learned them earlier! It's just that nobody told me.
+> BubbleSort Zines are a monthly zine series filled with stories and hand-
+> drawn art and diagrams. They cover topics like circuits, sorting, memory,
+> and tcp. Though the intended audience is high school students (think Hello
+> Ruby's teenage sister), I was surprised by how many adults are also
+> subscribers!
 
-What I end up finding is that people will read my zines who I wouldn't expect.
-People will read them even if they're new to programming or new to Linux! And
-they'll often learn something and tell me "yeah, sure, I didn't understand
-100% of it but a lot of it made sense!" To me this is a HUGE WIN.
-
-I spent years being scared of tcpdump. But it's not really that scary, and if
-I can help a few people be a little less intimidated by it, then I've done my
-job.
 
 ### you could make a zine
 
