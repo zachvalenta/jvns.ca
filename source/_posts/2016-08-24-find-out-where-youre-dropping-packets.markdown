@@ -100,3 +100,7 @@ of those have buffers! Those buffers can get full! My current understanding is
 that most packet loss is because of full buffers one way or another.
 
 If you're interested in learning more details about the Linux networking stack, there is this huge post called [Monitoring and Tuning the Linux Networking Stack: Receiving Data](http://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-stack-receiving-data/). I have not read it yet but it looks **amazing**.
+
+Also everything here I said about UDP packets applies just as well to any kind
+of IP packet -- TCP packets can get dropped just as easily, but they'll get
+retried, so you're not as likely to notice.

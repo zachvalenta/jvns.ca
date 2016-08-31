@@ -75,10 +75,10 @@ So I try to take a deep breath and say cheerfully "Nope!", figure
 exactly which aspect of the thing I don't understand, and ask a
 clarifying question.
 
-As a sideeffect, I've acquired much less patience and respect for
-people who give talks which sound really smart but are difficult to
-understand, and somewhat more willingness to ask questions like "so
-what IS &lt;basic concept that you did not explain&gt;?".
+As a sideeffect, when I go to a talk about a subject I'm interested in, and I
+don't understand something, I'm a lot more willing to ask questions like "so
+what IS &lt;basic concept that wasn't explained&gt;?". Usually people are
+really happy to answer!
 
 ## Avoiding mansplaining
 
