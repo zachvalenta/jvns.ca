@@ -26,6 +26,8 @@ categories:
     .slide {
     	width: 100%;
     }
+    .content {
+    	width: 100%;
 }
 
 </style>
