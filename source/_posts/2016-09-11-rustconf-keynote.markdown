@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "rustconf keynote"
+title: "Learning systems programming with Rust"
 date: 2016-09-11 10:45:47 -0400
 comments: true
 categories: 
@@ -11,10 +11,10 @@ categories:
 	display: flex;
 }
 .slide {
-	width: 50%;
+	width: 40%;
 }
 .content {
-	width: 50%;
+	width: 60%;
 	align-items: center;
 	padding: 20px;
 }
@@ -31,15 +31,20 @@ categories:
 </style>
 
 
+I did the closing keynote at the first RustConf yesterday, on Rust and systems
+programming and accessibility and learning about concurrency and why I write
+about programming and a bunch other things.
 
+Here's a transcript of that talk (where when I say "transcript") I mean "more
+less what I said, kinda".
+
+You can click on any of the slides to see a big version.
 
 <div class="container">
 <div class="slide">
 <a href="/images/rust-talk/slide_01.png"><img src="/images/rust-talk/slide_01_small.png"></a>
 </div>
 <div class="content">
-
-Who learned something awesome today at RustConf? Everyone? AMAZING.
 
 </div>
 </div>
@@ -412,8 +417,13 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+So one of the first ways to work on concurrency is mutexes, or locks. You and all the other threads have one place where you go to control who's allowed to update the counter.
 </p>
 <p>
+I like this as a simple example because you can just get it to work and move on, or, if you want, you can go a lot deeper.
+</p>
+<p>
+For example! To use mutexes, underneath you often use a function called pthread_mutex_lock. And it turns out that sometimes that uses the futex system call, and sometimes it doesn't! So there's all kinds of hidden complexity.
 </p>
 
 </div>
@@ -426,8 +436,7 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
-</p>
-<p>
+The next thing I want to talk about is atomic instructions. Basically your CPU knows how to increment counters without races -- if you say "lock inc" then it will make sure that the counter gets incremented exactly once.
 </p>
 
 </div>
@@ -440,8 +449,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+So now we have a nice small exercise! This is not really that hard to do in Rust, but it introduces a lot of new ideas.
 </p>
 <p>
+And there are a lot of opportunities for questions, right? Like, are mutexes or atomics faster? How much? Why? I love problems that you can finish pretty easily, but take farther if you want.
 </p>
 
 </div>
@@ -454,8 +465,16 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+Now we're onto the last part of the talk.
 </p>
 <p>
+I originally wrote "impossible problems" here. But of course all programs are technically *possible* to write!
+</p>
+<p>
+As we're going to learn shortly, though, right now I really do not know C, and I have a day job, and so my free time for programming is not unlimited. So even if a program is *possible* for me to write, if I have to write it in C/C++, probably in practice it's not going to happen.
+</p>
+<p>
+I'm going to tell you about how Rust helped me write a program that I wanted to write, that would have been improbable otherwise.
 </p>
 
 </div>
@@ -468,10 +487,8 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+This where we get back to EMPOWERMENT.
 </p>
-<p>
-</p>
-
 </div>
 </div>
 
@@ -481,11 +498,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 <a href="/images/rust-talk/slide_31.png"><img src="/images/rust-talk/slide_31_small.png"></a>
 </div>
 <div class="content">
-<p>
-</p>
-<p>
-</p>
 
+<p>
+So, here's the problem I was mad about. I'd run "top" on my computer, and it would tell me Ruby was using all the CPU, and I wouldn't know why.
+</p>
 </div>
 </div>
 
@@ -496,8 +512,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+And the reason this made me mad, is that I could see what other programs like Chrome were doing with  <a href="http://jvns.ca/blog/2016/02/24/perf-top-my-new-best-friend/">perf top</a>
 </p>
 <p>
+(cool demo of perf top goes here)
 </p>
 
 </div>
@@ -510,8 +528,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+So I wanted to write a program that I could just give the PID of a Ruby process, and it would tell me the top Ruby functions that were running right now.
 </p>
 <p>
+Is that possible? My friend Julian claimed this was totally possible and easy. So eventually I decided to try.
 </p>
 
 </div>
@@ -524,8 +544,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+To do this from the outside, you have to basically spy on the internals of a running Ruby process.
 </p>
 <p>
+The system call I used to spy is called process_vm_readv.
 </p>
 
 </div>
@@ -538,8 +560,13 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+In the Ruby interpreter, you have the C stack. That has unhelpful things on it like "you're in vm_exec right now" which basically means "you're running a Ruby function"
 </p>
 <p>
+BUT WHICH RUBY FUNCTION?!
+</p>
+<p>
+But somewhere inside its memory, somewhere, you have the Ruby stack. That's what I wanted to get at.
 </p>
 
 </div>
@@ -552,8 +579,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+I'm not going to go into the details of how this works because I don't have time, but I wrote a C demo of this program. I know how to write C! I can allocate memory in C! My demo kinda worked!
 </p>
 <p>
+However, I do not really know how to *free* memory in C. Like, I technically know that there is a free function, but I don't have a lot of experience with it. So my program had some pretty serious memory issues almost right away.
 </p>
 
 </div>
@@ -566,8 +595,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+At this point I asked my partner Kamal for some help translating my program to Rust.
 </p>
 <p>
+At the time I used bindgen and it was awesome, it took maybe a day, and now I had a Rust program that did the same thing! Except I didn't have to know how to free memory anymore.
 </p>
 
 </div>
@@ -580,8 +611,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+If you observe this highly scientific graph of "program workingness", you will see that my productivity went up.
 </p>
 <p>
+I had to fight with the compiler a lot more, but I did not have to learn how to implement hashmaps from scratch. Win.
 </p>
 
 </div>
@@ -594,6 +627,7 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+But I had one more problem. It turned out that I needed to know what the bytes in memory in my Ruby program *meant*. I wanted to know what the original struct definitions were so I could interpret all these 0s and 1s.
 </p>
 <p>
 </p>
@@ -608,8 +642,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+Luckily, sometimes the C compiler will save a bunch of debug information in a format called DWARF.
 </p>
 <p>
+This basically has all the structs and saves them inside your programs! Yay! This is the best! I had hope again.
 </p>
 
 </div>
@@ -622,10 +658,14 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+I needed a library for parsing DWARF, though. I started with trying libdwarf, and I got it maybe 90% working. But it was sort of a terrible experience.
 </p>
 <p>
+The API was terrible, there were no docs that I could find, it was slow, I had a bad time linking the library into my Rust program.
 </p>
-
+<p>
+One of the most upsetting things to me about this library is that it was really hard to understand how DWARF actually worked by looking at the interfaces it provided. I like knowing how things work.
+</p>
 </div>
 </div>
 
@@ -636,8 +676,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+A lot of the time when I have programming problems, I complain about them on Twitter. Somebody suggested I try a Rust library called 'gimli'.
 </p>
 <p>
+One of the maintainers, Nick Fitzgerald, told me it wasn't done but he thought it might have all the features I needed! GREAT.
 </p>
 
 </div>
@@ -650,8 +692,13 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+Using Gimli was a way better experience. It didn't have too much documentation either, but that was okay -- the example program they provided was really helpful, and explained how to do basically everything I needed to do.
 </p>
 <p>
+The only thing it didn't do that I wanted was really small, and I submitted a tiny pull request to get it.
+</p>
+<p>
+And the maintainers were really helpful! I understood DWARF better after I started working with Gimli.
 </p>
 
 </div>
@@ -664,6 +711,7 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+"How does DWARF work" is a question pretty far out of the scope of this talk, but basically if your program is a train car (made of a bunch of ELF section), DWARF debug info is basically just a bunch of extra train cars tacked on to the end. One of the sections just basically has all the strings in your program concatenated together!
 </p>
 <p>
 </p>
@@ -678,8 +726,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+So, after this whole saga, we did it!! I worked on this a lot with Kamal and our ruby stacktrace program worked! It's <a href="https://github.com/jvns/ruby-stacktrace">on github</a> and everything. It works on 3 computers.
 </p>
 <p>
+(insert cool demo here)
 </p>
 
 </div>
@@ -692,8 +742,7 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
-</p>
-<p>
+I spend a lot of time being frustrated with the Rust compiler, but I still like it because it lets me do things I probably wouldn't get done otherwise.
 </p>
 
 </div>
@@ -706,8 +755,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+I want to leave you with a few things.
 </p>
 <p>
+One delightful thing about systems is that there's always SO MUCH MORE TO LEARN. I don't think there's any danger of any of knowing everything about systems programming any time soon.
 </p>
 
 </div>
@@ -720,8 +771,7 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
-</p>
-<p>
+I'm pretty sure all of you know cool things about programming that I don't know. If you like writing, this can be a great way to make the community around you know more!
 </p>
 
 </div>
@@ -734,8 +784,13 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+One thing I really want to emphasize is -- I see a ton of resources for beginners, and I think those are really awesome.
 </p>
 <p>
+What I don't see as much of as I'd like is resources for people who know how to program, or know Rust, and really want to take their skills to the next level. I think the Rust community is really well placed to help people do this.
+</p>
+<p>
+Writing down information like this for developers who might already have 5 or 10 years of experiences is where I spend almost all my time.
 </p>
 
 </div>
@@ -748,27 +803,29 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+And while you're writing down cool things to help people level up -- remember that a lot of systems things aren't really that hard.
 </p>
 <p>
+I think computer networking is a really good example of this -- a lot of people get really intimidated by networking, but a lot of the core concepts like IP addresses and ports and packets are not really that hard, and once you understand them you can learn a lot.
+</p>
+<p>
+I wrote a zine called "linux debugging tools you'll love" that talks about ngrep, tcpdump, strace, etc. And somebody tweeted at me saying he was using it to teach his 8 year old! What? So I'm not totally sure I believe that the 8 year old is using tcpdump. But maybe I'm wrong!! Who am I to say that?
 </p>
 
+<p>
+So I've discovered that the audience for clear writing about systems programming is huge. A lot bigger than you might think.
+</p>
 </div>
 </div>
-
 
 <div class="container">
 <div class="slide">
 <a href="/images/rust-talk/slide_51.png"><img src="/images/rust-talk/slide_51_small.png"></a>
 </div>
 <div class="content">
-<p>
-</p>
-<p>
-</p>
-
+(the <a href="http://jvns.ca/zines">zine</a> I wrote)
 </div>
 </div>
-
 
 <div class="container">
 <div class="slide">
@@ -776,8 +833,10 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+I'm really happy about the Rust community because there are a ton of people in this room who know about Linux and networking and concurrency and all these topics that have historically been really hard to learn about.
 </p>
 <p>
+But now many of you are gathered here inside this really welcoming and wonderful community! This feels magical to me and like it's going to be a really good thing for programming as a whole.
 </p>
 
 </div>
@@ -790,8 +849,7 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
-</p>
-<p>
+So, to close, for real, I'm excited for this to be a place where people can walk in asking "what's a system call?"
 </p>
 
 </div>
@@ -804,12 +862,12 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
-</p>
-<p>
+and wake up a year later knowing how to do systems programming, and thinking it wasn't really that hard.
 </p>
 
 </div>
 </div>
+
 
 
 <div class="container">
@@ -818,10 +876,8 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 </div>
 <div class="content">
 <p>
+this is a picture I commissioned of myself at the san franscisco zine festival from <a href="https://twitter.com/ohmaipie">@ohmaipie</a> as a wizard.
 </p>
-<p>
-</p>
-
 </div>
 </div>
 
@@ -831,10 +887,6 @@ Nope! Instead we get a data race! The answer is way less than a million. This is
 <a href="/images/rust-talk/slide_56.png"><img src="/images/rust-talk/slide_56_small.png"></a>
 </div>
 <div class="content">
-<p>
-</p>
-<p>
-</p>
-
+♥♥♥
 </div>
 </div>
