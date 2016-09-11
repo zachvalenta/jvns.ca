@@ -35,12 +35,20 @@ categories:
 
 I did the closing keynote at the first RustConf yesterday, on Rust and systems
 programming and accessibility and learning about concurrency and why I write
-about programming and a bunch other things.
+about programming and a bunch of other things.
 
-Here's a transcript of that talk (where when I say "transcript") I mean "more
-less what I said, kinda".
+I was really delighted to be invited because I'm a huge fan of the Rust
+community. They're working incredibly hard to make a language that is
+extremely powerful, but also easy to use, and there was a huge focus on
+usability and good error messages. The talks were really ambitious, friendly,
+and inclusive. Their challenge is "Fast, safe, productive -- pick three" :).
+
+Here's a transcript of that talk (where when I say "transcript" I mean "more
+less what I said, kinda").
 
 You can click on any of the slides to see a big version.
+
+I drew the slides with <a href="https://www.amazon.com/Samsung-Galaxy-9-7-Inch-Tablet-Titanium/dp/B00V49LQZ4">this Samsung tablet</a>, and Powerpoint for android. These were the easiest slides I've ever made.
 
 <div class="container">
 <div class="slide">
@@ -805,7 +813,7 @@ Writing down information like this for developers who might already have 5 or 10
 </div>
 <div class="content">
 <p>
-And while you're writing down cool things to help people level up -- remember that a lot of systems things aren't really that hard.
+And while you're writing down cool things to help people level up -- remember that a lot of systems things aren't really that hard. People can learn harder things than you think they can if you explain it in a way that makes sense.
 </p>
 <p>
 I think computer networking is a really good example of this -- a lot of people get really intimidated by networking, but a lot of the core concepts like IP addresses and ports and packets are not really that hard, and once you understand them you can learn a lot.
