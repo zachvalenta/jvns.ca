@@ -171,14 +171,24 @@ Anyway my impression is that DWARF is a large and complicated standard (and poss
 
 I think it's really cool that I can write code that reads DWARF and my code actually mostly works. Except when it crashes. I'm working on that.
 
+### unwinding stacktraces
+
+In an earlier version of this post, I said that gdb unwinds stacktraces using
+libunwind. It turns out that this isn't true at all!
+
+Someone who's worked on gdb a lot emailed me to say that they actually spent a
+ton of time figuring out how to unwind stacktraces so that they can do a
+better job than libunwind does. This means that if you get stopped in the
+middle of a weird program with less debug info than you might hope for that's
+done something strange with its stack, gdb will try to figure out where you
+are anyway. Thanks <3
+
 ### other things gdb does
 
 The few things I've described here (reading memory, understanding DWARF to show you structs) aren't everything gdb does -- just looking through Brendan Gregg's [gdb example from yesterday](http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html), we see that gdb also knows how to
 
-* unwind stacktraces (using libunwind)
 * disassemble assembly
 * show you the contents of your registers
-
 
 and in terms of manipulating your program, it can
 

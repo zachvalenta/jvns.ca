@@ -48,7 +48,8 @@ many as you want to give away.
 This is a zine about some of my favorite Linux debugging tools, especially tools that I don't think are as well-known as they should be. It covers `strace`, `opensnoop`/`eBPF`, and `dstat`! `netcat`, `netstat`, `tcpdump`, `wireshark`, and `ngrep`! And there's a whole section on `perf` because perf is the best.
 
 If you don't know what any of those tools I just mentioned are -- PERFECT. You
-are who this zine is for!!! Read it and find out why I love them!
+are who this zine is for!!! Read it and find out why I love them! Also, a lot
+of these tools happen to work on OS X :)
 
 <div align="center">
 <a href="http://jvns.ca/debugging-zine.pdf"><img src="/images/debugging-tools-cover.png"></a>
