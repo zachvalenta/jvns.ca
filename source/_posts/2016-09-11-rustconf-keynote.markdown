@@ -227,7 +227,7 @@ Three weeks before the end of my time there, I decided to write an operating sys
 </div>
 <div class="content">
 <p>
-It turns out that writing an operating system in Rust is actually impossible, so I reduced my scope a lot -- I decided to just write a keyboard driver from scratch. So my goal was, when I typed a key on my keyboard, that key would appear on my screen!
+It turns out that writing an operating system in 3 weeks is actually impossible (at least for me!), so I reduced my scope a lot -- I decided to just write a keyboard driver from scratch. So my goal was, when I typed a key on my keyboard, that key would appear on my screen!
 </p>
 <p>
 Turns out that this is not at all trivial.
