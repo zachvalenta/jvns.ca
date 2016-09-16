@@ -13,7 +13,7 @@ but that's not what this post is about. Using docker in development seems really
 
 However I have VERY MANY QUESTIONS about running Docker in production. As a
 preface -- I have never run containers in production. You should not take
-advice from me.
+advice from me. So far reading about containers mostly feels like [this hilarious article](https://circleci.com/blog/its-the-future/).
 
 So: your setting is, you have a server, and you want to run programs on that
 server. In containers, maybe! Should you use Docker? I have no idea! Let's
@@ -59,7 +59,7 @@ the Docker daemon has no bugs that will affect me. All software has bugs!
 If you treat your container more like a process, then you can just run it,
 supervise it with supervisord or upstart or whatever your favorite way to
 supervise a process is. I know what a process is! I understand processes, kind
-of.
+of. Also I already use supervisord so I believe in that.
 
 So that kind of makes me want to run rkt, even though it is a Newer Thing.
 
