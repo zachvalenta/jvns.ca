@@ -221,6 +221,7 @@ task :deploy do
   system "chmod 664 source/images/*"
   system "chmod 777 source/images/drawings"
   system "chmod 777 source/images/rust-talk"
+  system "chmod 777 source/images/stl-talk"
   # Check if preview posts exist, which should not be published
   if File.exists?(".preview-mode")
     puts "## Found posts in preview mode, regenerating files ..."
