@@ -6,9 +6,9 @@ comments: true
 categories: 
 ---
 
-Right now I work on an infrastructure team. As I see it, my team's job is
-basically to be Heroku for the rest of the company -- we want it to be really
-easy for developers to run and operate code on our servers.
+Right now at work, my team's job is basically to be Heroku for the rest of the
+company -- we want it to be really easy for developers to run and operate code
+on our servers.
 
 I'm not going to talk right now about why "make it easier for developers to
 run code on our servers" might involve "containers", because that's a whole other
@@ -138,3 +138,6 @@ happening in containerland!
 So I'm going to try this stuff out, but I think I'm going to start slowly and
 introduce as little new software into my production environments at a time as
 I can :)
+
+
+<small>thanks to Kamal for reading this and being the best. Also to my coworkers for telling me many things about containers.</small>
