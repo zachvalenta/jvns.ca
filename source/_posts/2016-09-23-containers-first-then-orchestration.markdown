@@ -140,4 +140,4 @@ introduce as little new software into my production environments at a time as
 I can :)
 
 
-<small>thanks to Kamal for reading this and being the best. Also to my coworkers for telling me many things about containers.</small>
+<small>thanks to Kamal for reading this and being the best. Also to my coworkers/[manager](http://lethain.com/) for telling me many things about containers.</small>
