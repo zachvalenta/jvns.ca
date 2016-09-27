@@ -69,10 +69,6 @@ So it turns out to get things done I have to do a bunch of things that I do not 
 
 I’m still not sure if this is useful but -- sometimes I find it super useful to have an arbitrary deadline for a task, especially a big one. Like "You should be done with this in 6 weeks". I don’t want it to be like "... or else you’ll be fired", but I think deadlines are helpful to see when something’s growing in scope uncontrollably or is taking a lot longer than you thought. Then maybe I can cut features!
 
-### Be organized enough
-
-Being organized is like -- using the issue
-
 ### Believe in yourself
 
 This is very feelings-y but it is pretty useful for me to believe that I can actually do the thing I’m setting out to do. That’s all. Often when I try to do a thing it turns out that I can do it, so this is basically reasonable.
