@@ -1,28 +1,27 @@
 ---
 layout: post
-title: "I just want to run a container"
+title: "\"I just want to run a container!\""
 date: 2016-10-02 10:43:30 -0400
 comments: true
 categories: 
 ---
 
-But I just want to run a container!
-
 I wrote ["what's up with containers: Docker and rkt"](http://jvns.ca/blog/2016/09/15/whats-up-with-containers-docker-and-rkt/)
 a while ago. Since then I have learned a few new things about containers! We're going to
 talk about running containers in production, not on your laptop for development, since I'm
 trying to understand how that works in September 2016. It's worth noting that all this
-stuff is moving pretty fast, and it's hard to keep up.
+stuff is moving pretty fast right now.
 
 The concerns when you run containers in production are pretty different -- I [very happily](http://jvns.ca/blog/2015/11/09/docker-is-amazing/) use Docker on my laptop and I
 have no real problem with it.
 
 Here are the things I've learned so far as a dialog. I learned many of these things with
 [@grepory](https://twitter.com/grepory) who is the best. I still do not know all the
-things.
+things. Basically I want to talk about what some of the things you need to think about are
+if you want to run containers, and what is involved in "just running a container" :)
 
-At the end I'm going to come back to a short discussion of Docker's architecture. (tl;dr:
-[@jpetazzo](https://twitter.com/jpetazzo) wrote a [really awesome gist]((https://gist.github.com/jpetazzo/f1beba1dfd4c38e8daf2ebf2dcf3cdeb))
+At the end I'm going to come back to a short discussion of Docker's current architecture. (tl;dr:
+[@jpetazzo](https://twitter.com/jpetazzo) wrote a [really awesome gist]((https://gist.github.com/jpetazzo/f1beba1dfd4c38e8daf2ebf2dcf3cdeb)))
 
 ### Docker is too complicated! I just want to run a container
 
@@ -92,9 +91,9 @@ Docker lets you sign images to verify where they came from. rkt lets you run Doc
 images. rkt does not let you check signatures from Docker images though! This is bad.
 
 You can fix this by setting up your own rkt registry. Or maybe other things! I'm going to
-leave that here. At this point I think you have to stop using Docker containers though.
+leave that here. At this point you probably have to stop using Docker containers though and convert them to a different format.
 
-### Supervising my containers (and where we go back to Docker)
+### Supervising my containers (and let's talk about Docker again)
 
 So, I have this Cool Container System, and I can run containers with overlayfs and I can
 trust the code I'm running. What now?
@@ -165,9 +164,10 @@ here's the tl;dr:
 * software around the OCI standard is evolving but it's not there yet
 
 As far as I can tell running containers without using Docker or Kubernetes or anything is
-totally possible today, but it’s definitely not as simple as "just run a container".
-Either way going through all these steps helps me understand what the actual components of
-running a container are and what all these different pieces of software are trying to do.
+totally possible today, but no matter what tools you use it’s definitely not as simple as
+"just run a container". Either way going through all these steps helps me understand what
+the actual components of running a container are and what all these different pieces of
+software are trying to do.
 
 This landscape is pretty confusing but I think it’s not impossible to understand! There
 are only a finite number of different pieces of software to figure out the role of :)
