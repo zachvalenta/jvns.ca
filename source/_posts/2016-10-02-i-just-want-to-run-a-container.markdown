@@ -12,16 +12,14 @@ talk about running containers in production, not on your laptop for development,
 trying to understand how that works in September 2016. It's worth noting that all this
 stuff is moving pretty fast right now.
 
-The concerns when you run containers in production are pretty different -- I [very happily](http://jvns.ca/blog/2015/11/09/docker-is-amazing/) use Docker on my laptop and I
-have no real problem with it.
+The concerns when you run containers in production are pretty different from running it on a laptop -- I [very happily](http://jvns.ca/blog/2015/11/09/docker-is-amazing/) use Docker on my laptop and I have no real concerns about it because I don't care much if processes on my laptop crash like 0.5% of the time, and I haven't seen any problems.
 
-Here are the things I've learned so far as a dialog. I learned many of these things with
-[@grepory](https://twitter.com/grepory) who is the best. I still do not know all the
-things. Basically I want to talk about what some of the things you need to think about are
+Here are the things I've learned so far. I learned many of these things with
+[@grepory](https://twitter.com/grepory) who is the best. Basically I want to talk about what some of the things you need to think about are
 if you want to run containers, and what is involved in "just running a container" :)
 
 At the end I'm going to come back to a short discussion of Docker's current architecture. (tl;dr:
-[@jpetazzo](https://twitter.com/jpetazzo) wrote a [really awesome gist]((https://gist.github.com/jpetazzo/f1beba1dfd4c38e8daf2ebf2dcf3cdeb)))
+[@jpetazzo](https://twitter.com/jpetazzo) wrote a [really awesome gist](https://gist.github.com/jpetazzo/f1beba1dfd4c38e8daf2ebf2dcf3cdeb))
 
 ### Docker is too complicated! I just want to run a container
 
