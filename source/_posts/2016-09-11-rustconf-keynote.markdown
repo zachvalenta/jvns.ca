@@ -43,8 +43,14 @@ extremely powerful, but also easy to use, and there was a huge focus on
 usability and good error messages. The talks were really ambitious, friendly,
 and inclusive. Their challenge is "Fast, safe, productive -- pick three" :).
 
-Here's a transcript of that talk (where when I say "transcript" I mean "more
+Here's a video & transcript of that talk (where when I say "transcript" I mean "more
 less what I said, kinda").
+
+### video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ftQfpAeyxPo" frameborder="0" allowfullscreen></iframe>
+
+### transcript
 
 You can click on any of the slides to see a big version.
 
