@@ -16,12 +16,12 @@ start_process(["ls", "-l", "my_cool_directory"])
 ```
 
 This is a reasonable thing to think and apparently it's how it works in DOS/Windows. I was
-going to say that this *isn't* how it works on Linux. But! I went and looked at the docs and apparently there is a [posix_spawn](http://man7.org/linux/man-pages/man3/posix_spawn.3.html) system call that does basically this. Shows what I know. Anyway, we're not going to talk about that because I'm pretty sure nobody really uses that.
+going to say that this *isn't* how it works on Linux. But! I went and looked at the docs and apparently there is a [posix_spawn](http://man7.org/linux/man-pages/man3/posix_spawn.3.html) system call that does basically this. Shows what I know. Anyway, we're not going to talk about that.
 
 ### fork and exec
 
 `posix_spawn` on Linux is behind the scenes implemented in terms of 2 system calls called
-`fork` and `exec` (actually `execve`), which are what people usually actually use anyway.
+`fork` and `exec` (actually `execve`), which are what people usually actually use anyway. On OS X apparently people use `posix_spawn` and fork/exec are discouraged! But we'll talk about Linux.
 
 Every process in Linux lives in a "process tree". You can see that tree by running
 `pstree`. The root of the tree is `init`, with PID 1. Every process (except init) has a parent, and any process has many children.
