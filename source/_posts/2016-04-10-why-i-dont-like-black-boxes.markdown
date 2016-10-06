@@ -65,14 +65,14 @@ Tree 4 | passengers < 30                        |    2%
 
 I haven't tried very hard to be realistic here -- it's likely that you'll see conditions (or "predicates") that are quite complicated like `passengers < 30 AND time of day < 5:20pm AND departing airport != LAX AND [ten more things]`
 
-But what the random forest chose to assign a given probability of lateness to my flight is actually totally explaninable by
+But what the random forest chose to assign a given probability of lateness to my flight is actually totally explainable by
 
 * 10 conditions (one for each tree, like `time of day > 2pm AND passengers < 40`)
-* and 10 probabilites (what the tree associated to that condition)
+* and 10 probabilities (what the tree associated to that condition)
 
 I knew this for a long time, but I honestly didn't think it would be useful. Then one week, over a couple of days, my awesome product manager [Isaac](https://twitter.com/isaach) implemented (in javascript!!) a tool to explain to you why a random forest model made a given choice.
 
-It was AMAZING. Right away I started putting into it choices I hadn't understood, and I could often tell "oh, that's why it did that! That makes sense!" or "hmm, I think its training data might have been a little off, that doens't seem right". For example! Suppose it said
+It was AMAZING. Right away I started putting into it choices I hadn't understood, and I could often tell "oh, that's why it did that! That makes sense!" or "hmm, I think its training data might have been a little off, that doesn't seem right". For example! Suppose it said
 
 ```
 condition                                |    probability of lateness
@@ -111,7 +111,7 @@ I don't know if the this is the best thing to do, but I thought it was very inte
 
 I was really inspired after I did this exploration of [looking inside what a neural network is doing](https://codewords.recurse.com/issues/five/why-do-neural-networks-think-a-panda-is-a-vulture) -- it seems like you can get at least a little bit of interpretability out of almost any model!
 
-There are more posts about this on the internet! Airbnb has one called [Unboxing the random forest classifier](http://nerds.airbnb.com/unboxing-the-random-forest-classifier/), Sift Science has [Large Scale Decision Forests: Lessons Learned](http://blog.siftscience.com/blog/2015/large-scale-decision-forests-lessons-learned), and this short paper called [A Model Explanation System](http://www.blackboxworkshop.org/pdf/Turner2015_MES.pdf) discusses a general system for explaning black box models (I'm actually, unusually, *very* excited about that paper)
+There are more posts about this on the internet! Airbnb has one called [Unboxing the random forest classifier](http://nerds.airbnb.com/unboxing-the-random-forest-classifier/), Sift Science has [Large Scale Decision Forests: Lessons Learned](http://blog.siftscience.com/blog/2015/large-scale-decision-forests-lessons-learned), and this short paper called [A Model Explanation System](http://www.blackboxworkshop.org/pdf/Turner2015_MES.pdf) discusses a general system for explaining black box models (I'm actually, unusually, *very* excited about that paper)
 
 The more I learn about machine learning, the more I think that debugging tools & a clear understanding of how the algorithms you're using work are totally essential for making your models better (actually, I don't understand how they *wouldn't* be -- how can you make your models better if you have no idea what they're doing? it makes no sense to me.) I imagine the people who build amazing neural nets and things like AlphaGo have an extremely strong understanding of the foundations of how neural networks work, and some sense for how the algorithms are translating the data into choices.
 

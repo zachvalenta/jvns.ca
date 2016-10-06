@@ -32,7 +32,7 @@ I also gave a talk at PyCon called **Systems programming as a swiss army knife**
 
 I gave out 200 strace zines in the talk and people seemed to love it. Super happy with how that went. A+! Giving talks about systems programming seems to be super delightful.
 
-I gave a talk at Data Day Texas (about the data infrastrucute at Stripe) that was okay but not awesome. Giving awesome talks is hard! I'm going to hold off on giving any more talks about work until I have better ideas.
+I gave a talk at Data Day Texas (about the data infrastructure at Stripe) that was okay but not awesome. Giving awesome talks is hard! I'm going to hold off on giving any more talks about work until I have better ideas.
 
 I rejected all invitations to give talks in the second half of 2015 and that was also a great choice. I think I'll go back to it in 2016!
 
@@ -71,7 +71,7 @@ I thought this was really cool not just because of $$$, but because I had this l
 
 It was also really awesome to collaborate on it -- I worked on it with someone else with a ton of domain expertise, and we were a super amazing team =D =D. At Stripe working on projects on your own is extremely popular and I have no idea why.
 
-I've also decided that black box machine learning models that I can't debug are NOT OKAY. so I'm investing some time in learning about the math behind the ML I do, as well as thinking about tools for debugging models. Not being able to debug is a total disaster. maybe you wil hear more about that soon! though, progress on that will be slowed down by...
+I've also decided that black box machine learning models that I can't debug are NOT OKAY. so I'm investing some time in learning about the math behind the ML I do, as well as thinking about tools for debugging models. Not being able to debug is a total disaster. maybe you will hear more about that soon! though, progress on that will be slowed down by...
 
 ### less fun: wrists that hurt
 

@@ -37,7 +37,7 @@ So, this makes a lot of sense. If you want to do super high performance networki
 
 ### what about Google?
 
-Who else does a ton of networking? Google! Happily Google sometimes writes papers so we know a little bit about what they do htere.
+Who else does a ton of networking? Google! Happily Google sometimes writes papers so we know a little bit about what they do there.
 
 Tons of people told me about [Maglev](http://research.google.com/pubs/pub44824.html), which is Google's load balancer, and they do all of their networking for that in userspace! I think they operate at a lower level than TCP so they don't have a TCP stack, but it is an example of extremely fast networking without using the Linux kernel.
 

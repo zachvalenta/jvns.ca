@@ -11,7 +11,7 @@ I wrote up what it was like to be working remote
 5 months later, I have some new thoughts!
 
 The worst thing about working remotely so far has just been feeling
-generally alienated. I talked a litle about motivation in
+generally alienated. I talked a little about motivation in
 [Don't feel guilty about not contributing to open source](http://jvns.ca/blog/2014/04/26/i-dont-feel-guilty-about-not-contributing-to-open-source/),
 where I mentioned a theory that motivation is made up of
 **competence** (I know how to do this!), **autonomy** (I can make my

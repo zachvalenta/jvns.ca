@@ -31,7 +31,7 @@ and doesn't undersell my experience.
 I find saying how long I've been using a technology and talking
 briefly about what kinds of projects I've done with it easier (and
 more helpful to the interviewer) than giving any kind of value
-judgement on my experience (I am a wizard!).
+judgment on my experience (I am a wizard!).
 
 ### 2. Pretend that they actually don't know the answer to the question
 

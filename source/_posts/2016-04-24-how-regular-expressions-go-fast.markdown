@@ -16,7 +16,7 @@ I did not know what RE2 was, and it is the older library, so let's start there.
 
 ### regular expressions: the university class
 
-I took a class on regular expressions in university. In them, I learned that you have "regular languages", which can be matched by determistic finite automata, or DFAs. I'm not going to explain what those are here because I do not have space but here is a DFA. It has two states, and its job is to detect strings with an even number of zeroes.
+I took a class on regular expressions in university. In them, I learned that you have "regular languages", which can be matched by deterministic finite automata, or DFAs. I'm not going to explain what those are here because I do not have space but here is a DFA. It has two states, and its job is to detect strings with an even number of zeroes.
 
 <img src="/images/dfa.png">
 

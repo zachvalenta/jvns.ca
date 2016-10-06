@@ -89,7 +89,7 @@ here, but I'm going to try to explain why.
   right
 * They have a ton of *knowledge*. If you're having a gnarly Clojure
   problem or want to know about Python internals or want to learn how
-  to do async programing in Javascript, they can help you out.
+  to do async programming in Javascript, they can help you out.
 * They're also amazing at helping you with things they don't know
   about! Allison is a Python internals fiend, but she didn't have a
   ton of experience with operating systems or Rust. But if I needed
@@ -100,7 +100,7 @@ here, but I'm going to try to explain why.
   stuck
 
 The facilitators work incredibly hard at helping people become better
-prorammers and it really shows.
+programmers and it really shows.
 
 Hacker School is an *experiment*. The founders and facilitators are
 constantly trying out new ideas and trying to make it better. Dave's

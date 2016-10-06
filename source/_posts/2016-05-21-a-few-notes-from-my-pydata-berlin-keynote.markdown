@@ -10,7 +10,7 @@ I did one of the keynotes at PyData Berlin yesterday, called "How to trick a neu
 
 * if you want to understand exactly how we tricked a neural network, [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/) uses exactly the same technique, but on a simpler linear classifier instead of on a neural network. In general Andrej Karpathy's blog is great.
 * [the blog post I wrote about how to trick a neural network](http://codewords.recurse.com/issues/five/why-do-neural-networks-think-a-panda-is-a-vulture)
-* [the original paper I read called "Explaining and Harnessing Adversial Examples"](http://arxiv.org/abs/1412.6572). This paper is pretty short and I found it easy to read.
+* [the original paper I read called "Explaining and Harnessing Adversarial Examples"](http://arxiv.org/abs/1412.6572). This paper is pretty short and I found it easy to read.
 
 some fun art projects that generate images with neural networks:
 

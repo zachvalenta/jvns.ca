@@ -10,7 +10,7 @@ This is gonna be quick -- I just found out yesterday that the Etsy developer blo
 
 I love this for so many reasons -- it's a public commitment to having good site performance ([and seth walker from Etsy has a talk about that!](http://sethwalker.me/talks/a-public-commitment-to-performance/)), it's regular and constantly changing, they have GRAPHS, they explain what internal changes caused that 25ms drop, and they talk in depth about their measurement tools and what the advantages & disadvantages are of each one. I'm definitely going to be coming back to this frequently.
 
-It covers both backend and frontend perforamnce. If you're interested in web performance, you should look at Lara Hogan's talks & book ["Designing for Performance"](http://larahogan.me/design/) on frontend performance. (if you look carefully, you'll notice that a lot of those Etsy site performance reports are written by her).
+It covers both backend and frontend performance. If you're interested in web performance, you should look at Lara Hogan's talks & book ["Designing for Performance"](http://larahogan.me/design/) on frontend performance. (if you look carefully, you'll notice that a lot of those Etsy site performance reports are written by her).
 
 I also found some slides [Web Performance and Tools at Etsy](http://www.slideshare.net/mikebrittain/web-performance-culture-and-tools-at-etsy-11159635/44-apachenotecustomeld_whateverLogFormat_l_t_r) by Mike Brittain that are great.
 

@@ -88,7 +88,7 @@ href="https://twitter.com/LeafStorm/statuses/447564888198885376">March
 23, 2014</a></blockquote>
 
 This works because when you open different files again and again in a
-loop, it will usually end up with teh same file descriptor. You could
+loop, it will usually end up with the same file descriptor. You could
 also do the same thing by running `strace -etrace=open -p$TARSNAP_PID`
 to see which files Tarsnap is opening.
 

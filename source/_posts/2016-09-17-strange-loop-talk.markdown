@@ -761,7 +761,7 @@ I run `python mystery_3.py` again, and I quickly switch to another terminal tab 
 </div>
 <div class="content">
 <p>
-There was a lot to look at one the screen, so let's zoon in. The top function is something called `_aesni_enc1`. What does AES tell us? ENCRYPTION! That's right!
+There was a lot to look at one the screen, so let's zoom in. The top function is something called `_aesni_enc1`. What does AES tell us? ENCRYPTION! That's right!
 </p>
 <p>
 So it turns out that this program is writing files to disk, and specifically it's writing to my home directory. But my home directory is encrypted! So it needs to spend a bunch of extra time encrypting all the data, and that's what all the CPU time is about. Awesome.

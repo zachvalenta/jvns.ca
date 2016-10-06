@@ -43,7 +43,7 @@ Then, things got bad. The program slowed wayyyy down. It would do 0.2 seconds of
 
 These are full collections that do mark-and-sweep over every object in memory and make sure we collect everything we can. Everything. This can be very very slow (2 seconds is a very long time to stop!).
 
-I thought this was really interesting and surprising. I knew GC was important but did not know that it could bring a program to a screeching halt. But apprarently it can!
+I thought this was really interesting and surprising. I knew GC was important but did not know that it could bring a program to a screeching halt. But apparently it can!
 
 The many objects in the old generation were still used every time it collected, so it had to constantly iterate over those objects and ask "can I free you yet?" "nope." "can I free you yet?" "nope." "can I free you yet?" "nope.".
 

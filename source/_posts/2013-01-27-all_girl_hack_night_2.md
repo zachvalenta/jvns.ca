@@ -21,7 +21,7 @@ workshop next time!
 A few things:
 
 * less people came this time, but I'm blaming that on the cold :)
-* We made a wall of postits with programming project ideas. I'm not
+* We made a wall of post its with programming project ideas. I'm not
   totally sure if anyone actually got any programming ideas from it,
   but it was a good conversation starter
 * Someone came up to us after and offered to give an R workshop next

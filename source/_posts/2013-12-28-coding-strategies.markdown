@@ -43,9 +43,9 @@ out-of-breath on the other side of town."
 
 <blockquote class="twitter-tweet" lang="en"><p>Coding strategies: try unselfconsciously following your instincts.</p>&mdash; Eiríkr Åsheim (@d6) <a href="https://twitter.com/d6/statuses/417145076918124546">December 29, 2013</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>Coding strategies: set a goal for yourself (perf, immutability, type safety, terseness, whatever) and try prioritzing it above all else.</p>&mdash; Eiríkr Åsheim (@d6) <a href="https://twitter.com/d6/statuses/417145290349498368">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>Coding strategies: set a goal for yourself (perf, immutability, type safety, terseness, whatever) and try prioritizing it above all else.</p>&mdash; Eiríkr Åsheim (@d6) <a href="https://twitter.com/d6/statuses/417145290349498368">December 29, 2013</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>Coding strategies: try selfconsciously interrogating every decision and design you make.</p>&mdash; Eiríkr Åsheim (@d6) <a href="https://twitter.com/d6/statuses/417145290726981632">December 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>Coding strategies: try self-consciously interrogating every decision and design you make.</p>&mdash; Eiríkr Åsheim (@d6) <a href="https://twitter.com/d6/statuses/417145290726981632">December 29, 2013</a></blockquote>
 
 <blockquote class="twitter-tweet" lang="en"><p>Coding strategies: watch &quot;the five obstructions&quot; then apply similar challenges to your code.</p>&mdash; Eiríkr Åsheim (@d6) <a href="https://twitter.com/d6/statuses/417147825596559364">December 29, 2013</a></blockquote>
 

@@ -79,7 +79,7 @@ Things change in software all the time. Maybe:
 * you suddenly are handling 20x more data than you thought you would be
 * you did user research and the users said a lot of really unexpected things that make you want to reprioritize
 
-So if nothing else, I think design documents are cool as archaelogical artifacts so that people from the future can understand you and why you decided what you did.
+So if nothing else, I think design documents are cool as archaeological artifacts so that people from the future can understand you and why you decided what you did.
 
 ### what does design document mean to you?
 

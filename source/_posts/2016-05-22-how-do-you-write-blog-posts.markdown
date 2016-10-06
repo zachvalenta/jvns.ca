@@ -45,7 +45,7 @@ Also some things take me more write, though. I spent extra time on [Things you s
 ### How do you decide what's worth writing about? 
 
 * "would this have helped me a year ago?"
-* "would this have helpd me last week?"
+* "would this have helped me last week?"
 * "do i think this would be interesting to at least like 2 other people?"
 
 Sometimes I'll ask one friend and if they think the idea is interesting, then, I'm good to go!

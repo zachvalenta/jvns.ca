@@ -20,8 +20,8 @@ someone who works as a software tester. I work as a developer, and I've
 never worked with a QA team! I didn't know there were people who
 specialized in testing software and were really awesome at it who don't
 write programs! This was super cool to learn. I still don't know how to
-think about separating out the responsiblities of writing the software
-and verifiying the software -- obviously individual developers also need
+think about separating out the responsibilities of writing the software
+and verifying the software -- obviously individual developers also need
 to be responsible for writing correct software, and it still feels
 strange to me to hand any of that off.
 
@@ -66,7 +66,7 @@ a given concern or question or experience, I'm usually wrong :)
 
 There were a lot of unstructured discussion sessions at AdaCamp. This
 was really cool, because it means you can cover a lot of ground. I also
-was reminded again of how important good moderation + faciliation is,
+was reminded again of how important good moderation + facilitation is,
 and how much I want to get better at it. I'm working on learning how to:
 
 - create some explicit structure around a session ("let's discuss these

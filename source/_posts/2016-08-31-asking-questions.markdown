@@ -143,7 +143,7 @@ unearth a lot of really weird behavior and interesting facts.
 Investigating performance problems has taught me about [Java garbage collection](http://jvns.ca/blog/2016/04/22/java-garbage-collection-can-be-really-slow/) and [TCP_NODELAY](http://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/) and a bunch of other things.
 
 And then often if I tell someone a performance story, they will tell me their
-stories and I'll learn sometihng new!
+stories and I'll learn something new!
 
 ### partial answers = amazing
 

@@ -17,7 +17,7 @@ me)
 >  But more interestingly, why is he studying the amalgated C file
 >  instead of, you know, the sources?
 
-> I think he talks about the acutal .db file?
+> I think he talks about the actual .db file?
 
 > How would each machine/core's counts know when they are done? If he
 > wants a max of a million counts wouldn't each machine have to check

@@ -28,7 +28,7 @@ She said she makes her talks intentionally not very technical, which I LOVED -- 
 
 OMG. I'm trying really hard to make machine learning results more interpretable & debuggable at work (because people need to use the outputs of it!), and when she was like "that's my research" I really wanted to be best friends.
 
-She showed [this YouTube video](https://www.youtube.com/watch?v=8PwHigCDdW8&feature=youtu.be) of a system that automatically clusters students' assignments and then shows you the 'prototype' assigments representing each segment! This seems really cool to me -- if I were a teacher and had a system like this that worked well, I could imagine using this to get a sense for what kinds of solutions my students were using, and possibly even as an aid to grading.
+She showed [this YouTube video](https://www.youtube.com/watch?v=8PwHigCDdW8&feature=youtu.be) of a system that automatically clusters students' assignments and then shows you the 'prototype' assignments representing each segment! This seems really cool to me -- if I were a teacher and had a system like this that worked well, I could imagine using this to get a sense for what kinds of solutions my students were using, and possibly even as an aid to grading.
 
 She was also super pragmatic about her research! The metric she used to decide whether the interactive system was helpful or not was -- did it cause the human to perform better on the classification task they were working on? All I want is to help humans do better work & save them time so this made me super happy. I think there's a lot of room in ML to enable people and not just replace them.
 

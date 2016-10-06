@@ -157,7 +157,7 @@ pdfjam --booklet true --landscape --suffix book --letterpaper --signature 12 --b
 
 This is the MOST FUN PART. You get to mass produce things and give them to people!!!!!!!!! Getting a huge stack of zines is like the best thing.
 
-So! This was a suprise to me but _print shops know how to print booklets_.
+So! This was a surprise to me but _print shops know how to print booklets_.
 They have MACHINES that can fold and staple zines! So if you want to print 200
 zines, you can literally bring a pdf, leave it with them, and they will
 produce a box of amazing zines that are ready to go.

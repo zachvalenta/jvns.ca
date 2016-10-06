@@ -9,7 +9,7 @@ categories: culture
 I've helped out and taught at a few programming workshops for
 beginners now, and I've noticed something. There are always helpers
 who have tons of experience and are super willing to answer questions.
-And there's always an annoucement where someone says "Here are the
+And there's always an announcement where someone says "Here are the
 helpers! They are here just to help you. Raise your hand if you have
 questions!".
 

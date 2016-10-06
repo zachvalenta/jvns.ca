@@ -14,7 +14,7 @@ To recap: I wanted to
 2. have them do the work without anything exploding
 3. that's it
 
-This turned out to be suprisingly difficult. A lot of people gave me a lot of suggestions about how to accomplish this. Here's what I did!
+This turned out to be surpisingly difficult. A lot of people gave me a lot of suggestions about how to accomplish this. Here's what I did!
 
 ### pipes = the best
 

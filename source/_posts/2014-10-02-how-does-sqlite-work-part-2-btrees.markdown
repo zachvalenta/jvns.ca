@@ -163,4 +163,4 @@ because it does some weird function pointer magic to do comparisons.
 
 [Kamal](https://twitter.com/kamalmarhubi) is parsing SQLite databases
 with the Python construct module next to me right now and it is
-AMAZING. There may be future instalments. Who knows!
+AMAZING. There may be future installments. Who knows!

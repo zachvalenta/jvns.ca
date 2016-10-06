@@ -96,7 +96,7 @@ Let's see some of this data on a graph:
 
 You can see that there's a separation between the `True` and `False`
 data, but a lot of it is mixed up together. This is because that there
-were a lot of points that had a probabilty of ~50% of being `True`.
+were a lot of points that had a probability of ~50% of being `True`.
 
 You can also imagine having much better separation between the data,
 like this:

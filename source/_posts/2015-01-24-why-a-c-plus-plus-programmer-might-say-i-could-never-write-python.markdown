@@ -22,7 +22,7 @@ basic typos in your code like
 
 ```python
 def foo(elephant):
-    return elephnt + 2
+    return elephant + 2
 ```
 
 So you need to spend all your time learning how to write correct code without a

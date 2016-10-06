@@ -17,7 +17,7 @@ There's a great series of blog posts by [Cory Watson](http://onemogin.com/) -- [
 
 My favorite thing is that he wrote that last post *this morning* and I read it and learned a ton from it. I love it when the awesome people I know write blog posts and it teaches me stuff. Please do this more everyone.
 
-A few people pointed out that [the docs from Oracle on GC tuning](http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html) are surpringly quite useful. I often forget to check official documentation so this was a great reminder.
+A few people pointed out that [the docs from Oracle on GC tuning](http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html) are surprisingly quite useful. I often forget to check official documentation so this was a great reminder.
 
 Several people recommended the book [Java-Performance-The-Definitive-Guide](http://www.amazon.com/Java-Performance-The-Definitive-Guide/dp/1449358454) and its section about garbage collection. Good books are a goldmine so I will probably buy it.
 

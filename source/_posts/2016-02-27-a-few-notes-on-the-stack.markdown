@@ -15,7 +15,7 @@ The basic question I want to answer here is -- why do people sometimes discuss "
 
 ### Calling a function
 
-Let's talk about the basics before it gets weird. Suppose you're in a programming language. Any progamming language. Most languages have the concept of a "function" and "calling a function".
+Let's talk about the basics before it gets weird. Suppose you're in a programming language. Any programming language. Most languages have the concept of a "function" and "calling a function".
 
 Whenever you call a function, you also need to **return** from that function. So, as a simple example --
 

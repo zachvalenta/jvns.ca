@@ -75,7 +75,7 @@ hard!).
 This left us with maybe 80 talks that at least one person thought was
 excellent-sounding. Still too many!
 
-### GitHub issues for discusion
+### GitHub issues for discussion
 
 We then used GitHub to discuss talk proposals. We put each talk into
 an GitHub issue, and tagged them. Here are the tags we used.

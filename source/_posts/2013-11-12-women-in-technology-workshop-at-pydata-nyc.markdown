@@ -43,7 +43,7 @@ Learn the Maximum Amount of Things, and I think that went pretty well.
 Here are the <a href="http://nbviewer.ipython.org/urls/raw.github.com/jvns/talks/master/pydatanyc2013/PyData%20NYC%202013%20tutorial%20(morning).ipynb">materials for the data analysis workshop</a>.
 
 After the workshop, there was a fun talk from Peter Wang of Continuum
-Analytics who demoed a really fun Python-based tool that he bult that lets you
+Analytics who demoed a really fun Python-based tool that he built that lets you
 visualize sound waves in real time. He then happened to mention that it looks
 especially awesome with violin music, and someone happened to have a violin,
 so they tried it!

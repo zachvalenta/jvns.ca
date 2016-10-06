@@ -59,7 +59,7 @@ if count == 0 && IDEMPOTENT_METHODS_.include?(req.method)
 end
 ```
 
-I was really suprised and kind of taken aback to learn this. I wanted to find out why it was this say, so I found [the issue in the Ruby bug tracker that introduced this behavior!](https://bugs.ruby-lang.org/issues/5813). It turns out that this retry feature was added to Ruby in 2012! And it was added because the RFC for HTTP/1.1 [recommends that HTTP clients act this way](http://tools.ietf.org/html/rfc2616#section-8.1.4).
+I was really surprised and kind of taken aback to learn this. I wanted to find out why it was this say, so I found [the issue in the Ruby bug tracker that introduced this behavior!](https://bugs.ruby-lang.org/issues/5813). It turns out that this retry feature was added to Ruby in 2012! And it was added because the RFC for HTTP/1.1 [recommends that HTTP clients act this way](http://tools.ietf.org/html/rfc2616#section-8.1.4).
 
 > Client software SHOULD reopen the transport connection and retransmit the aborted sequence of requests without user interaction so long as the request sequence is idempotent (see section 9.1.2).
 

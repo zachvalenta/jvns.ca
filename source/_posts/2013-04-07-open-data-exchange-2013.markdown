@@ -40,7 +40,7 @@ know the answers to.
   the only talk to get spontaneous applause. It's definitely worth
   checking out his [blog on maps and public transit](http://cat-bus.com/).
 * [Alex Aylett](http://www.openalex.ca/) from [Eco Hack MTL](http://www.ecohackmtl.org/) 
-  talked about urban sustainablity projects. He's interested in how open
+  talked about urban sustainability projects. He's interested in how open
   data can apply to organizations like [Santropol Roulant](http://santropolroulant.org/site/) and
   [Alternatives](http://www.alternatives.ca/en). He said that his main
   goal with Eco Hack MTL was not to work on any specific project, but to
@@ -53,7 +53,7 @@ know the answers to.
     * can help ask the right questions to put together a story
     * have an audience :)
     * know more about how to talk to politicians and organizations to
-      get information, including how to make access to informations
+      get information, including how to make access to information
       requests
 * [Edward Ocampo-Gooding](http://edwardog.net/) from [Open Data Ottawa](http://blog.opendataottawa.ca/)
   introduced the idea of [speed idea dating](http://www.quora.com/Shopify/We%E2%80%99re-planning-on-throwing-our-first-hack-a-thon-this-year-What-are-the-pros-cons-and-how-can-we-get-the-most-out-of-sponsoring-them). 

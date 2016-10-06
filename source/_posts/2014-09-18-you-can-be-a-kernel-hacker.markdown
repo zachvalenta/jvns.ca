@@ -228,7 +228,7 @@ once and
 [straced killall](http://jvns.ca/blog/2013/12/22/fun-with-strace/) and
 it was REALLY FUN. Let's try `ls`!
 
-I ran `strace -o out ls` to save the output to a file. strace wlll
+I ran `strace -o out ls` to save the output to a file. strace will
 output a
 [WHOLE BUNCH OF CRAP](https://gist.github.com/jvns/291a4de261cb326585c7).
 It turns out that starting up a program is pretty complicated, and in

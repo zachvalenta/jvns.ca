@@ -26,7 +26,7 @@ The second interesting thing in this paper is -- the original result said they h
 - always correct (as short as possible)
 - ran 2x faster than the fastest known (approximate) algorithm
 
-This turned out to be wrong -- it was actually 2x **slower** than the approximate algorithm (it's still an improvement on the state of the art in exact algorithms). They talk about what happend in [their README](https://github.com/marcandrysco/Errol).
+This turned out to be wrong -- it was actually 2x **slower** than the approximate algorithm (it's still an improvement on the state of the art in exact algorithms). They talk about what happened in [their README](https://github.com/marcandrysco/Errol).
 
 I don't point this out to make fun of the researchers for coming up with an incorrect result. I'm pretty sure they're way better at performance analysis than I am. Instead, I think this is a really good illustration that benchmarking programs and figuring out which one is faster is really hard -- much much harder than you might think.
 

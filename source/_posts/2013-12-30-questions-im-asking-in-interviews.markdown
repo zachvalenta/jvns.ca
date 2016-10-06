@@ -102,7 +102,7 @@ suggestions.
 * What is your turnover rate like? How many devs were hired last year
   and how many left?
 * What's your retention rate of women over 1.5 years? Do you think you
-  could've done anything differently to keep people who left?
+  could have done anything differently to keep people who left?
 * Do people work on the weekend?
 * Do people check in when they're on vacation? How often?
 * Is it possible to work from home, say, 1 or 2 days a week? Does

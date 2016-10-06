@@ -124,7 +124,7 @@ Then you will get
 
 Really. Now this makes some sense -- if I open up a TCP connection to the server, I might make a lot of different HTTP requests inside for different websites (like julia.com, bork.com, cookies.com), and it needs to deal with that somehow! It can't change SSL certificates in the middle.
 
-You might wonder "wait, is that secure to send requests for bork.com to julia.com?". It's okay! If you have a secure conncetion set up with a computer (you believe that computer is who you think it is), then it seems reasonable to send many requests to that computer (for instance for both images.google.com and google.com).
+You might wonder "wait, is that secure to send requests for bork.com to julia.com?". It's okay! If you have a secure connection set up with a computer (you believe that computer is who you think it is), then it seems reasonable to send many requests to that computer (for instance for both images.google.com and google.com).
 
 But it's a little weird, right? I wanted to make extra sure that I understood how this worked, so I went and read some of the nginx source code. It turns out that there is a big file called [ngx\_http\_request.c](https://github.com/nginx/nginx/blob/master/src/http/ngx_http_request.c), and in it there is a function called `ngx_http_find_virtual_server`, [defined here](https://github.com/nginx/nginx/blob/46336296e4d695cf34c55ced54e21f7647a53fdc/src/http/ngx_http_request.c#L2095).
 

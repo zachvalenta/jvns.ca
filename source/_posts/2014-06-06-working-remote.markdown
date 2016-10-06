@@ -23,7 +23,7 @@ extroverted, so it's possible for me to go a bit stir-crazy sitting
 alone by myself all day.
 
 I live on the east coast. The people I work with are mostly in San
-Francisco, three timezones away. So when I start work it's usually
+Francisco, three time zones away. So when I start work it's usually
 around 6am in SF.
 
 Let's start with some things I have trouble with:

@@ -20,7 +20,7 @@ What is *address space*?
 ------------------------
 
 Each process has a piece of memory that it's allowed to use, so that
-processesi can't step on each others' toes.
+processes can't step on each others' toes.
 
 This includes
 
@@ -35,7 +35,7 @@ This includes
 There also appear to be a bunch more things listed on
 [this page on kernel.org](https://www.kernel.org/doc/gorman/html/understand/understand007.html).
 I'm not sure what most of them mean, but see the list starting with 
-``The meaning of each of the field in this sizeable struct is as follows: ''.
+``The meaning of each of the field in this sizable struct is as follows: ''.
 
 Why threads?
 ------------
