@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "exec will eat your brain"
+title: "What happens when you start a process on Linux?"
 date: 2016-10-04 20:07:01 -0400
 comments: true
 categories: 
@@ -104,6 +104,8 @@ You have
 - registers
 - an "executable" that you ran (/proc/$pid/exe)
 - cgroups and namespaces ("linux container stuff")
+- a current working directory
+- the user your program is running as
 - some other stuff that I'm forgetting 
 
 When you run `execve` and have another program eat your brain, actually almost everything
