@@ -54,12 +54,19 @@ my parent
        |-- ls
 ```
 
-and once ls exits, I'll be all by myself again
+and once ls exits, I'll be all by myself again. Almost
 
 ```
 my parent
     |- me
-       |-- ls
+       |-- ls (zombie)
+```
+
+At this point ls is actually a zombie process! That means it's dead, but it's waiting around for me in case I want to check on its return value (using the `wait` system call.) Once I get its return value, I will really be all alone again.
+
+```
+my parent
+    |- me
 ```
 
 ### what fork and exec looks like in code
