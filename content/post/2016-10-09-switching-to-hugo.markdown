@@ -10,10 +10,13 @@ will find it interesting if you find microoptimizing the way you generate your w
 interesting (like I do, apparently).
 
 problem: Jekyll generated my site slowly. It took, like, 10 seconds! Who has time to wait
-for that! Seriously. My friends keep telling me that Hugo is really cool and it's in go
+for that! Seriously. My friends keep telling me that Hugo is really cool and it's in Go
 and it will make my site generate in 0 seconds. So I decided to give it an hour and see
 how far I'd get. I got like 80% there in an hour, and it only took 4 more hours to finish
 the remaining 20%. Not too bad!
+
+Also I got to delete a bunch of cruft in my website that I didn't understand. Now I never
+need to learn to understand it!
 
 ### julia's plan for migrating to Hugo
 
@@ -43,7 +46,7 @@ theme was way faster than trying to understand what my Jekyll theme files were d
 this included:
 
 * no RSS feed (along the way I found out that the amazing
-  [Andreas](https://github.com/spf13/hugo/issues/1740) had posted a workaround for MY
+  [Andreas](https://twitter.com/antifuchs) had posted a workaround for MY
   EXACT RSS PROBLEM AT https://github.com/spf13/hugo/issues/1740).
 * all my category pages were broken
 * I needed to rebuild my index page from scratch
