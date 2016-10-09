@@ -2,7 +2,7 @@
 categories: ["kernel", "hackerschool", "rust"]
 comments: true
 date: 2013-11-29T00:00:00Z
-title: Writing a kernel using rustboot &amp; rust-core
+title: Writing a kernel using rustboot & rust-core
 url: /blog/2013/11/29/writing-an-os-using-rustboot-and-rust-core/
 ---
 

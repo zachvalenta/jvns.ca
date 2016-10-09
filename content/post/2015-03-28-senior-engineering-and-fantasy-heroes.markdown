@@ -2,7 +2,7 @@
 categories: ["culture"]
 comments: true
 date: 2015-03-28T10:30:29Z
-title: Senior engineering &amp; fantasy heroes
+title: Senior engineering & fantasy heroes
 url: /blog/2015/03/28/senior-engineering-and-fantasy-heroes/
 ---
 

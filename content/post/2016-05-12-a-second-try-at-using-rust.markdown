@@ -1,5 +1,5 @@
 ---
-categories: []
+categories: ["rust"]
 comments: true
 date: 2016-05-12T11:55:45Z
 title: A second try at using Rust

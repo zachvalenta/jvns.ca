@@ -2,7 +2,7 @@
 categories: []
 comments: true
 date: 2016-05-06T16:23:15Z
-title: A workshop on strace &amp; tcpdump
+title: A workshop on strace & tcpdump
 url: /blog/2016/05/06/a-workshop-on-strace-and-tcpdump/
 ---
 
