@@ -5,7 +5,7 @@ staticpage: true
 
 ### About this blog
 
-This blog was once [described](danluu.com/programming-blogs/) as
+This blog was once [described](http://danluu.com/programming-blogs/) as
 
 >AFAICT, the theme is “things Julia has learned recently”, which can be anything from [Huffman coding](http://jvns.ca/blog/2015/02/22/how-gzip-uses-huffman-coding/) to how to be happy when working in a remote job. When the posts are on a topic I don’t already know, I learn something new. When they’re on a topic I know, they remind me that the topic is exciting and contains a lot of wonder and mystery.
 
