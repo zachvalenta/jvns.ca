@@ -18,6 +18,12 @@ the remaining 20%. Not too bad!
 Also I got to delete a bunch of cruft in my website that I didn't understand. Now I never
 need to learn to understand it!
 
+My overall review of Hugo: Jekyll was fine. Hugo is also fine. I only ran into one weird
+bug when working with it today which is pretty good. Hugo is faster, which I like, and it
+means I don't need to have a working Ruby dev environment. I couldn't edit my site once
+for six months because I was too frustrated to get Ruby to work again. So maybe Hugo is a
+little more fine than Jekyll (which I pretty happily used for 4 years).
+
 ### julia's plan for migrating to Hugo
 
 There is a guide on the Hugo website [explaining how to migrate](https://gohugo.io/tutorials/migrate-from-jekyll/). I did not use this plan. The plan involves migrating Jekyll plugins to Hugo plugins, and who even knows how their Jekyll plugins work? Not me!
