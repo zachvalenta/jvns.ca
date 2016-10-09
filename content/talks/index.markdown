@@ -1,6 +1,7 @@
 ---
 title: "Talks"
 staticpage: true
+categories: []
 ---
 
 I've given a few talks about programming. I think they're pretty good. Usually I talk in a

@@ -1,5 +1,5 @@
 ---
-categories: ["zines"]
+categories: []
 comments: true
 date: 2016-09-07T08:32:13Z
 title: 'New zine: Linux debugging tools you''ll love'

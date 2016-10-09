@@ -1,5 +1,6 @@
 ---
 title: "About"
+categories: []
 staticpage: true
 ---
 

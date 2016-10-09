@@ -2,6 +2,7 @@
 date: 2013-01-27T00:00:00Z
 title: 'Montreal All-Girl Hack Night #2: now with cookies'
 url: /2013/01/27/all_girl_hack_night_2/
+categories: []
 ---
 
 The second hack night was as awesome as the
