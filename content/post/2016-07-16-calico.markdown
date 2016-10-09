@@ -1,5 +1,5 @@
 ---
-categories: []
+categories: ["networking", "containers"]
 comments: true
 date: 2016-07-16T11:32:05Z
 title: 'One way to make containers network: BGP'

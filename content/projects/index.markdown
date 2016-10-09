@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 staticpage: true
+categories: []
 ---
 
 A few projects I worked on in 2013 and before. Mostly  for fun, mostly when at the [Recurse Center](https://recurse.com).

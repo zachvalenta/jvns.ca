@@ -1,5 +1,5 @@
 ---
-categories: []
+categories: ["talks", "rust"]
 comments: true
 date: 2016-09-11T10:45:47Z
 title: Learning systems programming with Rust

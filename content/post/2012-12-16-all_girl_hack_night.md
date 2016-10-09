@@ -2,6 +2,7 @@
 date: 2012-12-16T00:00:00Z
 title: 'Montreal All-Girl Hack Night #1: AMAZING'
 url: /2012/12/16/all_girl_hack_night/
+categories: []
 ---
 
 My awesome friend [Monica](http://www.dinculescu.com) and I recently organized

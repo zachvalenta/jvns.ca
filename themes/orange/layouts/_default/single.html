@@ -4,6 +4,15 @@
 <article class="hentry" role="article">
 <header>
 <h1 class="entry-title">{{.Title}}</h1>
+
+<div class="post-tags">
+  {{ if ne (len .Params.categories) 0 }}
+  •
+  {{ range .Params.categories }}
+    <a class="post-tag" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> 	•
+  {{ end }}
+  {{ end }}
+</div>
 <p class="meta">
 <time datetime="{{.Date.Format "2006-01-02T15:04:05" | safeHTML}}" pubdate data-updated="true"></time>
 </p>

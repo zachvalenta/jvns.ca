@@ -1,6 +1,7 @@
 ---
 title: "Zines"
 staticpage: true
+categories: []
 ---
 
 ### what's a zine?

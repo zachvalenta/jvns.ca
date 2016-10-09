@@ -1,5 +1,5 @@
 ---
-categories: ["spytools", "strace", "favorite"]
+categories: ["spytools", "strace", "favorite", "zines"]
 comments: true
 date: 2015-04-14T22:52:23Z
 title: A zine about strace

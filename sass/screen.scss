@@ -257,6 +257,17 @@ nav {
 		}
 	}
 }
+
+.post-tags {
+	text-align: center;
+}
+
+.post-tag {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 75%;
+}
+
 .footer-nav {
 	text-align: center;
 	@media screen and (min-width: $smallest-width){

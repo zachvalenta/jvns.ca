@@ -1,5 +1,5 @@
 ---
-categories: []
+categories: ["containers"]
 comments: true
 date: 2016-10-02T20:02:25Z
 title: A list of Linux container software
