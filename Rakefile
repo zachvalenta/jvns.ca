@@ -19,10 +19,10 @@ posts_dir       = "post"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 
 #######################
-# Working with Jekyll #
+# Working with Hugo #
 #######################
 
-desc "Generate jekyll site"
+desc "Generate Hugo site"
 task :build do
   system "compass compile --css-dir #{static_dir}/stylesheets/"
   system "hugo"
@@ -31,7 +31,7 @@ end
 
 desc "Watch the site and regenerate when it changes"
 task :serve do
-  puts "Starting to watch source with Jekyll and Compass."
+  puts "Starting to watch source with Hugo and Compass."
   hugoPid = Process.spawn("hugo server")
   compassPid = Process.spawn("compass watch")
 
@@ -77,8 +77,7 @@ end
 
 desc "Default deploy task"
 task :deploy do
-  system "hugo"
-  system "./scripts/crush.pl"
+  Rake::Task["build"].execute
   system "chmod 664 static/images/*"
   system "chmod 777 static/images/drawings"
   system "chmod 777 static/images/rust-talk"
