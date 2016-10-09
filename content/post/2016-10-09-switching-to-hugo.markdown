@@ -47,7 +47,7 @@ this included:
 
 * no RSS feed (along the way I found out that the amazing
   [Andreas](https://twitter.com/antifuchs) had posted a workaround for MY
-  EXACT RSS PROBLEM AT https://github.com/spf13/hugo/issues/1740).
+  EXACT RSS PROBLEM AT https://github.com/spf13/hugo/issues/1740.
 * all my category pages were broken
 * I needed to rebuild my index page from scratch
 
