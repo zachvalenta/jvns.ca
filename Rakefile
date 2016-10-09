@@ -14,7 +14,7 @@ deploy_default = "rsync"
 
 public_dir      = "public"    # compiled site directory
 source_dir      = "content"    # source file directory
-posts_dir       = "_posts"    # directory for blog files
+posts_dir       = "post"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 
 #######################
@@ -27,6 +27,7 @@ task :generate do
   system "./scripts/crush.pl"
 end
 
+
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
 desc "Begin a new post in #{source_dir}/#{posts_dir}"
 task :new_post, :title do |t, args|
@@ -37,18 +38,17 @@ task :new_post, :title do |t, args|
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{to_url(title)}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
-    post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
-    post.puts "comments: true"
-    post.puts "categories: "
+    post.puts "date: #{Time.now.strftime('%Y-%m-%dT%H:%M:%SZ')}"
+    post.puts "url: /blog/#{Time.now.strftime('%Y/%m/%d/')}#{to_url(title)}/"
+    post.puts "categories: []"
     post.puts "---"
   end
 end
@@ -86,6 +86,10 @@ def ok_failed(condition)
   else
     puts "FAILED"
   end
+end
+
+def to_url(title)
+  title.gsub(/[^\w]/, '-')
 end
 
 def get_stdin(message)
