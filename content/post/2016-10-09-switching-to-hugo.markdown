@@ -69,3 +69,8 @@ sure I'll be able to figure out how to fix it.
 
 You can see the source for this website [on github](https://github.com/jvns/jvns.ca) if
 you want.
+
+There's also a [Rakefile](https://github.com/jvns/jvns.ca/blob/master/Rakefile) I use to
+generate it. It is pretty small. The most interesting thing is a `new_post` task which
+creates a new post file for me. I stole it from Octopress and modified it pretty heavily
+to do the Right Thing for me.
