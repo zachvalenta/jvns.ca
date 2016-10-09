@@ -1,0 +1,12 @@
+---
+categories: ["rust", "talks", "favorite"]
+comments: true
+date: 2016-01-10T08:43:43Z
+title: Why I ❤ Rust
+url: /blog/2016/01/10/why-i-rust/
+---
+
+I gave a talk about why I like Rust a while ago! There's no video. Normally my
+talk slides are unremarkable and I don't post them, but I think these mostly stand on their own and I'm happy with how they turned out. [Here it is (and it's embedded below)](https://speakerdeck.com/jvns/why-i-rust).
+
+<script async class="speakerdeck-embed" data-id="2217f185971243a4ac638c2fa6993ca0" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>

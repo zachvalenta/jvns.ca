@@ -1,0 +1,30 @@
+{{ template "theme/partials/header.html" . }}
+
+<div>
+<article class="hentry" role="article">
+<header>
+<h1 class="entry-title">{{.Title}}</h1>
+<p class="meta">
+<time datetime="{{.Date.Format "2006-01-02T15:04:05" | safeHTML}}" pubdate data-updated="true"></time>
+</p>
+</header>
+<div class="entry-content">
+     {{ .Content }}
+</div>
+<footer>
+<div class="sharing">
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="{{.Permalink}}" data-via="b0rk" data-counturl="{{.Permalink}}">Tweet</a>
+</div>
+<p class="meta">
+  {{with .Prev}} 
+    <a class="basic-alignment left" href="{{.Permalink}}" title="Previous Post: {{.Title}}">{{.Title}}</a>
+  {{end}}
+  {{with .Next}} 
+    <a class="basic-alignment right" href="{{.Permalink}}" title="Previous Post: {{.Title}}">{{.Title}}</a>
+  {{end}}
+</p>
+</footer>
+</article>
+</div>
+
+{{ template "theme/partials/footer.html" . }}

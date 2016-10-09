@@ -1,0 +1,13 @@
+baseurl: https://jvns.ca
+disablePathToLower: true
+languageCode: en-us
+title: Julia Evans
+author: Julia Evans
+theme: orange
+disableRSS: false
+rssuri: atom.xml
+author:
+  name: Julia Evans
+taxonomies:
+  category: "categories"
+...

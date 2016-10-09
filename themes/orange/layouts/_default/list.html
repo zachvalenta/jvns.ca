@@ -1,0 +1,35 @@
+{{ template "theme/partials/header.html" . }}
+
+<div>
+<article class="hentry" role="article">
+<div class="entry-content">
+    <h3> Posts in category: {{lower .Title}} </h3>
+  <div id="article">
+<table> 
+{{ range .Data.Pages }}
+{{ if ( ne true .Params.staticpage ) }}
+<ul id="tags">
+</ul>
+<tr>
+<td style="width: 5.5em">
+<time style="padding-right: 10px; color: #444; font-size: 14px;" datetime="" pubdate>{{ .Date.Format "Jan 2 2006" }}</time>
+</td>
+<td style="padding-right: 0.25em; color: orange;">
+  {{ range .Params.categories }}
+    {{ if eq . "favorite"}} ★ {{ end }}
+  {{ end }}
+</td>
+<td>
+<span><a  style="font-family: Montserrat, sans-serif; color: black;font-size: 14px;" href="{{.RelPermalink}}">{{.Title}}</a></span>
+</td>
+</tr>
+{{ end }}
+{{ end }}
+</table>
+
+</div>
+</article>
+</div>
+
+
+{{ template "theme/partials/footer.html" . }}
