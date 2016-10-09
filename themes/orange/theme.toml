@@ -1,7 +1,7 @@
 name = "orange"
 description = "julia's blog theme"
 license = "you can't use it"
-min_version = 0.25
+min_version = 0.17
 
 [author]
     name = "lea albaugh"
