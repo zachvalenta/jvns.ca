@@ -89,7 +89,7 @@ def ok_failed(condition)
 end
 
 def to_url(title)
-  title.gsub(/[^\w]/, '-')
+  title.downcase.gsub(/[^\w]/, '-')
 end
 
 def get_stdin(message)
