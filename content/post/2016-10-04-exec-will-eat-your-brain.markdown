@@ -1,5 +1,5 @@
 ---
-categories: []
+categories: ["favorite"]
 comments: true
 date: 2016-10-04T20:07:01Z
 title: What happens when you start a process on Linux?
