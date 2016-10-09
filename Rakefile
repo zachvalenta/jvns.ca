@@ -14,6 +14,7 @@ deploy_default = "rsync"
 
 public_dir      = "public"    # compiled site directory
 source_dir      = "content"    # source file directory
+static_dir      = "static"
 posts_dir       = "post"    # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 
@@ -22,10 +23,26 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 #######################
 
 desc "Generate jekyll site"
-task :generate do
+task :build do
+  system "compass compile --css-dir #{static_dir}/stylesheets/"
   system "hugo"
   system "./scripts/crush.pl"
 end
+
+desc "Watch the site and regenerate when it changes"
+task :serve do
+  puts "Starting to watch source with Jekyll and Compass."
+  hugoPid = Process.spawn("hugo server")
+  compassPid = Process.spawn("compass watch")
+
+  trap("INT") {
+    [hugoPid, compassPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    exit 0
+  }
+
+  [hugoPid, compassPid].each { |pid| Process.wait(pid) }
+end
+
 
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
