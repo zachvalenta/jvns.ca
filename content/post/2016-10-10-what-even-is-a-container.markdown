@@ -1,5 +1,5 @@
 ---
-title: "What even is a container?"
+title: "What even is a container: namespaces and cgroups"
 date: 2016-10-10T22:44:13Z
 url: /blog/2016/10/10/what-even-is-a-container/
 categories: ["containers"]
@@ -51,6 +51,10 @@ root     14121  0.0  0.0  33264  4044 pts/6    S+   23:09   0:00 htop
 ```
 
 This process 14121 (regular namespace) is process 3 in my new PID namespace. So they're two views on the same thing, but one is a lot more restricted.
+
+### entering the namespace of another program
+
+Also you can enter the namespace of another running program! You do this with a command called `nsenter`. I think this is how `docker exec` works? Maybe?
 
 ### cgroups: resource limits
 
