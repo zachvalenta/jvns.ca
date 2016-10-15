@@ -11,7 +11,7 @@ know a tiny bit more about it so I want to write down what I've figured out.
 
 ### operations: what even is it?
 
-I made up these 3 stages of operating software.
+I made up these 3 stages of operating software. These are stages of understanding about operations I am going through.
 
 **Stage 1: your software just works. It's fine.**
 
