@@ -92,6 +92,6 @@ But as an individual software engineer, what does that mean for you? I thiiink i
 
 I have a lot more to say about this (how I really love being a generalist, how doing some operations work has been an awesome way to improve my debugging skills and my ability to reason about complex systems and plan how to build complicated software). And I need to write in the future about super useful Ideas For Operating Software Safely I've learned about (like dark reads and circuit breakers). But I'm going to stop here for now.
 
-This is my favorite paragraph from Charity's "Accidental DBA" blog post:
+This is my favorite paragraph from Charity's "[WTF is operations?](https://charity.wtf/2016/05/31/wtf-is-operations-serverless/)" blog post (which you should just go read instead of reading me):
 
 > The best software engineers I know are the ones who consistently value the impact and lifecycle of the code they ship, and value deployment and instrumentation and observability.  In other words, **they rock at ops stuff**.
