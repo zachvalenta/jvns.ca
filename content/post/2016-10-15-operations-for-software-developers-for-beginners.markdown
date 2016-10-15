@@ -72,7 +72,7 @@ For me this was a really cool way to get a little bit better at operations! I wo
 making the service faster and more reliable. And it worked! I made a couple of good
 improvements, and I was happy.
 
-Some stuff that helped:, so that people wouldn't get paged for it
+Some stuff that helped:
 
 * work on a dashboard for the service that clearly shows its current state (this is surprisingly hard!)
 * move some complicated code that did a lot of database operations into a separate webservice so we could easily time it out if something went wrong
@@ -82,11 +82,11 @@ The most cool part of this, though, is that a much more experienced SRE later ca
 work with the team on making the same service operate better, and I got to see what he did
 and what his process for improving things looked like!
 
-It's really helped me to realize that you don't turn into a Magical Operations Person overnight. Instead, I can take whatever I'm working on Right now, and make small improvements to make it operate better! That makes me a better programmer.
+It's really helped me to realize that you don't turn into a Magical Operations Person overnight. Instead, I can take whatever I'm working on right now, and make small improvements to make it operate better! That makes me a better programmer.
 
 ### you can make operations part of your job
 
-As an industry, we used to have "software development" teams who wrote code and threw it over the wall to "operations teams" who ran that code. I feel like we've collectively decided that we want a different model -- that we should have teams who both write code and know how to operate it. And there are a lot of details of how that works exactly (do you have "SRE"s?)
+As an industry, we used to have "software development" teams who wrote code and threw it over the wall to "operations teams" who ran that code. I feel like we've collectively decided that we want a different model ("devops") -- that we should have teams who both write code and know how to operate it. And there are a lot of details of how that works exactly (do you have "SRE"s?)
 
 But as an individual software engineer, what does that mean for you? I thiiink it means that you get to LEARN COOL STUFF. You can learn about how to deploy changes safely, and observe what your code is doing. And then when something has gone wrong in production, you'll both understand what the code is doing (because you wrote it!!) and you'll have the skills to figure it out and systematically prevent it in the future (because you are better at operations!).
 
