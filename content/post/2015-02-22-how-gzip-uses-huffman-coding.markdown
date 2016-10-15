@@ -1,5 +1,5 @@
 ---
-categories: ["how-things-work"]
+categories: ["how-things-work", "favorite"]
 comments: true
 date: 2015-02-22T09:28:02Z
 title: How gzip uses Huffman coding

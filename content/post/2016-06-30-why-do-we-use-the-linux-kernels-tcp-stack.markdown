@@ -1,5 +1,5 @@
 ---
-categories: []
+categories: ["favorite"]
 comments: true
 date: 2016-06-30T23:54:45Z
 title: Why do we use the Linux kernel's TCP stack?
