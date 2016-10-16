@@ -30,7 +30,8 @@ Thank you for reading ❤.
 
 ### About me
 
-I live in Montreal. I work at Stripe, on infrastructure. I read all my email and try to respond. I sometimes give [talks](http://jvns.ca/talks). People say they really like my talks because I am so enthusiastic in them.
+I live in Montreal. I work at Stripe, on infrastructure. I read all my email and try to respond. I sometimes give [talks](http://jvns.ca/talks). 
+
 
 I have one main opinion about programming and it's -- understanding the underlying systems you use (the kernel, the operating system, the network layers, your database, HTTP, whatever you're running on top of) is essential if you want to do amazing work and be able to fix hard problems. It's served me well so far.
 
@@ -38,4 +39,6 @@ My happiest internet accomplishment to date is that someone gave out my strace z
 
 I spent the fall of 2013 at the [Recurse Center](http://recurse.com), which
 houses the best programming community I've seen anywhere. I wrote down [what I
-did every day while there](http://jvns.ca/blog/categories/hackerschool/), if you want to know what it's like.
+did every day while there](http://jvns.ca/categories/hackerschool/), if you want to know what it's like.
+
+If you want to hire me and read "thought, she lives in Montreal, too bad", you should probably go partner with the [Recurse Center](https://recurse.com/hire) and hire someone amazing from there.
