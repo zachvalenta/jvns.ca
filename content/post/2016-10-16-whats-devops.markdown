@@ -37,7 +37,7 @@ One of the really key things about this article is -- there is no devops
 organization at Etsy. It's about how developers and operations people
 work productively together! Also, it was a slow incremental migration
 towards different practices. They did not wake up one day and become
-devops.
+devops. I think this is the [first talk that used the term 'devops'](https://youtu.be/LdOe18KhtT4)?
 
 It's also not about "everyone is a software developer" -- one of the authors of
 this book, Katherine Daniels, is a [senior operations engineer at Etsy](https://beero.ps/2015/09/26/on-becoming-a-senior-engineer/) at Etsy.
