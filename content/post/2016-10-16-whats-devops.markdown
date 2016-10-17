@@ -5,7 +5,7 @@ url: /blog/2016/10/16/whats-devops/
 categories: []
 ---
 
-I started reading "Effective DevOps" by [Jennifer Davis](https://twitter.com/sigje) and 
+I started reading "[Effective DevOps](https://www.amazon.com/Effective-DevOps-Building-Collaboration-Affinity/dp/1491926309)" by [Jennifer Davis](https://twitter.com/sigje) and 
 [Katherine Daniels](https://twitter.com/beerops) yesterday.
 
 I'm still only part of the way through, but I realized while reading it
@@ -41,7 +41,7 @@ devops.
 
 It's also not about "everyone is a software developer" -- one of the authors of
 this book, Katherine Daniels, is a [senior operations engineer at Etsy](https://beero.ps/2015/09/26/on-becoming-a-senior-engineer/) at Etsy.
-I don't know the details of her job, but my impression is that she has a
+I don't know any of the details of her job, but my impression is that she has a
 lot of expertise in operations. It's not like "make operations so
 easy that nobody has to an expert at it". Of course you need people who
 know a ton about operations! Probably those people write software as
