@@ -85,7 +85,8 @@ thing I like!
 
 ### ideas & practices that are part of devops
 
-* you should integrate development and operations together
+* you should integrate development and operations together (or: you
+  should stop breaking dev and ops apart (thanks tef))
 * operations experts should have a hand in leading **systems design and
   architecture**, not just be handed finished systems to run
 * when things go wrong, run blameless postmortems
@@ -118,7 +119,7 @@ familiar to me. But I hadn't thought of them as choices!
 When I learned what "continuous integration" was (merging your changes
 into master after working on them for 1-2 days instead of waiting weeks)
 I was like "uh, wait, what else would you do?". A lot of the stuff in
-tihs book was like that -- I hadn't realized that this was a choice my
+this book was like that -- I hadn't realized that this was a choice my
 organization was making, I thought that was just how things were!
 
 But of course any organizational choice (like continuous integration,
