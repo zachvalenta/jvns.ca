@@ -6,6 +6,8 @@ title: A zine about strace
 url: /blog/2015/04/14/strace-zine/
 ---
 
+**UPDATE**: this zine and more can now be found at [jvns.ca/zines](https://jvns.ca/zines)
+
 As some of you might have heard, I wrote a zine to teach people about
 how to debug their programs using strace a while ago! I was originally
 going to mail it out to people, but it turns out I'm too lazy to mail
