@@ -77,8 +77,12 @@ work on the software, but that is a whole other question)
   it at all. 
 * developers often like writing open source software so maybe it helps
   with keeping people happy
+* [@mcpherrinm](https://twitter.com/mcpherrinm): "I will eventually quit
+  my job and want to keep using tools I wrote for this one. Open Source
+  lets me do that"
 
 I think I'm missing a bunch of important reasons here.
+
 
 ## when you use open source, who wrote the software? what are their priorities?
 
