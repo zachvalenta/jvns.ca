@@ -63,8 +63,8 @@ understand why.
 (also I would like to understand how it works when nobody is paid to
 work on the software, but that is a whole other question)
 
-* because you think investing in community-maintained open source software will be valuable for the business in the long term. there's a
-  nice [post by jessie frazelle](https://blog.jessfraz.com/post/blurred-lines/) that sorta touches on this.
+* because you think investing in community-maintained open source software will be valuable for the business in the long term. there's an
+  excellent [post by jessie frazelle](https://blog.jessfraz.com/post/blurred-lines/) that talks about the relationship between individual passion for open source and a business investment
 * because you need software (like the Linux kernel) to have new features and a bunch of
   companies have enough of the same needs from that software that it's
   worth it for a bunch of people to get paid to build software that
