@@ -73,7 +73,7 @@ possible but still get some advantages?
 
 Right now I think it's:
 
-* build a comtainer image. Use whatever you want to do this (a Dockerfile, [packer](https://www.packer.io/), whatever). You can use as many fancy tools as you want to build your containers.
+* build a container image. Use whatever you want to do this (a Dockerfile, [packer](https://www.packer.io/), whatever). You can use as many fancy tools as you want to build your containers.
 * run that container with [rkt](https://github.com/coreos/rkt). rkt just runs containers, the same way you run a program. I know how to run programs! This is awesome.
 * run the container in your host network namespace (same place as before) so you don't need to worry about any fancy networking business
 * supervise it the same way you supervise things currently
