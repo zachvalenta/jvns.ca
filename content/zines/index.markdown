@@ -79,5 +79,8 @@ like (click to make them bigger):
 <a href="/images/drawings/team.png">
 <img src="/images/drawings/team.png" height="400px">
 </a>
+<a href="/images/drawings/better_data_analysis.svg">
+<img src="/images/drawings/better_data_analysis.png" height="400px">
+</a>
 </div>
 
