@@ -8,9 +8,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="3264.2612"
-   height="2295.1445"
-   viewBox="0 0 3264.2612 2295.1445"
+   width="1024.1508"
+   height="720.09381"
+   viewBox="0 0 1024.1508 720.0938"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="better_data_analysis.svg">
@@ -46,18 +46,19 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.23046875"
-     inkscape:cx="1587.5864"
-     inkscape:cy="1317.7309"
+     inkscape:cx="-101.47312"
+     inkscape:cy="970.61235"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
+     inkscape:current-layer="svg2"
+     showborder="false" />
   <g
      id="layer1"
-     transform="matrix(0.6368439,0,0,0.6368439,352.0084,93.671042)" />
+     transform="matrix(0.1998076,0,0,0.1998076,110.44143,29.38897)" />
   <g
      id="layer2"
-     transform="matrix(0.6368439,0,0,0.6368439,352.0084,93.671042)">
+     transform="matrix(0.1998076,0,0,0.1998076,110.44143,29.38897)">
     <g
        style="fill:#000000;fill-opacity:1;stroke-linejoin:miter"
        id="g6">
