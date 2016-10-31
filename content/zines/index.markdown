@@ -73,7 +73,7 @@ like (click to make them bigger):
 <a href="/images/drawings/wizard-programmer.svg">
 <img src="/images/drawings/wizard-programmer.png" height="400px">
 </a>
-<a href="/images/drawings/the-senior-engineer.png">
+<a href="/images/drawings/the-senior-engineer.svg">
 <img src="/images/drawings/the-senior-engineer.png" height="400px">
 </a>
 <a href="/images/drawings/team.svg">
