@@ -80,7 +80,7 @@ like (click to make them bigger):
 <img src="/images/drawings/team.png" height="400px">
 </a>
 <a href="/images/drawings/better_data_analysis.svg">
-<img src="/images/drawings/better_data_analysis.png" height="400px">
+<img src="/images/drawings/better_data_analysis.png" height="200px">
 </a>
 </div>
 
