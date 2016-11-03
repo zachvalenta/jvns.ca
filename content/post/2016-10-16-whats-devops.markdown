@@ -40,7 +40,7 @@ towards different practices. They did not wake up one day and become
 devops. I think this is the [first talk that used the term 'devops'](https://youtu.be/LdOe18KhtT4)?
 
 It's also not about "everyone is a software developer" -- one of the authors of
-this book, Katherine Daniels, is a [senior operations engineer at Etsy](https://beero.ps/2015/09/26/on-becoming-a-senior-engineer/) at Etsy.
+this book, Katherine Daniels, is a [senior operations engineer at Etsy](https://beero.ps/2015/09/26/on-becoming-a-senior-engineer/).
 I don't know any of the details of her job, but my impression is that she has a
 lot of expertise in operations. It's not like "make operations so
 easy that nobody has to an expert at it". Of course you need people who
