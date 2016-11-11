@@ -18,8 +18,10 @@ Drawing these is a fun puzzle -- I can't draw most things (a cat? forget
 it!) so I need to figure out which things are within my capabilities (a
 lighting bolt? stars? hearts? okay!) and will communicate what I want.
 
-I've been using this Android app called "infinite design" to make vector
-drawings and they turn out nicer.
+You will probably also notice that I struggle to keep a consistent font
+weight :) I'm learning what I think looks good slowly. I've been using
+this Android app called "infinite design" to make vector drawings and
+they turn out nicer.
 
 <div align="center">
 <a href="/images/drawings/syscalls.svg"> <img src="/images/drawings/syscalls.png">
