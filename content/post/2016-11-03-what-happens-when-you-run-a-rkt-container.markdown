@@ -26,6 +26,8 @@ what I'm trying to do here -- really understand exactly what rkt is doing.
 
 There's some pretty good [architecture documentation](https://github.com/coreos/rkt/blob/master/Documentation/devel/architecture.md) that I referred to a bunch and explains a bunch of things that I do not explain here.
 
+As usual there are probably things in here that are wrong.
+
 
 **What running a container looks like in rkt**
 
