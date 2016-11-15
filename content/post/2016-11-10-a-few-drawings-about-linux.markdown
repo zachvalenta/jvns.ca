@@ -6,7 +6,8 @@ categories: []
 ---
 
 For the last few days, I've been doing a drawing about Linux on
-[my Twitter](https://twitter.com/b0rk) every day. Here they are.
+[my Twitter](https://twitter.com/b0rk) every day. Here they are. (more
+at [drawings.jvns.ca](https://drawings.jvns.ca))
 
 It's been really lovely to see the response to these -- some of these
 (like /proc) I've known about for quite a while, and it makes me really
