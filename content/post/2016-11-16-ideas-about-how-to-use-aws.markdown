@@ -24,6 +24,8 @@ A disclaimer: i know the people who founded skyliner, so I’m not an unbiased
 observer. I have not used it for more than 30 minutes and I won’t make any
 claims about whether you should or should not use it.
 
+Anyway here are 3 new things I learned:
+
 ### New AWS instances take less than 5 minutes to start up
 
 Skyliner deploys your code by 
