@@ -19,11 +19,14 @@ more than one computer, it can either offer
 * or **availability** (every computer in the system can always give you a
   response)
 
-This theorem is sometimes phrased as "consistency, availability, or partiion
+This theorem is sometimes phrased as "consistency, availability, or partition
 tolerance, pick 2", but we've established pretty well at this point that
 [you can't sacrifice partition tolerance](https://codahale.com/you-cant-sacrifice-partition-tolerance/),
 so you just get to pick between C and A. If you want more examples of
 network partitions, there's this [very long list by Kyle Kingsbury of examples of network partitions happening and having serious consequences](https://github.com/aphyr/partitions-post).
+
+As usual i'm not a distributed systems expert and probably something in
+this post is wrong.
 
 ### is the CAP theorem actually useful?
 
