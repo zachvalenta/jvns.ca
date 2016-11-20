@@ -49,7 +49,10 @@ to a secondary, and then I read from the secondary sometimes?
 This system is not linearizable. So the CAP theorem has... uh... nothing
 to say about this system. But replicated database setups are extremely
 common and extremely useful! It seems silly to just stop at "well,
-that's not linearizable, I have nothing else to say".
+that's not linearizable, I have nothing else to say". "AP" is not a
+very useful description for this system since it has some interesting
+consistency properties, and is quite different from some other "AP"
+systems.
 
 ### is there a general tradeoff between consistency and availability?
 
