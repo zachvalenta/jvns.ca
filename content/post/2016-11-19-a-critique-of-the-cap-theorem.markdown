@@ -170,3 +170,9 @@ which is only useful in a limited number of cases! So it was less that I
 didn't understand it and more that it's actually just not thaaaaaaat
 useful. Now I don't feel as bad! And I have some slightly better tools
 for thinking about distributed systems! Yay.
+
+On my reading/watching list: 
+
+* [availability & consistency by Werner Vogels](https://www.infoq.com/presentations/availability-consistency)
+* more about the FLP theorem
+* ???
