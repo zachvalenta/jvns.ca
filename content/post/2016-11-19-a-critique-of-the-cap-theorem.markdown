@@ -10,6 +10,11 @@ This week I read a paper called [A Critique of the CAP Theorem](https://arxiv.or
 super interesting and I wanted to tell you why! And maybe convince you
 to read it.
 
+<div align="center">
+<a href="/images/drawings/cap.svg"><img src="/images/drawings/cap.png"></a>
+</div>
+
+
 The CAP theorem is a often-cited result in distributed systems research.
 It basically says that, if you have a real-world database that runs on
 more than one computer, it can either offer
@@ -53,6 +58,37 @@ that's not linearizable, I have nothing else to say". "AP" is not a
 very useful description for this system since it has some interesting
 consistency properties, and is quite different from some other "AP"
 systems.
+
+### the proof of the CAP theorem is extremely simple
+
+I thought that the CAP theorem was like this complicated deep result in
+distributed systems theory.
+
+It turns out that (even though it is a somewhat useful thing!) it is a
+really simple result to prove. Basically:
+
+* you have 2 computers
+* suppose those two computers can't communicate
+* suppose furthermore that you want them to act consistently (if you
+  write "hello" to Computer 1, you want the whole system to know the
+  value is "hello")
+
+Now suppose you ALSO want the system to be available. This is
+impossible! Computer 2 can't tell you that the current value is "hello"!
+There is no possible way it could know that because it can't communicate
+with Computer 1!
+
+That's basically the whole proof. You need to formalize it a bit by defining things clearly which is why the paper is several pages instead of 2 paragraphs. (definitions are important)! But the core idea is just not complicated.
+For more, see [this illustrated guide](http://mwhittaker.github.io/2014/08/16/illustrated-proof-cap-theorem/)
+and [the original paper](http://www.glassbeam.com/sites/all/themes/glassbeam/images/blog/10.1.1.67.6951.pdf), but the proof is not fundamentally more complicated than that.
+
+To me this undermines the theorem a little bit -- CAP is a useful
+shorthand for a useful idea, but it's not realy that profound. By
+contrast, the [FLP impossibility theorem](http://the-paper-trail.org/blog/a-brief-tour-of-flp-impossibility/)
+shows that is it impossible to build a distributed consensus algorithm
+that will always terminate. (so there's some risk that an algorithm like
+Paxos/Raft will get stuck in an infinite loop). This seems a lot less
+obvious (and was an open question for a long time).
 
 ### is there a general tradeoff between consistency and availability?
 
