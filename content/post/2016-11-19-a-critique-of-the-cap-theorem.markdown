@@ -175,4 +175,4 @@ On my reading/watching list:
 
 * [availability & consistency by Werner Vogels](https://www.infoq.com/presentations/availability-consistency)
 * more about the FLP theorem
-* ???
+* [CAP 12 years later](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
