@@ -53,7 +53,11 @@ them could be discussed on any Unixy OS, some of them are Linux-specific)
 * debuggers
 * what's the difference between threads and processes?
 * if unix is text-based, how do desktop environments like GNOME fit in?
+* how does the "man" system work.
 * kpatch, kgraph, kexec
+* more about the stack. Are C vars really stack slots? How tf do setjmp
+  and longjmp work?
+* package management
 
 this is great for so many reasons!
 
@@ -71,6 +75,6 @@ this is great for so many reasons!
 Also I sometimes want to remind people that you too could write
 interesting
 blog posts / drawings on the internet -- for instance "what is dmesg even doing" is
-an interesting topic, and not that hard to learn about! (I just
+an interesting topic, and totally possible to learn about! (I just
 read [dmesg](https://en.wikipedia.org/wiki/Dmesg) on Wikipedia and now I
 know more!)
