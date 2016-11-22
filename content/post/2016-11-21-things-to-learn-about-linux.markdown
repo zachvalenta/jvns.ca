@@ -58,6 +58,7 @@ them could be discussed on any Unixy OS, some of them are Linux-specific)
 * more about the stack. Are C vars really stack slots? How tf do setjmp
   and longjmp work?
 * package management
+* mounts and vfs
 
 this is great for so many reasons!
 
