@@ -14,9 +14,12 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Fanzine):
 > their interest.
 
 I love programming and debugging tools (is that a "cultural phenomenon? I
-don't know!"), so I make zines about how much I love them and give them away.
+don't know!"), so I make sometimes make fanzines about how much I love them and give them away.
 When I have time (and the printing budget) I like to give them out as handouts
 in my talks.
+
+So far there are 2: one about strace and one about linux debugging
+tools.
 
 <h3 id="strace-zine">strace zine</h3>
 
@@ -61,10 +64,10 @@ want! Give them to your friends! Teach them about tcpdump!
 
 The cover art is by [Monica](https://twitter.com/notwaldorf), who is the best.
 
-### other zine-like drawings
+### other drawings
 
-here are a couple of individual drawings that you might
-like (click to make them bigger):
+I have a lot of other drawings about programming. You can find them at
+[https://drawings.jvns.ca](http://drawings.jvns.ca/).
 
 <div align="center">
 <a href="/images/drawings/better-debugging.png">
