@@ -51,7 +51,7 @@ Here's a text version of that comic:
   addresses, and diferent processes have different mappings
 * The mapping of virtual -> physical addresses is different for each
   process! The mapping is generally done one 4 kilobyte block at a time
-* The virual -> physical addresses map is called the **page table**
+* The virtual -> physical addresses map is called the **page table**
 
 I'd heard about the page table before, but one thing that was really
 confusing to me until yesterday was -- how do these lookups of virtual
