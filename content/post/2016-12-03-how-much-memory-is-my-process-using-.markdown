@@ -1,5 +1,5 @@
 ---
-title: "Why can't I just see how much memory my process is using?"
+title: "How much memory is my process using?"
 date: 2016-12-03T11:33:50Z
 url: /blog/2016/12/03/how-much-memory-is-my-process-using-/
 categories: []
@@ -123,9 +123,9 @@ So I could be running 16 Google Chrome processes, and you could have
 You could imagine counting every single page of memory, saying "okay,
 that page is shared by 6 processes, I will divide it by 6 and
 attribute that amount to my process". This seems like a resaonable way
-to count memory to me. But your process might have millions of pages of
-memory! So it might FOREVER to attribute all the memory and by the time
-you were done everything could have changed anyway.
+to count memory to me. It turns out that you can actually do this
+somewhow via `/proc/$PID/smaps` and the PSS column but I have not
+investigated this yet and it is not how `top` reports memory use.
 
 ### swap and mmap
 
