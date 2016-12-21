@@ -86,6 +86,16 @@ blog post :).
 
 [Your Game Doesn't Need UDP (Yet)](https://thoughtstreams.io/glyph/your-game-doesnt-need-udp-yet/) is an article about this. Many real-time games use UDP because dropped frames are considered better than delayed frames. I know almost nothing about this.
 
+@caitie summarized the reason some games use UDP pretty clearly:
+
+> UDP is used for video and some games because with TCP you can get huge
+delays for one dropped packet. Imagine you are sending 20 packets via
+TCP, and packet 3 goes missing. Due to network delay you don't get the
+missing packet 3 msg until you've sent all 20 messages so now you have
+to send 3 through 20 again to guarantee in order delivery. So on very
+lossy networks you can waste a lot of bandwidth and cycles resending
+packets.
+
 ### video streaming uses UDP, sometimes
 
 * "Most h.264 streams for live cameras and such are UDP as far as I know." ([here](https://twitter.com/TheTarquin/status/811412243434782720))
@@ -128,7 +138,7 @@ cause you can talk to millions of peers from 1 machine"
 * UDP is used in a bunch of denial of service attacks in various ways
   ("you can write someone else’s address as the return address. A lot.
   This sucks.")
-* UDP came about when tcp was split into ip and tcp
+* UDP came about when tcp was split into ip and tcp ([twitter thread with more on history](https://twitter.com/tef/status/811449698993184769))
 * "It's really hard to do load balancing well for UDP, but that can be
   really important (eg for server infrastructure for video calls)."
 * DHCP uses UDP
@@ -137,6 +147,8 @@ cause you can talk to millions of peers from 1 machine"
 * I think there are some issues with UDP and network address translation
   (NAT) because UDP doesn't have connections. I'm not super clear on
   this though.
+* It's easier to spoof IPs for UDP traffic since no handshake is
+  necessary
 
 ### Questions
 
