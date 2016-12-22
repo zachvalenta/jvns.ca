@@ -138,7 +138,7 @@ cause you can talk to millions of peers from 1 machine"
 * UDP is used in a bunch of denial of service attacks in various ways
   ("you can write someone else’s address as the return address. A lot.
   This sucks.")
-* UDP came about when tcp was split into ip and tcp ([twitter thread with more on history](https://twitter.com/tef/status/811449698993184769))
+* UDP came about when tcp was split into ip and tcp
 * "It's really hard to do load balancing well for UDP, but that can be
   really important (eg for server infrastructure for video calls)."
 * DHCP uses UDP
