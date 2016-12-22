@@ -343,3 +343,5 @@ isn't so bad, and spending some time with the `ip` command, `ifconfig` and
 `tcpdump` can help you understand the basics of what's going on in your
 Kubernetes installation. You don't need to be an expert network engineer! My
 awesome coworker Doug helped me understand a lot of this.
+
+<small> Thanks to Sophie Haskins for encouraging me to publish this :) </small>
