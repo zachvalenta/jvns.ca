@@ -70,7 +70,7 @@ try to keep the number of conferences I travel for down.
 
 This year I wrote my first work blog post (on [service discovery at Stripe](https://stripe.com/blog/service-discovery-at-stripe). This is a kind of weird thing
 to celebrate (I've written way way more on this blog), but it made me
-surprisingly happy to be able to write in public about some of the stuff I
+surprisingly happy to be able to write in public about some of the stuff we
 work on / think about. I guess I like being able to write a little bit at work. I also
 worked on a [job description](https://stripe.com/jobs/positions/infrastructure-engineer) for my job.
 
@@ -113,7 +113,8 @@ those models. This year stripe released a fraud detection tool called [Radar](ht
 other things) gives you a
 reason for why the ML model made the decision it did (you can see examples at [the docs here](https://stripe.com/docs/radar/risk-evaluation))!
 
-About a bajillion awesome people worked on this, and I worked on the
+About a bajillion awesome people worked on this (and in particular
+others did most of the work on the interpretability stuff), and I worked on the
 machine learning system behind it for a while so it's awesome to see it
 in real life.
 
