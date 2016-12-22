@@ -1,7 +1,6 @@
 ---
 title: "2016: Year in review"
 date: 2016-12-21T21:22:41Z
-draft: true
 url: /blog/2016/12/21/2016--year-in-review/
 categories: []
 ---
@@ -11,7 +10,8 @@ too! Here's are some things that happened in 2016.
 
 ### a new zine!
 
-I wrote another zine in 2016! Here's the cover.
+I wrote another zine in 2016! Here's the cover. (or you can click it to
+read it)
 
 <a href="http://jvns.ca/debugging-zine.pdf"> <img src="/images/debugging-tools-cover.png"></a>
 
@@ -42,22 +42,24 @@ works :). It's been a really good way to communicate ideas.
 
 I 
 
-* [keynoted RustConf](http://jvns.ca/blog/2016/09/11/rustconf-keynote/)
 * [spoke at PyData Berlin](https://www.youtube.com/watch?v=IvF-KbgymXo)
   about some reasons to be skeptical about / excited about
   machine learning (also, I went to Berlin for 6 weeks! That was fun!)
+* [keynoted RustConf](http://jvns.ca/blog/2016/09/11/rustconf-keynote/)
 * [talked at Strange Loop about linux debugging tools](http://jvns.ca/blog/2016/09/17/strange-loop-talk/) (and gave the same talk at PolyConf)
 * [did a lightning talk at !!Con about how to trick neural networks](https://youtu.be/7_DX1EGKZXY)
 * spoke at CUSEC about how understanding operating systems fundamentals
   is important
 
-Doing the RustConf keynote was kind of scary (me??? keynote???) but I think it
-turned out well and I'm happy I did it. I'm still not a huge Rust
-programmer but I love the community and I'm happy with the talk I gave.
+Doing the RustConf keynote was kind of exciting/scary (me??? keynote???) and I think it
+turned out well and I'm happy I did it. I love the Rust community and I'm happy with the talk I gave.
+
+Transcribing my talks was a cool idea and I'd like to keep doing that.
 
 It's looking like 2017 will be the year of Julia going to a few
 operations / SRE conferences, so watch out for that. I like going to new
-conferences instead of going to the same ones all the time.
+conferences instead of going to the same ones all the time. I want to
+try to keep the number of conferences I travel for down.
 
 ### cool: writing about work
 
@@ -89,20 +91,21 @@ THOUGH. I switched to the team that's responsible for networking
 really fun partly because it's now my job to understand a lot of the
 nitty-gritty details about how all of our infrastructure works. And I
 get to work with a lot of fantastic people who know a lot of things
-about operating systems and networking and operations.
+about operating systems and networking and operations. There have been a
+lot of interesting "infrastructure as a product" conversations.
 
-And then now that I understand how a lot of it works, I can make it
-better! So that's what I've been doing. I really like my new team a lot.
-It's harder to explain and less fancy sounding than "machine learning"
-but it's awesome so far.
+And then now that I understand how a lot of it works, I can make the
+internal "product" we provide better! So that's what I've been doing. I
+really like my new team a lot. It's harder to explain and less fancy
+sounding than "machine learning" but it's been good so far.
 
 ### seeing a thing I worked on ship
 
 Last year at this time I was excited about interpretable machine
 learning algorithms (how do you know *why* the machine learning model
 decided to do that thing?) because I think it's important for users of
-those models. This year stripe released a machine learning
-product called [Radar](https://stripe.com/radar) that gives you a
+those models. This year stripe released a fraud detection tool called [Radar](https://stripe.com/radar) that (as well as lot of
+other things) gives you a
 reason for why the ML model made the decision it did (you can see examples at [the docs here](https://stripe.com/docs/radar/risk-evaluation))!
 
 About a bajillion awesome people worked on this, and I worked on the
@@ -125,9 +128,18 @@ a few I liked:
 
 ### conclusions?
 
-who knows!
+some things that worked:
 
-I think I got a little better at figuring out [what to work on](http://jvns.ca/blog/2016/08/16/how-do-you-work-on-something-important/)
-this year. I know more about operating systems fundamentals and networking than I did at
-the beginning of the year. I can write a slightly better design document
-than before. I didn't have RSI problems in 2016.
+* drawing comics (this was a surprise)
+* asking a lot of questions about how computers work (not a surprise)
+* working on a team of people who know more stuff than me, and listening
+  to what they have to say
+* asking for advice from people who are more experienced than me.
+* at work, figuring out what's important to do and then doing the work
+  to get it done, especially if that work is boring / tedious
+* working on one thing at a time (or at least not too many things)
+* doing the things I'm excited about in my spare time (writing about
+  programming) at work a tiiiiny bit more
+* getting a bit better at software "process" things like design
+  documents
+
