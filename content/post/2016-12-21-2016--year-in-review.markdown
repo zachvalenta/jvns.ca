@@ -1,6 +1,7 @@
 ---
 title: "2016: Year in review"
 date: 2016-12-21T21:22:41Z
+draft: true
 url: /blog/2016/12/21/2016--year-in-review/
 categories: []
 ---
@@ -63,14 +64,14 @@ conferences instead of going to the same ones all the time.
 This year I wrote my first work blog post (on [service discovery at Stripe](https://stripe.com/blog/service-discovery-at-stripe). This is a kind of weird thing
 to celebrate (I've written way way more on this blog), but it made me
 surprisingly happy to be able to write in public about some of the stuff I
-work on. I guess I like being able to write a little bit at work. I also
+work on / think about. I guess I like being able to write a little bit at work. I also
 worked on a [job description](https://stripe.com/jobs/positions/infrastructure-engineer) for my job.
 
 I've been thinking a little about Kelsey Hightower's advice to [not let your job title limit your impact](https://twitter.com/kelseyhightower/status/808443443118686208).
 
 I like that I have some flexibility in my job to do things like write
 blog posts / try to make our job descriptions better / organize [events featuring some of my favorite speakers](https://stripe.com/events/lightning-talks-and-pie-dec2016).
-My new manager is supportive of me doing that stuff which makes me happy.
+My new manager is excited about me doing that stuff which makes me happy.
 
 ### also cool: switching to infrastructure
 
@@ -85,8 +86,10 @@ maybe hoping to do even more, but that did not seem to be what the
 company needed. That's okay! I did get to learn how A LOT OF THINGS WORK
 THOUGH. I switched to the team that's responsible for networking
 + code deployment + running programs ("like heroku, but harder to use") and it's
-really fun partly because it's my job to understand a lot of the
-nitty-gritty details about how all of our infrastructure works.
+really fun partly because it's now my job to understand a lot of the
+nitty-gritty details about how all of our infrastructure works. And I
+get to work with a lot of fantastic people who know a lot of things
+about operating systems and networking and operations.
 
 And then now that I understand how a lot of it works, I can make it
 better! So that's what I've been doing. I really like my new team a lot.
@@ -120,7 +123,9 @@ a few I liked:
 * this [post about how stock options work](http://jvns.ca/blog/2015/12/30/do-the-math-on-your-stock-options/) helped me understand how stock options work, which was useful (technically from the dying days of 2015)
 * [how much memory is my process using?](http://jvns.ca/blog/2016/12/03/how-much-memory-is-my-process-using-/) was a long standing mystery in my head and I finally understand (I think) all the basic facts about virtual memory on Linux. Victory.
 
-### some conclusions
+### conclusions?
+
+who knows!
 
 I think I got a little better at figuring out [what to work on](http://jvns.ca/blog/2016/08/16/how-do-you-work-on-something-important/)
 this year. I know more about operating systems fundamentals and networking than I did at
