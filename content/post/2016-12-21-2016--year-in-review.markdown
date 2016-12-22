@@ -1,0 +1,128 @@
+---
+title: "2016: Year in review"
+date: 2016-12-21T21:22:41Z
+url: /blog/2016/12/21/2016--year-in-review/
+categories: []
+---
+
+I'm mostly writing this for me, but maybe it will be interesting to you
+too! Here's are some things that happened in 2016.
+
+### a new zine!
+
+I wrote another zine in 2016! Here's the cover.
+
+<a href="http://jvns.ca/debugging-zine.pdf"> <img src="/images/debugging-tools-cover.png"></a>
+
+I'm really happy with how this one turned out. I also made a dedicated
+page at <a href="http://jvns.ca/zines">jvns.ca/zines</a> where you can
+read all of the zines.
+
+I'm working on another zine right now about computer networking which
+should be out in January or so.
+
+### comics!
+
+I drew a comic about programming every day in November. This turned out
+AWESOME. Way better than I thought they would. You can
+read them all at <a href="http://drawings.jvns.ca/">drawings.jvns.ca</a>
+
+It's been really interesting to see how many people LOVE learning basic
+stuff about operating systems (assembly! threads! the stack! floating
+point!). Often the things I go over that I think are relatively basic
+are the ones where people respond "wow, I had no idea how that worked,
+that's really cool!" (and they're right! It IS really cool!)
+
+It's somewhat shocking to me that some people now refer to me as an
+"artist" given my sorta nonexistant drawing skills, but, hey, whatever
+works :). It's been a really good way to communicate ideas.
+
+### talks!
+
+I 
+
+* [keynoted RustConf](http://jvns.ca/blog/2016/09/11/rustconf-keynote/)
+* [spoke at PyData Berlin](https://www.youtube.com/watch?v=IvF-KbgymXo)
+  about some reasons to be skeptical about / excited about
+  machine learning (also, I went to Berlin for 6 weeks! That was fun!)
+* [talked at Strange Loop about linux debugging tools](http://jvns.ca/blog/2016/09/17/strange-loop-talk/) (and gave the same talk at PolyConf)
+* [did a lightning talk at !!Con about how to trick neural networks](https://youtu.be/7_DX1EGKZXY)
+* spoke at CUSEC about how understanding operating systems fundamentals
+  is important
+
+Doing the RustConf keynote was kind of scary (me??? keynote???) but I think it
+turned out well and I'm happy I did it. I'm still not a huge Rust
+programmer but I love the community and I'm happy with the talk I gave.
+
+It's looking like 2017 will be the year of Julia going to a few
+operations / SRE conferences, so watch out for that. I like going to new
+conferences instead of going to the same ones all the time.
+
+### cool: writing about work
+
+This year I wrote my first work blog post (on [service discovery at Stripe](https://stripe.com/blog/service-discovery-at-stripe). This is a kind of weird thing
+to celebrate (I've written way way more on this blog), but it made me
+surprisingly happy to be able to write in public about some of the stuff I
+work on. I guess I like being able to write a little bit at work. I also
+worked on a [job description](https://stripe.com/jobs/positions/infrastructure-engineer) for my job.
+
+I've been thinking a little about Kelsey Hightower's advice to [not let your job title limit your impact](https://twitter.com/kelseyhightower/status/808443443118686208).
+
+I like that I have some flexibility in my job to do things like write
+blog posts / try to make our job descriptions better / organize [events featuring some of my favorite speakers](https://stripe.com/events/lightning-talks-and-pie-dec2016).
+My new manager is supportive of me doing that stuff which makes me happy.
+
+### also cool: switching to infrastructure
+
+Last year I wrote:
+
+> Apparently I like writing about how things work, and how to make
+> computers go fast. I did some fun performance optimization at work.
+> Maybe I will do more of that next year!
+
+I did a little more performance optimization work in 2016, and I was
+maybe hoping to do even more, but that did not seem to be what the
+company needed. That's okay! I did get to learn how A LOT OF THINGS WORK
+THOUGH. I switched to the team that's responsible for networking
++ code deployment + running programs ("like heroku, but harder to use") and it's
+really fun partly because it's my job to understand a lot of the
+nitty-gritty details about how all of our infrastructure works.
+
+And then now that I understand how a lot of it works, I can make it
+better! So that's what I've been doing. I really like my new team a lot.
+It's harder to explain and less fancy sounding than "machine learning"
+but it's awesome so far.
+
+### seeing a thing I worked on ship
+
+Last year at this time I was excited about interpretable machine
+learning algorithms (how do you know *why* the machine learning model
+decided to do that thing?) because I think it's important for users of
+those models. This year stripe released a machine learning
+product called [Radar](https://stripe.com/radar) that gives you a
+reason for why the ML model made the decision it did (you can see examples at [the docs here](https://stripe.com/docs/radar/risk-evaluation))!
+
+About a bajillion awesome people worked on this, and I worked on the
+machine learning system behind it for a while so it's awesome to see it
+in real life.
+
+### blogging
+
+I wrote 87 blog posts this year, and I think about 70,000 words. So!
+
+a few I liked:
+
+* I liked writing [this discussion of how rkt runs containers](http://jvns.ca/blog/2016/11/03/what-happens-when-you-run-a-rkt-container/) because I think it's important to be able to walk through what a complex piece of software is doing when you run it (if not necessarily rkt specifically)
+* [a critique of the CAP theorem](http://jvns.ca/blog/2016/11/19/a-critique-of-the-cap-theorem/) because I would maybe eventually like to understand more about distributed systems
+* [learning to like design documents](http://jvns.ca/blog/2016/06/03/learning-to-like-design-documents/) has been kind of a theme this year -- I'm trying to get better at designing and iterating on systems
+* I learned [how a CDN works](http://jvns.ca/blog/2016/04/29/cdns-arent-just-for-caching/), [why UDP packets get dropped](http://jvns.ca/blog/2016/08/24/find-out-where-youre-dropping-packets/), and a lot more about networking
+* this [collection of drawings about Linux](http://jvns.ca/blog/2016/11/10/a-few-drawings-about-linux/)
+* this [post about how stock options work](http://jvns.ca/blog/2015/12/30/do-the-math-on-your-stock-options/) helped me understand how stock options work, which was useful (technically from the dying days of 2015)
+* [how much memory is my process using?](http://jvns.ca/blog/2016/12/03/how-much-memory-is-my-process-using-/) was a long standing mystery in my head and I finally understand (I think) all the basic facts about virtual memory on Linux. Victory.
+
+### some conclusions
+
+I think I got a little better at figuring out [what to work on](http://jvns.ca/blog/2016/08/16/how-do-you-work-on-something-important/)
+this year. I know more about operating systems fundamentals and networking than I did at
+the beginning of the year. I can write a slightly better design document
+than before. I didn't have RSI problems in 2016.
