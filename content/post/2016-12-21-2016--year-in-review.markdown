@@ -6,7 +6,8 @@ categories: []
 ---
 
 I'm mostly writing this for me, but maybe it will be interesting to you
-too! Here's are some things that happened in 2016.
+too! Here's are some things that happened in 2016. (just to me
+personally, mostly about programming)
 
 ### a new zine!
 
