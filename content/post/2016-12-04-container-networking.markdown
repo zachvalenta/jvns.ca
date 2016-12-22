@@ -1,7 +1,7 @@
 ---
 title: "A container networking overview"
-date: 2016-12-04T16:50:42Z
-url: /blog/2016/12/04/container-networking/
+date: 2016-12-22T16:50:42Z
+url: /blog/2016/12/22/container-networking/
 categories: []
 ---
 
@@ -12,14 +12,18 @@ One of the hardest things to understand about all this newfangled
 container stuff is -- what is even going _on_ with the networking?!
 
 There are a lot of different ways you can network containers together,
-and the documentation on the internet about how it works is often pretty
-bad. I got really confused about all of this, so I'm going to try to 
+and the documentation on the internet about how it works is often pretty bad. I
+got really confused about all of this, so I'm going to try to explain what it
+all is in laymen's terms.
+
+(I don't like to rant here, but I really have been frustrated with the state of
+the documentation on this networking stuff.)
 
 ### what even is container networking?
 
 When you run a program in a container, you have two main options:
 
-* run the program in the host network namespace
+* run the program in the host network namespace. This is normal networking -- if you run a program on port 8282, it will run on port 8282 on the computer. No surprises.
 * run the program in its *own* network namespace
 
 If you have a program running in its own network namespace (let's say on port
@@ -35,7 +39,7 @@ are!
 ### "every container gets an IP"
 
 If you are a container nerd these days, you have probably heard of
-Kubernetes. Kubernetes is a system that will take a container and
+[Kubernetes](http://kubernetes.io/). Kubernetes is a system that will take a container and
 automatically decide which computer your container should run on. (among
 other things)
 
@@ -57,7 +61,7 @@ in this blog post. There are other ways to network containers, but it's
 going to take long enough already to just explain this one :)
 
 I'm also going to restrict myself to mostly talking about how to make this work
-on AWS. If you have your own physical datacenter there are more options.
+on **AWS**. If you have your own physical datacenter there are more options.
 
 ### Our goal
 
@@ -70,10 +74,10 @@ We're going to learn how to get a packet sent to 10.4.4.4 on the computer
 172.9.9.9.
 
 On AWS this can actually be super easy -- there are these things called
-"VPC Route Tables", and you can just say "send packets for 4.4.4.\* to
-172.9.9.9 please" and AWS will make it work for you. The catch isyou can
+"VPC Route Tables", and you can just say "send packets for 10.4.4.\* to
+172.9.9.9 please" and AWS will make it work for you. The catch is you can
 only have 50 of these rules, so if you want to have a cluster of more
-than 50 computers, you need to go back to being confused about
+than 50 instances, you need to go back to being confused about
 networking.
 
 ### some networking basics: IP addresses, MAC addresses, local networks
@@ -89,7 +93,7 @@ I'm going to take for granted that you know:
 * On Linux, the kernel is responsible for implementing most networking
   protocols
 * a little bit about **subnets**: the subnet 10.4.4.0/24 means "every IP
-  from 10.4.4.0 to 10.4.4.255"
+  from 10.4.4.0 to 10.4.4.255". I'll sometimes write 10.4.4.\* to mean this.
 
 I'll do my best to explain the rest.
 
@@ -130,7 +134,7 @@ look at the IP address on the packet and get it to the right place.
 
 There is a lot to know about how routers work, and we do not have time to learn
 it all right now. Luckily, in AWS you have basically no way to configure the
-routers, so it doesn't matter that we don't know how they work! To send a
+routers, so it doesn't matter if we don't know how they work! To send a
 packet to an instance outside your availability zone, you need to put that
 instance's IP address on it. Full stop. Otherwise it ain't gonna get there.
 
@@ -159,10 +163,13 @@ just add an entry to another table. It's all tables.
 
 Here's command you could run to do this manually:
 
-(todo)
+
+```
+sudo ip route add 10.4.4.0/24 via 172.23.1.1 dev eth0
+```
 
 `ip route add` adds an entry to the **route table** on your computer. This
-route table entry says "Linux, whenever you see a packet for `4.4.4.*`, just
+route table entry says "Linux, whenever you see a packet for `10.4.4.*`, just
 send it to the MAC address for `172.23.2.1`, would ya darling?"
 
 ### we can give containers IPs!
@@ -244,11 +251,28 @@ HTTP stuff
 
 Like before, you might be thinking "how can I get my kernel to do this weird
 encapsulation thing to my packets"? This turns out to be not all that hard.
-Basically all you do is set up a new **network interface** with encapsulation configured. TODO TODO TODO.
+Basically all you do is set up a new **network interface** with encapsulation
+configured.
 
-Then you set up a route table, really similarly to before (TODO), but you tell
-Linux to route the packet with your new magical encapsulation network
-interface.
+On my laptop, I can do this using: (taken from [these instructions](http://www.linux-admins.net/2010/09/tunneling-ipip-and-gre-encapsulation.html))
+
+```
+sudo ip tunnel add mytun mode ipip remote 172.9.9.9 local 10.4.4.4 ttl 255
+sudo ifconfig mytun 10.42.1.1
+```
+
+Then you set up a route table, but you tell Linux to route the packet with your
+new magical encapsulation network interface. Here's what that looks like:
+
+```
+sudo route add -net 10.42.2.0/24 dev mytun
+sudo route list 
+```
+
+I'm mostly giving you these commands to get an idea of the kinds of commands
+you can use to create / inspect these tunnels (`ip route list` , `ip tunnel`,
+`ifconfig`) -- I've almost certainly gotten a couple of the specifics wrong,
+but this is about how it works.
 
 ### How do routes get distributed?
 
@@ -269,7 +293,17 @@ There are two main ways they do it:
 So, you're running Docker, and a packet comes in on the IP address 10.4.4.4. How
 does that packet actually end up getting to your program?
 
-TODO: explain bridge networking
+I'm going to try to explain **bridge networking** here. I'm a bit fuzzy on this
+so some of this is probably wrong.
+
+My understanding right now is:
+
+* every packet on your computer goes out through a real interface (like `eth0`)
+* Docker will create **fake** (virtual) network interfaces for every single one of your containers. These have IP addresses like 10.4.4.4
+* Those virtual network interfaces are **bridged** to your real network interface. This means that the packets get copied (?) to the network interface corresponding to the real network card, and then sent out to the internet
+
+This seems important but I don't totally get it yet.
+
 
 ## finale: how all these container networking things work 
 
@@ -296,4 +330,16 @@ The daemon that sets the routes gets them using BGP messages from other hosts.
 There's still an etcd cluster with Calico but it's not used for distributing
 routes.
 
-**Romana**
+The most exciting thing about Calico is that it has the option to not use
+encapsulation. If you look carefully though you'll notice that Flannel also has
+an option to not use encapsulation! If you're on AWS, I can't actually tell
+which of these is better. They have the same limitations: they'll both only
+work between instances in the same availability zone.
+
+### that's all
+
+That's all I have for now! Hopefully this was helpful. It turns out this stuff
+isn't so bad, and spending some time with the `ip` command, `ifconfig` and
+`tcpdump` can help you understand the basics of what's going on in your
+Kubernetes installation. You don't need to be an expert network engineer! My
+awesome coworker Doug helped me understand a lot of this.
