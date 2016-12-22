@@ -78,7 +78,7 @@ I've been thinking a little about Kelsey Hightower's advice to [not let your job
 
 I like that I have some flexibility in my job to do things like write
 blog posts / try to make our job descriptions better / organize [events featuring some of my favorite speakers](https://stripe.com/events/lightning-talks-and-pie-dec2016).
-My new manager is excited about me doing that stuff which makes me happy.
+My manager is excited about me doing that stuff which makes me happy.
 
 ### also cool: switching to infrastructure
 
