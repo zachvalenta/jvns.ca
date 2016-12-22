@@ -22,6 +22,11 @@ read all of the zines.
 I'm working on another zine right now about computer networking which
 should be out in January or so.
 
+(also I ran an [indiegogo
+campaign](https://www.indiegogo.com/projects/linux-debugging-tools-you-ll-love-the-zine/)
+to help me print zines!! people were really really helpful and it raised
+enough money to print SO MUCH STUFF. it was very heartwarming.)
+
 ### comics!
 
 I drew a comic about programming every day in November. This turned out
