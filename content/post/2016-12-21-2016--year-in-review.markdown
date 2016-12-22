@@ -100,10 +100,9 @@ get to work with a lot of fantastic people who know a lot of things
 about operating systems and networking and operations. There have been a
 lot of interesting "infrastructure as a product" conversations.
 
-And then now that I understand how a lot of it works, I can make the
-internal "product" we provide better! So that's what I've been doing. I
-really like my new team a lot. It's harder to explain and less fancy
-sounding than "machine learning" but it's been good so far.
+And then now that I understand how a lot of it works, I can help make the
+internal "product" we provide better! So that's what I've been working
+on. I like my new team a lot.
 
 ### seeing a thing I worked on ship
 
@@ -117,7 +116,7 @@ reason for why the ML model made the decision it did (you can see examples at [t
 About a bajillion awesome people worked on this (and in particular
 others did most of the work on the interpretability stuff), and I worked on the
 machine learning system behind it for a while so it's awesome to see it
-in real life.
+out there.
 
 ### blogging
 
