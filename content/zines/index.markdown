@@ -28,16 +28,20 @@ from programmers, so I wrote a zine about it to teach more people about how to
 use it.
 
 <div align="center">
-<a href="http://jvns.ca/strace-zine-portrait.pdf">
-<img src="/images/strace_zine.png" height="300px">
+<a href="/strace-zine-v2.pdf">
+<img src="/images/strace-zine-cover.svg" width="300px">
 </a>
 </div>
 
-The easiest way to read this is [on your computer (PDF)](http://jvns.ca/strace-zine-unfolded.pdf).
+The easiest way to read this is [on your computer (PDF)](/strace-zine-v2.pdf).
 
-But the **best** way to read it is to print it out, staple it, fold it, read it, and then give it to a friend. It turns out it's way easier to convince your friends to read a physical thing that is in front of them.
+But the **best** way to read it is to print it out, staple it, fold it,
+read it, and then give it to a friend. It turns out it's way easier to
+convince your friends to read a physical thing that is in front of them.
 
-Printers are kind of annoying, but people do successfully print it and send me [pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041). Here's the [pdf for printing. Have fun.](/strace-zine-portrait.pdf) (there's also a [landscape version](/strace-zine-landscape.pdf))
+Printers are kind of annoying, but people do successfully print it and send me
+[pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041).
+Here's the [pdf for printing. Have fun.](/strace-zine-v2-print.pdf).
 
 It's available under a creative commons license 
 ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
