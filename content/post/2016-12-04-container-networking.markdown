@@ -336,6 +336,17 @@ an option to not use encapsulation! If you're on AWS, I can't actually tell
 which of these is better. They have the same limitations: they'll both only
 work between instances in the same availability zone.
 
+Most of these container networking things will set up all these routes and
+tunnels and stuff for you, but I think it's important to understand what's
+going on behind the scenes, so that if something goes wrong I can debug it and
+fix it.
+
+### is this software defined networking?
+
+I don't know what software defined networking. All of this helps you do
+networking differently, and it's all software, so maybe it's software defined
+networking?
+
 ### that's all
 
 That's all I have for now! Hopefully this was helpful. It turns out this stuff
