@@ -35,8 +35,8 @@ that I’d like to know too, but they don’t always know exactly how to explain
 to me in the best way.
 
 If I ask a good series of questions, then I can help the person explain what
-they know to me and guide them to telling me the stuff I’m interested in
-knowing. So let’s talk about how to do that!
+they know to me efficiently and guide them to telling me the stuff I’m
+interested in knowing. So let’s talk about how to do that!
 
 ### State what you know 
 
@@ -214,6 +214,23 @@ them. I really like it when a manager / senior engineer asks a basic but
 important question like “how did you know the database was down?” because it
 creates space for less-senior people to ask the same kinds of questions later.
 
+### Answer questions.
+
+One of my favorite parts of [André Arko's great How to Contribute to Open Source post](http://andre.arko.net/2016/11/12/how-to-contribute-to-open-source/)
+is where he says
+
+> Now that you’ve read all the issues and pull requests, start to watch for
+> questions that you can answer. It won’t take too long before you notice that
+> someone is asking a question that’s been answered before, or that’s answered
+> in the docs that you just read. Answer the questions you know how to answer.
+
+If you're ramping up on a new project, **answering** questions from people who
+are learning the stuff you just learned can be a really awesome way to solidify
+your knowledge. Whenever I answer a question about a new topic for the first
+time I always feel like "omg, what if I answer their question wrong, omg". But
+usually I can answer their question correctly, and then I come away feeling
+awesome and like I understand the subject better!
+
 ### Questions can be a huge contribution
 
 Good questions can be a great contribution to a community! I asked a bunch of
@@ -229,6 +246,6 @@ annoyed instead of VERY annoyed”.
 
 <small>
 Thanks to Charity Majors for reminding me that I have something to say about
-asking questions, and to Jeff Fowler, Dan Puttick for talking about this with
+asking questions, and to Jeff Fowler & Dan Puttick for talking about this with
 me!
 </small>
