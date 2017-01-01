@@ -152,6 +152,9 @@ without Googling it first” -- sometimes I’ll be at lunch with someone and I�
 be curious about their work, and I’ll ask them some kind of basic questions
 about it. This is totally fine!
 
+But doing research is really useful, and it's actually really fun to be able to
+do enough research to come up with a set of awesome questions.
+
 ### Decide who to ask
 
 I'm mostly talking here about asking **your coworkers** questions,
