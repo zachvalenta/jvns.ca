@@ -59,3 +59,6 @@ make that team awesome!
 Most of these things are things I already believe ("admitting you might be
 wrong is important", "asking questions in public is helpful"), but want to get
 better at putting into practice more often and maybe more loudly :)
+
+(and of course, this post itself is a public question: how do _you_ make
+an awesome team? :))
