@@ -56,6 +56,12 @@ together" or "this team isn't working well together, I don't know how to fix
 it". But of course I am a member of the team, and it is partly my job to help
 make that team awesome!
 
+I tried to argue to my manager a while ago "i can't make my team more awesome,
+I don't know how!". I think I was probably wrong to argue that -- like
+making teams more awesome is not trivial but I think it is something I have
+done before, at least a little, and something I would like be even better at
+in the future.
+
 Most of these things are things I already believe ("admitting you might be
 wrong is important", "asking questions in public is helpful"), but want to get
 better at putting into practice more often and maybe more loudly :)
