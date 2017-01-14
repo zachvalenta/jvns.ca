@@ -11,7 +11,7 @@ She was talking about how she loves her team, and how she tries to make her team
 
 ### Talk a lot about your work in a public channel
 
-She said that her team has a public Slack channel, and that probably 95% of her communication with other people on her team is in that channel. Awesome things about this:
+She said that her team has a public (to the company) Slack channel, and that probably 95% of her communication with other people on her team is in that channel. Awesome things about this:
 
 * if you put what you're working on in public, sometimes someone will know a key piece of information that can really help you! Sometimes people will come in and say something that's *not* helpful, but on the balance we think it's worth it to talk in public :)
 * if you talk about decisions in public all the time, everyone feels like they know what's involved in the decision making process!
