@@ -23,7 +23,7 @@ I have a few conflicting things:
 
 So! the idea!
 
-Each pair of pages is devoted to an idea ("OMG ASSEMBLY GUYS"). 
+Each pair of pages is devoted to an idea ("OMG ASSEMBLY"). 
 On one side, there's a comic, like this:
 
 <img src="https://drawings.jvns.ca/drawings/assembly.png">
