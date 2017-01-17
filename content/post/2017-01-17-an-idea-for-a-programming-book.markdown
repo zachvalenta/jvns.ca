@@ -30,7 +30,10 @@ On one side, there's a comic, like this:
 
 and on the other side of the page there are a few words about why the
 thing is cool and ways you could learn more ("omg omg did you know you
-can use a DISASSEMBLER and that there is this great BOOK")
+can use a DISASSEMBLER and that there is this great BOOK about
+assembly"). Someone on twitter described the role of this as
+"[signposting](https://twitter.com/benmcfc/status/821251395743576064)",
+like "here is the way to more delightful things about this topic!"
 
 It would be less of "this is a textbook you use to learn everything
 about Linux" and more of "this is a book you can open to be inspired and
@@ -42,3 +45,5 @@ It might be mostly about Linux? like "julia's magical things about Linux".
 Anyway! I don't know if I will do this at all (like, I have a full time
 job which I generally like doing, and a bunch of Things to Do), so this
 more of an "idea julia is having at 1am" than a promise :).
+
+So I don't forget, here is [a twitter thread about technical comic books that gave me a bunch of ideas.](https://twitter.com/b0rk/status/796925414778277888).
