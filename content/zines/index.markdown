@@ -68,6 +68,23 @@ want! Give them to your friends! Teach them about tcpdump!
 
 The cover art is by [Monica](https://twitter.com/notwaldorf), who is the best.
 
+<h3 id="prod-ml">Production machine learning </h3>
+
+This is a tiny zine, not as fancy as the others. 
+
+<div align="center">
+<a href="/production-machine-learning.pdf"><img src="/images/prod-ml-cover.png" width="300px"></a>
+</div>
+
+* [version you can read on your computer](/production-machine-learning.pdf)
+* [version you can print and staple and fold](/production-machine-learning-print.pdf)
+
+If you like it, you should read the PDF that it's based on: [Rules of Machine Learning:
+Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf), which I found out about thanks to [Avi Bryant](https://twitter.com/avibryant).
+
+I learned that:
+
+
 ### other drawings
 
 I have a lot of other drawings about programming. You can find them at
