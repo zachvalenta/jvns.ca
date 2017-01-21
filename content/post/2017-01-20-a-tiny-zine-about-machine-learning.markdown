@@ -21,6 +21,7 @@ Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules
 
 I learned that:
 
+* giving a talk without using slides *at all* is possible. It was a little weird, but I will probably experiment with it again in the future. I still like using slides though!
 * I can write a short, sketchy zine in 2 hours (which is the same amount of time it takes me to write similar-quality slides!)
 * I can print, staple, and fold 70 zines in 40 minutes (with some folding help from my amazing partner Kamal :))
 * giving away zines at a meetup is really fun, way more fun than being like "uh, the slides are on my website"
