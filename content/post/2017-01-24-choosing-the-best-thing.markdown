@@ -69,11 +69,6 @@ Nobody has ever told me "you should make technical decision by just figuring
 out what will work and then just pick whatever is the most popular", but it
 seems kind of reasonable to me?
 
-### building for the future
-
-Of course, it's important to not just build stuff that will work **today** but
-also to build things that will work in the future.
-
 ### some limitations
 
 The question of "does the system work" is complicated.
