@@ -1,7 +1,6 @@
 ---
 title: 'New zine: "Networking! ACK!"'
 date: 2017-01-29T10:47:02Z
-draft: true
 url: /blog/networking-zine-launch/
 categories: []
 ---
@@ -36,17 +35,29 @@ I'm really excited about this -- I spent a really long time being
 confused about how any of this networking stuff worked AT ALL, and I'm
 hoping this zine will help some people understand a few more things. 
 
-You can get it TODAY. Here's how.
+Also I am worried about what is happening in the world this week, and
+I wanted to do a small thing to help.
+
+So! You can get this networking zine TODAY. Here's how.
 
 1. Donate to the ACLU ([here's the link](https://action.aclu.org/donate-aclu))
-2. Fill out [this form](todo: link) with your email address and some
+2. Fill out [this form](https://goo.gl/forms/emmcpzBeo3CdddgE3) with your email address and some
    proof
-3. I'll email you the awesome zine.
+3. I'll email you the awesome zine within 24 hours.
 
-Also, if you donate $150 I will print you a zine and mail it to you.
+If you donate $150 I will print you a zine and mail it to you. (I will
+mail up to, say, 50 zines.)
 
-After we raise $5000 for the ACLU (or after 2 weeks, whichever happens
-second), I'll put it online for free at
-[https://jvns.ca/zines](https://jvns.ca/zines).
+After we raise $5000 for the ACLU (or after 2 weeks), I'll
+put it online for free at [https://jvns.ca/zines](https://jvns.ca/zines).
+
+# FAQ
+
+**I can't / don't want to donate to the ACLU but I would like to get the zine!**
+
+I'll put it on my website for everyone to download sometime in the next
+couple of weeks.
 
 # Current amount raised: $0 / $5000
+
+I'll update this counter manually every day.
