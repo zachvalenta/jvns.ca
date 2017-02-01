@@ -166,7 +166,7 @@ think is why I trust this mail.google.com certificate. (Geotrust signed Google's
 So when you get a certificate issued, basically how it works is:
 
 1. You generate the first half of the certificate ("jvns.ca! expires on X date! This is my public key!"). This part is public.
-1. At the same time, you generate a **private key** for you certificate. You keep this very secret and safe and do not show it to anybody.
+1. At the same time, you generate a **private key** for you certificate. You keep this very secret and safe and do not show it to anybody. You'll use this key every time you establish an SSL connection.
 2. You pay a **certificate authority** (CA) that other computers trust to sign
    your certificate for you. Certificate authorities are supposed to have
    integrity, so they are supposed to actually make sure that when they sign certificates, the person they give the cert to actually owns the domain.
@@ -180,13 +180,20 @@ Symantec did not have authorization from the domain owner"
 
 ### certificate transparency
 
-The last thing we are going to talk about is [certificate transparency](https://www.certificate-transparency.org/). This is a super
+The last thing we are going to talk about is [certificate transparency](https://www.certificate-transparency.org/what-is-ct). This is a super
 interesting thing and has a good website and I am almost certainly going to
 mangle it.
 
 I will try anyway!
 
-So, we said that certificate authorities are "supposed to have integrity". But there are SO MANY certificate authorities that my computer trusts! And at any time one of them could sign a rogue certificate for mail.google.com. That's no good.
+So, we said that certificate authorities are "supposed to have integrity". But
+there are SO MANY certificate authorities that my computer trusts! And at any
+time one of them could sign a rogue certificate for mail.google.com. That's no
+good.
+
+This isn't a hypothetical issue -- the [certificate transparency](https://www.certificate-transparency.org/what-is-ct) website
+talks about more than one instance where a CA has been compromised or
+otherwise has made a mistake.
 
 So, here's the deal. At any given time, Google **knows** all the valid
 certificates that are supposed to exist for `mail.google.com` (there is
