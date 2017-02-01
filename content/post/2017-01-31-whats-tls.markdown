@@ -204,6 +204,7 @@ that they DON'T know about, that they can find out.
 Here are the steps, as I understand them
 
 1. Every time any CA signs a certificate, they are supposed to put into a global public "certificate log"
+2. Also the Googlebot puts every certificate it finds on the internet into the certificate log
 2. If a certificate **isn't** in the log, then my browser will not accept it (or will stop accepting it in the future or something)
 3. Anyone can look at the log at any time to find out if there are rogue certificates in there
 
