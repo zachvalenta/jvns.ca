@@ -53,11 +53,19 @@ put it online for free at [https://jvns.ca/zines](https://jvns.ca/zines).
 
 # FAQ
 
+**I already donated to the ACLU! Can I get a zine?**
+
+Yep! Just say "I donated this morning" or something when you fill out the form!
+
 **I can't / don't want to donate to the ACLU but I would like to get the zine!**
 
 I'll put it on my website for everyone to download sometime in the next
 couple of weeks.
 
-# Current amount raised: $0 / $5000
 
-I'll update this counter manually every day.
+# Current amount raised: ~$1175 / $5000
+
+Also people have sent me evidence of like $4300 of preexisting donations
+that are I have sent them zines too. You all are great.
+
+I'll update this counter manually every day. I'm mostly leaving out 
