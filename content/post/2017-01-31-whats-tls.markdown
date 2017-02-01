@@ -124,11 +124,10 @@ Certificate:
 
 This is a lot of stuff. Here are the parts of this that I understand
 
-* `CN=mail.google.com` is the "common name" -- the main domain that this certificate is for 
+* `CN=mail.google.com` is the "common name". Counterintuitively you should ignore this field and look at the "subject alternative name" field instead
 * an **expiry date**: Apr 12 18:50:00 2017 GMT
-* The `X509v3 Subject Alternative Name:` section has other domains that this
-  certificate also works for. The mail.google.com certificate also works for
-  inbox.google.com, which makes sense.
+* The `X509v3 Subject Alternative Name:` section has the list of  domains that this
+  certificate works for. This is mail.google.com and inbox.google.com, which makes sense -- they're both email domains.
 * The `Public Key Info` section tells us the **public key** that we're going to use to communicate with mail.google.com. We do not have time to explain public key cryptography right now, but this is  basically the encryption key we're going to use to talk secretly. 
 * Lastly, the **signature** is a really important thing. Basically anyone could make a
   certificate for mail.google.com. I could make one right now! But if I gave you that certificate, you would have no reason to believe that it is a real certificate
@@ -229,4 +228,4 @@ good or not.
 
 Also [let's encrypt](https://letsencrypt.org/) is really cool! They let you have a certificate for your
 site and make it secure, and you don't even need to understand all this stuff
-about how certificates work on the inside!
+about how certificates work on the inside! And it's FREE.
