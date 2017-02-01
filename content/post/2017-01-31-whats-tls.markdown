@@ -1,5 +1,5 @@
 ---
-title: "How are SSL certificates issued?"
+title: "Dissecting an SSL certificate"
 date: 2017-01-31T21:31:29Z
 url: /blog/2017/01/31/whats-tls/
 categories: []
@@ -8,8 +8,8 @@ categories: []
 Hello! In my networking zine (which everyone will be able to see soon),
 there is a page about TLS/SSL (basically [this tweet](https://twitter.com/b0rk/status/809594614147645440)).
 But as happens when you write 200 words about a thing on a page, there is a lot
-more interesting stuff to say. So in this post we will dissect some SSL
-certificates!
+more interesting stuff to say. So in this post we will dissect an SSL
+certificates and try to understand it!
 
 I am not a security person and I am not going to give you security
 advice for your website (want to know what TLS ciphers you should use? I
@@ -34,6 +34,9 @@ random server on the internet owned by EVIL PEOPLE.
 This "certificate" business was kind of mysterious to me for a very long
 time. One day my cool coworker Ray told me that I could connect to a
 server on the command line and download its certficate!
+
+(If you want to just look at an SSL certificate, you can click on
+the green lock in your browser and reliably get all the information you need. But this is more fun.)
 
 So, let's start by looking at mail.google.com's certificate and
 deconstruct it a bit.
@@ -209,6 +212,10 @@ things about it. Hopefully some of you have learned something!
 Picking the right settings for your SSL certificates and SSL configuration on
 your webserver is confusing. As far as I understand it there are about 3 billion settings. [Here is an example of an SSL Labs result for mail.google.com](https://www.ssllabs.com/ssltest/analyze.html?d=mail.google.com&s=216.58.194.165&hideResults=on).
 There is all this stuff like `OLD_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256` on that page (for real, that is a real thing.). I'm happy there are tools like SSL Labs that help mortals make sense of all of it.
+
+Someone told me [https://cipherli.st/](https://cipherli.st/) is a way to pick
+secure SSL configuration if you're not sure what to do. I don't know if it's
+good or not.
 
 ### let's encrypt is amazing
 
