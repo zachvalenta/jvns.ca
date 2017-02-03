@@ -91,7 +91,7 @@ picked the colours to colour it in with).
 * [deep dream generator](https://deepdreamgenerator.com/) ("add dogs & creepy eyes to anything!")
 * [paintschainer](http://paintschainer.preferred.tech) (what I used for
   the images in this post). [github repo](https://github.com/pfnet/PaintsChainer)
-* This cool ["realistic image manipulation"](http://people.eecs.berkeley.edu/~junyanz/projects/gvm/) paper has some nice videos (but you don't appear to be able to use it)
+* This cool ["realistic image manipulation"](http://people.eecs.berkeley.edu/~junyanz/projects/gvm/) paper has some nice videos (but you don't appear to be able to use it). Thanks to Katherine Ye for showing it to me!!
 
 if you know about more tools like this I would like to hear about them!
 This kind of thing is probably the application of neural networks that
