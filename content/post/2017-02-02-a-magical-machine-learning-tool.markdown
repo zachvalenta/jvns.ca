@@ -90,7 +90,7 @@ picked the colours to colour it in with).
 * [deepart.io](https://deepart.io) (and this paper: [a neural algorithm of artistic style](https://arxiv.org/abs/1508.06576). [github repo](https://github.com/jcjohnson/neural-style))
 * [deep dream generator](https://deepdreamgenerator.com/) ("add dogs & creepy eyes to anything!")
 * [paintschainer](http://paintschainer.preferred.tech) (what I used for
-  the images in this post)
+  the images in this post). [github repo](https://github.com/pfnet/PaintsChainer)
 * This cool ["realistic image manipulation"](http://people.eecs.berkeley.edu/~junyanz/projects/gvm/) paper has some nice videos (but you don't appear to be able to use it)
 
 if you know about more tools like this I would like to hear about them!
