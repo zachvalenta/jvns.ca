@@ -72,6 +72,9 @@ and it gets fragmented, how do I reassemble it? What if the parts that
 split up got out of order? Someone on Twitter told me you can reassemble
 UDP packets but I don't know how it works yet.
 
+I'm definitely still confused about how packet fragmentation works and
+in what cases it makes you lose packets.
+
 ### How do you figure out your MTU?
 
 What if you want to know what the MTU is between two points?
