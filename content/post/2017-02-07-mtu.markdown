@@ -73,7 +73,8 @@ split up got out of order? Someone on Twitter told me you can reassemble
 UDP packets but I don't know how it works yet.
 
 I'm definitely still confused about how packet fragmentation works and
-in what cases it makes you lose packets.
+in what cases it makes you lose packets. (is fragmentation worse for TCP
+packets or UDP packets?)
 
 ### How do you figure out your MTU?
 
