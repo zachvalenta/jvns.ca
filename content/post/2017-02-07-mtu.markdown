@@ -65,10 +65,12 @@ up into 10 or so 1,500 byte packets.
 
 I think this works okay with TCP packets (TCP packets are already a data
 stream split up into many pieces, so you can just split it up further
-and it'll get reassembled at the end). But it's actually quite a weird
-thing to split up a UDP packet -- if I'm sending you a large UDP packet
-and it gets fragmented, there's no real way to reassemble it on the
-other end.
+and it'll get reassembled at the end).
+
+It seems weirder to me to split up a UDP packet -- if I'm sending you a large UDP packet
+and it gets fragmented, how do I reassemble it? What if the parts that
+split up got out of order? Someone on Twitter told me you can reassemble
+UDP packets but I don't know how it works yet.
 
 ### How do you figure out your MTU?
 
