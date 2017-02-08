@@ -18,6 +18,19 @@ don't know!"), so I make sometimes make fanzines about how much I love them and 
 When I have time (and the printing budget) I like to give them out as handouts
 in my talks.
 
+The easiest way to read any of these is on your computer.
+
+But the **best** way to read them is to print it out, staple it, fold it,
+read it, and then give it to a friend. It turns out it's way easier to
+convince your friends to read a physical thing that is in front of them.
+
+Printers are kind of annoying, but people do successfully print them and
+send me [pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041).
+
+They're all available under a creative commons license 
+([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
+many as you want to give away.
+
 ### Zines
 
 Index: 
@@ -54,25 +67,15 @@ strace is my favorite program. I think that it doesn't get enough attention
 from programmers, so I wrote a zine about it to teach more people about how to
 use it.
 
+* version to read on your <a href="/strace-zine-v2.pdf">computer</a>
+* print version: <a href="/strace-zine-v2-print.pdf">letter</a>
+
 <div align="center">
 <a href="/strace-zine-v2.pdf">
 <img src="/images/strace-zine-cover.svg" width="300px">
 </a>
 </div>
 
-The easiest way to read this is [on your computer (PDF)](/strace-zine-v2.pdf).
-
-But the **best** way to read it is to print it out, staple it, fold it,
-read it, and then give it to a friend. It turns out it's way easier to
-convince your friends to read a physical thing that is in front of them.
-
-Printers are kind of annoying, but people do successfully print it and send me
-[pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041).
-Here's the [pdf for printing. Have fun.](/strace-zine-v2-print.pdf).
-
-It's available under a creative commons license 
-([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
-many as you want to give away.
 
 <div align="center">
 <a href="#linux-debugging-tools" style="color: black">
