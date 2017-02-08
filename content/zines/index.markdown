@@ -18,10 +18,36 @@ don't know!"), so I make sometimes make fanzines about how much I love them and 
 When I have time (and the printing budget) I like to give them out as handouts
 in my talks.
 
-So far there are 2: one about strace and one about linux debugging
-tools.
+### Zines
 
-<h3 id="strace-zine">strace zine</h3>
+Index: 
+
+* <a href="#networking-ack"> **Networking! ACK!**</a>
+* <a href="#strace-zine"> **Spying on your programs with strace**</a>
+* <a href="#linux-debugging-tools"> **Linux debugging tools you'll love**</a>
+
+<div align="center">
+<a href="#networking-ack" style="color: black">
+<h3 id="networking-ack"> ★★★ Networking! ACK! ★★★</h3>
+</a>
+</div>
+
+This is a zine about COMPUTER NETWORKING! I spent a very long time
+learning how networking works (what happens when you download a picture
+from the internet? It turns out, a lot!) So I wrote a zine about it!
+
+* version to read on your <a href="/networking-zine.pdf">computer</a>
+* print version: <a href="/networking-zine-print.pdf">letter</a>
+
+<div align="center">
+<img src="/images/networkingcover.png" width=300px>
+</div>
+
+<div align="center">
+<a href="#strace-zine" style="color: black">
+<h3 id="strace-zine"> ★★★ strace zine ★★★</h3>
+</a>
+</div>
 
 strace is my favorite program. I think that it doesn't get enough attention
 from programmers, so I wrote a zine about it to teach more people about how to
@@ -47,7 +73,11 @@ It's available under a creative commons license
 ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
 many as you want to give away.
 
-<h3 id="linux-debugging-tools"> Linux debugging tools you'll love </h3>
+<div align="center">
+<a href="#linux-debugging-tools" style="color: black">
+<h3 id="linux-debugging-tools">★★★  Linux debugging tools you'll love ★★★ </h3>
+</a>
+</div>
 
 This is a zine about some of my favorite Linux debugging tools, especially tools that I don't think are as well-known as they should be. It covers `strace`, `opensnoop`/`eBPF`, and `dstat`! `netcat`, `netstat`, `tcpdump`, `wireshark`, and `ngrep`! And there's a whole section on `perf` because perf is the best.
 
