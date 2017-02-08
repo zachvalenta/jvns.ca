@@ -107,6 +107,9 @@ asymm  4
 I think the MTU on my local network is 1500 bytes. Which makes sense I
 guess! My local network is pretty normal.
 
+David Murray gave a talk about Path MTU Discovery at Papers We Love
+Seattle which [looks pretty interesting](https://github.com/papers-we-love/seattle/tree/master/path-mtu-failures).
+
 ### jumbo frames
 
 Sometimes you can send huge packets though! On the internet in general,
