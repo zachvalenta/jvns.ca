@@ -74,9 +74,9 @@ other end.
 
 What if you want to know what the MTU is between two points?
 
-It turns out that you can use a thing called [Path MTU Discovery](https://en.wikipedia.org/wiki/Path_MTU_Discovery). I found this out by reading the wikipedia article as usual. I found this out by reading the wikipedia article as usual.
-
-basically you
+It turns out that you can use a thing called [Path MTU
+Discovery](https://en.wikipedia.org/wiki/Path_MTU_Discovery). I found
+this out by reading the wikipedia article as usual. Basically you
 
 * send a large packet with a flag on it saying "never fragment this!"
 * at the first point where that packet would be fragmented, it'll notice
