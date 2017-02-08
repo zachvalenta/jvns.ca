@@ -57,6 +57,8 @@ from the internet? It turns out, a lot!) So I wrote a zine about it!
 <img src="/images/networkingcover.png" width=300px>
 </div>
 
+Cover art by the amazing [Liz Baillie](https://twitter.com/_lbaillie).
+
 <div align="center">
 <a href="#strace-zine" style="color: black">
 <h3 id="strace-zine"> ★★★ strace zine ★★★</h3>
