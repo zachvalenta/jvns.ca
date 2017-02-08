@@ -38,34 +38,5 @@ hoping this zine will help some people understand a few more things.
 Also I am worried about what is happening in the world this week, and
 I wanted to do a small thing to help.
 
-So! You can get this networking zine TODAY. Here's how.
+**Read the networking zine today**! It's at [https://jvns.ca/zines/#networking-ack](https://jvns.ca/zines/#networking-ack).
 
-1. Donate to the ACLU ([here's the link](https://action.aclu.org/donate-aclu))
-2. Fill out [this form](https://goo.gl/forms/emmcpzBeo3CdddgE3) with your email address and some
-   proof
-3. I'll email you the awesome zine within 24 hours.
-
-If you donate $150 I will print you a zine and mail it to you. (I will
-mail up to, say, 50 zines.)
-
-After we raise $5000 for the ACLU (or after 2 weeks), I'll
-put it online for free at [https://jvns.ca/zines](https://jvns.ca/zines).
-
-# FAQ
-
-**I already donated to the ACLU! Can I get a zine?**
-
-Yep! Just say "I donated this morning" or something when you fill out the form!
-
-**I can't / don't want to donate to the ACLU but I would like to get the zine!**
-
-I'll put it on my website for everyone to download sometime in the next
-couple of weeks.
-
-
-# Current amount raised: ~$1175 / $5000
-
-Also people have sent me evidence of like $4300 of preexisting donations
-that are I have sent them zines too. You all are great.
-
-I'll update this counter manually every day. I'm mostly leaving out 
