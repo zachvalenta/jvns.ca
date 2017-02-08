@@ -25,6 +25,7 @@ Index:
 * <a href="#networking-ack"> **Networking! ACK!**</a>
 * <a href="#strace-zine"> **Spying on your programs with strace**</a>
 * <a href="#linux-debugging-tools"> **Linux debugging tools you'll love**</a>
+* <a href="#print-directions"> **Printing directions**</a>
 
 <div align="center">
 <a href="#networking-ack" style="color: black">
@@ -112,8 +113,12 @@ This is a tiny zine, not as fancy as the others.
 If you like it, you should read the PDF that it's based on: [Rules of Machine Learning:
 Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf), which I found out about thanks to [Avi Bryant](https://twitter.com/avibryant).
 
-I learned that:
+<h3 id="print-directions">Printing directions</h3>
 
+To print any of these:
+
+* open the print version
+* print double sided, choose to flip on the "long edge"
 
 ### other drawings
 
