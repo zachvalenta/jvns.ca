@@ -63,10 +63,10 @@ The specification for cd is [here](http://pubs.opengroup.org/onlinepubs/96999197
 Here's the relevant section
 
 > An implementation may further simplify curpath by removing any
-> trailing <slash> characters that are not also leading <slash>
-> characters, replacing multiple non-leading consecutive <slash>
-> characters with a single <slash>, and replacing three or more leading
-> <slash> characters with a single <slash>. If, as a result of this
+> trailing &lt;slash&gt; characters that are not also leading &lt;slash&gt;
+> characters, replacing multiple non-leading consecutive &lt;slash&gt;
+> characters with a single &lt;slash&gt;, and replacing three or more leading
+> &lt;slash&gt; characters with a single &lt;slash&gt;. If, as a result of this
 > canonicalization, the curpath variable is null, no further steps shall
 > be taken.
 
@@ -91,3 +91,5 @@ double slash in URLs ("http://"...) but didn't provide a citation. Is that
 true?
 
 If I find out, I will update this blog post with an answer.
+
+**update 1**: there seems to be a pretty good answer in [this stack overflow question](http://unix.stackexchange.com/questions/256497/on-what-systems-is-foo-bar-different-from-foo-bar/256569#256569)
