@@ -1,6 +1,7 @@
 ---
 title: 'How do these "neural network style transfer" tools work?'
 date: 2017-02-12T10:24:12Z
+draft: true
 url: /blog/2017/02/12/neural-style/
 categories: []
 ---
@@ -135,31 +136,6 @@ Then we use gradient descent to move our white noise until we get a
 result that minimizes this loss function. My impression is that gradient
 descent is pretty fast, so we pretty quickly get the photo of our house
 painted like a famous painting.
-
-### this is surprisingly simple!
-
-I think this is really cool! We can take a neural network trained for
-one purpose (doing well on the ImageNet competition), and use it for
-something completely different (to generate cool art!)
-
-And it's actually not all that complicated -- it's obviously an
-extremely clever
-use of neural networks, but we don't actually have to **train** any
-neural networks at all. We only need to use an existing network and do
-some gradient descent, which is basically the simplest possible
-optimization you can do.
-
-So it's both conceptually relatively simple, and computationally pretty
-easy, whereas training neural networks seems to be really difficult to
-figure out how to do well, and computationally extremely intensive.
-
-I think the fact that this is so simple makes it even more exciting and
-surprising that the technique works so well! Like, if I had to guess
-whether you could just pick an arbitrary layer in a neural network and
-say "that one's the style", I'm pretty sure I would guess "no, that is
-too easy, that probably won't work". I don't know if it works with other
-networks. Can you accomplish "artistic style transfer" with any
-high-quality image recognition network? Or is this one special?
 
 ### maybe your weird intuitions are right
 
