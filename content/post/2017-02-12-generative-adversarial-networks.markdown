@@ -24,8 +24,9 @@ with [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
 because it's a short paper and it's written in a pretty understandable
 way.
 
-This paper is the work that powers systems like
-[deepart.io](https://deepart.io/). Here's what they advertise on their
+This paper is the work that powers the system
+[deepart.io](https://deepart.io/). The people who made that website are
+the authors of the paper. Here's what they advertise on their
 homepage:
 
 
@@ -103,7 +104,9 @@ What about the "style" layer? They try different possible style layers:
 give different results.
 
 So! Let's say that we define the vector at `conv3_1` to be the "style"
-and `conv4_2` to be the "content" of an image.
+and `conv4_2` to be the "content" of an image. (note: this is wrong,
+someone told me "you try to match the distribution of values in the
+style layer, not the vector itself. i will try to understand!")
 
 ### Drawing your house in the style of a painting
 
@@ -133,7 +136,7 @@ result that minimizes this loss function. My impression is that gradient
 descent is pretty fast, so we pretty quickly get the photo of our house
 painted like a famous painting.
 
-### conclusion
+### this is surprisingly simple!
 
 I think this is really cool! We can take a neural network trained for
 one purpose (doing well on the ImageNet competition), and use it for
@@ -158,9 +161,21 @@ too easy, that probably won't work". I don't know if it works with other
 networks. Can you accomplish "artistic style transfer" with any
 high-quality image recognition network? Or is this one special?
 
+### maybe your weird intuitions are right
+
+The exciting thing to me about this is -- this is a weird thing that I
+would not have thought would work. So maybe some of my other weird ideas about
+neural networks and art would also work, if I tried them out, as long
+as I find a reasonable mathematical way to formulate them!  I do not
+really have time to do neural networks experiments but maybe I will find
+some.
+[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) is a great read here.
+
 If you want to know more about the exact mathematical details you should
 read the paper! I found it pretty readable. (though this depends if you
 consider partial derivatives readable or not :)). I've probably gotten
 something wrong in here because I'm still pretty new to neural networks
 but I think this is about right. Let me know if I've said something
 wrong!
+
+
