@@ -1,5 +1,5 @@
 ---
-title: "Paper: A Neural Algorithm of Artistic Style"
+title: 'How do these "neural network style transfer" tools work?'
 date: 2017-02-12T10:24:12Z
 url: /blog/2017/02/12/neural-style/
 categories: []
@@ -139,7 +139,8 @@ I think this is really cool! We can take a neural network trained for
 one purpose (doing well on the ImageNet competition), and use it for
 something completely different (to generate cool art!)
 
-And it's actually not all that complicated -- it's obviously a clever
+And it's actually not all that complicated -- it's obviously an
+extremely clever
 use of neural networks, but we don't actually have to **train** any
 neural networks at all. We only need to use an existing network and do
 some gradient descent, which is basically the simplest possible
@@ -154,5 +155,12 @@ surprising that the technique works so well! Like, if I had to guess
 whether you could just pick an arbitrary layer in a neural network and
 say "that one's the style", I'm pretty sure I would guess "no, that is
 too easy, that probably won't work". I don't know if it works with other
-networks (like can you accomplish "artistic style transfer" with any
-high-quality image recognition network? Or is this one special?)
+networks. Can you accomplish "artistic style transfer" with any
+high-quality image recognition network? Or is this one special?
+
+If you want to know more about the exact mathematical details you should
+read the paper! I found it pretty readable. (though this depends if you
+consider partial derivatives readable or not :)). I've probably gotten
+something wrong in here because I'm still pretty new to neural networks
+but I think this is about right. Let me know if I've said something
+wrong!
