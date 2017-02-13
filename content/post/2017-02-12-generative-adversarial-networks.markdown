@@ -1,7 +1,6 @@
 ---
 title: 'How do these "neural network style transfer" tools work?'
 date: 2017-02-12T10:24:12Z
-draft: true
 url: /blog/2017/02/12/neural-style/
 categories: []
 ---
@@ -89,9 +88,6 @@ But! If we want to, we could pick one of those vectors arbitrarily and
 declare "You know, I think that vector represents the **content**" of
 the image.
 
-And you could pick another vector and say "and that one represents the
-**style**".
-
 The basic idea is that the further down you get in the network (and the
 closer towards classifying objects in the network as a "cat" or "house"
 or whatever"), the more the vector represents the image's "content".
@@ -100,14 +96,24 @@ In this paper, they designate the "conv4\_2" later as the "content"
 layer. This seems to be pretty arbitrary -- it's just a layer that's
 pretty far down the network.
 
-What about the "style" layer? They try different possible style layers:
+Defining "style" is a bit more complicated. If I understand correctly, the definition
+"style" is actually the major innovation of this paper -- they don't
+just pick a layer and say "this is the style layer". Instead, they take
+all the "feature maps" at a layer (basically there are actually a whole bunch of
+vectors at the layer, one for each "feature"), and define the "Gram
+matrix" of all the pairwise inner products between those vectors. This
+Gram matrix is the style.
+
+I still don't completely understand this inner product thing. Someone
+tried to explain this to me [on twitter](https://twitter.com/mewo2/status/830875447504277506) a bit but
+I still don't really get it. I think it's explained a bit more in [this paper: Texture Synthesis Using Convolutional Neural Networks](https://arxiv.org/abs/1505.07376).
+
+They try different possible style layers:
 `conv1_1`, `conv2_1`, `conv3_1`, and `conv4_1` in the paper, which all
 give different results.
 
-So! Let's say that we define the vector at `conv3_1` to be the "style"
-and `conv4_2` to be the "content" of an image. (note: this is wrong,
-someone told me "you try to match the distribution of values in the
-style layer, not the vector itself. i will try to understand!")
+So! Let's say that we define the Gram matrix at `conv3_1` to be the "style"
+and the vector at `conv4_2` to be the "content" of an image.
 
 ### Drawing your house in the style of a painting
 
@@ -118,7 +124,7 @@ starry night painting. This picture has a "content" (which is the vector
 that you get at layer `conv4_2` of the neural network).
 
 The famous painting has a "style", which is the vector I get by feeding
-it into the neural network and taking the vector at layer `conv3_1`.
+it into the neural network and taking the Gram matrix at layer `conv3_1`.
 
 So! What if I could find a picture which has the same "content" as the
 photo of my house and the same "style" as the famous painting? This is
@@ -147,11 +153,15 @@ really have time to do neural networks experiments but maybe I will find
 some.
 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) is a great read here.
 
+It doesn't seem trivial at all to figure out what weird art things will
+work, though -- they had to do a surprising-to-me mathematical
+operation to define the style/texture of a painting (this weird Gram
+matrix thing where you take all these inner products).
+
 If you want to know more about the exact mathematical details you should
-read the paper! I found it pretty readable. (though this depends if you
+read the paper! I found it kinda readable, though I still don't really
+understand how they thought of the style definition. (though this depends if you
 consider partial derivatives readable or not :)). I've probably gotten
 something wrong in here because I'm still pretty new to neural networks
 but I think this is about right. Let me know if I've said something
 wrong!
-
-
