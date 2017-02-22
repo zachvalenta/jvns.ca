@@ -7,6 +7,12 @@ categories: []
 I've given a few talks about programming. I think they're pretty good. Usually I talk in a
 really excited way about something for about 25 minutes :).
 
+### upcoming talks
+
+* Opening keynote ("so you want to be a wizard"), [SRECon](https://www.usenix.org/conference/srecon17americas/), March 13-14
+* Learning systems programming with Rust, [Web à Québec](https://webaquebec.org/), April 4-6
+* A swiss army knife of debugging tools, [Monitorama](http://monitorama.com/), May 22-24
+
 ### A swiss army knife of debugging tools (Strange Loop 2016)
 
 Also see [Transcript + slides](/blog/2016/09/17/strange-loop-talk/) and the [accompanying zine](http://jvns.ca/zines/#linux-debugging-tools)

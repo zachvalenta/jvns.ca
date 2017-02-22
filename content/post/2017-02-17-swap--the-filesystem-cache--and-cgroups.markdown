@@ -72,22 +72,18 @@ happy again.
 ### does swap even make sense?
 
 It's not completely clear to me under what circumstances having swap on
-a computer at all even makes sense.
+a computer at all even makes sense. It seems like swap has some role on
+desktop computers.
 
-On one hand, swapping is pretty expensive. I hear a lot of advice like
-"never turn swap on, just let your processes be OOM killed".
+I am not sure though if any of the servers we operate benefit by having
+swap enabled? This seems like it would be a good thing to understand.
 
-But on the other hand -- processes sometimes allocate memory but really
-do not use that memory. In that case, swapping some of that memory to
-disk just seems smart! Like, the operating system has a lot of uses for
-free memory (like saving frequently-used files), and if you can swap
-some unused memory to disk, why not?
+Like I hear the advice "no, just always turn off swap, it will be better
+overall" a lot and maybe that is the right thing! I think the reason
+that swap is considered bad in production systems is that it has
+weird/unpredictable effects and predictability is good.
 
-I guess as with any question about computer systems "does swap even make
-sense" depends a lot on your workload, and you need to think about what
-your programs are doing and experiment! I think these particular
-machines do not need to have swap enabled. (and we should just rethink
-the memory limits)
+Somewhat relately, this [swap insanity](https://blog.jcole.us/2010/09/28/mysql-swap-insanity-and-the-numa-architecture/) article looks really interesting.
 
 ### understanding memory models is cool
 
