@@ -165,3 +165,5 @@ consider partial derivatives readable or not :)). I've probably gotten
 something wrong in here because I'm still pretty new to neural networks
 but I think this is about right. Let me know if I've said something
 wrong!
+
+[This short talk on music and art generation is really nice](https://www.youtube.com/watch?v=vM5NaGoynjE).

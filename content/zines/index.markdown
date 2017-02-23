@@ -52,7 +52,7 @@ from the internet? It turns out, a lot!) So I wrote a zine about it!
 
 * version to read on your <a href="/networking-zine.pdf">computer</a>
 * print version: <a href="/networking-zine-print.pdf">letter</a>
-* adorable coloured in print version by Nikoline Bohr: [print](/networking-zine-print-coloured.pdf) and [online](/networking-zine-coloured.pdf)</a>
+* delightful coloured in version by Nikoline Bohr: [to print](/networking-zine-print-coloured.pdf) and [to read online](/networking-zine-coloured.pdf)</a>
 
 <div align="center">
 <img src="/images/networkingcover.png" width=300px>
