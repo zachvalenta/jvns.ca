@@ -289,7 +289,7 @@ Let me tell you a quick story about how I learned what a system call was.
 </div>
 <div class="content">
 
-The Recurse Center is a 12 week programming retreat in New York where you can go to learn fun new things about programming. I went 3 years ago, partly with the goal of understanding operating systems better.<br><br>
+The <a href="http://recurse.com">Recurse Center</a> is a 12 week programming retreat in New York where you can go to learn fun new things about programming. I went 3 years ago. RC is about learning whatever interests you (low level stuff? fancy frontend tricks? functional programming? making cool art with programming?), and I went partly with the goal of understanding operating systems better.<br><br>
 
 When I got to RC, I learned about the concept of a "system call"! (here's <a href="http://jvns.ca/blog/2013/10/02/day-3-what-does-the-linux-kernel-even-do/">the blog post I wrote the day I learned that</a>). System calls are how applications talk to the operating system. I felt kind of sad that I didn't know about them before, but the important thing was that I learned it! That's exciting!
 
