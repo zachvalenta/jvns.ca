@@ -61,6 +61,8 @@ padding:20px;
 
 (this transcript is nowhere near totally faithful; there's a fair amount of "what i meant to say / what I said, kind of, I think" in here :) )
 
+You can click on any of the slides to see a bigger version.
+
 <div class="container">
 <div class="slide">
 <a href="/images/srecon-talk/slide-0.png"><img src="/images/srecon-talk/slide-0.png"></a>
@@ -223,7 +225,7 @@ So -- why is it important to understand the systems you work with?
 
 I think there are 3 main important reasons:
 <br><br>
-First, understanding <strong>jargon</strong> is really useful. If someone says "hey, this process got killed by the OOM killer" it's useful to know what that means! (we're going to talk about what it means later)
+First, understanding <strong>jargon</strong> is really useful. If someone says "hey, this process got killed by the OOM killer" it's useful to know what that means! (we're going to talk about what an OOM killer is later)
 
 <br><br>
 
@@ -246,7 +248,7 @@ The last reason is -- having a solid understanding of the systems you work with 
 </div>
 <div class="content">
 
-So, a system like Linux seems really intimidating at first, especially if you want to understand some of the internals a little bit. It's like 4 million or 10 million lines of code or something.
+A system like Linux seems really intimidating at first, especially if you want to understand some of the internals a little bit. It's like 4 million or 10 million lines of code or something.
 
 </div>
 </div>
@@ -273,7 +275,9 @@ So let's talk about how to break off pieces of knowledge one at a time so that y
 
 My first favorite thing to do is <strong>learn fundamental concepts</strong>. <br><br>
 
-This is incredibly useful -- in networking, if you know what a packet is and how it's put together, then it really helps to tackle other more complicated concepts.
+This is incredibly useful -- in networking, if you know what a packet is and how it's put together, then it really helps to tackle other more complicated concepts.<br><br>
+
+Let me tell you a quick story about how I learned what a system call was.
 
 </div>
 </div>
@@ -327,7 +331,10 @@ I also like to do <strong>experiments</strong>.
 </div>
 <div class="content">
 
+You can make your laptop run out of memory on purpose! I would show you what happens (remember the "OOM killer"? it's a system in the Linux kernel that starts just killing programs on your computer!), but I think it might not be a good live demo for a talk :).
+<br><br>
 
+I think doing this kind of experiment is awesome because servers run out of memory in production, and it's cool to see what that looks like and how to reason about it in a safer environment. (hint: if you run "dmesg" and search for "oom" it will show you OOM killer activity)
 </div>
 </div>
 
@@ -481,7 +488,15 @@ So even getting to understand something that seems relatively basic like "when d
 </div>
 <div class="content">
 
+A quick story on my Linux journey:
+<br><br>
+In 2003, when I was 15, my mom bought me a shiny new computer. I was really excited about Linux, so I installed a ton of different Linux distributions. (also, thanks to my mom!! I'm super lucky to have had a computer that I could bork repeatedly and the time & space to do tons of experiments)<br><br>
 
+Around 2009, in university, I was one of the sysadmins for a small lab of 7 Linux & Windows computers. The old sysadmin said "hey, want to help out?", gave me the root password, and we muddled our way through getting the computers to work for a bunch of math undergrads.
+<br><br>
+In 2013 I learned what a system call is and a bunch of basic things about operating systems! This was super awesome. (here's everything I learned <a href="http://jvns.ca/categories/hackerschool/">at the Recurse Center</a>
+<br><
+And now I'm still continuing to learn.
 </div>
 </div>
 
