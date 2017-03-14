@@ -8,7 +8,7 @@ categories: []
 
 Today I did the opening keynote at SRECon. This talk was a little less technical than my normal talks: instead of talking about tools like tcpdump (though tcpdump makes an appearance!), I wanted to talk about how to make a career where you're constantly learning and how to be good at your job whether or not you're the most experienced person.
 
-Here's the talk description.
+Here's the talk abstract, then the slides & a rough transcript. I've included links to every resource I mentioned. 
 
 <blockquote>
 I don't always feel like a wizard. Like many of you, I've been doing operations for a couple of years, and I still have a TON TO LEARN about how to do this "SRE" job.
@@ -37,7 +37,6 @@ At the end, we'll have a better understanding of how you can get a lot of awesom
 
 </blockquote>
 
-Here are the slides & a rough transcript of the talk. I've included links to every resource I mentioned.
 
 <style>
 .container{display:flex;}
@@ -59,6 +58,8 @@ padding:20px;
 }
 </style>
 
+
+(this transcript is nowhere near totally faithful; there's a fair amount of "what i meant to say / what I said, kind of, I think" in here :) )
 
 <div class="container">
 <div class="slide">

@@ -87,6 +87,7 @@ task :deploy do
   system "chmod 664 static/images/*"
   system "chmod 777 static/images/drawings"
   system "chmod 777 static/images/rust-talk"
+  system "chmod 777 static/images/srecon-talk"
   system "chmod 777 static/images/stl-talk"
   Rake::Task["#{deploy_default}"].execute
   puts "Clearing Cloudflare cache"
