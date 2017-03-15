@@ -10,8 +10,10 @@ Today I did the opening keynote at SRECon. This talk was a little less technical
 
 Here's the talk abstract, then the slides & a rough transcript. I've included links to every resource I mentioned. 
 
+### abstract
+
 <blockquote>
-I don't always feel like a wizard. Like many of you, I've been doing operations for a couple of years, and I still have a TON TO LEARN about how to do this "SRE" job.
+I don't always feel like a wizard. I'm not the most experienced member on my team, like most people I sometimes find my work difficult, and I still have a TON TO LEARN.
 <br><br>
 
 But along the way, I have learned a few ways to debug tricky problems, get the information I need from my colleagues, and get my job done. We're going to talk about
@@ -58,6 +60,7 @@ padding:20px;
 }
 </style>
 
+### So you want to be a wizard
 
 (this transcript is nowhere near totally faithful; there's a fair amount of "what i meant to say / what I said, kind of, I think" in here :) )
 
