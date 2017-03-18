@@ -10,7 +10,8 @@ programming career so far is 5 years, so 3 years is a big chunk of it.
 
 At the beginning of January this year, I started wondering -- what have
 I really done here? Am I doing things that are worthwhile? What should I
-be doing differently?
+be doing differently? It feels pretty worth thinking about because I
+have spent 3 years doing it 40 hours a week every week.
 
 So I had the idea to just write down every single thing I did in my
 career here so far. I mentioned this to my manager one day and he
