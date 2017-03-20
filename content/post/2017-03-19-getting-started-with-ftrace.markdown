@@ -1,5 +1,5 @@
 ---
-title: "Getting started with ftrace"
+title: "ftrace: trace your kernel functions!"
 date: 2017-03-19T18:51:21Z
 url: /blog/2017/03/19/getting-started-with-ftrace/
 categories: []
@@ -261,7 +261,7 @@ functions I trace, the more overhead it'll have.
 
 (probably some of this is wrong, but this is how I think ftrace works anyway)
 
-### use ftrace more easily: brendan gregg's tools
+### use ftrace more easily: brendan gregg's tools & kernelshark
 
 As we've seen in this post, you need to think quite a lot about what individual
 kernel functions / events do to use ftrace directly. This is cool, but
@@ -275,6 +275,11 @@ on GitHub.
 The tradeoff here is that they're easier to use, but you're limited to 
 things that Brendan Gregg thought of & decided to make a tool for. Which is a
 lot of things! :)
+
+Another tool for visualizing the output of ftrace better is
+[kernelshark](https://lwn.net/Articles/425583/). I haven't played with it much
+yet but it looks useful. You can install it with `sudo apt-get install
+kernelshark`.
 
 ### a new superpower
 
@@ -292,6 +297,7 @@ LWN (Linux Weekly News), which is a pretty great source of writing on Linux. (yo
 * [Debugging the kernel using Ftrace - part 2](https://lwn.net/Articles/366796/) (Dec 2009, Steven Rostedt)
 * [Secrets of the Linux function tracer](https://lwn.net/Articles/370423/) (Jan 2010, Steven Rostedt)
 * [trace-cmd: A front-end for Ftrace](https://lwn.net/Articles/410200/) (Oct 2010, Steven Rostedt)
+* [Using KernelShark to analyze the real-time scheduler](https://lwn.net/Articles/425583/) (2011, Steven Rostedt)
 * [Ftrace: The hidden light switch](https://lwn.net/Articles/608497/) (2014, Brendan Gregg)
 * the kernel documentation: (which is quite useful) [Documentation/ftrace.txt](https://raw.githubusercontent.com/torvalds/linux/v4.4/Documentation/trace/ftrace.txt)
 * documentation on events you can trace [Documentation/events.txt](https://raw.githubusercontent.com/torvalds/linux/v4.4/Documentation/trace/events.txt)
