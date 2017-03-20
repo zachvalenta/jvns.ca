@@ -2,7 +2,7 @@ require "rubygems"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "nfsn"
+ssh_user       = "jevans12_jvns@ssh.phx.nearlyfreespeech.net"
 ssh_port       = "22"
 document_root  = "/home/public"
 rsync_delete   = false
