@@ -26,6 +26,33 @@ just state it without hedging), but when I don't know something, I say so.
 I like doing this because it lets me write about things a little out of my
 comfort zone without worrying about misleading someone.
 
+Also -- I just think it's important for people to admit when they don't know
+something. I did a keynote recently at SRECon (a conference in my field). It's
+possibly in my interest to appear like a Serious Expert who you should listen
+to. But instead I decided to start my talk abstract like this:
+
+> I don't always feel like a wizard. I'm not the most experienced member on my
+> team, like most people I sometimes find my work difficult, and I still have a
+> TON TO LEARN. 
+
+This always feels like a bit of a risk ("will people take me seriously? will it
+be bad for my career?"). I'm always a little relieved when I read things like this
+review of my talk (from [this article](http://www.networkworld.com/article/3182827/cloud-computing/srecon17-brave-new-world-of-site-reliability-engineering.html#tk.twt_nww))
+
+> Yet this honesty conveys the enticing reality of the work. Distributed
+> systems are inherently complex, consisting of myriad components, any
+> combination of which can cause knotty problems, especially at scale. Like a
+> good detective, a dedicated SRE follows the facts where they lead, learning
+> along the way. The combination of humility, curiosity and bravery makes the
+> work seem as compelling as a good episode of CSI.
+
+The surprising and delightful thing to me about being honest on this blog is --
+a lot of the time people *love it*. They're like "I see -- she knows a lot,
+she's good at what she does, and she's not scared to admit that she
+doesn't understand everything. That makes sense! None of us know everything!"
+
+I feel like I'm pretty lucky to be able to do this.
+
 ### try to not write anything (too) wrong
 
 I write a lot of things that are a little bit wrong on this blog. I don't edit
