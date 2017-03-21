@@ -1,5 +1,5 @@
 ---
-title: "Blogging principles"
+title: "Blogging principles I use"
 date: 2017-03-20T21:10:16Z
 url: /blog/2017/03/20/blogging-principles/
 categories: []
@@ -70,10 +70,11 @@ None of these are meant to be prescriptive, but this one least of all.
 I don't really write negative posts. I think negative posts are important and
 interesting and valuable but they are not generally what I write.
 
-(just from today, this [post "epoll is fundamentally broken"](https://idea.popcount.org/2017-03-20-epoll-is-fundamentally-broken-22/) is a very good read) 
+(as for 'negative' posts I love -- just from today, this [post "epoll is fundamentally broken"](https://idea.popcount.org/2017-03-20-epoll-is-fundamentally-broken-22/) is a very good read) 
+
 ### write for a past version of myself
 
-The easiet audience for me to write for is myself! For example, yesterday I wrote a post about a
+The easiest audience for me to write for is myself! For example, yesterday I wrote a post about a
 tracing tool called ftrace. The reason I wrote it is that I was frustrated that
 I couldn't find a single post that explained what ftrace was and how to use it in
 a clear way. So I wrote the post that I wish I'd had when I was getting
