@@ -746,7 +746,7 @@ As an aside, 40ms synchronously is 25 requests per second, which is really not a
 <div class="content">
 
 I captured some packets with Wireshark to figure out who I should be blaming -- the client or the server! <br><br>
-We found out that the client would send the HTTP servers, wait 40ms, and then send the rest of the request. So the server wasn't the problem at all! But why was the client doing this? It's written in Ruby, and initially I maybe thought we should just blame Ruby, but that wasn't a really good reason (40ms is a very long time, even in Ruby).
+We found out that the client would send the HTTP headers, wait 40ms, and then send the rest of the request. So the server wasn't the problem at all! But why was the client doing this? It's written in Ruby, and initially I maybe thought we should just blame Ruby, but that wasn't a really good reason (40ms is a very long time, even in Ruby).
 
 </div>
 </div>
