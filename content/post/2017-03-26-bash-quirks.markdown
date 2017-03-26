@@ -1,5 +1,5 @@
 ---
-title: "Bash scripting quirks & safety"
+title: "Bash scripting quirks & safety tips"
 date: 2017-03-26T09:17:29Z
 url: /blog/2017/03/26/bash-quirks/
 categories: []
@@ -14,7 +14,7 @@ We'll cover
 
 * some bash basics ("how do you write a for loop")
 * quirky things ("always quote your bash variables")
-* and bash scripting safety tips ("always use `set -u`)
+* and bash scripting safety tips ("always use `set -u`")
 
 If you write shell scripts and you don't read anything else in this post, you
 should know that there is a shell script linter called
@@ -154,7 +154,7 @@ If you want to try out conditions from the command line you can use the `test`
 command, like `test -e /tmp/awesome.txt`. It'll return 0 for success, and an
 error return code otherwise.
 
-One last thing about `[[` vs `[`: if you use `[[`, then you can use `<` to do
+One last thing about why `[[` is better than `[`: if you use `[[`, then you can use `<` to do
 comparisons and it won't turn into a file redirection.
 
 ```
