@@ -337,7 +337,7 @@ will share with you now
 * [advanced bash programming guide from TLDP](http://tldp.org/LDP/abs/html/)
 * this [bash guide](http://mywiki.wooledge.org/BashGuide/Practices) and [extensive bash FAQ](http://mywiki.wooledge.org/BashFAQ)
 * a [command line challenge game](https://cmdchallenge.com) to test your bash abilities
-* again, [shellcheck](https://www.shellcheck.net/) and [shfmt](https://github.com/mvdan/shfmt)
+* again, [shellcheck](https://www.shellcheck.net/) and [shfmt](https://github.com/mvdan/sh)
 
 
 (if we're talking about alternative shells, though -- the shell I actually use
