@@ -56,7 +56,9 @@ in bash but I don't really understand those.
 Next, Bash has 3 kinds of variables. The kind I usually think of first (and probably use the most often) are **environment variables**.
 
 
-Every process on Linux actually has environment variables (you can run `env` to see what variables are currently set), but in Bash they're much more easily accessible. To see the environment variable called `MYVAR` you can run.
+Every process on Linux actually has environment variables (you can run `env` to
+see what variables are currently set), but in Bash they're much more easily
+accessible. To see the environment variable called `MYVAR` you can run.
 
 ```
 echo "$MYVAR"
@@ -67,6 +69,10 @@ To set an environment variable, you need to use the `export` keyword:
 ```
 export MYVAR=2
 ```
+
+When you set an environment variable, all child processes will see that
+environment variable. So if you run `export MYVAR=2; python test.py`, the
+python program will have MYVAR set to 2.
 
 The next kind of variable is the **global variable**. You assign these just
 like we described up above. 
@@ -125,7 +131,7 @@ If statements in bash are pretty annoying to remember how to do. You have to
 put in these square brackets, and there have to be spaces around the square
 brackets otherwise it doesn't work. `[[` and `[` square brackets
 (double/single) both work. Here we get truly into bash quirk territory: `[` is
-a program (`/usr/bin/[`) but `[[` is bash syntax.
+a program (`/usr/bin/[`) but `[[` is bash syntax. `[[` is better.
 
 ```
 if [[ "vulture" = "panda" ]]; then
@@ -147,6 +153,16 @@ This is sometimes useful but I have to look up the syntax every single time.
 If you want to try out conditions from the command line you can use the `test`
 command, like `test -e /tmp/awesome.txt`. It'll return 0 for success, and an
 error return code otherwise.
+
+One last thing about `[[` vs `[`: if you use `[[`, then you can use `<` to do
+comparisons and it won't turn into a file redirection.
+
+```
+$ [ 3 < 4 ] && echo "true"
+bash: 4: No such file or directory
+$ [[ 3 < 4 ]] && echo "true"
+true
+```
 
 ### functions aren't that hard
 
@@ -223,6 +239,9 @@ back to the foreground, you can do that with `fg`. If there's more than one of
 those processes, you can see them all with `jobs`. For some reason `fg` takes a
 "job ID" (which is what `jobs` prints) instead of a PID. Who knows. Bash.
 
+Also, if you background LOTS of processes, the `wait` builtin will wait until they all
+return.
+
 Speaking of having regrets -- if you accidentally start a process in the wrong
 terminal, Nelson Elhage has a cool project called
 [reptyr](https://github.com/nelhage/reptyr) that can save your process and move
@@ -279,6 +298,8 @@ You can see all the other bash options you can set with `set -o`.
 A lot of shell scripts I see people using in practice start with `set -eu` or
 `set -eux`. Safety!
 
+You can also `set -o pipefail` to exit if one part of a pipe fails.
+
 ### lint your bash scripts with shellcheck!
 
 
@@ -308,12 +329,19 @@ I just try to not write very complicated bash scripts, stick to some of the
 best practices here, and don't worry too much about it. And it's kind of
 interesting to learn about the weird quirks, anyway!
 
-If you liked this, this article on [defensive bash programming](http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/)
-is also good.
+If you liked this, people linked me to a bunch of other bash resources which I
+will share with you now
+
+* [defensive bash programming](http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/)
+* [shell scripting style guide from Google](https://google.github.io/styleguide/shell.xml).
+* [advanced bash programming guide from TLDP](http://tldp.org/LDP/abs/html/)
+* this [bash guide](http://mywiki.wooledge.org/BashGuide/Practices) and [extensive bash FAQ](http://mywiki.wooledge.org/BashFAQ)
+* a [command line challenge game](https://cmdchallenge.com) to test your bash abilities
+* again, [shellcheck](https://www.shellcheck.net/) and [shfmt](https://github.com/mvdan/shfmt)
 
 
 (if we're talking about alternative shells, though -- the shell I actually use
 day to day is `fish`. Fish is wonderful and I love it. But I still generally
 write shell scripts in bash.)
 
-<small> thanks to Mat, Marina, Kamal, Geoffrey, and Iain for talking about Bash with me!  </small>
+<small> thanks to Mat, Marina, Kamal, Geoffrey, Panashe, @gnomon, and Iain for talking about Bash with me!  </small>
