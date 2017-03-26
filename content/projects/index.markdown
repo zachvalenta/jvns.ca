@@ -6,6 +6,7 @@ categories: []
 
 A few projects I worked on in 2013 and before. Mostly  for fun, mostly when at the [Recurse Center](https://recurse.com).
 
+* [Computers are *fast*](#computers-fast) (2016)
 * [Operating system in Rust](#os-rust) (2013)
 * [Visualizing Git workflows](#visualizing-git) (2013)
 * [Python TCP stack](#python-tcp-stack) (2013)
@@ -14,6 +15,16 @@ A few projects I worked on in 2013 and before. Mostly  for fun, mostly when at t
 * [Visualizing Unix command usage](#unix-command-survey) (2013)
 * [Bike availability map](#bixi-map) (2011)
 * [Master's thesis](#masters-thesis) (2011)
+
+<h2>
+    <a name="computers-fast" class="anchor"> </a>
+    <a href="https://computers-are-fast.github.io"> Computers are fast </a> (2015)
+</h2>
+
+A game to teach you that [computers are fast](http://computers-are-fast.github.io/).
+This was a joint project with [Kamal Marhubi](http://kamalmarhubi.com). I think
+it's pretty awesome.
+
 
 <h2>
     <a name="os-rust" class="anchor"> </a>
