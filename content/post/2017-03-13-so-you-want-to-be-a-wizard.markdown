@@ -1007,7 +1007,7 @@ The small project went super smoothly and I was really happly I wrote up a thing
 
 How do you know what to write in a design document? I really like to start by writing an announcement email, as if we just finished the project.<br><br>
 
-This is great because it forces me to articulate why the project is important (why did we spend all that time on it), how it's going to impact other teams ans what other people in the organization need to know about, and how we know that we actually met our goals for the project<br><br>
+This is great because it forces me to articulate why the project is important (why did we spend all that time on it), how it's going to impact other teams and what other people in the organization need to know about, and how we know that we actually met our goals for the project<br><br>
 
 The last thing is really important -- more often than I'd like to admit, I get to the end of a project and realize I'm not quite sure how we can tell whether the project is actually going to improve things or not. Planning that out at the beginning helps make sure that we put in the right metrics!
 
