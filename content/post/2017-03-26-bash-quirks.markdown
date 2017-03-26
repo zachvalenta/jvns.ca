@@ -1,5 +1,5 @@
 ---
-title: "Bash quirks"
+title: "Bash scripting quirks & safety"
 date: 2017-03-26T09:17:29Z
 url: /blog/2017/03/26/bash-quirks/
 categories: []
@@ -124,8 +124,8 @@ OUTPUT=$(command)
 If statements in bash are pretty annoying to remember how to do. You have to
 put in these square brackets, and there have to be spaces around the square
 brackets otherwise it doesn't work. `[[` and `[` square brackets
-(double/single) both work but `[[` is better because it works better when
-you're combining two checks (like `x=y && a=b`).
+(double/single) both work. Here we get truly into bash quirk territory: `[` is
+a program (`/usr/bin/[`) but `[[` is bash syntax.
 
 ```
 if [[ "vulture" = "panda" ]]; then
@@ -147,6 +147,19 @@ This is sometimes useful but I have to look up the syntax every single time.
 If you want to try out conditions from the command line you can use the `test`
 command, like `test -e /tmp/awesome.txt`. It'll return 0 for success, and an
 error return code otherwise.
+
+### functions aren't that hard
+
+Defining and calling functions in bash (especially if they have no parameters)
+is surprisingly easy. 
+
+```
+my_function () {
+ echo "This is a function"; 
+}
+my_function # calls the function
+```
+
 
 ### always quote your variables
 
@@ -294,6 +307,10 @@ confusing, but it doesn't bother me too much.
 I just try to not write very complicated bash scripts, stick to some of the
 best practices here, and don't worry too much about it. And it's kind of
 interesting to learn about the weird quirks, anyway!
+
+If you liked this, this article on [defensive bash programming](http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/)
+is also good.
+
 
 (if we're talking about alternative shells, though -- the shell I actually use
 day to day is `fish`. Fish is wonderful and I love it. But I still generally
