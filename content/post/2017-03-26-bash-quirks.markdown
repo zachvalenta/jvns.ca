@@ -341,7 +341,6 @@ will share with you now
 
 
 (if we're talking about alternative shells, though -- the shell I actually use
-day to day is `fish`. Fish is wonderful and I love it. But I still generally
-write shell scripts in bash.)
+day to day is `fish`. Fish is wonderful and I love it because of its [amazing autocomplete](https://fishshell.com/docs/current/tutorial.html#tut_autosuggestions). But I still generally write shell scripts in bash.)
 
 <small> thanks to Mat, Marina, Kamal, Geoffrey, Panashe, @gnomon, and Iain for talking about Bash with me!  </small>
