@@ -50,6 +50,26 @@ Bash variables don't need to be all-caps but they usually are.
 Most bash variables you'll use are strings. There are also some array variables
 in bash but I don't really understand those.
 
+### Quoting your variables with ${}
+
+Sometimes I have a variable containing a string like `file.txt` and I want to
+do like
+
+```
+mv $MYVAR $MYVAR__bak # wrong!
+```
+
+This code as is won't work! It will instead look for the variable `MYVAR__bak`
+which is not a real variable.
+
+To get around this, all you need to know is that `${MYVAR}` does the same thing
+as `$MYVAR`. So we can run
+
+```
+mv $MYVAR ${MYVAR}__bak # right!
+```
+
+
 ### global, local & environment variables
 
 
@@ -209,7 +229,7 @@ There are cases where it's okay to just use $X instead of "$X", but can you
 really keep track of when it's okay and when it's not okay? I sure can't.
 Always quote your bash variables and you'll be happier.
 
-### return codes and `&&`
+### return codes, `&&`, and `||
 
 
 Every Unix program has a "return code" which is an integer from 0 to 127. 0
@@ -225,6 +245,11 @@ code is 0.
 
 This is different from `create_user; make_home_directory` which will run
 `make_home_directory` no matter what the return code of `create_user` is
+
+
+You can also do `create_user || make_home_directory` which will run
+`make_home_directory` only `create_user` **fails**. That's definitely in the
+realm of clever tricks.
 
 ### background processes
 
