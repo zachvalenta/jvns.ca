@@ -184,6 +184,17 @@ $ [[ 3 < 4 ]] && echo "true"
 true
 ```
 
+Also one extra last thing about if: I learned today that you don't need `[[` or
+`[` to do if statements: any valid commamd will work. So you can do
+
+
+```
+if grep peanuts food-list.txt
+then
+echo "allergy allert!"
+fi
+```
+
 ### functions aren't that hard
 
 Defining and calling functions in bash (especially if they have no parameters)
