@@ -43,7 +43,8 @@ VARIABLE=2
 and you reference variables with `$VARIABLE`. It's very important that you
 don't put spaces around the = sign -- `VARIABLE= 2`, `VARIABLE = 2`, and
 `VARIABLE =2` are not syntax errors, but will all do different unwanted things
-(like try to run a program called `VARIABLE=` with the argument `2`).
+(like try to run a program called `2` an environment variable `VARIABLE` set to
+the empty string).
 
 Bash variables don't need to be all-caps but they usually are.
 
