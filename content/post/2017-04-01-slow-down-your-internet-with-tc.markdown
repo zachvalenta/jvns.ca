@@ -26,6 +26,8 @@ late. Here's what that looks like:
 
 ```
 sudo tc qdisc add dev wlp3s0 root netem delay 500ms
+# and turn it off with
+sudo tc qdisc del dev wlp3s0 root netem
 ```
 
 `wlp3s0` is the network interface for my wireless card, and this command
