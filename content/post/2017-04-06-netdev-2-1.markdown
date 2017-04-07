@@ -2,7 +2,7 @@
 title: "netdev conference, day 1"
 date: 2017-04-06T11:25:09Z
 url: /blog/2017/04/06/netdev-2-1/
-categories: []
+categories: ["netdev"]
 ---
 
 Today I am at netdev, a conference about Linux networking. I promised my
