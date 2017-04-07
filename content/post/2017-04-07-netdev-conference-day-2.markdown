@@ -6,6 +6,19 @@ categories: ["netdev"]
 ---
 
 Hello! Here are notes from the second day of the netdev conference!
+[this great tutorial on how to filter packets with XDP/BPF was also today and i wrote it up
+separately](/blog/2017/04/07/xdp-bpf-tutorial/)
+
+very very rough list of themes:
+
+* lots about BBR, a TCP congestion algorithm from Google
+* you can take the linux kernel networking stack and put it in
+  userspace? and it works??
+* `tc` is a cool tool and it can program network cards to do amazing
+  things
+* benchmarking networking algorithms is hard and it's important to build
+  benchmarking tools
+* even more information about XDP and why it's fast!
 
 ### BBR talks
 
