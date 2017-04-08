@@ -51,10 +51,13 @@ send that much data, even if there is some packet loss along the way.
 I have no idea how BBR estimates how much bandwidth there is but that's
 a start. I'm planning to read the Google article about it.
 
-The first talk was about using BBR with LTE (mobile) networks, I think.
+The first talk (Driving Linux TCP Congestion Control algorithms around the LTE
+network Highway by Jae Won Chung, Feng Li) was about using BBR with LTE (mobile) networks, I think.
 I came in late and so I didn't learn a lot but it sounded positive.
 
 ### linux kernel networking, in userspace
+
+by Hajime Tazaki
 
 The next talk was really cool! The idea was -- maybe you want to use the
 Linux network stack (because it is a mature network stack) but you want
@@ -68,7 +71,7 @@ code and just use it as a library!
 
 This talk used the [linux kernel library project](https://github.com/lkl/linux), specifically to look at BBR performance inside LKL.
 
-The speaker (Hajime Tazaki) went through a few different performance
+The speaker  went through a few different performance
 problems he ran into.
 
 The goal was to get the same performance with LKL as you would when
@@ -102,9 +105,8 @@ did 0.18Gbps (very very bad!).
 
 It turned out that this was because the LKL box had a very small socket
 buffer. This makes sense, I think! If you have more latency in your system, you're
-going to need more buffer space to store packets. So they had to figure
-out how to set the sysctl that Linux uses to control socket buffer size
-(I think maybe this was nontrivial in LKL? unclear.)
+going to need more buffer space to store packets. So they had to set the sysctl
+that Linux uses to control socket buffer size. This is easy to do in LKL!
 
 ### XDP mythbusters
 
@@ -161,6 +163,10 @@ people love it" which is maybe true? Unclear. I love debugging tools a
 lot :)
 
 ### new TC offloads
+
+chair: Jamal Hadi Salim (who is also the conference chair and did a
+really really wonderful job throughout). He told me things about tc at lunch
+yesterday!
 
 okay so -- apparently TC (the tool that lets you slow your network down)
 is actually a big deal and you can do a ton of stuff with it. I am only
@@ -226,7 +232,7 @@ so that's cool
 
 ### netesto
 
-Someone from Facebook demoed an interesting looking network testing
+Lawrence Brakmo from Facebook demoed an interesting looking network testing
 framework!
 
 This also involved that BBR TCP congestion algorithm from before. He
