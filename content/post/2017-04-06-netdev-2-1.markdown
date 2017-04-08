@@ -21,6 +21,9 @@ in here.
 
 ### XDP in practice: integrating XDP in our DDoS mitigation pipeline
 
+by [Gilberto Bertin](https://blog.cloudflare.com/author/gilberto-bertin/) from
+Cloudflare.
+
 This talk was from Cloudflare! They're a CDN, and one of the services they
 provide is DDOS mitigation. So if you're being DDOSed, they'll figure out which
 network traffic is an attack and absorb the malicious traffic themselves
@@ -120,6 +123,9 @@ this was a really good talk and I learned a lot
 
 ### XDP at Facebook
 
+by Huapeng Zhou, Doug Porter, Ryan Tierney, Nikita Shirokov from Facebook
+(though only one of them spoke)
+
 This talk was about how Facebook uses XDP for 2 different things:
 
 * to implement an L4 load balancer
@@ -128,6 +134,9 @@ This talk was about how Facebook uses XDP for 2 different things:
 He said they have an L4 load balancer (called "SHIV"?) which forwards traffic
 to downstream L7 load balancers. This is the frontend for Facebook, I think --
 like the first servers your requests hit when you go to facebook.com.
+
+There's another talk about load balancing at Facebook from SRECon a while back:
+[Building A Billion User Load Balancer](https://www.usenix.org/conference/srecon15europe/program/presentation/shuff)
 
 He said that before they were using something called "IPVS". At work we use
 HAProxy to do load balancing. It seems like [IPVS](https://en.wikipedia.org/wiki/IP_Virtual_Server) is a load balancer that is 
@@ -152,6 +161,8 @@ eBPF seems to support putting events into perf events via
 framework.
 
 ### Linux Networking for the Enterprise
+
+by Shrijeet Mukherjee from Cumulus
 
 This talk seemed to be about what networking features enterprise customers care
 about. I learned from this talk that people in the enterprise have a lot of
@@ -212,6 +223,8 @@ card to do fancy packet processing.
 There is a lot more but those were the two easiest things for me to understand.
 
 ### networking performance workshop
+
+chaired by Alex Duyck, I didn't manage to take notes of all the speakers.
 
 This was a workshop about new developments in networking performance (by people
 from Intel, Mellanox, and somewhere else).
@@ -281,7 +294,9 @@ Marek at Cloudflare about how tcpdump works: [BPF: the forgotten bytecode](https
 
 ### a talk from Oracle
 
-I missed the first half of this talk by someone from Oracle so I can't tell you
+by Sowmini Varadhan, Tushar Dave
+
+I missed the first half of this talk so I can't tell you
 what it was about but she said something interesting!
 
 She showed 4 graphs of latency vs throughput. In all the graphs:
@@ -297,6 +312,9 @@ I know that there's a tradeoff between latency and throughput for any system (if
 of that tradeoff. And it was interesting to see such an abrupt throughput cliff.
 
 ### evolution of network i/o virtualization
+
+by: Anjali Jain, Alexander Duyck, Parthasarathy Sarangam, Nrupal Jani
+
 
 This one was about the past/present/future of how network virtualization
 works. By people from Intel.
