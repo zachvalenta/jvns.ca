@@ -72,6 +72,7 @@ use it.
 
 * version to read on your <a href="/strace-zine-v2.pdf">computer</a>
 * print version: <a href="/strace-zine-v2-print.pdf">letter</a>
+* you can buy <a href="https://www.stickermule.com/marketplace/15188-strace?utm_swu=8122">strace stickers</a> 
 
 <div align="center">
 <a href="/strace-zine-v2.pdf">
