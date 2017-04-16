@@ -268,13 +268,13 @@ conferences I go to:
   that before and I thought it was kind of
   silly, there were lots of women at the conference and in 2017
   conferences should have women's t-shirt sizes :). The tshirt designs
-  were fun though! this was the [mascot](http://netdevconf.org/2.1/img/pengidori-montreal.png)
+  were fun though! This was the [mascot](http://netdevconf.org/2.1/img/pengidori-montreal.png).
 
 Basically the conference was super-specialized and focused (not for a
 general developer audience at all!) and that was really awesome because
 I got to learn a lot about linux kernel networking.
 
-Those are all my conference notes! Blogging this conference has been
+Those are all my conference notes. Blogging this conference has been
 fun! It made me pay closer attention than I probably would have
 otherwise, and now I can remember what I learned about! And other people
 get to learn some of the things too which is of course my favourite
