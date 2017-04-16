@@ -56,7 +56,7 @@ conflict.
 
 ### building postmortem culture
 
-My partner started at an (awesome) new job recently, that he really likes.
+My partner [Kamal](https://kamalmarhubi.com/blog/) started at an (awesome) new job recently, that he really likes.
 They're still relatively small, and hadn't built a habit of regularly writing
 postmortems for every incident yet. After the first incident he worked on, he
 wrote a very detailed postmortem about what happened.
@@ -92,8 +92,8 @@ it into a pretty PDF, and we put it on the website!
 
 I just googled ("what to expect stripe") and found out that today we publish 6
 different "what to expect" documents for different jobs, and that there have
-been a lot of changes to the original document to keep it up to date as our
-interview process has changed. So cool!!
+been a lot of changes to the original document to improve it / keep it up to
+date as our interview process has changed. So cool!!
 
 ### a more welcoming job description
 
@@ -108,11 +108,12 @@ So I was like "I know! I will write a job description that I think is a
 fair description of what we need!". I wrote a job description for the [job I have](https://stripe.com/jobs/positions/infrastructure-engineer). In
 particular I added a new "Projects you could work on" section with specific
 examples of projects so that people could see what they might actually work on.
-And then it got posted! This was a pretty small thing but I think it is a good
-job description.
+And then I got the appropriate people to review it, we made some changes, and
+it got posted! This was a pretty small thing but I think it is a good job
+description.
 
 And last week a manager on another team asked me for advice about how to make
-their job description be more clear about what the job is and sound more
+their job description more clear about what the job is and sound more
 inclusive and I told them what I thought!
 
 For this one my manager at the time helped me a lot -- I said "hey, I want to
@@ -166,5 +167,6 @@ Some things that have helped me:
 * Work on one thing at a time. I have a regular engineering job to do, so I only do one "side project" like this at once. So if I'm working on organizing an event, I'm not allowed to write a job description.
 * Doing the work myself to start is easier than asking somebody else to change how they're doing something.
 * Trying small changes first. Even if what I want is for all of our interviews to have standard evaluation guidelines (today that's true!!), I can't make that happen all at once, it's easier to say "ok, I'm just going to make some guidelines for myself to use".
+* Work with other people!
 * Remember my coworkers are probably on the same side as me :)
 
