@@ -170,3 +170,6 @@ Some things that have helped me:
 * Work with other people!
 * Remember my coworkers are probably on the same side as me :)
 
+Some other examples of making this kind of change:
+
+* Sumana Harihareswara's great post [Implementing the Friendly Space Policy for Wikimedia Foundation technical events](https://www.harihareswara.net/sumana/2014/10/08/0)
