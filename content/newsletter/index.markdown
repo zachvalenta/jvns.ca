@@ -4,8 +4,8 @@ staticpage: true
 categories: []
 ---
 
-Want to get email when I write new blog posts? This list will automatically
-email you a list of the posts I write on this blog once a week!
+Want to get email when I write new blog posts? This mailing list will automatically
+email you a list of the latest posts once a week!
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
