@@ -65,6 +65,13 @@ Anyway, I asked for recommendations for "nonparametric statistics for programmer
 
 ## some good "statistics for programmers" resources
 
+
+### statistics without the agonizing pain
+
+This is a [really nice 10 minute talk about how to do statistics using programming](https://www.youtube.com/watch?v=5Dnw46eC-0o). Here, I even embedded it!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5Dnw46eC-0o?ecver=1" frameborder="0" allowfullscreen></iframe>
+
 ### statistics for hackers, by jake vanderplas
 
 This [talk from PyCon 2016](https://www.youtube.com/watch?v=Iq9DzN6mvYA) is exactly
@@ -73,12 +80,6 @@ good to read by itself. It introduces shuffling & bootstrapping which I think
 are two of the most important statistics methods to know.
 
 <script async class="speakerdeck-embed" data-id="7e68b43159d646cf81eda9e1bded8213" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
-### statistics without the agonizing pain
-
-This is a [really nice 10 minute talk about how to do statistics using programming](https://www.youtube.com/watch?v=5Dnw46eC-0o). here, I even embedded it!
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Dnw46eC-0o?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 ### nonparametric stats with R
 
