@@ -115,7 +115,9 @@ some other random cool stuff about fish:
   changes, just go to this webpage!". It's such a different approach!
 * It has a [great 1-page tutorial](https://fishshell.com/docs/current/tutorial.html#tut_why_fish) that walks you through all the basic features and the differences from other shells.
 
-fish isn't POSIX compatible, and that still trips me up sometimes, it's
+fish isn't POSIX compliant, and that still trips me up sometimes, it's
 similar but just different enough that I sometimes get confused about
 how to set environment variables. This doesn't make me love fish any
-less, though =)
+less, though! If I ever need to run a bash script or something I just
+switch to bash for a couple minutes, it takes like 1 second to type
+`bash` =)
