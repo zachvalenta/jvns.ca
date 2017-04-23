@@ -78,8 +78,8 @@ not `done` or `fi` or `esac`.
 And it actually has a usable editor for loops. I can use my arrow keys
 to go up to the first line and edit something if I made a mistake.
 
-You will also notice at this point that fish is not POSIX compatible,
-bash-style loops will not work at all.
+You will also notice at this point that fish's loops are real different
+from bash loops. bash/sh syntax really does not work inside fish.
 
 ### feature 4: no more ctrl+r
 
