@@ -11,7 +11,7 @@ fish features that mean that I'll probably never switch back to bash.
 
 ### no configuration
 
-First -- I know that zsh is really awesome, and you can almost certainly configure
+First -- I know that zsh+oh-my-zsh is really awesome, and you can almost certainly configure
 zsh to do all everything I'm gonna describe in this post. The thing I like personally about fish is that I
 don't have to configure it! I just install it on all my computers, it
 comes with a lot of awesome features out of the box, and I don't need to
