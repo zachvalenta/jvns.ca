@@ -47,7 +47,7 @@ and type `v`, it'll suggest the file I edited when I was in that
 directory. I LOVE that it takes the directory I'm in into account and it
 means that the autocompletions work so much better.
 
-The filename autocompletions are also smarter than in bash: I can type `ls 2017`, press tab, and it'll autocompleteto `ls outreachy-flyer-2017-May.jpg`.
+The filename autocompletions are also smarter than in bash: I can type `ls 2017`, press tab, and it'll autocomplete to `ls outreachy-flyer-2017-May.jpg`.
 
 ### feature 2: really good syntax highlighting
 
@@ -112,7 +112,7 @@ some other random cool stuff about fish:
 * you can configure it from a web browser (:D :D). I don't really
   configure my fish but I think this is cool because they're like "hey,
   you don't have to learn our configuration language to make some basic
-  changes, just go to this webpage!"
+  changes, just go to this webpage!". It's such a different approach!
 * It has a [great 1-page tutorial](https://fishshell.com/docs/current/tutorial.html#tut_why_fish) that walks you through all the basic features and the differences from other shells.
 
 fish isn't POSIX compatible, and that still trips me up sometimes, it's
