@@ -45,3 +45,6 @@ turns out there are only a few that you really need to know about!
 <img src="https://jvns.ca/images/tcpdump_command_line_arguments.png">
 <img src="https://jvns.ca/images/tcpdump_command_line_arguments2.png">
 </div>
+
+I'm still figuring out what the best way is to sell stuff online is. Gumroad
+seems reasonable so far but let me know if there are problems with it!
