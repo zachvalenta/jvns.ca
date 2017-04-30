@@ -5,6 +5,33 @@ url: /blog/2017/04/29/new-zine--let-s-learn-tcpdump/
 categories: []
 ---
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<style>
+.button {
+    background-color: #ff5e00;
+    display: inline-block;
+    color: white;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.7;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+}
+</style>
+
 tcpdump is a useful tool for seeing what network packets are being
 sent/received on a computer. I used to be really confused about tcpdump!
 I'd run tcpdump, it would print a bunch of incomprehensible output, I'd
@@ -25,8 +52,7 @@ zine-making enterprises, here it is. As usual it includes both a version you
 can read online and a version you can print out and give to your friends.
 
 <div align="center">
-<script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://gum.co/LcKLx">get the zine!</a>
+<a class="button" href="https://gum.co/LcKLx?wanted=true" target="_blank" data-gumroad-single-product="true">Get the zine!</a>
 </div>
 
 <br>
