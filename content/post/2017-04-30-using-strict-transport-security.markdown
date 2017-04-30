@@ -35,7 +35,7 @@ served with HTTPS is:
 2. Force browsers to *never* visit the HTTP version (not even once!), using the HSTS
    header and the "preload list", which I'll explain!
 
-As I understand it, there are 2 reasons it isn't enough to *just* redirect is.
+As I understand it, there are 3 reasons it isn't enough to *just* redirect HTTP -> HTTPS is:
 
 **reason 1**: If I go to http://github.com, by default my browser will send my GitHub
 cookies unencrypted, which is bad! Somebody could steal them! So it's
@@ -45,7 +45,7 @@ by accident or I click on a malicious link.
 **reason 2**: If a sketchy free wifi portal starts serving a fake
 "github.com" site, then I don't want my browser to be tricked. If my
 browser refuses to visit any HTTP version of github.com, ever, then I'm
-safer.
+safer. An evil ISP can't inject ads / malware into my website!
 
 ### The Strict-Transport-Security header
 
@@ -93,7 +93,7 @@ it'll just pretend I wrote `https`.
 ### The preload list
 
 Okay, so you set the Strict-Transport-Security header! That's awesome,
-but the first someone tries to go to http://github.com they'll still
+but the first time someone tries to go to http://github.com they'll still
 visit the insecure version one time.
 
 So browsers do **another** thing called the "preload list". The idea
@@ -112,10 +112,15 @@ embedded a secure iframe in my site), but if you mix HTTP & HTTPS on
 your site then users' browsers will show a "mixed content warning" so I
 wanted to avoid that.
 
-There's also an argument to be made that [HTTPS can faster than HTTP](https://www.troyhunt.com/i-wanna-go-fast-https-massive-speed-advantage/) 
+There's also an argument to be made that [HTTPS can be faster than HTTP](https://www.troyhunt.com/i-wanna-go-fast-https-massive-speed-advantage/) 
 (for sites that support HTTP/2, which mine does because I use Cloudflare). I don't actually know
 if my site is faster with HTTPS, but that blog post is really
 interesting and you should read it.
+
+The other reason that I find compelling is -- sometimes ISPs will inject
+ads into sites. I don't want ads injected into my site! I want people to
+see my site exactly how I intended them to see it. If my site is always
+served with HTTPS, I can be confident nothing is sketchy is happening.
 
 ### HSTS: you can't go back
 
