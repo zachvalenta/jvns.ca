@@ -35,11 +35,17 @@ served with HTTPS is:
 2. Force browsers to *never* visit the HTTP version (not even once!), using the HSTS
    header and the "preload list", which I'll explain!
 
-As I understand it, the reason it isn't enough to *just* redirect is --
-if I go to http://github.com, by default my browser will send my GitHub
+As I understand it, there are 2 reasons it isn't enough to *just* redirect is.
+
+**reason 1**: If I go to http://github.com, by default my browser will send my GitHub
 cookies unencrypted, which is bad! Somebody could steal them! So it's
 better if I never visit http://github.com at all, even if I type it in
 by accident or I click on a malicious link.
+
+**reason 2**: If a sketchy free wifi portal starts serving a fake
+"github.com" site, then I don't want my browser to be tricked. If my
+browser refuses to visit any HTTP version of github.com, ever, then I'm
+safer.
 
 ### The Strict-Transport-Security header
 
