@@ -29,10 +29,11 @@ But a lot of sites *do* have private content, and should always use
 encryption! The standard practice if you always want your site to be
 served with HTTPS is:
 
-1. always redirect HTTP to HTTPS (run `curl -I http://github.com` to see
-  that they do a redirect to HTTPS!)
-2. force browsers to *never* visit the HTTP version (using the HSTS
-   header and the "preload list", which I'll explain!)
+1. Don't serve a HTTP version of your site at all. Always redirect HTTP
+   to HTTPS (run `curl -I http://github.com` to see that they do a
+   redirect to HTTPS!)
+2. Force browsers to *never* visit the HTTP version (not even once!), using the HSTS
+   header and the "preload list", which I'll explain!
 
 As I understand it, the reason it isn't enough to *just* redirect is --
 if I go to http://github.com, by default my browser will send my GitHub
