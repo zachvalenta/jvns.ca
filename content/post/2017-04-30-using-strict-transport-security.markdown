@@ -105,22 +105,27 @@ at https://hstspreload.org/. You can see GitHub's status at https://hstspreload.
 
 ### why did I turn it on?
 
-Basically I put an embedded payment form in [this blog post](https://jvns.ca/blog/2017/04/29/new-zine--let-s-learn-tcpdump/)
+I put an embedded payment form in [this blog post](https://jvns.ca/blog/2017/04/29/new-zine--let-s-learn-tcpdump/)
 (from Gumroad) and so I wanted the site to be always served with HTTPS.
 The payments were definitely made using HTTPS either way (Gumroad
 embedded a secure iframe in my site), but if you mix HTTP & HTTPS on
-your site then users' browsers will show a "mixed content warning" so I
-wanted to avoid that.
+your site then users' browsers will show a "mixed content warning".
+
+The reason mixed content is bad is -- any HTTP content can be interfered
+with! So if I have a HTTP page with a secure payments thing embedded in
+it, someone could replace the secure payments thing with an Evil Bad
+Payments Thing. That would be no good!
+
+The other reason that I find compelling is -- sometimes ISPs will inject
+ads into sites. I don't want ads injected into my site! I want people to
+see my site exactly how I intended them to see it. If my site is always
+served with HTTPS, I can be confident nobody has done anything sketchy
+to it.
 
 There's also an argument to be made that [HTTPS can be faster than HTTP](https://www.troyhunt.com/i-wanna-go-fast-https-massive-speed-advantage/) 
 (for sites that support HTTP/2, which mine does because I use Cloudflare). I don't actually know
 if my site is faster with HTTPS, but that blog post is really
 interesting and you should read it.
-
-The other reason that I find compelling is -- sometimes ISPs will inject
-ads into sites. I don't want ads injected into my site! I want people to
-see my site exactly how I intended them to see it. If my site is always
-served with HTTPS, I can be confident nothing is sketchy is happening.
 
 ### HSTS: you can't go back
 
