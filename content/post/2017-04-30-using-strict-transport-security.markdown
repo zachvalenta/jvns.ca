@@ -17,8 +17,8 @@ is right but if it's wrong let me know!
 ### HTTPS is good
 
 The idea behind the Strict-Transport-Security header is that if you
-have a HTTPS site, you might want your users to *always* use the HTTPS
-version of my site.
+have a HTTPS site (like github.com), you might want your users to *always* use the HTTPS
+version of your site.
 
 Until yesterday, my site had a HTTP version and an HTTPS version. So you
 could go to http://jvns.ca or https://jvns.ca, depending on what you
@@ -37,7 +37,8 @@ served with HTTPS is:
 As I understand it, the reason it isn't enough to *just* redirect is --
 if I go to http://github.com, by default my browser will send my GitHub
 cookies unencrypted, which is bad! Somebody could steal them! So it's
-better if I never visit http://github.com at all.
+better if I never visit http://github.com at all, even if I type it in
+by accident or I click on a malicious link.
 
 ### The Strict-Transport-Security header
 
