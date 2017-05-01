@@ -35,12 +35,14 @@ served with HTTPS is:
 2. Force browsers to *never* visit the HTTP version (not even once!), using the HSTS
    header and the "preload list", which I'll explain!
 
-As I understand it, there are 3 reasons it isn't enough to *just* redirect HTTP -> HTTPS is:
+As I understand it, there are 2 reasons it isn't enough to *just* redirect HTTP -> HTTPS is:
 
 **reason 1**: If I go to http://github.com, by default my browser will send my GitHub
 cookies unencrypted, which is bad! Somebody could steal them! So it's
 better if I never visit http://github.com at all, even if I type it in
-by accident or I click on a malicious link.
+by accident or I click on a malicious link. You can also fix this by
+setting the `secure` flag on a cookie, though, which means it'll never
+be sent over HTTP.
 
 **reason 2**: If a sketchy free wifi portal starts serving a fake
 "github.com" site, then I don't want my browser to be tricked. If my
@@ -106,15 +108,19 @@ at https://hstspreload.org/. You can see GitHub's status at https://hstspreload.
 ### why did I turn it on?
 
 I put an embedded payment form in [this blog post](https://jvns.ca/blog/2017/04/29/new-zine--let-s-learn-tcpdump/)
-(from Gumroad) and so I wanted the site to be always served with HTTPS.
+(from Gumroad).
 The payments were definitely made using HTTPS either way (Gumroad
-embedded a secure iframe in my site), but if you mix HTTP & HTTPS on
-your site then users' browsers will show a "mixed content warning".
+embedded a secure iframe in my site), so you might think it doesn't
+matter if the site is HTTP or HTTPS!
+
+But, if your site has both HTTP and HTTPS content, then users' browsers
+will show a "mixed content warning".
 
 The reason mixed content is bad is -- any HTTP content can be interfered
 with! So if I have a HTTP page with a secure payments thing embedded in
 it, someone could replace the secure payments thing with an Evil Bad
-Payments Thing. That would be no good!
+Payments Thing. That would be no good! If everything on the page is
+HTTPS, then we know it's all for sure from who it says it is.
 
 The other reason that I find compelling is -- sometimes ISPs will inject
 ads into sites. I don't want ads injected into my site! I want people to
@@ -128,6 +134,7 @@ if my site is faster with HTTPS, but that blog post is really
 interesting and you should read it.
 
 ### HSTS: you can't go back
+
 
 I use Cloudflare's free version, and I turned on HSTS with Cloudflare by
 clicking an "Enable HSTS". Before letting me do it, I had to read the
@@ -153,6 +160,16 @@ version for my site.
 Luckily, these days anyone can get a free SSL/TLS certificate with [Let's Encrypt](https://letsencrypt.org/) so even
 if I stop using Cloudflare, I can pretty easily get a TLS
 certificate for my site and keep providing a secure version.
+
+### Cloudflare
+
+Technically the fact that my site uses HTTPS doesn't mean that
+everything on the site is from **me** -- Cloudflare actually owns the
+TLS certificate for my site, and they can (and do!) add stuff to my
+website, like a Google analytics code.
+
+I'm okay with this because I trust Cloudflare not to add anything
+evil to my site, but I think it's still useful to keep in mind.
 
 ### how can I tell if my site is using the HSTS header properly?
 
