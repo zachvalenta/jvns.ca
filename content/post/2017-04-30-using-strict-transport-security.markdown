@@ -161,6 +161,9 @@ Luckily, these days anyone can get a free SSL/TLS certificate with [Let's Encryp
 if I stop using Cloudflare, I can pretty easily get a TLS
 certificate for my site and keep providing a secure version.
 
+That said, if you're gonna turn on HSTS it's extremely important to make
+sure that you're prepared to keep serving a secure site indefinitely.
+
 ### Cloudflare
 
 Technically the fact that my site uses HTTPS doesn't mean that
