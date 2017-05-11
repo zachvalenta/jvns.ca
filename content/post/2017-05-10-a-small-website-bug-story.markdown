@@ -16,7 +16,7 @@ screenshot:
 </a>
 </div>
 
-Yep. That looks like an issue to me! I asked them to run `curl -I
+Yep. That looks like an issue to me! I asked them to run `curl -i
 http://jvns.ca` and they sent me [the output](https://gist.github.com/jvns/33d5b9d45eaa6a827456daa3d6f278ba/raw/266e8584e127edf67345f1cca550b7118567c33c/gistfile1.txt).
 
 Let's take a look at the HTTP headers.
