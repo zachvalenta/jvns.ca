@@ -107,9 +107,9 @@ This tells Apache "hey, always send gzipped replies no matter what!!".
 So we've solved Mystery 2 -- I deleted that `.htaccess` file, and
 jvns.nfshost.com started behaving normally again.
 
-I'm not sure why I needed this in the first place -- normally webservers
-will automatically gzip content when asked to, and my webserver
-definitely does this now. Maybe it didn't in the past though!
+Today my web host (nearlyfreespeech, which I like a lot) will
+automatically gzip content when asked to, but it didn't in the past!
+([here's the post announcing it](https://blog.nearlyfreespeech.net/2016/02/19/unlimited_free_bandwidth_some_limitations_apply/))
 
 Also, when I cleared my Cloudflare cache my site started behaving
 normally again, which I think means the problem is fixed. Maybe my weird
