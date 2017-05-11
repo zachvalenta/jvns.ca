@@ -11,8 +11,8 @@ saying "hey your website has an issue". They very kindly sent me a
 screenshot:
 
 <div align="center">
-<a href="/images/gibberish_website.png">
-<img src="/images/gibberish_website.png">
+<a href="https://jvns.ca/images/gibberish_website.png">
+<img src="https://jvns.ca/images/gibberish_website.png">
 </a>
 </div>
 
@@ -45,7 +45,7 @@ W/"3715-54e836f53861d-gzip"`. This is a great clue. I was like "oh, is
 it gibberish because it's gzipped??"
 
 How do you check if a file is gzipped? The easiest way is probably to
-try to unzip it and see if it works. In this case the gzipped data was mixed into the headers
+try to unzip it and see if it works. In this case the gzipped data was in the same file as the headers
 though, so I ran `hexdump -c file.txt`. I looked at the bytes at the
 beginning of the binary data and it said `1f 8b`. I [happen to know](https://jvns.ca/blog/2013/10/24/day-16-gzip-plus-poetry-equals-awesome/) that those are the 2 bytes every gzip stream starts with!
 
@@ -82,7 +82,7 @@ Content-Type: text/html; charset=UTF-8
 This is also weird though! You might say -- "okay, it says
 Content-Encoding: gzip, that's good". But normally in order to get
 gzipped content, you have to send an `Accept-Encoding: gzip` header to
-say "I understand gzip!". But I wasn't sending that header, and my site
+say "I understand gzip!". But I wasn't sending that header with curl, and my site
 was returning gzipped content anyway. Weird, right?
 
 So we haven't solved our mystery, but we've found a SECOND mystery:
@@ -107,9 +107,13 @@ This tells Apache "hey, always send gzipped replies no matter what!!".
 So we've solved Mystery 2 -- I deleted that `.htaccess` file, and
 jvns.nfshost.com started behaving normally again.
 
+I'm not sure why I needed this in the first place -- normally webservers
+will automatically gzip content when asked to, and my webserver
+definitely does this now. Maybe it didn't in the past though!
+
 Also, when I cleared my Cloudflare cache my site started behaving
-normally again, which I take to be a good sign. Maybe my backend's
-aberrant behavior was causing Cloudflare to break somehow? Not clear!
+normally again, which I think means the problem is fixed. Maybe my weird
+Apache rule's aberrant behavior was causing Cloudflare to break somehow? Not clear!
 
 ### why did it take me half a day to fix it?
 
