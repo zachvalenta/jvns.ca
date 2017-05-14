@@ -2,7 +2,7 @@
 title: "New zine: let's learn tcpdump!"
 date: 2017-04-29T09:50:37Z
 url: /blog/2017/04/29/new-zine--let-s-learn-tcpdump/
-categories: []
+categories: ["zines"]
 ---
 
 <script src="https://gumroad.com/js/gumroad.js"></script>
