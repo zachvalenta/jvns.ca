@@ -26,7 +26,6 @@ desc "Generate Hugo site"
 task :build do
   system "compass compile --css-dir #{static_dir}/stylesheets/"
   system "hugo"
-  system "./scripts/crush.pl"
 end
 
 desc "Watch the site and regenerate when it changes"

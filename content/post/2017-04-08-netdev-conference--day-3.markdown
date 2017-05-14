@@ -5,13 +5,13 @@ url: /blog/2017/04/08/netdev-conference-day-3/
 categories: ["netdev"]
 ---
 
-Okay, it's the last day of netdev! Today there was an exciting surprise! This
+Okay, it's the last day of [netdev 2.1](http://netdevconf.org/2.1/)! Today there was an exciting surprise! This
 morning on the subway on the way there I got a mysterious text "julia, are you
 coming to netdev today?"
 
 When I got there (late), I discovered that I'd won a book!! So now I have this
 cool [Linux Kernel Networking book](https://www.amazon.ca/Linux-Kernel-Networking-Implementation-Theory/dp/143026196X).
-It's from 2014 which is pretty recent! I'm looking forward to looking at it.
+It's from 2014 which is pretty recent and I'm looking forward to reading it.
 
 themes from today:
 
@@ -21,14 +21,14 @@ themes from today:
 * networking daemons
 
 I think my main practical takeaway from today was "oh man, maybe I don't ever
-have to learn iptables, I should maybe learn nftables instead? :)". Not sure
-yet though!
+have to learn iptables, I should maybe learn nftables instead?" :). Not sure
+yet though! Maybe I still have to learn how iptables works!
 
 ### netfilter workshop
 
 by Pablo Neira Ayuso
 
-As usual a 'workshop' is not a tutorial, it's a discussion of new recent
+At netdev a 'workshop' is not a tutorial, it's a discussion of new recent
 advances in the tool. I think this workshop was actually mostly about nftables
 (which is a new system inside netfilter).
 
@@ -89,7 +89,9 @@ nftables virtual machine with 25 instructions.
 Someone asked in the question period whether they'd consider putting eBPF into
 nftables -- i think the idea is that all these systems (tc, nftables, etc) are
 a lot for users to learn, and if you could define new stuff in eBPF it would be
-easier to add features and understand the landscape.
+easier to add features and easier for users to use (because then you
+don't have to learn all these different tools, you can focus on learning
+eBPF). I didn't hear the answer to this. 
 
 ### morning keynote
 
@@ -124,28 +126,20 @@ hardware.
 
 ### new mailing list: xdp-newbies
 
-David Miller came up to me to tell me he made a new kernel mailing list for
+As of today there is a new kernel mailing list for
 people who are new to XDP! Cool! There's a [link to sign up here](http://vger.kernel.org/vger-lists.html).
 
-weird aside: I learned when subscribing to this list that you cannot just sign up with Gmail
-(or you have to do something special) -- I tried to sign up and it replied to
-my confirmation email like
-
-```
->>>> Content-Type: text/plain; charset=UTF-8
-**** Command 'content-type:' not recognized.
-```
-
-so I guess I sent the wrong kind of email. Anyway I will figure it out. I
-remember learning from the Outreachy docs that kernel mailing lists are kind of
-particular about how you send email and I'm sure it's not that complicated,
-lots of people have subscribed to the mailing lists before :)
+Apparently you have to send plain text email to manage your subscription
+to a kernel mailing list, so today I learned how to send plain text
+email from gmail. Also I somehow managed to email the list instead of
+the list admin address (majordomo@vger.kernel.org). Anyway after several
+mishaps I managed to subscribe and now I can lurk :D
 
 ### IoT workshop!
 
-Okay! There was an IoT workshop after lunch. This seemed to be mostly about
-"mesh networking" which is when a bunch of low-powered devices create a peer to
-peer network.
+There was an IoT workshop after lunch. This seemed to be mostly about
+"mesh networking" which is when a bunch of low-powered devices create a
+peer to peer network.
 
 **6lowpan**
 
@@ -235,10 +229,53 @@ looks like when it is open source!
 
 ### closing remarks
 
-They said 25% of the people were from Canada! Lots of people from Montreal :).
 The next netdev will be in South Korea in November.
 
-### that's all
+### some thoughts on the conference
 
-those are all my conference notes! blogging this conference has been fun and I
-think it helped me learn a lot more. A+ would blog again.
+Awesome things about this conference:
+
+* almost everyone (maybe everyone?) I met at this conference knew WAY
+  WAY WAY
+  more about linux kernel networking than I do. I met people who write
+  linux kernel device drivers, people who work on userspace networking
+  stacks that interact heavily with the kernel, people who work at
+  companies that make network hardware, and more.
+* all the people I met were really friendly and happy to explain things
+  to me. 
+* the talks were often about things I hadn't heard of before at all. this falls
+  in the category of "awesome things" even though it meant the conference was
+  pretty hard to understand because learning about new things is like..
+  the reason I go to conferences. 
+* the XDP/BPF tutorial yesterday was REALLY GOOD, super super
+  well done, I learned a ton from it.
+
+some things about this conference that were different from usual
+conferences I go to:
+
+* people's slides had a lot of text and code on them. Usually I think of
+  that as a "bad thing" but actually as long as it's readable & well
+  organized I think it can be kind of good? like I know that there is a
+  netfilter command fragment `ip saddr timeout 60s quota over 50 mbytes`
+  to put a quota per IP address because it was on a slide with a lot of
+  other text and I wrote it down
+* like on the balance I think I prefer some text/code to cat gifs if the
+  person is trying to explain a code thing to me :)
+* they don't accept recycled talks, your talks is supposed to be kinda
+  original research / a new development in linux kernel networking and
+  not a talk that been given before anywhere.
+* they only had men's t-shirts, not women's t-shirts. I've never seen
+  that before and I thought it was kind of
+  silly, there were lots of women at the conference and in 2017
+  conferences should have women's t-shirt sizes :). The tshirt designs
+  were fun though! This was the [mascot](http://netdevconf.org/2.1/img/pengidori-montreal.png).
+
+Basically the conference was super-specialized and focused (not for a
+general developer audience at all!) and that was really awesome because
+I got to learn a lot about linux kernel networking.
+
+Those are all my conference notes. Blogging this conference has been
+fun! It made me pay closer attention than I probably would have
+otherwise, and now I can remember what I learned about! And other people
+get to learn some of the things too which is of course my favourite
+thing. A+ would blog again.
