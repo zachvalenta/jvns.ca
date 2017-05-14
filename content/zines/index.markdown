@@ -4,6 +4,9 @@ staticpage: true
 categories: []
 ---
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<link href="https://jvns.ca/stylesheets/buttons.css" media="screen, projection" rel="stylesheet" type="text/css">
+
 ### what's a zine?
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Fanzine):
@@ -35,10 +38,35 @@ many as you want to give away.
 
 Index: 
 
+* <a href="#tcpdump"> **Let's learn tcpdump!**</a>
 * <a href="#networking-ack"> **Networking! ACK!**</a>
 * <a href="#strace-zine"> **Spying on your programs with strace**</a>
 * <a href="#linux-debugging-tools"> **Linux debugging tools you'll love**</a>
 * <a href="#print-directions"> **Printing directions**</a>
+
+<div align="center">
+<a href="#tcpdump" style="color: black">
+<h3 id="tcpdump"> ★★★ Let's learn tcpdump! ★★★</h3>
+</a>
+</div>
+
+<div align="center">                                                                                                                       
+ <img src="https://jvns.ca/images/tcpdump-cover.jpg" width=300px>
+</div>
+
+Ever wanted to know how to use tcpdump, but were intimidated by all the command line options? I was too! But then I learned it, and it wasn't as bad as I thought. In this zine we'll explain:
+
+* what kinds of questions you can answer with tcpdump
+* how to interpret tcpdump output
+* which command line arguments are the really important ones
+* how to write a BPF filter to filter tcpdump output
+
+<div align="center">
+<a class="button" href="https://jvns.ca/tcpdump-zine.pdf">Read the zine online!</a>
+<a class="button" href="https://gum.co/LcKLx?wanted=true"
+target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
+</div>
+
 
 <div align="center">
 <a href="#networking-ack" style="color: black">
