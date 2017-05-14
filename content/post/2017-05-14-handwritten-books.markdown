@@ -165,3 +165,37 @@ is hilarious and amazing. Here's 2 screenshots so you can understand:
 <div align="Center">
 <img src="https://jvns.ca/images/flct.png">
 </div>
+
+### and more
+
+* [Fortran coloring book](http://www.cs.utsa.edu/~wagner/CS2073/distill/dsgif.html), [amazon link](https://www.amazon.com/FORTRAN-Coloring-Book-Roger-Kaufman/dp/0262610264/ref=sr_1_1?ie=UTF8&qid=1494785981&sr=8-1&keywords=fortran+coloring+book)
+
+with some good quotes:
+
+> "The right way to read a FORTRAN book," the author of this one tells
+> us now that we've read his almost to its last page, "is by a series of
+> skimming passes. Each time through you pick up a bit more of the
+> nitty-gritty detail. When you pick up an IBM manual, for instance,
+> first flip through it looking for the jokes. There aren't any, so go
+> back and flip through again, getting familiar with the overall idea.
+> Then flip through from back to front, side to side, and top to bottom.
+> If there's a centerfold, you're in the wrong publication! Each time
+> through, you'll be looking for specific details connected with
+> whatever you are doing at the time on the computer. "
+
+
+and 
+
+> Dr. Kaufman wrote the book. I mean, he wrote it, the actual words you
+> see, with a pen. He also drew the pictures, diagrams, flow charts, and
+> things.
+
+* [Cook Korean](http://www.penguinrandomhouse.com/books/252746/cook-korean-by-robin-ha/9781607748878/)
+* [Make Your Place: Affordable, Sustainable Nesting Skills](https://www.amazon.com/Make-Your-Place-Affordable-Sustainable/dp/0978866568)
+* [Codex Seraphinianus](https://en.wikipedia.org/wiki/Codex_Seraphinianus)
+* [Book of Pages](https://www.beholder.uk/bookofpages/page-42-original#text)
+* [The Book of Letters](http://www.jewishlights.com/page/product/978-1-879045-00-2)
+* [The Story of "S"](http://www.newyorker.com/books/page-turner/the-story-of-s-talking-with-j-j-abrams-and-doug-dorst) (a book format I have never seen before!)
+* [why's poignant guide to ruby](http://poignant.guide/) (not
+  handwritten, but certainly worth a mention)
+* [grokking algorithms](https://www.manning.com/books/grokking-algorithms) is also illustrated but not handwritten.
