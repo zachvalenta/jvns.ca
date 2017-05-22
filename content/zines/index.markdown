@@ -125,12 +125,13 @@ of these tools happen to work on OS X :)
 <a href="http://jvns.ca/debugging-zine.pdf"><img src="/images/debugging-tools-cover.png"></a>
 </div>
 
-As usual, there are 3 versions. If you print it, you can print as many as you
-want! Give them to your friends! Teach them about tcpdump!
 
-* version to read on your <a href="http://jvns.ca/debugging-zine.pdf">computer</a>
-* print version: <a href="http://jvns.ca/debugging-zine-print-letter.pdf">letter</a>
-* print version: <a href="http://jvns.ca/debugging-zine-print-a4.pdf">A4</a>
+
+<div align="center">
+<a class="button" href="https://jvns.ca/debugging-zine.pdf">Read the zine online!</a>
+<a class="button" href="https://gum.co/eXGFE?wanted=true"
+target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
+</div>
 
 The cover art is by [Monica](https://twitter.com/notwaldorf), who is the best.
 
