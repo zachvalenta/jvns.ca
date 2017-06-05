@@ -246,7 +246,8 @@ Basically what this is doing is connecting 2 sockets (on file
 descriptors 3 and 4) to make DNS queries (to 127.0.1.1:53), and then
 using `epoll_ctl` to ask epoll to give us updates about them
 
-Then it makes 2 DNS queries for example.com (why 2? I don't know!), and
+Then it makes 2 DNS queries for example.com (why 2? nelhage sugests one
+of them is querying for the A record, and one for the AAAA record!), and
 uses `epoll_wait` to wait for replies
 
 ```
