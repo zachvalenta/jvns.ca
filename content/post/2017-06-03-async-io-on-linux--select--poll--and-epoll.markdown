@@ -11,7 +11,7 @@ maintainer of the [Linux man-pages project](https://www.kernel.org/doc/man-pages
 Here's the cover.
 
 <div align="center">
-<img src="/images/linuxprogramming.png" width=200px>
+<img src="https://jvns.ca/images/linuxprogramming.png" width=200px>
 </div>
 
 In the contributing guidelines (you can contribute to the linux man pages!! mind=blown), there's a list of [missing man pages](https://www.kernel.org/doc/man-pages/missing_pages.html) that would be useful to contribute. It says:
