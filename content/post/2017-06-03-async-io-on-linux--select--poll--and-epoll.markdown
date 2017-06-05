@@ -5,7 +5,7 @@ url: /blog/2017/06/03/async-io-on-linux--select--poll--and-epoll/
 categories: []
 ---
 
-This week I got a new book in the mail: [The Linux Programming Interface](https://www.nostarch.com/tlpi). It's written by the
+This week I got a new book in the mail: [The Linux Programming Interface](https://www.nostarch.com/tlpi). My awesome coworker Arshia recommended it to me so I bought it! It's written by the
 maintainer of the [Linux man-pages project](https://www.kernel.org/doc/man-pages/), Michael Kerrisk. It talks about the Linux programming interface as of kernel 2.6.x.
 
 Here's the cover.
@@ -298,6 +298,9 @@ I learned quite a few new things about select & epoll by writing this
 post! We're at 1800 words now so I think that's enough. Looking forward
 to reading more of this Linux programming interface book and finding out
 more things!
+
+Probably there are some wrong things in this post, let me know what they
+are!
 
 One small thing I like about my job is that I can expense programming
 books! This is cool because sometimes it causes me to buy and read books
