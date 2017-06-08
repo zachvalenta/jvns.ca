@@ -40,8 +40,8 @@ scheduler!" I found it a lot easier to understand when presented like
 this. Here's the 3 post series:
 
 * Part 1: [the kubelet](http://kamalmarhubi.com/blog/2015/08/27/what-even-is-a-kubelet/)
-* Part 2: [the API server](http://kamalmarhubi.com/blog/2015/09/06/Kubernetes-from-the-ground-up-the-api-server/)
-* Part 3: [the scheduler](http://kamalmarhubi.com/blog/2015/11/17/Kubernetes-from-the-ground-up-the-scheduler/)
+* Part 2: [the API server](http://kamalmarhubi.com/blog/2015/09/06/kubernetes-from-the-ground-up-the-api-server/)
+* Part 3: [the scheduler](http://kamalmarhubi.com/blog/2015/11/17/kubernetes-from-the-ground-up-the-scheduler/)
 
 Basically these posts taught me that:
 
