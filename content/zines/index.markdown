@@ -7,42 +7,19 @@ categories: []
 <script src="https://gumroad.com/js/gumroad.js"></script>
 <link href="https://jvns.ca/stylesheets/buttons.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-### what's a zine?
 
-According to [Wikipedia](https://en.wikipedia.org/wiki/Fanzine):
-
-> A fanzine (blend of fan and magazine or -zine) is a nonprofessional and
-> nonofficial publication produced by fans of a particular cultural phenomenon
-> (such as a literary or musical genre) for the pleasure of others who share
-> their interest.
-
-I love programming and debugging tools (is that a "cultural phenomenon? I
-don't know!"), so I make sometimes make fanzines about how much I love them and give them away.
-When I have time (and the printing budget) I like to give them out as handouts
-in my talks.
-
-The easiest way to read any of these is on your computer.
-
-But the **best** way to read them is to print it out, staple it, fold it,
-read it, and then give it to a friend. It turns out it's way easier to
-convince your friends to read a physical thing that is in front of them.
-
-Printers are kind of annoying, but people do successfully print them and
-send me [pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041).
-
-They're all available under a creative commons license 
-([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
-many as you want to give away.
-
-### Zines
-
-Index: 
+The zines:
 
 * <a href="#tcpdump"> **Let's learn tcpdump!**</a>
 * <a href="#networking-ack"> **Networking! ACK!**</a>
 * <a href="#strace-zine"> **Spying on your programs with strace**</a>
 * <a href="#linux-debugging-tools"> **Linux debugging tools you'll love**</a>
+
+Information:
+
+* <a href="#whats-a-zine"> **What's a zine?**</a>
 * <a href="#print-directions"> **Printing directions**</a>
+
 
 <div align="center">
 <a href="#tcpdump" style="color: black">
@@ -148,6 +125,35 @@ This is a tiny zine, not as fancy as the others.
 
 If you like it, you should read the PDF that it's based on: [Rules of Machine Learning:
 Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf), which I found out about thanks to [Avi Bryant](https://twitter.com/avibryant).
+
+<h3 id="whats-a-zine">What's a zine?</h3>
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Fanzine):
+
+> A fanzine (blend of fan and magazine or -zine) is a nonprofessional and
+> nonofficial publication produced by fans of a particular cultural phenomenon
+> (such as a literary or musical genre) for the pleasure of others who share
+> their interest.
+
+I love programming and debugging tools (is that a "cultural phenomenon? I
+don't know!"), so I make sometimes make fanzines about how much I love them and give them away.
+When I have time (and the printing budget) I like to give them out as handouts
+in my talks.
+
+The easiest way to read any of these is on your computer.
+
+But the **best** way to read them is to print it out, staple it, fold it,
+read it, and then give it to a friend. It turns out it's way easier to
+convince your friends to read a physical thing that is in front of them.
+
+Printers are kind of annoying, but people do successfully print them and
+send me [pictures](https://twitter.com/pinkhairedcyn/status/589149587333591041).
+
+They're all available under a creative commons license 
+([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)), so you can print as
+many as you want to give away.
+
+
 
 <h3 id="print-directions">Printing directions</h3>
 
