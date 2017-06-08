@@ -27,6 +27,21 @@ Basically Kubernetes is a distributed system that runs programs
 (well, containers) on computers. You tell it what to run, and it
 schedules it onto your machines.
 
+### a couple sketches
+
+I drew a couple of "scenes from kubernetes" sketches today trying to
+explain very briefly things like "what happens when you add a new
+node?". Click for a bigger version.
+
+<div align="center">
+<a href="https://drawings.jvns.ca/drawings/scenes-from-kubernetes-page1.svg">
+<img src="https://drawings.jvns.ca/drawings/scenes-from-kubernetes-page1.png" width=250px>
+</a>
+<a href="https://drawings.jvns.ca/drawings/scenes-from-kubernetes-page2.svg">
+<img src="https://drawings.jvns.ca/drawings/scenes-from-kubernetes-page2.png" width=250px>
+</a>
+</div>
+
 ### Kubernetes from the ground up
 
 One of first thing that helped me understand what was going on with
