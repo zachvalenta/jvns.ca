@@ -55,15 +55,20 @@ This is a zine about COMPUTER NETWORKING! I spent a very long time
 learning how networking works (what happens when you download a picture
 from the internet? It turns out, a lot!) So I wrote a zine about it!
 
-* version to read on your <a href="/networking-zine.pdf">computer</a>
-* print version: <a href="/networking-zine-print.pdf">letter</a>
-* delightful coloured in version by Nikoline Bohr: [to print](/networking-zine-print-coloured.pdf) and [to read online](/networking-zine-coloured.pdf)</a>
+Cover art by the amazing [Liz Baillie](https://twitter.com/_lbaillie).
 
 <div align="center">
 <img src="/images/networkingcover.png" width=300px>
 </div>
 
-Cover art by the amazing [Liz Baillie](https://twitter.com/_lbaillie).
+<div align="center">
+<a class="button" href="https://jvns.ca/networking-zine.pdf">Read the zine online!</a>
+<a class="button" href="https://gum.co/sMfg?wanted=true"
+target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
+</div>
+
+Also there's a delightful coloured in version by Nikoline Bohr: [to print](/networking-zine-print-coloured.pdf) and [to read online](/networking-zine-coloured.pdf)</a>
+
 
 <div align="center">
 <a href="#strace-zine" style="color: black">
