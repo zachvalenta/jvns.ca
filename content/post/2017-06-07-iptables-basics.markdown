@@ -5,11 +5,12 @@ url: /blog/2017/06/07/iptables-basics/
 categories: []
 ---
 
-Today I tweeted "hey, I learned some stuff about iptables today"!
-Everyone replied "oh no, I'm sorry". iptables has kind of a reputation
+Yesterday I tweeted "hey, I learned some stuff about iptables today"!
+A few people replied "oh no, I'm sorry". iptables has kind of a reputation
 for being hard to understand (and I've also found it intimidating) so I
 wanted to write down a few things I learned about iptables in the last
-few days.
+few days. I don't like being scared of things and understanding a few of
+the basics of iptables seems like it shouldn't be scary!
 
 I have been looking at Kubernetes things, and Kubernetes creates 5
 bajillion iptables rules, so it has been time to learn a little bit
