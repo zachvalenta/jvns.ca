@@ -89,8 +89,7 @@ maybe?) write the tree to disk.
 When you want to write a page-oriented database, you need to search for
 the right page (4k of data or so) that contains your data and update it. I wrote a blog post about [sqlite and  btrees](https://jvns.ca/blog/2014/10/02/how-does-sqlite-work-part-2-btrees/) a while back.
 
-PostgreSQL, MySQL, etcd, redis (I think), and sqlite all use
-page-oriented storage engines.
+PostgreSQL, MySQL, etcd, and sqlite all use page-oriented storage engines.
 
 I was googling for what MongoDB uses, and it turns out that MongoDB's
 new WiredTiger storage engine actually supports both a log-structured
