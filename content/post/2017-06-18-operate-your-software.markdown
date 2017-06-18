@@ -142,6 +142,9 @@ that in mind next time.
  
 ### Other quotes I liked
 
+> I've had teams that took on-call very seriously: each issue that paged
+> us was reviewed in a weekly meeting, and tasks were assigned to solve
+
 > The lesson for me is that processes are important, and working towards
 > continuous improvement is worth it.
 
@@ -149,6 +152,16 @@ and
 
 > Being on call means I can't pick and choose favorite/comfortable subjects
 > avoiding hard/unhappy ones. I'm forced to stretch and learn.
+
+and 
+
+> Being able to put aside one's pride and say "I need help with this
+> even though I'm waking someone up to help me."
+
+and
+
+> It made me much better at figuring out how to break up a complex
+> failure condition into smaller pieces that are easier to debug...
 
 ### Being responsible for my programs' operations makes me a better developer
  
