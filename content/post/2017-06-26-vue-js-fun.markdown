@@ -39,7 +39,7 @@ To make this game work I needed to:
 
 1. make event handlers that whack the mole when I click on an orange mole
 2. make the game disappear when the player wins
-3. automatically add new moles every 1.5 seconds to be whacked
+3. automatically add new moles every 0.5 seconds to be whacked
 
 
 Usually when I write Javascript I use jQuery and make a lot of callbacks and
