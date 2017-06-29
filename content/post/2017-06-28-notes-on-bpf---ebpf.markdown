@@ -41,14 +41,14 @@ If you run `tcpdump host foo` it actually runs a relatively complicated query,
 which you could represent with this tree:
 
 <div align="center">
-<img src="/images/bpf-1.png">
+<img src="https://jvns.ca/images/bpf-1.png">
 </div>
 
 Evaluating this tree is kind of expensive. so the first insight is that you can
 actually represent this tree in a simpler way, like this:
 
 <div align="center">
-<img src="/images/bpf-2.png">
+<img src="https://jvns.ca/images/bpf-2.png">
 </div>
 
 Then if you have `ether.type = IP` and `ip.src = foo` you automatically know
