@@ -8,9 +8,9 @@ categories: []
 I've been confused about Linux tracing systems for *years*. There's strace, and 
 ltrace, kprobes, and tracepoints, and uprobes, and ftrace, and perf, and eBPF,  
 and how does it all fit together and what does it all MEAN? 
- 
+
 Last week I went to Papers We Love and later me & Kamal hung out with  
-[Suchakra](https://twitter.com/tuxology) at the [Ecole Polytechnique](http://www.dorsal.polymtl.ca/) (where LTTng comes from) and  
+[Suchakra](https://twitter.com/tuxology) at [Polytechnique Montréal](http://www.dorsal.polymtl.ca/) (where LTTng comes from) and  
 finally I think I understand how all these pieces fit together, more or less.
 There are still probably some mistakes in this post, please let me know what
 they are! (I'm b0rk on twitter).
@@ -24,10 +24,11 @@ The thing I learned last week that helped me really understand was -- you can
 split linux tracing systems into **data sources** (where the tracing data comes
 from), **mechanisms for collecting data for those sources** (like "ftrace")
 and **tracing frontends** (the tool you actually interact with to
-collect/analyse data).
+collect/analyse data). The overall picture is still kind of fragmented
+and confusing, but it's at least a more approachable
+fragmented/confusing system.
  
- here's what we'll talk about: (with links if you want to jump to a
- specific section)
+here's what we'll talk about: (with links if you want to jump to a specific section).
  
  
 * [summary in pictures](#zine)
@@ -424,6 +425,8 @@ LTTng & SystemTap both have their own sets of tools that I don't really understa
 Here's kind of how I think about it right now (though you should note that I only just figured out how all this stuff fits together very recently so I'm not an expert): 
  
  
+* if you're mostly interested in computers running kernels > linux 4.9,
+  probably just learn about eBPF
 * `perf trace` is good, it will trace system calls with low overhead and it's super simple, there's not much to learn. A+. 
 * For everything else, they're, well, an investment, they take time to get used to. 
 * I think playing with kprobes is a good idea (via eBPF/ftrace/systemtap/lttng/whatever, for me right now ftrace is easiest). Being able to know what's going on in the kernel is a good superpower. 
