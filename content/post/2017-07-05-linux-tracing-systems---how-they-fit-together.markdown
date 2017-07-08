@@ -410,3 +410,6 @@ I'm really excited that now I (mostly) understand how all these pieces fit toget
  
 Now that I know how everything fits together, I think I'll have a much easier time navigating the landscape of tracing frontends! 
  
+
+ <small>thanks to Annie Cherkaev, Harold Treen, Iain McCoy, and David
+ Turner for reading a draft of this </small>
