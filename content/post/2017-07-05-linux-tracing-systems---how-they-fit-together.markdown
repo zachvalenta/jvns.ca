@@ -11,11 +11,20 @@ and how does it all fit together and what does it all MEAN?
  
 Last week I went to Papers We Love and later me & Kamal hung out with  
 [Suchakra](https://twitter.com/tuxology) at the [Ecole Polytechnique](http://www.dorsal.polymtl.ca/) (where LTTng comes from) and  
-finally I think I understand how all these pieces fit together, more or less. 
+finally I think I understand how all these pieces fit together, more or less.
+There are still probably some mistakes in this post, please let me know what
+they are! (I'm b0rk on twitter).
  
-I'm actually going to leave strace out of this post (even though it's my favorite thing) because the overhead is so high -- in this post we're only going to talk about tracing systems that are relatively fast / low overhead. 
+I'm going to leave strace out of this post (even though it's my favorite thing)
+because the overhead is so high -- in this post we're only going to talk about
+tracing systems that are relatively fast / low overhead.  This post also isn't
+about sampling profilers at all (which is a whole other topic!). Just tracing.
  
-The thing I learned last week that helped me really understand better was -- you can split linux tracing systems into data sources (where the tracing data comes from), ways the data gets out of the kernel and into userspace (like "ftrace") and tracing frontends (the tool you use to actually collect the data). In this post I'll talk about all these things: 
+The thing I learned last week that helped me really understand was -- you can
+split linux tracing systems into **data sources** (where the tracing data comes
+from), **mechanisms for collecting data for those sources** (like "ftrace")
+and **tracing frontends** (the tool you actually interact with to
+collect/analyse data). In this post I'll talk about all these things: 
  
  
 Data sources: 
@@ -410,6 +419,10 @@ I'm really excited that now I (mostly) understand how all these pieces fit toget
  
 Now that I know how everything fits together, I think I'll have a much easier time navigating the landscape of tracing frontends! 
  
+[Brendan Gregg](http://www.brendangregg.com/blog/index.html)'s awesome
+blog discusses a ton of these topics in a lot of detail -- if you're interested
+in hearing about improvements in the Linux tracing ecosystem as they happen
+(it's always changing!), that's the best place to subscribe.
 
  <small>thanks to Annie Cherkaev, Harold Treen, Iain McCoy, and David
- Turner for reading a draft of this </small>
+ Turner for reading a draft of this.</small>
