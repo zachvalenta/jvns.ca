@@ -13,9 +13,7 @@ Last week I went to Papers We Love and later me & Kamal hung out with
 [Suchakra](https://twitter.com/tuxology) at the [Ecole Polytechnique](http://www.dorsal.polymtl.ca/) (where LTTng comes from) and  
 finally I think I understand how all these pieces fit together, more or less. 
  
- 
 I'm actually going to leave strace out of this post (even though it's my favorite thing) because the overhead is so high -- in this post we're only going to talk about tracing systems that are relatively fast / low overhead. 
- 
  
 The thing I learned last week that helped me really understand better was -- you can split linux tracing systems into data sources (where the tracing data comes from), ways the data gets out of the kernel and into userspace (like "ftrace") and tracing frontends (the tool you use to actually collect the data). In this post I'll talk about all these things: 
  
@@ -48,6 +46,20 @@ User frontends:
  
 It's still kind of complicated but breaking it up this way really helps me
 understand (thanks to Brendan Gregg for suggesting this breakdown on twitter!)
+
+### a picture version
+
+here are 6 drawings summarizing what this post is about:
+
+<div align="center">
+<a href="https://drawings.jvns.ca/drawings/linux-tracing-1.png"><img src="https://drawings.jvns.ca/drawings/linux-tracing-1.png" width=400px></a>
+<a href="https://drawings.jvns.ca/drawings/linux-tracing-2.png"><img src="https://drawings.jvns.ca/drawings/linux-tracing-2.png" width=400px></a>
+<a href="https://drawings.jvns.ca/drawings/linux-tracing-3.png"><img src="https://drawings.jvns.ca/drawings/linux-tracing-3.png" width=400px></a>
+<a href="https://drawings.jvns.ca/drawings/linux-tracing-4.png"><img src="https://drawings.jvns.ca/drawings/linux-tracing-4.png" width=400px></a>
+<a href="https://drawings.jvns.ca/drawings/linux-tracing-5.png"><img src="https://drawings.jvns.ca/drawings/linux-tracing-5.png" width=400px></a>
+<a href="https://drawings.jvns.ca/drawings/linux-tracing-6.png"><img src="https://drawings.jvns.ca/drawings/linux-tracing-6.png" width=400px></a>
+</div>
+
 
 ### What can you trace? 
  
@@ -283,6 +295,11 @@ eBPF is a VERY EXCITING WAY to get data. Here's how it works.
  
  
 eBPF is cool because it's part of Linux (you don't have to install any kernel modules) and you can define your own programs to do any fancy aggregation you want so it's really powerful. You usually use it with the [bcc](https://github.com/iovisor/bcc) frontend which we'll talk about a bit later. It's only available on newer kernels though (the kernel version you need depends on what data sources you want to attach your eBPF programs to) 
+
+Different eBPF features are available at different kernel versions,
+here's a slide with an awesome summary: 
+
+<script async class="speakerdeck-embed" data-slide="20" data-id="130bc7df16db4556a55105af45cdf3ba" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
  
  
 **sysdig** 
@@ -344,7 +361,7 @@ Ftrace is a pain to use on its own and so there are various frontend tools to he
  
  
 * **trace-cmd** is a frontend for ftrace, you can use it to collect and display ftrace data. I wrote about it a bit in [this blog post](https://jvns.ca/blog/2017/03/19/getting-started-with-ftrace/) and there's an [article on LWN](https://lwn.net/Articles/410200/) about it 
-* [Catapult](https://github.com/catapult-project/catapult) lets you analyze ftrace output. I've heard good things about it but I haven't gotten it to work myself yet, I'm kind of excited about it and when I do then I'll post something on this blog. 
+* [Catapult](https://github.com/catapult-project/catapult) lets you analyze ftrace output. It's for Android / chrome performance originally but you can also just analyze ftrace. So far the only thing I've gotten it to do is graph `sched_switch` events so you know which processes were running at what time exactly, and which CPU they were on. Which is pretty cool but I don't really have a use for yet?
 * [kernelshark](http://rostedt.homelinux.com/kernelshark/) consumes ftrace output but I haven't tried it yet 
 * The **perf** command line tool is a perf frontend and (confusingly) also a frontend for some ftrace functionality (see [`perf ftrace`](http://man7.org/linux/man-pages/man1/perf-ftrace.1.html)) 
  
