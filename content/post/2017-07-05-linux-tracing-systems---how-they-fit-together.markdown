@@ -24,38 +24,40 @@ The thing I learned last week that helped me really understand was -- you can
 split linux tracing systems into **data sources** (where the tracing data comes
 from), **mechanisms for collecting data for those sources** (like "ftrace")
 and **tracing frontends** (the tool you actually interact with to
-collect/analyse data). In this post I'll talk about all these things: 
+collect/analyse data).
+ 
+ here's what we'll talk about: (with links if you want to jump to a
+ specific section)
  
  
-Data sources: 
-
-* kprobes 
-* uprobes 
-* Tracepoints 
-* lttng-ust 
-* USDT / dtrace probes 
- 
- 
-Mechanisms for collecting your delicious data: 
-
-* ftrace 
-* `perf_events`
-* eBPF 
-* sysdig 
-* Systemtap kernel module 
-* LTTng 
- 
-User frontends: 
-
-* `perf` 
-* Various ftrace frontends (trace-cmd, catapult, kernelshark, `perf-tools`) 
-* The [bcc](https://github.com/iovisor/bcc) frontend for eBPF 
-* LTTng & SystemTap frontends 
+* [summary in pictures](#zine)
+* [What can you trace?](#stuff-to-trace)
+* <a href="#data-sources">Data sources</a>: 
+  * <a href="#kprobes">kprobes</a>
+  * [uprobes](#uprobes)
+  * [Tracepoints](#kernel-tracepoints)
+  * [lttng-ust](#lttng-ust)
+  * [USDT / dtrace probes](#dtrace-probes)
+* [Mechanisms for collecting your delicious data](#delicious-data): 
+  * [ftrace](#ftrace)
+  * [`perf_events`](#perf-events)
+  * [eBPF](#ebpf)
+  * [sysdig](#sysdig)
+  * [Systemtap kernel module](#systemtap)
+  * [LTTng](#lttng)
+* [User frontends](#frontends): 
+  * [`perf`](#perf)
+  * [Various ftrace frontends](#ftrace-frontends) (trace-cmd, catapult, kernelshark, `perf-tools`) 
+  * [The bcc frontend for eBPF](#bcc)
+  * [LTTng & SystemTap frontends](#lttng-systemtap)
+* [some conclusions](#conclusions)
  
  
 It's still kind of complicated but breaking it up this way really helps me
 understand (thanks to Brendan Gregg for suggesting this breakdown on twitter!)
 
+
+ <a name="zine"></a>
 ### a picture version
 
 here are 6 drawings summarizing what this post is about:
@@ -70,6 +72,7 @@ here are 6 drawings summarizing what this post is about:
 </div>
 
 
+ <a name="stuff-to-trace"></a>
 ### What can you trace? 
  
 A few different kinds of things you might want to trace: 
@@ -81,6 +84,7 @@ A few different kinds of things you might want to trace:
  
 All of these things are possible, but it turns out the tracing landscape is actually pretty complicated. 
  
+ <a name="data-sources"></a>
 ### Data sources: kprobes, tracepoints, uprobes, dtrace probes & more 
  
  
@@ -107,6 +111,7 @@ activated, and is relatively low overhead when it is activated. USDT ("dtrace
 probes"), lttng-ust, and kernel tracepoints are all examples of this pattern.  
  
  
+ <a name="kprobes"></a>
 **kprobes** 
  
  
@@ -147,6 +152,7 @@ I think kprobes are useful in 3 scenarios:
 3. You're a kernel developer,or you're otherwise trying to debug a kernel bug, which happens sometimes!! (I am not a kernel developer) 
  
  
+ <a name="uprobes"></a>
 **uprobes** 
  
  
@@ -177,6 +183,7 @@ Tracing uprobe readline (r:readline /bin/bash:0x9a520 +0($retval):string). Ctrl-
 ``` 
  
  
+ <a name="dtrace-probes"></a>
 **USDT/dtrace probes** 
  
  
@@ -207,6 +214,7 @@ If you want to read more about dtrace you can read [this paper from 2004](https:
  
  
  
+ <a name="kernel-tracepoints"></a>
 **kernel tracepoints** 
  
  
@@ -240,6 +248,7 @@ I don't really understand how it works (I think it's pretty involved) but basica
 I don't understand LTTng super well yet but -- my understanding is that all of the 4 above things (dtrace probes, kprobes, uprobes, and tracepoints) all need to go through the kernel at some point. `lttng-ust` is a tracing system that lets you compile tracing probes into your programs, and all of the tracing happens in userspace. This means it's faster because you don't have to do context switching. I've still used LTTng 0 times so that's mostly all I'm going to say about that. 
  
  
+<a name="delicious-data"></a>
 ### Mechanisms for collecting your delicious delicious data 
  
  
@@ -249,6 +258,7 @@ To understand the frontend tools you use to collect & analyze tracing data, it's
 Let's start with the 3 that are actually part of the core Linux kernel: ftrace, perf_events, and eBPF.  
  
  
+<a name="ftrace"></a>
 **ftrace** 
  
  
@@ -278,6 +288,7 @@ Ftrace's output looks like this and it's a pain to parse and build on top of:
 ``` 
  
  
+<a name="perf-events"></a>
 **perf_events** 
  
  
@@ -291,6 +302,7 @@ The second way to get data out of the kernel is with the `perf_event_open` syste
 As far as I can tell the only thing you can read this way is tracepoints. This is what running `sudo perf trace` does (there's a tracepoint for every system call) 
  
  
+<a name="ebpf"></a>
 **eBPF** 
  
  
@@ -311,12 +323,14 @@ here's a slide with an awesome summary:
 <script async class="speakerdeck-embed" data-slide="20" data-id="130bc7df16db4556a55105af45cdf3ba" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
  
  
+<a name="sysdig"></a>
 **sysdig** 
  
  
 Sysdig is a kernel module + tracing system. It lets you trace system calls and maybe some other things? I find their site kind of confusing to navigate, but I think [this file](https://github.com/draios/sysdig/blob/dev/driver/event_table.c) contains the list of all the events sysdig supports. So it will tell you what files are being opened but not the weird internal details of what your TCP stack is doing. 
  
  
+<a name="systemtap"></a>
 **systemtap** 
  
  
@@ -339,6 +353,7 @@ SystemTap supports:
 Basically lots of things! There are some more useful words about systemtap in [choosing a linux tracer](http://www.brendangregg.com/blog/2015-07-08/choosing-a-linux-tracer.html)  
  
  
+<a name="lttng"></a>
 **LTTng** 
  
  
@@ -348,12 +363,14 @@ Basically lots of things! There are some more useful words about systemtap in [c
 The downside of LTTng (like SystemTap) is that you have to install a kernel module for the kernel parts to work. With `lttng-ust` everything happens in userspace and there's no kernel module needed. 
  
  
+<a name="frontends"></a>
 ### Frontends 
  
  
 Okay! Time for frontends! I'm going to categorize them by mechanism (how the data gets  out of the kernel) to make it easier 
  
  
+<a name="perf"></a>
 **perf frontends** 
  
  
@@ -363,6 +380,7 @@ The only frontend here is `perf`, it's simple.
 `perf trace` will trace system calls for you, fast. That's great and I love it. `perf trace` is the only one of these I actually use day to day right now. (the ftrace stuff is more powerful and also more confusing / difficult to use) 
  
  
+<a name="ftrace-frontends"></a>
 **ftrace frontends** 
  
  
@@ -375,8 +393,8 @@ Ftrace is a pain to use on its own and so there are various frontend tools to he
 * The **perf** command line tool is a perf frontend and (confusingly) also a frontend for some ftrace functionality (see [`perf ftrace`](http://man7.org/linux/man-pages/man1/perf-ftrace.1.html)) 
  
  
-**eBPF frontends** 
- 
+<a name="bcc"></a>
+**eBPF frontends: bcc** 
  
 The only I know of is  the **bcc** framework: [https://github.com/iovisor/bcc](https://github.com/iovisor/bcc). It lets you write eBPF programs, it'll insert them into the kernel for you, and it'll help you get the data out of the kernel so you can process it with a Python script. It's pretty easy to get started with.  
  
@@ -392,12 +410,14 @@ there are a lot of examples. Kamal and I wrote a program with bcc the other day
 for the first time and it was pretty easy. 
  
  
+<a name="lttng-systemtap"></a>
 **LTTng & SystemTap frontends** 
  
  
 LTTng & SystemTap both have their own sets of tools that I don't really understand. THAT SAID -- there's this cool graphical tool called [Trace Compass](http://tracecompass.org/) that seems really powerful. It consumes a trace format called CTF ("common trace format") that LTTng emits. 
  
  
+<a name="conclusions"></a>
 ### what tracing tool should I use though 
  
  
