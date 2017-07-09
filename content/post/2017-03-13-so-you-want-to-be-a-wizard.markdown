@@ -8,7 +8,23 @@ categories: []
 
 Today I did the opening keynote at SRECon. This talk was a little less technical than my normal talks: instead of talking about tools like tcpdump (though tcpdump makes an appearance!), I wanted to talk about how to make a career where you're constantly learning and how to be good at your job whether or not you're the most experienced person.
 
-Here's the talk abstract, then the slides & a rough transcript. I've included links to every resource I mentioned. 
+Here's the video, talk abstract, then the slides & a rough transcript. I've included links to every resource I mentioned. 
+
+
+### video
+
+[source: usenix's website](https://www.usenix.org/conference/srecon17americas/program/presentation/evans)
+
+<video width="450" height="350"  id="usenix-media-video-1" data-setup="{}" height="419" width="744" poster="https://www.usenix.org/sites/default/files/styles/video-thumbnail/public/conference/video/evans_2.jpeg?itok=zhlCf1wz" class="video-js vjs-default-skin vjs-big-play-centered" preload="auto" controls>
+<source src='https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/srecon17/evans.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="480">
+   <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+   <param name="allowFullScreen" value="true">
+   <param name="wmode" value="transparent">
+   <param name="flashVars" value="config={'playlist':['https%3A%2F%2Fwww.usenix.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fvideo-thumbnail%2Fpublic%2Fconference%2Fvideo%2Fevans_2.jpeg%3Fitok%3DzhlCf1wz',{'url':'https%3A%2F%2F2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com%2Fsrecon17%2Fevans.mp4','autoPlay':false}]}">
+   <img src="https://www.usenix.org/sites/default/files/styles/video-thumbnail/public/conference/video/evans_2.jpeg?itok=zhlCf1wz" width="640" height="480" title="No video playback capabilities. Please install Adobe Flash Player or download the video below">
+</object>
+</video>
 
 ### abstract
 
