@@ -19,7 +19,8 @@ contributors really, certainly not well enough to be like PLEASE EXPLAIN
 THE SCHEDULER TO ME THANKS).
 
 This is a little stream of consciousness but hopefully it will be useful
-to someone anyway.
+to someone anyway. The best most useful link I found while researching
+this was this [Writing Controllers](https://github.com/kubernetes/community/blob/8decfe4/contributors/devel/controllers.md) document from the amazing amazing amazing [kubernetes developer documentation folder](https://github.com/kubernetes/community/tree/8decfe42b8cc1e027da290c4e98fa75b3e98e2cc/contributors/devel).
 
 ### what is the scheduler for?
 
@@ -82,12 +83,12 @@ assigned, the scheduler should notice and assign that pod a node. The
 scheduler shouldn't have to be restarted!
 
 So I went and read a bunch of code. Here is what I learned about how the
-scheduler actually works!
+scheduler actually works! As usual probably something here is wrong,
+this stuff is pretty complicated and I just learned about it this week.
 
 ### how the scheduler works: a very quick code walkthrough
 
-This is basically just what I figured out from reading the code, it's
-possible/probable I have something wrong here.
+This is basically just what I figured out from reading the code.
 
 We'll start in [scheduler.go](https://github.com/kubernetes/kubernetes/blob/e4551d50e57c089aab6f67333412d3ca64bc09ae/plugin/pkg/scheduler/scheduler.go). (I actually [concatenated all the files in the scheduler together](https://gist.github.com/jvns/5d492d66130a2f47b47820fd6b52eab5) which I found helpful for jumping around and navigating.)
 
