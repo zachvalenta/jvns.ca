@@ -29,10 +29,12 @@ Here's how Kubernetes release management works! (from [cherry-pick.md](https://g
 For example, the 1.6 release of Kubernetes came out in March,
 but a cherry pick was merged into the release branch [on July 29](https://github.com/kubernetes/kubernetes/pull/49807) (4 months later).
 
-It seems like there are new cherry-pick commits to the 1.6 release
-branch basically every day. 
+It seems like there are new cherry-pick commits to the 1.6 release branch
+basically every day -- there have been
+[447](https://github.com/kubernetes/kubernetes/compare/release-1.6) commits
+since its release, probably half of those are merge commits, so I guess about 200 changes in all.
 
-This does make me wonder about the expected stability of Kubernetes
+This does make me wonder a bit about the expected stability of Kubernetes
 releases -- if there are so many changes / bugfixes being made after a
 release comes out, maybe it makes sense to delay upgrading to a release
 until it's stabilized a bit?
