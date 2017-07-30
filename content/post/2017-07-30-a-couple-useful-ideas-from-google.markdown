@@ -67,6 +67,7 @@ I'm actually pretty into this -- this script is like 180 lines of code which is 
 * you get a COMPILER so it can tell you if you make typos (this is such a big deal to me)
 * I'd much rather have an inexperienced Go programmer contribute to a Go program than an inexperienced bash programmer contribute to a Bash script (bash is [extremely quirky](https://jvns.ca/blog/2017/03/26/bash-quirks/) in ways that Go isn't)
 * go programs are statically compiled so if you want to use libraries in your script it's fine! You don't need to figure out how to distribute dependencies! (we write shell scripts in Ruby a lot and distributing the dependencies is pretty difficult/awful)
+* you can't edit the script with vim in production (you could also say this is a 'con' but i'm gonna go with 'pro' for now :))
 
 ### use services instead of shell scripts
 
