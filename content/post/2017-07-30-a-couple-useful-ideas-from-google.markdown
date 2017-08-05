@@ -69,6 +69,9 @@ I'm actually pretty into this -- this script is like 180 lines of code which is 
 * go programs are statically compiled so if you want to use libraries in your script it's fine! You don't need to figure out how to distribute dependencies! (we write shell scripts in Ruby a lot and distributing the dependencies is pretty difficult/awful)
 * you can't edit the script with vim in production (you could also say this is a 'con' but i'm gonna go with 'pro' for now :))
 
+This example also provides a good answer to "what if you want to use pipes in a
+go script" which is "just run `sh -c 'thing1 | thing2 | thing3'`".
+
 ### use services instead of shell scripts
 
 This one is more of an "idea that is interesting but I don't know if it's
