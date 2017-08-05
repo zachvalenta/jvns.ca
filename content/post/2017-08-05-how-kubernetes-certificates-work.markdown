@@ -1,5 +1,5 @@
 ---
-title: "Setting up Kubernetes certificate authorities"
+title: "How Kubernetes certificate authorities work"
 date: 2017-08-05T09:11:50Z
 url: /blog/2017/08/05/how-kubernetes-certificates-work/
 categories: []
@@ -7,15 +7,17 @@ categories: []
 
 Today, let's talk about Kubernetes private/public keys & certificate authorities!
 
+This blog post is about how to take your own requirements about how certificate
+authorities + private keys should be organized and set up your Kubernetes
+cluster the way you need to.
+
 The various Kubernetes components have a TON of different places where
-you can put in a certificate. When we were setting up a cluster I felt
-like there were like 10 billion different command line arguments for
-certificates and keys and certificate authorities and I didn't understand how
-they all fit together.
+you can put in a certificate/certificate authority. When we were setting up a
+cluster I felt like there were like 10 billion different command line arguments
+for certificates and keys and certificate authorities and I didn't understand
+how they all fit together.
 
-There are not actually 10 billion command line arguments but there are quite a lot.
-
-For example! Let's just look at the command line arguments to the API server.
+There are not actually 10 billion command line arguments but there are quite a lot. For example! Let's just look at the command line arguments to the API server.
 
 The API server has more than 16 different command line arguments to do with
 certificates or keys (I actually deleted a bunch to cut it down to this
@@ -63,7 +65,8 @@ certificate authorities ("CAs") work. When setting this up, I knew how certs
 work but I did not understand how all the different Kubernetes certificate
 authorities fit together.
 
-So let's talk about about how all these different arguments fit together!
+In this post I'll explain some of the main CAs you can set in Kubernetes and
+how they fit together.
 
 I'll also tell you about a few things I learned while setting all of this up:
 
@@ -73,10 +76,12 @@ I'll also tell you about a few things I learned while setting all of this up:
 
 ### PKI & Kubernetes
 
-When I started reading about kubernetes I saw this term "PKI" a lot and I wasn't sure what it meant.
+When I started reading about kubernetes I saw this term "PKI" a lot and I
+wasn't sure what it meant.
 
 If you have a Kubernetes cluster, you might have hundreds or thousands of
-private & public keys (in client certificates, server certificates, anywhere!). That is a lot of private keys!
+private & public keys (in client certificates, server certificates, anywhere!).
+That is a lot of private keys!
 
 If you just had thousands of unrelated independent keys that would be chaos.
 Chaos is not great for security.  So instead the way you manage private/public
@@ -185,7 +190,7 @@ So! We've met our first certificate authority: the CA that issues the API
 server's TLS cert. This CA doesn't need to be the same as any of the other
 certificate authorities we're going to discuss.
 
-### The client certificate authority (+ certificates)
+### The API server client certificate authority (+ certificates)
 
 ```
 --client-ca-file string    
@@ -214,8 +219,8 @@ users:
 
 Kubernetes makes a lot of assumptions about how you've set up your client
 certificates. (it sets the user to be the Common Name field and the group to be
-the Organization field). If those assumptions don't match what you want, I
-think the right thing to do is to **not use** client cert auth and instead use
+the Organization field). If those assumptions don't match what you want,
+the right thing to do is to **not use** client cert auth and instead use
 an authenticating proxy.
 
 ### The request header certificate authority (or: using an authenticating proxy)
@@ -244,11 +249,11 @@ which CA to use to verify that client cert.
 I don't have too much to say about this except -- we learned pretty quickly
 that having too many auth methods in your API server ("accept client
 certificates OR an authenticating proxy OR a token OR...") makes things
-confusing & complicated, it's probably better to pick a small number (like 1 or
+confusing. It's probably better to pick a small number (like 1 or
 2?) of authentication methods your API server supports because it makes it
 easier to debug problems and understand your security model.
 
-### serviceaccount private keys
+### serviceaccount private keys (which aren't signed by a certificate authority)
 
 ```
 # API server argument
@@ -268,8 +273,7 @@ every other private key that Kubernetes supports, the serviceaccount key
 doesn't support "hey use a CA to check if this is the right key". This means
 you have to give exactly the same private key file to every controller manager.
 
-
-Anyway this key does not need to be a certificate and does not need to be
+Anyway this key does not need to have a certificate and does not need to be
 signed by any certificate authority. You can just generate a key with
 
 ```
@@ -285,14 +289,13 @@ one API server and more than one controller manager)
 
 If you give 2 different controller managers 2 different keys, they'll sign
 serviceaccount tokens with different keys and you'll end up with invalid
-serviceaccount tokens. I think this isn't ideal (Kubernetes should probably
+serviceaccount tokens (see [this issue](https://github.com/kubernetes/kubernetes/issues/22351)). I think this isn't ideal (Kubernetes should probably
 support these keys being issued from a CA like it does for ~every other private
 key). From reading the source code I think the reason it's set up this way is
 that [jwt-go](https://github.com/dgrijalva/jwt-go) doesn't support using a CA
 to check signatures.
 
 ### kubelet certificate authorities
-
 
 Let's talk about the kubelet! Here are the relevant command line arguments for the API server & kubelet: 
 
@@ -326,7 +329,7 @@ So far we have found 5 different certificate authorities you can specify as
 part of setting up a Kubernetes cluster! They're all handled independently and
 in theory they could all be totally different.
 
-I didn't discuss every single certificate that Kubernetes supports (there are
+I didn't discuss every single CA setting that Kubernetes supports (there are
 still more!) but hopefully this gives you some of the tools you need to read
 the docs about the rest.
 
