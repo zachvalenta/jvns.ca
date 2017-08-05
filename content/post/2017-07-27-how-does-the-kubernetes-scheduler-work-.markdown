@@ -2,7 +2,7 @@
 title: "How does the Kubernetes scheduler work?"
 date: 2017-07-27T21:07:12Z
 url: /blog/2017/07/27/how-does-the-kubernetes-scheduler-work/
-categories: []
+categories: ["kubernetes"]
 ---
 
 Hello!  We talked about Kubernetes' [overall architecture](https://jvns.ca/blog/2017/06/04/learning-about-kubernetes/) a while back.

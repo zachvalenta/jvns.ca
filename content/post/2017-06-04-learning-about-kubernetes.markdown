@@ -2,7 +2,7 @@
 title: "A few things I've learned about Kubernetes"
 date: 2017-06-04T22:35:21Z
 url: /blog/2017/06/04/learning-about-kubernetes/
-categories: []
+categories: ["kubernetes"]
 ---
 
 I've been learning about [Kubernetes](https://kubernetes.io/) at work recently. I only started
