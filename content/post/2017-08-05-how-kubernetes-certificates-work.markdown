@@ -74,6 +74,9 @@ I'll also tell you about a few things I learned while setting all of this up:
 * You can (and should!!) use an authenticating proxy if the way Kubernetes maps client certificates to usernames and groups doesn't work for you
 * Setting up the API server to support too many different authentication methods ("more than 2") makes things confusing (though maybe this isn't too surprising :))
 
+(as usual, let me know what mistakes you find in here, I think most of this is
+right but it's a complicated topic!)
+
 ### PKI & Kubernetes
 
 When I started reading about kubernetes I saw this term "PKI" a lot and I
