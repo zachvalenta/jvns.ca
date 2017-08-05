@@ -70,7 +70,7 @@ how they fit together.
 
 I'll also tell you about a few things I learned while setting all of this up:
 
-* You can't use a CA to check the validity of the service account key. The service account is a weird key which is handled differently from literally every other key.
+* You can't use a CA to check the validity of the service account key. The service account key is a weird key which is handled differently from literally every other key.
 * You can (and should!!) use an authenticating proxy if the way Kubernetes maps client certificates to usernames and groups doesn't work for you
 * Setting up the API server to support too many different authentication methods ("more than 2") makes things confusing (though maybe this isn't too surprising :))
 
