@@ -49,7 +49,6 @@ Some of the things I"ve learned about in the last 3 years at stripe:
 * hadoop/mapreduce/scalding 
 * How to work with java concurrency libraries, how to profile a java program 
 * A ton about how various AWS services work 
-* How to profile a java program 
 * A lot about machine learning 
 * How networking / CDNs / TLS work 
 * docker/containers/rkt/kubernetes 
