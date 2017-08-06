@@ -10,7 +10,7 @@ I asked on Twitter a while back "how do you invest in you own learning?" ([this 
 * Read blog posts 
 * Go to conferences 
 * Read books 
-* Watch talks while watching the dishes 
+* Watch talks while washing the dishes 
 * Build side projects using the technologies you want to learn 
  
 These things all totally work. I see that it's pretty common to spend time
