@@ -44,6 +44,7 @@ Ever wanted to know how to use tcpdump, but were intimidated by all the command 
 target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
 </div>
 
+There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/335428/%5Bperevod%5D-podborka-slaydov-ot-dzhulii-eva/).
 
 <div align="center">
 <a href="#networking-ack" style="color: black">
@@ -116,6 +117,7 @@ target="_blank" data-gumroad-single-product="true">Get the print version!</a>
 </div>
 
 The cover art is by [Monica](https://twitter.com/notwaldorf), who is the best.
+There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/310164/).
 
 <h3 id="prod-ml">Production machine learning </h3>
 
