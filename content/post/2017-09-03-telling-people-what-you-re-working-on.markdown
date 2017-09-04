@@ -95,6 +95,8 @@ just sent the email to the developers mailing list!
 Maybe that's it? Like, if when we're planning something, we just 
 
 1. come up with a reasonable plan and think/talk about it with folks
+1. do at least some preliminary work, I think it's good to at least do a
+   prototype or something first to get some confidence in the approach
 1. assume that our plan will work (that when we run into problems, we'll figure
 out a way to solve them)
 1. loudly communicate that plan to a reasonable list of people (not too much
