@@ -187,7 +187,7 @@ I tried this but had trouble for a couple reasons
 ### ip monitor
 
 
-You can also run `ip monitor and it'll tell you some netlink requests. when I run it it prints out this stuff:
+You can also run `ip monitor` and it'll tell you some netlink requests. when I run it it prints out this stuff:
 
 
 ```
