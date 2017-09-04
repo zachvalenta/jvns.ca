@@ -186,7 +186,7 @@ I tried this but had trouble for a couple reasons
 
 ### nltrace
 
-There's also [nltrace](https://github.com/socketpair/nltrace) (for instance `nltrace ip route list`) but in this case it didn't give me the information I wanted.
+There's also [nltrace](https://github.com/socketpair/nltrace) (for instance `nltrace ip route list`) but in this case it didn't give me the information I wanted. It's not a maintained project but looks maybe useful!
 
 ### that's all!
 
