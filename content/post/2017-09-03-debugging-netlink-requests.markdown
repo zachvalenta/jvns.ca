@@ -184,6 +184,10 @@ I tried this but had trouble for a couple reasons
 1. It didn't work for me on the server I was working on (though it works on my laptop now)
 1. I actually found it harder to work with than the strace method -- it captured too many packets and I found it hard to filter them in Wireshark.
 
+### nltrace
+
+There's also [nltrace](https://github.com/socketpair/nltrace) (for instance `nltrace ip route list`) but in this case it didn't give me the information I wanted.
+
 ### that's all!
 
 It always makes me happy when I learn about a NEW LINUX THING during the course
