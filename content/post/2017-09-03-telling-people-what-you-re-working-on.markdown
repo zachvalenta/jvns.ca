@@ -49,6 +49,7 @@ A few reasons announcing plans is useful:
 
 1. Everyone else is trying to plan their work all the time. If I announce what I'm planning, that helps people who are working on related projects! For example, my team just announced a project that interacts a lot with another team's work, so that team is going to allocate someone to work on it!
 2. If we advertise a plan maybe someone will notice an important problem with it and tell us!
+3. Writing a plan forces your clarify your goals
 3. Communicating clear plans helps management... manage.
 3. I think announcing *ambitious* plans can help kind of.. inspire the people around you? Like I sometimes see that someone else is kicking off a Very Important Project and I think, wow, that's really cool, maybe we can do something cool like that.
 4. It's exciting to see people starting and finishing projects, like it creates momentum for the whole company if everyone talks about what they're doing!
