@@ -184,6 +184,28 @@ I tried this but had trouble for a couple reasons
 1. It didn't work for me on the server I was working on (though it works on my laptop now)
 1. I actually found it harder to work with than the strace method -- it captured too many packets and I found it hard to filter them in Wireshark.
 
+### ip monitor
+
+
+You can also run `ip monitor and it'll tell you some netlink requests. when I run it it prints out this stuff:
+
+
+```
+$ sudo ip monitor
+fd68:29:f8f6::1 dev enp0s25 lladdr c4:6e:1f:95:d8:3e router STALE
+fe80::c66e:1fff:fe95:d83e dev enp0s25 lladdr c4:6e:1f:95:d8:3e router STALE
+192.168.1.144 dev enp0s25 lladdr 14:30:c6:ba:e4:6c STALE
+192.168.1.144 dev enp0s25 lladdr 14:30:c6:ba:e4:6c PROBE
+192.168.1.144 dev enp0s25 lladdr 14:30:c6:ba:e4:6c STALE
+192.168.1.144 dev enp0s25 lladdr 14:30:c6:ba:e4:6c REACHABLE
+fd68:29:f8f6::1 dev enp0s25 lladdr c4:6e:1f:95:d8:3e router PROBE
+fd68:29:f8f6::1 dev enp0s25 lladdr c4:6e:1f:95:d8:3e router REACHABLE
+fe80::c66e:1fff:fe95:d83e dev enp0s25 lladdr c4:6e:1f:95:d8:3e router PROBE
+fe80::c66e:1fff:fe95:d83e dev enp0s25 lladdr c4:6e:1f:95:d8:3e router REACHABLE
+```
+
+It didn't give me the information I wanted though.
+
 ### nltrace
 
 There's also [nltrace](https://github.com/socketpair/nltrace) (for instance `nltrace ip route list`) but in this case it didn't give me the information I wanted. It's not a maintained project but looks maybe useful!
