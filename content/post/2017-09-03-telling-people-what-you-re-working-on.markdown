@@ -67,7 +67,13 @@ future.
 
 ### ways to make it less scary
 
-One thing I think might help me is **assume everything I do will succeed**.
+
+Remember **it's my job/responsibility** to talk about what I'm doing. We're all
+trying to build something together, and as a team we can't do that if we don't
+talk about our plans. (I think as I get more experienced this becomes more and
+more my job)
+
+Another thing I think might help me is **assume everything I do will succeed**.
 I feel like I sometimes waste a lot of time worrying "oh no, what if this goes
 wrong". And of course to some extent worrying is useful! Every project has
 risks and it's important to think about how to manage those risks. But I think
