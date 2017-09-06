@@ -72,6 +72,19 @@ Issue Ctrl-C to stop monitoring
 1 drops at igmp_rcv+e1 (0xffffffff817b4c41)
 ```
 
+### monitoring dropped packets with perf
+
+Here's another cool way to debug what's happening!
+
+[thomas graf](https://twitter.com/tgraf__) told me that you can monitor the
+`kfree_skb` event using perf, and that will tell you when packets are being
+dropped (where in the kernel stack it happened):
+
+```
+sudo perf record -g -a -e skb:kfree_skb
+sudo perf script
+```
+
 ### advanced reading
 
 There's also these two cool articles:
