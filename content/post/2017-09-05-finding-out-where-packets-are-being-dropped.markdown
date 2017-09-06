@@ -1,5 +1,5 @@
 ---
-title: "Finding out where packets are being dropped"
+title: "Finding out if/why my server is dropping packets"
 date: 2017-09-05T23:39:28Z
 url: /blog/2017/09/05/finding-out-where-packets-are-being-dropped/
 categories: []
