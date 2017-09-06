@@ -1,5 +1,5 @@
 ---
-title: "Finding out if/why my server is dropping packets"
+title: "Finding out if/why a server is dropping packets"
 date: 2017-09-05T23:39:28Z
 url: /blog/2017/09/05/finding-out-where-packets-are-being-dropped/
 categories: []
@@ -71,6 +71,15 @@ Issue Ctrl-C to stop monitoring
 1 drops at igmp_rcv+e1 (0xffffffff817b4c41)
 1 drops at igmp_rcv+e1 (0xffffffff817b4c41)
 ```
+
+### advanced reading
+
+There's also these two cool articles:
+
+* [Monitoring and Tuning the Linux Networking Stack: Receiving Data](https://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-stack-receiving-data/)
+* [Monitoring and Tuning the Linux Networking Stack: Sending Data](https://blog.packagecloud.io/eng/2017/02/06/monitoring-tuning-linux-networking-stack-sending-data/)
+
+I still haven't read them in full but they are extremely detailed and cool.
 
 ### tell me if you know more!
 
