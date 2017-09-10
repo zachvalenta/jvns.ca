@@ -117,6 +117,11 @@ people do this a lot it is actually maybe kind of reasonable to react with "ok,
 we're just not going to tell people what we're doing until we're further
 along".
 
+Philip Guo has a great vlog about how [it's important to start personal creative projects privately](http://www.pgbovine.net/PG-Vlog-8-private-creative-projects.htm) --
+if you don't tell anyone about an early stage baby idea, it can give you the
+space/safety to develop it! That's really important! So I think there's a
+caveat here, like "early-stage ideas are fragile and need to be sheltered" :)
+
 ### hiding in a corner with my keyboard is not for me though
 
 Right now I'm planning a biggish (big for me, anyway! I actually want people to
