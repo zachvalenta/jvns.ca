@@ -80,7 +80,8 @@ some observations:
   Lindsey encouraged me to work on writing an OS in Rust and that turned out to be a great idea. And
   the facilitators were always extremely enthusiastic/positive  about helping me debug weird problems I had.
 * Today I have a really positive attitude about debugging (what are we going to learn TODAY?!). I
-  think I learned that from the RC facilitators <3
+  think I learned that from the RC facilitators <3 (like I'd ask Allison "hi can you help me debug
+  this weird thing" and she would be SO HELPFUL)
 
 I think this media strategy approach ("everything I do has to be a cool thing I can demo and write
 about") thing is pretty weird and I don't know that I recommend it. It worked for me though, I think
