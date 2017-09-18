@@ -5,7 +5,7 @@ url: /blog/2017/09/17/how-i-spent-my-time-at-the-recurse-center/
 categories: []
 ---
 
-I went to the Recurse Center a while ago now (3 years ago) but I'm interested in the topic of "how
+I went to the Recurse Center a while ago now (4 years ago) but I'm interested in the topic of "how
 do I accomplish a lot in a short amount of time" again so I wanted to revisit how I spent my time
 there because I learned a lot. I don't know if this will be interesting to anyone but me but I often
 think about things by blogging, so here you go :)
@@ -63,7 +63,7 @@ some observations:
 * I was pretty comfortable with web development / machine learning basics before RC, so I completely
   avoided working on those things. I focused on stuff I thought seemed hard/scary (networking/security/operating
   systems/writing a shell/compression). Clojure / the git visualization tool were exceptions to this, those I just thought were fun.
-* The stuff I learned about at RC 3 years ago is still a lot of the same stuff I'm excited about
+* The stuff I learned about at RC 4 years ago is still a lot of the same stuff I'm excited about
   today.
 * There were a lot of things I worked on for only 2-3 days (like "write kernel modules"). Some of
   those things I learned a LOT from.
