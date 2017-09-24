@@ -306,3 +306,5 @@ also I found out that thanks to the great work of people like rakyll, pprof keep
 this pull request https://github.com/google/pprof/pull/188 which is being worked on RIGHT NOW which
 adds flamegraph support to the pprof web interface. Flamegraphs are the best thing in the universe
 so I'm very excited for that to be available.
+
+If I got someting wrong (I probably did) let me know!!
