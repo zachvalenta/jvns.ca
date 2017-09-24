@@ -19,6 +19,7 @@ in this post I'll
 * link to the useful pprof resource I found
 * explain what a pprof profile is
 * give an example of how to look at a heap profile of a Go program
+* explain a few things about the heap profiler works (what do the stack traces mean? how are they collected?)
 * most importantly (to me), deconstruct an example pprof protobuf file so we understand what a pprof profile
   actually is
 
