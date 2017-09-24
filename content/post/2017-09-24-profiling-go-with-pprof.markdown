@@ -196,7 +196,24 @@ get a history of both allocations and frees for some sample of memory activity. 
 time to analyze your memory usage, you can decide where you want inuse memory or total allocation counts!
 
 You can read the source for the memory profiler here: https://golang.org/src/runtime/mprof.go. It
-has a lot of comments!
+has a lot of useful comments! For example here are the comments about setting the sample rate:
+
+```
+// MemProfileRate controls the fraction of memory allocations
+// that are recorded and reported in the memory profile.
+// The profiler aims to sample an average of
+// one allocation per MemProfileRate bytes allocated.
+
+// To include every allocated block in the profile, set MemProfileRate to 1.
+// To turn off profiling entirely, set MemProfileRate to 0.
+
+// The tools that process the memory profiles assume that the
+// profile rate is constant across the lifetime of the program
+// and equal to the current value. Programs that change the
+// memory profiling rate should do so just once, as early as
+// possible in the execution of the program (for example,
+// at the beginning of main).
+```
 
 ### pprof fundamentals: deconstructing a pprof file
 
