@@ -193,7 +193,7 @@ I was originally confused about this works -- the profiles have already be colle
 this choice after the fact? I think how the heap profiles work is -- allocations are recorded at
 some sample rate. Then every time one of those allocation is **freed**, that's also recorded. So you
 get a history of both allocations and frees for some sample of memory activity. Then when it comes
-time to analyze your memory usage, you can decide what you're interested in!!
+time to analyze your memory usage, you can decide where you want inuse memory or total allocation counts!
 
 You can read the source for the memory profiler here: https://golang.org/src/runtime/mprof.go. It
 has a lot of comments!
