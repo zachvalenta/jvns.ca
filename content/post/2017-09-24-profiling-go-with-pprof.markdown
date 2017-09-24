@@ -138,7 +138,8 @@ func leakyFunction(wg sync.WaitGroup) {
 Basically this just starts a goroutine `leakyFunction` that allocates a bunch of memory and then
 exits eventually.
 
-Getting a heap profile of this program is really easy -- we just need to run `go tool pprof  http://localhost:6060/debug/pprof/heap`. This puts us into an interactive mode where we run `top` 
+Getting a heap profile of this program is really easy -- we just need to run `go tool pprof
+http://localhost:6060/debug/pprof/heap`. This puts us into an interactive mode where we run `top` 
 
 ```
 $ go tool pprof  http://localhost:6060/debug/pprof/heap
@@ -163,6 +164,16 @@ Here's what that looks like (I ran it at a different time so it's only using 100
 <div align="center">
 <img src="/images/pprof.png">
 </div>
+
+### what do the stack traces in a heap profile mean?
+
+This is not complicated but also was not 100% obvious to me. The stack traces in the heap profile
+are the stack trace at time of allocation.
+
+So the stack traces in the heap profile might be for code that is not running anymore -- like maybe
+a function allocated a bunch of memory, returned, and a different function that should be freeing
+that memory is misbehaving. So the function to blame for the memory leak might be totally different
+than the function listed in the heap profile. 
 
 ### pprof fundamentals: deconstructing a pprof file
 
