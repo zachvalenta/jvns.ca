@@ -175,6 +175,28 @@ a function allocated a bunch of memory, returned, and a different function that 
 that memory is misbehaving. So the function to blame for the memory leak might be totally different
 than the function listed in the heap profile. 
 
+### alloc_space vs inuse_space
+
+go tool pprof has the option to show you either **allocation counts** or **in use memory**. If
+you're concerned with the amount of memory being **used**, you probably want the inuse metrics, but
+if you're worried about time spent in garbage collection, look at allocations!
+
+```
+  -inuse_space      Display in-use memory size
+  -inuse_objects    Display in-use object counts
+  -alloc_space      Display allocated memory size
+  -alloc_objects    Display allocated object counts
+```
+
+I was originally confused about this works -- the profiles have already be collected! How can I make
+this choice after the fact? I think how the heap profiles work is -- allocations are recorded at
+some sample rate. Then every time one of those allocation is **freed**, that's also recorded. So you
+get a history of both allocations and frees for some sample of memory activity. Then when it comes
+time to analyze your memory usage, you can decide what you're interested in!!
+
+You can read the source for the memory profiler here: https://golang.org/src/runtime/mprof.go. It
+has a lot of comments!
+
 ### pprof fundamentals: deconstructing a pprof file
 
 When I started working with pprof I was confused about what was actually happening. It was
