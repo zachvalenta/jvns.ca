@@ -85,6 +85,7 @@ task :deploy do
   Rake::Task["build"].execute
   system "chmod 664 static/images/*"
   system "chmod 777 static/images/drawings"
+  system "chmod 777 static/images/illustrations"
   system "chmod 777 static/images/rust-talk"
   system "chmod 777 static/images/srecon-talk"
   system "chmod 777 static/images/stl-talk"

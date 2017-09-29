@@ -1,7 +1,6 @@
 ---
 title: "How to make tech illustrations"
 date: 2017-09-28T23:09:48Z
-draft: true
 url: /blog/2017/09/28/tech-illustrations/
 categories: []
 ---
@@ -11,7 +10,7 @@ People sometimes tell me these days "wow julia, you are so good at drawing, it i
 I think this is kind of funny because, like, this is what happens when I try to draw animals.
 
 <div align="center">
-<img src="/images/illustrations/animal.png">
+<img src="https://jvns.ca/images/illustrations/animal.png">
 </div>
 
 But! I realized a while back that there actually **is** a skill to explaining technical concepts to
@@ -24,7 +23,7 @@ This post is about a few patterns I use when illustrating ideas about computers.
 Just to emphasize it again -- this is basically the entire visual vocabulary I use.
 
 <div align="center">
-<img src="/images/illustrations/artistic-range.jpg">
+<img src="https://jvns.ca/images/illustrations/artistic-range.jpg">
 </div>
 
 
@@ -42,7 +41,7 @@ We're going to talk about "drawing" and "cartoons" but often I'll just literally
 hand. Here's the start of a page about dstat:
 
 <div align="center">
-<img src="/images/illustrations/dstat.png">
+<img src="https://jvns.ca/images/illustrations/dstat.png">
 </div>
 
 This basically just says "every second, dstat prints out how much network & disk your computer used
@@ -58,7 +57,7 @@ characters who talk to each other. For example, here's a scene from Kubernetes: 
 component is talking to the API server
 
 <div align="center">
-<img src="/images/illustrations/personify1.png">
+<img src="https://jvns.ca/images/illustrations/personify1.png">
 </div>
 
 This is useful because
@@ -73,7 +72,7 @@ Here's part of the cast of characters from my networking zine: (a laptop! a rout
 system! a program!)
 
 <div align="center">
-<img src="/images/illustrations/personify2.png">
+<img src="https://jvns.ca/images/illustrations/personify2.png">
 </div>
 
 Taking a complicated computer system and breaking down "ok, these are 3 main important characters in
@@ -88,13 +87,13 @@ server, and the HTTP server", you can show how they actually work together in re
 Here's a scene with two humans talking:
 
 <div align="center">
-<img src="/images/illustrations/scene1.png">
+<img src="https://jvns.ca/images/illustrations/scene1.png">
 </div>
 
 and one with two programs who are both using the same mutex:
 
 <div align="center">
-<img src="/images/illustrations/scene2.png">
+<img src="https://jvns.ca/images/illustrations/scene2.png">
 </div>
 
 I think this scene (with program 2 thinking "not my turn yet") is a pretty clear way to explain what
@@ -109,19 +108,19 @@ I make a LOT of lists (for example, this post itself is a "list of things I've l
 Here's part of a list of networking tools and what they're for
 
 <div align="center">
-<img src="/images/illustrations/list1.png">
+<img src="https://jvns.ca/images/illustrations/list1.png">
 </div>
 
 a list of attributes of a Unix process
 
 <div align="center">
-<img src="/images/illustrations/list2.png">
+<img src="https://jvns.ca/images/illustrations/list2.png">
 </div>
 
 a list of strategies for asking good questions
 
 <div align="center">
-<img src="/images/illustrations/list3.png">
+<img src="https://jvns.ca/images/illustrations/list3.png">
 </div>
 
 A few things I love about making lists:
@@ -142,13 +141,13 @@ I mean! No fiddling with LaTeX or graphviz or anything.
 Here's part of a diagram I meant to illustrate memory fragmentation:
 
 <div align="center">
-<img src="/images/illustrations/diagram1.png">
+<img src="https://jvns.ca/images/illustrations/diagram1.png">
 </div>
 
 and a slightly more involved diagram showing the structure of a UDP packet:
 
 <div align="center">
-<img src="/images/illustrations/diagram2.png">
+<img src="https://jvns.ca/images/illustrations/diagram2.png">
 </div>
 
 I love that I can use arrows / colours to emphasize things I think are important or give extra
@@ -166,7 +165,7 @@ Here's the Kubernetes scheduler all worried because it noticed a pod that it has
 (scheduler: "OH NO! I was supposed to have done that already! julia will be mad!")
 
 <div align="center">
-<img src="/images/illustrations/joke1.png">
+<img src="https://jvns.ca/images/illustrations/joke1.png">
 </div>
 
 and a silly "C is for linearizable" joke (because the C in "CAP theorem" stand for "consistent". But
@@ -174,7 +173,7 @@ and a silly "C is for linearizable" joke (because the C in "CAP theorem" stand f
 So confusing!")
 
 <div align="center">
-<img src="/images/illustrations/joke2.png">
+<img src="https://jvns.ca/images/illustrations/joke2.png">
 </div>
 
 
@@ -188,7 +187,7 @@ Kubernetes logo, the Recurse Center logo, Tux (the linux penguin), and a cat. Th
 anybody's logo as far as I know.
 
 <div align="center">
-<img src="/images/illustrations/icons.png">
+<img src="https://jvns.ca/images/illustrations/icons.png">
 </div>
 
 The hand-traced versions of these logos are kind of wobbly and imprecise in a way that is pretty
@@ -216,7 +215,7 @@ For example here's a very early drawing that I drew in pen on paper and posted t
 find this kind of janky & illegible but honestly when I posted it I got TONS of positive comments
 ([evidence](https://twitter.com/b0rk/status/638365065926811648)). 
 <div align="center">
-<img src="/images/illustrations/wizard-programmer-handwritten.jpg">
+<img src="https://jvns.ca/images/illustrations/wizard-programmer-handwritten.jpg">
 </div>
 
 So drawings do not have to be beautiful and clean! They can be a sketchy thing you wrote on paper
