@@ -1,7 +1,7 @@
 ---
 title: "How to teach technical concepts with cartoons"
 date: 2017-09-28T23:09:48Z
-url: /blog/2017/09/28/tech-illustrations/
+url: /teach-tech-with-cartoons/
 categories: []
 ---
 
