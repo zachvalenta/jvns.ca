@@ -1,22 +1,31 @@
 ---
-title: "How to make tech illustrations"
+title: "How to teach technical concepts with cartoons"
 date: 2017-09-28T23:09:48Z
 url: /blog/2017/09/28/tech-illustrations/
 categories: []
 ---
+
+<style>
+.small {
+    width: 300px
+}
+@media only screen and (max-width: 500px) {
+    width: 100%
+}
+</style>
 
 People sometimes tell me these days "wow julia, you are so good at drawing, it is so cool!"
 
 I think this is kind of funny because, like, this is what happens when I try to draw animals.
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/animal.png">
+<img src="https://jvns.ca/images/illustrations/animal.png" class="small">
 </div>
 
-But! I realized a while back that there actually **is** a skill to explaining technical concepts to
+I realized some time ago that there actually **is** a skill to explaining technical concepts to
 people with drawings. And I think I've become pretty good at that skill! 
 
-This post is about a few patterns I use when illustrating ideas about computers.
+This post is about a few patterns I use when illustrating ideas about computers. 
 
 ### cartooning isn't about drawing skills
 
@@ -35,29 +44,14 @@ I think of tech cartooning as being about like... cartooning skills. Like I need
 
 Here are some tactics I like to use when drawing!
 
-### just write some text
-
-We're going to talk about "drawing" and "cartoons" but often I'll just literally write some text by
-hand. Here's the start of a page about dstat:
-
-<div align="center">
-<img src="https://jvns.ca/images/illustrations/dstat.png">
-</div>
-
-This basically just says "every second, dstat prints out how much network & disk your computer used
-that second". I could have typed that! But I think writing it by hand emphasizes like "no, this is
-something I really love, I love it so much  I wrote it out by hand and made a picture to show you!"
-
-Let's talk about making actual drawings that are not just words though!
-
 ### personify the characters
 
-I do a lot of personification/anthromorphizing -- I'll take a system and turn it into a cast of
+I do a lot of personification/anthropomorphization -- I'll take a system and turn it into a cast of
 characters who talk to each other. For example, here's a scene from Kubernetes: the kubelet
 component is talking to the API server
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/personify1.png">
+<img src="https://jvns.ca/images/illustrations/personify1.png" class="small">
 </div>
 
 This is useful because
@@ -72,7 +66,7 @@ Here's part of the cast of characters from my networking zine: (a laptop! a rout
 system! a program!)
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/personify2.png">
+<img src="https://jvns.ca/images/illustrations/personify2.png" class="small">
 </div>
 
 Taking a complicated computer system and breaking down "ok, these are 3 main important characters in
@@ -87,13 +81,13 @@ server, and the HTTP server", you can show how they actually work together in re
 Here's a scene with two humans talking:
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/scene1.png">
+<img src="https://jvns.ca/images/illustrations/scene1.png" class="small">
 </div>
 
 and one with two programs who are both using the same mutex:
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/scene2.png">
+<img src="https://jvns.ca/images/illustrations/scene2.png" width=200px>
 </div>
 
 I think this scene (with program 2 thinking "not my turn yet") is a pretty clear way to explain what
@@ -108,23 +102,24 @@ I make a LOT of lists (for example, this post itself is a "list of things I've l
 Here's part of a list of networking tools and what they're for
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/list1.png">
+<img src="https://jvns.ca/images/illustrations/list1.png" class="small">
 </div>
 
 a list of attributes of a Unix process
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/list2.png">
+<img src="https://jvns.ca/images/illustrations/list2.png" class="small">
 </div>
 
-a list of strategies for asking good questions
+and a list of strategies for asking good questions
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/list3.png">
+<img src="https://jvns.ca/images/illustrations/list3.png" class="small">
 </div>
 
 A few things I love about making lists:
 
+* you can make a list of steps (step 1! step 2! step 3!)
 * it's a really clear structure and so they're easy to understand
 * it's a nice way to teach someone something new (maybe you list 10 interesting things, and they
   only knew about 7 of them!)
@@ -138,16 +133,16 @@ A few things I love about making lists:
 A big part of the joy of hand drawing comics is that I can really easy make diagrams to explain what
 I mean! No fiddling with LaTeX or graphviz or anything.
 
-Here's part of a diagram I meant to illustrate memory fragmentation:
+Here's part of a diagram I made to illustrate memory fragmentation:
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/diagram1.png">
+<img src="https://jvns.ca/images/illustrations/diagram1.png" class="small">
 </div>
 
 and a slightly more involved diagram showing the structure of a UDP packet:
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/diagram2.png">
+<img src="https://jvns.ca/images/illustrations/diagram2.png" class="small">
 </div>
 
 I love that I can use arrows / colours to emphasize things I think are important or give extra
@@ -165,7 +160,7 @@ Here's the Kubernetes scheduler all worried because it noticed a pod that it has
 (scheduler: "OH NO! I was supposed to have done that already! julia will be mad!")
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/joke1.png">
+<img src="https://jvns.ca/images/illustrations/joke1.png" width=200px>
 </div>
 
 and a silly "C is for linearizable" joke (because the C in "CAP theorem" stand for "consistent". But
@@ -173,25 +168,102 @@ and a silly "C is for linearizable" joke (because the C in "CAP theorem" stand f
 So confusing!")
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/joke2.png">
+<img src="https://jvns.ca/images/illustrations/joke2.png" width=200px>
 </div>
 
+### just write some text
+
+I like using cartoons but sometimes I'll just write a paragraph.  Here's the start of a page about
+dstat:
+
+<div align="center">
+<img src="https://jvns.ca/images/illustrations/dstat.png" class="small">
+</div>
+
+This basically just says "every second, dstat prints out how much network & disk your computer used
+that second". I could have typed that! But I think writing it by hand emphasizes like "no, this is
+something I really love, I love it so much  I wrote it out by hand and made a picture to show you!"
+
+### paste some computer output
+
+Sometimes I want to paste and discuss some output you might see on a computer.  For example, when I
+made my strace zine I realized that a lot of strace output is really confusing. I wanted to paste
+some actual strace output to talk about!
+
+Luckily that is really easy to do in a drawing, because you can just put anything you want in it!
+
+<div align="center">
+<img src="/images/illustrations/strace.png" class="small">
+</div>
 
 ### trace icons/logos
 
 At the beginning I said "I can't draw well", which is true! But I **can** trace things and sometimes
-that can be a really fun thing to do.
+that can be a really fun thing to do. And it's a fun way to make up for my lack of drawing skills.
 
 It's useful sometimes to include logos / icons! For example here are versions I traced of the
 Kubernetes logo, the Recurse Center logo, Tux (the linux penguin), and a cat. The cat isn't
 anybody's logo as far as I know.
 
 <div align="center">
-<img src="https://jvns.ca/images/illustrations/icons.png">
+<img src="https://jvns.ca/images/illustrations/icons.png" class="small">
 </div>
 
 The hand-traced versions of these logos are kind of wobbly and imprecise in a way that is pretty
 satisfying to me, I think they look cool.
+
+### designing your comics
+
+You have a blank sheet of paper in front you, and some information you want to convey! How do you do
+it? Having a few structure patterns really helps. Here are some examples:
+
+Here's one way of making a list:
+
+<div align="center">
+<img src="/images/illustrations/structure1.png" class="small">
+</div>
+
+A list of many small things:
+
+<div align="center">
+<img src="/images/illustrations/structure2.png" class="small">
+</div>
+
+and yet another list, here a list of steps:
+
+<div align="center">
+<img src="/images/illustrations/structure3.png" class="small">
+</div>
+
+
+This one is more of a normal comic and less of a list -- it's visually laid out with
+squares/rectangles like a comic, and tells a bit of a story.
+
+<div align="center">
+<img src="/images/illustrations/structure4.png" class="small">
+</div>
+
+And finally this one is pretty unstructured. Personally I find this one a bit hard to to
+read/follow, I think having more structure than this is easier.
+
+<div align="center">
+<img src="/images/illustrations/structure5.png" class="small">
+</div>
+
+### just making something a cartoon doesn't necessarily mean it teaches what people need to know
+
+I'm going to pick on another cartoon a bit here which I don't really like to do but I need an
+example :).
+
+There's an extremely adorable guide to Kubernetes called [The Children's Illustrated Guide to Kubernetes](https://deis.com/blog/2016/kubernetes-illustrated-guide/).
+
+I think this cartoon is cool and introduces a lot of important ideas. But for me personally I
+couldn't understand how Kubernetes worked at all until I understood the role of etcd in Kubernetes
+(all the Kubernetes state is stored in etcd and every other Kubernetes component is stateless). And
+this cartoon doesn't mention etcd even once! So I don't think this cartoon would really have helped
+me understand Kubernetes.
+
+So if you're trying to teach something, I think it's important to make sure that your cartoons 
 
 ### tools that make it easy
 
@@ -221,6 +293,51 @@ find this kind of janky & illegible but honestly when I posted it I got TONS of 
 So drawings do not have to be beautiful and clean! They can be a sketchy thing you wrote on paper
 and that is okay.
 
-### drawing is fun
 
-If you are also interested
+### how do you decide what's a good subject for a tech cartoon?
+
+I did a month of "comic every day" last year and here were some of the subjects: mesos, mutexes, assembly,
+the anatomy of a packet, the OSI model for networking, floating point, the stack, TCP, MAC
+addresses, pipes, man pages, threads, memory allocation, page caches, how DNS works, NAT, virtual
+memory, and how directories work. 
+
+Obviously there's a heavy systems focus here but that's just because I'm interested in systems. So
+how did I pick those topics? Let's take this comic on floating point I made last year! The steps
+are:
+
+1. Remember that I was really confused about floating key point until I learned a few key insights
+   from Stefan Karpinksi. When I learned these things my mind was totally blown and it was so
+   exciting!!! 
+  * a double is 64 bits. That means there are only 2^64 floating point numbers!!!
+  * The smallest double after 2^52 is 2^52 + 1 (so 2^52 + 0.2 = 2^52).
+  * This means you can't have integers above 2^53 in Javascript
+2. Think "well, those three things are really simple, I could put them in a comic"
+3. Figure out how to organize them into panels of a comic!!
+4. Stick to one page
+
+Here's the final floating point comic
+
+<div align="center">
+<img src="https://drawings.jvns.ca/drawings/float.png">
+</div>
+
+So I think I organize a lot of my comics about some key insight / fact / surprising thing that it
+took me a long time to learn and was really useful to me.
+
+Another example of this is this "how Unix permissions work" comic -- like if you don't know that
+'0644' is a number in octal and why it maps to `rw-r--r--`, it's hard to understand how permissions
+work. That's a pretty simple thing to explain and it's very useful to know!
+
+### you could make tech illustrations too
+
+If you are interested in drawing tech cartoons, I hope this blog post gives you some ideas about how
+to do that!  I've seen a lot of people making great illustrations about tech:
+
+If you're interested in making cartoons I'd really recommend the book [Understanding Comics](https://en.wikipedia.org/wiki/Understanding_Comics), by Scott McCloud, it's a really
+incredible explanation of how comics work. I learned a ton from reading it.
+
+A few other people who are doing great work in tech comics:
+
+* Lin Clark https://code-cartoons.com/ (a lot of React cartoons). She also has some awesome posts about
+  Firefox internals like [Inside a super fast CSS engine: Quantum CSS (aka Stylo)](https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo/)
+* Amy Wibowo https://bubblesort-zines.myshopify.com (computer science zines!)
