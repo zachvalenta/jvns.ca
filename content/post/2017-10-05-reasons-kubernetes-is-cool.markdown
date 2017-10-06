@@ -18,7 +18,8 @@ mostly from the perspective of a kubernetes operator / infrastructure engineer, 
 now is to set up Kubernetes and make it work well.
 
 I'm not going to try to address the question of "should you use kubernetes for your production
-systems?" at all, that is a very complicated question.
+systems?" at all, that is a very complicated question. (not least because "in production" has
+totally different requirements depending on what you're doing)
 
 ### Kubernetes lets you run code in production without setting up new servers
 
