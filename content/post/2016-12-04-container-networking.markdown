@@ -2,7 +2,7 @@
 title: "A container networking overview"
 date: 2016-12-22T16:50:42Z
 url: /blog/2016/12/22/container-networking/
-categories: []
+categories: ["kubernetes"]
 ---
 
 I've been talking about container things a bunch on this blog, mostly
