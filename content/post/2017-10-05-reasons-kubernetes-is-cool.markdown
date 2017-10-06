@@ -9,12 +9,15 @@ When I first learned about Kubernetes (a year and a half ago?) I really didn't u
 should care about it.
 
 I've been working full time with Kubernetes for 3 months or so and now have some thoughts about why
-it is useful.
+I think it's useful. (I'm still very far from being a Kubernetes expert!)
 
 I will try to explain some reason I think Kubenetes is interesting without using the words "cloud native",
 "orchestration", "container", or any Kubernetes-specific terminology :). I'm going to explain this
 mostly from the perspective of a kubernetes operator / infrastructure engineer, since my job right
 now is to set up Kubernetes and make it work well.
+
+I'm not going to try to address the question of "should you use kubernetes for your production
+systems?" at all, that is a very complicated question.
 
 ### Kubernetes lets you run code in production without setting up new servers
 
