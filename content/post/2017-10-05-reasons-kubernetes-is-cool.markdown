@@ -2,14 +2,15 @@
 title: "Reasons Kubernetes is cool"
 date: 2017-10-05T21:23:46Z
 url: /blog/2017/10/05/reasons-kubernetes-is-cool/
-categories: []
+categories: ["kubernetes"]
 ---
 
 When I first learned about Kubernetes (a year and a half ago?) I really didn't understand why I
 should care about it.
 
 I've been working full time with Kubernetes for 3 months or so and now have some thoughts about why
-I think it's useful. (I'm still very far from being a Kubernetes expert!)
+I think it's useful. (I'm still very far from being a Kubernetes expert!) Hopefully this will help a
+little in your journey to understand what even is going on with Kubernetes!
 
 I will try to explain some reason I think Kubenetes is interesting without using the words "cloud native",
 "orchestration", "container", or any Kubernetes-specific terminology :). I'm going to explain this
