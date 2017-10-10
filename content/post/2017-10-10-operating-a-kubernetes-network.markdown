@@ -2,7 +2,7 @@
 title: "Operating a Kubernetes network"
 date: 2017-10-10T00:09:26Z
 url: /blog/2017/10/10/operating-a-kubernetes-network/
-categories: []
+categories: ["kubernetes"]
 ---
  
 I've been working on Kubernetes networking a lot recently. One thing I've noticed is, while there's
@@ -109,7 +109,7 @@ Okay! So! What can go wrong with your overlay network?
 * Probably more things! 
  
  
-I'm mostly talking about past issues in Flannel here but I promise I'm not picking on Flannel -- I actually really **like** Flannel because I feel like it's relatively simple (for instance the [vxlan backend part of it](https://github.com/coreos/flannel/tree/master/backend/vxlan) is like 500 lines of code) and I feel like it's possible for me to reason through any issues with it. They've been great about reviewing pull requests. 
+I'm mostly talking about past issues in Flannel here but I promise I'm not picking on Flannel -- I actually really **like** Flannel because I feel like it's relatively simple (for instance the [vxlan backend part of it](https://github.com/coreos/flannel/tree/master/backend/vxlan) is like 500 lines of code) and I feel like it's possible for me to reason through any issues with it. And it's obviously continuously improving. They've been great about reviewing pull requests. 
  
  
 My approach to operating an overlay network so far has been: 
