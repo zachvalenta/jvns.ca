@@ -64,7 +64,8 @@ https://turn-off-retweets.glitch.me/.
 
 Using Glitch feels really fun and democratic. Usually if I want to fork someone's web project and
 make changes I wouldn't do it -- I'd have to fork it, figure out hosting, set up a local dev
-environment or Heroku or whatever, install the dependencies, etc. I used to not mind logistics like
-this but now it's so similar to what I do in my job that I really don't find it fun.
+environment or Heroku or whatever, install the dependencies, etc. I think tasks like installing
+node.js dependencies used to be interesting, like "cool i am learning something new" and now I just
+find them tedious.
 
 So I love being able to just click "remix this!" and have my version on the internet instantly.
