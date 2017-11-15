@@ -56,7 +56,7 @@ This is a zine about COMPUTER NETWORKING! I spent a very long time
 learning how networking works (what happens when you download a picture
 from the internet? It turns out, a lot!) So I wrote a zine about it!
 
-Cover art by the amazing [Liz Baillie](https://twitter.com/_lbaillie).
+Cover art by the amazing [Lee Baillie](https://twitter.com/_lbaillie).
 
 <div align="center">
 <img src="/images/networkingcover.png" width=300px>
