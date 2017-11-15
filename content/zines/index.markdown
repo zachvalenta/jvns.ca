@@ -46,6 +46,9 @@ target="_blank" data-gumroad-single-product="true">Get the print version!</a>
 
 There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/335428/%5Bperevod%5D-podborka-slaydov-ot-dzhulii-eva/).
 
+Cover art by <a
+href="https://www.upwork.com/freelancers/~0192887d804879250b">Vladimir Kašiković</a> (an awesome illustrator).
+
 <div align="center">
 <a href="#networking-ack" style="color: black">
 <h3 id="networking-ack"> ★★★ Networking! ACK! ★★★</h3>
