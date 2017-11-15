@@ -71,4 +71,5 @@ more expensive to run than the read-only services, but it's such a useful and co
 continues to exist.
 
 There's also the [colaboratory](https://colab.research.google.com) by Google which is kinda the same
-thing, but it doesn't work with github so it is less exciting to me. But still cool!
+thing, but it doesn't work with github and only supports Chrome so it is less exciting to me. But
+still cool!
