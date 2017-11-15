@@ -14,7 +14,7 @@ Have you been seeing cool drawings about networking concepts on Twitter
 from me, and wondering "Julia, I really want to have all of these
 in one place, how can I get that??"? This is what I was working on!
 
-Here's the (amazing) cover, by rad programmer [Liz Baillie](https://twitter.com/_lbaillie).
+Here's the (amazing) cover, by rad programmer [Lee Baillie](https://twitter.com/_lbaillie).
 
 <div align="center">
 <img src="/images/networkingcover.png" width=400px>
