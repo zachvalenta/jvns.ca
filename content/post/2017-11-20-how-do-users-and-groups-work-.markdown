@@ -125,6 +125,17 @@ This won't affect any other shells I already have running. If I really want the 
 everywhere, I need to restart my login session completely, which means quitting my window manager
 and logging in again.
 
+### newgrp
+
+Somebody on Twitter told me that if you want to start a new shell with a new group that you've been
+added to, you can use `newgrp`. Like this:
+
+```
+sudo addgroup panda
+sudo adduser bork panda
+newgrp panda # starts a new shell, and you don't have to be root to run it!
+```
+
 ### setuid sets the effective user ID
 
 I've also always been a little vague about what it means for a process to run as "setuid root". It
