@@ -18,7 +18,7 @@ thought:
 So, for example, if a process is owned by the `julia` user and `julia` is in the `awesome` group,
 then the process would be allowed to read this file. 
 ```
-dr--r--r-- 1 bork awesome     6872 Sep 24 11:09 file.txt
+r--r--r-- 1 root awesome     6872 Sep 24 11:09 file.txt
 ```
 
 I had not thought carefully about this, but if pressed I would have said that it probably checks the
@@ -135,6 +135,9 @@ sudo addgroup panda
 sudo adduser bork panda
 newgrp panda # starts a new shell, and you don't have to be root to run it!
 ```
+
+You can accomplish the same(ish) thing with `sg panda bash` which will start a `bash` shell that
+runs with the `panda` group.
 
 ### setuid sets the effective user ID
 
