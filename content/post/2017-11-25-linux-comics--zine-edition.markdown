@@ -42,3 +42,6 @@ nothing fancy.
 
 It took me quite a while to try to figure out how to wrangle all the PDF tools to do what I wanted,
 so here it is: https://github.com/jvns/zine-formatter
+
+One day I have to write a love letter to `pdftk` -- I've used pdftk to do so much pdf wrangling and
+I do not know how I would make zines without it.
