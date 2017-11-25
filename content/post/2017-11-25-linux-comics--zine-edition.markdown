@@ -15,6 +15,9 @@ comics from last year into a small zine that folks could print?
 So I put 24 comics together, ran my booklet-generating script, printed them, and voilà! A cute
 little zine with 24 fun comics in it!
 
+Flipping through it, I noticed a few factual errors here and there, so it's not perfect, but I
+figure better to have it out in the world and imperfect than on my laptop where nobody can enjoy it.
+
 ### get the linux comics zine!
 
 The zine is 24 comics like this:
@@ -30,7 +33,7 @@ The zine is 24 comics like this:
 ### "so you want to be a wizard" zine
 
 In other zine news -- I also have a new zine called "so you want to be a wizard". It's about how
-to learn hard things and get better at programming. It's [for sale on Gumroad](https://gumroad.com/products/TOOz/edit) now if you want early access to it.
+to learn hard things and get better at programming. It's [for sale on Gumroad](https://gumroad.com/products/TOOz) now if you want early access to it.
 
 <img src="https://jvns.ca/images/so-you-want-to-be-a-wizard.png" width=300px>
 
