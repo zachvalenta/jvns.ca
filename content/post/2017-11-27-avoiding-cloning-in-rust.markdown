@@ -13,12 +13,13 @@ confused while writing very simple programs.
 The audience I'm writing for in this post is a little specific -- it's something like "people who
 have read the [lifetimes chapter in the Rust book](https://doc.rust-lang.org/1.9.0/book/lifetimes.html) and sorta understand it in principle but are still confused about a lot of pretty basic Rust things."
 
-
 we are going to talk about
 
 * What even is a reference in Rust?
 * What is a boxed pointer / string / vec and how do they relate to references?
 * Why is my struct complaining about lifetime parameters and what should I do about it?
+
+There is probably at least one mistake in this post.
 
 Let's start with something extremely basic: defining a struct in Rust.
 
