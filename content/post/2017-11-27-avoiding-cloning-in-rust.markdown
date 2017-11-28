@@ -13,11 +13,14 @@ confused while writing very simple programs.
 The audience I'm writing for in this post is a little specific -- it's something like "people who
 have read the [lifetimes chapter in the Rust book](https://doc.rust-lang.org/1.9.0/book/lifetimes.html) and sorta understand it in principle but are still confused about a lot of pretty basic Rust things."
 
-In this post, I want to talk about doing something extremely basic: defining a struct in Rust.
 
-We're going to take this code (which does not compile), explain why it doesn't compile, make it
-compile 2 different ways, and figure out some useful things about lifetimes / references / the heap
-along the way. Here's the code. It has a pointer to a single byte:
+we are going to talk about
+
+* What even is a reference in Rust?
+* What is a boxed pointer / string / vec and how do they relate to references?
+* Why is my struct complaining about lifetime parameters and what should I do about it?
+
+Let's start with something extremely basic: defining a struct in Rust.
 
 ```rust
 struct Container {
@@ -114,13 +117,18 @@ As an aside -- I got a bit confused by the word "box". I know in Java you have b
 primitive types, like `Integer` instead of `int`. And you can't really have non-boxed pointers in Java,
 basically every pointer is allocated on the heap.
 
-Rust boxed pointers are a bit different from Java boxed pointers though!
+Rust boxed pointers (`Box<T>`) are a bit different from Java boxed pointers though!
 
 In Java, a boxed pointer includes an extra word of data (not sure what it's for exactly, but I know
-there's an extra word for something). In Rust, a boxed pointer is just a pointer -- no extra data.
-The compiler just uses the information that it's allocated on the heap in order to decide where in
-the compiled code to free the memory. In our example above, the compiler would insert a `free` at
-the end of the `main` function.
+there's an extra word for something).
+
+In Rust, a boxed pointer **sometimes** includes an extra word (a "vtable pointer") and sometimes
+don't. It depends on whether the `T` in `Box<T>` is a type or a trait. Don't ask me more, I do not
+know more.
+
+Anyway, when you have a boxed pointer, the compiler uses the information that it's allocated on the
+heap in order to decide where in the compiled code to free the memory. In our example above, the
+compiler would insert a `free` at the end of the `main` function.
 
 ### what if you want to point to existing memory?
 
@@ -164,7 +172,7 @@ the relationship between them and their reference version (`&[T]`, `&str`, `&T`)
 important when writing Rust programs. Like I didn't understand before and I think that has been part
 of why I was so confused about Rust.
 
-Converting from a `Vec<T>` to a `&[T]` is really easy -- you just run `vec.as_ref()`. The resaon you
+Converting from a `Vec<T>` to a `&[T]` is really easy -- you just run `vec.as_ref()`. The reason you
 can do this conversion is that you're just "forgetting" that that variable is allocated on the heap
 and saying "who cares, this is just a reference". `String` and `Box<T>` also has an `.as_ref()`
 method that convert to the reference version of those types in the same way.
@@ -202,6 +210,8 @@ struct Lifetime<'a> {
     z: &'a u8
 }
 ```
+
+I can't tell you which kind of struct to make your Rust structs because I don't know yet.
 
 ### do structs in Rust usually have lifetimes or not?
 
