@@ -19,7 +19,7 @@ we are going to talk about
 * What is a boxed pointer / string / vec and how do they relate to references?
 * Why is my struct complaining about lifetime parameters and what should I do about it?
 
-There is probably at least one mistake in this post.
+We are not going to talk about ownership / the borrow checker. If you want to know about ownership you should read [the rust book](https://doc.rust-lang.org/book/second-edition/ch04-01-what-is-ownership.html). Also there is probably at least one mistake in this post.
 
 Let's start with something extremely basic: defining a struct in Rust.
 
@@ -77,6 +77,8 @@ Is it on the heap? Who knows??
 
 So this is no good, Rust can't compile this program because it doesn't have enough information about
 what kind of reference our reference is.
+
+(to understand what references are it is also helpful to read the [rust book on references & borrowing](https://doc.rust-lang.org/book/second-edition/ch04-02-references-and-borrowing.html), that chapter says different things about references which are also true and useful)
 
 ### making our struct compile with a `Box`
 
@@ -178,8 +180,9 @@ can do this conversion is that you're just "forgetting" that that variable is al
 and saying "who cares, this is just a reference". `String` and `Box<T>` also has an `.as_ref()`
 method that convert to the reference version of those types in the same way.
 
-You can't as easily convert back from a `&[T]` to a `Vec<T>` though! To convert back, you'd need to
-make a clone and allocate new memory on the heap.
+You can't as easily convert back from a `&[T]` to a `Vec<T>` though (because a `&[T]` could be
+a pointer to memory on the stack, so it doesn't make sense to just say "this is something on the
+heap")! To convert back, you'd need to make a clone and allocate new memory on the heap.
 
 ### there are 2 kinds of structs: those with lifetimes and those without lifetimes
 
