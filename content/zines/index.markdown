@@ -4,22 +4,217 @@ staticpage: true
 categories: []
 ---
 
-<script src="https://gumroad.com/js/gumroad.js"></script>
 <link href="https://jvns.ca/stylesheets/buttons.css" media="screen, projection" rel="stylesheet" type="text/css">
 
+<style>
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.zine {
+    text-align: center;
+    width: 270px;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border-bottom: 1px #cccccc solid;
+}
 
-The zines:
+.zine-link {
+    color: black;
+}
 
-* <a href="#tcpdump"> **Let's learn tcpdump!**</a>
-* <a href="#networking-ack"> **Networking! ACK!**</a>
-* <a href="#strace-zine"> **Spying on your programs with strace**</a>
-* <a href="#linux-debugging-tools"> **Linux debugging tools you'll love**</a>
 
-Information:
+.button2 {
+    background-color: #ff5e00;
+    display: inline-block;
+    color: white;
+    margin-bottom: 6px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 2px 6px;
+    font-size: 14px;
+    line-height: 1.7;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-self: flex-end;
+}
+</style>
+
+I've published 8 (!!) zines about systems & debugging tools. Here's some general information:
 
 * <a href="#whats-a-zine"> **What's a zine?**</a>
 * <a href="#print-directions"> **Printing directions**</a>
 
+and the zines. You can get more information about any of them by clicking on the cover. They all
+have a PDF you can read on your computer and a print version.
+
+<div class="container">
+
+<div class="zine">
+<a class="zine-link" href="#so-you-want-to-be-a-wizard"> 
+<h3>So you want to be a wizard</h3>
+<img src="/images/so-you-want-to-be-a-wizard-cover.png" width=100%>
+</a>
+<div>
+  <a class="button2" href="/wizard-zine.pdf">Read online</a>
+  <a class="button2" href="/wizard-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+<div class="zine">
+<div>
+<a class="zine-link" href="#linux-comics">
+<h3>Linux comics</h3>
+<img src="https://jvns.ca/images/linux-comics-cover.png" width=100%><br>
+<img src="/images/copy-on-write-cover.png" width=100%>
+</a>
+</div>
+<div>
+<a class="button2" href="/linux-comics-zine.pdf">Read online</a>
+<a class="button2" href="/linux-comics-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+
+<div class="zine">
+<a class="zine-link" href="#tcpdump">
+<h3>Let's learn tcpdump!</h3>
+<img src="https://jvns.ca/images/tcpdump-cover.jpg" width=100%><br>
+</a>
+<div>
+  <a class="button2" href="https://jvns.ca/tcpdump-zine.pdf">Read online</a>
+  <a class="button2" href="https://jvns.ca/tcpdump-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+<div class="zine">
+<a class="zine-link" href="#networking-ack">
+<h3>Networking! ACK!</h3>
+<img src="/images/networkingcover.png" width=100%>
+</a>
+<div>
+  <a class="button2" href="/networking-zine.pdf">Read online</a>
+  <a class="button2" href="/networking-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+<div class="zine">
+<a class="zine-link" href="#linux-debugging-tools">
+<h3>Linux debugging tools you'll love</h3>
+<img src="/images/debugging-tools-cover-full.png" width=100%>
+</a>
+<div>
+  <a class="button2" href="/debugging-zine.pdf">Read online</a>
+  <a class="button2" href="/debugging-zine-print-letter.pdf">Get the print version!</a>   
+</div>
+</div>
+
+<div class="zine">
+<a class="zine-link" href="#strace-zine">
+<h3>Spying on your programs with strace</h3>
+<img src="/images/strace-zine-cover-full.png" width=100%>
+</a>
+<div>
+  <a class="button2" href="/strace-zine-v2.pdf">Read online</a>
+  <a class="button2" href="/strace-zine-v2-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+<div class="zine">
+<a class="zine-link" href="#linux-tracing">
+<h3>Linux tracing systems & how they fit together</h3>
+<img src="/images/linux-tracing-systems-cover.png" width=100%>
+</a>
+<div>
+  <a class="button2" href="/linux-tracing-zine.pdf">Read online</a>
+  <a class="button2" href="/linux-tracing-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+
+
+<div class="zine">
+<a class="zine-link" href="#prod-ml">
+<h3>Production machine learning</h3>
+<img src="/images/prod-ml-cover.png" width=100%>
+</a>
+<div>
+  <a class="button2" href="/production-machine-learning.pdf">Read online</a>
+  <a class="button2" href="/production-machine-learning-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+
+</div>
+
+<h1> Descriptions of all the zines </h1>
+
+<div align="center">
+<a href="#so-you-want-to-be-a-wizard" style="color: black">
+<h3 id="so-you-want-to-be-a-wizard"> ★★★ So you want to be a wizard ★★★</h3>
+</a>
+</div>
+
+<div align="center">                                                                                                                       
+ <img src="/images/so-you-want-to-be-a-wizard-cover.png" width=300px>
+</div>
+
+
+Do you want to get **really good** at your job? Me too. This zine is about how I learn new things
+about programming. It discusses:
+
+* how to ask awesome questions
+* reading the source code
+* debugging skills
+* how to design software
+* and more!
+
+Cover art by <a
+href="https://www.upwork.com/freelancers/~0192887d804879250b">Vladimir Kašiković</a>
+
+<div align="center">                                                                                                                       
+  <a class="button" href="/wizard-zine.pdf">Read online</a>
+  <a class="button" href="/wizard-zine-print.pdf">Get the print version!</a>   
+</div>
+
+<hr>
+
+<div align="center">
+<a href="#linux-comics" style="color: black">
+<h3 id="linux-comics"> ★★★ Linux comics! ★★★</h3>
+</a>
+</div>
+
+<div align="center">
+<img src="https://jvns.ca/images/linux-comics-cover.png" width=300px><br>
+<img src="/images/copy-on-write-cover.png" width=300px>
+</div>
+
+This is a delightful 24-page zine of comics about Linux / networking / systems! It covers a huge
+variety of topics -- assembly! the CAP theorem! copy on write! directories & symlinks! DNS! floating
+point! IPv6! the OSI model! MAC addresses! memory allocation! man pages! mesos! mutexes! packets!
+packets! unix permissions!
+
+The great thing about this zine is that -- it's just a bunch of unrelated comics, so you're bound to
+find something interesting in it :)
+
+<div align="center">
+<a class="button" href="/linux-comics-zine.pdf">Read online</a>
+<a class="button" href="/linux-comics-zine-print.pdf">Get the print version!</a>   
+</div>
+
+<hr>
 
 <div align="center">
 <a href="#tcpdump" style="color: black">
@@ -38,16 +233,17 @@ Ever wanted to know how to use tcpdump, but were intimidated by all the command 
 * which command line arguments are the really important ones
 * how to write a BPF filter to filter tcpdump output
 
-<div align="center">
-<a class="button" href="https://jvns.ca/tcpdump-zine.pdf">Read the zine online!</a>
-<a class="button" href="https://gum.co/LcKLx?wanted=true"
-target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
-</div>
-
-There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/335428/%5Bperevod%5D-podborka-slaydov-ot-dzhulii-eva/).
+There's a [Russian translation](https://m.habrahabr.ru/company/first/blog/335428/%5Bperevod%5D-podborka-slaydov-ot-dzhulii-eva/).
 
 Cover art by <a
 href="https://www.upwork.com/freelancers/~0192887d804879250b">Vladimir Kašiković</a> (an awesome illustrator).
+
+<div align="center">
+<a class="button" href="https://jvns.ca/tcpdump-zine.pdf">Read the zine online!</a>
+<a class="button" href="https://jvns.ca/tcpdump-zine-print.pdf">Get the print version!</a>   
+</div>
+
+<hr>
 
 <div align="center">
 <a href="#networking-ack" style="color: black">
@@ -67,12 +263,12 @@ Cover art by the amazing [Lee Baillie](https://twitter.com/_lbaillie).
 
 <div align="center">
 <a class="button" href="https://jvns.ca/networking-zine.pdf">Read the zine online!</a>
-<a class="button" href="https://gum.co/sMfg?wanted=true"
-target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
+<a class="button" href="/networking-zine-print.pdf">Get the print version!</a>   
 </div>
 
 Also there's a delightful coloured in version by Nikoline Bohr: [to print](/networking-zine-print-coloured.pdf) and [to read online](/networking-zine-coloured.pdf)</a>
 
+<hr>
 
 <div align="center">
 <a href="#strace-zine" style="color: black">
@@ -84,16 +280,17 @@ strace is my favorite program. I think that it doesn't get enough attention
 from programmers, so I wrote a zine about it to teach more people about how to
 use it.
 
-* version to read on your <a href="/strace-zine-v2.pdf">computer</a>
-* print version: <a href="/strace-zine-v2-print.pdf">letter</a>
-* you can buy <a href="https://www.stickermule.com/marketplace/15188-strace?utm_swu=8122">strace stickers</a> 
+You can buy <a href="https://www.stickermule.com/marketplace/15188-strace?utm_swu=8122">strace stickers</a>.
+
 
 <div align="center">
-<a href="/strace-zine-v2.pdf">
-<img src="/images/strace-zine-cover.svg" width="300px">
+  <img src="/images/strace-zine-cover-full.png" width=300px><br>
+  <a class="button" href="/strace-zine-v2.pdf">Read online</a>
+  <a class="button" href="/strace-zine-v2-print.pdf">Get the print version!</a>   
 </a>
 </div>
 
+<hr>
 
 <div align="center">
 <a href="#linux-debugging-tools" style="color: black">
@@ -108,33 +305,59 @@ are who this zine is for!!! Read it and find out why I love them! Also, a lot
 of these tools happen to work on OS X :)
 
 <div align="center">
-<a href="http://jvns.ca/debugging-zine.pdf"><img src="/images/debugging-tools-cover.png"></a>
+<a href="http://jvns.ca/debugging-zine.pdf"><img src="/images/debugging-tools-cover-full.png" width="300px"></a>
 </div>
 
 
 
 <div align="center">
 <a class="button" href="https://jvns.ca/debugging-zine.pdf">Read the zine online!</a>
-<a class="button" href="https://gum.co/eXGFE?wanted=true"
-target="_blank" data-gumroad-single-product="true">Get the print version!</a>   
+<a class="button" href="/debugging-zine-print-letter.pdf">Get the print version!</a>   
 </div>
 
 The cover art is by [Monica](https://twitter.com/notwaldorf), who is the best.
 There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/310164/).
 
-<h3 id="prod-ml">Production machine learning </h3>
-
-This is a tiny zine, not as fancy as the others. 
-
+<hr>
 <div align="center">
-<a href="/production-machine-learning.pdf"><img src="/images/prod-ml-cover.png" width="300px"></a>
+<a href="#linux-tracing" style="color: black">
+<h3 id="linux-tracing">★★★ Linux tracing systems & how they fit together★★★ </h3>
+</a>
 </div>
 
-* [version you can read on your computer](/production-machine-learning.pdf)
-* [version you can print and staple and fold](/production-machine-learning-print.pdf)
 
-If you like it, you should read the PDF that it's based on: [Rules of Machine Learning:
+<div align="center">
+<img src="/images/linux-tracing-systems-cover.png" width=300px>
+</div>
+
+There are a **lot** of Linux tracing systems. I was extremely confused about the relationship
+between perf/ftrace/bcc/LTTng/uprobes/kprobes/BPF, etc. What are all these words? What do they mean?
+This zine breaks it down for you.
+
+If you're interested in this zine you may also like the blog post [Linux tracing systems and how they fit together](https://jvns.ca/blog/2017/07/05/linux-tracing-systems/).
+
+<div align="center">
+  <a class="button" href="/linux-tracing-zine.pdf">Read online</a>
+  <a class="button" href="/linux-tracing-zine-print.pdf">Get the print version!</a>   
+</div>
+
+<hr>
+
+<h3 id="prod-ml">Production machine learning </h3>
+
+This is a tiny zine, not as fancy as the others. It has some comics about rules to follow when doing
+machine learning in production.
+
+<div align="center">
+<a href="/production-machine-learning.pdf"><img src="/images/prod-ml-cover.png" width="300px"></a> <br>
+  <a class="button" href="/production-machine-learning.pdf">Read online</a>
+  <a class="button" href="/production-machine-learning-print.pdf">Get the print version!</a>   
+</div>
+
+If you like it, you should read the fantastic PDF that it's based on: [Rules of Machine Learning:
 Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf), which I found out about thanks to [Avi Bryant](https://twitter.com/avibryant).
+
+<hr>
 
 <h3 id="whats-a-zine">What's a zine?</h3>
 
