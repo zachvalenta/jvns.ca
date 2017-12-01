@@ -21,6 +21,15 @@ categories: []
     border-bottom: 1px #cccccc solid;
 }
 
+hr.light {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
 .zine-link {
     color: black;
 }
@@ -188,7 +197,7 @@ href="https://www.upwork.com/freelancers/~0192887d804879250b">Vladimir Kašikovi
   <a class="button" href="/wizard-zine-print.pdf">Get the print version!</a>   
 </div>
 
-<hr>
+<hr class="light">
 
 <div align="center">
 <a href="#linux-comics" style="color: black">
@@ -214,7 +223,7 @@ find something interesting in it :)
 <a class="button" href="/linux-comics-zine-print.pdf">Get the print version!</a>   
 </div>
 
-<hr>
+<hr class="light">
 
 <div align="center">
 <a href="#tcpdump" style="color: black">
@@ -243,7 +252,7 @@ href="https://www.upwork.com/freelancers/~0192887d804879250b">Vladimir Kašikovi
 <a class="button" href="https://jvns.ca/tcpdump-zine-print.pdf">Get the print version!</a>   
 </div>
 
-<hr>
+<hr class="light">
 
 <div align="center">
 <a href="#networking-ack" style="color: black">
@@ -268,7 +277,7 @@ Cover art by the amazing [Lee Baillie](https://twitter.com/_lbaillie).
 
 Also there's a delightful coloured in version by Nikoline Bohr: [to print](/networking-zine-print-coloured.pdf) and [to read online](/networking-zine-coloured.pdf)</a>
 
-<hr>
+<hr class="light">
 
 <div align="center">
 <a href="#strace-zine" style="color: black">
@@ -290,7 +299,7 @@ You can buy <a href="https://www.stickermule.com/marketplace/15188-strace?utm_sw
 </a>
 </div>
 
-<hr>
+<hr class="light">
 
 <div align="center">
 <a href="#linux-debugging-tools" style="color: black">
@@ -318,7 +327,7 @@ of these tools happen to work on OS X :)
 The cover art is by [Monica](https://twitter.com/notwaldorf), who is the best.
 There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/310164/).
 
-<hr>
+<hr class="light">
 <div align="center">
 <a href="#linux-tracing" style="color: black">
 <h3 id="linux-tracing">★★★ Linux tracing systems & how they fit together★★★ </h3>
@@ -341,7 +350,7 @@ If you're interested in this zine you may also like the blog post [Linux tracing
   <a class="button" href="/linux-tracing-zine-print.pdf">Get the print version!</a>   
 </div>
 
-<hr>
+<hr class="light">
 
 <h3 id="prod-ml">Production machine learning </h3>
 
@@ -357,7 +366,7 @@ machine learning in production.
 If you like it, you should read the fantastic PDF that it's based on: [Rules of Machine Learning:
 Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf), which I found out about thanks to [Avi Bryant](https://twitter.com/avibryant).
 
-<hr>
+<hr class="light">
 
 <h3 id="whats-a-zine">What's a zine?</h3>
 
