@@ -56,8 +56,8 @@ I've published 8 (!!) zines about systems & debugging tools. Here's some general
 * <a href="#whats-a-zine"> **What's a zine?**</a>
 * <a href="#print-directions"> **Printing directions**</a>
 
-and the zines. You can get more information about any of them by clicking on the cover. They all
-have a PDF you can read on your computer and a print version.
+You can get more information about any of them by clicking on the cover. They all have a PDF you can
+read on your computer and a print version.
 
 <div class="container">
 
