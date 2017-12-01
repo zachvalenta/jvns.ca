@@ -6,7 +6,7 @@ categories: []
 ---
 
 I started reading "[Effective DevOps](https://www.amazon.com/Effective-DevOps-Building-Collaboration-Affinity/dp/1491926309)" by [Jennifer Davis](https://twitter.com/sigje) and 
-[Katherine Daniels](https://twitter.com/beerops) yesterday.
+[Ryn Daniels](https://twitter.com/beerops) yesterday.
 
 I'm still only part of the way through, but I realized while reading it
 that I had no idea what "devops" even meant. I had some vague idea that
@@ -40,10 +40,10 @@ towards different practices. They did not wake up one day and become
 devops. I think this is the [first talk that used the term 'devops'](https://youtu.be/LdOe18KhtT4)?
 
 It's also not about "everyone is a software developer" -- one of the authors of
-this book, Katherine Daniels, is a [senior operations engineer at Etsy](https://beero.ps/2015/09/26/on-becoming-a-senior-engineer/).
-I don't know any of the details of her job, but my impression is that she has a
+this book, Ryn Daniels, is a [senior operations engineer at Etsy](https://beero.ps/2015/09/26/on-becoming-a-senior-engineer/).
+I don't know any of the details of their job, but my impression is that they have a
 lot of expertise in operations. It's not like "make operations so
-easy that nobody has to an expert at it". Of course you need people who
+easy that nobody has to be an expert at it". Of course you need people who
 know a ton about operations! Probably those people write software as
 part of their job?
 
