@@ -330,7 +330,7 @@ There's also a [Russian translation](https://m.habrahabr.ru/company/first/blog/3
 <hr class="light">
 <div align="center">
 <a href="#linux-tracing" style="color: black">
-<h3 id="linux-tracing">★★★ Linux tracing systems & how they fit together★★★ </h3>
+<h3 id="linux-tracing"> Linux tracing systems & how they fit together </h3>
 </a>
 </div>
 
