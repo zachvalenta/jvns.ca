@@ -46,7 +46,11 @@ is "How **do** you write a profiler?"
 
 In this post, we're just going to focus on CPU profilers (and not, say, memory/heap profilers). I'll
 explain some basic general approaches to writing a profiler, give some code examples, and take a
-bunch of examples of popular Ruby & Python Ruby profilers and tell you how they work.
+bunch of examples of popular Ruby & Python profilers and tell you how they work under the hood.
+
+There are probably some mistakes in this post (as research for this post I read parts of the code
+for 14 different profiling libraries and most of those I hadn't looked at before today), please let
+me know what they are!
 
 ### 2 kinds of profilers
 
