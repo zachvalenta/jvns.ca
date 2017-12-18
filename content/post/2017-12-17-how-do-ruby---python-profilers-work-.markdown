@@ -88,7 +88,8 @@ Name | Kind | How it works
 
 "gdb hacks" isn't a Python profiler exactly -- it links to website talking about how to implement a
 hacky profiler as a shell script wrapper around gdb. It's relevant to Python because newer versions
-of gdb will actually unwind the Python stack or you. Kind of a poor man's pyflame.
+of gdb will actually unwind the Python stack for you. Kind of a poor man's pyflame.
+
 
 **Ruby profilers**
 
@@ -271,6 +272,11 @@ One important thing about `setitimer` is that you need to decide **how to count 
 closely at the call sites above you'll notice that these profilers actually make different choices about how to `setitimer`
 -- sometimes it's configurable, and sometimes it's not. The [setitimer man page](http://man7.org/linux/man-pages/man2/setitimer.2.html) is short and worth reading to understand all the options.
 
+[@mgedmin on twitter](https://twitter.com/mgedmin/status/942789932128534528) pointed out one
+interesting downside of using `setitimer`. [this issue](https://github.com/23andMe/djdt-flamegraph/issues/4)  and [this issue](https://github.com/23andMe/djdt-flamegraph/issues/5) have a bit more detail.
+
+> One INTERESTING downside of setitimer-based profilers is that the timers cause signals!  Signals sometimes interrupt system calls!  System calls sometimes take a few milliseconds!  If you sample too frequently, you can make your program keep retrying the same syscall *forever*!
+
 ### Sampling profilers that don't use setitimer
 
 There are a few sampling profilers that doesn't use `setitimer`: 
@@ -285,7 +291,7 @@ There are a few sampling profilers that doesn't use `setitimer`:
 All 3 of these profilers sample using wall clock timing.
 
 
-### That's alll for now!
+### That's all for now!
 
 There are a lot of important subtleties I didn't get into in this post -- for example I basically
 said `vmprof` and `stacksampler` are the same (they're not -- vmprof supports line profiling and
