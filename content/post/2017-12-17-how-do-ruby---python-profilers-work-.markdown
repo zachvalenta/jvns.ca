@@ -290,6 +290,26 @@ There are a few sampling profilers that doesn't use `setitimer`:
 
 All 3 of these profilers sample using wall clock timing.
 
+### pyflame blog posts
+
+There's a lot more to how pyflame works. I won't get into it here but Evan Klitzke has written
+a lot of really good blog posts about it:
+
+* [Pyflame: Uber Engineering’s Ptracing Profiler for Python](https://eng.uber.com/pyflame/)
+  introducing pyflame
+* [Pyflame Dual Interpreter Mode](https://eklitzke.org/pyflame-dual-interpreter-mode) about how it
+  supports both Python 2 and Python 3 at the same time
+* [An Unexpected Python ABI Change](https://eklitzke.org/an-unexpected-python-abi-change) on adding
+  Python 3.6 support
+* [Dumping Multi-Threaded Python Stacks](https://eklitzke.org/dumping-multi-threaded-python-stacks)
+* [Pyflame packages](https://eklitzke.org/pyflame-packages)
+* an [interesting issue with ptrace + syscalls in Python](https://github.com/eklitzke/ptrace-syscall)
+* [Using ptrace for fun and profit](https://eklitzke.org/ptrace), [ptrace (continued)](https://eklitzke.org/ptrace-continued)
+
+and there's more at https://eklitzke.org/. All really interesting stuff that I'm going to read more
+carefully -- maybe ptrace is a better approach than `process_vm_readv` for implementing a Ruby
+profiler! (process_vm_readv is lower overhead because it doesn't stop the process, but it also can
+give you an inconsistent snapshot because it doesn't stop the process :))
 
 ### That's all for now!
 
