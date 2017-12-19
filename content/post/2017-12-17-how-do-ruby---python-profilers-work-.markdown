@@ -292,7 +292,11 @@ All 3 of these profilers sample using wall clock timing.
 
 ### pyflame blog posts
 
-There's a lot more to how pyflame works. I won't get into it here but Evan Klitzke has written
+I spent almost all my time in this post on profilers other than `pyflame` but `pyflame` is actually
+the one I'm the most interested in because it profiles your Python program from a separate process,
+and that's how I want my Ruby profiler to work too.
+
+There's a lot more to how it does that. I won't get into it here but Evan Klitzke has written
 a lot of really good blog posts about it:
 
 * [Pyflame: Uber Engineering’s Ptracing Profiler for Python](https://eng.uber.com/pyflame/)
@@ -308,8 +312,9 @@ a lot of really good blog posts about it:
 
 and there's more at https://eklitzke.org/. All really interesting stuff that I'm going to read more
 carefully -- maybe ptrace is a better approach than `process_vm_readv` for implementing a Ruby
-profiler! (process_vm_readv is lower overhead because it doesn't stop the process, but it also can
-give you an inconsistent snapshot because it doesn't stop the process :))
+profiler! `process_vm_readv` is lower overhead because it doesn't stop the process, but it also can
+give you an inconsistent snapshot because it doesn't stop the process :). In my experiments getting
+inconstistent snapshots wasn't too big of a problem but I think I'll do some experimentation here.
 
 ### That's all for now!
 
