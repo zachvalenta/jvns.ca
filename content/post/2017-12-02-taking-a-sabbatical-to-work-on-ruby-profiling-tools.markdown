@@ -2,7 +2,7 @@
 title: "Taking a sabbatical to work on Ruby profiling tools"
 date: 2017-12-02T08:57:03Z
 url: /blog/2017/12/02/taking-a-sabbatical-to-work-on-ruby-profiling-tools/
-categories: []
+categories: ["ruby-profiler"]
 ---
 
 Hello! I have an exciting announcement! I've announced this before on Twitter, but not here.

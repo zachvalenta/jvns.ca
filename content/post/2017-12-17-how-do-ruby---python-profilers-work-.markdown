@@ -2,7 +2,7 @@
 title: "How do Ruby & Python profilers work?"
 date: 2017-12-17T19:53:16Z
 url: /blog/2017/12/17/how-do-ruby---python-profilers-work-/
-categories: []
+categories: ["ruby-profiler"]
 ---
 
 <style type="text/css">

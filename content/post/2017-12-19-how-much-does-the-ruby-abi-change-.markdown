@@ -2,7 +2,7 @@
 title: "How often do Ruby's stack struct definitions change?"
 date: 2017-12-19T09:28:44Z
 url: /blog/2017/12/19/how-much-does-the-ruby-abi-change-/
-categories: []
+categories: ["ruby-profiler"]
 ---
 
 Hello! I am doing some research for my Ruby profiler this week, and so I thought I'd write the
