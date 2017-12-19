@@ -158,4 +158,6 @@ releases? I haven't checked yet.). the two options I see right now are
   require code changes)
 * Get headers for every minor Ruby version (2.3.1, 2.3.2, 2.3.3, 2.3.4, etc). I made [this quick list](https://gist.githubusercontent.com/jvns/6ea9a449dcb4c77f2cf8686bd3a2cd7e/raw/6c7004e70eba0f973f24ca5d7eb30bf027be2b21/ruby-versions.txt) and it seems like there are maybe.. 40 minor ruby versions? That is a lot but not an infinite amount. In Rust I could use bindgen to generate Rust bindings for all those ruby verions and just like.. commit all the versions into my repository. This seems kinda like more work up front but it would be nice to have all the possible weird struct definitions at compile time. And maybe I could get away with less than 40 versions somehow.
 
+Quick aside: there's an [interesting-looking research project by Stephen Kell called liballocs](https://github.com/stephenrkell/liballocs) which makes it easier to work with DWARF. Here's [an example C file it generates (gzipped)](http://www.cl.cam.ac.uk/~srk31/private/tmp/libc-2.24.so-meta.c.gz) (from libc). Mostly linking to it so I remember to come back to it later.
+
 That's all for now! I'll continue looking at this later.
