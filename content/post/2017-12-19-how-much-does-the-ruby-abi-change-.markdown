@@ -6,7 +6,12 @@ categories: []
 ---
 
 Hello! I am doing some research for my Ruby profiler this week, and so I thought I'd write the
-research in a blog post.
+research in a blog post. This is all stuff I'm trying to figure out this morning so it's all pretty
+early-stage.
+
+Basically I'm trying to figure out if I can define a finite fixed set of Ruby struct layouts in my
+Ruby profiler at compile time (RUBY_2_3_0, RUBY_2_4_0, etc) or if I need to get the struct layouts
+at runtime using DWARF.
 
 Before I dive in the gnarly question of "how often does vm_core.h" change in ways that I care
 about?", let's start with a little background.
