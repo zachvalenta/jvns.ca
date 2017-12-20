@@ -23,6 +23,8 @@ A reason these are important is that there's an expectation that they be somewha
 
 One fact that I learned yesterday is -- you can embed Python in your C programs! Here are the [docs on embedding Python](https://docs.python.org/2/extending/embedding.html). Some examples of programs that embed Python include Sublime Text, Maya, Blender, Inkscape, Nuke -- a lot of graphics / 3D modelling programs. There are more listed at on [Python's Wikipedia page](https://en.wikipedia.org/wiki/Python_(programming_language)#Uses). 
 
+I also found this [argument/rant from Glyph that you shouldn't embed Python](https://twistedmatrix.com/users/glyph/rant/extendit.html) interesting reading.
+
 ### Ruby is embeddable
 
 There isn't any documentation on http://ruby-lang.org  (that I can find) about embedding Ruby. But when I said on twitter that ruby wasn't embeddable, Matz replied and said "CRuby is also embeddable. But mruby has better API for embedding." Obviously he's right that CRuby is embeddable, so let's find out what's up!
