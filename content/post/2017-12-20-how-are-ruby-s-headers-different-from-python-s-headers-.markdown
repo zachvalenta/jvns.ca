@@ -5,6 +5,9 @@ url: /blog/2017/12/20/how-are-ruby-s-headers-different-from-python-s-headers-/
 categories: []
 ---
 
+This is another research-y post, most things in here I learned in the last 24 hours so likely some
+of it is wrong.
+
 Today and yesterday I've been trying to figure out how the public header files Ruby exposes are
 different from the header files Python exposes (how are their public C APIs different?). You can get
 these headers in the libruby-dev / libpython-dev Debian packages. These header files live in
@@ -28,8 +31,8 @@ First -- https://github.com/mruby/mruby is a lightweight implementation of Ruby 
 
 But what about CRuby being embeddable? Let's investigate that. The first point of documentation is [doc/extension.rdoc](https://github.com/ruby/ruby/blob/098c8d5491add1475dbf7fb8889bd53f47d5c8ca/doc/extension.rdoc) in the Ruby repo (previously called README.ext). The most useful docs I found was [the Pragmatic Programmer chapter "Extending Ruby"](http://ruby-doc.com/docs/ProgrammingRuby/html/ext_ruby.html). 
 
-I don't know of any programs that embed CRuby (which isn't saying much because I only learned it was
-embeddable like 2 hours ago) but mruby seems to be pretty popular.
+mruby seems to be more popular for embedding than CRuby but at least one popular program embeds
+CRuby/MRI: [RPG Maker](http://www.rpgmakerweb.com/)! (thanks to [Florian](https://twitter.com/Argorak/status/943546606808334337) for pointing this out)
 
 ### Cool example of embedding Ruby: filtering syscalls!
 
