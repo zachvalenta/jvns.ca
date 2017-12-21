@@ -99,7 +99,11 @@ bindgen /tmp/headers/2_3_0/vm_core.h\
 
 ### generating bindings at build time
 
-You might have noticed that I committed the bindings I generated into my repository. Maybe you don’t think that’s the right approach and you would instead like to generate the bindings at build time. This is totally possible! It’s [documented really nicely in the bindgen user’s guide](https://rust-lang-nursery.github.io/rust-bindgen/library-usage.html). 
+You might have noticed that I committed the bindings I generated into my repository. This is not
+actually the recommended way to use bindgen -- they recommend in general that you generate your
+bindings during your build.
+
+How to do that is [documented really nicely in the bindgen user’s guide](https://rust-lang-nursery.github.io/rust-bindgen/library-usage.html). 
 
 Basically you create a `build.rs` file that runs during your build and uses the bindgen library to generate bindings. I think I like the approach of having a `build.rs` + Cargo.toml instead of a Makefile a lot -- it seems easier to maintain. And you can declare separate build dependencies in Cargo.toml!
 
