@@ -5,6 +5,9 @@ url: /blog/2017/12/21/bindgen-is-awesome/
 categories: ["ruby-profiler"]
 ---
 
+<small>Yesterday I made a category for these ruby profiler posts on my blog because I think there
+will be a lot of them. It's at https://jvns.ca/categories/ruby-profiler.</small>
+
 Hello! Today I am excited about bindgen, an awesome Rust tool for generating bindings from C header files. It has a
 [great user’s guide](https://rust-lang-nursery.github.io/rust-bindgen/). 
 
@@ -99,6 +102,11 @@ bindgen /tmp/headers/2_3_0/vm_core.h\
 You might have noticed that I committed the bindings I generated into my repository. Maybe you don’t think that’s the right approach and you would instead like to generate the bindings at build time. This is totally possible! It’s [documented really nicely in the bindgen user’s guide](https://rust-lang-nursery.github.io/rust-bindgen/library-usage.html). 
 
 Basically you create a `build.rs` file that runs during your build and uses the bindgen library to generate bindings. I think I like the approach of having a `build.rs` + Cargo.toml instead of a Makefile a lot -- it seems easier to maintain. And you can declare separate build dependencies in Cargo.toml!
+
+### cbindgen: reverse bindgen
+
+Someone on Twitter pointed me to [cbindgen](https://github.com/eqrion/cbindgen), a tool to go the
+other way and generate C bindings for your Rust code. Neat!
 
 ### gonna continue experimenting
 
