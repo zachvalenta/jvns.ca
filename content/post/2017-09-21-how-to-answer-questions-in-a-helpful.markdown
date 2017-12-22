@@ -198,6 +198,8 @@ Obviously not all these strategies are appropriate all the time, but hopefully
 you will find some of them helpful! I find taking the time to answer questions
 and teach people can be really rewarding.
 
+There's an [unofficial Chinese translation of this post here](https://blog.m157q.tw/posts/2017/12/21/how-to-answer-questions-in-a-helpful-way-zh-tw/).
+
 <small>
 Special thanks to Josh Triplett for suggesting this post and making many helpful additions, and to Harold Treen, Vaibhav Sagar, Peter Bhat Harkins, Wesley Aptekar-Cassels, and Paul Gowder for reading/commenting.
 </small>
