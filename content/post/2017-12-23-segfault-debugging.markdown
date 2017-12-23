@@ -2,7 +2,7 @@
 title: "Debugging a segfault in my Rust program"
 date: 2017-12-23T12:25:50Z
 url: /blog/2017/12/23/segfault-debugging/
-categories: []
+categories: ["ruby-profiler"]
 ---
 
 Hello! Yesterday I finished debugging a segfault. It was (in retrospect) a pretty easy thing to fix
