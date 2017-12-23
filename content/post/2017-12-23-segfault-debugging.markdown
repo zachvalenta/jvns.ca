@@ -224,14 +224,18 @@ it turns out that there are 2 things wrong with this code
 
 Basically instead of trying to cast my memory by creating a new vec, I created a slice instead. I
 think this might actually still violate some memory safety guarantees but it's a step in the right direction I think. It looks
-kinda like this:
+like this:
 
 ```
-let slice: &[size_80_struct] = unsafe { std::slice::from_raw_parts(vec.as_mut_ptr() as *mut size_80_struct, 7) };
+let mut cfps: Vec<u8> = get_cfps(&thread, source_pid);
+let slice: &[rb_control_frame_struct] = unsafe { std::slice::from_raw_parts(cfps.as_mut_ptr() as *mut rb_control_frame_struct, cfps.capacity() as usize / mem::size_of::<rb_control_frame_struct>() as usize) };
 ```
 
-And my program doesn't segfault for now! I think I might need to stop using `Vec`s entirely though.
-I need to learn about how `Vec`s work exactly and how it's appropriate to use them.
+I don't `mem::forget` the vec anymore, I just let create a slice view of it, iterate over that slice
+and then let Rust deallocate the `Vec<u8>` at the end of the function.
+
+And my program doesn't segfault for now! I think I might need to stop using `Vec`s entirely though
+here.  I need to learn about how `Vec`s work exactly and how it's appropriate to use them.
 
 ### things I learned
 
@@ -244,7 +248,7 @@ reason people like to use mprotect.
 **asan/tsan exist**:: There is are things in clang called "ThreadSanitizer/AddressSanitizer" ("tsan"/"asan") that can do basically the same thing as valgrind does, but with way less overhead. I did not get them to work this time around but there's documentation about how to use them with Rust  at https://github.com/japaric/rust-san and it seems really cool.
 
 **leaking memory is safe**. I was kind of surprised to learn that leaking memory is safe in Rust (you
-can do it on purpose with `mem::forget`!). I think usually safe Rust code won't have leaks but it's not a strict guarantee. Rust **does** guarantee that you code won't segfault. The best reference for this is in the official Rust documentation: [Behavior considered undefined](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [Behavior not considered unsafe](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html). I think "undefined" and "unsafe" are considered to be synonyms.
+can do it on purpose with `mem::forget`!). I think usually safe Rust code won't have leaks but it's not a strict guarantee. Rust also **doesn't** guarantee that you code won't segfault if you write safe code!! ("we install a guard page after the stack to safely terminate the program with a segfault on stack overflows") The best reference for this is in the official Rust documentation: [Behavior considered undefined](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [Behavior not considered unsafe](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html). I think "undefined" and "unsafe" are considered to be synonyms.
 
 **read the docs around unsafe functions really carefully**. Using unsafe functions can be safe! You
 just need to be careful to make sure to call those functions in a way that maintains the invariants
