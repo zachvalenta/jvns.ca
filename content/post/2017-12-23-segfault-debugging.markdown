@@ -222,10 +222,7 @@ it turns out that there are 2 things wrong with this code
 
 ### how I fixed it
 
-Basically instead of trying to cast my memory by creating a new vec, I created a slice instead. I
-think this might actually still violate some memory safety guarantees but it's a step in the right direction I think. It looks
-like this:
-
+Basically instead of trying to cast my memory by creating a new vec, I created a slice instead. 
 ```
 let mut cfps: Vec<u8> = get_cfps(&thread, source_pid);
 let slice: &[rb_control_frame_struct] = unsafe { std::slice::from_raw_parts(cfps.as_mut_ptr() as *mut rb_control_frame_struct, cfps.capacity() as usize / mem::size_of::<rb_control_frame_struct>() as usize) };
@@ -234,8 +231,14 @@ let slice: &[rb_control_frame_struct] = unsafe { std::slice::from_raw_parts(cfps
 I don't `mem::forget` the vec anymore, I just let create a slice view of it, iterate over that slice
 and then let Rust deallocate the `Vec<u8>` at the end of the function.
 
-And my program doesn't segfault for now! I think I might need to stop using `Vec`s entirely though
-here.  I need to learn about how `Vec`s work exactly and how it's appropriate to use them.
+And my program doesn't segfault for now! The reason this works (and is safe!) is that `Vec` are
+always backed by contiguous memory -- I was worried that they weren't, but literally the first
+sentence in the Rust documentation on `Vec`s says:
+
+> A contiguous growable array type, written Vec<T> but pronounced 'vector'.
+
+So since a Vec is contiguous memory I can just cast it to a slice and iterate over that slice
+safely. I think.
 
 ### things I learned
 
@@ -245,7 +248,7 @@ a way, the program that segfaulted was **better** than the program that didn't, 
 picking up a subtle problem that could bite me later if I didn't fix it. I think this is the same
 reason people like to use mprotect.
 
-**asan/tsan exist**:: There is are things in clang called "ThreadSanitizer/AddressSanitizer" ("tsan"/"asan") that can do basically the same thing as valgrind does, but with way less overhead. I did not get them to work this time around but there's documentation about how to use them with Rust  at https://github.com/japaric/rust-san and it seems really cool.
+**asan/tsan exist**:: There are things in clang called "ThreadSanitizer/AddressSanitizer" ("tsan"/"asan") that can do sorta the same thing as valgrind does, but with way less overhead. I did not get them to work this time around but there's documentation about how to use them with Rust  at https://github.com/japaric/rust-san and it seems really cool.
 
 **leaking memory is safe**. I was kind of surprised to learn that leaking memory is safe in Rust (you
 can do it on purpose with `mem::forget`!). I think usually safe Rust code won't have leaks but it's not a strict guarantee. Rust also **doesn't** guarantee that you code won't segfault if you write safe code!! ("we install a guard page after the stack to safely terminate the program with a segfault on stack overflows") The best reference for this is in the official Rust documentation: [Behavior considered undefined](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [Behavior not considered unsafe](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html). I think "undefined" and "unsafe" are considered to be synonyms.
@@ -261,8 +264,9 @@ answer to "why does this code segfault with jemalloc but not libc malloc": (from
 
 > jemalloc caches memory thread-locally, bucketed by the size reserved for it, so it doesn't have to touch the central allocator as often (risking lock contention). We can dodge some metadata lookups if the user tells us the size of the memory being freed; if we think an N-byte allocation is really M > N bytes, then we'll return it for an M-byte request (stomping over someone else data at bytes M-N up to N).
 
-I still don't fully understand why [this program](https://play.rust-lang.org/?gist=72152fe80acd41bd68c5d0be7ca0dc10&version=nightly)
-segfaults with jemalloc but comment helps me a bit!
+I think this was what was happening -- I'd set the capacity of the new vector incorrectly (560
+instead of 7) and so jemalloc took the (wrong) hint about the how big the allocation being freed was
+and that caused a segfault somehow.
 
 ### this was cool!
 
