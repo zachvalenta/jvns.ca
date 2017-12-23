@@ -214,20 +214,24 @@ let rebuilt: Vec<size_80_struct> = unsafe {
 };
 ```
 
-I went and read the `Vec::from_raw_parts` docs for the 20th time and finally read this: **`ptr's T needs to have the same size and alignment as it was allocated with.`**. OH. `size_80_struct` definitely does not have the same size as a byte.
+it turns out that there are 2 things wrong with this code
+
+1. the third argument to `from_raw_parts` is the length, not the number of bytes (so it should be 7,
+   not 560)
+2. I went and read the `Vec::from_raw_parts` docs for the 20th time and finally read this: **`ptr's T needs to have the same size and alignment as it was allocated with.`**. `size_80_struct` definitely does not have the same size as a byte so that's no good.
 
 ### how I fixed it
 
 Basically instead of trying to cast my memory by creating a new vec, I created a slice instead. I
 think this might actually still violate some memory safety guarantees but it's a step in the right direction I think. It looks
-kida like this:
+kinda like this:
 
 ```
 let slice: &[size_80_struct] = unsafe { std::slice::from_raw_parts(vec.as_mut_ptr() as *mut size_80_struct, 7) };
 ```
 
 And my program doesn't segfault for now! I think I might need to stop using `Vec`s entirely though.
-I need to learn about how `Vec`s work exactly and how it's appropriate to use tem.
+I need to learn about how `Vec`s work exactly and how it's appropriate to use them.
 
 ### things I learned
 
