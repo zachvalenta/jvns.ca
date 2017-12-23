@@ -253,6 +253,10 @@ reason people like to use mprotect.
 **leaking memory is safe**. I was kind of surprised to learn that leaking memory is safe in Rust (you
 can do it on purpose with `mem::forget`!). I think usually safe Rust code won't have leaks but it's not a strict guarantee. Rust also **doesn't** guarantee that you code won't segfault if you write safe code!! ("we install a guard page after the stack to safely terminate the program with a segfault on stack overflows") The best reference for this is in the official Rust documentation: [Behavior considered undefined](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [Behavior not considered unsafe](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html). I think "undefined" and "unsafe" are considered to be synonyms.
 
+This is a bit confusing to me because safe Rust programs usually **won't** have memory leaks or
+segfault, and that's part of Rust's memory safety. But it seems that there also aren't strict
+guarantees that segfaults/memory leaks won't happen. I have more to learn here!
+
 **read the docs around unsafe functions really carefully**. Using unsafe functions can be safe! You
 just need to be careful to make sure to call those functions in a way that maintains the invariants
 that Rust expects. Rust has really clear documentation about what the expectations of unsafe
