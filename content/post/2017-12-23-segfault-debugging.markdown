@@ -31,7 +31,7 @@ really helpful to me. There are probably more reasons I don't know about.
 
 ### why do segfaults happen in Rust?
 
-Segfaults happen in Rust for all the same reasons, but Rust also offers compile-team guarantees that
+Segfaults happen in Rust for all the same reasons, but Rust also offers compile-time guarantees that
 your program won't segfault. So, as far as I understand it, there are 2 possible reasons your
 **Rust** program can segfault:
 
