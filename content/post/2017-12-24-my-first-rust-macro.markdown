@@ -17,13 +17,14 @@ I used [these examples](https://gist.github.com/jfager/5936197) to figure out ho
 There's more than one kind of macro in Rust -- 
 
 * macros defined using `macro_rules` (they have an exclamation mark and you call them like functions -- `my_macro!()`)
-* syntax extensions like `#[derive(Debug)]` (you put these like annotations on your functions)
+* "syntax extensions" / "procedural macros" like `#[derive(Debug)]` (you put these like annotations on your functions)
 * built-in macros like `println!`
 
 [Macros in Rust](https://www.ncameron.org/blog/macros-in-rust-pt1/) and [Macros in Rust part II](https://www.ncameron.org/blog/macros-in-rust-pt2/) seems like a nice overview of the different kinds with examples
 
 I'm not actually going to try to explain what a macro **is**, instead I will just show you what I
-used a macro for yesterday and hopefully that will be interesting.
+used a macro for yesterday and hopefully that will be interesting. I'm going to be talking about
+`macro_rules!`, I don't understand syntax extension/procedural macros yet.
 
 ### compiling the `get_stack_trace` function for 30 different Ruby versions
 
