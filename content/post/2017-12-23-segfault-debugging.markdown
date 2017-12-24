@@ -251,7 +251,12 @@ reason people like to use mprotect.
 **asan/tsan exist**:: There are things in clang called "ThreadSanitizer/AddressSanitizer" ("tsan"/"asan") that can do sorta the same thing as valgrind does, but with way less overhead. I did not get them to work this time around but there's documentation about how to use them with Rust  at https://github.com/japaric/rust-san and it seems really cool.
 
 **leaking memory is safe**. I was kind of surprised to learn that leaking memory is safe in Rust (you
-can do it on purpose with `mem::forget`!). I think usually safe Rust code won't have leaks but it's not a strict guarantee. Rust also **doesn't** guarantee that you code won't segfault if you write safe code!! ("we install a guard page after the stack to safely terminate the program with a segfault on stack overflows") The best reference for this is in the official Rust documentation: [Behavior considered undefined](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [Behavior not considered unsafe](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html). "Undefined behavior" and "unsafe" are closely related but not the same thing. there are [some tweets here explaining the difference nicely](https://twitter.com/ManishEarth/status/944787133025411072).
+can do it on purpose with `mem::forget`!). I think usually safe Rust code won't have leaks but it's not a strict guarantee. Rust also **doesn't** guarantee that you code won't segfault if you write safe code!! ("we install a guard page after the stack to safely terminate the program with a segfault on stack overflows") The best reference for this is in the official Rust documentation: [Behavior considered undefined](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [Behavior not considered unsafe](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html).
+
+When I originally read those docs I thought that "undefined behavior" and "unsafe" were synonyms. It
+turns out "undefined behavior" and "unsafe" are closely related but not the same thing!  Manish
+Goregaokar wrote a [nice explanation of the difference betwen undefined and unsafe](https://manishearth.github.io/blog/2017/12/24/undefined-vs-unsafe-in-rust/) in response to
+this post. ([also on twitter](https://twitter.com/ManishEarth/status/944787133025411072))
 
 This is a bit confusing to me because safe Rust programs usually **won't** have memory leaks or
 segfault, and that's part of Rust's memory safety. But it seems that there also aren't strict
