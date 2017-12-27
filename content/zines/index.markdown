@@ -136,11 +136,11 @@ read on your computer and a print version.
 <div class="zine">
 <a class="zine-link" href="#strace-zine">
 <h3>Spying on your programs with strace</h3>
-<img src="/images/strace-zine-cover-full.png" width=100%>
+<img src="/images/strace-zine-cover-new.png" width=100%>
 </a>
 <div>
-  <a class="button2" href="/strace-zine-v2.pdf">Read online</a>
-  <a class="button2" href="/strace-zine-v2-print.pdf">Get the print version!</a>   
+  <a class="button2" href="/strace-zine-v3.pdf">Read online</a>
+  <a class="button2" href="/strace-zine-v3-print.pdf">Get the print version!</a>   
 </div>
 </div>
 
@@ -297,9 +297,9 @@ You can buy <a href="https://www.stickermule.com/marketplace/15188-strace?utm_sw
 
 
 <div align="center">
-  <img src="/images/strace-zine-cover-full.png" width=300px><br>
-  <a class="button" href="/strace-zine-v2.pdf">Read online</a>
-  <a class="button" href="/strace-zine-v2-print.pdf">Get the print version!</a>   
+  <img src="/images/strace-zine-cover-new.png" width=300px><br>
+  <a class="button" href="/strace-zine-v3.pdf">Read online</a>
+  <a class="button" href="/strace-zine-v3-print.pdf">Get the print version!</a>   
 </a>
 </div>
 
