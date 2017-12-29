@@ -1,5 +1,5 @@
 ---
-title: "Making an automatic weekly blog digest"
+title: "How I set up an automatic weekly blog digest"
 date: 2017-12-28T21:46:09Z
 url: /blog/2017/12/28/making-a-weekly-newsletter/
 categories: []
