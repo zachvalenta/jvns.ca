@@ -34,7 +34,7 @@ feel like I was able to work on some things that are important to me.
 **inclusion projects**
 
 It's been a goal of mine for a long time to do projects that improve inclusion at work. This is the
-first year where I feel like I made some actual progress on this. This section is kinda long but
+first year where I feel like I made some significant progress on this. (though in 2016 I wrote this [infrastructure engineer job description](https://stripe.com/jobs/positions/infrastructure-engineer) which was also a small inclusion project!)  This section is kinda long but
 here goes.
 
 By "inclusion", I basically mean -- make sure that everyone's work is recognized equally and that
@@ -51,9 +51,9 @@ a way to effectively spend my time on inclusion-themed projects, I can make a di
 
 I did 2 inclusion-y projects in this direction this year: one big, one small. 
 
-Big thing: I worked on revamping our engineering career ladder, in an attempt to make it
-more clear and objective. I wrote the new ladder, created a lot of concrete examples, talked to more
-than 30 people in engineering to get their feedback, and used their feedback to improve it.
+Big thing: I worked on revamping our engineering career ladder, in an attempt to make it more clear
+and objective. I wrote the new ladder, created a lot of concrete examples, talked to more than 30
+people in engineering to get their feedback, and used their feedback to improve it.
 
 This was really hard and it took a long time (2-3 months of working on it part-time) but I think it
 turned out well (the new ladder is definitely more objective!) and I'm happy I spent time on it. It
@@ -105,6 +105,9 @@ it mean? Some things that I've been focusing on:
 
 I think I still have a lot to learn about this role, but those 3 things are all things that I think
 are important, that take time, and are things that I can do. So that's good!
+
+"make sure that when there are incidents we actually fully understand exactly why they happened" is
+also a thing I pay a lot of attention to, though I think everybody else does too.
 
 Someone internally did a survey of things different "tech leads" inside infrastructure do, and
 discovered that different people have very different styles, and there isn't any single way to do
@@ -173,8 +176,7 @@ talks from this year:
 * attended netdev, on linux kernel networking (I didn't speak, but mentioning it just because I
   think I learned more from it than from any of the 4 conferences I spoke at. Food for thought.)
 
-Basically I wrote one keynote-y talk (<a href="https://jvns.ca/blog/so-you-want-to-be-a-wizard">So
-you want to be a wizard</a>) and gave it 3 times. I think the version from PyCon Canada in
+Basically I wrote one keynote-y talk (<a href="https://jvns.ca/blog/so-you-want-to-be-a-wizard">So you want to be a wizard</a>) and gave it 3 times. I think the version from PyCon Canada in
 November was maybe my favourite, I'm excited for the video to be up. It was fun to get to go to
 Shanghai!
 
