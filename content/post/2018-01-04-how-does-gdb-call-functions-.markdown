@@ -17,7 +17,10 @@ Code that _works_ is very exciting!
 
 I believe (through some stracing & experiments) that that example C code is different from how gdb
 actually calls functions, so I'll talk about what I've figured out about what gdb does in this post
-(spoiler: not everything) and how I've figured it out.
+and how I've figured it out.
+
+There is a lot I still don't know about how gdb calls functions, and very likely some things in here
+are wrong.
 
 ### What does it mean to call a C function from gdb?
 
@@ -32,7 +35,7 @@ that, you need to basically:
 * when the function returns, restore the instruction pointer and registers to what they were before
 
 Using the symbol table to figure out the address of the function you want to call is pretty
-straightforward -- here's some sketchy (but working!) Rust code that I've been using on Linux to do that. This code uses the [elf crate](cole14.github.io/rust-elf).
+straightforward -- here's some sketchy (but working!) Rust code that I've been using on Linux to do that. This code uses the [elf crate](https://cole14.github.io/rust-elf).
 If I wanted to find the address of the `foo` function in PID 2345, I'd run
 `elf_symbol_value("/proc/2345/exe", "foo")`.
 
@@ -60,6 +63,12 @@ isn't so hard, they're in `/proc/PID/maps`.
 Anyway, this is all to say that finding the address of the function to call seemed straightforward
 to me but that the rest of it (change the instruction pointer? restore the registers? what else?)
 didn't seem so obvious!
+
+### You can't just jump
+
+I kind of said this already but -- you can't just find the address of the function you want to run
+and then jump to that address. I tried that in gdb (`jump foo`) and the program segfaulted. Makes
+sense!
 
 ### How you can call C functions from gdb
 
@@ -101,6 +110,8 @@ a few possible uses for this:
 
 * it lets you treat gdb a little bit like a C REPL, which is fun and I imagine could be useful for
   development
+* utility functions to display / navigate complex data structures quickly while debugging in gdb
+  (thanks [@invalidop](https://twitter.com/invalidop/status/949161146526781440))
 * [set an arbitrary process's namespace while it's running](https://github.com/baloo/setns/blob/master/setns.c) (featuring a not-so-surprising appearance from my colleague [nelhage](https://github.com/nelhage)!)
 * probably more that I don't know about
 
@@ -200,6 +211,8 @@ which means `send SIGTRAP`), and then once the program is interrupted, it puts t
 the way it was.
 
 I was putting a breakpoint on a function `foo` with the address `0x400528`.
+
+This `PTRACE_POKEDATA` is how gdb changes the code of running programs.
 
 ```
 // change the 0x400528 instructions
