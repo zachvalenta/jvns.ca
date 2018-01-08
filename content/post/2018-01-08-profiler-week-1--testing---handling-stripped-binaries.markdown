@@ -62,7 +62,8 @@ I could deal with this by just asking people to install the `libruby2.3-dbg` pac
 debug symbols). But it seemed more fun to just try to get it to work without debug symbols.
 
 And I did!!! I managed to find the address of the `ruby_current_thread` symbol through some educated
-guessing!! And once I'd found that address, the 
+guessing!! And once I'd found that address, the profiler actually worked! It got stack traces out of
+the process!
 
 This is a "partial success" instead of a "total success" because it worked great on my laptop, but
 then when I tried it in the Docker container it didn't work. Don't know why yet but that's next!
