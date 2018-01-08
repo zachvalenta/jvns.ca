@@ -86,6 +86,10 @@ I merged 3 PRs last week:
   lets you do `./profile ruby my-process.rb`, which will spawn a subprocess and then profile it.
 * [set up integration tests](https://github.com/jvns/ruby-stacktrace/pull/27)
 
+and worked on 1 branch. [Here's the current commit](https://github.com/jvns/ruby-stacktrace/commit/7b5c42b35bbe855639f100bf7f7fd104c8ff5618).
+It's a mess but the meat is in `get_thread_address_alt` and `is_maybe_thread` (which check if a
+given address looks like it **could** be the current thread address).
+
 ### goals this week
 
 * Add support for Ruby 1.8/1.9/2.5
