@@ -159,7 +159,7 @@ readelf -a /usr/lib/x86_64-linux-gnu/libruby-2.3.so.2.3.0 | grep ruby_api_versio
 So in this case the address of the symbol we want is `0x7f2c5d789000` (the start of the libruby-2.3
 memory map) plus `0x1c72f0`. Nice! But we're still not done. There is (at least) one more mystery!
 
-### Problem 3: `vaddr`
+### Problem 3: the `vaddr` offset in the ELF program header
 
 This one I just figured out today so it's the one I have the shakiest understanding of. Here's what
 happened.
