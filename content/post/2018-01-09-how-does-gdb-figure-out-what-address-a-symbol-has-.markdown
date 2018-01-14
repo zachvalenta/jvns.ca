@@ -193,4 +193,4 @@ complicated!
 It would be nice to be able to just call `dlsym` and have it do all the right calculations for me,
 but I think I can't because the symbol is in a different process. Maybe I'm wrong about that though!
 I would like to be wrong about that. If you know an easier way to do all this I would very much like
-to know!
+to know! Someone on Reddit linked to [this interesting gist they wrote ](https://gist.github.com/resilar/24bb92087aaec5649c9a2afc0b4350c8) which seems to also reimplement dlsym.
