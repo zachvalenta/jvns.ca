@@ -303,7 +303,7 @@ it for? (the [friends of rust page](https://www.rust-lang.org/en-US/friends.html
 resource I know) 
 
 Rust is great about being inclusive ("Rust could be for you!") but IMO "here are 10 specific groups
-of people Rust is for" is dramatically useful than a generic inclusive statement.
+of people Rust is for" is dramatically more useful than a generic inclusive statement.
 
 Here are a few suggestions for how to answer the question "Who is Rust for?": (these aren't meant to
 be exclusive, but they are intended to be pretty specific! I think Rust is probably for all these
