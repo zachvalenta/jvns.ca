@@ -236,7 +236,7 @@ system calls it makes, what memory it allocates, how many microseconds it sleeps
 I feel like anything I could do in a C program, I can do in Rust.
 
 I really love this. Rust isn't my go-to language for most programming tasks (if I wanted to write a
-web service, I probably wouldn't personally use Rust!). But I feel kind of like Rust is my superhero
+web service, I probably wouldn't personally use Rust. See [are we web yet](http://www.arewewebyet.org/) if you're interested in web services in Rust though!). I feel kind of like Rust is my superhero
 language!  If I want to do some weird systemsy magical thing, I know that it'll be possible in Rust.
 Maybe not easy, but possible!
 
@@ -325,8 +325,8 @@ people, and many more :))
   to contribute to the Rust language.
 
 Also -- who **isn't** Rust for? What are groups Rust's **wants** to be for but isn't for yet? What group
-of people is Rust explicitly not trying to serve? (like -- maybe Rust is not for people who are
-already C++ experts and who are happy with C++? I don't know!)
+of people is Rust explicitly not trying to serve? (like, is Rust also for people who are already C++
+experts?  I think so!)
 
 That's all! I am very excited about Rust in 2018 and about continuing to work in Rust for the next
 10 weeks!
