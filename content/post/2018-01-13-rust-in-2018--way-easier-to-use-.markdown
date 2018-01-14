@@ -314,6 +314,7 @@ people, and many more :))
 * Rust is **for people building large, complex, performance-sensitive systems software projects**.
   Large parts of Firefox are written in Rust and Rust contributed to significantly improving
   Firefox's performance.
+* Rust is **for C/C++ experts** who want better compile-time guarantees about undefined behavior.
 * Rust is **for people who want to write secure systems code** that's safe from buffer overflows and
   other undefined behavior.
 * Rust is **for students** and people who are interested in learning about systems concepts. Many
@@ -325,8 +326,11 @@ people, and many more :))
   to contribute to the Rust language.
 
 Also -- who **isn't** Rust for? What are groups Rust's **wants** to be for but isn't for yet? What group
-of people is Rust explicitly not trying to serve? (like, is Rust also for people who are already C++
-experts?  I think so!)
+of people is Rust explicitly not trying to serve? 
+
+I think it's exciting that Rust serves such different groups of people -- like I think Rust is for
+people who wish they could write C/C++ but find those languages hard, and that Rust is **also** for
+C/C++ experts who want more from their systems programming languages.
 
 That's all! I am very excited about Rust in 2018 and about continuing to work in Rust for the next
 10 weeks!
