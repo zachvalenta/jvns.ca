@@ -52,7 +52,7 @@ end of the week, and Kamal said it made more sense to him too.
 
 ### better testing with core dumps!
 
-This week I also got some significantly better testing implemented -- now there are a bunch of core
+This week we also got some significantly better testing implemented -- now there are a bunch of core
 dumps in the rbspy-testdata repo (https://github.com/rbspy/rbspy-testdata/tree/master/data).
 
 During the tests, we
@@ -61,7 +61,11 @@ During the tests, we
 * try to read a stack trace from those core dumps as if it was a real Ruby process
 * compare the stack trace we read to the expected output
 
-Kamal [wrote the code to make a core dump mimic a real process](https://github.com/rbspy/rbspy-testdata/blob/431814a7eb50b0bde083b2a52be9e5f68e117518/src/lib.rs) and it's really simple and clever.
+Kamal [wrote the code to make a core dump mimic a real process](https://github.com/rbspy/rbspy-testdata/blob/431814a7eb50b0bde083b2a52be9e5f68e117518/src/lib.rs)
+and it's really simple and clever. This whole testing strategy is Kamal's idea and he actually
+implemented the key ideas 1.5 years ago. Also it was his idea to keep the core dumps in a separate
+`rbspy-testdata` repository so that we can keep several megabytes of coredumps for testing without
+making the main repo huge.
 
 I'm very happy to have these tests and they make me feel a lot more confident that the project is
 actually doing the right thing. And they let me make improvements! For example -- right now I have a
