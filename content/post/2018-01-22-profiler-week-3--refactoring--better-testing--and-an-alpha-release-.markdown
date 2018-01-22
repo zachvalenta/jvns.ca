@@ -8,11 +8,18 @@ categories: []
 Hello! Week 3 of profiler-building is over! My main goal for last week was to release an alpha, and
 I did! You can download the project & try it out at https://github.com/rbspy/rbspy.
 
+If you're interested in how the project is organized, I wrote an [architecture document](https://github.com/rbspy/rbspy/blob/master/ARCHITECTURE.md) this week.
+
 If you do find it useful, I'd be really interested to hear about what you're using it for -- you can
 email me, [leave a message on gitter](https://gitter.im/rbspy/rbspy), tweet at me -- anything! Also
 I very much appreciate bug reports :)
 
-If you're interested in how the project is organized, I wrote an [architecture document](https://github.com/rbspy/rbspy/blob/master/ARCHITECTURE.md) this week.
+For example, somebody [said on Twitter](https://twitter.com/b0rk/status/955257788028145665) that they used `rbspy snapshot` (which prints a single stack trace from the
+program) to figure out why their tests were running slowly! This made me super happy =).
+
+> I used it to profile a test run on CI: some tests suddenly became very slow; I connected to the
+> container thru SSH, downloaded rbspy and took a couple of snapshots while tests were running; that
+> was enough to find the cause of the problem)
 
 ### name: rbspy!
 
