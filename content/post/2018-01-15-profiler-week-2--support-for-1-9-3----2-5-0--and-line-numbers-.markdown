@@ -7,8 +7,8 @@ categories: ["ruby-profiler"]
 
 Hello! Week 2 of profiler writing is over! In week 2, I:
 
-* added support for Ruby 1.9.3 (including system Ruby, so it works on Ubuntu 14.04's system Ruby)
-* added support for Ruby 2.5.0 (released on Christmas). That's the latest Ruby version!
+* added support for Ruby 1.9.x and 2.5.0!! This means I can support every ruby version from 1.9.1 to
+  2.5.0 which I think is basically every Ruby version anyone will reasonably use!!
 * added support for getting the line number that the interpreter is currently running (so useful!)
 * did a lot of refactoring to improve error handling & reporting. (for example I now have a
   `ProcessEndedError` to check if I failed to get a stack trace because the process). I started
