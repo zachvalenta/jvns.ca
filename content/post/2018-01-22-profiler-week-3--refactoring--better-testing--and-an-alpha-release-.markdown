@@ -20,6 +20,11 @@ On Tuesday I polled people on Twitter for name ideas. I wanted something that wa
 (profiling is fun!), but not **too** clever -- I want people to be able to actually tell what the
 project does from the name. Hopefully `rbspy` will be that!
 
+Also I drew a quick logo! It is not super fancy but I like it anyway. An alpha logo for an alpha
+release :)
+
+<img src="https://jvns.ca/images/rbspy.png" width=128px>
+
 ### refactoring!
 
 Last week I also refactored the project significantly. I probably spent 2-3 whole days on
