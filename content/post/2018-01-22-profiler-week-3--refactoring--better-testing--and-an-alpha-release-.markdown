@@ -73,6 +73,11 @@ core dump of a process where rbspy gives me an error if I try to get a stack tra
 fix the issue (to do with calling C functions), I can check that core dump into `rbspy-testdata`,
 add a test, and make sure it stays fixed!
 
+One more example of a thing these tests helped me do -- I needed to get both the relative and the
+absolute path to a file in Ruby 1.9.3. Figuring out how to do this was pretty simple (I did a little `git blame` and then this [commit showed me the way](https://github.com/ruby/ruby/commit/bac9f65f707e8ffcb79389e5b10b32addc94dc01)).
+With the Ruby 1.9.3 core dump, I could add code to get the relative & absolute path, run
+`get_stack_trace` on the core dump, and assert that I got the expected answer! Really easy!
+
 ### contributors!
 
 I published my first release last night. So far 3 people have created issues and I've merged a pull
