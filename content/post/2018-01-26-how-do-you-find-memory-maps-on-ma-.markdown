@@ -1,5 +1,5 @@
 ---
-title: "How do you find memory maps on Mac?"
+title: "How do you read the memory maps of a Mac process?"
 date: 2018-01-26T11:26:42Z
 url: /blog/2018/01/26/mac-memory-maps/
 categories: ["ruby_profiler"]
@@ -78,7 +78,8 @@ kernel functions you can call. I also learned that on Macs / BSD there's this co
 
 Here's how I get a single memory map from a program! The interface to this function is a little
 weird -- you give it a port ID and an address, and it gives you the first memory map **after** that
-address.
+address. Basically this function just wraps the `mach_vm_region` function from the Mach microkernel.
+(the headers for all the Mach functions are in `/usr/include/mach/*.h`)
 
 I've commented the code a bit. It uses the https://github.com/andrewdavidmackenzie/libproc-rs crate
 for the `regionfilename` function (which gives you the filename of the library associated with the
