@@ -10,7 +10,7 @@ rbspy running on the host machine can profile Ruby programs running in
 containers.
 
 This was a pretty simple thing (~50 lines of code,
-https://github.com/rbspy/rbspy/pull/68), but I thought it would be fun to
+https://github.com/rbspy/rbspy/pull/68 ), but I thought it would be fun to
 explain what adding "container support" involves in practice!
 
 ### why didn't rbspy work with containers before?
