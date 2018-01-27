@@ -15,6 +15,10 @@ explain what adding "container support" involves in practice!
 
 ### why didn't rbspy work with containers before?
 
+First -- programs running in containers are just programs, like any other program! You can see them
+by running `ps`. So all of the normal things rbspy does (like reading memory from a process) work
+just fine with programs running in containers. There was just one small gotcha.
+
 There's a small part at the beginning of the program where it reads 1 or 2 binaries from the
 program's memory maps (the Ruby binary, and sometimes another dynamically linked library). 
 
@@ -33,10 +37,10 @@ called `/usr/lib/libruby-1.9.1.so.1.9.1`.
 7f1d45d7b000-7f1d45d7f000 rw-p 001fa000 00:14 13648                      /usr/lib/libruby-1.9.1.so.1.9.1
 ```
 
-I need the addresses of both those binaries (easy! just look at `/proc/17474/maps`, done!) as well
-as their contents.
+I need the addresses both those binaries are mapped to in the process's memory (easy! just look at
+`/proc/17474/maps`, done) as well as their contents.
 
-Getting their contents is where we run into a problem! `/usr/bin/ruby1.9.1` is not a file on my
+Getting their contents is where we run into a problem. `/usr/bin/ruby1.9.1` is not a file on my
 host's filesystem. I'm running Ubuntu 16.04, the container is running Ubuntu 14.04, they have
 different system Ruby versions.
 
@@ -67,7 +71,7 @@ needed to:
 1. Open the file `/proc/$PID/ns/mnt`. Get the file descriptor of that file.
 2. Call `libc::setns(fd, libc::CLONE_NEWNS)`. For some reason `CLONE_NEWNS` means "the mount namespace".
 
-really simple! 3 more things to note / be careful of:
+really easy! 3 more things to note / be careful of:
 
 * remember to open `/proc/self/ns/mnt` **before** switching mount namespaces, so I can have a file descriptor to use to switch back to the old mount namespace
 * make sure I always switch back to the old mount namespace even if there's an error when reading the files. I did this with `defer!`. (which is like Go's `defer` keyword, the one I used comes a Rust crate called `scopeguard`)
@@ -119,3 +123,5 @@ We didn't need to care about Docker or anything like that -- it's irrelevant
 what container runtime our containers are using, and we certainly don't
 interact with Docker at all. We just need to make a few simple system calls and
 it works!
+
+<small> have questions/thoughts about this? [here's a twitter thread!](https://twitter.com/b0rk/status/957291182924627968)</small>
