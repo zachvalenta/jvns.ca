@@ -112,6 +112,18 @@ namespaces if you're multithreaded (like I guess you can change the network
 namespace of a single thread?). You just can't change the mount namespace. Good
 to know!
 
+### and actually you don't even need to switch mount namespaces!
+
+After I posted this post, someone [very helpfully pointed out on Twitter](https://twitter.com/PaulColomiets/status/957293110215704576) that to read the file
+`/usr/bin/ruby1.9.1` from a process's mount namespace you can just read
+`/proc/PID/root/usr/bin/ruby1.9.1`. That's way easier than switching mount namespaces!
+
+Here's what [the /proc man page](http://man7.org/linux/man-pages/man5/proc.5.html) says about
+`/proc/PID/root`:
+
+> Note however that this file is not merely a symbolic link.  It provides the same view of the
+> filesystem (including namespaces and the set of per-process mounts) as the process itself.  
+
 ### that's it!
 
 I thought this was a nice example of how understanding the fundamentals of how
