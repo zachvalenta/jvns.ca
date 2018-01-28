@@ -74,12 +74,21 @@ cc -o freeze-mac freeze-mac.c
 # try running `ps` / starting Activity Monitor, they don't work!
 ```
 
+### this bug is affecting htop too
+
+Somebody on twitter pointed me to [this github issue on htop for mac](https://github.com/hishamhm/htop/issues/682)  where people are reporting that `htop` sometimes
+sporadically freezes their computer in the same way (terminals don't start, Activity Monitor doesn't
+work). [In the
+comments](https://github.com/hishamhm/htop/issues/682#issuecomment-355759162) @grrrrrrrrr says this
+is a race condition in `task_for_pid` and they have what looks to be a POC that's similar to what I
+have here.
+
 ### I have a workaround!
 
-This is weird and I have no idea why it's happening. Anyway, I have a workaround for this -- don't
-run `task_for_pid` on processes immediately after exec'ing them, instead sleep for a few
-milliseconds first. So hopefully with this new knowledge I can get rbspy to work on Mac without
-freezing users' computers.
+This is weird and I don't really understand the underlying kernel issue. Anyway, I have a workaround
+for this -- don't run `task_for_pid` on processes immediately after exec'ing them, instead sleep for
+a few milliseconds first. So hopefully with this new knowledge I can get rbspy to work on Mac
+without freezing users' computers.
 
 Systems programming is weird and exciting though!
 
