@@ -82,3 +82,5 @@ milliseconds first. So hopefully with this new knowledge I can get rbspy to work
 freezing users' computers.
 
 Systems programming is weird and exciting though!
+
+<small>if you have thoughts or questions, here's the [twitter thread for this post](https://twitter.com/b0rk/status/957498366606368768)</small>
