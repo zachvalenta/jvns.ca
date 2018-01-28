@@ -10,6 +10,8 @@ found something that looks like a Mac kernel bug!  Basically I managed to write 
 line) C program that reliably causes `ps` to stop working. Without allocating any memory or anything
 like that!
 
+This seems to be a kernel bug on High Sierra, but not Sierra -- someone [tried to reproduce on Sierra](https://twitter.com/capileigh/status/957709200385191936) and couldn't. So looks like it's a new bug.
+
 ### mysterious freezes on mac
 
 This past week I've been building Mac support for rbspy (my Ruby profiler). I put a Mac support
