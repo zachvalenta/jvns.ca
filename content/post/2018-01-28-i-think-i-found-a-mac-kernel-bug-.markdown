@@ -90,7 +90,7 @@ have here.
 This is weird and I don't really understand the underlying kernel issue. Anyway, I have a workaround
 for this -- don't run `task_for_pid` on processes immediately after exec'ing them, instead sleep for
 a few milliseconds first. So hopefully with this new knowledge I can get rbspy to work on Mac
-without freezing users' computers.
+without freezing any users' computers.
 
 Systems programming is weird and exciting though!
 
