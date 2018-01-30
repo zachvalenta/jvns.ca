@@ -2,7 +2,7 @@
 title: "Profiler week 4: callgrind support, containers, Mac progress!"
 date: 2018-01-29T22:38:44Z
 url: /blog/2018/01/29/profiler-week-4/
-categories: []
+categories: ["ruby-profiler"]
 ---
 
 Today is Monday and week 4 of working on my profiler is over! I'm 1/3 of the way through. Eep! My
