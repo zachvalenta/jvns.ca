@@ -203,3 +203,5 @@ I feel like this idea of streaming you live updates about what memory your Ruby 
 allocating (without having to make any changes in your Ruby program beforehand) feels really magical
 and cool. There's still a lot of work to do to make it useful and it's not clear how stable I can
 make it, but I am delighted by this demo!
+
+<small> have any quick questions/comments? [here's the twitter thread for this post!](https://twitter.com/b0rk/status/958916696424763394) </small>
