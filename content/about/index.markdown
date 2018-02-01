@@ -35,7 +35,9 @@ and friendly way.
 This blog doesn't have comments. However, a huge part of why I write this blog is that people who
 read this blog (you!) have taught me so many interesting and useful things over the years by helping
 me solve problems I write about, pointing me to useful resources, and correcting in a kind way when
-I (frequently) make mistakes. Thank you. I love hearing from you.
+I (frequently) make mistakes. Also I've heard hundreds of times that this blog has helped someone
+learn something they were struggling with and that never gets old. Thank you. I love hearing from
+you.
 
 If you have a quick question/comment, I'm on Twitter at https://twitter.com/b0rk, and I talk to
 people there all the time. Twitter is effectively the comments section for this blog.
