@@ -11,7 +11,7 @@ My idea at the beginning of the day was -- what if you could take an arbitrary R
 (that was already running!) and start tracking its memory allocations?
 
 Spoiler: I got something working! Here's an [asciinema demo](https://asciinema.org/a/SaY5BJHpllausq0ujwTLpu8um) of what happened.  Basically this shows a
-live-updating view of rubocop's memory allocations over 15 seconds, counted by class. You can see
+live-updating cumulative view of rubocop's memory allocations over 15 seconds, counted by class. You can see
 that Rubocop allocated a few thousand `Array`s and `String`s and `Range`s, some `Enumerator`s, etc.
 
 This demo works without making any code changes to `rubocop` at all -- I just ran `bundle exec
@@ -204,4 +204,4 @@ allocating (without having to make any changes in your Ruby program beforehand) 
 and cool. There's still a lot of work to do to make it useful and it's not clear how stable I can
 make it, but I am delighted by this demo!
 
-<small> have any quick questions/comments? [here's the twitter thread for this post!](https://twitter.com/b0rk/status/958916696424763394) </small>
+<small> questions/comments? [here's the twitter thread for this post!](https://twitter.com/b0rk/status/958916696424763394) </small>
