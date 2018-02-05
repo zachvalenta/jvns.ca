@@ -151,7 +151,9 @@ to figure out how to decode them yourself. Luckily decoding binary data is somet
 quite good at -- the `byteorder` crate lets you easily decode `u64`s, and translating a vector of
 bytes into a String is easy (I wrote a quick `get_string` helper function to do that).
 
-I thought this was really nice because it 
+I thought this was really nice because the code for this program in Rust is basically exactly the
+same as the corresponding Python version. So it very pretty approachable to start doing experiments
+and seeing what's possible.
 
 ### Reading perf events from Rust
 
