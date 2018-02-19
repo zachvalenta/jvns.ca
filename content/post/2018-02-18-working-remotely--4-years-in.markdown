@@ -192,7 +192,7 @@ here are things I do to keep my calendar under control so I have time to focus a
 time:
 
 * try to cluster meetings together (have a 1.5 hour meeting block so I only get interrupted once)
-* block off 4-hour chunks of "focus time" in my calendar and people have been good at 
+* block off 4-hour chunks of "focus time" in my calendar. People are good at respecting that.
 * add an "end of day" block on my calendar at 5:30pm EST every day. This means that people know not
   to schedule things with me after I'm done for the day. Sometimes it's unavoidable because 5:30
   EST is 2:30 in the home office, but people are really respectful and always ask if it's okay first.
