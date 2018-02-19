@@ -165,6 +165,39 @@ office.
 https://donut.ai is a cool system for pairing people up at random to talk and I've liked it when
 I've used it.
 
+### What happens if you spend a week stuck on a problem?
+
+One concern I hear sometimes is -- if you're struggling for a week to fix a bug, will people notice?
+Or will people just think you're not doing anything that week?
+
+I haven't found this to be a big problem -- sometimes I'll spend 1 week trying to debug the same
+issue. I just make sure I communicate to my team that's what I'm doing! Once I realize it's going to
+take a while to fix, I try to tell people I'm planning to spend a long time working on the bug
+because I think it's serious and worth spending time on (which is good, because if someone
+disagrees, we can talk about it!), document my progress, and I'll generally talk about what I'm
+struggling with in Slack or in my 1:1 meetings with people throughout the week. Sometimes they'll
+have ideas that help get me unstuck!
+
+So if I spend a week working on a tricky bug, the result is people usually understand why I spent so
+long working on it, and once it's fixed we can celebrate!
+
+### Calendar management
+
+One challenging thing about all these weekly meetings I use to communicate is making sure I don't
+fragment my calendar so much that I'm constantly interrupted and can't get any programming done. The
+meetings are all important -- if I didn't have the meetings, I'd be out of touch and couldn't make
+decisions about what I should be *doing* with my focus time -- but it's important not to let them
+take over :)
+
+here are things I do to keep my calendar under control so I have time to focus and can leave work on
+time:
+
+* try to cluster meetings together (have a 1.5 hour meeting block so I only get interrupted once)
+* block off 4-hour chunks of "focus time" in my calendar and people have been good at 
+* add an "end of day" block on my calendar at 5:30pm EST every day. This means that people know not
+  to schedule things with me after I'm done for the day. Sometimes it's unavoidable because 5:30
+  EST is 2:30 in the home office, but people are really respectful and always ask if it's okay first.
+
 ### I'm not an introvert, and I like working remotely
 
 One stereotype about remote workers is that we're all introverts! I'm not sure if I'm really an
