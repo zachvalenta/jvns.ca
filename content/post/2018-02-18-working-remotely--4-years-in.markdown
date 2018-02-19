@@ -184,10 +184,9 @@ long working on it, and once it's fixed we can celebrate!
 ### Calendar management
 
 One challenging thing about all these weekly meetings I use to communicate is making sure I don't
-fragment my calendar so much that I'm constantly interrupted and can't get any programming done. The
-meetings are all important -- if I didn't have the meetings, I'd be out of touch and couldn't make
-decisions about what I should be *doing* with my focus time -- but it's important not to let them
-take over :)
+fragment my calendar too much -- it's important to have enough time to focus! The meetings are all
+important -- if I didn't have the meetings, I'd be out of touch and couldn't make decisions about
+what I should be *doing* with my focus time -- but it's important not to let them take over :)
 
 here are things I do to keep my calendar under control so I have time to focus and can leave work on
 time:
