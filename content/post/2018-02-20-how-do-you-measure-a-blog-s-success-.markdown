@@ -135,10 +135,8 @@ Here are the main ways to let people subscribe to your blog.
 1. RSS! This is the classic. People keep periodically claiming that RSS is dead but thousands of
 people subscribe to my RSS feed so that's obviously not true. Setting up and linking to an RSS feed
 is super easy.
-2. Email. I have an automatic weekly digest that I generate from my RSS feed, (here's how I set it
-up). I think of this kinda like RSS for people who don't have RSS readers. I didn't add this until
-pretty recently but I think it's actually quite useful. RSS isn't dead but certainly lots of people
-don't use RSS :). A little over 1,000 people subscribe to that weekly mailing list.
+2. Email. I have an automatic weekly digest that I generate from my RSS feed, ([here's how I set it up](https://jvns.ca/blog/2017/12/28/making-a-weekly-newsletter/)). I think of this like RSS for people who don't have RSS readers. I didn't add this until
+pretty recently but quite a few people subscribe to it now.
 3. Twitter. I post a link to each of my blog posts to Twitter when I publish it (manually). I don't
 do anything special here -- just tweet the name of the post + a link.
 
