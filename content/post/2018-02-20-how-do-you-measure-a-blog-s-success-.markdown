@@ -175,6 +175,9 @@ started out, I posted my blog posts to hacker news probably dozens of times, and
 helped me build an initial readership of people who were interested in the same things, which was
 great!
 
+These sites obviously aren't perfect but I think getting my blog in front of a wide audience
+was a great way to find other people who are interested in the same things as me :)
+
 Today I have lots of awesome readers who tell me interesting things, and that's enough for me! I
 don't really have any desire to publicize this blog further (though my blog does get frequently
 posted to those sites and that's fine) -- my goal is just to write useful things and keep learning
