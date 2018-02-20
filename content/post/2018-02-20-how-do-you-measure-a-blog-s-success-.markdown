@@ -1,5 +1,5 @@
 ---
-title: "How do you measure a blog's success?"
+title: "Measuring a blog's success: focus on conversations, not page views"
 date: 2018-02-20T12:58:32Z 
 url: /blog/2018/02/20/measuring-blog-success/
 categories: ["blogging"]
