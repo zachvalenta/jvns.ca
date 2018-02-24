@@ -152,7 +152,7 @@ subscribe to my mailing list easily, which is nice.
 
 Here are 2 different ways to count how many RSS subscribers a blog has:
 
-The first way is Feedly: If I search for "Julia Evans" in Feedly, I see this, which tells me that I
+The first way is Feedly: If I search for "Julia Evans" in Feedly, I see this, which tells me
 how many Feedly subscribers I have
   
 
