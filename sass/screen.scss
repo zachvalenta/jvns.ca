@@ -321,6 +321,12 @@ article {
 
 		}
 	}
+
+	a {
+        @media screen and (max-width: $smallest-width) {
+            word-break: break-all;
+        }
+	}
 	ul {
 		list-style-type: circle;
 		margin-left: 2em;
