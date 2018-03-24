@@ -7,8 +7,8 @@ categories: []
 
 I'm on the RustConf program committee this year, so here is a quick list of ideas for talks I'd be
 interested in seeing submitted.  These are things I personally think are interesting -- I certainly
-don't represent the program committee as a whole :). As of today I haven't seen talk proposals about
-any of these!
+don't represent the program committee as a whole, and there are lots of very important topics that
+I've left out :)
 
 There's an overarching theme here which is "talks that help people become better systems
 programmers" -- my main interest in Rust is that it lets me to do systems programming, which I
@@ -81,3 +81,20 @@ One really simple example of this is -- when I started writing Rust this year, I
 make my structs own all of their data, and then almost always make my functions take references to
 structs.  Obviously that's not a strict rule, but I've found following it most of the times makes my
 code a lot easier.
+
+### give a talk even if you aren't the most experienced Rust programmer!
+
+Often people think that you need to be a wizard expert to give a talk at a programming conference.
+This isn't true! What I've seen is that often people who are at an intermediate level give extremely
+useful talks, because they remember what it was like to learn the material for the first time and so
+can explain it well.
+
+I think quite a few of these talks could be done well by someone who isn't an extremely experienced
+Rust programmer. I'd love to hear from:
+
+* people who have done a lot of systems programming in other languages but are relatively new to
+  Rust
+* people who are doing systems programming for the first time in Rust (what have you learned so far
+  that really helped you?)
+* and of course people who aren't really involved in systems programming at all and are using Rust
+  for other reasons!! (what are you doing with Rust? :D)
