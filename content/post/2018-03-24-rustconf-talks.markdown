@@ -16,7 +16,7 @@ couldn't really do before! So I'd love to see talks that help the audience level
 programmer a little bit.
 
 [Submit a proposal here!](https://cfp.rustconf.com/events/rustconf-2018). The deadline is April 13,
-2017 -- in just over 2 weeks! The earlier you submit the better -- if you submit early, the program
+2018 -- in just over 2 weeks! The earlier you submit the better -- if you submit early, the program
 committee can give you feedback on your proposal :)
 
 Here are my ideas for you:
