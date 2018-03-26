@@ -6,7 +6,7 @@ categories: ["ruby-profiler"]
 ---
 
 Hello!! Latest update on my Ruby profiler: I published a documentation site!! It's at
-https://rbspy.github.com. 
+https://rbspy.github.io. 
 
 I wanted to do a good job of this because my view about documentation is -- if software isn't well
 documented, it might as well not exist. I've spent SO MUCH time explaining other people's software
