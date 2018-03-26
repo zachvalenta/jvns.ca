@@ -64,4 +64,4 @@ If there are questions you have about using rbspy that this docs site doesn't an
 know!!  I think documentation is really important, and if you have a question probably other people
 do too :). I'd love to add to the [FAQ](https://rbspy.github.io/using-rbspy/#faq).
     
-I'm julia@jvns.ca, or [https://twitter.com/b0rk](@b0rk) on Twitter.
+I'm julia@jvns.ca, or [@b0rk](https://twitter.com/b0rk) on Twitter.
