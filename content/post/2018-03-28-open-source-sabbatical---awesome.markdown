@@ -113,7 +113,7 @@ the energy to do it. For whatever reason I _do_ have the energy to write hundred
 about programming, but I guess that comes out of a different energy reserve for me :).
 
 I've done exactly 3 side programming projects in the last 4 years, none of them particularly time
-consuming ([turn off retweets](turn-off-retweets.glitch.me), [computers are fast](https://computers-are-fast.github.io/), the rbspy prototype).
+consuming ([turn off retweets](http://turn-off-retweets.glitch.me), [computers are fast](https://computers-are-fast.github.io/), the rbspy prototype).
 
 It's been useful for me to accept that I don't really want to program after work or on the weekends.
 But of course there _are_ projects I'm excited about building, so this sabbatical was a great
