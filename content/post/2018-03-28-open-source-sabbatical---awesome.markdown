@@ -132,7 +132,7 @@ applying to this fellowship:
 * The application asked for a resume and I didn't have an up-to-date one, so I just filled in the
   "resume" section with a link to my blog (since this blog lists a lot of the work that I've done)
 * More importantly -- when I applied, I didn't know whether I'd be able to actually accept the
-  fellowship if they offered it to me. It was relatively pretty notice (I applied in April for a
+  fellowship if they offered it to me. It was short notice (I applied in April for a
   fellowship starting in June), and I didn't have a plan yet for how I'd take time off work.
 
 But I applied anyway, and then when they offered me the fellowship and the dates didn't work for me
@@ -147,15 +147,6 @@ okay! They were very patient and it worked out :)
 
 So I think it was a great idea to apply with no clear plan of how I'd handle it if they accepted me,
 because we figured it out and it was fine!
-
-### make flexible funding programs
-
-My current theory about open source fellowships like this is that it's very important to make them
-**flexible** -- I'd guess that many of the people who you'd want to fund to independently work on
-open source projects already have jobs (people gotta eat!). So offering funding that people can use
-at **a time that works for them** (between jobs! during a sabbatical) and **from where they live** I
-think is a great way to fund more impactful open source work!
-
 
 ### maybe take a sabbatical!
 
