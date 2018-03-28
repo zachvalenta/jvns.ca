@@ -54,11 +54,13 @@ Want a weekly digest of these blog posts? <input type="email" value="" name="EMA
 
 <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{.Permalink}}" data-via="b0rk" data-counturl="{{.Permalink}}">Tweet</a>
 </div>
+<!-- "next" and "previous" in hugo apparently mean the opposite of what you think they'd mean
+    intuitively. we want "next" to mean "in the future" and "previous" to mean "in the past" -->
 <p class="meta">
-  {{with .Prev}} 
+  {{with .Next}} 
     <a class="basic-alignment left" href="{{.Permalink}}" title="Previous Post: {{.Title}}">{{.Title}}</a>
   {{end}}
-  {{with .Next}} 
+  {{with .Prev}} 
     <a class="basic-alignment right" href="{{.Permalink}}" title="Next Post: {{.Title}}">{{.Title}}</a>
   {{end}}
 </p>
