@@ -54,15 +54,20 @@ for me.
 Originally, the fellowship was supposed to run from June 15 to September 15, 2017. Obviously I
 didn't do it from June to September, because it's March now! So here's what happened. Segment offered me
 the fellowship (yay!). I realized I couldn't take time off work by June 15, and told them so. They
-(extremely kindly! said I could delay the fellowship until a later time that worked for me. I
+extremely kindly said I could delay the fellowship until a later time that worked for me. I
 suggested January -> March 2018 (6 months later) and they agreed to it!
 
-Then I asked my manager if I could take 3 months off work in January (unpaid) to do the fellowship.
+Then I asked my manager if I could take 3 months off work from January-March (unpaid) to do the fellowship.
 Since there was about 6 months notice (lots of time), we got permission to do it. Amazing!
 
 I think it was **amazing** that Segment was so flexible about the dates of the fellowship -- their
 flexibility (and Stripe's willingness to let me take 3 months off work) was what made it possible
 for me to do this. Otherwise I probably won't have done this project.
+
+Giving my team a lot of notice was great -- I was responsible for a [pretty big project](https://stripe.com/blog/operating-kubernetes) 
+at the time, so putting the sabbatical 6 months into the future gave me lots of time to make a lot
+of progress on the project and help get other people on the team up to speed so they could take over
+while I was away.
 
 ### doing the fellowship remotely
 
