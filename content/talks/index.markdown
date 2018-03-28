@@ -4,14 +4,23 @@ staticpage: true
 categories: []
 ---
 
-I've given a few talks about programming. I think they're pretty good. Usually I talk in a
-really excited way about something for about 25 minutes :).
+Here are some of the talks I've given!
 
-### upcoming talks
+### So you want to be a wizard (keynote, SREcon 2017)
 
-* Opening keynote ("so you want to be a wizard"), [SRECon](https://www.usenix.org/conference/srecon17americas/), March 13-14
-* Learning systems programming with Rust, [Web à Québec](https://webaquebec.org/), April 4-6
-* A swiss army knife of debugging tools, [Monitorama](http://monitorama.com/), May 22-24
+See also [transcript+slides](/blog/so-you-want-to-be-a-wizard/) and the [accompanying
+zine](https://jvns.ca/zines/#so-you-want-to-be-a-wizard)
+
+<video width="450" height="350"  id="usenix-media-video-1" data-setup="{}" height="419" width="744" poster="https://www.usenix.org/sites/default/files/styles/video-thumbnail/public/conference/video/evans_2.jpeg?itok=zhlCf1wz" class="video-js vjs-default-skin vjs-big-play-centered" preload="auto" controls>
+<source src='https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/srecon17/evans.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="480">
+   <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+   <param name="allowFullScreen" value="true">
+   <param name="wmode" value="transparent">
+   <param name="flashVars" value="config={'playlist':['https%3A%2F%2Fwww.usenix.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fvideo-thumbnail%2Fpublic%2Fconference%2Fvideo%2Fevans_2.jpeg%3Fitok%3DzhlCf1wz',{'url':'https%3A%2F%2F2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com%2Fsrecon17%2Fevans.mp4','autoPlay':false}]}">
+   <img src="https://www.usenix.org/sites/default/files/styles/video-thumbnail/public/conference/video/evans_2.jpeg?itok=zhlCf1wz" width="640" height="480" title="No video playback capabilities. Please install Adobe Flash Player or download the video below">
+</object>
+</video>
 
 ### A swiss army knife of debugging tools (Strange Loop 2016)
 
@@ -89,21 +98,3 @@ allowfullscreen></iframe>
 
 [Video](http://pyvideo.org/video/2657/diving-into-open-data-with-ipython-notebook-pan-0), 
 [IPython notebook](http://nbviewer.ipython.org/github/jvns/talks/blob/master/pyconca2013/pistes-cyclables.ipynb)
-
-
-## A Practical Introduction to IPython Notebook and Pandas
-
-<strong>
-[PyData NYC](http://pydata.org/nyc2013/), November 2013
-</strong>
-
-Hands-on tutorial on how to get started with IPython Notebook and
-pandas, using 311 calls from NYC open data as an example.
-
-<iframe src="http://player.vimeo.com/video/79835526" width="100%" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-[Video](http://vimeo.com/79835526),
-[IPython notebook](http://nbviewer.ipython.org/github/jvns/talks/blob/master/pydatanyc2013/PyData%20NYC%202013%20tutorial.ipynb),
-[Notebook on Wakari](http://bit.ly/pydata-pandas-tutorial)
-
-
