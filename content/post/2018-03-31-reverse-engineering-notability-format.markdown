@@ -178,7 +178,7 @@ Decoding the other bits was pretty straightforward: there's
 To make sure that the points actually **were** points, I plotted them on a graph!!! In this example
 I was actually using an image from a zine idea I had about working with your manager. Here's what it looked like:
 
-<img src="/images/manager-zine.png">
+<img src="https://jvns.ca/images/manager-zine.png">
 
 So cool!!!! I was extremely jazzed about my success. Also it was 5pm and time to go for dinner at a
 friend's house, so I did that.
@@ -208,16 +208,16 @@ long and I don't think it's interesting to explain this.
 Here are the results! First, here's what the SVG that I input into my svg2notability program looks
 like:
 
-<a href="/images/acid-screenshot-orig.png">
-<img src="/images/acid-screenshot-orig.png" width=400px>
+<a href="https://jvns.ca/images/acid-screenshot-orig.png">
+<img src="https://jvns.ca/images/acid-screenshot-orig.png" width=400px>
 </a>
 
 
 And here it is in Notability, after I converted it! It looks basically the same! And I can easily
 edit it, which was the point. The colours worked and everything!
 
-<a href="/images/acid-notability.png">
-<img src="/images/acid-notability.png" width=400px>
+<a href="https://jvns.ca/images/acid-notability.png">
+<img src="https://jvns.ca/images/acid-notability.png" width=400px>
 </a>
 
 ### what doesn't work
