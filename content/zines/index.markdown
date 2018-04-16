@@ -87,6 +87,21 @@ read on your computer and a print version.
 
 <div class="zine">
 <div>
+<a class="zine-link" href="#perf">
+<h3>Profiling & tracing with perf</h3>
+<img src="/images/perf-zine-cover.jpg" width=100%><br>
+</a>
+</div>
+<div>
+<a class="button2" href="/perf-zine.pdf">Read online</a>
+<a class="button2" href="/perf-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
+
+
+<div class="zine">
+<div>
 <a class="zine-link" href="#linux-comics">
 <h3>Linux comics</h3>
 <img src="https://jvns.ca/images/linux-comics-cover.png" width=100%><br>
@@ -202,6 +217,32 @@ href="https://www.upwork.com/freelancers/~0192887d804879250b">Vladimir Kašikovi
 </div>
 
 <hr class="light">
+
+<div align="center">
+<a href="#perf" style="color: black">
+<h3 id="perf"> ★★★ Profiling & tracing with perf ★★★</h3>
+</a>
+</div>
+
+<div align="center">
+<img src="/images/perf-zine-cover.jpg" width=300px><br>
+</div>
+
+Want to get better at profiling & tracing your programs on Linux? `perf` is a super useful tool, but
+it's fairly complicated and I found it hard to get started with. Over the last 4 years, I've learned
+a lot about how perf works, and I've compressed what I know into this zine for you!
+
+You'll learn how you can use perf to profile programs in many different programming languages (C,
+node.js, Java, Rust, and more!), how to count any kernel event you're interested in (syscalls!
+network packets sent!), how to analyze the data that perf gives you, and more!
+
+<div align="center">
+<a class="button" href="/perf-zine.pdf">Read online</a>
+<a class="button" href="/perf-zine-print.pdf">Get the print version!</a>   
+</div>
+
+<hr class="light">
+
 
 <div align="center">
 <a href="#linux-comics" style="color: black">
