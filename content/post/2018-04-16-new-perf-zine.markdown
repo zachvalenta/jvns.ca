@@ -36,7 +36,8 @@ Hello! I'm delighted to announce that today I'm releasing a new zine: Profiling 
 perf!!
 
 `perf` is one of my favorite programs for profiling / tracing Linux programs and SO MANY people
-don't know about it and don't know how it works. So this zine aims to fix that, as usual :)
+don't know about it and don't know how how to get started. So this zine aims to get you started and
+show why it's great, as usual :)
 
 <div align="center">
 
@@ -47,7 +48,6 @@ don't know about it and don't know how it works. So this zine aims to fix that, 
 <img src="/images/perf-zine-cover.jpg" width="300px">
 </a>
 </div>
-
 
 ### how these zines are funded
 
