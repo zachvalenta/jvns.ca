@@ -43,11 +43,7 @@ This talk is about the core of rbspy -- how do we read memory out of the Ruby in
 out what function a Ruby process is running? How do we do that in a way that works across multiple
 Ruby versions? Do we need to stop the Ruby process to figure out what function is running?
 
-
-The talk is 30 minutes and it's followed by about 30 minutes of questions.
-
-If you're interested in this talk you might also find this [architecture document](https://github.com/rbspy/rbspy/blob/master/ARCHITECTURE.md) interesting.
-
-### video
+The talk is 30 minutes and it's followed by about 30 minutes of questions. The audio is a bit
+sketchy in places. Here's the video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o6wWSPxYueU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
