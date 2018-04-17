@@ -43,7 +43,7 @@ catalog a few open source software funding models that I'm aware of:
 * Segment Open Fellowship / Stripe Open Source Retreat (pay someone to do 3 months of work on an
   open source project they choose)
 
-There are certainly more that I'm leaving out but those are the ones I can think of right now.
+There are certainly more that I'm leaving out -- see [A handy guide to financial support for open source](https://github.com/nayafia/lemonade-stand) and [getting paid for open source work](https://opensource.guide/getting-paid/) for more!
 
 One difference is that some models involve full-time employment and some models are about sponsoring
 sprints of activity on a project. In this case, the "sprints of activity" model worked really well
