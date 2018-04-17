@@ -1,5 +1,5 @@
 ---
-title: "Talk: How rbspy works"
+title: "Talk: Building a Ruby profiler"
 date: 2018-04-16T13:58:38Z
 url: /blog/2018/04/16/rbspy-talk/
 categories: []
