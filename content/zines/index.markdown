@@ -70,7 +70,7 @@ I've published 8 (!!) zines about systems & debugging tools. Here's some general
 * <a href="#print-directions"> **Printing directions**</a>
 
 You can get more information about any of them by clicking on the cover. They all have a PDF you can
-read on your computer and a print version.
+read on your computer and a print version. If you want to pay for them, [you can](https://gumroad.com/b0rk).
 
 <div class="container">
 
