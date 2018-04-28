@@ -21,12 +21,12 @@ This can be caused by:
 
 * trying to dereference a null pointer (you're not allowed to access the memory address `0`)
 * trying to dereference some other pointer that isn't in your memory
-* a C++ vtable entry that is pointing to some corrupt memory, which causes the program to try to
-  execute some memory that isn't executable 
+* a C++ vtable pointer that got corrupted and is pointing to the wrong place, which causes the
+  program to try to execute some memory that isn't executable 
 * some other things that I don't understand, like I think misaligned memory accesses can also
   segfault
 
-This "C++ vtable entry" thing is what was happening to my segfaulting program. I might explain that
+This "C++ vtable pointer" thing is what was happening to my segfaulting program. I might explain that
 in a future blog post because I didn't know any C++ at the beginning of this week and this vtable
 lookup thing was a new way for a program to segfault that I didn't know about.
 
