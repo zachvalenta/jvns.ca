@@ -162,6 +162,15 @@ gdb gave me a beautiful stack trace with line numbers when I ran `bt`!!!
 If you want this to work, the binary should be compiled with debugging symbols. Having line numbers
 in your stack traces is extremely helpful when trying to figure out why a program crashed :)
 
+### gdb + core dumps = amazing
+
+If you have a core dump & debugging symbols and gdb, you are in an amazing situation!! You can go up
+and down the call stack, print out variables, and poke around in memory to see what happened. It's
+the best.
+
+If you are still working on being a gdb wizard, you can also just print out the stack trace with
+`bt` and that's okay :)
+
 ### ASAN
 
 Another path to figuring out your segfault is to do one compile the program with AddressSanitizer
