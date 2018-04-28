@@ -162,6 +162,14 @@ gdb gave me a beautiful stack trace with line numbers when I ran `bt`!!!
 If you want this to work, the binary should be compiled with debugging symbols. Having line numbers
 in your stack traces is extremely helpful when trying to figure out why a program crashed :)
 
+### look at the stack for every thread
+
+Here's how to get the stack for every thread in gdb! 
+
+```
+thread apply all bt full
+```
+
 ### gdb + core dumps = amazing
 
 If you have a core dump & debugging symbols and gdb, you are in an amazing situation!! You can go up
