@@ -107,8 +107,8 @@ So `sysctl -w kernel.core_pattern=/tmp/core-%e.%p.%h.%t` will write core dumps t
 If you want to know more about what these `%e`, `%p` parameters read, see [man core](http://man7.org/linux/man-pages/man5/core.5.html).
 
 It's important to know that `kernel.core_pattern` is a global settings -- it's good to be a little
-careful about changing it because it's possible that other systems depend 
-
+careful about changing it because it's possible that other systems depend on it being set a certain
+way.
 
 ### kernel.core_pattern & Ubuntu
 
