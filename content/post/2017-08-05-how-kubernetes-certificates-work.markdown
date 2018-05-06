@@ -28,6 +28,7 @@ list).
 --client-ca-file string                     If set, any request presenting a client certificate signed by one of the authorities in the client-ca-file is authenticated with an identity corresponding to the CommonName of the client certificate.
 --etcd-certfile string                      SSL certification file used to secure etcd communication.
 --etcd-keyfile string                       SSL key file used to secure etcd communication.
+--etcd-cafile string                        SSL Certificate Authority file used to secure etcd communication.
 --kubelet-certificate-authority string      Path to a cert file for the certificate authority.
 --kubelet-client-certificate string         Path to a client cert file for TLS.
 --kubelet-client-key string                 Path to a client key file for TLS.
