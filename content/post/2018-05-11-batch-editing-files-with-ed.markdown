@@ -25,10 +25,13 @@ foo:
   - bananas
 ```
 
+I had one extra weird requirement which was that some of the lines were indented with 2 spaces, and
+some with 4 spaces. The `- elephant` line needed to have the same indentation as the previous line.
+
 I didn't feel like writing a program to do this (perl would be perfect, but I don't really remember
 perl at all), so I wanted to use a command line tool! A vim macro could do it, but how do you save a
-vim macro to a file again? I forget! I couldn't figure out how to do it with sed, and I REALLY don't
-know how to use awk.
+vim macro to a file again? I forget! I couldn't figure out how to do it with sed at the time (though
+I'm pretty sure it's possible), and I REALLY don't know how to use awk.
 
 In a surprising turn of events, I ended up using the `ed` editor to do this task, and it was really
 easy and simple to do! In this blog post I'll make the case that if you have something you might
@@ -52,6 +55,8 @@ asdfasdfasdfsadf
 
 Basically if you do something wrong, ed will just print out a single, unhelpful, `?`. So I'd
 basically dismissed `ed` as an old arcane Unix tool that had no practical use today.
+
+`vi` is a successor to `ed`, except with a visual interface instead of this `?`
 
 ### surprise: Ed is actually sort of cool and fun
 
