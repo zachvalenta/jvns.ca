@@ -30,8 +30,8 @@ some with 4 spaces. The `- elephant` line needed to have the same indentation as
 
 I didn't feel like writing a program to do this (perl would be perfect, but I don't really remember
 perl at all), so I wanted to use a command line tool! A vim macro could do it, but how do you save a
-vim macro to a file again? I forget! I couldn't figure out how to do it with sed at the time (though
-I'm pretty sure it's possible), and I REALLY don't know how to use awk.
+vim macro to a file again? I forget! I couldn't think of how to do it with sed at the time, though
+in retrospect you could do something like `s/(.+)- baz/\1- baz\n\1- elephant`.
 
 In a surprising turn of events, I ended up using the `ed` editor to do this task, and it was really
 easy and simple to do! In this blog post I'll make the case that if you have something you might
