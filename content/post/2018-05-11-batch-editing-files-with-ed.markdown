@@ -131,5 +131,5 @@ translate a Vim macro into a way to batch edit a bunch of files.
 
 I'm definitely not going to go telling everyone they should be using ed (it's certainly not very
 user friendly!), but I think it's neat. If
-you're interested at, I'd really recommend buying [Ed Mastery](https://www.michaelwlucas.com/tools/ed) -- it's quite short, I learned some neat Unix
+you're interested, I'd really recommend buying [Ed Mastery](https://www.michaelwlucas.com/tools/ed) -- it's quite short, I learned some neat Unix
 history from it, and now I have a new tool to use very occasionally!!
