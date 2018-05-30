@@ -52,7 +52,6 @@ asdfasdfasdfsadf
 ?
 <close terminal in frustration>
 ```
-
 Basically if you do something wrong, ed will just print out a single, unhelpful, `?`. So I'd
 basically dismissed `ed` as an old arcane Unix tool that had no practical use today.
 
