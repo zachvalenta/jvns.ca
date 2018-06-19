@@ -20,7 +20,7 @@ why it's useful.
 
 On Mac, you can download & install it from their homepage, and on Debian-based distros you can
 install it with `sudo apt install wireshark`. There's also an official
-[wireshark-dev](https://launchpad.net/~wireshark-dev/+archive/ubuntu/stable) PPA you can use to get
+[wireshark-dev PPA](https://launchpad.net/~wireshark-dev/+archive/ubuntu/stable) you can use to get
 more up-to-date Wireshark versions.
 
 Wireshark looks like this, and it can be a little overwhelming at first. There's a slightly
