@@ -18,7 +18,7 @@ why it's useful.
 
 [Wireshark](https://www.wireshark.org/) is a graphical network packet analysis tool. 
 
-On Mac, you can download & install it from their homepage, and on Debian, you can install it like this:
+On Mac, you can download & install it from their homepage, and on Debian-based distros, you can install it like this:
 
 ```
 sudo add-apt-repository ppa:wireshark-dev/stable
@@ -26,6 +26,9 @@ sudo apt update
 sudo apt install wireshark
 ```
 
+Wireshark is also in Debian's apt repository so you can also just `sudo apt install wireshark` but
+in my experience Wireshark updates are useful enough that it's worth installing a more up-to-date
+version. The `wireshark-dev` PPA is maintained by the Wireshark maintainers.
 
 Wireshark looks like this, and it can be a little overwhelming at first. There's a slightly
 mysterious search box, and a lot of packets, and how do you even use this thing?
