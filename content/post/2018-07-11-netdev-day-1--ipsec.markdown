@@ -1,5 +1,5 @@
 ---
-title: "netdev day 1: IPsec"
+title: "netdev day 1: IPsec!"
 date: 2018-07-11T20:54:43Z
 url: /blog/2018/07/11/netdev-day-1--ipsec/
 categories: ["netdev"]
