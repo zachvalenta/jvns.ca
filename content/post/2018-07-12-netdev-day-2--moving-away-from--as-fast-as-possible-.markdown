@@ -113,6 +113,9 @@ His proposal was to modify the skb data structure in the Linux kernel (which is 
 used to represent network packets) to have a TIMESTAMP on it representing the earliest time that
 packet should go out.
 
+I don't know a lot about the Linux network stack, but the interesting thing to me about this
+proposal is that it doesn't sound like a huge change! It's just an extra timestamp.
+
 ### replace queues with timing wheels!!!
 
 Once we have all these packets with times on them, how do we get them sent out at the right time?
