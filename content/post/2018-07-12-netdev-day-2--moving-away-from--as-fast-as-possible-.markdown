@@ -13,6 +13,9 @@ Possible: Teaching NICs about time"
 I'm going to try to summarize what I learned from this talk. I almost certainly have some things
 wrong, but let's go!
 
+This talk was about how the internet has changed since 1988, why we need new algorithms today, and
+how we can change Linux's networking stack to implement those algorithms more easily.
+
 ### what's congestion control?
 
 Everyone on the internet is sending packets all at once, all the time. The links on the internet are
@@ -28,8 +31,6 @@ The most naive you way you could imagine sending packets is:
 It turns out that if you implemented TCP that way, the internet would collapse and grind to a halt. We know that it
 would collapse because it did kinda collapse, in 1986. To fix this, folks invented congestion control algorithms -- the original paper describing how they avoided collapsing the internet is [Congestion Avoidance and Control](https://cs162.eecs.berkeley.edu/static/readings/jacobson-congestion.pdf), by Van Jacobson from 1988. (30 years ago!)
 
-This talk was about how the internet has changed since 1988, why we need new algorithms today, and
-how we can change Linux's networking stack to implement those algorithms more easily.
 
 ### How has the internet changed since 1988?
 
