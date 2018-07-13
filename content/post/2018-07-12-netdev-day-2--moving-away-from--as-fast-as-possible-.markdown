@@ -46,6 +46,9 @@ datacenters.
 This is bad because it means that clients are much more easily able to saturate the links in the
 middle, which results in the internet getting slower.
 
+So to improve performance on the internet and not saturate all the queues on every router, clients
+need to be a little better behaved and to send packets a bit more slowly.
+
 ### sending more packets more slowly results in better performance
 
 Here's an idea that was really surprising to me -- sending packets more slowly often actually
@@ -59,19 +62,20 @@ tell the speed of this slow link (more on that later), you have 2 choices:
 2. Slow it down so you send it at 1MB/s
 
 Now -- either way, you're probably going to end up with some packet loss. So it seems like you might
-as well just send all the data at once if you're going to end up with packet loss either way? No!!
+as well just send all the data at once if you're going to end up with packet loss either way, right? No!!
 The key observation is that packet loss in the **middle** of your stream is much better than packet
 loss at the **end** of your stream. If a few packets in the middle are dropped, the client you're
-sending to can will realize, tell you, and you can just resend them. No big deal!  But if packets at
+sending to will realize, tell you, and you can just resend them. No big deal!  But if packets at
 the END are dropped, the client has no way of knowing you sent those packets at all! So you
 basically need to time out at some point when you don't get an ACK for those packets and resend it.
 And timeouts typically take a long time to happen!
 
 So why is sending data more slowly better? Well, if you send data faster than the bottleneck for the
 link, what will happen is that all the packets will pile up in a queue somewhere, the queue will get
-full, and then the packets at the end of your stream will get dropped. And then you have to wait for
-a timeout, which takes a long time, and as a result your whole connection takes longer than if you'd
-just sent your packets at the correct speed in the first place.
+full, and then the packets at the END of your stream will get dropped. And, like we just explained,
+the packets at the end of the stream are the worst packets to drop! So then you have all these
+timeouts, and sending your 10MB of data will take way longer than if you'd just sent your packets at
+the correct speed in the first place.
 
 I thought this was really cool because it doesn't require cooperation from anybody else on the
 internet -- even if everybody else is sending all their packets really fast, it's *still* more
