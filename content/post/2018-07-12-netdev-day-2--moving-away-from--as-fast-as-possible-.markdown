@@ -44,7 +44,7 @@ is that the big switches in routers are not really that much faster than the NIC
 datacenters.
 
 This is bad because it means that clients are much more easily able to saturate the links in the
-middle, which results in the internet getting slower.
+middle, which results in the internet getting slower. (and there's [buffer bloat](https://apenwarr.ca/log/?m=201101#10) which results in high latency)
 
 So to improve performance on the internet and not saturate all the queues on every router, clients
 need to be a little better behaved and to send packets a bit more slowly.
@@ -90,7 +90,7 @@ algorithm for measuring the speed of bottlenecks! It's called BBR. This post is 
 but for more about BBR, see [BBR: Congestion-based congestion control](https://queue.acm.org/detail.cfm?id=3022184)
 and [the summary from the morning paper](https://blog.acolyer.org/2017/03/31/bbr-congestion-based-congestion-control/).
 
-(as an aside, https://blog.acolyer.org's daily "the morning paper" summaries are basically the only
+(as an aside, [https://blog.acolyer.org](https://blog.acolyer.org)'s daily "the morning paper" summaries are basically the only
 way I learn about / understand CS papers, it's possibly the greatest blog on the internet)
 
 ### networking code is designed to run "as fast as possible"
