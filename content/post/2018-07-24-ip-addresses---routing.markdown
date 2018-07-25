@@ -177,6 +177,6 @@ here are some very rough mappings
   talked about before with containers) to talk to the public internet. The way this works in AWS is you set up a NAT
   gateway/internet gateway which will rewrite your packets for you.
 * IPsec: [VPC peering](https://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide/Welcome.html). This
-  isn't really the same thing (peering connections aren't encrypted!), but it does give you a way to
+  isn't really the same thing (peering connections are only encrypted for cross-region traffic), but it does give you a way to
   set up private connections between two different VPCs and I think it's useful in some of the same
   scenarios.
