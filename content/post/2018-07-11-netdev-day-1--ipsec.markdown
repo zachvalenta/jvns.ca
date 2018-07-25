@@ -39,7 +39,7 @@ you open a new VPN connection, you need to talk to the VPN server and negotiate 
 encryption.
 
 The kernel part of IPsec is responsible for the actual encryption of packets -- once a key is
-generated using IKE, the userspace part of IPsec will tell the kernel which encryption to key to
+generated using IKE, the userspace part of IPsec will tell the kernel which encryption key to
 use. Then the kernel will use that key to encrypt packets!
 
 ### Security Policy & Security Associations
