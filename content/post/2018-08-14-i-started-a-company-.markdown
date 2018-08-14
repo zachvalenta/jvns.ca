@@ -63,6 +63,8 @@ reframing writing zines as a "small side business" instead of just a "fun thing"
 interesting questions like: 
  
 * will more or less people read my zines if I sell them than if they're free? 
+* does selling zines make it harder to make weird niche zines because there's an incentive to make
+  things that are more general-interest?
 * does having a side business make it easier to do high quality work?
 * do people value work more if it's not free? 
 * right now I'm selling zines for $10, but $10 is is a lot of money for many people (both in the US and outside the US). how do I keep them accessible? 
