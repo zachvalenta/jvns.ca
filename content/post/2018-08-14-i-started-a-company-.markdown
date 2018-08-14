@@ -1,5 +1,5 @@
 ---
-title: "I started a company!"
+title: "I started a corporation!"
 date: 2018-08-14T07:34:06Z
 url: /blog/2018/08/14/i-started-a-company-/
 categories: []
