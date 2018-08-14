@@ -15,7 +15,7 @@ The only downside of selling things is -- making money is complicated! I need to
 I can pay income taxes, I need to pay sales tax on Canadian sales! Tracking expenses is really
 annoying! 
  
-So I decided to start a corporation (on the side, I still work at the same place ❤) to manage the
+So I decided to start a corporation (just on the side, I still work at the same place ❤) to manage the
 logistics. I'm pretty excited about this so I wanted to explain why. 
  
 ### What's involved in starting a company? 
@@ -72,6 +72,3 @@ interesting questions like:
 All of the existing zines that you can find at https://jvns.ca/zines will remain free, of course :).
 I'm not sure about newer zines. I'm doing some experiments! ([Bite Size Linux](https://gum.co/bite-size-linux) and [Bite Size Command Line](https://gum.co/bite-size-command-line) are both not-free)
 More on those questions in the future as I learn about them :)
-
-
-
