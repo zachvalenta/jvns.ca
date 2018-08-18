@@ -38,6 +38,10 @@ hr.light {
     color: black;
 }
 
+.zine-link h3 {
+    min-height: 2.5em;
+}
+
 
 .button2 {
     background-color: #ff5e00;
@@ -64,15 +68,41 @@ hr.light {
 }
 </style>
 
-I've published 8 (!!) zines about systems & debugging tools. Here's some general information:
+I've published a bunch of zines zines about systems & debugging tools. Here's some general information:
 
 * <a href="#whats-a-zine"> **What's a zine?**</a>
 * <a href="#print-directions"> **Printing directions**</a>
 
 You can get more information about any of them by clicking on the cover. They all have a PDF you can
-read on your computer and a print version. If you want to pay for them, [you can](https://gumroad.com/b0rk).
+read on your computer and a print version. Most of them are free ❤, and a couple of them (the "bite
+size" zines) are $10 :)
 
 <div class="container">
+
+<div class="zine">
+<div>
+<a class="zine-link" href="https://gum.co/bite-size-linux">
+<h3>Bite Size Linux</h3>
+<img src="/images/bite-size-linux-cover.png" width=100%><br>
+</a>
+</div>
+<div>
+<a class="button2" href="https://gum.co/bite-size-linux">Buy for $10</a>
+</div>
+</div>
+
+<div class="zine">
+<div>
+<a class="zine-link" href="https://gum.co/bite-size-command-line">
+<h3>Bite Size Command Line</h3>
+<img src="https://jvns.ca/images/bite-size-command-line-cover.png" width=100%><br>
+</a>
+</div>
+<div>
+<a class="button2" href="https://gum.co/bite-size-command-line">Buy for $10</a>
+</div>
+</div>
+
 
 <div class="zine">
 <a class="zine-link" href="#so-you-want-to-be-a-wizard"> 
