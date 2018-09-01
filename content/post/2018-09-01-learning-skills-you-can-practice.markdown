@@ -10,8 +10,9 @@ in one way or another about things I've learned and why they're exciting.
 
 But how do you teach yourself hard things? I've talked before about having a [growth mindset](https://www.mindsetworks.com/science/), which is about replacing the belief "I'm bad at X" with "I'm haven't learned about X yet".
 
-There's a lot more to learning than a positive attitude, though! So this blog post is about specific
-learning skills that I've worked on over time. They are:
+There's a lot more to learning than a positive attitude, though! Learning is a skill which takes a
+lot of work to get better at. So this blog post is about specific learning skills that I've worked
+on over time. They are:
 
 1. Identify what you don't understand (maybe the most important one)
 2. Have confidence in your knowledge
@@ -43,7 +44,7 @@ time learning programming ideas, not math ideas. So let's talk about some learni
 
 ### Learning skill: Identify what you don't understand
 
-I think this is be the most important learning skill. This is the skill of translating "I'm
+I think this is the most important learning skill. This is the skill of translating "I'm
 confused, I don't get it" to "I have a specific question about X".
 
 For example, when I was learning Rust last winter, I felt really confused about references &
@@ -128,6 +129,25 @@ I'm not aware of any good guides to doing tech research, though I think that cou
 interesting thing to write up -- information about different areas is available in dramatically
 different places (man pages? books? mailing lists?) and some documentation is MUCH better than other
 than other documentation. How do you figure out the landscape of where information is in your area?
+
+### Learning skill: Recognize that being confused means you're about to learn something
+
+One last thing that has been important for me is to recognize when I'm confused about something and,
+instead of feeling bad ("oh no! I don't know this thing! disaster!"), recognize that it's a normal
+feeling and that it just means I'm about to learn something!
+
+I *like* learning! It's fun! So if I'm confused, that's usually a good thing because it means I'm
+not stagnating. Here's how I approach it:
+
+* recognize that I'm confused
+* figure out what the topic I'm 
+* turn that confusion into concrete questions
+* ask someone or research to get the answers
+* I've learned something new!! Hooray!
+
+Of course, I don't do that *every* time I'm confused about something -- sometimes I just note "ah,
+I'm confused about X, maybe I will figure that out someday but not today". That's okay too! Learning
+is a lifetime project :)
 
 ### working on learning skills makes a huge difference
 
