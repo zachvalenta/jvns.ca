@@ -1,5 +1,5 @@
 ---
-title: "Learning skills you can practice"
+title: "How to teach yourself hard things"
 date: 2018-09-01T10:32:00Z
 url: /blog/2018/09/01/learning-skills-you-can-practice/
 categories: []
