@@ -97,7 +97,7 @@ various examples of this that I think are kind of interesting:
   intersection of art & tech. it costs $5000 or so for a 10-week class.
 * [egghead.io](https://egghead.io/), a set of Javascript video tutorials, $40/month
 * O'Reilly's books & videos (like [safari](https://www.safaribooksonline.com/)).
-* [Lynda](https://www.lynda.com/), [Udacity](https://www.udacity.com/), [Udemy](https://www.udemy.com/) all have online courses
+* [Lynda](https://www.lynda.com/), [Udacity](https://www.udacity.com/), [Udemy](https://www.udemy.com/), [Coursera](https://www.coursera.org/) all have online courses
 * all the various coding bootcamps
 
 ### individuals who sell education to developers
@@ -153,9 +153,9 @@ So! Reflecting on this a bit, the categories we've seen are:
 1. companies selling a product pay (to educate their future customers)
 
 Basically everything that's free lives in either category #2 or #4, which is most of what I read. Is
-that really what I want to be doing, though? I feel like it's kind of weird that I mostly learn from
-free sources, and the incentive structures there aren't that well aligned with producing really
-excellent learning materials.
+that really what I want to be doing, though? As much as I ADORE all the bloggers I read I feel like
+it's kind of weird that I mostly learn from free sources, and the incentive structures there aren't
+that well aligned with producing really excellent learning materials.
 
 One of my favourite sources recently to learn from has been the book [the linux programming interface](http://man7.org/tlpi/), which is not free (it's [$70 or so](http://man7.org/tlpi/purchase.html)). And it's a MUCH more reliable and useful and efficient source than reading Stack Overflow answers about Linux. But not all books
 I've bought have been consistently an excellent use of time to read, so I find this a bit tricky.
