@@ -110,7 +110,7 @@ Here I'm just going to link to a post I previously wrote called
 The hardest part of asking questions for me is actually figuring out what I do and don't know. I
 think there are also some interesting skills here about:
 
-* finding Slack groups / email lists who can help you
+* finding Slack groups / IRC channels / email lists who can help you
 * mailing list etiquette
 * asking questions on Stack Overflow (which I've never done successfully)
 
@@ -160,5 +160,5 @@ working on getting better at learning. Some learning skills I'd like to be bette
   questions there
 * taking a large / complex piece of open source documentation and determining what information is in
   it and what isn't
-* using open source Slack groups effectively
+* using open source Slack/IRC groups effectively
 * finding great reference books that I can lean on

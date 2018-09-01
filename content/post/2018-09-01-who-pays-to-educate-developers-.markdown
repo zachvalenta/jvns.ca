@@ -54,7 +54,7 @@ recognize/respect you and are more likely to want to hire you!
 
 My original motivation for starting this blog, 5 years ago, was I wanted to get a better job than
 the job I'd had before. I posted a lot of my articles to hacker news to try to get readers.
-And it worked! I got a way better job (the job I have now!)
+And I think it helped! In any case I do have a way better job now :)
 
 Obviously those aren't still my motivations -- probably the main reason I keep writing here is that
 I find it rewarding when people tell me that my blog posts helped them learned something. But that's
@@ -159,3 +159,10 @@ that well aligned with producing really excellent learning materials.
 
 One of my favourite sources recently to learn from has been the book [the linux programming interface](http://man7.org/tlpi/), which is not free (it's [$70 or so](http://man7.org/tlpi/purchase.html)). And it's a MUCH more reliable and useful and efficient source than reading Stack Overflow answers about Linux. But not all books
 I've bought have been consistently an excellent use of time to read, so I find this a bit tricky.
+
+### on writing for free / writing for money
+
+The other reason I'm thinking about this, obviously, is that I [started selling some of my zines](https://jvns.ca/zines) recently, and I'm trying to figure out if I want to change where exactly I fit into this whole ecosystem. I'm pretty comfortable with where I
+am right now (blogging is fun! I get to meet cool people! having writing on the internet that anyone
+can just read by clicking on a link is great!), so making changes to that is kind of
+interesting/scary. We'll see what happens!
