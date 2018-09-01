@@ -26,7 +26,8 @@ teacher or anything, but here are a few things that I think helped me:
 - when I was a kid, I spent 7 years doing a math program called [Kumon](https://www.kumon.com/about-kumon/kumon-method/self-learning) which is really focused on learning math independently. I learned all of elementary/high school math that way. (from multiplication to algebra to calculus)
 - did a pure math degree, where having a clear sense of what I understand and don't understand was
   super important
-- working as a programmer, where as we know teaching yourself new things is an essential skill :)
+- went to the [recurse center](https://www.recurse.com/) which is a community of self-directed learners 
+- I work as a programmer, where as we know teaching yourself new things is an essential skill :)
 
 I think other ways people frequently get better at teaching themselves are:
 
