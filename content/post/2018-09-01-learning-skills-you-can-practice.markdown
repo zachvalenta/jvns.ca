@@ -140,7 +140,7 @@ I *like* learning! It's fun! So if I'm confused, that's usually a good thing bec
 not stagnating. Here's how I approach it:
 
 * recognize that I'm confused
-* figure out what the topic I'm 
+* figure out what the topic I'm confused about is
 * turn that confusion into concrete questions
 * ask someone or research to get the answers
 * I've learned something new!! Hooray!
