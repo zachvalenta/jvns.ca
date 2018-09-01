@@ -10,9 +10,9 @@ in one way or another about things I've learned and why they're exciting.
 
 But how do you teach yourself hard things? I've talked before about having a [growth mindset](https://www.mindsetworks.com/science/), which is about replacing the belief "I'm bad at X" with "I'm haven't learned about X yet".
 
-There's a lot more to learning than a positive attitude, though! Learning is a skill which takes a
-lot of work to get better at. So this blog post is about specific learning skills that I've worked
-on over time. They are:
+Having a positive attitude is really important, but IMO by itself it's not enough to learn hard
+things. Learning is a skill which takes a lot of work to get better at. So this blog post is about
+specific learning skills that I've worked on over time. They are:
 
 1. Identify what you don't understand (maybe the most important one)
 2. Have confidence in your knowledge
@@ -24,7 +24,7 @@ on over time. They are:
 Before we start, I want to talk a bit about what learning how to learn can look like. I'm not a
 teacher or anything, but here are a few things that I think helped me:
 
-- when I was a kid, I spent 7 years doing a math program called [Kumon](https://www.kumon.com/about-kumon/kumon-method/self-learning) which is really focused on learning math independently. I learned all of elementary/high school math that way. (from multiplication to algebra to calculus)
+- when I was a kid, I spent 7 years doing a math program called [Kumon](https://www.kumon.com/about-kumon/kumon-method/self-learning) which is really focused on learning math independently. I learned all of elementary/high school math that way. (from multiplication to algebra to calculus). I think this was pretty important and I owe a lot to my mom (who has now been helping kids learn independently for > 20 years!!) for making sure I got good at learning when I was a kid.
 - did a pure math degree, where having a clear sense of what I understand and don't understand was
   super important
 - went to the [recurse center](https://www.recurse.com/) which is a community of self-directed learners 
