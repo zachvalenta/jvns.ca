@@ -8,7 +8,7 @@ categories: []
 This blog is mostly about learning computer programming / systems. Probably 70% of these posts are
 in one way or another about things I've learned and why they're exciting.
 
-But how do you teach yourself hard things? I've talked before about having a [growth mindset](https://www.mindsetworks.com/science/), which is about replacing the belief "I'm bad at X" with "I'm haven't learned about X yet".
+But how do you teach yourself hard things? I've talked before about having a [growth mindset](https://www.mindsetworks.com/science/), which is about replacing the belief "I'm bad at X" with "I haven't learned about X yet".
 
 Having a positive attitude is really important, but IMO by itself it's not enough to learn hard
 things. Learning is a skill which takes a lot of work to get better at. So this blog post is about
