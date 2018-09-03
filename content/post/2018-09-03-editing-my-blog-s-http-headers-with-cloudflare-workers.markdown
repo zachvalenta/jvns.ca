@@ -82,8 +82,12 @@ None of these things worked. The most annoying thing about this issue is that I 
 reproduce it, so it seemed hard to report to my web host ("hey, i have this problem periodically,
 but you can't observe it, you just have to take my word that it happens, can you do something?")
 
-The most obvious thing to try that I haven't tried is changing web hosts to S3 or Github Pages or
-something, but I didn't feel like doing that.
+The most obvious things to try that I haven't tried are:
+
+* changing web hosts to S3 or Github Pages or something (changing web hosts is time consuming &
+  annoying!)
+* don't use a CDN so that bad HTTP responses don't get cached (for various reasons I want to keep
+  using a CDN :) )
 
 ### what worked: Cloudflare workers
 
@@ -199,15 +203,26 @@ And if I load that page in Firefox, I can see that the headers got edited by my 
 And, most importantly, the website displays properly instead of being a bunch of raw HTML, which was
 the point. Amazing!
 
+### wishlist: better logging for easier debugging
+
+One thing I really wish these workers had was some kind of logging system that let me log debug
+information about requests. They say that you can [use Sentry to accomplish this](https://blog.cloudflare.com/dogfooding-edge-workers/)
+which I'm totally sure would work, but it's a little finicky to set up and even a sampled log of
+what the workers `console.log`'d would be amazing. At some point I'll probably set up Sentry to
+figure out what's actually going on here.
+
 ### cloudflare workers are neat
 
 I usually don't talk about paid services on this blog and these workers definitely aren't free (they
-charge $5/month for up to 10 million requests/month, right now). But this was useful to me and the
-pricing seems reasonable and I thought it might be useful to other folks too! It's definitely a hack
--- running custom javascript on every single HTTP request is kind of a silly way to fix what is
-probably some kind of server configuration issue somewhere. But it helps me fix my problem until I
-decide to spend the time to migrate web hosts or whatever, so I'm happy with that :)
+charge $5/month for up to 10 million requests/month). But this was useful to me and I think it's
+really cool to be able to write arbitrary Javascript code that modifies all of my blog's HTTP
+responses!
 
-Looking at the CDN landscape in general, Fastly offers a seemingly similar feature called the [Edge
-SDK](https://www.fastly.com/products/edge-sdk) that lets you write VCL ("varnish configuration
-language").
+It's definitely a hack -- running custom javascript on every single HTTP request is an extremely
+silly way to fix what is probably some kind of server configuration issue somewhere.  But it helps
+me fix my problem until I decide to spend the time to migrate web hosts or whatever, so I'm happy
+with that. Paying $60/year is definitely worth it to me to fix the problem & not have to spend the
+time to migrate to a different host right now :)
+
+Looking at the CDN landscape in general, Fastly offers a seemingly similar feature called the [Edge SDK](https://www.fastly.com/products/edge-sdk) that lets you write VCL ("varnish configuration
+language"). I haven't used that though.
