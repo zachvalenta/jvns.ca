@@ -60,8 +60,8 @@ nearlyfreespeech.net and cached by Cloudflare, so it's something in there somewh
 
 This isn't the first time something like this happened -- in 2017, the `Content-Encoding: gzip`
 header [mysteriously disappeared](https://jvns.ca/blog/2017/05/10/a-small-website-bug-story/) and I
-never found out why that was either. But! Just because I don't know *why* this is happening and I
-have no visibility into it, doesn't mean I can fix it?
+never found out why that was either. But! Even though I don't know *why* this is happening and I
+have no visibility into it, I can still try to fix it!
 
 ### things I tried
 
@@ -119,13 +119,11 @@ addEventListener('fetch', event => {
 })
 
 /**
- * Fetch and log a request
  * @param {Request} request
  */
 async function handleRequest(request) {
   const response = await fetch(request)
   const content_type = response.headers.get("Content-Type")
-  console.log(content_type)
   if (!content_type) {
     var headers = new Headers();
     for (var kv of response.headers.entries()) {
@@ -207,8 +205,8 @@ I usually don't talk about paid services on this blog and these workers definite
 charge $5/month for up to 10 million requests/month, right now). But this was useful to me and the
 pricing seems reasonable and I thought it might be useful to other folks too! It's definitely a hack
 -- running custom javascript on every single HTTP request is kind of a silly way to fix what is
-surely some kind of server configuration issue somewhere. But it helps me fix my problem until I
-decide to spend the time migrate web hosts or whatever, so I'm happy with that :)
+probably some kind of server configuration issue somewhere. But it helps me fix my problem until I
+decide to spend the time to migrate web hosts or whatever, so I'm happy with that :)
 
 Looking at the CDN landscape in general, Fastly offers a seemingly similar feature called the [Edge
 SDK](https://www.fastly.com/products/edge-sdk) that lets you write VCL ("varnish configuration
