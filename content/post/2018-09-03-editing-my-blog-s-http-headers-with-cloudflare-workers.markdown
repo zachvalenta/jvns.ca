@@ -10,11 +10,11 @@ up like this:
 
 <img src="/images/blog-ugly.jpeg" width=150px>
 
-Not all the time, just... sometimes.
+Instead of rendering the HTML, it would just display the HTML. Not all the time, just... sometimes.
 
-I've gotten a lot of messages from readers with screenshots, and it's no fun! People do not want to
-read raw HTML. I would like my pages to render! I finally (I think) have a solution to this, so I
-wanted to write up what I did.
+I've gotten a lot of messages from readers with screenshots of this, and it's no fun! People do not
+want to read raw HTML. I would like my pages to render! I finally (I think) have a solution to this,
+so I wanted to write up what I did.
 
 ### The mystery of the missing Content-Type header
 
