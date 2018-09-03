@@ -203,13 +203,14 @@ And if I load that page in Firefox, I can see that the headers got edited by my 
 And, most importantly, the website displays properly instead of being a bunch of raw HTML, which was
 the point. Amazing!
 
-### wishlist: better logging for easier debugging
+### logging the HTTP requests & responses
 
-One thing I really wish these workers had was some kind of logging system that let me log debug
-information about requests. They say that you can [use Sentry to accomplish this](https://blog.cloudflare.com/dogfooding-edge-workers/)
-which I'm totally sure would work, but it's a little finicky to set up and even a sampled log of
-what the workers `console.log`'d would be amazing. At some point I'll probably set up Sentry to
-figure out what's actually going on here.
+I also tried adding some logging to the request workers by just making a server somewhere else that
+logs all POST requests made to it, following the ([instructions here](https://developers.cloudflare.com/workers/writing-workers/debugging-tips/)).
+
+I'm now logging all the requests & responses when the workers see a 200 that's missing a
+Content-Type header. (There are also some 304 responses missing a Content-Type header, but that's
+normal!). It hasn't turned up anything yet, but maybe something will appear eventually!
 
 ### cloudflare workers are neat
 
