@@ -5,8 +5,8 @@ url: /blog/2018/09/08/an-awesome-new-python-profiler--py-spy-/
 categories: []
 ---
 
-The other day I learned that [Ben Frederickson](https://twitter.com/benfrederickson) has written an awesome new profiler
-called [py-spy](https://github.com/benfred/py-spy).
+The other day I learned that [Ben Frederickson](https://twitter.com/benfrederickson) has written an awesome new Python profiler
+called [py-spy](https://github.com/benfred/py-spy)!
 
 It takes a similar approach to profiling as [rbspy](https://rbspy.github.io), the profiler I worked
 on earlier this year -- it can profile any running Python program, it geenit uses process_vm_readv to read
@@ -17,8 +17,8 @@ from the github README)
 
 <img src="https://raw.githubusercontent.com/benfred/py-spy/8ea64fae73b746a5167798d9dc46e24939d395eb/images/console_viewer.gif">
 
-It has this great top-like output by default. It's similar to what rbspy does, but feels like a much
-nicer user experience to me.
+It has this great top-like output by default. The default UI is somewhat similar to rbspy's, but
+feels better executed to me :)
 
 ### you can install it with pip!
 
@@ -58,9 +58,11 @@ for another language like Perl or PHP or Javascript or something, it's even easi
 
 I have this secret dream that we could eventually have a suite of open source profilers for lots of
 different programming languages that all have similar user interfaces. Today every single profiling
-tool is different and it's a pain.
+tool is different and it's a pain. 
 
 ### also rbspy has windows support now!
 
-Ben also contributed Windows support to [rbspy](https://github.com/rbspy/rbspy), which was amazing.
+Ben also contributed Windows support to [rbspy](https://github.com/rbspy/rbspy), which was amazing,
+and py-spy has Windows support from the start.
+
 So if you want to profile Ruby or Python programs on Windows, you can!
