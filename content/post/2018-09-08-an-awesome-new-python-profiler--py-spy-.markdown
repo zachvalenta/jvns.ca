@@ -25,7 +25,7 @@ nicer user experience to me.
 Another thing he's done that's really nice is make it installable with `pip` -- you can run `pip install
 py-spy` and have it download a binary immediately! This is cool because, even though `py-spy` is a
 Rust program, obviously Python programmers are used to installing software with `pip` and not
-`cargo`, so making it installable with pip is important for adoption.
+`cargo`.
 
 In [the README](https://github.com/benfred/py-spy) he describes what he had to do to distribute a
 Rust executable with pip without requiring that users have a Rust compiler installed.
@@ -33,7 +33,7 @@ Rust executable with pip without requiring that users have a Rust compiler insta
 
 ### pyspy probably is more stable than rbspy!
 
-One nice thing about building a Python profiler is that I believe it only uses Python's public
+Another nice thing `py-spy` is that I believe it only uses Python's public
 bindings (eg `Python.h`). What I mean by "public bindings" is the header files you'd find in
 [libpython-dev](https://packages.ubuntu.com/trusty/amd64/libpython2.7-dev/filelist).
 
