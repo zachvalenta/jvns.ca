@@ -20,6 +20,17 @@ from the github README)
 It has this great top-like output by default. It's similar to what rbspy does, but feels like a much
 nicer user experience to me.
 
+### you can install it with pip!
+
+Another thing he's done that's really nice is make it installable with `pip` -- you can run `pip install
+py-spy` and have it download a binary immediately! This is cool because, even though `py-spy` is a
+Rust program, obviously Python programmers are used to installing software with `pip` and not
+`cargo`, so making it installable with pip is important for adoption.
+
+In [the README](https://github.com/benfred/py-spy) he describes what he had to do to distribute a
+Rust executable with pip without requiring that users have a Rust compiler installed.
+
+
 ### pyspy probably is more stable than rbspy!
 
 One nice thing about building a Python profiler is that I believe it only uses Python's public
@@ -38,16 +49,6 @@ As a result, if you compare py-spy's [python bindings](https://github.com/benfre
 Basically what I think this means is that py-spy is likely to be easier to maintain longterm than
 rbspy -- since rbspy depends on unstable internal Ruby interfaces, future versions of Ruby could
 break it at any time.
-
-### you can install it with pip!
-
-Another thing he's done that's really nice is make it installable with `pip` -- you can run `pip install
-py-spy` and have it download a binary immediately! This is cool because, even though `py-spy` is a
-Rust program, obviously Python programmers are used to installing software with `pip` and not
-`cargo`, so making it installable with pip is important for adoption.
-
-In [the README](https://github.com/benfred/py-spy) he describes what he had to do to distribute a
-Rust executable with pip without requiring that users have a Rust compiler installed.
 
 ### the start of an ecosystem of profilers in Rust?? :)
 
