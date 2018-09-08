@@ -37,9 +37,8 @@ One nice thing about building a Python profiler is that I believe it only uses P
 bindings (eg `Python.h`). What I mean by "public bindings" is the header files you'd find in
 [libpython-dev](https://packages.ubuntu.com/trusty/amd64/libpython2.7-dev/filelist).
 
-rbspy by contrast uses a bunch of header files from inside the Ruby interpreter, which makes it a
-little more unstable and terrifying. This is because Python for whatever reason includes a lot more
-struct definitions in its header files.
+rbspy by contrast uses a bunch of header files from inside the Ruby interpreter. This is because
+Python for whatever reason includes a lot more struct definitions in its header files.
 
 As a result, if you compare py-spy's [python bindings](https://github.com/benfred/py-spy/tree/master/src/python_bindings) to rbspy's [ruby bindings](https://github.com/rbspy/rbspy/tree/master/ruby-structs/src), you'll notice that
 
@@ -47,8 +46,8 @@ As a result, if you compare py-spy's [python bindings](https://github.com/benfre
 * each file is much smaller (~30kb vs 200kb for Ruby)
 
 Basically what I think this means is that py-spy is likely to be easier to maintain longterm than
-rbspy -- since rbspy depends on unstable internal Ruby interfaces, future versions of Ruby could
-break it at any time.
+rbspy -- since rbspy depends on unstable internal Ruby interfaces, even though it works relatively
+well today, future versions of Ruby could break it at any time.
 
 ### the start of an ecosystem of profilers in Rust?? :)
 
