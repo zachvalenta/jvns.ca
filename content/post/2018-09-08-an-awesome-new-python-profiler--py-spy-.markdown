@@ -9,7 +9,7 @@ The other day I learned that [Ben Frederickson](https://twitter.com/benfrederick
 called [py-spy](https://github.com/benfred/py-spy)!
 
 It takes a similar approach to profiling as [rbspy](https://rbspy.github.io), the profiler I worked
-on earlier this year -- it can profile any running Python program, it geenit uses process_vm_readv to read
+on earlier this year -- it can profile any running Python program, it uses process_vm_readv to read
 memory, and it by default displays profiling information in a really easy-to-use way.
 
 Obviously, think this is SO COOL. Here's what it looks like profiling a Python program: (gif taken
