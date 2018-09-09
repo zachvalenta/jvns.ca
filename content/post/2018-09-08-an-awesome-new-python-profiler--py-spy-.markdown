@@ -54,7 +54,9 @@ well today, future versions of Ruby could break it at any time.
 One thing that I think is super nice is that rbspy & py-spy share some code! There's this
 [proc-maps](https://github.com/benfred/proc-maps) crate that Ben extracted from rbspy and improved
 substantially. I think this is awesome because if someone wants to make a py-spy/rbspy-like profiler
-for another language like Perl or PHP or Javascript or something, it's even easier!
+in Rust for another language like Perl or Javascript or something, it's even easier!
+
+It turns out that [phpspy](https://github.com/adsr/phpspy/) is a sampling profiler for PHP, too!
 
 I have this secret dream that we could eventually have a suite of open source profilers for lots of
 different programming languages that all have similar user interfaces. Today every single profiling
