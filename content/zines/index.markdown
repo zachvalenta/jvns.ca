@@ -129,22 +129,6 @@ size" zines) are $10 :)
 </div>
 
 
-
-<div class="zine">
-<div>
-<a class="zine-link" href="#linux-comics">
-<h3>Linux comics</h3>
-<img src="https://jvns.ca/images/linux-comics-cover.png" width=100%><br>
-<img src="/images/copy-on-write-cover.png" width=100%>
-</a>
-</div>
-<div>
-<a class="button2" href="/linux-comics-zine.pdf">Read online</a>
-<a class="button2" href="/linux-comics-zine-print.pdf">Get the print version!</a>   
-</div>
-</div>
-
-
 <div class="zine">
 <a class="zine-link" href="#tcpdump">
 <h3>Let's learn tcpdump!</h3>
@@ -199,6 +183,22 @@ size" zines) are $10 :)
   <a class="button2" href="/linux-tracing-zine-print.pdf">Get the print version!</a>   
 </div>
 </div>
+
+
+<div class="zine">
+<div>
+<a class="zine-link" href="#linux-comics">
+<h3>Linux comics</h3>
+<img src="https://jvns.ca/images/linux-comics-cover.png" width=100%><br>
+<img src="/images/copy-on-write-cover.png" width=100%>
+</a>
+</div>
+<div>
+<a class="button2" href="/linux-comics-zine.pdf">Read online</a>
+<a class="button2" href="/linux-comics-zine-print.pdf">Get the print version!</a>   
+</div>
+</div>
+
 
 
 
