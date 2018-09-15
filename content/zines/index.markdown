@@ -68,14 +68,10 @@ hr.light {
 }
 </style>
 
-I've published a bunch of computer programming zines. Some general information:
+Here are my programming zines! <a href="#whats-a-zine"> (what's a zine?) </a>
+Click on the cover of any of them to get a summary. 
 
-* <a href="#whats-a-zine"> **What's a zine?**</a>
-* <a href="#print-directions"> **Printing directions**</a>
-
-You can get more information about any of them by clicking on the cover. They all have a PDF you can
-read on your computer and a print version. Many of them are free, and the newer ones (the "bite
-size" zines) are $10 :)
+They all have a PDF you can read on your computer and a print version <a href="#print-directions"> (print directions here) </a> . Many of them are free, and the newer ones (the "bite size" zines) are $10.
 
 <div class="container">
 
