@@ -12,8 +12,7 @@ how I was supposed to work with my manager. Basically I've learned along the way
 have a _great_ manager, there are still a lot of things I can do to make sure that we work well
 together, mostly around communicating clearly! So this zine is about how to do that.
 
-You can get it for $10 at https://gum.co/manager-zine. There are also various company rates if you
-want to buy it for your team. Here's the cover and table of contents:
+You can get it for $10 at https://gum.co/manager-zine. Here's the cover and table of contents:
 
 <div align="center">
 <a href="https://gum.co/manager-zine"><img width="250px" src="https://jvns.ca/images/manager-cover.png"></a>
