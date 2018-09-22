@@ -19,6 +19,9 @@ You can get it for $10 at https://gum.co/manager-zine. Here's the cover and tabl
 <a href="https://jvns.ca/images/manager-toc.png"><img width="250px" src="https://jvns.ca/images/manager-toc.png"></a>
 </div>
 
+The cover art is by [Deise Lino](http://deiselino.tumblr.com/). Tons of people helped me write this
+zine -- thanks to Allison, Brett, Jay, Kamal, Maggie, Marc, Marco, Maya, Will, and many others.
+
 ### a couple of my favorite pages from the zine
 
 I've been posting pages from the zine <a href="https://twitter.com/b0rk">on twitter</a> as I've been
