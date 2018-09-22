@@ -71,9 +71,24 @@ hr.light {
 Here are my programming zines! <a href="#whats-a-zine"> (what's a zine?) </a>
 Click on the cover of any of them to get a summary. 
 
-They all have a PDF you can read on your computer and a print version <a href="#print-directions"> (print directions here) </a> . Many of them are free, and the newer ones (the "bite size" zines) are $10.
+They all have a PDF you can read on your computer and a print version <a href="#print-directions"> (print directions here) </a>. Many of them are free, and the newer ones are $10.
 
 <div class="container">
+
+<div class="zine">
+<div>
+<a class="zine-link" href="https://gum.co/manager-zine">
+<h3>Help! I have a manager!</h3>
+<img src="/images/manager-cover.png" width=100%><br>
+</a>
+</div>
+<div>
+<a class="button2" href="https://gum.co/manager-zine">Buy for $10</a>
+</div>
+</div>
+<div class="zine">
+</div>
+
 
 <div class="zine">
 <div>
