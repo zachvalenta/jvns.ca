@@ -7,7 +7,7 @@ categories: []
 
 
 Hello! As you may have noticed, I've been writing a few new zines (they're all at
-https://jvns.ca/zines), and while my zines used to be free (or pay-for-early-access-then-free
+https://jvns.ca/zines ), and while my zines used to be free (or pay-for-early-access-then-free
 after), the new ones are not free! They cost $10!
 
 In this post, I want to talk a little about why I made the switch and how it's been going so far.
@@ -76,7 +76,7 @@ investing a little more into the quality, people have taken the project a little
 I think "this costs money" is a nice way to signal "I actually spent time on this, this
 is good".
 
-### people are actually willing to spend money on zines
+### people are actually willing to buy zines
 
 At the beginning I said that I was worried that if I sold zines, nobody would buy them, and so
 nobody would learn from them, and that would be awful. Was that worry justified? Well, I actually have a little bit of
@@ -175,6 +175,8 @@ As an example, most of the pages from Help! I have a manager! are in this [twitt
 Not everything has been 100% amazing with selling zines on the internet! A couple of things that
 haven't gone well:
 
+* some people don't have credit cards / PayPal and so can't get the zine! I would really really like
+  a good solution to this.
 * Gumroad doesn't have great email deliverability -- sometimes when someone buys a zine it'll end up
   in their spam. This is pretty easy to resolve (people email me to say that they didn't get it, and
   it's always easy to fix right away), but I wish they were better at this. Otherwise Gumroad is a
