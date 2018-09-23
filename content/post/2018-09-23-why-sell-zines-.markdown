@@ -10,7 +10,7 @@ Hello! As you may have noticed, I've been writing a few new zines (they're all a
 https://jvns.ca/zines), and while my zines used to be free (or pay-for-early-access-then-free
 after), the new ones are not free! They cost $10!
 
-In this post, I want to talk a little about why I made the switch.
+In this post, I want to talk a little about why I made the switch and how it's been going so far.
 
 ### selling your work is okay
 
