@@ -193,7 +193,8 @@ haven't gone well:
 
 I'm sure I'll make some more mistakes in the future and hopefully I'll learn from them :). I wanted
 to post these because I worry a lot about making mistakes when selling things to folks, but once I
-write down the issues so far it doesn't seem like a huge deal.
+write down the issues so far they all feel very resolvable. Mostly I just try to reply to email fast
+when folks have problems, which isn't that often.
 
 ### let's see how the experiment goes!
 
