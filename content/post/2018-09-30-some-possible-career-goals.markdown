@@ -8,9 +8,8 @@ categories: []
 I was thinking about career goals a person could have (as a software developer) this morning, and it
 occurred to me that there are a lot of possible goals! So I [asked folks on Twitter](https://twitter.com/b0rk/status/1046456874856583173) what some possible goals were and got a lot of answers.
 
-This list intentionally has big goals and small goals, and goals in very different directions. I
-found it helpful to write, and maybe you will find it helpful too! Statements about what kinds of
-goals you _should_ have are absent from this post -- this is a mostly unadorned list :)
+This list intentionally has big goals and small goals, and goals in very different directions. I'm
+not sure yet whether it's helpful or not but here it is just in case :)
 
 I've separated them into some very rough categories. Also I feel like there's a lot missing from this list still, and I'd be happy to hear what's missing [on twitter](https://twitter.com/b0rk/status/1046626447379509250).
 
