@@ -12,7 +12,7 @@ This list intentionally has big goals and small goals, and goals in very differe
 found it helpful to write, and maybe you will find it helpful too! Statements about what kinds of
 goals you _should_ have are absent from this post -- this is a mostly unadorned list :)
 
-I've separated them into some rough categories, though there's definitely overlap.
+I've separated them into some very rough categories. Also I feel like there's a lot missing from this list still, and I'd be happy to hear what's missing [on twitter](https://twitter.com/b0rk/status/1046626447379509250).
 
 ### technical goals
 
@@ -96,6 +96,7 @@ programs consist of technically.
 * give a talk at a really prestigious conference / in front of people you respect
 * give a workshop on something you know really well
 * start a conference
+* write a popular blog / an article that gets upvoted a lot
 * teach a class (eg at a high school / college)
 * change the way folks in the industry think about something (eg blameless postmortems, fairness in
   machine learning)
@@ -132,4 +133,5 @@ something that I didn't *think* was a huge deal to me, but feel really proud of 
 So it feels pretty useful to me to write down these things and think "do I really want to work at
 FANCY_COMPANY? would that feel good? do I care about working at a nonprofit? do I want to learn how
 to build software products that lots of people use? do I want to work on an application that serves
-a million requests per second?"
+a million requests per second? When I accomplished that goal in the past, did it actually feel
+meaningful, or did I not really care?"
