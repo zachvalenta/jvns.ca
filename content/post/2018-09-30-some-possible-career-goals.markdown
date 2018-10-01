@@ -110,7 +110,7 @@ remotely").
 * work remotely
 * get your own office
 * work in a place where you feel accepted/included
-* work with a team that you just really get along with
+* work with people who share your values (this involves knowing what your values are! :) )
 * have good health insurance / benefits
 * make X amount of money
 
