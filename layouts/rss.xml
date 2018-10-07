@@ -11,7 +11,7 @@
 
   {{ range first 20 .Data.Pages }}
   <entry>
-    {{ `<title type="html"><![CDATA` | safeHTML }}[{{ .Title }}]]></title>
+    {{ `<title type="html"><![CDATA` | safeHTML }}[{{ .Title | safeHTML }}]]></title>
     <link href="{{ .Permalink }}"/>
     <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
     <id>{{ .Permalink }}</id>
