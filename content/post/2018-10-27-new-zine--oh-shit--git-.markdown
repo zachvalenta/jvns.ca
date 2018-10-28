@@ -51,3 +51,6 @@ and a page on `git reflog`:
 I'm not sure, but I don't think I'll write any more zines for a couple of months. So far there have
 been 5 (!!!) this year -- perf, bite size linux, bite size command line, help! I have a manager!,
 and this one!. I'm really happy with that number and very grateful to everyone who's supported them.
+
+There's a definite tradeoff between writing zines and blogging, and writing blog posts is really
+fun. Maybe I'll try going back in that direction for a little.
