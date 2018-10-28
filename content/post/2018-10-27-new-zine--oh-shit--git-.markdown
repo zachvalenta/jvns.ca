@@ -34,7 +34,7 @@ her and she agreed to work with me. And now here it is! :D
 The zine isn't the same as the website -- we decided we wanted to add some fundamental information
 about how Git works (what's a commit?), because to really work with Git effectively you need to
 understand at least a little bit about how commits and branches work! And some of the explanations
-are improved. Probably about 50% of the material in the zine is from the comic and 50% is new.
+are improved. Probably about 50% of the material in the zine is from the website and 50% is new.
 
 ### a couple of example pages
 
