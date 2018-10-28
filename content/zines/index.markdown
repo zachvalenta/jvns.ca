@@ -77,6 +77,19 @@ They all have a PDF you can read on your computer and a print version <a href="#
 
 <div class="zine">
 <div>
+<a class="zine-link" href="https://gum.co/oh-shit-git">
+<h3>Oh shit, git!</h3>
+<img src="/images/ohshit-cover.png" width=100%><br>
+</a>
+</div>
+<div>
+<a class="button2" href="https://gum.co/oh-shit-git">Buy for $10</a>
+</div>
+</div>
+
+
+<div class="zine">
+<div>
 <a class="zine-link" href="https://gum.co/manager-zine">
 <h3>Help! I have a manager!</h3>
 <img src="/images/manager-cover.png" width=100%><br>
@@ -86,9 +99,6 @@ They all have a PDF you can read on your computer and a print version <a href="#
 <a class="button2" href="https://gum.co/manager-zine">Buy for $10</a>
 </div>
 </div>
-<div class="zine">
-</div>
-
 
 <div class="zine">
 <div>
