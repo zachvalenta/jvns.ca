@@ -6,7 +6,7 @@ categories: []
 ---
 
 I'm speaking at [Let's sketch tech!](https://letssketchtech.splashthat.com/) in San Francisco
-December. I've been thinking about what to talk about (the mechanics of making zines? how comics
+in December. I've been thinking about what to talk about (the mechanics of making zines? how comics
 skills are different from drawing skills? the business of self-publishing?). So here's one
 interesting question: in what situations does using comics to teach help?
 
