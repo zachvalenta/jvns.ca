@@ -30,7 +30,8 @@ really brilliant because a lot of the things on that site ("oh shit, i committed
 branch!") are things I remember being really scary when I was less comfortable with git!
 
 So I thought, maybe this could be useful for folks to have as a paper reference! Maybe we could make
-a zine out of it! So I emailed her and she agreed to work with me. And now here it is! :D
+a zine out of it! So I emailed her and she agreed to work with me. And now here it is! :D. Very
+excited to have done a first collaboration.
 
 ### what's new in the oh shit, git! zine?
 
