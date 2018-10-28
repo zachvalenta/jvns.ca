@@ -14,7 +14,7 @@ You can get it for $10 at [Oh shit, git!](https://gum.co/oh-shit-git) or a swear
 
 <div align="center">
 <a href="https://gum.co/oh-shit-git"><img width="250px" src="https://jvns.ca/images/ohshit-cover-bw.png"></a>
-<a href="https://jvns.ca/images/manager-toc.png"><img width="250px" src="https://jvns.ca/images/ohshit-toc.png"></a>
+<a href="https://jvns.ca/images/ohshit-toc.png"><img width="250px" src="https://jvns.ca/images/ohshit-toc.png"></a>
 </div>
 
 ### why this zine?
