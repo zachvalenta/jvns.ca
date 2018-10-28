@@ -24,10 +24,13 @@ to do it. I was in this weird place with git where, even though I know that git 
 I felt like I'd forgotten what it was like to be confused/scared by Git. And I write most things
 from a place of "I was super confused by this thing just recently, let me explain it!!".
 
-But then!! I saw that Katie Sylor-Miller had made this really fun and popular website called [oh
-shit, git!](https://ohshitgit.com/).  And I thought, that's super fun, and it seems like it could be
-useful for folks to have as a paper reference! Maybe we could make a zine out of it! So I emailed
-her and she agreed to work with me. And now here it is! :D
+But then!! I saw that Katie Sylor-Miller had made this delightful website called [oh shit,
+git!](https://ohshitgit.com/) explaining how to get out of common git mishaps. I thought this was
+really brilliant because a lot of the things on that site ("oh shit, i committed to the wrong
+branch!") are things I remember being really scary when I was less comfortable with git!
+
+So I thought, maybe this could be useful for folks to have as a paper reference! Maybe we could make
+a zine out of it! So I emailed her and she agreed to work with me. And now here it is! :D
 
 ### what's new in the oh shit, git! zine?
 
