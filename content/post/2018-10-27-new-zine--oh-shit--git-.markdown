@@ -45,3 +45,9 @@ Here are a couple of example pages, to give you an idea of what's in the zine:
 and a page on `git reflog`:
 
 <img width="100%" src="https://jvns.ca/images/ohshit-reflog.png">
+
+### that might be it for zines in 2018!
+
+I'm not sure, but I don't think I'll write any more zines for a couple of months. So far there have
+been 5 (!!!) this year -- perf, bite size linux, bite size command line, help! I have a manager!,
+and this one!. I'm really happy with that number and very grateful to everyone who's supported them.
