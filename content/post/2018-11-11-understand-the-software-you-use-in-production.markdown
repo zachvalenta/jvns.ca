@@ -72,7 +72,7 @@ seen along the way are: (in no particular order)
 * it frequently segfaults when given incorrect configuration
 * there was a memory safety bug in the stats system which caused it to segfault
 * there was a buggy commit in an update, which caused it to segfault
-* One of the default settings resulted in retry & timeout headers weren't respected
+* One of the default settings resulted in retry & timeout headers not being respected
 * Envoy (as a client) doesn't support TLS session resumption, so servers with a large amount of Envoy clients get DDOSed by TLS handshakes
 * Envoy's active healthchecking means that you services get healthchecked by every client. This is
   mostly okay but (again) services with many clients can get overwhelmed by it.
