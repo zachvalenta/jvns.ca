@@ -78,8 +78,7 @@ seen along the way are: (in no particular order)
   from the load balancer rotation.
 * Envoy doesn't retry failed connections by default
 * it frequently segfaults when given incorrect configuration
-* there was a memory safety bug in the stats system which caused it to segfault
-* there was a buggy commit in an update, which caused it to segfault
+* various issues with it segfaulting because of resource leaks / memory safety issues
 
 A lot of these aren't bugs -- they're just cases where what we expected the default configuration
 to do one thing, and it did another thing. This happens all the time, and it can result in really
@@ -149,6 +148,9 @@ not ok:
 * Envoy crashes / segfaults are not good -- if it crashes, network connections don't happen
 * if the control server serves incorrect or incomplete data that's extremely dangerous and can
   result in serious production incidents. (so downtime is fine, but serving incorrect data is not!)
+
+Neither of these lists are complete at all, but they're examples of what I mean by "understand your
+sofware".
 
 ### sharing ok to break / not ok lists is useful
 
