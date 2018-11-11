@@ -6,8 +6,8 @@ categories: []
 ---
 
 I'm working on a talk for kubecon in December! One of the points I want to get across is the amount
-of time/investment it takes to use new software in production without breaking anything, and what
-that's looked like for us in our use of Kubernetes.
+of time/investment it takes to use new software in production without causing really serious
+incidents, and what that's looked like for us in our use of Kubernetes.
 
 To start out, this post isn't blanket advice. There are lots of times when it's totally fine to just
 use software and not worry about **how** it works exactly. So let's start by talking about when it's
@@ -74,10 +74,11 @@ seen along the way are: (in no particular order)
 * there was a buggy commit in an update, which caused it to segfault
 * One of the default settings resulted in retry & timeout headers weren't respected
 * Envoy (as a client) doesn't support TLS session resumption, so servers with a large amount of Envoy clients get DDOSed by TLS handshakes
-* Envoy's active healthchecking means that every single client. This is mostly okay but (again)
-  services with many clients
+* Envoy's active healthchecking means that you services get healthchecked by every client. This is
+  mostly okay but (again) services with many clients can get overwhelmed by it.
 * Having every client independently healthcheck every server interacts somewhat poorly with services
-  which are under heavy load, and can exacerbate performance issues by removing 
+  which are under heavy load, and can exacerbate performance issues by removing up-but-slow clients
+  from the load balancer rotation.
 * Envoy doesn't retry failed connections by default
 
 A lot of these aren't bugs -- they're just cases where what we expected the default configuration
