@@ -80,13 +80,13 @@ def run(cmd)
 end
 desc "Default deploy task"
 task :deploy do
-  Rake::Task["build"].execute
-  system "chmod 664 static/images/*.png"
-  system "chmod 664 static/images/*.jpg"
-  system "chmod 664 static/images/*.gif"
-  system "chmod 664 static/images/*.svg"
-  system "chmod 664 static/images/*.jpeg"
-  Rake::Task["#{deploy_default}"].execute
+  #Rake::Task["build"].execute
+  #system "chmod 664 static/images/*.png"
+  #system "chmod 664 static/images/*.jpg"
+  #system "chmod 664 static/images/*.gif"
+  #system "chmod 664 static/images/*.svg"
+  #system "chmod 664 static/images/*.jpeg"
+  #Rake::Task["#{deploy_default}"].execute
   puts "Clearing Cloudflare cache"
   system "bash scripts/cloudflare_clear_cache.sh"
 end
