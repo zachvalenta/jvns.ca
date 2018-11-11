@@ -79,6 +79,7 @@ seen along the way are: (in no particular order)
 * Envoy doesn't retry failed connections by default
 * it frequently segfaults when given incorrect configuration
 * various issues with it segfaulting because of resource leaks / memory safety issues
+* hosts running out of disk space between we didn't rotate Envoy log files often enough
 
 A lot of these aren't bugs -- they're just cases where what we expected the default configuration
 to do one thing, and it did another thing. This happens all the time, and it can result in really
