@@ -24,7 +24,6 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 
 desc "Generate Hugo site"
 task :build do
-  system "compass compile --css-dir #{static_dir}/stylesheets/"
   system "hugo"
 end
 
@@ -32,14 +31,13 @@ desc "Watch the site and regenerate when it changes"
 task :serve do
   puts "Starting to watch source with Hugo and Compass."
   hugoPid = Process.spawn("hugo server --bind 0.0.0.0")
-  compassPid = Process.spawn("compass watch --css-dir #{static_dir}/stylesheets/")
 
   trap("INT") {
-    [hugoPid, compassPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    [hugoPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
     exit 0
   }
 
-  [hugoPid, compassPid].each { |pid| Process.wait(pid) }
+  [hugoPid].each { |pid| Process.wait(pid) }
 end
 
 
