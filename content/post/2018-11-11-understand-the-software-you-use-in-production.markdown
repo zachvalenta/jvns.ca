@@ -69,9 +69,6 @@ though:
 For example, I've been spending a lot of time with Envoy in the last year. Some of the issues we've
 seen along the way are: (in no particular order)
 
-* it frequently segfaults when given incorrect configuration
-* there was a memory safety bug in the stats system which caused it to segfault
-* there was a buggy commit in an update, which caused it to segfault
 * One of the default settings resulted in retry & timeout headers not being respected
 * Envoy (as a client) doesn't support TLS session resumption, so servers with a large amount of Envoy clients get DDOSed by TLS handshakes
 * Envoy's active healthchecking means that you services get healthchecked by every client. This is
@@ -80,6 +77,9 @@ seen along the way are: (in no particular order)
   which are under heavy load, and can exacerbate performance issues by removing up-but-slow clients
   from the load balancer rotation.
 * Envoy doesn't retry failed connections by default
+* it frequently segfaults when given incorrect configuration
+* there was a memory safety bug in the stats system which caused it to segfault
+* there was a buggy commit in an update, which caused it to segfault
 
 A lot of these aren't bugs -- they're just cases where what we expected the default configuration
 to do one thing, and it did another thing. This happens all the time, and it can result in really
