@@ -105,8 +105,14 @@ incident only once". When we investigate issues and implement remediations, usua
 
 * a configuration change
 * reporting a bug upstream and either fixing it ourselves or waiting for a fix
-* a workaround ("this software doesn't work with 10,000 clients? ok, we just won't use it with
-  in cases where there are clients for now!", "oh, a memory leak? let's just restart it every hour")
+* a workaround ("this software doesn't work with 10,000 clients? ok, we just won't use it with in
+  cases where there are that many clients for now!", "oh, a memory leak? let's just restart it every
+  hour")
+
+Knowledge-sharing is really important here too -- it's always unfortunate when one person finds an
+incident in production, fixes it, but doesn't explain the issue to the rest of the team so somebody
+else ends up causing the same incident again later because they didn't hear about the original
+incident.
 
 ### Understand what is ok to break and isn't
 
