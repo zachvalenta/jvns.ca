@@ -108,11 +108,12 @@ incident only once". When we investigate issues and implement remediations, usua
 * a workaround ("this software doesn't work with 10,000 clients? ok, we just won't use it with
   in cases where there are clients for now!", "oh, a memory leak? let's just restart it every hour")
 
-### Understand what can break and what can't
+### Understand what is ok to break and isn't
 
 Another huge part of understanding the software I run in production is understanding which parts
-are OK to break and which aren't. This lets me **focus**: I can put big boxes around some components
-and decide "ok, if this breaks it doesn't matter, so I won't pay super close attention to it".
+are OK to break (aka "if this breaks, it won't result in a production incident") and which aren't.
+This lets me **focus**: I can put big boxes around some components and decide "ok, if this breaks it
+doesn't matter, so I won't pay super close attention to it".
 
 For example, with Kubernetes:
 
@@ -121,8 +122,8 @@ ok to break:
 * any stateless control plane component can crash or be cycled out or go down for 5 minutes at any
   time. If we had 95% uptime for the kubernetes control plane that would probably be fine, it just
   needs to be working most of the time.
-* kubernetes networking can break as much as it wants because we decided not to give pods IP
-  addresses to start
+* kubernetes networking (the system where you give every pod an IP addresses) can break as much as
+  it wants because we decided not to use it to start
 
 not ok:
 
