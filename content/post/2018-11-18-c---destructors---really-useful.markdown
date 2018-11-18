@@ -51,7 +51,7 @@ makes requests to Envoy, which then proxies the request to the servers the appli
 to.
 
 One very useful feature Envoy has is this thing called "circuit breakers".  Basically the idea with
-is that if you application makes 50 billion connections to a service, that will probably overwhelm
+is that if your application makes 50 billion connections to a service, that will probably overwhelm
 the service. So Envoy keeps track how many TCP connections you've made to a service, and will stop you from making
 new requests if you hit the limit. The default `max_connection` limit
 
