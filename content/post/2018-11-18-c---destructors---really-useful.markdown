@@ -21,7 +21,7 @@ destructor. So if you have some code like
 
 ```
 function do_thing() {
-  Thing x(); // this calls the Thing constructor
+  Thing x{}; // this calls the Thing constructor
   return 2;
 }
 ```
