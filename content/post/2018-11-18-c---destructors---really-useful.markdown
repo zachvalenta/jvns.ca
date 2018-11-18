@@ -30,7 +30,6 @@ there will be a call to x's destructor at the end of the `do_thing` function. so
 generates looks something. like
 
 * make new thing
-* pass
 * call the new thing's destructor
 * return 2
 
