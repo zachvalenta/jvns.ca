@@ -134,6 +134,13 @@ run when the object is GC'd. But often (like in this case, which the connection 
 things to be cleaned up **right away** when the object is no longer in use, not some indeterminate
 period later whenever GC happens to run.
 
+Python context managers are a related idea, you could do something like:
+
+```
+with conn_pool.connection() as conn:
+    do stuff
+```
+
 ### that's all for now!
 
 Hopefully this explanation of RAII is interesting and mostly correct. Thanks to Kamal for clarifying
