@@ -27,16 +27,16 @@ function do_thing() {
 ```
 
 there will be a call to x's destructor at the end of the `do_thing` function. so the code c++
-generates looks something. like
+generates looks something like:
 
 * make new thing
 * call the new thing's destructor
 * return 2
 
-obviously destructors are way more complicated like this. They need to get called when there are
+Obviously destructors are way more complicated like this. They need to get called when there are
 exceptions! And sometimes they get called manually. And for lots of other reasons too. But there are
 10 million things to know about C++ and that is not what we're doing today, we are just talking
-about one thing?
+about one thing.
 
 ### what happens in a destructor?
 
