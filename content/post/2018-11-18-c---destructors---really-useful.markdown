@@ -21,7 +21,7 @@ destructor. So if you have some code like
 
 ```
 function do_thing() {
-  auto x = new Thing();
+  auto x = Thing();
   return 2;
 }
 ```
