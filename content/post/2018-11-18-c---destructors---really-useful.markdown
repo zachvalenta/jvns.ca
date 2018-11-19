@@ -106,7 +106,7 @@ basically the way it works is:
 * make a class for that connection
 * put all the initialization / finishing code in the constructor / destructor
 * make sure the object's destructor method gets called when appropriate! (by removing it from a
-  vector / having )
+  vector / having it go out of scope)
 
 Previously I knew about using this pattern for kind of obvious things (make sure all the memory
 gets freed in the destructor, or make sure file descriptors get closed). But I didn't realize it was
