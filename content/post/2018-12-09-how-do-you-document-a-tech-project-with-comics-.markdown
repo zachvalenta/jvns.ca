@@ -93,7 +93,7 @@ to give our the zine to folks in the workshop as notes? Maybe you want to mail i
 
 ### how to hire someone to help you
 
-There are basically 2 ways to hire someone:
+There are basically 3 ways to hire someone:
 
 1. Hire someone who both understands (or can quickly learn) the technology you want to document and
    can illustrate well. These folks are tricky to find and probably expensive (I certainly wouldn't
@@ -106,7 +106,8 @@ There are basically 2 ways to hire someone:
    explanations for their illustrators** -- I've seen a few really adorable tech comics that I don't
    find useful or clear at all. I'd love to see more people do a better job of this. What's the
    point of having an adorable illustration if it doesn't teach anyone anything? :)
+3. Draw it yourself :). This is what I do, obviously. stick figures are okay!
 
 Most people seem to use method #2 -- I'm not actually aware of any tech folks who have done
-commissioned comics (though I'm sure it's happened!). I think it's a great option and I'd love to
-see more folks do it.
+commissioned comics (though I'm sure it's happened!). I think method #2 is a great option and I'd
+love to see more folks do it. Paying illustrators is really fun!
