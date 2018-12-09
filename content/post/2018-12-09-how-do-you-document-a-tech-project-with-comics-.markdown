@@ -33,7 +33,7 @@ information you want to convey, who your target audience is, and how you want to
 (twitter? on your website? in person?), and figure out how to illustrate it after :). The
 information is the main thing, not the art!
 
-Once you have a clear story about what you want to get across (""), you can start trying to think
+Once you have a clear story about what you want to get across, you can start trying to think
 about how to represent it using illustrations!
 
 ### focus on concepts that don't change
