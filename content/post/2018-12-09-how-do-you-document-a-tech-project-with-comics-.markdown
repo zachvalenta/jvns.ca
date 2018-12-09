@@ -97,9 +97,9 @@ There are basically 3 ways to hire someone:
 
 1. Hire someone who both understands (or can quickly learn) the technology you want to document and
    can illustrate well. These folks are tricky to find and probably expensive (I certainly wouldn't
-   do a project like this for less than $10,000), just because programmers can usually charge a
-   pretty high consulting rate. I'd guess that the main failure mode here is that it might be
-   impossible/very hard to find someone, and it might be expensive.
+   do a project like this for less than $10,000 even if I did do commissions), just because programmers
+   can usually charge a pretty high consulting rate. I'd guess that the main failure mode here
+   is that it might be impossible/very hard to find someone, and it might be expensive.
 2. Collaborate with an illustrator to draw it for you. The main failure mode here is that if you
    don't give the illustrator clear explanations of your tech to work with, you.. won't end up with
    a clear and useful explanation. From what I've seen, **most folks underinvest in writing clear
