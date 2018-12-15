@@ -56,8 +56,8 @@ like everyone is using Cool New Things (helm! istio! knative! eep!). I'm sure th
 great but I find it much simpler to stay focused on the basics and I wanted people to know that it's
 okay to do that if that's what works for your company.
 
-I think the reality is that actually a lot of folks are still trying to work out of how to use this
-new software in a reliable and secure way.
+I think the reality is that actually a lot of folks are still trying to work out how to use this new
+software in a reliable and secure way.
 
 ### other talks 
 
