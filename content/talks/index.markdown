@@ -4,7 +4,34 @@ staticpage: true
 categories: []
 ---
 
-Here are some of the talks I've given!
+Here's a mostly up to date list of all the talks I've given.
+
+### High Reliability Infrastructure Migrations (keynote, KubeCon NA 2018)
+
+[slides](https://speakerdeck.com/jvns/high-reliability-infrastructure-migrations)
+
+**Abstract**:  For companies with high availability requirements (99.99% uptime or higher), running
+new software in production comes with a lot of risks. But it's possible to make significant
+infrastructure changes while maintaining the availability your customers expect!I'll give you a
+toolbox for derisking migrations and making infrastructure changes with confidence, with examples
+from our Kubernetes & Envoy experience at Stripe. 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/obB2IvCv-K0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Build impossible programs (Deconstruct 2018)
+
+[transcript + video](https://www.deconstructconf.com/2018/julia-evans-build-impossible-programs)
+
+<iframe width="540" height="400" allowFullScreen="" frameborder="0" mozallowfullscreen="" src="https://player.vimeo.com/video/290376045" webkitAllowFullScreen=""></iframe>
+
+### Building a Ruby profiler (Localhost, March 2018)
+
+Tech talk about what was involved in building a Ruby profiler.
+
+[transcript](https://jvns.ca/blog/2018/04/16/rbspy-talk/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o6wWSPxYueU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### So you want to be a wizard (keynote, SREcon 2017)
 
@@ -21,6 +48,7 @@ zine](https://jvns.ca/zines/#so-you-want-to-be-a-wizard)
    <img src="https://www.usenix.org/sites/default/files/styles/video-thumbnail/public/conference/video/evans_2.jpeg?itok=zhlCf1wz" width="640" height="480" title="No video playback capabilities. Please install Adobe Flash Player or download the video below">
 </object>
 </video>
+
 
 ### A swiss army knife of debugging tools (Strange Loop 2016)
 
