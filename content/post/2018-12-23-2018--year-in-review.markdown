@@ -81,8 +81,8 @@ I do -- there were two talks about building a Ruby profiler, and one about what 
 (I spend a lot of time on infrastructure migrations!)
 
 I'm not sure whether if I'll give any talks in 2019. I travelled more than I wanted to in 2018, and
-to stay sane I ended up having to cancel on a talk I was planning to give with relatively notice
-which wasn't good.
+to stay sane I ended up having to cancel on a talk I was planning to give with relatively short
+notice which wasn't good.
 
 ### podcasts!
 
