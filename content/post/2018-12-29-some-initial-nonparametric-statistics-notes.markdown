@@ -68,8 +68,8 @@ close your eyes and pretend it is?
 
 ### estimating the density function
 
-Okay! Here's a useful section! Let's say that I have 100,000 data points from a distribution. If
-I draw a histogram like this of those data points:
+Okay! Here's a useful section! Let's say that I have 100,000 data points from a distribution. 
+I can draw a histogram like this of those data points:
 
 <img src="/images/nonpar-histogram.png">
 
