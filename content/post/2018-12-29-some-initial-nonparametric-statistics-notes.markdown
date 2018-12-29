@@ -199,7 +199,7 @@ references to papers. Though I guess bootstrap confidence intervals are the most
 
 This is all extremely stream of consciousness and I only spent 2 hours trying to work through this, but some things I think I learned in the last couple hours are:
 
-1. maybe having more data is exponentially better?
+1. maybe having more data is exponentially better? (is this true??)
 1. "consistency" of an estimator is a thing, not all estimators are consistent
 1. understanding when/why nonparametric bootstrap estimators are consistent in general might be very
    hard (the proof that the bootstrap median estimator is consistent already seems very
