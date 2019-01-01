@@ -82,7 +82,8 @@ a point is greater than 100 **actually** 0.05? The book gives a nice formula for
 $$ \mathbb{P}\(|\widehat{P}_n(A) - P(A)| > \epsilon \) \leq 2e^{-2n\epsilon^2} $$
 
 (by ["Hoeffding's inequality"](https://en.wikipedia.org/wiki/Hoeffding%27s_inequality) which I've
-never heard of before)
+never heard of before). Fun aside about that inequality: here's a nice jupyter notebook by henry
+wallace using it to [identify the most common Boggle words](https://nbviewer.jupyter.org/github/henrywallace/games/blob/master/boggle/boggle.ipynb#Estimating-Word-Probabilities).
 
 here, in our example:
 
