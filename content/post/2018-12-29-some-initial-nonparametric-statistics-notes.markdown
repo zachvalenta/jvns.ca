@@ -110,7 +110,7 @@ them are more than 100, we DEFINITELY CANNOT CONCLUDE that 4% to 6% of points ar
 9% of points are more than 100. So we can still learn some stuff from 1000 data points!
 
 This intuitively feels pretty reasonable to me -- like it makes sense to me that if you have NO IDEA
-what your distribution that with 100,000 points you'd be able to make quite strong inferences about , and that 1000 is 
+what your distribution that with 100,000 points you'd be able to make quite strong inferences, and that with 1000 you can do a lot less!
 
 ### more data points are exponentially better?
 
