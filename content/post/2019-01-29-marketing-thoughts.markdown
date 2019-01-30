@@ -173,7 +173,9 @@ a few other things I've thought about:
   popups feel a bit cheap to me and I don't really think it's something I'd want to do right now.
 * similarly a lot of sites like to inject these popups like "HELLO PLEASE SIGN UP FOR OUR MAILING
   LIST". similar thoughts. I've been putting an email signup link in the footer which seems like a
-  good balance between discoverable and annoying.
+  good balance between discoverable and annoying. As an example of a popup which isn't too
+  intrusive, though: nate berkopec has [one on his site](https://www.speedshop.co/2019/01/10/three-activerecord-mistakes.html) which feels really
+  reasonable! (scroll to the bottom to see it)
 
 Maybe marketing is all about "make your things discoverable without being annoying"? :)
 
