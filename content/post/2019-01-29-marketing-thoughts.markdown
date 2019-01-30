@@ -6,7 +6,7 @@ categories: []
 ---
 
 At some point last month I said I might write more about business, so here are some very early
-marketing thoughts for my zine business (https://wizardzines.com!). The question I'm trying to
+marketing thoughts for my zine business ([https://wizardzines.com](https://wizardzines.com)!). The question I'm trying to
 make some progress on in this post is: "how to do marketing in a way that feels good?"
 
 ### what's the point of marketing?
