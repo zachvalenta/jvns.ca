@@ -471,7 +471,7 @@ It turns that there are actually at least 4 reasons a Linux box might swap.
 <br><br>
 3. A cgroup could be out of RAM, which was what was happening to us at the time (<a href="/blog/2017/02/17/mystery-swap/">here's the blog post I wrote about that)</a>.
 <br><br>
-4. There's also a 4th reason I learned about afterwards: if you have no swap, and your vm.overcommit_ratio is set to 50% (which is the default), you can end up in a situation where only half your RAM can be used. That's no good! <a href="http://engineering.pivotal.io/post/Virtual_memory_settings_in_Linux_-_The_problem_with_Overcommit/">here's a post about overcommit on Linux</a>
+4. There's also a 4th reason I learned about afterwards: if you have no swap, and your vm.overcommit_ratio is set to 50% (which is the default), you can end up in a situation where only half your RAM can be used. That's no good! <a href="http://engineering.pivotal.io/post/virtual_memory_settings_in_linux_-_the_problem_with_overcommit/">here's a post about overcommit on Linux</a>
 
 </div>
 </div>
