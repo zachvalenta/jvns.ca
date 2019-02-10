@@ -33,12 +33,12 @@ learning the basic things for the first time, you can learn that the advanced th
 Here's some work in progress:
 
 <div align="center">
-<img src="/images/curl.jpeg">
-<img src="/images/ssh.jpeg">
-<img src="/images/netcat.jpeg">
-<img src="/images/nmap.jpeg">
-<img src="/images/openssl.jpeg">
-<img src="/images/ethtool.jpeg">
+<img src="https://jvns.ca/images/curl.jpeg">
+<img src="https://jvns.ca/images/ssh.jpeg">
+<img src="https://jvns.ca/images/netcat.jpeg">
+<img src="https://jvns.ca/images/nmap.jpeg">
+<img src="https://jvns.ca/images/openssl.jpeg">
+<img src="https://jvns.ca/images/ethtool.jpeg">
 </div>
 
 
