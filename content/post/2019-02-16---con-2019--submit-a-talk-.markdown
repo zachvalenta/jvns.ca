@@ -94,8 +94,10 @@ Lindsey Kuper wrote some good advice about writing a clear !!Con outline here wh
 ### We're looking for sponsors
 
 !!Con is pay-what-you-can (if you can't afford a $300 conference ticket, we're the conference for
-you!). Because of that, we rely on sponsorship money to make up the difference and help us pay our
-speakers for their amazing work.
+you!). Because of that, we rely on our incredible sponsors (companies who want to build an inclusive
+future for tech with us!) to help make up the difference so that we can pay our speakers for their
+amazing work, pay for speaker travel, have open captioning, and everything else that makes !!Con the
+amazing conference it is.
 
 If you love !!Con, a huge way you can help support the conference is to ask your company to sponsor
 us!  Here's our [sponsorship page](http://bangbangcon.com/sponsors) and you can email me at
