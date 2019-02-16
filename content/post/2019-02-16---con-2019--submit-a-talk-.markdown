@@ -10,6 +10,10 @@ called [!!Con](http://bangbangcon.com). This year it's going to be held on **May
 
 The submission deadline is **Sunday, March 3** and you can [submit a talk here](http://bangbangcon.com/give-a-talk.html).
 
+(we also expanded to the west coast this year: [!!Con West](http://bangbangcon.com/west/) is next
+week!! I'm not on the !!Con West team since I live on the east coast but they're doing amazing work,
+I have a ticket, and I'm so excited for there to be more !!Con in the world)
+
 ### !!Con is about the joy, excitement, and surprise of computing
 
 Computers are AMAZING. You can make programs that seem like magic, computer science has all kind of
