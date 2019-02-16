@@ -26,11 +26,12 @@ unwieldy so we went with !!Con :).
 ### !!Con is inclusive
 
 The other big thing about !!Con is that we think computing should include everyone. To make !!Con a
-space where everyone can, we
+space where everyone can participate, we
 
 * have open captioning for all talks (so that people who can't hear well can read the text of the
   talk as it's happening). This turns out to be great for LOTS of people -- if you just weren't
   paying attention for a second, you can look at the live transcript to see what you missed!
+* pay our speakers & pay for speaker travel
 * have a code of conduct (of course)
 * use the RC [social rules](https://www.recurse.com/social-rules)
 * make sure our washrooms work for people of all genders
@@ -92,9 +93,13 @@ Lindsey Kuper wrote some good advice about writing a clear !!Con outline here wh
 
 ### We're looking for sponsors
 
-If you already know and love !!Con, the #1 best way you can help support the conference is to ask
-your company to sponsor us!  Here's our [sponsorship page](http://bangbangcon.com/sponsors) and you can email
-me at julia@jvns.ca if you're interested.
+!!Con is pay-what-you-can (if you can't afford a $300 conference ticket, we're the conference for
+you!). Because of that, we rely on sponsorship money to make up the difference and help us pay our
+speakers for their amazing work.
+
+If you love !!Con, a huge way you can help support the conference is to ask your company to sponsor
+us!  Here's our [sponsorship page](http://bangbangcon.com/sponsors) and you can email me at
+julia@jvns.ca if you're interested.
 
 
 ### hope to see you there ❤
