@@ -1,15 +1,5 @@
 require "rubygems"
 
-## -- Rsync Deploy config -- ##
-# Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "jevans12_jvns@ssh.phx.nearlyfreespeech.net"
-ssh_port       = "22"
-document_root  = "/home/public"
-rsync_delete   = false
-rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
-
-
 ## -- Misc Configs -- ##
 
 public_dir      = "public"    # compiled site directory
@@ -24,23 +14,14 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 
 desc "Generate Hugo site"
 task :build do
-  system "hugo"
+  Process.spawn("hugo")
 end
 
 desc "Watch the site and regenerate when it changes"
 task :serve do
-  puts "Starting to watch source with Hugo and Compass."
-  hugoPid = Process.spawn("hugo server --bind 0.0.0.0")
-
-  trap("INT") {
-    [hugoPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
-    exit 0
-  }
-
-  [hugoPid].each { |pid| Process.wait(pid) }
+  pid = Process.spawn("hugo server --bind 0.0.0.0")
+  Process.wait(pid)
 end
-
-
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
 desc "Begin a new post in #{source_dir}/#{posts_dir}"
@@ -74,40 +55,10 @@ end
 #
 
 
-def run(cmd)
-  puts cmd
-  system(cmd)
-end
 desc "Default deploy task"
 task :deploy do
-  #Rake::Task["build"].execute
-  #system "chmod 664 static/images/*.png"
-  #system "chmod 664 static/images/*.jpg"
-  #system "chmod 664 static/images/*.gif"
-  #system "chmod 664 static/images/*.svg"
-  #system "chmod 664 static/images/*.jpeg"
-  #Rake::Task["#{deploy_default}"].execute
   puts "Clearing Cloudflare cache"
   system "bash scripts/cloudflare_clear_cache.sh"
-end
-
-desc "Deploy website via rsync"
-task :rsync do
-  exclude = ""
-  if File.exists?('./rsync-exclude')
-    exclude = "--exclude-from '#{File.expand_path('./rsync-exclude')}'"
-  end
-  puts "## Deploying website via Rsync"
-  ok_failed run("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
-  #ok_failed run("rsync --size-only -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
-end
-
-def ok_failed(condition)
-  if (condition)
-    puts "OK"
-  else
-    puts "FAILED"
-  end
 end
 
 def to_url(title)
