@@ -43,7 +43,7 @@ and all posts by category:
 				{{ range $taxonomy.Get $key }}
 				<tr>
 					<td style="width: 5.5em">
-						<time style="padding-right: 10px; color: #444; font-size: 14px;" datetime="" pubdate>{{ .Date.Format "Jan 2 2006" }}</time>
+						<time style="padding-right: 10px; color: #444; font-size: 14px;" datetime="" pubdate>{{ .Date.Format "Jan 2006" }}</time>
 					</td>
 					<td style="padding-right: 0.25em; color: orange;">
 						{{ range .Params.categories }}
