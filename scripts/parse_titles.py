@@ -62,7 +62,7 @@ if __name__ == "__main__":
         for f in filenames:
             set_category(category, f)
         categories.append(category)
-    with open('/home/bork/work/homepage/config.yaml') as f:
+    with open(current_dir + '/../config.yaml') as f:
         contents = f.readlines()
     contents = [x for x in contents if not x.startswith('params') and not x.startswith('  sections') and not x.startswith('  -')]
     contents.append('params:\n')
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         c = c.lower().replace(' ', '-')
         contents.append('  - %s\n' % c)
 
-    with open('/home/bork/work/homepage/config.yaml', 'w') as f:
+    with open(current_dir + '/../config.yaml', 'w') as f:
         f.write(''.join(contents))
 
     get_diff(get_filenames())
