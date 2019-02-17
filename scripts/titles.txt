@@ -84,6 +84,18 @@
  "More drawings about computers"                                                       2016-11-27-more-linux-drawings.markdown
  A few sketches                                                                        2016-07-23-a-few-sketches.markdown
 
+# On writing comics / zines
+
+ "When does teaching with comics work well?"                                           2018-10-28-when-does-teaching-with-comics-work-well-.markdown
+ "How to teach technical concepts with cartoons"                                       2017-09-28-tech-illustrations.markdown
+ "How do you document a tech project with comics?"                                     2018-12-09-how-do-you-document-a-tech-project-with-comics-.markdown
+ "Why sell zines?"                                                                     2018-09-23-why-sell-zines-.markdown
+ "An idea for a programming book"                                                      2017-01-17-an-idea-for-a-programming-book.markdown
+ "Handwritten books"                                                                   2017-05-14-handwritten-books.markdown
+ "Why cute drawings?"                                                                  2016-11-14-why-cute-drawings-.markdown
+ How (and why) I made a zine                                                           2016-08-29-how-i-made-a-zine.markdown
+
+
 # Conferences
  "!!Con 2019: submit a talk!"                                                          2019-02-16---con-2019--submit-a-talk-.markdown
  "Systems We Love 2016"                                                                2016-12-23-systems-we-love.markdown
@@ -151,17 +163,6 @@
  "Consistency vs availability (wat?)"                                                  2016-10-21-consistency-vs-availability.markdown
  "What's devops?"                                                                      2016-10-16-whats-devops.markdown
 
-# On writing comics / zines
-
- "When does teaching with comics work well?"                                           2018-10-28-when-does-teaching-with-comics-work-well-.markdown
- "How to teach technical concepts with cartoons"                                       2017-09-28-tech-illustrations.markdown
- "How do you document a tech project with comics?"                                     2018-12-09-how-do-you-document-a-tech-project-with-comics-.markdown
- "Why sell zines?"                                                                     2018-09-23-why-sell-zines-.markdown
- "An idea for a programming book"                                                      2017-01-17-an-idea-for-a-programming-book.markdown
- "Handwritten books"                                                                   2017-05-14-handwritten-books.markdown
- "Why cute drawings?"                                                                  2016-11-14-why-cute-drawings-.markdown
- How (and why) I made a zine                                                           2016-08-29-how-i-made-a-zine.markdown
-
 # Career / work
 
  Three ways to solve hard programming problems                                         2016-05-29-three-ways-to-solve-hard-programming-problems.markdown
@@ -217,7 +218,6 @@
  'Ruby Rogues podcast: systems programming tricks!'                                    2014-07-17-ruby-rogues.markdown
  A few notes on my CUSEC talk                                                          2016-01-14-a-few-notes-on-my-cusec-talk.markdown
  Notes from my PyData Berlin keynote                                                   2016-05-21-a-few-notes-from-my-pydata-berlin-keynote.markdown
-
 
 # On blogging / speaking
 
