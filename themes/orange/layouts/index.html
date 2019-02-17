@@ -14,7 +14,28 @@ Enjoy! You can subscribe to a <a href="/newsletter">weekly digest of these blog 
 
 If you like these posts, I also publish computer zines at <a href="https://wizardzines.com">Wizard Zines</a>.
    
-    <ul id="all-taxonomies">
+
+<h3> Most recent 10 posts </h3>
+<table> 
+{{ range (first 10 .Data.Pages) }}
+{{ if ( ne true .Params.staticpage ) }}
+<tr>
+<td style="width: 5.5em">
+<time style="padding-right: 10px; color: #444; font-size: 14px;" datetime="" pubdate>{{ .Date.Format "Jan 2 2006" }}</time>
+</td>
+<td>
+<span><a  style="font-family: Montserrat, sans-serif; color: black;font-size: 14px;" href="{{.RelPermalink}}">{{.Title}}</a></span>
+</td>
+</tr>
+{{ end }}
+{{ end }}
+</table>
+</div>
+
+<br>
+and all posts by category:
+
+
             {{ $taxonomy := .Site.Taxonomies.juliasections}}
             {{ range $key := .Site.Params.sections }}
 			<table> 
@@ -36,7 +57,6 @@ If you like these posts, I also publish computer zines at <a href="https://wizar
 				{{ end }}
 			</table>
 			{{ end }}
-    </ul>
 </article>
 </div>
 
