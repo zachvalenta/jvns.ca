@@ -1,6 +1,7 @@
 ---
 title: "Some notes on running new software in production"
 juliasections: ['Infrastructure / operations engineering']
+categories: ['favorite']
 date: 2018-11-11T11:00:01Z
 url: /blog/2018/11/11/understand-the-software-you-use-in-production/
 categories: []
