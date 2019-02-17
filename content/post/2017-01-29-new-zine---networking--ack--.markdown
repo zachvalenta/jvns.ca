@@ -1,5 +1,6 @@
 ---
 title: 'New zine: "Networking! ACK!"'
+juliasections: ['Zines / comics']
 date: 2017-01-29T10:47:02Z
 url: /blog/networking-zine-launch/
 categories: []

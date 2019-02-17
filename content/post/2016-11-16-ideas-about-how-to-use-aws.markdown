@@ -1,5 +1,6 @@
 ---
 title: "Ideas about how to use AWS"
+juliasections: ['Infrastructure / operations engineering']
 date: 2016-11-16T23:01:51Z
 url: /blog/2016/11/16/ideas-about-how-to-use-aws/
 categories: []

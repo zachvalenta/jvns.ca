@@ -1,5 +1,6 @@
 ---
 title: "How does gdb call functions?"
+juliasections: ['How a computer thing works']
 date: 2018-01-04T19:22:49Z
 url: /blog/2018/01/04/how-does-gdb-call-functions/
 categories: []

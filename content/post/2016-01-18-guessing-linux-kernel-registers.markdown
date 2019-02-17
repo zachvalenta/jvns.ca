@@ -1,5 +1,6 @@
 ---
 categories: ["kernel"]
+juliasections: ['Linux systems stuff']
 comments: true
 date: 2016-01-18T12:05:27Z
 title: Guessing Linux kernel registers

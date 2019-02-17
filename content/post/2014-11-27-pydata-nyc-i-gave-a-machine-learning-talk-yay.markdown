@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning", "conference"]
+juliasections: ['Conferences']
 comments: true
 date: 2014-11-27T01:04:26Z
 title: PyData NYC (I gave a machine learning talk! yay!)

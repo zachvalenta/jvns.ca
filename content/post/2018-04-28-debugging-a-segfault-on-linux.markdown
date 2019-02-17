@@ -1,5 +1,6 @@
 ---
 title: "How to get a core dump for a segfault on Linux"
+juliasections: ['Linux systems stuff']
 date: 2018-04-28T13:18:30Z
 url: /blog/2018/04/28/debugging-a-segfault-on-linux/
 categories: []

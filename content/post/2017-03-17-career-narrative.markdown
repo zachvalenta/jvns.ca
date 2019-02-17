@@ -1,5 +1,6 @@
 ---
 title: "Writing down my career"
+juliasections: ['Career / work']
 date: 2017-03-17T21:47:47Z
 url: /blog/2017/03/17/career-narrative/
 categories: []

@@ -1,5 +1,6 @@
 ---
 categories: ["opensource"]
+juliasections: ['Open source']
 comments: true
 date: 2015-04-12T08:24:15Z
 title: Learning at open source sprints (no preparation required)

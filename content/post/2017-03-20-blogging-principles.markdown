@@ -1,5 +1,6 @@
 ---
 title: "Blogging principles I use"
+juliasections: ['On blogging / speaking']
 date: 2017-03-20T21:10:16Z
 url: /blog/2017/03/20/blogging-principles/
 categories: []

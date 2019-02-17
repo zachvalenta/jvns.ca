@@ -1,5 +1,6 @@
 ---
 title: "New zine: Bite Size Command Line!"
+juliasections: ['Zines / comics']
 date: 2018-08-05T07:56:00Z
 url: /blog/2018/08/05/new-zine--bite-size-command-line/
 categories: []

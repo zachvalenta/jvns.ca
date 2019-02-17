@@ -1,5 +1,6 @@
 ---
 categories: ["strace"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-02-17T00:00:00Z
 title: Spying on ssh with strace

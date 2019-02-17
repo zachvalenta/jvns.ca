@@ -1,5 +1,6 @@
 ---
 title: "How to teach technical concepts with cartoons"
+juliasections: ['On writing comics / zines']
 date: 2017-09-28T23:09:48Z
 url: /teach-tech-with-cartoons/
 categories: []

@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['How a computer thing works']
 comments: true
 date: 2016-03-29T19:49:08Z
 title: I conquered thread pools! For today, at least.

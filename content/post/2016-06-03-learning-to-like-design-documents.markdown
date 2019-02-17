@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Working with others / communication']
 comments: true
 date: 2016-06-03T21:01:44Z
 title: Learning to like design documents

@@ -1,5 +1,6 @@
 ---
 title: "Binder: an awesome tool for hosting Jupyter notebooks"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-11-12T22:41:25Z
 url: /blog/2017/11/12/binder--an-awesome-tool-for-hosting-jupyter-notebooks/
 categories: []

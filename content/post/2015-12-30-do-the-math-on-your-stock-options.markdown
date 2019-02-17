@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Career / work']
 comments: true
 date: 2015-12-30T10:27:46Z
 title: Things you should know about stock options before negotiating an offer

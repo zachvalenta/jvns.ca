@@ -1,5 +1,6 @@
 ---
 categories: ["strace"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-12-10T21:26:49Z
 title: Spying on Hadoop with strace

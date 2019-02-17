@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "favorite", "rust", "hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-04T00:00:00Z
 title: 'Day 37: After 5 days, my OS doesn''t crash when I press a key'

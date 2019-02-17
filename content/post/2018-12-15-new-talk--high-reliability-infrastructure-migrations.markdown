@@ -1,5 +1,6 @@
 ---
 title: "New talk: High Reliability Infrastructure Migrations"
+juliasections: ['Infrastructure / operations engineering']
 date: 2018-12-15T14:11:39Z
 url: /blog/2018/12/15/new-talk--high-reliability-infrastructure-migrations/
 categories: []

@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-08T00:00:00Z
 title: 'Day 6: I wrote a rootkit!'

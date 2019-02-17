@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['Conferences']
 comments: true
 date: 2014-06-22T12:50:32Z
 title: '!!Con talks are up'

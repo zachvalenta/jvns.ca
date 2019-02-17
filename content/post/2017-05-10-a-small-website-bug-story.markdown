@@ -1,5 +1,6 @@
 ---
 title: "A small website mystery"
+juliasections: ['Debugging stories']
 date: 2017-05-10T21:36:38Z
 url: /blog/2017/05/10/a-small-website-bug-story/
 categories: []

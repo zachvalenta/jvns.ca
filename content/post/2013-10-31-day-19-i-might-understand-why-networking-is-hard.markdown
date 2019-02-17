@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-31T00:00:00Z
 title: 'Day 19: A few reasons why networking is hard'

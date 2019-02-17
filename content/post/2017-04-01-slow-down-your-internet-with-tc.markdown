@@ -1,5 +1,6 @@
 ---
 title: "Slow down your internet with tc"
+juliasections: ['Computer networking']
 date: 2017-04-01T21:05:50Z
 url: /blog/2017/04/01/slow-down-your-internet-with-tc/
 categories: []

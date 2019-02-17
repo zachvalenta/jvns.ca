@@ -1,5 +1,6 @@
 ---
 categories: ["how-things-work", "rust", "favorite"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-12-14T12:58:55Z
 title: 'Diving into concurrency: trying out mutexes and atomics'

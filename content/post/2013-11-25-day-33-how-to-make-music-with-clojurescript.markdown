@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "clojure", "music"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-25T00:00:00Z
 title: 'Day 33: How to make music with ClojureScript'

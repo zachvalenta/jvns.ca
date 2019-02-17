@@ -1,5 +1,6 @@
 ---
 categories: ["favorite", "interviewing"]
+juliasections: ['Career / work']
 comments: true
 date: 2013-12-30T00:00:00Z
 title: Questions I'm asking in interviews

@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "strace"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-02-26T18:49:06Z
 title: Using strace to avoid reading Ruby code

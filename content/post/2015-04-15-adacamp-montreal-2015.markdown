@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['Conferences']
 comments: true
 date: 2015-04-15T21:34:16Z
 title: AdaCamp Montreal 2015

@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning", "conference"]
+juliasections: ['Conferences']
 comments: true
 date: 2015-12-07T20:22:29Z
 title: Women in Machine Learning 2015 (fun!!!)

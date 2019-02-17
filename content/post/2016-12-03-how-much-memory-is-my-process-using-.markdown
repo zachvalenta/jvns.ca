@@ -1,5 +1,6 @@
 ---
 title: "How much memory is my process using?"
+juliasections: ['Performance']
 date: 2016-12-03T11:33:50Z
 url: /blog/2016/12/03/how-much-memory-is-my-process-using-/
 categories: []

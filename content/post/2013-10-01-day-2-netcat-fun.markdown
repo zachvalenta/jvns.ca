@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-01T00:00:00Z
 title: 'Day 2: netcat fun!'

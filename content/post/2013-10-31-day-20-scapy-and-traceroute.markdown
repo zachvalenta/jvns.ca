@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "favorite", "how-things-work", "networking"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-31T00:00:00Z
 title: 'Day 20: Traceroute in 15 lines of code using Scapy'

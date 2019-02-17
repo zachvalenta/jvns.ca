@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2016-06-07T19:52:40Z
 title: A useful new strace feature

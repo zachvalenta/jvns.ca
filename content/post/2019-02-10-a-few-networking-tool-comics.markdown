@@ -1,5 +1,6 @@
 ---
 title: "Networking tool comics!"
+juliasections: ['Computer networking']
 date: 2019-02-10T12:55:52Z
 url: /blog/2019/02/10/a-few-networking-tool-comics/
 categories: []

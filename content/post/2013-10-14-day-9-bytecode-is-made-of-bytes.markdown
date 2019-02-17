@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "python"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-14T00:00:00Z
 title: 'Day 9: Bytecode is made of bytes! CPython isn''t scary!'

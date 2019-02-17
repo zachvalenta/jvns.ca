@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "hackerschool"]
+juliasections: ['Rust']
 comments: true
 date: 2014-01-03T00:00:00Z
 title: Some things my kernel can't do

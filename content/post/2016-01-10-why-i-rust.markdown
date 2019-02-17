@@ -1,5 +1,6 @@
 ---
 categories: ["rust", "talks", "favorite"]
+juliasections: ['Rust']
 comments: true
 date: 2016-01-10T08:43:43Z
 title: Why I ❤ Rust

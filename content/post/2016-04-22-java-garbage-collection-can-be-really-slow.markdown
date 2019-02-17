@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Performance']
 comments: true
 date: 2016-04-22T23:15:17Z
 title: Java garbage collection can be really slow

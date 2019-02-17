@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Career / work']
 comments: true
 date: 2016-09-19T22:34:46Z
 title: Getting things done

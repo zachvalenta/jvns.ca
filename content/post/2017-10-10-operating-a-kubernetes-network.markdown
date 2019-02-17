@@ -1,5 +1,6 @@
 ---
 title: "Operating a Kubernetes network"
+juliasections: ['Kubernetes / containers']
 date: 2017-10-10T00:09:26Z
 url: /blog/2017/10/10/operating-a-kubernetes-network/
 categories: ["kubernetes"]

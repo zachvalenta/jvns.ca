@@ -1,5 +1,6 @@
 ---
 title: "Should I pause a Ruby process to collect its stack?"
+juliasections: ['rbspy']
 date: 2018-01-15T12:46:07Z
 url: /blog/2018/01/15/should-i-pause-a-ruby-process-to-collect-its-stack/
 categories: ["ruby-profiler"]

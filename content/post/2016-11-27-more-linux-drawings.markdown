@@ -1,5 +1,6 @@
 ---
 title: "More drawings about computers"
+juliasections: ['Zines / comics']
 date: 2016-11-27T22:15:36Z
 url: /blog/2016/11/27/more-linux-drawings/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "Profiler week 5: Mac support, experiments profiling memory allocations"
+juliasections: ['rbspy']
 date: 2018-02-06T22:07:37Z
 url: /blog/2018/02/06/profiler-week-5/
 categories: []

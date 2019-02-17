@@ -1,5 +1,6 @@
 ---
 categories: ["strace"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-05-15T12:40:39Z
 title: Diving into HDFS

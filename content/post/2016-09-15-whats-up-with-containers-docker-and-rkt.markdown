@@ -1,5 +1,6 @@
 ---
 categories: ["containers"]
+juliasections: ['Kubernetes / containers']
 comments: true
 date: 2016-09-15T23:52:04Z
 title: Some questions about Docker and rkt

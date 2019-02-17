@@ -1,5 +1,6 @@
 ---
 title: "Weird unix thing: 'cd //'"
+juliasections: ['How a computer thing works']
 date: 2017-02-08T23:37:12Z
 url: /blog/2017/02/08/weird-unix-things-cd/
 categories: []

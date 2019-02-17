@@ -1,5 +1,6 @@
 ---
 categories: ["conference", "python"]
+juliasections: ['Conferences']
 comments: true
 date: 2014-04-13T21:37:45Z
 title: ♥ PyCon

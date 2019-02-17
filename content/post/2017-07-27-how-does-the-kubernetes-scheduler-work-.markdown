@@ -1,5 +1,6 @@
 ---
 title: "How does the Kubernetes scheduler work?"
+juliasections: ['Kubernetes / containers']
 date: 2017-07-27T21:07:12Z
 url: /blog/2017/07/27/how-does-the-kubernetes-scheduler-work/
 categories: ["kubernetes"]

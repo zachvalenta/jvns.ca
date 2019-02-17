@@ -1,5 +1,6 @@
 ---
 title: "Using the Strict-Transport-Security header"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-04-30T13:27:17Z
 url: /blog/2017/04/30/using-strict-transport-security/
 categories: []

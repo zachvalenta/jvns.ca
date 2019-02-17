@@ -1,5 +1,6 @@
 ---
 title: "Profiling Go programs with pprof"
+juliasections: ['Performance']
 date: 2017-09-24T09:43:36Z
 #draft: true
 url: /blog/2017/09/24/profiling-go-with-pprof/

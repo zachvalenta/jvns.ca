@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "music"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-20T00:00:00Z
 title: 'Day 31: Binary trees with core.logic!'

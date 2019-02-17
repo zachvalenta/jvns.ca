@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2014-07-11T09:54:54Z
 title: 'Fun with stats: How big of a sample size do I need?'

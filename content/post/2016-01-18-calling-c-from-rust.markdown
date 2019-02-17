@@ -1,5 +1,6 @@
 ---
 categories: ["rust"]
+juliasections: ['Rust']
 comments: true
 date: 2016-01-18T09:31:42Z
 title: Calling C from Rust

@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "favorite"]
+juliasections: ['Linux systems stuff']
 comments: true
 date: 2014-01-04T00:00:00Z
 title: 4 paths to being a kernel hacker

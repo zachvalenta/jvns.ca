@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "favorite", "rust", "hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-03T00:00:00Z
 title: 'Day 36: On programming without malloc'

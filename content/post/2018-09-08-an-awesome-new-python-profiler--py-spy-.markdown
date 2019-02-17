@@ -1,5 +1,6 @@
 ---
 title: "An awesome new Python profiler: py-spy!"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2018-09-08T13:09:05Z
 url: /blog/2018/09/08/an-awesome-new-python-profiler--py-spy-/
 categories: []

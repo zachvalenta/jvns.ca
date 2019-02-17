@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2015-07-04T17:40:40Z
 title: 'Some easy statistics: Bootstrap confidence intervals'

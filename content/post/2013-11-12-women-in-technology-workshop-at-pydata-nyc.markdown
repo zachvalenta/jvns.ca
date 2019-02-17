@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-12T00:00:00Z
 title: Women in Technology workshop at PyData NYC

@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2014-06-19T08:50:55Z
 title: Machine learning isn't Kaggle competitions

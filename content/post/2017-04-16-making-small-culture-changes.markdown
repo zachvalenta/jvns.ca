@@ -1,5 +1,6 @@
 ---
 title: "Making small culture changes"
+juliasections: ['Working with others / communication']
 date: 2017-04-16T15:52:21Z
 url: /blog/2017/04/16/making-small-culture-changes/
 categories: []

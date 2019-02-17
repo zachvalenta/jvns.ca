@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-04T00:00:00Z
 title: 'Day 4: Processes vs threads, and kernel modules!'

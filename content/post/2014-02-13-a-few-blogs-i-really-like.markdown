@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Fan posts about awesome work by other people']
 comments: true
 date: 2014-02-13T00:00:00Z
 title: A few blogs I really like

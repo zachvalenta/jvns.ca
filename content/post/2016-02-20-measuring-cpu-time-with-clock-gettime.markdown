@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Cool computer tools / features / ideas']
 comments: true
 date: 2016-02-20T10:13:31Z
 title: 'How to measure your CPU time: clock_gettime!'

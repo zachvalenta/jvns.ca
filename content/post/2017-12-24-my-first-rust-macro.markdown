@@ -1,5 +1,6 @@
 ---
 title: "My first Rust macro"
+juliasections: ['Rust']
 date: 2017-12-24T10:09:41Z
 url: /blog/2017/12/24/my-first-rust-macro/
 categories: ["ruby-profiler"]

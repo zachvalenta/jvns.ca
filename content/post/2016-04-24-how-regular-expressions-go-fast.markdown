@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Cool computer tools / features / ideas']
 comments: true
 date: 2016-04-24T22:09:05Z
 title: you can take the derivative of a regular expression?!

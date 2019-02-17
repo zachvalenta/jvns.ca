@@ -1,5 +1,6 @@
 ---
 title: "New zine: Profiling & tracing with perf!!"
+juliasections: ['Zines / comics']
 date: 2018-04-16T19:07:57Z
 url: /blog/2018/04/16/new-perf-zine/
 categories: ["zines"]

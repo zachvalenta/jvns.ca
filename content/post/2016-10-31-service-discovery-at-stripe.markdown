@@ -1,5 +1,6 @@
 ---
 title: "Service discovery at Stripe"
+juliasections: ['Infrastructure / operations engineering']
 date: 2016-10-31T23:44:26Z
 url: /blog/2016/10/31/service-discovery-at-stripe/
 categories: []

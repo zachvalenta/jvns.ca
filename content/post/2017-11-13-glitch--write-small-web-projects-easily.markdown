@@ -1,5 +1,6 @@
 ---
 title: "Glitch: write fun small web projects instantly"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-11-13T00:27:17Z
 url: /blog/2017/11/13/glitch--write-small-web-projects-easily/
 categories: []

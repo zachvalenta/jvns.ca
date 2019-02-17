@@ -1,5 +1,6 @@
 ---
 categories: ["performance"]
+juliasections: ['Performance']
 comments: true
 date: 2016-01-03T06:27:07Z
 title: Java isn't slow

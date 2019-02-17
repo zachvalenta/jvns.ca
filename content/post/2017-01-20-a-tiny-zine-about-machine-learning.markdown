@@ -1,5 +1,6 @@
 ---
 title: "A tiny zine about machine learning"
+juliasections: ['Zines / comics']
 date: 2017-01-20T22:19:25Z
 url: /blog/2017/01/20/a-tiny-zine-about-machine-learning/
 categories: ["zines"]

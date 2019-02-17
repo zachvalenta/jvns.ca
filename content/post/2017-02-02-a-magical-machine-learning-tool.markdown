@@ -1,5 +1,6 @@
 ---
 title: "A magical machine learning art tool"
+juliasections: ['Fan posts about awesome work by other people']
 date: 2017-02-02T22:54:16Z
 url: /blog/2017/02/02/a-magical-machine-learning-tool/
 categories: []

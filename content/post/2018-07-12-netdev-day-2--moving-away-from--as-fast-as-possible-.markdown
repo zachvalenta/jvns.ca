@@ -1,5 +1,6 @@
 ---
 title: 'netdev day 2: moving away from "as fast as possible" in networking code'
+juliasections: ['Computer networking']
 date: 2018-07-12T20:54:57Z
 url: /blog/2018/07/12/netdev-day-2--moving-away-from--as-fast-as-possible/
 categories: []

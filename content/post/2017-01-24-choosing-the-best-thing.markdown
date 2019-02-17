@@ -1,5 +1,6 @@
 ---
 title: 'Choosing the "best software"'
+juliasections: ['Career / work']
 date: 2017-01-24T19:47:26Z
 url: /blog/2017/01/24/choosing-the-best-thing/
 categories: []

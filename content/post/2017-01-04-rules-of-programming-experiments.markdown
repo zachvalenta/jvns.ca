@@ -1,5 +1,6 @@
 ---
 title: "Rules of programming experiments"
+juliasections: ['On learning']
 date: 2017-01-04T23:17:41Z
 url: /blog/2017/01/04/rules-of-programming-experiments/
 categories: []

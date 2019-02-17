@@ -1,5 +1,6 @@
 ---
 categories: ["spytools"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-02-10T00:00:00Z
 title: Three steps to learning GDB

@@ -1,5 +1,6 @@
 ---
 title: "New zine: Help! I have a manager!"
+juliasections: ['Zines / comics']
 date: 2018-09-22T10:53:50Z
 url: /blog/2018/09/22/new-zine--help--i-have-a-manager/
 categories: []

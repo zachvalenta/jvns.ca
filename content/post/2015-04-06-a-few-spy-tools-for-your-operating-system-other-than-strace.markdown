@@ -1,5 +1,6 @@
 ---
 categories: ["spytools", "strace"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2015-04-06T22:30:02Z
 title: A few spy tools for your operating system (other than strace!)

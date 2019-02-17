@@ -1,5 +1,6 @@
 ---
 title: "Cool vim feature: sessions!"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-09-10T12:58:53Z
 url: /blog/2017/09/10/vim-sessions/
 categories: ['vim']

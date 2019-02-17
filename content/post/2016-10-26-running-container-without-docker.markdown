@@ -1,5 +1,6 @@
 ---
 title: "Running containers without Docker"
+juliasections: ['Kubernetes / containers']
 date: 2016-10-26T15:24:49Z
 url: /blog/2016/10/26/running-container-without-docker/
 categories: []

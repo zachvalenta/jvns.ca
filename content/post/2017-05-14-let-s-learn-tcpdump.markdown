@@ -1,5 +1,6 @@
 ---
 title: "\"Let's learn tcpdump\" zine: now available for everyone"
+juliasections: ['Zines / comics']
 date: 2017-05-14T10:22:23Z
 url: /blog/2017/05/14/learn-tcpdump-zine/
 categories: ["zines", "tcpdump"]

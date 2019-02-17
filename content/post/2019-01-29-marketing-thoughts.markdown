@@ -1,5 +1,6 @@
 ---
 title: "A few early marketing thoughts"
+juliasections: ['Businesses / marketing']
 date: 2019-01-29T18:47:23Z
 url: /blog/2019/01/29/marketing-thoughts/
 categories: []

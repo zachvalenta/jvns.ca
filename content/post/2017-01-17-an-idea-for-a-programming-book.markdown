@@ -1,5 +1,6 @@
 ---
 title: "An idea for a programming book"
+juliasections: ['On writing comics / zines']
 date: 2017-01-17T01:31:06Z
 url: /blog/2017/01/17/an-idea-for-a-programming-book/
 categories: []

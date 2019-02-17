@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Career / work']
 comments: true
 date: 2016-05-29T09:34:20Z
 title: Three ways to solve hard programming problems

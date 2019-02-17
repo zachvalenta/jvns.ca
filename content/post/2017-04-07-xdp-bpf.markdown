@@ -1,5 +1,6 @@
 ---
 title: "How to filter packets super fast: XDP & eBPF!"
+juliasections: ['Computer networking']
 date: 2017-04-07T14:14:03Z
 url: /blog/2017/04/07/xdp-bpf-tutorial/
 categories: ["netdev"]

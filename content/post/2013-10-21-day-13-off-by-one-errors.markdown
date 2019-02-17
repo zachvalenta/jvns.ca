@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "gzip"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-21T00:00:00Z
 title: 'Day 13: Off by one errors'

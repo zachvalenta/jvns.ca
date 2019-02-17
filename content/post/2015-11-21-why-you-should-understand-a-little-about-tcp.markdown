@@ -1,5 +1,6 @@
 ---
 categories: ["performance", "favorite", "how-things-work"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2015-11-21T09:13:44Z
 title: Why you should understand (a little) about TCP

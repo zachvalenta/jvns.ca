@@ -1,5 +1,6 @@
 ---
 title: "A few recent podcasts"
+juliasections: ['Talks transcripts / podcasts']
 date: 2018-08-11T09:05:17Z
 url: /blog/2018/08/11/a-few-recent-podcasts/
 categories: []

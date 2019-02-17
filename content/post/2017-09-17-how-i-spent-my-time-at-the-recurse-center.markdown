@@ -1,5 +1,6 @@
 ---
 title: "How I spent my time at the Recurse Center"
+juliasections: ['Recurse Center']
 date: 2017-09-17T12:43:22Z
 url: /blog/2017/09/17/how-i-spent-my-time-at-the-recurse-center/
 categories: []

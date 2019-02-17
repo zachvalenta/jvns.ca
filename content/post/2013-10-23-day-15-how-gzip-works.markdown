@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-23T00:00:00Z
 title: 'Day 15: How a .gz file is structured, redux'

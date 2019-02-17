@@ -1,5 +1,6 @@
 ---
 categories: ["perf"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2015-03-30T21:42:36Z
 title: Seeing system calls with perf instead of strace

@@ -1,5 +1,6 @@
 ---
 title: "Measuring a blog's success: focus on conversations, not page views"
+juliasections: ['On blogging / speaking']
 date: 2018-02-20T12:58:32Z 
 url: /blog/2018/02/20/measuring-blog-success/
 categories: ["blogging"]

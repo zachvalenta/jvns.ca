@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Career / work']
 comments: true
 date: 2016-08-16T19:39:11Z
 title: How do you decide what to work on?

@@ -1,5 +1,6 @@
 ---
 title: "How do Ruby & Python profilers work?"
+juliasections: ['rbspy']
 date: 2017-12-17T19:53:16Z
 url: /blog/2017/12/17/how-do-ruby---python-profilers-work-/
 categories: ["ruby-profiler"]

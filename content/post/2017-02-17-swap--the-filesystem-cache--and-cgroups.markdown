@@ -1,5 +1,6 @@
 ---
 title: "Swapping, memory limits, and cgroups"
+juliasections: ['Kubernetes / containers']
 date: 2017-02-17T19:47:27Z
 url: /blog/2017/02/17/mystery-swap/
 categories: []

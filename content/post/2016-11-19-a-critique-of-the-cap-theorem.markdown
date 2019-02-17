@@ -1,5 +1,6 @@
 ---
 title: '"A Critique of the CAP Theorem"'
+juliasections: ['Fan posts about awesome work by other people']
 date: 2016-11-19T18:00:20Z
 url: /blog/2016/11/19/a-critique-of-the-cap-theorem/
 categories: []

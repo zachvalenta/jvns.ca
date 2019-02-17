@@ -1,5 +1,6 @@
 ---
 title: "Dissecting an SSL certificate"
+juliasections: ['Computer networking']
 date: 2017-01-31T21:31:29Z
 url: /blog/2017/01/31/whats-tls/
 categories: []

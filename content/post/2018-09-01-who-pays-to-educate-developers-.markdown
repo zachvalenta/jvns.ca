@@ -1,5 +1,6 @@
 ---
 title: "Who pays to educate developers?"
+juliasections: ['Businesses / marketing']
 date: 2018-09-01T15:10:44Z
 url: /blog/2018/09/01/who-pays-to-educate-developers-/
 categories: []

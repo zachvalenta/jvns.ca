@@ -1,5 +1,6 @@
 ---
 title: "Notes on BPF & eBPF"
+juliasections: ['Linux debugging / tracing tools']
 date: 2017-06-28T23:47:21Z
 url: /blog/2017/06/28/notes-on-bpf---ebpf/
 categories: []

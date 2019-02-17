@@ -1,5 +1,6 @@
 ---
 title: "Rust in 2018: it's way easier to use!"
+juliasections: ['Rust']
 date: 2018-01-13T19:05:08Z
 url: /blog/2018/01/13/rust-in-2018--way-easier-to-use/
 categories: ["rust"]

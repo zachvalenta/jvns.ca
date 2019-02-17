@@ -1,5 +1,6 @@
 ---
 categories: ["python", "machinelearning"]
+juliasections: ['Conferences']
 comments: true
 date: 2013-09-12T00:00:00Z
 title: PyData Boston 2013

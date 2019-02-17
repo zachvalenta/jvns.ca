@@ -1,5 +1,6 @@
 ---
 categories: ["performance"]
+juliasections: ['Debugging stories']
 comments: true
 date: 2015-03-15T14:14:35Z
 title: Nancy Drew and the Case of the Slow Program

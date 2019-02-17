@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-15T00:00:00Z
 title: 'Day 28: Made a git workflow visualization webapp!'

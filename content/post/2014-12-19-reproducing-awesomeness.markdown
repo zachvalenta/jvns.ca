@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['On blogging / speaking']
 comments: true
 date: 2014-12-19T23:15:27Z
 title: Reproducing awesomeness

@@ -1,5 +1,6 @@
 ---
 title: "Some nonparametric statistics math"
+juliasections: ['Statistics / machine learning / data analysis']
 date: 2018-12-29T12:05:54Z
 url: /blog/2018/12/29/some-initial-nonparametric-statistics-notes/
 categories: []

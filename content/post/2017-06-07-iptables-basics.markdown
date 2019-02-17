@@ -1,5 +1,6 @@
 ---
 title: "Iptables basics"
+juliasections: ['Computer networking']
 date: 2017-06-07T21:15:09Z
 url: /blog/2017/06/07/iptables-basics/
 categories: []

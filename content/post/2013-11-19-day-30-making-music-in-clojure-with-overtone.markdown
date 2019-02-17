@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "clojure", "music"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-19T00:00:00Z
 title: 'Day 30: Making music in Clojure with Overtone. Clojure bugs with laziness!

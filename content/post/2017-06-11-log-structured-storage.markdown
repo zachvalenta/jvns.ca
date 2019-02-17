@@ -1,5 +1,6 @@
 ---
 title: "Log-structured storage"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-06-11T10:41:48Z
 url: /blog/2017/06/11/log-structured-storage/
 categories: []

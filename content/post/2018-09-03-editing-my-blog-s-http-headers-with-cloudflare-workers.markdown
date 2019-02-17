@@ -1,5 +1,6 @@
 ---
 title: "Editing my blog's HTTP headers with Cloudflare workers"
+juliasections: ['Computer networking']
 date: 2018-09-03T09:55:19Z
 url: /blog/2018/09/03/editing-my-blog-s-http-headers-with-cloudflare-workers/
 categories: []

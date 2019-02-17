@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2015-02-06T16:39:24Z
 title: A/A testing

@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel", "spytools"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-17T00:00:00Z
 title: 'Day 44: qemu + gdb = so great'

@@ -1,5 +1,6 @@
 ---
 title: "How big can a packet get?"
+juliasections: ['Computer networking']
 date: 2017-02-07T22:28:20Z
 url: /blog/2017/02/07/mtu/
 categories: []

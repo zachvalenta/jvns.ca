@@ -1,5 +1,6 @@
 ---
 title: "Taking a sabbatical to work on Ruby profiling tools"
+juliasections: ['Career / work']
 date: 2017-12-02T08:57:03Z
 url: /blog/2017/12/02/taking-a-sabbatical-to-work-on-ruby-profiling-tools/
 categories: ["ruby-profiler"]

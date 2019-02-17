@@ -1,5 +1,6 @@
 ---
 categories: ["python", "favorite"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2013-12-22T00:00:00Z
 title: A pandas cookbook

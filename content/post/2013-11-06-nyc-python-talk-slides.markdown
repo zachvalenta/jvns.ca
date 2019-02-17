@@ -1,5 +1,6 @@
 ---
 categories: ["python", "talks"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-06T00:00:00Z
 title: NYC Python talk

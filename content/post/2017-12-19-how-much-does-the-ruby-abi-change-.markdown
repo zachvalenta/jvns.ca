@@ -1,5 +1,6 @@
 ---
 title: "How often do Ruby's stack struct definitions change?"
+juliasections: ['rbspy']
 date: 2017-12-19T09:28:44Z
 url: /blog/2017/12/19/how-much-does-the-ruby-abi-change-/
 categories: ["ruby-profiler"]

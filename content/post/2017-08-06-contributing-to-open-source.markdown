@@ -1,5 +1,6 @@
 ---
 title: "Figuring out how to contribute to open source"
+juliasections: ['Open source']
 date: 2017-08-06T08:48:33Z
 url: /blog/2017/08/06/contributing-to-open-source/
 categories: []

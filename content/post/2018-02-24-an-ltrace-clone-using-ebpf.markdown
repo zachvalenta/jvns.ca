@@ -1,5 +1,6 @@
 ---
 title: "Prototyping an ltrace clone using eBPF"
+juliasections: ['rbspy']
 date: 2018-02-24T15:36:12Z
 url: /blog/2018/02/24/an-ltrace-clone-using-ebpf/
 categories: []

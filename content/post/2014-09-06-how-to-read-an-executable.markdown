@@ -1,5 +1,6 @@
 ---
 categories: ["how-things-work"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-09-06T11:18:38Z
 title: How is a binary executable organized? Let's explore it!

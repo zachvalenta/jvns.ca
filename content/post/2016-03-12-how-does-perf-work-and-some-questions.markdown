@@ -1,5 +1,6 @@
 ---
 categories: ["perf,", "linux"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2016-03-12T11:09:40Z
 title: How does perf work? (in which we read the Linux kernel source)

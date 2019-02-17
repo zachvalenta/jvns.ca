@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Career / work']
 comments: true
 date: 2016-01-06T06:54:57Z
 title: Talking about stock options = awesome

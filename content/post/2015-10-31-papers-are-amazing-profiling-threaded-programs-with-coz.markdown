@@ -1,5 +1,6 @@
 ---
 categories: ["performance"]
+juliasections: ['Cool computer tools / features / ideas']
 comments: true
 date: 2015-10-31T10:40:02Z
 title: 'PAPERS ARE AMAZING: Profiling threaded programs with Coz'

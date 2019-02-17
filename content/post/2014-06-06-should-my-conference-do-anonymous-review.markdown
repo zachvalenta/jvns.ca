@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['Organizing conferences']
 comments: true
 date: 2014-06-06T22:04:25Z
 title: Should my conference do anonymous review?

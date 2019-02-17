@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['How a computer thing works']
 comments: true
 date: 2016-03-27T10:46:41Z
 title: Thread pools! How do I use them?

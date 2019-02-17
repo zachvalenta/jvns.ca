@@ -1,5 +1,6 @@
 ---
 title: "What's devops?"
+juliasections: ['Infrastructure / operations engineering']
 date: 2016-10-16T21:56:25Z
 url: /blog/2016/10/16/whats-devops/
 categories: []

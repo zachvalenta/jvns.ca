@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "julia", "opensource"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-12T00:00:00Z
 title: 'Day 8: Julia writes Julia! And remembers that open source is hard.'

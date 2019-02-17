@@ -1,5 +1,6 @@
 ---
 title: "Learning at work"
+juliasections: ['On learning']
 date: 2017-08-06T16:33:12Z
 url: /blog/2017/08/06/learning-at-work/
 categories: []

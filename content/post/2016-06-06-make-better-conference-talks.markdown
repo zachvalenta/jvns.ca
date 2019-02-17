@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Organizing conferences']
 comments: true
 date: 2016-06-06T21:05:00Z
 title: Ideas for making better conference talks & conferences

@@ -1,5 +1,6 @@
 ---
 title: "I started a corporation!"
+juliasections: ['Businesses / marketing']
 date: 2018-08-14T07:34:06Z
 url: /blog/2018/08/14/i-started-a-company-/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "netdev day 1: IPsec!"
+juliasections: ['Computer networking']
 date: 2018-07-11T20:54:43Z
 url: /blog/2018/07/11/netdev-day-1--ipsec/
 categories: ["netdev"]

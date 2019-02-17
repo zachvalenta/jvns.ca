@@ -1,5 +1,6 @@
 ---
 title: "When does teaching with comics work well?"
+juliasections: ['On writing comics / zines']
 date: 2018-10-28T09:13:41Z
 url: /blog/2018/10/28/when-does-teaching-with-comics-work-well/
 categories: []

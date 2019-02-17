@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "linkers"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-12T00:00:00Z
 title: 'Day 41: Linkers are upsetting'

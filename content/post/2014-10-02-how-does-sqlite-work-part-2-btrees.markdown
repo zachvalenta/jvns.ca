@@ -1,5 +1,6 @@
 ---
 categories: ["how-things-work"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-10-02T23:29:14Z
 title: 'How does SQLite work? Part 2: btrees! (or: disk seeks are slow don''t do them!)'

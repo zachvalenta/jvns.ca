@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "hackerschool", "rust"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-01T00:00:00Z
 title: How to call Rust from assembly, and vice versa

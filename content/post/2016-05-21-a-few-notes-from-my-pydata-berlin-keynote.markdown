@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Talks transcripts / podcasts']
 comments: true
 date: 2016-05-21T14:13:52Z
 title: Notes from my PyData Berlin keynote

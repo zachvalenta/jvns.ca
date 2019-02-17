@@ -1,5 +1,6 @@
 ---
 categories: ["conference", "culture"]
+juliasections: ['Organizing conferences']
 comments: true
 date: 2014-05-28T21:17:33Z
 title: Anonymous talk review is amazing.

@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "how-things-work", "python", "favorite"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-08-12T08:52:30Z
 title: What happens if you write a TCP stack in Python?

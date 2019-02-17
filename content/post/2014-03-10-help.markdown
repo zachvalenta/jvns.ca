@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2014-03-10T08:08:21Z
 title: 'Hacker School''s Secret Strategy for Being Super Productive (or: Help.)'

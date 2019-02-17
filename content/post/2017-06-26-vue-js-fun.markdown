@@ -1,5 +1,6 @@
 ---
 title: "a tiny whack-a-mole game"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-06-26T20:51:03Z
 url: /blog/2017/06/26/vue-js-fun/
 categories: []

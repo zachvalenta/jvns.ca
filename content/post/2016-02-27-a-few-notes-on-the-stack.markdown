@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['How a computer thing works']
 comments: true
 date: 2016-02-27T10:12:30Z
 title: What is "the stack"?

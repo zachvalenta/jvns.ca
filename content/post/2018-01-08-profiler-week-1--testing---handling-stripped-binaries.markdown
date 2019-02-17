@@ -1,5 +1,6 @@
 ---
 title: "Profiler week 1: testing & profiling stripped binaries"
+juliasections: ['rbspy']
 date: 2018-01-08T10:05:19Z
 url: /blog/2018/01/08/profiler-week-1--testing---handling-stripped-binaries/
 categories: ["ruby-profiler"]

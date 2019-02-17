@@ -1,5 +1,6 @@
 ---
 title: "How are Ruby's headers different from Python's headers?"
+juliasections: ['rbspy']
 date: 2017-12-20T12:21:26Z
 url: /blog/2017/12/20/how-are-ruby-s-headers-different-from-python-s-headers-/
 categories: ["ruby-profiler"]

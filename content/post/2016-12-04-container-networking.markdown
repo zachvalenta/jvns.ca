@@ -1,5 +1,6 @@
 ---
 title: "A container networking overview"
+juliasections: ['Kubernetes / containers']
 date: 2016-12-22T16:50:42Z
 url: /blog/2016/12/22/container-networking/
 categories: ["kubernetes"]

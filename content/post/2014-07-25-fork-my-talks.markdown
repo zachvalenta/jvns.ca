@@ -1,5 +1,6 @@
 ---
 categories: ["talks"]
+juliasections: ['On blogging / speaking']
 comments: true
 date: 2014-07-25T17:25:06Z
 title: Open sourced talks!

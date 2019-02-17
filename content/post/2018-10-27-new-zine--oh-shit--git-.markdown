@@ -1,5 +1,6 @@
 ---
 title: "New zine: Oh shit, git!"
+juliasections: ['Zines / comics']
 date: 2018-10-27T23:21:23Z
 url: /blog/2018/10/27/new-zine--oh-shit--git-/
 categories: []

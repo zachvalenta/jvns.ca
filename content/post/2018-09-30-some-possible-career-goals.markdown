@@ -1,5 +1,6 @@
 ---
 title: "Some possible career goals"
+juliasections: ['Career / work']
 date: 2018-09-30T23:55:07Z
 url: /blog/2018/09/30/some-possible-career-goals/
 categories: []

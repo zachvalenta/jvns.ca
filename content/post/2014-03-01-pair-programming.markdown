@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Working with others / communication']
 comments: true
 date: 2014-03-01T21:12:15Z
 title: Pair programming

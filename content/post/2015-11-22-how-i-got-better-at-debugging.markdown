@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Career / work']
 comments: true
 date: 2015-11-22T09:30:13Z
 title: How I got better at debugging

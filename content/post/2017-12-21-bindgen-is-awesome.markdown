@@ -1,5 +1,6 @@
 ---
 title: "Bindgen: awesome Rust tool for generating C bindings"
+juliasections: ['Rust']
 date: 2017-12-21T11:24:33Z
 url: /blog/2017/12/21/bindgen-is-awesome/
 categories: ["ruby-profiler"]

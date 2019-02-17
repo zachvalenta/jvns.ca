@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "python"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-29T00:00:00Z
 title: 'Day 18: ARP cache poisoning (or: In ur connection, sniffing ur packets)'

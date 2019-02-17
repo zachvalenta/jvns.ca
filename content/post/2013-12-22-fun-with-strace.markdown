@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "strace"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2013-12-22T00:00:00Z
 title: Understanding how killall works using strace

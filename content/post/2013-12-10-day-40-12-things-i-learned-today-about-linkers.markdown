@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "how-things-work"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-10T00:00:00Z
 title: 'Day 40: 12 things I learned today about linkers.'

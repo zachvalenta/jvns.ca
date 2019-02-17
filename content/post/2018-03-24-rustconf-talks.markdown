@@ -1,5 +1,6 @@
 ---
 title: "Talks I'd love to see at RustConf"
+juliasections: ['On blogging / speaking']
 date: 2018-03-24T14:37:49Z
 url: /blog/2018/03/24/rustconf-talks/
 categories: []

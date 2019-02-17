@@ -1,5 +1,6 @@
 ---
 title: "A few things I've learned about computer networking"
+juliasections: ['Computer networking']
 date: 2018-03-05T22:39:22Z
 url: /blog/2018/03/05/things-ive-learned-networking/
 categories: []

@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "strace"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-02-27T07:25:36Z
 title: More practical uses for strace!

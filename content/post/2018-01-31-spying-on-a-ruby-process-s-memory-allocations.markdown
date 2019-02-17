@@ -1,5 +1,6 @@
 ---
 title: "Spying on a Ruby process's memory allocations with eBPF"
+juliasections: ['rbspy']
 date: 2018-01-31T22:13:38Z
 url: /blog/2018/01/31/spying-on-a-ruby-process-s-memory-allocations/
 categories: ["ruby-profiler"]

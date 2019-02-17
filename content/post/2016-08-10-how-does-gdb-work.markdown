@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['How a computer thing works']
 comments: true
 date: 2016-08-10T00:02:06Z
 title: How does gdb work?

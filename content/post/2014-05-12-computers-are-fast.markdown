@@ -1,5 +1,6 @@
 ---
 categories: ["performance", "favorite", "perf"]
+juliasections: ['Performance']
 comments: true
 date: 2014-05-12T21:31:59Z
 title: Computers are *fast*!

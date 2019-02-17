@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['rbspy']
 comments: true
 date: 2016-06-12T10:43:06Z
 title: How to spy on a Ruby program

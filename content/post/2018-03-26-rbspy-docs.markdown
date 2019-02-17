@@ -1,5 +1,6 @@
 ---
 title: "Documentation site for rbspy!"
+juliasections: ['rbspy']
 date: 2018-03-26T16:05:31Z
 url: /blog/2018/03/26/rbspy-docs/
 categories: ["ruby-profiler"]

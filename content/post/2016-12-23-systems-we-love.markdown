@@ -1,5 +1,6 @@
 ---
 title: "Systems We Love 2016"
+juliasections: ['Conferences']
 date: 2016-12-23T12:40:16Z
 url: /blog/2016/12/23/systems-we-love/
 categories: []

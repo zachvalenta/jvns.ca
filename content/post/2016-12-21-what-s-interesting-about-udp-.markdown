@@ -1,5 +1,6 @@
 ---
 title: "What's interesting about UDP?"
+juliasections: ['Computer networking']
 date: 2016-12-21T00:42:12Z
 url: /blog/2016/12/21/what-s-interesting-about-udp/
 categories: []

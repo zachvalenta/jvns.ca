@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "favorite", "rust"]
+juliasections: ['Rust']
 comments: true
 date: 2014-03-12T07:09:10Z
 title: Writing an OS in Rust in tiny steps (Steps 1-5)

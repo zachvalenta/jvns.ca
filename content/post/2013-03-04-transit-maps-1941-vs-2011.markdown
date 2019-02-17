@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Fan posts about awesome work by other people']
 comments: true
 date: 2013-03-04T00:00:00Z
 title: 'Transit maps: 1941 vs 2011'

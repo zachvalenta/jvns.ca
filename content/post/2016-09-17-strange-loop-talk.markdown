@@ -1,5 +1,6 @@
 ---
 categories: ["talks"]
+juliasections: ['Talks transcripts / podcasts']
 comments: true
 date: 2016-09-17T15:32:50Z
 title: 'A swiss army knife of debugging tools: talk & transcript'

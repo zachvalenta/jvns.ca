@@ -1,5 +1,6 @@
 ---
 title: 'How do these "neural network style transfer" tools work?'
+juliasections: ['Statistics / machine learning / data analysis']
 date: 2017-02-12T10:24:12Z
 url: /blog/2017/02/12/neural-style/
 categories: []

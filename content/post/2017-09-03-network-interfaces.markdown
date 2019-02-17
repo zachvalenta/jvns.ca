@@ -1,5 +1,6 @@
 ---
 title: "What's a network interface?"
+juliasections: ['Computer networking']
 date: 2017-09-03T21:42:00Z
 url: /blog/2017/09/03/network-interfaces/
 categories: []

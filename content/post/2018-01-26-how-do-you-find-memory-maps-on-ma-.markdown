@@ -1,5 +1,6 @@
 ---
 title: "How do you read the memory maps of a Mac process?"
+juliasections: ['rbspy']
 date: 2018-01-26T11:26:42Z
 url: /blog/2018/01/26/mac-memory-maps/
 categories: ["ruby_profiler"]

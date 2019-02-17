@@ -1,5 +1,6 @@
 ---
 title: "Reverse engineering the Notability file format"
+juliasections: ['Debugging stories']
 date: 2018-03-31T20:14:16Z
 url: /blog/2018/03/31/reverse-engineering-notability-format/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "What even is a container: namespaces and cgroups"
+juliasections: ['Kubernetes / containers']
 date: 2016-10-10T22:44:13Z
 url: /blog/2016/10/10/what-even-is-a-container/
 categories: ["containers"]

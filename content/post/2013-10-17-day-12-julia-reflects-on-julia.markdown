@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "julia"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-17T00:00:00Z
 title: 'Day 12: Why Julia likes Julia'

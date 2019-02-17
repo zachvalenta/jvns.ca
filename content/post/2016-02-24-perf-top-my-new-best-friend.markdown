@@ -1,5 +1,6 @@
 ---
 categories: ["perf"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2016-02-24T22:49:44Z
 title: 'perf top: an awesome way to spy on CPU usage'

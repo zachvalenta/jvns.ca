@@ -1,5 +1,6 @@
 ---
 title: "How do you spy on a program running in a container?"
+juliasections: ['rbspy']
 date: 2018-01-26T19:20:20Z
 url: /blog/2018/01/26/spy-container/
 categories: ["ruby-profiler"]

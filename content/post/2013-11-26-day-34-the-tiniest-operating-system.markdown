@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-26T00:00:00Z
 title: 'Day 34: The tiniest operating system'

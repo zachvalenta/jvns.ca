@@ -1,5 +1,6 @@
 ---
 categories: ["kernel"]
+juliasections: ['Linux systems stuff']
 comments: true
 date: 2014-09-18T14:20:56Z
 title: You can be a kernel hacker!

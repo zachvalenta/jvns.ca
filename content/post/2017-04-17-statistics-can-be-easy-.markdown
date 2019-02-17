@@ -1,5 +1,6 @@
 ---
 title: 'Some good "Statistics for programmers" resources'
+juliasections: ['Statistics / machine learning / data analysis']
 date: 2017-04-17T14:22:36Z
 url: /blog/2017/04/17/statistics-for-programmers/
 categories: []

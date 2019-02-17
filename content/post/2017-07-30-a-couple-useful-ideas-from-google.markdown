@@ -1,5 +1,6 @@
 ---
 title: "Cherry picking commits & shell scripting in golang"
+juliasections: ['Kubernetes / containers']
 date: 2017-07-30T08:26:12Z
 url: /blog/2017/07/30/a-couple-useful-ideas-from-google/
 categories: []

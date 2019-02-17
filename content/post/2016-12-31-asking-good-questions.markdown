@@ -1,5 +1,6 @@
 ---
 title: "How to ask good questions"
+juliasections: ['On learning']
 date: 2016-12-31T11:44:53Z
 url: /blog/good-questions/
 categories: []

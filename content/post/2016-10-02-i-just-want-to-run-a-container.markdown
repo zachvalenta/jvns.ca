@@ -1,5 +1,6 @@
 ---
 categories: ["containers"]
+juliasections: ['Kubernetes / containers']
 comments: true
 date: 2016-10-02T10:43:30Z
 title: '"I just want to run a container!"'

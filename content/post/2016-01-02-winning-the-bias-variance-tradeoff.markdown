@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2016-01-02T13:18:46Z
 title: Winning the bias-variance tradeoff

@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Career / work']
 comments: true
 date: 2014-04-08T18:10:57Z
 title: Becoming a better developer (it's not just writing more programs)

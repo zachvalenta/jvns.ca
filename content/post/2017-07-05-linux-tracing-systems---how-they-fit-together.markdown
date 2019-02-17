@@ -1,5 +1,6 @@
 ---
 title: "Linux tracing systems & how they fit together"
+juliasections: ['Linux debugging / tracing tools']
 date: 2017-07-05T22:28:08Z
 url: /blog/2017/07/05/linux-tracing-systems/
 categories: []

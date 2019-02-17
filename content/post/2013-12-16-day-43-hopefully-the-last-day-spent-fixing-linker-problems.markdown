@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel", "favorite"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-16T00:00:00Z
 title: 'Day 43: SOMETHING IS ERASING MY PROGRAM WHILE IT’S RUNNING (oh wait oops)'

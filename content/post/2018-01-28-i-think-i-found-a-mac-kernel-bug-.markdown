@@ -1,5 +1,6 @@
 ---
 title: "I think I found a Mac kernel bug?"
+juliasections: ['rbspy']
 date: 2018-01-28T00:41:08Z
 url: /blog/2018/01/28/mac-freeze/
 categories: ["ruby-profiler"]

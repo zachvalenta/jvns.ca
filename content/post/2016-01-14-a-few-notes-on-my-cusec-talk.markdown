@@ -1,5 +1,6 @@
 ---
 categories: ["talks"]
+juliasections: ['Talks transcripts / podcasts']
 comments: true
 date: 2016-01-14T12:25:07Z
 title: A few notes on my CUSEC talk

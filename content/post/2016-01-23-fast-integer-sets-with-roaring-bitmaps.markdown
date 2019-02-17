@@ -1,5 +1,6 @@
 ---
 categories: ["performance"]
+juliasections: ['Cool computer tools / features / ideas']
 comments: true
 date: 2016-01-23T17:24:53Z
 title: Fast integer sets with Roaring Bitmaps (and, making friends with your modern

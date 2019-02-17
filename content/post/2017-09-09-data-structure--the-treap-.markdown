@@ -1,5 +1,6 @@
 ---
 title: "Data structure: the treap!"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-09-09T21:37:15Z
 url: /blog/2017/09/09/data-structure--the-treap-/
 categories: []

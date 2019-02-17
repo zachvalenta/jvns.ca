@@ -1,5 +1,6 @@
 ---
 categories: ["favorite", "opensource", "culture"]
+juliasections: ['Open source']
 comments: true
 date: 2014-04-26T08:56:33Z
 title: Don't feel guilty about not contributing to open source

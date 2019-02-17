@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "rust"]
+juliasections: ['Rust']
 comments: true
 date: 2014-03-21T07:38:59Z
 title: My Rust OS will never be finished (and it's a success!)

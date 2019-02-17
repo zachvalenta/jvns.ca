@@ -1,5 +1,6 @@
 ---
 title: "netdev conference, day 3"
+juliasections: ['Computer networking']
 date: 2017-04-08T14:39:11Z
 url: /blog/2017/04/08/netdev-conference-day-3/
 categories: ["netdev"]

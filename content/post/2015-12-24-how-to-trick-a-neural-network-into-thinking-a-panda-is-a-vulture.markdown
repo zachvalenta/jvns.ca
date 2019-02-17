@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning", "favorite", "how-things-work"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2015-12-24T07:35:31Z
 title: How to trick a neural network into thinking a panda is a vulture

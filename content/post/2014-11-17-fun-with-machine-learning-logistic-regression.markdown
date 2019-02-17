@@ -1,5 +1,6 @@
 ---
 categories: ["machinelearning"]
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2014-11-17T07:27:26Z
 title: 'Fun with machine learning: logistic regression!'

@@ -1,5 +1,6 @@
 ---
 title: "A litmus test for job descriptions"
+juliasections: ['Inclusion']
 date: 2016-10-21T22:39:03Z
 url: /blog/2016/10/21/a-litmus-test-for-job-descriptions/
 categories: []

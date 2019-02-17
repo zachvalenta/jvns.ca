@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-12T00:00:00Z
 title: 'Day 25: ACK all the things'

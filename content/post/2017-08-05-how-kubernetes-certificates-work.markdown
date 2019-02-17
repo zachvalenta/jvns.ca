@@ -1,5 +1,6 @@
 ---
 title: "How Kubernetes certificate authorities work"
+juliasections: ['Kubernetes / containers']
 date: 2017-08-05T09:11:50Z
 url: /blog/2017/08/05/how-kubernetes-certificates-work/
 categories: ["kubernetes"]

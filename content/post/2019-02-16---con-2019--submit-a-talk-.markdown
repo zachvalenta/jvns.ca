@@ -1,5 +1,6 @@
 ---
 title: "!!Con 2019: submit a talk!"
+juliasections: ['Conferences']
 date: 2019-02-16T11:03:27Z
 url: /blog/2019/02/16/--con-2019--submit-a-talk-/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "Working remotely, 4 years in"
+juliasections: ['Remote work']
 date: 2018-02-18T23:01:40Z
 url: /blog/2018/02/18/working-remotely--4-years-in/
 categories: []

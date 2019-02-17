@@ -1,5 +1,6 @@
 ---
 categories: ["pairing"]
+juliasections: ['Remote work']
 comments: true
 date: 2014-03-29T08:54:53Z
 title: 'Reports from remote-land: remote pairing works great!'

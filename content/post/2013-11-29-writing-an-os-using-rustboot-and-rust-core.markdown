@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "hackerschool", "rust"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-29T00:00:00Z
 title: Writing a kernel using rustboot & rust-core

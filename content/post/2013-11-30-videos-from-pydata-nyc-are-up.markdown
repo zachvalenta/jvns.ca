@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-30T00:00:00Z
 title: Videos from PyData NYC are up!

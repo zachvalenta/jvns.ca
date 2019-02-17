@@ -1,5 +1,6 @@
 ---
 title: "A few questions about open source"
+juliasections: ['Open source']
 date: 2016-10-26T23:33:45Z
 url: /blog/2016/10/26/a-few-questions-about-open-source/
 categories: []

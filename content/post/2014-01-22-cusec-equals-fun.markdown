@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['Conferences']
 comments: true
 date: 2014-01-22T00:00:00Z
 title: CUSEC = fun

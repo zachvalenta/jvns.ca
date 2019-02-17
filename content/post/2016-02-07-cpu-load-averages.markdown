@@ -1,5 +1,6 @@
 ---
 categories: ["performance"]
+juliasections: ['Performance']
 comments: true
 date: 2016-02-07T17:48:47Z
 title: How CPU load averages work (and using them to triage webserver performance!)

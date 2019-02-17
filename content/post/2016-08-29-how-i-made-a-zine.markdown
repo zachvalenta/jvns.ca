@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['On writing comics / zines']
 comments: true
 date: 2016-08-29T23:21:05Z
 title: How (and why) I made a zine

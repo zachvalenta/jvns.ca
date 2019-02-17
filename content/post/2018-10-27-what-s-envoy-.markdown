@@ -1,5 +1,6 @@
 ---
 title: "Some Envoy basics"
+juliasections: ['Computer networking']
 date: 2018-10-27T08:40:25Z
 url: /blog/2018/10/27/envoy-basics/
 categories: []

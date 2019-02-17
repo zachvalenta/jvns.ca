@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2016-05-19T00:37:38Z
 title: A few reasons to be skeptical of machine learning

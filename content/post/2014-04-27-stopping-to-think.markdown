@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Career / work']
 comments: true
 date: 2014-04-27T08:40:50Z
 title: Stopping to think

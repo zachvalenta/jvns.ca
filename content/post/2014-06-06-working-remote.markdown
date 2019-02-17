@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Remote work']
 comments: true
 date: 2014-06-06T22:59:14Z
 title: Working remote, 3 months in

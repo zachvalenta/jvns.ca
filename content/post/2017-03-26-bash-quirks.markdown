@@ -1,5 +1,6 @@
 ---
 title: "Bash scripting quirks & safety tips"
+juliasections: ['Infrastructure / operations engineering']
 date: 2017-03-26T09:17:29Z
 url: /blog/2017/03/26/bash-quirks/
 categories: []

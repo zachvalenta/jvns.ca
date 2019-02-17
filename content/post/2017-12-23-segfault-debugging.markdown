@@ -1,5 +1,6 @@
 ---
 title: "Debugging a segfault in my Rust program"
+juliasections: ['Rust']
 date: 2017-12-23T12:25:50Z
 url: /blog/2017/12/23/segfault-debugging/
 categories: ["ruby-profiler"]

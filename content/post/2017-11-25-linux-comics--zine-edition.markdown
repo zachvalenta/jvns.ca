@@ -1,5 +1,6 @@
 ---
 title: "Linux comics: a small zine"
+juliasections: ['Zines / comics']
 date: 2017-11-25T09:56:47Z
 url: /blog/2017/11/25/linux-comics--zine-edition/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "Writing eBPF tracing tools in Rust"
+juliasections: ['rbspy']
 date: 2018-02-05T10:23:44Z
 url: /blog/2018/02/05/rust-bcc/
 categories: []

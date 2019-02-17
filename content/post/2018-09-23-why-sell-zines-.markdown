@@ -1,5 +1,6 @@
 ---
 title: "Why sell zines?"
+juliasections: ['On writing comics / zines']
 date: 2018-09-23T10:21:24Z
 url: /blog/2018/09/23/why-sell-zines/
 categories: []

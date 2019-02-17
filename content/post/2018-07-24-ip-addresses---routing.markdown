@@ -1,5 +1,6 @@
 ---
 title: "IP addresses & routing"
+juliasections: ['Computer networking']
 date: 2018-07-24T20:35:47Z
 url: /blog/2018/07/24/ip-addresses-routing/
 categories: []

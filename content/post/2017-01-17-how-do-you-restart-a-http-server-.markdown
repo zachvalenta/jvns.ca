@@ -1,5 +1,6 @@
 ---
 title: "How do you restart a HTTP server?"
+juliasections: ['Computer networking']
 date: 2017-01-17T00:18:29Z
 draft: true
 url: /blog/2017/01/17/how-do-you-restart-a-http-server/

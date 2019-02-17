@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['On blogging / speaking']
 comments: true
 date: 2013-02-24T00:00:00Z
 title: Trying out Octopress

@@ -1,5 +1,6 @@
 ---
 title: "What's a senior engineer's job?"
+juliasections: ['Career / work']
 date: 2018-10-06T23:16:40Z
 url: /blog/senior-engineer/
 categories: []

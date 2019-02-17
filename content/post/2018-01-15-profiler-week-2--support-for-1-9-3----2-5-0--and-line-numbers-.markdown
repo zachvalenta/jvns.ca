@@ -1,5 +1,6 @@
 ---
 title: "Profiler week 2: support for 1.9.3 -> 2.5.0, and line numbers!"
+juliasections: ['rbspy']
 date: 2018-01-15T14:00:20Z
 url: /blog/2018/01/15/profiler-week-2--support-for-1-9-3----2-5-0--and-line-numbers/
 categories: ["ruby-profiler"]

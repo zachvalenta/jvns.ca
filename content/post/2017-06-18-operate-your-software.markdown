@@ -1,5 +1,6 @@
 ---
 title: "What can developers learn from being on call?"
+juliasections: ['Infrastructure / operations engineering']
 date: 2017-06-18T00:31:45Z
 url: /blog/2017/06/18/operate-your-software/
 categories: []

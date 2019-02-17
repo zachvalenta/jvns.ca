@@ -1,5 +1,6 @@
 ---
 title: "How to answer questions in a helpful way"
+juliasections: ['On learning']
 date: 2017-09-21T01:37:48Z
 url: /blog/answer-questions-well/
 categories: []

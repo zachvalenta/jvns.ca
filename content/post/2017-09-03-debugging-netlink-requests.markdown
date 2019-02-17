@@ -1,5 +1,6 @@
 ---
 title: "Debugging netlink requests"
+juliasections: ['Debugging stories']
 date: 2017-09-03T21:46:00Z
 url: /blog/2017/09/03/debugging-netlink-requests/
 categories: []

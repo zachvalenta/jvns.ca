@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Career / work']
 comments: true
 date: 2015-02-17T17:30:27Z
 title: How I learned to program in 10 years

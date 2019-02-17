@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Performance']
 comments: true
 date: 2016-02-10T21:11:25Z
 title: Have high expectations for your computers

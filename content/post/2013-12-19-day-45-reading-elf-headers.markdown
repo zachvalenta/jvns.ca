@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-19T00:00:00Z
 title: 'Day 45: I now have Rust code for executing executables!'

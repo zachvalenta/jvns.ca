@@ -1,5 +1,6 @@
 ---
 title: "What's a reference in Rust?"
+juliasections: ['Rust']
 date: 2017-11-27T23:07:00Z
 url: /blog/2017/11/27/rust-ref/
 categories: []

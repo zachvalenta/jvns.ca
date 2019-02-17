@@ -1,5 +1,6 @@
 ---
 title: "Async IO on Linux: select, poll, and epoll"
+juliasections: ['How a computer thing works']
 date: 2017-06-03T12:28:36Z
 url: /blog/2017/06/03/async-io-on-linux--select--poll--and-epoll/
 categories: []

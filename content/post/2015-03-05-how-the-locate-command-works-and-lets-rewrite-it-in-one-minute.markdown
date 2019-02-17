@@ -1,5 +1,6 @@
 ---
 categories: ["performance", "how-things-work"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2015-03-05T08:12:48Z
 title: ' How the locate command works (and let''s write a faster version in one minute!)'

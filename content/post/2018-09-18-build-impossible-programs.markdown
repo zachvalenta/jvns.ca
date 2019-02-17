@@ -1,5 +1,6 @@
 ---
 title: "Build impossible programs"
+juliasections: ['Talks transcripts / podcasts']
 date: 2018-09-18T17:55:38Z
 url: /blog/2018/09/18/build-impossible-programs/
 categories: []

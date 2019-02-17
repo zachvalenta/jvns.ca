@@ -1,5 +1,6 @@
 ---
 title: "Reasons Kubernetes is cool"
+juliasections: ['Kubernetes / containers']
 date: 2017-10-05T21:23:46Z
 url: /blog/2017/10/05/reasons-kubernetes-is-cool/
 categories: ["kubernetes"]

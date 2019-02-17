@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Debugging stories']
 comments: true
 date: 2016-03-04T00:32:42Z
 title: Surprises in Ruby HTTP libraries

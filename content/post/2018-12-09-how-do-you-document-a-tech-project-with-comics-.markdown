@@ -1,5 +1,6 @@
 ---
 title: "How do you document a tech project with comics?"
+juliasections: ['On writing comics / zines']
 date: 2018-12-09T00:51:28Z
 url: /blog/2018/12/09/how-do-you-document-a-tech-project-with-comics/
 categories: []

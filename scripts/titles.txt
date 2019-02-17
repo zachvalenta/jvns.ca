@@ -1,0 +1,459 @@
+# Cool computer tools / features / ideas
+
+ "Batch editing files with ed"                                                         2018-05-11-batch-editing-files-with-ed.markdown
+ "Binder: an awesome tool for hosting Jupyter notebooks"                               2017-11-12-binder--an-awesome-tool-for-hosting-jupyter-notebooks.markdown
+ "Glitch: write fun small web projects instantly"                                      2017-11-13-glitch--write-small-web-projects-easily.markdown
+ "Tailwind: style your site without writing any CSS!"                                  2018-11-01-tailwind--write-css-without-the-css-.markdown
+ "An awesome new Python profiler: py-spy!"                                             2018-09-08-an-awesome-new-python-profiler--py-spy-.markdown
+ "Cool vim feature: sessions!"                                                         2017-09-10-cool-vim-feature--sessions-.markdown
+ "Using the Strict-Transport-Security header"                                          2017-04-30-using-strict-transport-security.markdown
+ "Data structure: the treap!"                                                          2017-09-09-data-structure--the-treap-.markdown
+ "The fish shell is awesome"                                                           2017-04-23-the-fish-shell-is-awesome.markdown
+ "a tiny whack-a-mole game"                                                            2017-06-26-vue-js-fun.markdown
+ 'homu + highfive: awesome bots that make open source projects easier'                 2016-05-13-homu-plus-highfive-making-less-work-for-open-source-maintainers.markdown
+ LD_PRELOAD is super fun. And easy!                                                    2014-11-27-ld-preload-is-super-fun-and-easy.markdown
+ Sendfile (a system call for web developers to know about!)                            2016-01-23-sendfile-a-new-to-me-system-call.markdown
+ Fast integer sets with Roaring Bitmaps (and, making friends with your modern          2016-01-23-fast-integer-sets-with-roaring-bitmaps.markdown
+ tcpdump is amazing                                                                    2016-03-16-tcpdump-is-amazing.markdown
+ "Log-structured storage"                                                              2017-06-11-log-structured-storage.markdown
+ 'How to measure your CPU time: clock_gettime!'                                        2016-02-20-measuring-cpu-time-with-clock-gettime.markdown
+ you can take the derivative of a regular expression?!                                 2016-04-24-how-regular-expressions-go-fast.markdown
+ 'PAPERS ARE AMAZING: Profiling threaded programs with Coz'                            2015-10-31-papers-are-amazing-profiling-threaded-programs-with-coz.markdown
+
+# Computer networking
+ "Networking tool comics!"                                                             2019-02-10-a-few-networking-tool-comics.markdown
+ "An example of how C++ destructors are useful in Envoy"                               2018-11-18-c---destructors---really-useful.markdown
+ "How big can a packet get?"                                                           2017-02-07-mtu.markdown
+ "Some Envoy basics"                                                                   2018-10-27-what-s-envoy-.markdown
+ "IP addresses & routing"                                                              2018-07-24-ip-addresses---routing.markdown
+ "What's interesting about UDP?"                                                       2016-12-21-what-s-interesting-about-udp-.markdown
+ 'netdev day 2: moving away from "as fast as possible" in networking code'             2018-07-12-netdev-day-2--moving-away-from--as-fast-as-possible-.markdown
+ "netdev day 1: IPsec!"                                                                2018-07-11-netdev-day-1--ipsec.markdown
+ Why do we use the Linux kernel's TCP stack?                                           2016-06-30-why-do-we-use-the-linux-kernels-tcp-stack.markdown
+ "How I use Wireshark"                                                                 2018-06-19-what-you-can-do-with-wireshark.markdown
+ "Finding out if/why a server is dropping packets"                                     2017-09-05-finding-out-where-packets-are-being-dropped.markdown
+ "What's a network interface?"                                                         2017-09-03-network-interfaces.markdown
+ "Editing my blog's HTTP headers with Cloudflare workers"                              2018-09-03-editing-my-blog-s-http-headers-with-cloudflare-workers.markdown
+ "A few things I've learned about computer networking"                                 2018-03-05-things-ive-learned-networking.markdown
+ What are SSL ciphers & session keys?                                                  2016-05-06-what-are-ssl-ciphers-and-session-keys.markdown
+ "netdev conference, day 3"                                                            2017-04-08-netdev-conference--day-3.markdown
+ "How to filter packets super fast: XDP & eBPF!"                                       2017-04-07-xdp-bpf.markdown
+ "netdev conference, day 2"                                                            2017-04-07-netdev-conference-day-2.markdown
+ "netdev conference, day 1"                                                            2017-04-06-netdev-2-1.markdown
+ Why do UDP packets get dropped?                                                       2016-08-24-find-out-where-youre-dropping-packets.markdown
+ How do HTTP requests get sent to the right place?                                     2016-07-14-whats-sni.markdown
+ CDNs aren't just for caching                                                          2016-04-29-cdns-arent-just-for-caching.markdown
+ "Dissecting an SSL certificate"                                                       2017-01-31-whats-tls.markdown
+ "How do you restart a HTTP server?"                                                   2017-01-17-how-do-you-restart-a-http-server-.markdown
+ "Iptables basics"                                                                     2017-06-07-iptables-basics.markdown
+ "Slow down your internet with tc"                                                     2017-04-01-slow-down-your-internet-with-tc.markdown
+
+# Kubernetes / containers
+
+ Some questions about Docker and rkt                                                   2016-09-15-whats-up-with-containers-docker-and-rkt.markdown
+ "Cherry picking commits & shell scripting in golang"                                  2017-07-30-a-couple-useful-ideas-from-google.markdown
+ "How does the Kubernetes scheduler work?"                                             2017-07-27-how-does-the-kubernetes-scheduler-work-.markdown
+ "How Kubernetes certificate authorities work"                                         2017-08-05-how-kubernetes-certificates-work.markdown
+ "Operating a Kubernetes network"                                                      2017-10-10-operating-a-kubernetes-network.markdown
+ "Reasons Kubernetes is cool"                                                          2017-10-05-reasons-kubernetes-is-cool.markdown
+ "A few things I've learned about Kubernetes"                                          2017-06-04-learning-about-kubernetes.markdown
+ "A container networking overview"                                                     2016-12-04-container-networking.markdown
+ "What happens when you run a rkt container?"                                          2016-11-03-what-happens-when-you-run-a-rkt-container.markdown
+ "Running containers without Docker"                                                   2016-10-26-running-container-without-docker.markdown
+ '"I just want to run a container!"'                                                   2016-10-02-i-just-want-to-run-a-container.markdown
+ A list of Linux container software                                                    2016-10-02-a-list-of-container-software.markdown
+ "Swapping, memory limits, and cgroups"                                                2017-02-17-swap--the-filesystem-cache--and-cgroups.markdown
+ "What even is a container: namespaces and cgroups"                                    2016-10-10-what-even-is-a-container.markdown
+ Docker is amazing                                                                     2015-11-09-docker-is-amazing.markdown
+
+# Zines / comics
+ "New zine: Oh shit, git!"                                                             2018-10-27-new-zine--oh-shit--git-.markdown
+ "A tiny zine about machine learning"                                                  2017-01-20-a-tiny-zine-about-machine-learning.markdown
+ "\"Let's learn tcpdump\" zine: now available for everyone"                            2017-05-14-let-s-learn-tcpdump.markdown
+ "New zine: Help! I have a manager!"                                                   2018-09-22-new-zine--help--i-have-a-manager-.markdown
+ "New zine: Bite Size Command Line!"                                                   2018-08-05-new-zine--bite-size-command-line-.markdown
+ "A few drawings about Linux"                                                          2016-11-10-a-few-drawings-about-linux.markdown
+ "New zine: Profiling & tracing with perf!!"                                           2018-04-16-new-perf-zine.markdown
+ "Linux comics: a small zine"                                                          2017-11-25-linux-comics--zine-edition.markdown
+ "New zine: So you want to be a wizard"                                                2017-12-01-new-zine--so-you-want-to-be-a-wizard.markdown
+ 'New zine: Linux debugging tools you''ll love'                                        2016-09-07-new-zine-linux-debugging-tools-youll-love.markdown
+ A zine about strace                                                                   2015-04-14-strace-zine.markdown
+ 'New zine: "Networking! ACK!"'                                                        2017-01-29-new-zine---networking--ack--.markdown
+ "New zine: let's learn tcpdump!"                                                      2017-04-29-new-zine--let-s-learn-tcpdump.markdown
+ "Linux tracing zine"                                                                  2017-07-09-linux-tracing-zine.markdown
+ "More drawings about computers"                                                       2016-11-27-more-linux-drawings.markdown
+ A few sketches                                                                        2016-07-23-a-few-sketches.markdown
+
+# Conferences
+ "!!Con 2019: submit a talk!"                                                          2019-02-16---con-2019--submit-a-talk-.markdown
+ "Systems We Love 2016"                                                                2016-12-23-systems-we-love.markdown
+ PolyConf 2016                                                                         2016-07-03-polyconf-2016.markdown
+ AdaCamp Montreal 2015                                                                 2015-04-15-adacamp-montreal-2015.markdown
+ ♥ PyCon                                                                               2014-04-13-pycon.markdown
+ CUSEC = fun                                                                           2014-01-22-cusec-equals-fun.markdown
+ Data Day Texas 2015                                                                   2015-01-12-data-day-texas-2015.markdown
+ Strange Loop 2014                                                                     2014-09-20-strange-loop-2014.markdown
+ '!!Con talks are up'                                                                  2014-06-22-con-talks-are-up.markdown
+ PyData NYC (I gave a machine learning talk! yay!)                                     2014-11-27-pydata-nyc-i-gave-a-machine-learning-talk-yay.markdown
+ Women in Machine Learning 2015 (fun!!!)                                               2015-12-07-women-in-machine-learning-2015-fun.markdown
+ PyData Boston 2013                                                                    2013-09-12-pydata-boston-2013.markdown
+ Open Data Exchange 2013                                                               2013-04-07-open-data-exchange-2013.markdown
+ 'Montreal All-Girl Hack Night #2: now with cookies'                                   2013-01-27-all_girl_hack_night_2.md
+ 'Montreal All-Girl Hack Night #1: AMAZING'                                            2012-12-16-all_girl_hack_night.md
+
+# Organizing conferences
+ Anonymous talk review is amazing.                                                     2014-05-28-anonymous-talk-submission-equals-amazing.markdown
+ Should my conference do anonymous review?                                             2014-06-06-should-my-conference-do-anonymous-review.markdown
+ You can choose who submits talks to your conference                                   2015-03-06-you-can-choose-who-submits-talks-to-your-conference.markdown
+ Ideas for making better conference talks & conferences                                2016-06-06-make-better-conference-talks.markdown
+
+# Businesses / marketing
+ "A few early marketing thoughts"                                                      2019-01-29-marketing-thoughts.markdown
+ "I started a corporation!"                                                            2018-08-14-i-started-a-company-.markdown
+ "Who pays to educate developers?"                                                     2018-09-01-who-pays-to-educate-developers-.markdown
+
+# Statistics / machine learning / data analysis
+ A pandas cookbook                                                                     2013-12-22-cooking-with-pandas.markdown
+ Graphing bike path data with IPython Notebook and pandas                              2013-02-27-graphing-bike-path-data-with-ipython-notebook-and-pandas.markdown
+ "Some nonparametric statistics math"                                                  2018-12-29-some-initial-nonparametric-statistics-notes.markdown
+ 'Some good "Statistics for programmers" resources'                                    2017-04-17-statistics-can-be-easy-.markdown
+ 'Some easy statistics: Bootstrap confidence intervals'                                2015-07-04-bootstrap-confidence-intervals.markdown
+ 'Fun with machine learning: logistic regression!'                                     2014-11-17-fun-with-machine-learning-logistic-regression.markdown
+ 'Fun with machine learning: does your model actually work?'                           2014-11-16-fun-with-machine-learning-making-sure-your-model-actually-works.markdown
+ 'Fun with stats: How big of a sample size do I need?'                                 2014-07-11-fun-with-stats-how-big-of-a-sample-size-do-i-need.markdown
+ A/A testing                                                                           2015-02-06-a-a-testing.markdown
+ 'How do these "neural network style transfer" tools work?'                            2017-02-12-generative-adversarial-networks.markdown
+ Is machine learning safe to use?                                                      2015-09-06-is-machine-learning-safe-to-use.markdown
+ Winning the bias-variance tradeoff                                                    2016-01-02-winning-the-bias-variance-tradeoff.markdown
+ How to trick a neural network into thinking a panda is a vulture                      2015-12-24-how-to-trick-a-neural-network-into-thinking-a-panda-is-a-vulture.markdown
+ Machine learning isn't Kaggle competitions                                            2014-06-19-machine-learning-isnt-kaggle-competitions.markdown
+ A few reasons to be skeptical of machine learning                                     2016-05-19-a-few-reasons-to-be-skeptical-of-machine-learning-results.markdown
+ Looking inside machine learning black boxes                                           2016-04-10-why-i-dont-like-black-boxes.markdown
+
+# Year in review
+ "2018: Year in review"                                                                2018-12-23-2018--year-in-review.markdown
+ "2017: Year in review"                                                                2017-12-31-2017--year-in-review.markdown
+ "2016: Year in review"                                                                2016-12-21-2016--year-in-review.markdown
+ '2015: Year in review'                                                                2015-12-26-2015-year-in-review.markdown
+
+# Infrastructure / operations engineering
+ "Ideas about how to use AWS"                                                          2016-11-16-ideas-about-how-to-use-aws.markdown
+ Fear makes you a worse programmer                                                     2014-12-21-fear-makes-you-a-worse-programmer.markdown
+ "Bash scripting quirks & safety tips"                                                 2017-03-26-bash-quirks.markdown
+ Why I love log files                                                                  2016-02-12-why-i-love-log-files.markdown
+ 'TIL: clock skew exists'                                                              2016-02-09-til-clock-skew-exists.markdown
+ "New talk: High Reliability Infrastructure Migrations"                                2018-12-15-new-talk--high-reliability-infrastructure-migrations.markdown
+ "Some notes on running new software in production"                                    2018-11-11-understand-the-software-you-use-in-production.markdown
+ "What can developers learn from being on call?"                                       2017-06-18-operate-your-software.markdown
+ "Operations for software developers for beginners"                                    2016-10-15-operations-for-software-developers-for-beginners.markdown
+ How do you do capacity planning?                                                      2016-03-20-how-do-you-do-capacity-planning.markdown
+ "Service discovery at Stripe"                                                         2016-10-31-service-discovery-at-stripe.markdown
+ "Consistency vs availability (wat?)"                                                  2016-10-21-consistency-vs-availability.markdown
+ "What's devops?"                                                                      2016-10-16-whats-devops.markdown
+
+# On writing comics / zines
+
+ "When does teaching with comics work well?"                                           2018-10-28-when-does-teaching-with-comics-work-well-.markdown
+ "How to teach technical concepts with cartoons"                                       2017-09-28-tech-illustrations.markdown
+ "How do you document a tech project with comics?"                                     2018-12-09-how-do-you-document-a-tech-project-with-comics-.markdown
+ "Why sell zines?"                                                                     2018-09-23-why-sell-zines-.markdown
+ "An idea for a programming book"                                                      2017-01-17-an-idea-for-a-programming-book.markdown
+ "Handwritten books"                                                                   2017-05-14-handwritten-books.markdown
+ "Why cute drawings?"                                                                  2016-11-14-why-cute-drawings-.markdown
+ How (and why) I made a zine                                                           2016-08-29-how-i-made-a-zine.markdown
+
+# Career / work
+
+ Three ways to solve hard programming problems                                         2016-05-29-three-ways-to-solve-hard-programming-problems.markdown
+ 'Choosing the "best software"'                                                        2017-01-24-choosing-the-best-thing.markdown
+ Stopping to think                                                                     2014-04-27-stopping-to-think.markdown
+ Getting things done                                                                   2016-09-19-getting-things-done.markdown
+ Release it, then build it                                                             2016-08-16-release-it-then-build-it.markdown
+ "Hiring & opportunity"                                                                2017-02-16-hiring---opportunity.markdown
+ How do you decide what to work on?                                                    2016-08-16-how-do-you-work-on-something-important.markdown
+ "Writing down my career"                                                              2017-03-17-career-narrative.markdown
+ "Open source sabbatical = awesome"                                                    2018-03-28-open-source-sabbatical---awesome.markdown
+ "What's a senior engineer's job?"                                                     2018-10-06-what-s-a-senior-engineer-s-job-.markdown
+ "Some possible career goals"                                                          2018-09-30-some-possible-career-goals.markdown
+ Talking about stock options = awesome                                                 2016-01-06-talking-about-stock-options.markdown
+ Things you should know about stock options before negotiating an offer                2015-12-30-do-the-math-on-your-stock-options.markdown
+ "Writing performance reviews with positive constructive feedback"                     2018-02-10-positive-constructive-feedback.markdown
+ Questions I'm asking in interviews                                                    2013-12-30-questions-im-asking-in-interviews.markdown
+ Sounding confident in interviews                                                      2014-02-03-sounding-confident-in-interviews.markdown
+ "Taking a sabbatical to work on Ruby profiling tools"                                 2017-12-02-taking-a-sabbatical-to-work-on-ruby-profiling-tools.markdown
+ "Telling people what you're working on"                                               2017-09-03-telling-people-what-you-re-working-on.markdown
+ Becoming a better developer (it's not just writing more programs)                     2014-04-08-growing.markdown
+ How I learned to program in 10 years                                                  2015-02-17-how-i-learned-to-program-in-10-years.markdown
+ How I got better at debugging                                                         2015-11-22-how-i-got-better-at-debugging.markdown
+ How I got a CS degree without learning what a system call is                          2016-09-12-how-i-got-a-cs-degree-without-learning-what-a-system-call-is.markdown
+ 1:1 topic ideas                                                                       2015-03-06-1-1-topic-ideas.markdown
+ What my technical interviews have looked like                                         2014-01-16-what-my-technical-interviews-have-looked-like.markdown
+
+# Working with others / communication
+
+ "Making small culture changes"                                                        2017-04-16-making-small-culture-changes.markdown
+ "How do you make an awesome team?"                                                    2017-01-13-how-do-you-make-an-awesome-team-.markdown
+ Pair programming is amazing! Except... when it's not.                                 2014-08-05-pair-programming-is-amazing-except-when-its-not.markdown
+ Learning to like design documents                                                     2016-06-03-learning-to-like-design-documents.markdown
+ On reading the source code, not the docs                                              2014-12-29-on-reading-the-source-code-not-the-docs.markdown
+ Senior engineering & fantasy heroes                                                   2015-03-28-senior-engineering-and-fantasy-heroes.markdown
+ Pair programming                                                                      2014-03-01-pair-programming.markdown
+
+# Remote work
+
+ Surviving meetings while remote                                                       2015-12-31-surviving-meetings-while-remote.markdown
+ "Working remotely, 4 years in"                                                        2018-02-18-working-remotely--4-years-in.markdown
+ Working remote, 3 months in                                                           2014-06-06-working-remote.markdown
+ Working remote, 8 months in (seeing humans is important!)                             2014-10-22-working-remote-8-months-in.markdown
+ 'Reports from remote-land: remote pairing works great!'                               2014-03-29-reports-from-remote-land-remote-pairing-works-great.markdown
+
+# Talks transcripts / podcasts
+
+ 'A swiss army knife of debugging tools: talk & transcript'                            2016-09-17-strange-loop-talk.markdown
+ "Build impossible programs"                                                           2018-09-18-build-impossible-programs.markdown
+ "How does the internet work? podcast"                                                 2018-03-05-codenewbie-networking-podcast.markdown
+ "Talk: Building a Ruby profiler"                                                      2018-03-05-rbspy-talk.markdown
+ "A few recent podcasts"                                                               2018-08-11-a-few-recent-podcasts.markdown
+ 'Ruby Rogues podcast: systems programming tricks!'                                    2014-07-17-ruby-rogues.markdown
+ A few notes on my CUSEC talk                                                          2016-01-14-a-few-notes-on-my-cusec-talk.markdown
+ Notes from my PyData Berlin keynote                                                   2016-05-21-a-few-notes-from-my-pydata-berlin-keynote.markdown
+
+
+# On blogging / speaking
+
+ '"advice" for aspiring tech bloggers'                                                 2016-05-22-how-do-you-write-blog-posts.markdown
+ "Measuring a blog's success: focus on conversations, not page views"                  2018-02-20-how-do-you-measure-a-blog-s-success-.markdown
+ Trying out Octopress                                                                  2013-02-24-trying-out-octopress.markdown
+ Open sourced talks!                                                                   2014-07-25-fork-my-talks.markdown
+ "Switching to Hugo"                                                                   2016-10-09-switching-to-hugo.markdown
+ You should give talks. They will be awesome. Here's why!                              2014-01-12-public-speaking.markdown
+ How to set up a blog in 5 minutes                                                     2014-10-08-how-to-set-up-a-blog-in-5-minutes.markdown
+ "Blogging principles I use"                                                           2017-03-20-blogging-principles.markdown
+ "Talks I'd love to see at RustConf"                                                   2018-03-24-rustconf-talks.markdown
+ "How I set up an automatic weekly blog digest"                                        2017-12-28-making-a-weekly-newsletter-with-mailchimp.markdown
+ Reproducing awesomeness                                                               2014-12-19-reproducing-awesomeness.markdown
+
+# On learning
+
+ How does knowledge get locked up in people's heads?                                   2016-04-30-building-expertise-at-work.markdown
+ "How to teach yourself hard things"                                                   2018-09-01-learning-skills-you-can-practice.markdown
+ "How to answer questions in a helpful way"                                            2017-09-21-how-to-answer-questions-in-a-helpful.markdown
+ Asking good questions is hard (but worth it)                                          2016-08-31-asking-questions.markdown
+ "How to ask good questions"                                                           2016-12-31-asking-good-questions.markdown
+ "Rules of programming experiments"                                                    2017-01-04-rules-of-programming-experiments.markdown
+ "So you want to be a wizard"                                                          2017-03-13-so-you-want-to-be-a-wizard.markdown
+ Asking questions is a superpower                                                      2014-06-13-asking-questions-is-a-superpower.markdown
+ "Learning at work"                                                                    2017-08-06-learning-at-work.markdown
+ '"Ask if you have questions" isn''t enough'                                           2014-04-04-ask-if-you-have-questions-isnt-enough.markdown
+
+# Rust
+
+ Calling C from Rust                                                                   2016-01-18-calling-c-from-rust.markdown
+ Why I ❤ Rust                                                                          2016-01-10-why-i-rust.markdown
+ A second try at using Rust                                                            2016-05-12-a-second-try-at-using-rust.markdown
+ Learning systems programming with Rust                                                2016-09-11-rustconf-keynote.markdown
+ Some things my kernel can't do                                                        2014-01-03-what-my-kernel-doesnt-do.markdown
+ "What's a reference in Rust?"                                                         2017-11-27-avoiding-cloning-in-rust.markdown
+ My Rust OS will never be finished (and it's a success!)                               2014-03-21-my-rust-os-will-never-be-finished.markdown
+ Writing an OS in Rust in tiny steps (Steps 1-5)                                       2014-03-12-the-rust-os-story.markdown
+ "Rust in 2018: it's way easier to use!"                                               2018-01-13-rust-in-2018--way-easier-to-use-.markdown
+ "My first Rust macro"                                                                 2017-12-24-my-first-rust-macro.markdown
+ "Debugging a segfault in my Rust program"                                             2017-12-23-segfault-debugging.markdown
+ "Bindgen: awesome Rust tool for generating C bindings"                                2017-12-21-bindgen-is-awesome.markdown
+
+# Linux debugging / tracing tools
+
+ "A perf cheat sheet"                                                                  2017-12-27-a-perf-cheat-sheet.markdown
+ "Notes on BPF & eBPF"                                                                 2017-06-28-notes-on-bpf---ebpf.markdown
+ Debugging shared library problems with strace                                         2014-03-10-debugging-shared-library-problems-with-strace.markdown
+ "Linux tracing systems & how they fit together"                                       2017-07-05-linux-tracing-systems---how-they-fit-together.markdown
+ More practical uses for strace!                                                       2014-02-27-more-practical-uses-for-strace.markdown
+ Using strace to avoid reading Ruby code                                               2014-02-26-using-strace-to-avoid-reading-ruby-code.markdown
+ "ftrace: trace your kernel functions!"                                                2017-03-19-getting-started-with-ftrace.markdown
+ "3 short screencasts (/proc, tcpdump, strace)"                                        2017-06-26-3-screencasts.markdown
+ Using ltrace to debug a memory leak                                                   2016-06-15-using-ltrace-to-debug-a-memory-leak.markdown
+ A useful new strace feature                                                           2016-06-07-strace-y.markdown
+ A workshop on strace & tcpdump                                                        2016-05-06-a-workshop-on-strace-and-tcpdump.markdown
+ Linux debugging tools I love                                                          2016-07-03-debugging-tools-i-love.markdown
+ I can spy on my CPU cycles with perf!                                                 2014-05-13-profiling-with-perf.markdown
+ A few spy tools for your operating system (other than strace!)                        2015-04-06-a-few-spy-tools-for-your-operating-system-other-than-strace.markdown
+ Seeing system calls with perf instead of strace                                       2015-03-30-seeing-system-calls-with-perf-instead-of-strace.markdown
+ Spying on Hadoop with strace                                                          2014-12-10-spying-on-hadoop-with-strace.markdown
+ Spying on ssh with strace                                                             2014-02-17-spying-on-ssh-with-strace.markdown
+ Understanding how killall works using strace                                          2013-12-22-fun-with-strace.markdown
+ Debug your programs like they're closed source!                                       2014-04-20-debug-your-programs-like-theyre-closed-source.markdown
+ How does perf work? (in which we read the Linux kernel source)                        2016-03-12-how-does-perf-work-and-some-questions.markdown
+ 'perf top: an awesome way to spy on CPU usage'                                        2016-02-24-perf-top-my-new-best-friend.markdown
+
+# Debugging stories
+
+ "Debugging netlink requests"                                                          2017-09-03-debugging-netlink-requests.markdown
+ "A small website mystery"                                                             2017-05-10-a-small-website-bug-story.markdown
+ Nancy Drew and the Case of the Slow Program                                           2015-03-15-nancy-drew-and-the-case-of-the-slow-program.markdown
+ Surprises in Ruby HTTP libraries                                                      2016-03-04-whats-up-with-ruby-http-libraries.markdown
+ "Reverse engineering the Notability file format"                                      2018-03-31-reverse-engineering-notability-format.markdown
+ Investigating Erlang by reading its system calls                                      2016-05-13-erlang-seems-really-complicated.markdown
+
+# How a computer thing works
+
+ "How do groups work on Linux?"                                                        2017-11-20-how-do-users-and-groups-work-.markdown
+ How does gdb work?                                                                    2016-08-10-how-does-gdb-work.markdown
+ Three steps to learning GDB                                                           2014-02-10-three-steps-to-learning-gdb.markdown
+ "Async IO on Linux: select, poll, and epoll"                                          2017-06-03-async-io-on-linux--select--poll--and-epoll.markdown
+ Why Ruby’s Timeout is dangerous (and Thread.raise is terrifying)                      2015-11-27-why-rubys-timeout-is-dangerous-and-thread-dot-raise-is-terrifying.markdown
+ Diving into HDFS                                                                      2014-05-15-diving-into-hdfs.markdown
+ 'How does SQLite work? Part 2: btrees! (or: disk seeks are slow don''t do them!)'     2014-10-02-how-does-sqlite-work-part-2-btrees.markdown
+ 'How does SQLite work? Part 1: pages!'                                                2014-09-27-how-does-sqlite-work-part-1-pages.markdown
+ How is a binary executable organized? Let's explore it!                               2014-09-06-how-to-read-an-executable.markdown
+ "Weird unix thing: 'cd //'"                                                           2017-02-08-weird-unix-things---cd----.markdown
+ What happens if you write a TCP stack in Python?                                      2014-08-12-what-happens-if-you-write-a-tcp-stack-in-python.markdown
+ "How does gdb call functions?"                                                        2018-01-04-how-does-gdb-call-functions-.markdown
+ Why you should understand (a little) about TCP                                        2015-11-21-why-you-should-understand-a-little-about-tcp.markdown
+ What happens when you start a process on Linux?                                       2016-10-04-exec-will-eat-your-brain.markdown
+ 'Diving into concurrency: trying out mutexes and atomics'                             2014-12-14-fun-with-threads.markdown
+ How gzip uses Huffman coding                                                          2015-02-22-how-gzip-uses-huffman-coding.markdown
+ ' How the locate command works (and let''s write a faster version in one minute!)'    2015-03-05-how-the-locate-command-works-and-lets-rewrite-it-in-one-minute.markdown
+ I conquered thread pools! For today, at least.                                        2016-03-29-thread-pools-part-ii-i-love-blocking.markdown
+ Thread pools! How do I use them?                                                      2016-03-27-thread-pools-how-do-i-use-them.markdown
+ What is "the stack"?                                                                  2016-02-27-a-few-notes-on-the-stack.markdown
+ Should you be scared of Unix signals?                                                 2016-06-13-should-you-be-scared-of-signals.markdown
+
+# Fan posts about awesome work by other people
+
+ 'Transit maps: 1941 vs 2011'                                                          2013-03-04-transit-maps-1941-vs-2011.markdown
+ "Awesome NLP tutorials by Allison Parrish"                                            2017-06-17-allison-parrish.markdown
+ "Like zines about computers? You might love Bubblesort Zines"                         2017-05-02-like-zines-about-computers--you-might-love-bubblesort-zines.markdown
+ '"A Critique of the CAP Theorem"'                                                     2016-11-19-a-critique-of-the-cap-theorem.markdown
+ "A magical machine learning art tool"                                                 2017-02-02-a-magical-machine-learning-tool.markdown
+ A few blogs I really like                                                             2014-02-13-a-few-blogs-i-really-like.markdown
+ Some of my favorite blogs                                                             2016-04-09-some-of-my-favorite-blogs.markdown
+ Julia Serano's 'Excluded'                                                             2013-09-25-julia-seranos-excluded.markdown
+
+# Inclusion
+
+ "A litmus test for job descriptions"                                                  2016-10-21-a-litmus-test-for-job-descriptions.markdown
+ An argument for hiring junior developers                                              2015-07-25-an-argument-for-hiring-junior-developers.markdown
+ "No feigning surprise"                                                                2017-04-27-no-feigning-surprise.markdown
+ What women in technology really think (150 of them, at least)                         2014-11-11-the-best-thing-ive-ever-read-about-women-in-technology.markdown
+ When is "guys" gender neutral? I did a survey!                                        2013-12-27-guys-guys-guys.markdown
+ Programming doesn't belong to men (it belongs to me)                                  2014-12-28-programming-doesnt-belong-to-men-it-belongs-to-me.markdown
+ Women-only spaces are a hack                                                          2016-03-06-women-only-spaces-are-a-hack.markdown
+
+# rbspy
+
+ "Documentation site for rbspy!"                                                       2018-03-26-rbspy-docs.markdown
+ "Prototyping an ltrace clone using eBPF"                                              2018-02-24-an-ltrace-clone-using-ebpf.markdown
+ "Profiler week 6/7: more experiments, and a `report` subcommand!"                     2018-02-19-profiler-week-6-7--more-experiments--and-a--record--subcommand-.markdown
+ "Profiler week 5: Mac support, experiments profiling memory allocations"              2018-02-06-profiler-week-5.markdown
+ "Writing eBPF tracing tools in Rust"                                                  2018-02-05-writing-ebpf-programs-in-rust.markdown
+ "Spying on a Ruby process's memory allocations with eBPF"                             2018-01-31-spying-on-a-ruby-process-s-memory-allocations.markdown
+ "Profiler week 4: callgrind support, containers, Mac progress!"                       2018-01-29-profiler-week-4.markdown
+ "I think I found a Mac kernel bug?"                                                   2018-01-28-i-think-i-found-a-mac-kernel-bug-.markdown
+ "How do you spy on a program running in a container?"                                 2018-01-26-spy-container.markdown
+ "How do you read the memory maps of a Mac process?"                                   2018-01-26-how-do-you-find-memory-maps-on-ma-.markdown
+ "Profiler week 3: refactoring, better testing, and an alpha release!"                 2018-01-22-profiler-week-3--refactoring--better-testing--and-an-alpha-release-.markdown
+ "Should I pause a Ruby process to collect its stack?"                                 2018-01-15-should-i-pause-a-ruby-process-to-collect-its-stack-.markdown
+ "Profiler week 2: support for 1.9.3 -> 2.5.0, and line numbers!"                      2018-01-15-profiler-week-2--support-for-1-9-3----2-5-0--and-line-numbers-.markdown
+ "Profiler adventures: resolving symbol addresses is hard!"                            2018-01-09-how-does-gdb-figure-out-what-address-a-symbol-has-.markdown
+ "Profiler week 1: testing & profiling stripped binaries"                              2018-01-08-profiler-week-1--testing---handling-stripped-binaries.markdown
+ "How are Ruby's headers different from Python's headers?"                             2017-12-20-how-are-ruby-s-headers-different-from-python-s-headers-.markdown
+ "How often do Ruby's stack struct definitions change?"                                2017-12-19-how-much-does-the-ruby-abi-change-.markdown
+ "How do Ruby & Python profilers work?"                                                2017-12-17-how-do-ruby---python-profilers-work-.markdown
+ How to spy on a Ruby program                                                          2016-06-12-a-weird-system-call-process-vm-readv.markdown
+
+# Performance
+
+ "How much memory is my process using?"                                                2016-12-03-how-much-memory-is-my-process-using-.markdown
+ Benchmarking correctly is hard (and techniques for doing it better)                   2016-07-23-rigorous-benchmarking-in-reasonable-time.markdown
+ Computers are *fast*!                                                                 2014-05-12-computers-are-fast.markdown
+ Have high expectations for your computers                                             2016-02-10-have-high-expectations-for-computers.markdown
+ Java isn't slow                                                                       2016-01-03-java-isnt-slow.markdown
+ A millisecond isn't fast (and how we made it 100x faster)                             2015-09-10-a-millisecond-isnt-fast-and-how-we-fixed-it.markdown
+ Some links on Java garbage collection                                                 2016-04-23-some-links-on-java-garbage-collection.markdown
+ How CPU load averages work (and using them to triage webserver performance!)          2016-02-07-cpu-load-averages.markdown
+ Java garbage collection can be really slow                                            2016-04-22-java-garbage-collection-can-be-really-slow.markdown
+ The Etsy site performance report is amazing                                           2016-05-01-the-etsy-site-performance-report.markdown
+ I/O matters.                                                                          2016-03-23-io-matters.markdown
+ "Profiling Go programs with pprof"                                                    2017-09-24-profiling-go-with-pprof.markdown
+
+# Open source
+ "Figuring out how to contribute to open source"                                       2017-08-06-contributing-to-open-source.markdown
+ Learning at open source sprints (no preparation required)                             2015-04-12-learning-at-open-source-sprints.markdown
+ "A few questions about open source"                                                   2016-10-26-a-few-questions-about-open-source.markdown
+ Don't feel guilty about not contributing to open source                               2014-04-26-i-dont-feel-guilty-about-not-contributing-to-open-source.markdown
+
+# Linux systems stuff
+
+ Guessing Linux kernel registers                                                       2016-01-18-guessing-linux-kernel-registers.markdown
+ "Things to learn about Linux"                                                         2016-11-21-things-to-learn-about-linux.markdown
+ 4 paths to being a kernel hacker                                                      2014-01-04-4-paths-to-being-a-kernel-hacker.markdown
+ You can be a kernel hacker!                                                           2014-09-18-you-can-be-a-kernel-hacker.markdown
+ Recovering files using /proc (and spying, too!)                                       2014-03-23-recovering-files-using-slash-proc-and-other-useful-facts.markdown
+ "How to get a core dump for a segfault on Linux"                                      2018-04-28-debugging-a-segfault-on-linux.markdown
+
+# Recurse Center
+
+ '"How was Hacker School?"'                                                            2014-02-15-how-was-hacker-school.markdown
+ 'How I did Hacker School: ignoring things I understand and doing the impossible'      2014-06-29-how-i-did-hacker-school.markdown
+ 'Hacker School''s Secret Strategy for Being Super Productive (or: Help.)'             2014-03-10-help.markdown
+ "How I spent my time at the Recurse Center"                                           2017-09-17-how-i-spent-my-time-at-the-recurse-center.markdown
+ 'Day 46: Never Graduate'                                                              2013-12-20-day-46-never-graduate.markdown
+ 'Day 45: I now have Rust code for executing executables!'                             2013-12-19-day-45-reading-elf-headers.markdown
+ 'Day 44: qemu + gdb = so great'                                                       2013-12-17-day-44-gdb-is-great.markdown
+ 'Day 43: SOMETHING IS ERASING MY PROGRAM WHILE IT’S RUNNING (oh wait oops)'           2013-12-16-day-43-hopefully-the-last-day-spent-fixing-linker-problems.markdown
+ 'Day 42: How to run a simple ELF executable, from scratch (I don''t know)'            2013-12-13-day-42-how-to-run-an-elf-executable-i-dont-know.markdown
+ 'Day 41: Linkers are upsetting'                                                       2013-12-12-day-41-linkers-are-still-upsetting.markdown
+ 'Day 40: Linkers are amazing.'                                                        2013-12-10-day-40-learning-about-linkers.markdown
+ 'Day 40: 12 things I learned today about linkers.'                                    2013-12-10-day-40-12-things-i-learned-today-about-linkers.markdown
+ 'Day 39: Writing malloc wrong, for fun'                                               2013-12-10-day-39-i-wrote-a-malloc.markdown
+ 'Day 38: After 6 days, I have problems that I can''t understand at all'               2013-12-06-day-38-after-7-days.markdown
+ 'Day 37: After 5 days, my OS doesn''t crash when I press a key'                       2013-12-04-day-37-how-a-keyboard-works.markdown
+ 'Day 36: On programming without malloc'                                               2013-12-03-day-36-programming-without-malloc.markdown
+ 'Day 35: Types in Rust, for beginners'                                                2013-12-02-types-in-rust.markdown
+ How to call Rust from assembly, and vice versa                                        2013-12-01-how-to-call-rust-from-assembly.markdown
+ Videos from PyData NYC are up!                                                        2013-11-30-videos-from-pydata-nyc-are-up.markdown
+ Writing a kernel using rustboot & rust-core                                           2013-11-29-writing-an-os-using-rustboot-and-rust-core.markdown
+ What happens when you run 'Hello, world'                                              2013-11-29-what-happens-when-you-run-a-unix-program.markdown
+ 'Day 34b: Writing curl using my TCP stack'                                            2013-11-27-day-34b-wrapping-up-the-tcp-stack.markdown
+ 'Day 34: The tiniest operating system'                                                2013-11-26-day-34-the-tiniest-operating-system.markdown
+ 'Day 33: How to make music with ClojureScript'                                        2013-11-25-day-33-how-to-make-music-with-clojurescript.markdown
+ 'Day 32: Magical Orchestra!!!'                                                        2013-11-21-day-32-magical-orchestra.markdown
+ 'Day 31: Binary trees with core.logic!'                                               2013-11-20-day-31-logic-programming-pretty-music.markdown
+ 'Day 30: Making music in Clojure with Overtone. Clojure bugs with laziness!           2013-11-19-day-30-making-music-in-clojure-with-overtone.markdown
+ 'Day 29: Trying out Emacs!'                                                           2013-11-18-day-29-trying-out-emacs.markdown
+ 'Day 28: Made a git workflow visualization webapp!'                                   2013-11-15-day-28-more-git-workflow-pictures.markdown
+ 'Day 27: Automatically testing changes in state! Visualizing my Git workflow!         2013-11-13-day-27-magic-testing-functions.markdown
+ Women in Technology workshop at PyData NYC                                            2013-11-12-women-in-technology-workshop-at-pydata-nyc.markdown
+ 'Day 26: Trying to describe the TCP state machine in a readable way. Failing.'        2013-11-12-day-26-trying-to-describe-the-tcp-state-machine.markdown
+ 'Day 25: ACK all the things'                                                          2013-11-12-day-25-ack-all-the-things.markdown
+ 'Day 24: Unit testing this TCP library'                                               2013-11-07-day-24-unit-testing-this-tcp-library.markdown
+ NYC Python talk                                                                       2013-11-06-nyc-python-talk-slides.markdown
+ 'Day 23: Started writing a TCP stack in Python'                                       2013-11-06-day-23-started-writing-a-socket-library.markdown
+ 'Day 22: Got some TCP packets back!'                                                  2013-11-06-day-22-got-some-tcp-packets-back.markdown
+ 'Day 21: Trying to TCP'                                                               2013-11-05-day-21-trying-to-tcp.markdown
+ 'Day 20: Traceroute in 15 lines of code using Scapy'                                  2013-10-31-day-20-scapy-and-traceroute.markdown
+ 'Day 19: A few reasons why networking is hard'                                        2013-10-31-day-19-i-might-understand-why-networking-is-hard.markdown
+ 'Day 18: ARP cache poisoning (or: In ur connection, sniffing ur packets)'             2013-10-29-day-18-in-ur-connection.markdown
+ 'Day 17: How to write a buffer overflow exploit'                                      2013-10-28-day-17-buffer-overflows.markdown
+ Do Rails programmers use node.js? Visualizing correlations in command usage           2013-10-24-do-rails-programmers-use-node-visualizing-correlations-in-command-usage.markdown
+ 'Day 16: gzip + poetry = awesome'                                                     2013-10-24-day-16-gzip-plus-poetry-equals-awesome.markdown
+ 'Day 15: How a .gz file is structured, redux'                                         2013-10-23-day-15-how-gzip-works.markdown
+ 'Day 14: When it''s hard to write tests, that''s when I should be testing'            2013-10-22-day-14-apparently-i-should-write-tests.markdown
+ 'Day 13: Off by one errors'                                                           2013-10-21-day-13-off-by-one-errors.markdown
+ 'Day 12: Why Julia likes Julia'                                                       2013-10-17-day-12-julia-reflects-on-julia.markdown
+ 'Day 11: How does gzip work?'                                                         2013-10-16-day-11-how-does-gzip-work.markdown
+ 'Day 10: Goals. Goals? Maybe I need to be *reading* more code?'                       2013-10-16-day-10-goals.markdown
+ 'Day 9: Bytecode is made of bytes! CPython isn''t scary!'                             2013-10-14-day-9-bytecode-is-made-of-bytes.markdown
+ 'Day 8: Julia writes Julia! And remembers that open source is hard.'                  2013-10-12-day-8-julia-writes-julia-and-open-source.markdown
+ 'Day 7: An echo server in Clojure'                                                    2013-10-09-day-7-an-echo-server-in-clojure.markdown
+ 'Day 6: I wrote a rootkit!'                                                           2013-10-08-day-6-i-wrote-a-rootkit.markdown
+ 'Day 5: I wrote a kernel module!!!'                                                   2013-10-07-day-5-i-wrote-a-kernel-module.markdown
+ Where to find bike sharing systems' data feeds                                        2013-10-06-where-to-find-the-bixi-xml-data-feed.markdown
+ 'Day 4: Processes vs threads, and kernel modules!'                                    2013-10-04-day-4-processes-vs-threads.markdown
+ 'Day 3: What does the Linux kernel even do?'                                          2013-10-02-day-3-what-does-the-linux-kernel-even-do.markdown
+ 'Day 2: netcat fun!'                                                                  2013-10-01-day-2-netcat-fun.markdown
+ 'Day 1: What does a shell even do?'                                                   2013-09-30-hacker-school-day-2-what-does-a-shell-even-do.markdown
+ 'Hacker School Day 1: Messing around with the stack in C'                             2013-09-30-hacker-school-day-1-messing-around-with-the-stack-in-c.markdown
+ 'Hacker School Day -4: unit testing in C. checkmk!'                                   2013-09-26-hacker-school-day-4-c-unit-testing.markdown
+
+

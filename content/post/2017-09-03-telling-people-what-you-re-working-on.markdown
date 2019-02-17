@@ -1,5 +1,6 @@
 ---
 title: "Telling people what you're working on"
+juliasections: ['Career / work']
 date: 2017-09-03T19:08:54Z
 url: /blog/2017/09/03/telling-people-what-you-re-working-on/
 categories: []

@@ -1,5 +1,6 @@
 ---
 categories: ["spytools"]
+juliasections: ['Cool computer tools / features / ideas']
 comments: true
 date: 2014-11-27T22:51:27Z
 title: LD_PRELOAD is super fun. And easy!

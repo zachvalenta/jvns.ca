@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['On learning']
 comments: true
 date: 2016-04-30T09:51:50Z
 title: How does knowledge get locked up in people's heads?

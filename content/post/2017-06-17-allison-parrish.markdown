@@ -1,5 +1,6 @@
 ---
 title: "Awesome NLP tutorials by Allison Parrish"
+juliasections: ['Fan posts about awesome work by other people']
 date: 2017-06-17T12:56:54Z
 url: /blog/2017/06/17/allison-parrish/
 categories: []

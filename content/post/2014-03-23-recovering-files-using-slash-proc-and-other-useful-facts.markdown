@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "spytools"]
+juliasections: ['Linux systems stuff']
 comments: true
 date: 2014-03-23T11:16:24Z
 title: Recovering files using /proc (and spying, too!)

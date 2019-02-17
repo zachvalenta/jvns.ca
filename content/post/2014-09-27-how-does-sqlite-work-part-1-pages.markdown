@@ -1,5 +1,6 @@
 ---
 categories: ["how-things-work", "favorite"]
+juliasections: ['How a computer thing works']
 comments: true
 date: 2014-09-27T23:53:50Z
 title: 'How does SQLite work? Part 1: pages!'

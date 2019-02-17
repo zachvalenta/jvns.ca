@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Statistics / machine learning / data analysis']
 comments: true
 date: 2013-02-27T00:00:00Z
 title: Graphing bike path data with IPython Notebook and pandas

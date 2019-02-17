@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Inclusion']
 comments: true
 date: 2013-12-27T00:00:00Z
 title: When is "guys" gender neutral? I did a survey!

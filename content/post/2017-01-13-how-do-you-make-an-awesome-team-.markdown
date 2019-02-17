@@ -1,5 +1,6 @@
 ---
 title: "How do you make an awesome team?"
+juliasections: ['Working with others / communication']
 date: 2017-01-13T23:26:30Z
 url: /blog/2017/01/13/how-do-you-make-an-awesome-team/
 categories: []

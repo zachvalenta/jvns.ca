@@ -1,5 +1,6 @@
 ---
 title: "A few things I've learned about Kubernetes"
+juliasections: ['Kubernetes / containers']
 date: 2017-06-04T22:35:21Z
 url: /blog/2017/06/04/learning-about-kubernetes/
 categories: ["kubernetes"]

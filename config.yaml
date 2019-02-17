@@ -10,4 +10,34 @@ author:
   name: Julia Evans
 taxonomies:
   category: "categories"
-...
+  juliasection: "juliasections"
+params:
+  sections:
+  - cool-computer-tools-/-features-/-ideas
+  - computer-networking
+  - kubernetes-/-containers
+  - zines-/-comics
+  - conferences
+  - organizing-conferences
+  - businesses-/-marketing
+  - statistics-/-machine-learning-/-data-analysis
+  - year-in-review
+  - infrastructure-/-operations-engineering
+  - on-writing-comics-/-zines
+  - career-/-work
+  - working-with-others-/-communication
+  - remote-work
+  - talks-transcripts-/-podcasts
+  - on-blogging-/-speaking
+  - on-learning
+  - rust
+  - linux-debugging-/-tracing-tools
+  - debugging-stories
+  - how-a-computer-thing-works
+  - fan-posts-about-awesome-work-by-other-people
+  - inclusion
+  - rbspy
+  - performance
+  - open-source
+  - linux-systems-stuff
+  - recurse-center

@@ -1,5 +1,6 @@
 ---
 categories: ["strace", "kernel", "favorite"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-04-20T18:30:54Z
 title: Debug your programs like they're closed source!

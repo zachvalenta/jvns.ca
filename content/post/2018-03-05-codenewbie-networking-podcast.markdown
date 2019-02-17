@@ -1,5 +1,6 @@
 ---
 title: "How does the internet work? podcast"
+juliasections: ['Talks transcripts / podcasts']
 date: 2018-03-05T22:19:36Z
 url: /blog/2018/03/05/codenewbie-networking-podcast/
 categories: []

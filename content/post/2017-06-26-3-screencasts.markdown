@@ -1,5 +1,6 @@
 ---
 title: "3 short screencasts (/proc, tcpdump, strace)"
+juliasections: ['Linux debugging / tracing tools']
 date: 2017-06-26T22:29:15Z
 url: /blog/2017/06/26/3-screencasts/
 categories: []

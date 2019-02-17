@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-02T00:00:00Z
 title: 'Day 3: What does the Linux kernel even do?'

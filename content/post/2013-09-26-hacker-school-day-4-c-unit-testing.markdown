@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-09-26T00:00:00Z
 title: 'Hacker School Day -4: unit testing in C. checkmk!'

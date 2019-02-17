@@ -1,5 +1,6 @@
 ---
 categories: ["favorite"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2016-07-03T15:32:25Z
 title: Linux debugging tools I love

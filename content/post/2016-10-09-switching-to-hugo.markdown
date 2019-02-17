@@ -1,5 +1,6 @@
 ---
 title: "Switching to Hugo"
+juliasections: ['On blogging / speaking']
 date: 2016-10-09T01:20:54Z
 url: /blog/2016/10/09/switching-to-hugo/
 categories: []

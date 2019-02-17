@@ -1,5 +1,6 @@
 ---
 categories: ["culture"]
+juliasections: ['Infrastructure / operations engineering']
 comments: true
 date: 2014-12-21T14:51:32Z
 title: Fear makes you a worse programmer

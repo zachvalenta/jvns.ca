@@ -1,5 +1,6 @@
 ---
 title: "So you want to be a wizard"
+juliasections: ['On learning']
 date: 2017-03-13T20:54:08Z
 url: /blog/so-you-want-to-be-a-wizard/
 categories: []

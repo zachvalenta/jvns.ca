@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['How a computer thing works']
 comments: true
 date: 2016-06-13T22:34:23Z
 title: Should you be scared of Unix signals?

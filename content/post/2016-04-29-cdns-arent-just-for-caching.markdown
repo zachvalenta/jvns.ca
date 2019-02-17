@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Computer networking']
 comments: true
 date: 2016-04-29T23:34:43Z
 title: CDNs aren't just for caching

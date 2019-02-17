@@ -1,5 +1,6 @@
 ---
 categories: ["interviewing"]
+juliasections: ['Career / work']
 comments: true
 date: 2014-01-16T00:00:00Z
 title: What my technical interviews have looked like

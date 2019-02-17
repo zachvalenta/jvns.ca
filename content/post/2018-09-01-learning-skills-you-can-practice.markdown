@@ -1,5 +1,6 @@
 ---
 title: "How to teach yourself hard things"
+juliasections: ['On learning']
 date: 2018-09-01T10:32:00Z
 url: /blog/2018/09/01/learning-skills-you-can-practice/
 categories: []

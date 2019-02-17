@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-22T00:00:00Z
 title: 'Day 14: When it''s hard to write tests, that''s when I should be testing'

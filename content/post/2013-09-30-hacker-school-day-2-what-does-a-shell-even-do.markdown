@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-09-30T00:00:00Z
 title: 'Day 1: What does a shell even do?'

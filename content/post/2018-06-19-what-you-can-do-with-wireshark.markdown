@@ -1,5 +1,6 @@
 ---
 title: "How I use Wireshark"
+juliasections: ['Computer networking']
 date: 2018-06-19T00:28:24Z
 url: /blog/2018/06/19/what-i-use-wireshark-for/
 categories: []

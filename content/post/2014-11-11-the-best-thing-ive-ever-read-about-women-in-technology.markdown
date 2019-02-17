@@ -1,5 +1,6 @@
 ---
 categories: ["culture"]
+juliasections: ['Inclusion']
 comments: true
 date: 2014-11-11T07:37:29Z
 title: What women in technology really think (150 of them, at least)

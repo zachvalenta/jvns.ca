@@ -1,5 +1,6 @@
 ---
 title: "How do groups work on Linux?"
+juliasections: ['How a computer thing works']
 date: 2017-11-20T22:43:07Z
 url: /blog/2017/11/20/groups/
 categories: []

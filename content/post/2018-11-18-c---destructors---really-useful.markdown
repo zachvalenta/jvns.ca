@@ -1,5 +1,6 @@
 ---
 title: "An example of how C++ destructors are useful in Envoy"
+juliasections: ['Computer networking']
 date: 2018-11-18T10:21:28Z
 url: /blog/2018/11/18/c---destructors---really-useful/
 categories: []

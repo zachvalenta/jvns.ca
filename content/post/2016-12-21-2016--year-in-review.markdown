@@ -1,5 +1,6 @@
 ---
 title: "2016: Year in review"
+juliasections: ['Year in review']
 date: 2016-12-21T21:22:41Z
 url: /blog/2016/12/21/2016--year-in-review/
 categories: []

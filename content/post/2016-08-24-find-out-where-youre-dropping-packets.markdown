@@ -1,5 +1,6 @@
 ---
 categories: ["networking"]
+juliasections: ['Computer networking']
 comments: true
 date: 2016-08-24T18:53:10Z
 title: Why do UDP packets get dropped?

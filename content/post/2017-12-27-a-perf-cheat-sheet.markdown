@@ -1,5 +1,6 @@
 ---
 title: "A perf cheat sheet"
+juliasections: ['Linux debugging / tracing tools']
 date: 2017-12-27T12:04:33Z
 url: /blog/2017/12/27/a-perf-cheat-sheet/
 categories: []

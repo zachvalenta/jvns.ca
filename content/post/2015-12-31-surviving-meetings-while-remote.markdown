@@ -1,5 +1,6 @@
 ---
 categories: ["culture"]
+juliasections: ['Remote work']
 comments: true
 date: 2015-12-31T07:05:40Z
 title: Surviving meetings while remote

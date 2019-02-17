@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "clojure"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-09T00:00:00Z
 title: 'Day 7: An echo server in Clojure'

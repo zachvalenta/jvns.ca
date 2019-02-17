@@ -1,5 +1,6 @@
 ---
 categories: ["pairing"]
+juliasections: ['Working with others / communication']
 comments: true
 date: 2014-08-05T19:22:54Z
 title: Pair programming is amazing! Except... when it's not.

@@ -1,5 +1,6 @@
 ---
 title: "Hiring & opportunity"
+juliasections: ['Career / work']
 date: 2017-02-16T17:09:06Z
 url: /blog/2017/02/16/hiring---opportunity/
 categories: []

@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Performance']
 comments: true
 date: 2016-04-23T11:30:37Z
 title: Some links on Java garbage collection

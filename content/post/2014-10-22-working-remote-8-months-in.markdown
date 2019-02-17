@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Remote work']
 comments: true
 date: 2014-10-22T00:04:07Z
 title: Working remote, 8 months in (seeing humans is important!)

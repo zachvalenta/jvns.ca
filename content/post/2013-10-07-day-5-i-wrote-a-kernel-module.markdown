@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-07T00:00:00Z
 title: 'Day 5: I wrote a kernel module!!!'

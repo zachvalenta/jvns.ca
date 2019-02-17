@@ -1,5 +1,6 @@
 ---
 title: "Consistency vs availability (wat?)"
+juliasections: ['Infrastructure / operations engineering']
 date: 2016-10-21T18:22:59Z
 url: /blog/2016/10/21/consistency-vs-availability/
 categories: []

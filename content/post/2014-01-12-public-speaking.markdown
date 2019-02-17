@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['On blogging / speaking']
 comments: true
 date: 2014-01-12T00:00:00Z
 title: You should give talks. They will be awesome. Here's why!

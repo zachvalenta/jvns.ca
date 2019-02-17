@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2016-05-06T16:23:15Z
 title: A workshop on strace & tcpdump

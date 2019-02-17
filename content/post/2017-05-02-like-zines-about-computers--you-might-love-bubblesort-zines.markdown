@@ -1,5 +1,6 @@
 ---
 title: "Like zines about computers? You might love Bubblesort Zines"
+juliasections: ['Fan posts about awesome work by other people']
 date: 2017-05-02T00:47:39Z
 url: /blog/2017/05/02/like-zines-about-computers--you-might-love-bubblesort-zines/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "Things to learn about Linux"
+juliasections: ['Linux systems stuff']
 date: 2016-11-21T21:34:43Z
 url: /blog/2016/11/21/things-to-learn-about-linux/
 categories: []

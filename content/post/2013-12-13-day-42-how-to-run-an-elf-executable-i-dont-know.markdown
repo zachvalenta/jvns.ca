@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-13T00:00:00Z
 title: 'Day 42: How to run a simple ELF executable, from scratch (I don''t know)'

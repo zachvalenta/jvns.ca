@@ -1,5 +1,6 @@
 ---
 title: "Batch editing files with ed"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2018-05-11T23:47:50Z
 url: /blog/2018/05/11/batch-editing-files-with-ed/
 categories: []

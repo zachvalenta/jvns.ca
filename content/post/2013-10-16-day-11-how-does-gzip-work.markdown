@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "gzip"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-16T00:00:00Z
 title: 'Day 11: How does gzip work?'

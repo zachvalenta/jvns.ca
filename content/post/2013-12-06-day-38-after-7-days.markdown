@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "rust", "hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-06T00:00:00Z
 title: 'Day 38: After 6 days, I have problems that I can''t understand at all'

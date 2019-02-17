@@ -1,5 +1,6 @@
 ---
 categories: ["conference"]
+juliasections: ['Organizing conferences']
 comments: true
 date: 2015-03-06T01:24:29Z
 title: You can choose who submits talks to your conference

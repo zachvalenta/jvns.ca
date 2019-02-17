@@ -1,5 +1,6 @@
 ---
 title: "ftrace: trace your kernel functions!"
+juliasections: ['Linux debugging / tracing tools']
 date: 2017-03-19T18:51:21Z
 url: /blog/2017/03/19/getting-started-with-ftrace/
 categories: []

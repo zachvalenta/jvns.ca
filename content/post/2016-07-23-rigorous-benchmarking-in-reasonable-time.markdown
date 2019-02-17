@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Performance']
 comments: true
 date: 2016-07-23T11:17:07Z
 title: Benchmarking correctly is hard (and techniques for doing it better)

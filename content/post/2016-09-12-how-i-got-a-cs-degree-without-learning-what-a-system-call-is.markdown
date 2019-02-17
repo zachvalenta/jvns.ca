@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Career / work']
 comments: true
 date: 2016-09-12T09:55:14Z
 title: How I got a CS degree without learning what a system call is

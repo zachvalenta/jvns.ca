@@ -1,5 +1,6 @@
 ---
 title: "The fish shell is awesome"
+juliasections: ['Cool computer tools / features / ideas']
 date: 2017-04-23T11:49:49Z
 url: /blog/2017/04/23/the-fish-shell-is-awesome/
 categories: []

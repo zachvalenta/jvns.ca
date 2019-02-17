@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2014-06-29T09:52:47Z
 title: 'How I did Hacker School: ignoring things I understand and doing the impossible'

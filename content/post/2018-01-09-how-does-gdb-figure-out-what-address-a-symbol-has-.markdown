@@ -1,5 +1,6 @@
 ---
 title: "Profiler adventures: resolving symbol addresses is hard!"
+juliasections: ['rbspy']
 date: 2018-01-09T21:52:00Z
 url: /blog/2018/01/09/resolving-symbol-addresses/
 categories: []

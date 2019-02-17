@@ -1,5 +1,6 @@
 ---
 title: "Why cute drawings?"
+juliasections: ['On writing comics / zines']
 date: 2016-11-14T22:51:44Z
 url: /blog/2016/11/14/why-cute-drawings/
 categories: []

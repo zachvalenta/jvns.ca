@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Fan posts about awesome work by other people']
 comments: true
 date: 2013-09-25T00:00:00Z
 title: Julia Serano's 'Excluded'

@@ -1,5 +1,6 @@
 ---
 title: "Handwritten books"
+juliasections: ['On writing comics / zines']
 date: 2017-05-14T11:26:26Z
 url: /blog/2017/05/14/handwritten-books/
 categories: []

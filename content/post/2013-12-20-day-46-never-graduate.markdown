@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-20T00:00:00Z
 title: 'Day 46: Never Graduate'

@@ -1,5 +1,6 @@
 ---
 title: "What happens when you run a rkt container?"
+juliasections: ['Kubernetes / containers']
 date: 2016-11-03T22:45:16Z
 url: /blog/2016/11/03/what-happens-when-you-run-a-rkt-container/
 categories: ["containers"]

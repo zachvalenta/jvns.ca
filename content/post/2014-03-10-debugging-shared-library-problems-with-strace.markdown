@@ -1,5 +1,6 @@
 ---
 categories: ["strace", "kernel"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-03-10T20:46:10Z
 title: Debugging shared library problems with strace

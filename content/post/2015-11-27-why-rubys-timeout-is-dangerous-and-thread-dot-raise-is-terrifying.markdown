@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['How a computer thing works']
 comments: true
 date: 2015-11-27T14:17:24Z
 title: Why Ruby’s Timeout is dangerous (and Thread.raise is terrifying)

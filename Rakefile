@@ -14,11 +14,13 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 
 desc "Generate Hugo site"
 task :build do
+  Process.spawn("python scripts/parse_titles.py")
   Process.spawn("hugo")
 end
 
 desc "Watch the site and regenerate when it changes"
 task :serve do
+  Process.spawn("python scripts/parse_titles.py")
   pid = Process.spawn("hugo server --bind 0.0.0.0")
   Process.wait(pid)
 end

@@ -1,5 +1,6 @@
 ---
 categories: ["culture"]
+juliasections: ['Working with others / communication']
 comments: true
 date: 2015-03-28T10:30:29Z
 title: Senior engineering & fantasy heroes

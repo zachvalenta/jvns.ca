@@ -1,5 +1,6 @@
 ---
 title: "Operations for software developers for beginners"
+juliasections: ['Infrastructure / operations engineering']
 date: 2016-10-15T11:02:57Z
 url: /blog/2016/10/15/operations-for-software-developers-for-beginners/
 categories: []

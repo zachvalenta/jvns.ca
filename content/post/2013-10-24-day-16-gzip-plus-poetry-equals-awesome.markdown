@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "julia", "favorite", "gzip"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-10-24T00:00:00Z
 title: 'Day 16: gzip + poetry = awesome'

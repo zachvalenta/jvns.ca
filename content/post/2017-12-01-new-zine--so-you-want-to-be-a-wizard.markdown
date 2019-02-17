@@ -1,5 +1,6 @@
 ---
 title: "New zine: So you want to be a wizard"
+juliasections: ['Zines / comics']
 date: 2017-12-01T00:05:28Z
 url: /blog/2017/12/01/new-zine--so-you-want-to-be-a-wizard/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "Open source sabbatical = awesome"
+juliasections: ['Career / work']
 date: 2018-03-28T00:29:58Z
 url: /blog/2018/03/28/open-source-sabbatical---awesome/
 categories: ["ruby-profiler"]

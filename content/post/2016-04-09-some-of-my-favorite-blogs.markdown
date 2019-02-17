@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Fan posts about awesome work by other people']
 comments: true
 date: 2016-04-09T11:48:01Z
 title: Some of my favorite blogs

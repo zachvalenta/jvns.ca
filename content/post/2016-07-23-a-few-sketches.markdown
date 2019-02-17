@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Zines / comics']
 comments: true
 date: 2016-07-23T17:37:01Z
 title: A few sketches

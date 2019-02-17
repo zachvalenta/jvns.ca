@@ -1,5 +1,6 @@
 ---
 title: "Linux tracing zine"
+juliasections: ['Zines / comics']
 date: 2017-07-09T12:39:25Z
 url: /blog/2017/07/09/linux-tracing-zine/
 categories: []

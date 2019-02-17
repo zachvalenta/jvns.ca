@@ -1,5 +1,6 @@
 ---
 title: "A few drawings about Linux"
+juliasections: ['Zines / comics']
 date: 2016-11-10T22:30:54Z
 url: /blog/2016/11/10/a-few-drawings-about-linux/
 categories: []

@@ -1,5 +1,6 @@
 ---
 title: "Finding out if/why a server is dropping packets"
+juliasections: ['Computer networking']
 date: 2017-09-05T23:39:28Z
 url: /blog/2017/09/05/finding-out-where-packets-are-being-dropped/
 categories: []

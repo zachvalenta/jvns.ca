@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2014-02-15T00:00:00Z
 title: '"How was Hacker School?"'

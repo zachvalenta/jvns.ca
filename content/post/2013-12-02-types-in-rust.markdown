@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "hackerschool", "rust"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-12-02T00:00:00Z
 title: 'Day 35: Types in Rust, for beginners'

@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-09-30T00:00:00Z
 title: 'Hacker School Day 1: Messing around with the stack in C'

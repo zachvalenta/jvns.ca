@@ -1,5 +1,6 @@
 ---
 categories: ["rust"]
+juliasections: ['Talks transcripts / podcasts']
 comments: true
 date: 2014-07-17T20:21:11Z
 title: 'Ruby Rogues podcast: systems programming tricks!'

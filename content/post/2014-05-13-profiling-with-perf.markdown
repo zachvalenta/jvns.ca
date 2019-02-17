@@ -1,5 +1,6 @@
 ---
 categories: ["kernel", "spytools", "perf", "performance"]
+juliasections: ['Linux debugging / tracing tools']
 comments: true
 date: 2014-05-13T20:47:49Z
 title: I can spy on my CPU cycles with perf!

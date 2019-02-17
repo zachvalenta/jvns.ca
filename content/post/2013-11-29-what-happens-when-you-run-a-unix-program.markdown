@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool", "kernel", "favorite"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-29T00:00:00Z
 title: What happens when you run 'Hello, world'

@@ -1,5 +1,6 @@
 ---
 categories: ["hackerschool"]
+juliasections: ['Recurse Center']
 comments: true
 date: 2013-11-07T00:00:00Z
 title: 'Day 24: Unit testing this TCP library'

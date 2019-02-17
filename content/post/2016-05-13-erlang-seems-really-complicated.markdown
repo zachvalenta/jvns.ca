@@ -1,5 +1,6 @@
 ---
 categories: []
+juliasections: ['Debugging stories']
 comments: true
 date: 2016-05-13T09:24:19Z
 title: Investigating Erlang by reading its system calls
