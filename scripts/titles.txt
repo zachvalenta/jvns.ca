@@ -247,6 +247,7 @@
 
 # On blogging / speaking
 
+ "Organizing this blog into categories"                                                2019-02-17-organizing-this-blog-into-categories.markdown
  '"advice" for aspiring tech bloggers'                                                 2016-05-22-how-do-you-write-blog-posts.markdown
  "Measuring a blog's success: focus on conversations, not page views"                  2018-02-20-how-do-you-measure-a-blog-s-success-.markdown
  Trying out Octopress                                                                  2013-02-24-trying-out-octopress.markdown
