@@ -138,7 +138,7 @@ has tags (though they're woefully underused, I didn't want to delete them). I us
 out that in Hugo you can define arbitrary taxonomies. So I defined a new taxonomy for these sections
 (right now it's called, unimaginitively, `juliasections`).
 
-The details of how I did this are pretty boring but [here's the hugo template that makes it display on the homepage](https://github.com/jvns/jvns.ca/blob/2f7b2723994628a5348069dd87b3df68c2f0285c/scripts/parse_titles.py). I used this [Hugo documentation page on taxonomies a lot](https://gohugo.io/templates/taxonomy-templates/).
+The details of how I did this are pretty boring but [here's the hugo template that makes it display on the homepage](https://github.com/jvns/jvns.ca/blob/25d239a3ba36c1bae1d055d2b7d50a4f1d0489ef/themes/orange/layouts/index.html#L39-L59). I used this [Hugo documentation page on taxonomies a lot](https://gohugo.io/templates/taxonomy-templates/).
 
 ### organizing my site is cool! reverse chronology maybe isn't the best possible thing!
 
