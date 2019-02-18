@@ -48,6 +48,30 @@
  "Iptables basics"                                                                     2017-06-07-iptables-basics.markdown
  "Slow down your internet with tc"                                                     2017-04-01-slow-down-your-internet-with-tc.markdown
 
+# How a computer thing works
+
+ "How do groups work on Linux?"                                                        2017-11-20-how-do-users-and-groups-work-.markdown
+ How does gdb work?                                                                    2016-08-10-how-does-gdb-work.markdown
+ Three steps to learning GDB                                                           2014-02-10-three-steps-to-learning-gdb.markdown
+ "Async IO on Linux: select, poll, and epoll"                                          2017-06-03-async-io-on-linux--select--poll--and-epoll.markdown
+ Why Ruby’s Timeout is dangerous (and Thread.raise is terrifying)                      2015-11-27-why-rubys-timeout-is-dangerous-and-thread-dot-raise-is-terrifying.markdown
+ Diving into HDFS                                                                      2014-05-15-diving-into-hdfs.markdown
+ 'How does SQLite work? Part 2: btrees! (or: disk seeks are slow don''t do them!)'     2014-10-02-how-does-sqlite-work-part-2-btrees.markdown
+ 'How does SQLite work? Part 1: pages!'                                                2014-09-27-how-does-sqlite-work-part-1-pages.markdown
+ How is a binary executable organized? Let's explore it!                               2014-09-06-how-to-read-an-executable.markdown
+ "Weird unix thing: 'cd //'"                                                           2017-02-08-weird-unix-things---cd----.markdown
+ What happens if you write a TCP stack in Python?                                      2014-08-12-what-happens-if-you-write-a-tcp-stack-in-python.markdown
+ "How does gdb call functions?"                                                        2018-01-04-how-does-gdb-call-functions-.markdown
+ Why you should understand (a little) about TCP                                        2015-11-21-why-you-should-understand-a-little-about-tcp.markdown
+ What happens when you start a process on Linux?                                       2016-10-04-exec-will-eat-your-brain.markdown
+ 'Diving into concurrency: trying out mutexes and atomics'                             2014-12-14-fun-with-threads.markdown
+ How gzip uses Huffman coding                                                          2015-02-22-how-gzip-uses-huffman-coding.markdown
+ ' How the locate command works (and let''s write a faster version in one minute!)'    2015-03-05-how-the-locate-command-works-and-lets-rewrite-it-in-one-minute.markdown
+ I conquered thread pools! For today, at least.                                        2016-03-29-thread-pools-part-ii-i-love-blocking.markdown
+ Thread pools! How do I use them?                                                      2016-03-27-thread-pools-how-do-i-use-them.markdown
+ What is "the stack"?                                                                  2016-02-27-a-few-notes-on-the-stack.markdown
+ Should you be scared of Unix signals?                                                 2016-06-13-should-you-be-scared-of-signals.markdown
+
 # Kubernetes / containers
 
  Some questions about Docker and rkt                                                   2016-09-15-whats-up-with-containers-docker-and-rkt.markdown
@@ -95,7 +119,6 @@
  "Why cute drawings?"                                                                  2016-11-14-why-cute-drawings-.markdown
  How (and why) I made a zine                                                           2016-08-29-how-i-made-a-zine.markdown
 
-
 # Conferences
  "!!Con 2019: submit a talk!"                                                          2019-02-16---con-2019--submit-a-talk-.markdown
  "Systems We Love 2016"                                                                2016-12-23-systems-we-love.markdown
@@ -114,17 +137,20 @@
  'Montreal All-Girl Hack Night #1: AMAZING'                                            2012-12-16-all_girl_hack_night.md
 
 # Organizing conferences
+
  Anonymous talk review is amazing.                                                     2014-05-28-anonymous-talk-submission-equals-amazing.markdown
  Should my conference do anonymous review?                                             2014-06-06-should-my-conference-do-anonymous-review.markdown
  You can choose who submits talks to your conference                                   2015-03-06-you-can-choose-who-submits-talks-to-your-conference.markdown
  Ideas for making better conference talks & conferences                                2016-06-06-make-better-conference-talks.markdown
 
 # Businesses / marketing
+
  "A few early marketing thoughts"                                                      2019-01-29-marketing-thoughts.markdown
  "I started a corporation!"                                                            2018-08-14-i-started-a-company-.markdown
  "Who pays to educate developers?"                                                     2018-09-01-who-pays-to-educate-developers-.markdown
 
 # Statistics / machine learning / data analysis
+
  A pandas cookbook                                                                     2013-12-22-cooking-with-pandas.markdown
  Graphing bike path data with IPython Notebook and pandas                              2013-02-27-graphing-bike-path-data-with-ipython-notebook-and-pandas.markdown
  "Some nonparametric statistics math"                                                  2018-12-29-some-initial-nonparametric-statistics-notes.markdown
@@ -293,30 +319,6 @@
  Surprises in Ruby HTTP libraries                                                      2016-03-04-whats-up-with-ruby-http-libraries.markdown
  "Reverse engineering the Notability file format"                                      2018-03-31-reverse-engineering-notability-format.markdown
  Investigating Erlang by reading its system calls                                      2016-05-13-erlang-seems-really-complicated.markdown
-
-# How a computer thing works
-
- "How do groups work on Linux?"                                                        2017-11-20-how-do-users-and-groups-work-.markdown
- How does gdb work?                                                                    2016-08-10-how-does-gdb-work.markdown
- Three steps to learning GDB                                                           2014-02-10-three-steps-to-learning-gdb.markdown
- "Async IO on Linux: select, poll, and epoll"                                          2017-06-03-async-io-on-linux--select--poll--and-epoll.markdown
- Why Ruby’s Timeout is dangerous (and Thread.raise is terrifying)                      2015-11-27-why-rubys-timeout-is-dangerous-and-thread-dot-raise-is-terrifying.markdown
- Diving into HDFS                                                                      2014-05-15-diving-into-hdfs.markdown
- 'How does SQLite work? Part 2: btrees! (or: disk seeks are slow don''t do them!)'     2014-10-02-how-does-sqlite-work-part-2-btrees.markdown
- 'How does SQLite work? Part 1: pages!'                                                2014-09-27-how-does-sqlite-work-part-1-pages.markdown
- How is a binary executable organized? Let's explore it!                               2014-09-06-how-to-read-an-executable.markdown
- "Weird unix thing: 'cd //'"                                                           2017-02-08-weird-unix-things---cd----.markdown
- What happens if you write a TCP stack in Python?                                      2014-08-12-what-happens-if-you-write-a-tcp-stack-in-python.markdown
- "How does gdb call functions?"                                                        2018-01-04-how-does-gdb-call-functions-.markdown
- Why you should understand (a little) about TCP                                        2015-11-21-why-you-should-understand-a-little-about-tcp.markdown
- What happens when you start a process on Linux?                                       2016-10-04-exec-will-eat-your-brain.markdown
- 'Diving into concurrency: trying out mutexes and atomics'                             2014-12-14-fun-with-threads.markdown
- How gzip uses Huffman coding                                                          2015-02-22-how-gzip-uses-huffman-coding.markdown
- ' How the locate command works (and let''s write a faster version in one minute!)'    2015-03-05-how-the-locate-command-works-and-lets-rewrite-it-in-one-minute.markdown
- I conquered thread pools! For today, at least.                                        2016-03-29-thread-pools-part-ii-i-love-blocking.markdown
- Thread pools! How do I use them?                                                      2016-03-27-thread-pools-how-do-i-use-them.markdown
- What is "the stack"?                                                                  2016-02-27-a-few-notes-on-the-stack.markdown
- Should you be scared of Unix signals?                                                 2016-06-13-should-you-be-scared-of-signals.markdown
 
 # Fan posts about awesome work by other people
 
