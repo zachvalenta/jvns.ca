@@ -72,7 +72,9 @@ the trains of thought are in this blog.
 
 ### solution for now: assign every post 1 (just 1) category
 
-My new plan is to assign every post a single category.  Here are the initial categories:
+My new plan is to assign every post a single category. I got this idea from [Itamar Turner-Trauring's site](https://codewithoutrules.com/worklife/).
+
+Here are the initial categories:
 
 * Cool computer tools / features / ideas
 * Computer networking
