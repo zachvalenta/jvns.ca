@@ -91,6 +91,7 @@
  Docker is amazing                                                                     2015-11-09-docker-is-amazing.markdown
 
 # Zines / comics
+ "New zine: Bite Size Networking!"                                                     2019-03-15-new-zine--bite-size-networking-.markdown
  "New zine: Oh shit, git!"                                                             2018-10-27-new-zine--oh-shit--git-.markdown
  "A tiny zine about machine learning"                                                  2017-01-20-a-tiny-zine-about-machine-learning.markdown
  "\"Let's learn tcpdump\" zine: now available for everyone"                            2017-05-14-let-s-learn-tcpdump.markdown
