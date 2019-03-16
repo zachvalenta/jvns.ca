@@ -30,14 +30,19 @@ A few people have asked for a 3-pack with all 3 "bite size" zines which is comin
 
 In last few years I've been doing a lot of networking at work, and along the way I've gone from "uh,
 what even is tcpdump" to "yes I can just type in `sudo tcpdump -c 200 -n port 443 -i lo`" without
-even thinking twice about it. And I realized that, like me 3 years ago, a lot of people do not know
-how to do things like:
+even thinking twice about it. As usual this zine is the resource I wish I had 4 years ago. There are
+so many things it took me a long time to figure out how to do like:
 
 * inspect SSL certificates
 * make DNS queries
 * figure out what server is using that port
 * find out whether the firewall is causing you problems or not
 * capture / search network traffic on a machine
+
+and as often happens with computers none of them are really that hard!! But the man pages for the
+tols you need to do these things are Very Long and as usual don't differentiate between "everybody
+always uses this option and you 10000% need to know it" and "you will never use this option it does
+not matter". So I spent a long time staring sadly at the tcpdump man page.
 
 the pitch for this zine is:
 
