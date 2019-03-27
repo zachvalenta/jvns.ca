@@ -9,8 +9,8 @@ Hello! Someone on Twitter asked a question about tensor categories recently and 
 I know something about that!! These are a cool thing!". Monoidal categories are also called "tensor
 categories" and I think that term feels a little more concrete: one of the biggest examples of a
 tensor category is the category of vector spaces with the tensor product as the way you combine
-vector spaces. "Monoidal" means "has an associative binary operation with an identity", and with
-vector spaces the tensor product is the "associative binary operation" it's referring to.  So I'm
+vectors / functions. "Monoidal" means "has an associative binary operation with an identity", and with
+vector spaces the tensor product is the "associative binary operation" it's referring to. So I'm
 going to mostly use "tensor categories" in this post instead.
 
 So here's a quick stab at explaining why tensor categories are cool. I'm going to make a lot of
