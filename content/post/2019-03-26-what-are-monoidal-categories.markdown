@@ -25,7 +25,7 @@ Applied Category Theory](https://arxiv.org/pdf/1803.05316.pdf) using mostly plai
 ## tensor categories aren't monads
 
 If you have been around functional programming for a bit, you might see the word "monoid" and
-"categories" and wonder "oh, is julia writing about monads, like in Haskell"? I am not!! 
+"categories" and wonder "oh, is julia writing about monads, like in Haskell"? I am not!!
 
 There is a sentence "monads are a monoid in the category of endofunctors" which includes both the
 word "monoid" and "category" but that is not what I am talking about at all. We're not going to talk
@@ -33,7 +33,7 @@ about types or Haskell or monads or anything.
 
 ### tensor categories are about proving (or defining) things with pictures
 
-Here's what I think is a really nice example from this "seven sketches in compositionality" PDF (on
+Here's what I think is a really nice example from this ["seven sketches in compositionality"]((https://arxiv.org/pdf/1803.05316.pdf) PDF (on
 page 47):
 
 <img src="/images/monoidal-preorder.png">
