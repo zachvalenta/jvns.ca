@@ -120,7 +120,8 @@ that are different in tensor category diagrams:
 1. with string diagrams, the lines are objects and the boxes are functions which is the opposite of
    how usual category theory diagrams are
 1. putting things next to each other in the diagram has a specific meaning ("take the tensor product
-   of those 2 things") where as in usual category theory diagrams it doesn't
+   of those 2 things") where as in usual category theory diagrams it doesn't. being able to combine
+   things in this way is powerful!
 1. half circles have a specific meaning ("take the dual")
 1. you can use specific elements of a (eg vector space) in a diagram which usually you wouldn't do
    in a category theory diagram (the objects would be the whole vector space, not one element of
