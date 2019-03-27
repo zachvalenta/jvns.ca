@@ -7,8 +7,11 @@ categories: []
 
 Hello! Someone on Twitter asked a question about tensor categories recently and I remembered "oh,
 I know something about that!! These are a cool thing!". Monoidal categories are also called "tensor
-categories" and I think that term is a little less confusing so I'm going to try to use that term in
-this post instead.
+categories" and I think that term feels a little more concrete: one of the biggest examples of a
+tensor category is the category of vector spaces with the tensor product as the way you combine
+vector spaces. "Monoidal" means "has an associative binary operation with an identity", and with
+vector spaces the tensor product is the "associative binary operation" it's referring to.  So I'm
+going to mostly use "tensor categories" in this post instead.
 
 So here's a quick stab at explaining why tensor categories are cool. I'm going to make a lot of
 oversimplifications which I figure is better than trying to explain category theory from the ground
@@ -120,3 +123,11 @@ categories.
 Some of the diagrams in this post are sort of why I got interested in that area in the first place
 -- I thought it was really cool that you could formally define / prove things with pictures. And
 useful things, like the trace of a matrix!
+
+## edit: some ways this might be related to programming
+
+Someone pointed me to a couple of twitter threads (coincidentally from this week!!) that relate
+tensor categories & diagrammatic methods to programming:
+
+1. [this thread from @KenScambler](https://twitter.com/KenScambler/status/1108738366529400832) ("My best kept secret* is that string & wiring diagrams--plucked straight out of applied category theory--are *fabulous* for software and system design.)
+2. [this other thread by him of 31 interesting related things to this topic](https://twitter.com/KenScambler/status/1109474342822244353)
