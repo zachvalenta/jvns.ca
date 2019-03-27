@@ -111,7 +111,7 @@ way of defining the trace of a matrix ("sum up the numbers on the diagonal")!
 When I first saw this I thought it was super cool that just drawing a circle is actually a
 legitimate way of defining a mathematical concept!
 
-## how are tensor category diagrams different from regular category theory diagrams
+## how are tensor category diagrams different from regular category theory diagrams?
 
 If you see "tensor categories let you prove things with pictures" you might think "well, the whole
 point of category theory is to prove things with pictures, so what?". I think there are a few things
