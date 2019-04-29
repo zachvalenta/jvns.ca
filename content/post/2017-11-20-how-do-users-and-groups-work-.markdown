@@ -38,7 +38,7 @@ and I was right.
 
 ### how users and groups checks are done
 
-They key new insight for me was pretty simple! The chapter starts out by saying that user and group IDs are **attributes of the
+The key new insight for me was pretty simple! The chapter starts out by saying that user and group IDs are **attributes of the
 process**:
 
 * real user ID and group ID;
